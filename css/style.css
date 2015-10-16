@@ -348,8 +348,7 @@ nav .container{ display: table-cell; vertical-align: middle; height: 75px; posit
 .navbar-nav li a.active { border-bottom:2px solid #FFB200 !important}
 .nav-white-bg { background-color:#fff !important;}
 .black-bg { background: rgba(0,0,0,0.65)}
-.nav-white.sticky-nav .navbar-nav li a { color: #000}
-.nav-white.shrink-nav .navbar-nav li a { color: #000}
+.sticky-nav .navbar-nav li a { color: #fff}
 .nav-white.sticky-nav .navbar-nav li a:hover, .nav-white.sticky-nav .navbar-nav > .open > a  { border-bottom-color: #fff}
 .nav-white.shrink-nav .navbar-nav li a:hover, .nav-white.shrink-nav .navbar-nav > .open > a { border-bottom-color: #000}
 .nav-dark.shrink-nav .navbar-nav li a:hover, .nav-dark.shrink-nav .navbar-nav > .open > a { border-bottom-color: #fff !important}
