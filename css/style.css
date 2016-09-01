@@ -38,6 +38,7 @@ ul, ol, dl {list-style-position: outside;}
 ::-webkit-scrollbar-thumb { background:rgba(210,210,210,.8); -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.5); -moz-box-shadow:inset 0 0 6px rgba(0,0,0,.5); box-shadow:inset 0 0 6px rgba(0,0,0,.5); }
 ::-webkit-scrollbar-thumb:window-inactive { background:rgba(210,210,210,.4) }
 .animated { -moz-transition-duration: 0s !important;  }
+hr { border-top-color: #ffb200;}
 
 /* only ie7, ie9, ie10, ie11 */
 @media screen\0 { input { /* ie7, ie9, ie10, ie11+ only */ padding-bottom: 19px; } }
@@ -470,6 +471,18 @@ section { padding: 100px 0;}
 /* new project */
 #new-project h5 { font-size: 14px; font-weight: 400;}
 
+/*  presentations */
+.presentation h3 {
+  height: 50px;
+}
+
+.presentation p a {
+  color: #9a9a9a;
+}
+
+.presentation p a:hover {
+  color: #ffb200;
+}
 
 /* ===================================
     Footer
