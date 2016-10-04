@@ -9,15 +9,9 @@
         </div>
         <div class="row">
             <div class="col-md-12 text-center black-text font-weight-600">
-                <span class="client">Belgian Gambling Commission</span>
-                <span class="client">Elia</span>
-                <span class="client">Johnson & Johnson</span>
-                <span class="client">Thomson Reuters</span>
-                <span class="client">BPost</span>
-                <span class="client">KBC</span>
-                <span class="client">Inventive Designers</span>
-                <span class="client">SWIFT</span>
-                <span class="client">Bru Textiles</span>
+                {% for customer in site.data.customers %}
+                <span class="client">{{customer.name}}</span>
+                {% endfor %}
             </div>
         </div>
     </div>
