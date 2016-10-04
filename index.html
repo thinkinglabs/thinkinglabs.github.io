@@ -30,42 +30,7 @@ title: ThinkingLabs &#58;&#58; Thierry de Pauw
     </head>
     <body>
 
-<!-- Navigation -->
-
-        <nav class="navbar navbar-default navbar-fixed-top nav-transparent overlay-nav sticky-nav nav-white nav-border-bottom no-transition" role="navigation">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-sm-3 col-xs-6">
-                        <a class="logo-light" href="index.html">
-                            <img alt="" src="images/logo-white.png" class="logo" />
-                        </a>
-                        <a class="logo-dark" href="index.html">
-                            <img alt="" src="images/logo-light.png" class="logo" />
-                        </a>
-                    </div>
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-                    </div>
-                    <div class="col-md-9 text-right">
-                        <div class="navbar-collapse collapse">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a href="#slider" class="inner-link">Home</a> </li>
-                                <li><a href="#about" class="inner-link">About</a> </li>
-                                <li><a href="#services" class="inner-link">Services</a> </li>
-                                <li><a href="#talks" class="inner-link">Talks</a></li>
-                                <li><a href="#experience" class="inner-link">Experience</a></li>
-                                <li><a href="#blog" class="inner-link">Blog</a></li>
-                                <li><a href="#contact" class="inner-link">Contact</a></li>
-
-                            </ul>
-                        </div>
-                        <!--/.nav-collapse -->
-                    </div>
-                </div>
-            </div>
-        </nav>
-
-<!--end of navigation-->
+{% include navigation.html %}
 
 {% include banner.html %}
 
@@ -77,190 +42,20 @@ title: ThinkingLabs &#58;&#58; Thierry de Pauw
 
 {% include services.html %}
 
-<!-- Presentations -->
+{% include talks.html %}
 
-        <section id="talks" class="bg-light-yellow padding-section-bottom">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h3 class="section-title">Talks</h3>
-                    <img src="images/icon-presentations.png" class="padding-three">
-                </div>
-            </div>
-            <div class="container">
-                <div class="row font-weight-600">
-                    <div class="col-md-4 presentation">
-                        <h3>Continuous Delivery is more than just Tooling, It's a Mindset</a></h3>
-                        <hr />
-                        <p><a href="https://speakerdeck.com/tdpauw/continuous-lifecycle-london-2016-continuous-delivery-is-more-than-just-tooling-its-a-culture" target="_blank">@ Continuous Lifecycle London 2016</a><br />
-                        <a href="https://speakerdeck.com/tdpauw/itake-unconference-2016-continuous-delivery-is-more-than-just-tooling-its-a-culture" target="_blank">@ ITAKE Unconference 2016</a><br />
-                        <a href="https://speakerdeck.com/tdpauw/swift-be-it-techday-2016-continuous-delivery-is-more-than-just-tooling-its-a-mindset" target="_blank">@ SWIFT BE IT TechDay 2016</a><br />
-                        <a href="https://speakerdeck.com/tdpauw/atbru-2016-continuous-delivery-is-more-than-just-tooling-its-a-mindset" target="_blank">@ Agile Tour Brussels 2016</a>
-                      </p>
-                    </div>
-                    <div class="col-md-4 presentation">
-                        <h3>3M EUR later: Moving a team to become Agile in a Company with Too Much Money</h3>
-                        <hr />
-                        <p><a href="https://speakerdeck.com/tdpauw/xpdays-benelux-2015-3m-eur-later-moving-a-team-to-become-agile-in-a-company-with-too-much-money" target="_blank">@ XPDays Benelux 2015</a></p>
-                    </div>
-                    <div class="col-md-4 presentation">
-                        <h3>Facts and Fallacies of Continuous Delivery</h3>
-                        <hr />
-                        <p><a href="https://speakerdeck.com/tdpauw/atbru-2015-facts-and-fallacies-of-continuous-delivery" target="_blank">@ Agile Tour Brussels 2015</a></p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <a href="https://speakerdeck.com/tdpauw" class="btn btn-small-yellow btn-small margin-six inner-link">View all the talks</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+{% include experience.html %}
 
-<!-- End of Presentation -->
+<!-- here should come the blogs part -->
 
-<!-- Experience -->
+{% include contact.html %}
 
-        <section id="experience" class="bg-light-blue padding-section-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h3 class="section-title">Experience</h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 text-center black-text font-weight-600">
-                        <span class="client">Gambling Commission</span>
-                        <span class="client">Elia</span>
-                        <span class="client">Johnson & Johnson</span>
-                        <span class="client">Thomson Reuters</span>
-                        <span class="client">KBC</span>
-                        <span class="client">Inventive Designers</span>
-                        <span class="client">SWIFT</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+{% include footer.html %}
 
-<!-- End of Social media -->
+<!-- scroll to top -->
+<a href="javascript:;" class="scrollToTop"><i class="fa fa-angle-up"></i></a>
+<!-- scroll to top End... -->
 
-<!-- Blog intro -->
-
-        <section id="blog">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h3 class="section-title">Latest from the Blog</h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4 col-sm-4">
-                        <div class="blog-post">
-                            <div class="post-details">
-                                <a href="blog-single-full-width.html" class="post-title">Cool title here</a>
-                                <span class="post-meta">10 October 2015</span>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-                        <div class="blog-post">
-                            <div class="post-details">
-                                <a href="blog-single-full-width.html" class="post-title">Look, a nice title!</a>
-                                <span class="post-meta">02 October 2015</span>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-                        <div class="blog-post">
-                            <div class="post-details">
-                                <a href="blog-single-full-width.html" class="post-title">Another great article here</a>
-                                <span class="post-meta">02 September 2015</span>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <a href="#" class="btn btn-small-yellow btn-small margin-six inner-link">View All Blog</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-<!-- End of Blog intro -->
-
-<!-- Contact -->
-
-        <section id="contact" class="bg-gray">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h3 class="section-title">Contact me</h3>
-                        <img src="images/icon-contact.png" class="padding-three">
-                        <br />
-                        <span class="black-text text-extra-large font-weight-600">Thierry de Pauw</span>
-                        <p>Agile Technical Coach - Software Engineer</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-3 col-md-offset-3 col-sm-3 col-sm-offset-3 xs-text-center">
-                        <h4>Contact details</h4>
-                        <p>
-                            <a href="mailto:thierry@thinkinglabs.io">thierry@thinkinglabs.io</a>
-                            <br />
-                            +32 499 133 454
-                        </p>
-                    </div>
-                    <div class="col-md-3 col-sm-3 xs-text-center">
-                        <h4>Business details</h4>
-                        <p>
-                            <span class="">Thinking Labs</span>
-                            <br />
-                            <a href="mailto:hello@thinkinglabs.io">hello@thinkinglabs.io</a>
-                        </p>
-
-                        <p>
-                            Gent, Belgium<br />
-                            VAT BE 0889.731.807
-                        </p>
-
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-<!-- End of Contact -->
-
-<!-- Footer -->
-
-        <div class="container-fluid bg-dark-gray footer-bottom">
-            <div class="container">
-                <div class="row margin-three">
-                    <!-- copyright -->
-                    <div class="col-md-6 col-sm-6 col-xs-12 text-left xs-text-center xs-margin-bottom-one">
-                        Don't Make the Same Mistake Twice. Always improve!<br />
-                        Fail Fast.<br />
-                        Make experiments.
-                    </div>
-                    <!-- end copyright -->
-                    <!-- logo -->
-                    <div class="col-md-6 col-sm-6 col-xs-12 footer-logo text-right xs-text-center
-                    copyright  letter-spacing-1 xs-text-center">
-                        &copy; 2015 Thinking Labs
-                    </div>
-                    <!-- end logo -->
-                </div>
-            </div>
-        </div>
-        <!-- scroll to top -->
-        <a href="javascript:;" class="scrollToTop"><i class="fa fa-angle-up"></i></a>
-        <!-- scroll to top End... -->
-    </footer>
-<!-- end footer -->
 
 <!-- javascript libraries -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
