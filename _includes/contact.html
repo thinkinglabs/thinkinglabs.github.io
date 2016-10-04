@@ -7,30 +7,29 @@
                 <h3 class="section-title">Contact me</h3>
                 <img src="images/icon-contact.png" class="padding-three">
                 <br />
-                <span class="black-text text-extra-large font-weight-600">{{page.myname}}</span>
-                <p>{{page.jobtitle}}</p>
+                <span class="black-text text-extra-large font-weight-600">{{site.data.myself.name}}</span>
+                <p>{{site.data.myself.title}}</p>
             </div>
         </div>
         <div class="row">
             <div class="col-md-3 col-md-offset-3 col-sm-3 col-sm-offset-3 xs-text-center">
                 <h4>Contact details</h4>
                 <p>
-                    <a href="mailto:thierry@thinkinglabs.io">thierry@thinkinglabs.io</a>
+                    <a href="mailto:{{site.data.myself.email}}">{{site.data.myself.email}}</a>
                     <br />
-                    +32 499 133 454
+                    <a href="tel:{{site.data.myself.mobile}}">{{site.data.myself.mobile}}</a>
                 </p>
             </div>
             <div class="col-md-3 col-sm-3 xs-text-center">
                 <h4>Business details</h4>
                 <p>
-                    <span class="">{{page.company}}</span>
+                    <span class="">{{site.data.company.name}}</span>
                     <br />
-                    <a href="mailto:hello@thinkinglabs.io">hello@thinkinglabs.io</a>
+                    <a href="mailto:{{site.data.company.email}}">{{site.data.company.email}}</a>
                 </p>
 
                 <p>
-                    Gent, Belgium<br />
-                    VAT BE 0889.731.807
+                    {{site.data.company.city}}, {{site.data.company.country}}
                 </p>
 
                 </p>
