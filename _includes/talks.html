@@ -1,0 +1,26 @@
+<!-- Talks -->
+
+<section id="talks" class="bg-light-yellow padding-section-bottom">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h3 class="section-title">Talks</h3>
+            <img src="images/icon-presentations.png" class="padding-three">
+        </div>
+    </div>
+    <div class="container">
+      <div class="row font-weight-600">
+        {% for talk in site.data.talks %}
+        <div class="col-md-4 presentation">
+            <h3>{{talk.title}}</a></h3>
+            <hr />
+            <p>
+              {% for conference in talk.conferences %}
+              <a href="{{conference.link}}" target="_blank">@ {{conference.name}}</a><br />
+              {% endfor %}
+            </p>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<!-- End of Talks -->

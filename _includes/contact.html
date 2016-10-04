@@ -1,0 +1,44 @@
+<!-- Contact -->
+
+<section id="contact" class="bg-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3 class="section-title">Contact me</h3>
+                <img src="images/icon-contact.png" class="padding-three">
+                <br />
+                <span class="black-text text-extra-large font-weight-600">{{site.data.myself.name}}</span>
+                <p>{{site.data.myself.title}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-md-offset-3 col-sm-3 col-sm-offset-3 xs-text-center">
+                <h4>Contact details</h4>
+                <p>
+                    <a href="mailto:{{site.data.myself.email}}">{{site.data.myself.email}}</a>
+                    <br />
+                    <a href="tel:{{site.data.myself.mobile}}">{{site.data.myself.mobile}}</a>
+                </p>
+            </div>
+            <div class="col-md-3 col-sm-3 xs-text-center">
+                <h4>Business details</h4>
+                <p>
+                    <span class="">{{site.data.company.name}}</span>
+                    <br />
+                    <a href="mailto:{{site.data.company.email}}">{{site.data.company.email}}</a>
+                </p>
+
+                <p>
+                    {{site.data.company.address}}<br />
+                    {{site.data.company.zipcode}} {{site.data.company.city}}, {{site.data.company.country}}<br />
+                    VAT {{site.data.company.vat}}
+                </p>
+
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- End of Contact -->

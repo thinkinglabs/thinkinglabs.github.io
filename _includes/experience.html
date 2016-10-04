@@ -1,0 +1,20 @@
+<!-- Experience -->
+
+<section id="experience" class="bg-light-blue padding-section-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3 class="section-title">Experience</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center black-text font-weight-600">
+                {% for customer in site.data.customers %}
+                <span class="client">{{customer.name}}</span>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- End of Experience -->
