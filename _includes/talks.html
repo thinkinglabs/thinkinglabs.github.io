@@ -12,7 +12,7 @@
 
         {% assign talks = site.talks | group_by: "title" | sort: "date" | reverse %}
 
-        {% for talk in talks %}
+        {% for talk in talks limit:3 %}
         <div class="col-md-4 presentation">
             <h3>{{talk.name}}</a></h3>
             <hr />
