@@ -301,49 +301,6 @@ $(document).ready(function () {
     /*==============================================================*/
 
     /*==============================================================*/
-    //PieChart For Onepage - START CODE
-    /*==============================================================*/
-
-    $('.chart').easyPieChart({
-        barColor: '#fff',
-        trackColor: '#535353',
-        scaleColor: false,
-        easing: 'easeOutBounce',
-        scaleLength: 1,
-        lineCap: 'round',
-        lineWidth: 1, //12
-        size: 120, //110
-        animate: {
-            duration: 2000,
-            enabled: true
-        },
-        onStep: function (from, to, percent) {
-            $(this.el).find('.percent').text(Math.round(percent));
-        }
-    });
-    $('.chart2').easyPieChart({
-        easing: 'easeOutCirc',
-        barColor: '#767676',
-        trackColor: '#c7c7c7',
-        scaleColor: false,
-        easing: 'easeOutBounce',
-        scaleLength: 1,
-        lineCap: 'round',
-        lineWidth: 2, //12
-        size: 120, //110
-        animate: {
-            duration: 2000,
-            enabled: true
-        },
-        onStep: function (from, to, percent) {
-            $(this.el).find('.percent').text(Math.round(percent));
-        }
-    });
-    /*==============================================================*/
-    //PieChart For Onepage - END CODE
-    /*==============================================================*/
-
-    /*==============================================================*/
     //Stop Closing magnificPopup on selected elements - START CODE
     /*==============================================================*/
 
