@@ -41,17 +41,22 @@
 {% include navigation.html %}
 
 <section id="talks" class="bg-light-yellow padding-section-bottom">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 text-center">
-                <img src="/images/icon-presentations.png" class="padding-three">
-                <h3 class="section-title">{{page.conference}}<br/>{{page.title}}</h3>
+                <h3 class="section-title padding-three">{{page.conference}}<br/>{{page.title}}</h3>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12 text-center black-text font-weight-600">
+            <div class="col-md-4">
               {{content}}
             </div>
+            <div class="col-md-8">
+            <script async class="speakerdeck-embed" data-id="{{page.speakerdeck.data_id}}" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+            <a href="{{page.speakerdeck.download_link}}">
+              <span><i class="fa fa-download" aria-hidden="true"></i>Download PDF</span>
+            </a>
+          </div>
         </div>
     </div>
 </section>
