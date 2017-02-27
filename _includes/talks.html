@@ -9,13 +9,16 @@
     </div>
     <div class="container">
       <div class="row font-weight-600">
-        {% for talk in site.data.talks %}
+
+        {% assign talks = site.talks | group_by: "title" | sort: "date" %}
+
+        {% for talk in talks %}
         <div class="col-md-4 presentation">
-            <h3>{{talk.title}}</a></h3>
+            <h3>{{talk.name}}</a></h3>
             <hr />
             <p>
-              {% for conference in talk.conferences %}
-              <a href="{{conference.link}}" target="_blank">@ {{conference.name}}</a><br />
+              {% for item in talk.items %}
+              <a href="{{item.url}}">@ {{item.conference}}</a><br />
               {% endfor %}
             </p>
         </div>

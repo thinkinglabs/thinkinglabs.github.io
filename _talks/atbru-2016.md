@@ -2,6 +2,7 @@
 layout: talk
 title: Continuous Delivery is more than just Tooling, It's a Mindset
 conference: Agile Tour Brussels 2016
+date: 2016-09-23
 speakerdeck:
   data_id: e7ac3fb9befd4f10ab062c44800f7b75
   download_link: https://speakerd.s3.amazonaws.com/presentations/e7ac3fb9befd4f10ab062c44800f7b75/ATBru_2016_-_Continuous_Delivery_is_more_than_just_Tooling__It_s_a_Mindset.pdf
