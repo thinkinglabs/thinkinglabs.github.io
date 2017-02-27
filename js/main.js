@@ -43,7 +43,7 @@ $(document).ready(function () {
     /*==============================================================*/
     var isMobile = false;
     var isiPhoneiPad = false;
-    
+
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         isMobile = true;
     }
@@ -62,7 +62,7 @@ $(document).ready(function () {
     if (isiPhoneiPad) {
         jQuery(".video-wrapper").css('display', 'none');
     }
-    
+
     jQuery(".top-cart a.shopping-cart").click(function () {
         //$('.navbar-collapse').collapse('hide');
 
@@ -217,7 +217,7 @@ $(document).ready(function () {
     /*==============================================================*/
     //Sliders owlCarousel - START CODE
     /*==============================================================*/
-    
+
 
     $("#owl-demo").owlCarousel({
         navigation: true, // Show next and prev buttons
@@ -301,49 +301,6 @@ $(document).ready(function () {
     /*==============================================================*/
 
     /*==============================================================*/
-    //PieChart For Onepage - START CODE
-    /*==============================================================*/
-
-    $('.chart').easyPieChart({
-        barColor: '#fff',
-        trackColor: '#535353',
-        scaleColor: false,
-        easing: 'easeOutBounce',
-        scaleLength: 1,
-        lineCap: 'round',
-        lineWidth: 1, //12
-        size: 120, //110
-        animate: {
-            duration: 2000,
-            enabled: true
-        },
-        onStep: function (from, to, percent) {
-            $(this.el).find('.percent').text(Math.round(percent));
-        }
-    });
-    $('.chart2').easyPieChart({
-        easing: 'easeOutCirc',
-        barColor: '#767676',
-        trackColor: '#c7c7c7',
-        scaleColor: false,
-        easing: 'easeOutBounce',
-        scaleLength: 1,
-        lineCap: 'round',
-        lineWidth: 2, //12
-        size: 120, //110
-        animate: {
-            duration: 2000,
-            enabled: true
-        },
-        onStep: function (from, to, percent) {
-            $(this.el).find('.percent').text(Math.round(percent));
-        }
-    });
-    /*==============================================================*/
-    //PieChart For Onepage - END CODE
-    /*==============================================================*/
-
-    /*==============================================================*/
     //Stop Closing magnificPopup on selected elements - START CODE
     /*==============================================================*/
 
@@ -361,7 +318,7 @@ $(document).ready(function () {
         if ($(e.target).is('.mfp-close'))
             return;
         return false;
-    });    
+    });
     /*==============================================================*/
     //Stop Closing magnificPopup on selected elements - END CODE
     /*==============================================================*/
@@ -1123,10 +1080,10 @@ $(document).ready(function () {
         $(".fit-videos").fitVids();
     }
     catch(err) {
-        
+
     }
 
-    
+
     /*==============================================================*/
     //fit video  - END CODE
     /*==============================================================*/
@@ -1208,7 +1165,7 @@ $(document).ready(function () {
         }
     });
 
-    
+
 
     /*==============================================================*/
     //Search - END CODE
@@ -1245,7 +1202,7 @@ $(document).ready(function () {
     //FORM TO EMAIL - START CODE
     /*==============================================================*/
     $("#success").hide();
-    
+
     $("#contact-us-button").click(function () {
         var error = validationContactUsForm();
         if (error) {
@@ -1287,7 +1244,7 @@ $(document).ready(function () {
             }
         });
         return error;
-    }    
+    }
 
     $("#notifyme-button").click(function () {
         var error = validationnotifymeForm();
@@ -1320,10 +1277,10 @@ $(document).ready(function () {
                     $("#notifymeform").find("input:eq(" + index + ")").css({ "border": "1px solid #dfdfdf" });
                 }
             }
-            
+
         });
         return error;
-    }       
+    }
 
     $("#success-free30daytrial").hide();
     $("#free30daytrial-button").click(function () {
@@ -1367,7 +1324,7 @@ $(document).ready(function () {
             }
         });
         return error;
-    }     
+    }
 
 
    $("#event-button").click(function () {
@@ -1403,7 +1360,7 @@ $(document).ready(function () {
             }
         });
         return error;
-    }          
+    }
 
     $("#careers-button").click(function () {
         var error = validationcareersForm();
@@ -1455,7 +1412,7 @@ $(document).ready(function () {
             }
         });
         return error;
-    }     
+    }
     /*==============================================================*/
     //FORM TO EMAIL - END CODE
     /*==============================================================*/
@@ -1588,7 +1545,7 @@ function isScrolledIntoView(elem)
             return false;
         }
 
-   
+
 }
 
 
@@ -1606,7 +1563,7 @@ $(window).scroll(function () {
 
     //Animate Elements in view position
     if (isScrolledIntoView('.chart')) {
-        if (inViewchart==false) 
+        if (inViewchart==false)
         {
         inViewchart = true;
 
@@ -1617,7 +1574,7 @@ $(window).scroll(function () {
         }
         catch (ex) {}
         });
-        
+
         $( ".chart2" ).each(function() {
         try {
             $(this).data('easyPieChart').update(0);
@@ -1626,88 +1583,88 @@ $(window).scroll(function () {
         catch (ex) {}
         });
          }
-    } 
-    
+    }
+
 
     if (isScrolledIntoView('#anim-number-pizza')) {
         if (inViewanimnumberpizza==false){
             inViewanimnumberpizza = true;
          animatecounters();
         }
-        
-    } 
-   
+
+    }
+
     if (isScrolledIntoView('#anim-number-projects')) {
         if (inViewanimnumberprojects==false){
         inViewanimnumberprojects = true;
 
          animatecounters();
      }
-        
-    } 
-     
+
+    }
+
     if (isScrolledIntoView('#anim-number-comments')) {
         if (inViewanimnumbercomments==false){
         inViewanimnumbercomments = true;
 
          animatecounters();
      }
-    } 
-    
+    }
+
     if (isScrolledIntoView('#counter1')) {
         if (inViewcounter1==false){
         inViewcounter1 = true;
 
          animatecounters();
      }
-    } 
-   
+    }
+
     if (isScrolledIntoView('#counter2')) {
         if (inViewcounter2==false){
         inViewcounter2 = true;
 
          animatecounters();
      }
-    } 
-   
+    }
+
     if (isScrolledIntoView('#counter3')) {
         if (inViewcounter3==false){
         inViewcounter3 = true;
 
          animatecounters();
      }
-    } 
-   
+    }
+
     if (isScrolledIntoView('#counter4')) {
         if (inViewcounter4==false){
         inViewcounter4 = true;
 
          animatecounters();
      }
-    } 
-   
+    }
+
     if (isScrolledIntoView('#counter5')) {
         if (inViewcounter5==false){
         inViewcounter5 = true;
         animatecounters();
     }
-    } 
-   
+    }
+
     if (isScrolledIntoView('#counter6')) {
         if (inViewcounter6==false){
         inViewcounter6 = true;
          animatecounters();
      }
-    } 
+    }
     if (isScrolledIntoView('#counter7')) {
         if (inViewcounter7==false){
         inViewcounter7 = true;
         animatecounters();
     }
-    } 
-     
+    }
 
-   
+
+
 });
 // Resize Header Menu
 function SetResizeHeaderMenu() {
@@ -1724,7 +1681,7 @@ function SetResizeHeaderMenu() {
 /*==============================================================*/
 //Parallax - START CODE
 /*==============================================================*/
-// Parallax Fix Image Scripts 
+// Parallax Fix Image Scripts
 
 $('.parallax-fix').each(function () {
     if ($(this).children('.parallax-background-img').length) {
@@ -1912,4 +1869,3 @@ $('.scrollToTop').click(function () {
 /*==============================================================*/
 //Scroll To Top - END CODE
 /*==============================================================*/
-
