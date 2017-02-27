@@ -2,6 +2,7 @@
 layout: talk
 title: Continuous Delivery is more than just Tooling, It's a Mindset
 conference: CD Summit Amsterdam 2016
+date: 2016-10-04
 speakerdeck:
   data_id: c873db3890834b659dbb7200e700f8e5
   download_link: https://speakerd.s3.amazonaws.com/presentations/c873db3890834b659dbb7200e700f8e5/CD_Summit_Amsterdam_2016_-_Continuous_Delivery_is_more_than_just_Tooling__It_s_a_Mindset.pdf
