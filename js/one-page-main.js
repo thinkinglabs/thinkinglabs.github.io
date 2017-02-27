@@ -7,7 +7,7 @@ function init_scroll_navigate() {
         setTimeout(function () {
             sections.filter(":in-viewport:first").each(function () {
                 var active_section = $(this);
-                var active_link = $('.navbar-nav li a[href="#' + active_section.attr("id") + '"]');
+                var active_link = $('.navbar-nav li a[href="/#' + active_section.attr("id") + '"]');
                 menu_links.removeClass("active");
                 active_link.addClass("active");
 
