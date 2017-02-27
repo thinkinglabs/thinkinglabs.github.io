@@ -10,7 +10,7 @@ function init_scroll_navigate() {
                 var active_link = $('.navbar-nav li a[href="#' + active_section.attr("id") + '"]');
                 menu_links.removeClass("active");
                 active_link.addClass("active");
-                
+
             });
         }, 500);
     });
