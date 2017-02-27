@@ -10,7 +10,7 @@
     <div class="container">
       <div class="row font-weight-600">
 
-        {% assign talks = site.talks | group_by: "title" | sort: "date" %}
+        {% assign talks = site.talks | group_by: "title" | sort: "date" | reverse %}
 
         {% for talk in talks %}
         <div class="col-md-4 presentation">
