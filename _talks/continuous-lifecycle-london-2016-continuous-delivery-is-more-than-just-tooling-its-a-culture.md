@@ -6,6 +6,7 @@ date: 2016-05-03
 speakerdeck:
   data_id: 42ce667f6b594a3d8cf2b0e94a0b2476
   download_link: https://speakerd.s3.amazonaws.com/presentations/42ce667f6b594a3d8cf2b0e94a0b2476/Continuous_Lifecycle_London_2016_-_Continuous_Delivery_is_more_than_just_Tooling__It_s_a_Culture_v2.pdf
+redirect_from: "talks/continuous-lifecycle-london-2016"
 ---
 So your organisation wants to implement Continuous Delivery. But is your organisation ready for this ? Does it have the right mindset ? Does it understand the 3 Ways behind Continuous Delivery? These are some questions you should ask yourself before starting the implementation of Continuous Delivery.
 
