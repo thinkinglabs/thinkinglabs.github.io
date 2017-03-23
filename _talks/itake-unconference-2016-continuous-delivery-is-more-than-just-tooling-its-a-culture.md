@@ -6,6 +6,7 @@ date: 2016-05-20
 speakerdeck:
   data_id: 6e23e8a6c1d343efb5a3298477f95f7f
   download_link: https://speakerd.s3.amazonaws.com/presentations/6e23e8a6c1d343efb5a3298477f95f7f/ITAKE_Unconference_2016_-_Continuous_Delivery_is_more_than_just_Tooling__It_s_a_Culture.pdf
+redirect_from: "/talks/itake-unconf-2016"
 ---
 Some enterprise IT organisations are adopting Continuous Delivery thinking that tooling is enough to do the job, that all of a sudden they will go faster to market and build quality in because they are automating their existing delivery process. Just throwing tools at the problem is not enough; to be successful, organisations also need to adopt the right mindset and establish a culture of fast delivery, fast feedback, and continuous improvement.
 
