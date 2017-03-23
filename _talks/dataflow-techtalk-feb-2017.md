@@ -11,6 +11,7 @@ Some IT organisations are adopting Continuous Delivery thinking that tooling is 
 Of course tooling and automation are necessary​, but that is not enough. If you only concentrate on the tooling, something that I call doing Continuous Delivery the bad way, you end up automating an existing delivery process that is probably not adapted to Continuous Delivery. Chances are you will only accelerate the production of bad quality.
 
 This talk uses 3 topics as guiding principles to outline some of the principles and practices an organisation should adopt to successfully implement Continuous Delivery the right way:
-* How can we deliver faster with less risks ?
-* How can we get faster feedback and higher quality ?
-* How can we continuously improve our software delivery process ?
+
+- How can we deliver faster with less risks ?
+- How can we get faster feedback and higher quality ?
+- How can we continuously improve our software delivery process ?
