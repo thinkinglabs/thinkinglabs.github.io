@@ -6,6 +6,7 @@ date: 2016-10-04
 speakerdeck:
   data_id: c873db3890834b659dbb7200e700f8e5
   download_link: https://speakerd.s3.amazonaws.com/presentations/c873db3890834b659dbb7200e700f8e5/CD_Summit_Amsterdam_2016_-_Continuous_Delivery_is_more_than_just_Tooling__It_s_a_Mindset.pdf
+redirect_from: "/talks/cdsummit-amsterdam-2016"
 ---
 So your organisation wants to implement Continuous Delivery. But is your organisation ready for this ? Does it have the right mindset ?
 To be successful with Continuous Delivery, you have to adopt the proper mindset as a whole organisation. Just throwing tools at it will not do the job.
