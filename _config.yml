@@ -1,3 +1,5 @@
 collections:
   talks:
     output: true
+gems:
+  - jekyll-redirect-from
