@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="/css/style.css" />
         <!-- responsive -->
         <link rel="stylesheet" href="/css/responsive.css" />
+        <link rel="stylesheet" href="/css/talks.css" />
         <!--[if IE]>
             <link rel="stylesheet" href="css/style-ie.css" />
         <![endif]-->
@@ -38,29 +39,34 @@
     </head>
     <body>
 
-{% include navigation.html %}
 
-<section id="talks" class="bg-light-yellow padding-section-bottom">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h3 class="section-title padding-three">{{page.conference}}<br/>{{page.title}}</h3>
+
+{% include navigation.html %}
+<em>
+    <section id="talks" class="bg-light-yellow padding-section-bottom">
+            <div class="row row-no-margin">
+                <div class="col-md-12 text-center">
+                    <img src="/images/icon-presentations.png" class="padding-three no-padding-bottom"><br /><br />
+                    <h4 class="talks-title">{{page.date | date_to_long_string}}</h4>
+                    <h4 class="section-title talks-title">{{page.conference}}</h4>
+
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-              <p>{{page.date | date_to_long_string}}</p>
-              {{content}}
+            <div class="row row-no-margin">
+                <div class="col-md-4 col-md-offset-2 text-med">
+                    <h4 class="section-title talks-title no-padding-bottom"><br/>{{page.title}}</h4>
+                    <hr />
+                    {{content}}
+                </div>
+                <div class="col-md-4 padding-three">
+                <script async class="speakerdeck-embed" data-id="{{page.speakerdeck.data_id}}" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+                <a href="{{page.speakerdeck.download_link}}">
+                  <span><i class="fa fa-download" aria-hidden="true"></i>Download PDF</span>
+                </a>
+              </div>
             </div>
-            <div class="col-md-8">
-            <script async class="speakerdeck-embed" data-id="{{page.speakerdeck.data_id}}" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-            <a href="{{page.speakerdeck.download_link}}">
-              <span><i class="fa fa-download" aria-hidden="true"></i>Download PDF</span>
-            </a>
-          </div>
-        </div>
-    </div>
-</section>
+    </section>
+</em>
 
 {% include footer.html %}
 
