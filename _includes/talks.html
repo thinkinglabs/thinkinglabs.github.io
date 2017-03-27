@@ -8,22 +8,25 @@
         </div>
     </div>
     <div class="container">
-      <div class="row font-weight-600">
 
-        {% assign talks = site.talks | group_by: "title" | sort: "date" | reverse %}
+    {% assign talks = site.talks | group_by: "title" | sort: "date" | reverse %}
+    {% for talk in talks %}
+      {% assign is_row = forloop.index | modulo: 3 %}
+      {% if is_row == 1 %}
+    <div class="row font-weight-600">
+      {% endif %}
 
-        {% for talk in talks limit:3 %}
         <div class="col-md-4 presentation">
             <h3>{{talk.name}}</a></h3>
             <hr />
             <p>
-              {% for item in talk.items %}
-              <a href="{{item.url}}">@ {{item.conference}}</a><br />
-              {% endfor %}
+                {% for item in talk.items %}
+                <a href="{{item.url}}">@ {{item.conference}}</a><br /> {% endfor %}
             </p>
         </div>
-        {% endfor %}
+      {% if is_row == 0 or forloop.last %}
     </div>
+      {% endif %}
+    {% endfor %}
 </section>
-
 <!-- End of Talks -->
