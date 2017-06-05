@@ -36,6 +36,13 @@
           ga('send', 'pageview');
 
         </script>
+        <meta property="og:url" content="{{site.url}}{{page.url}}">
+        <meta property="og:site_name" content="{{site.data.company.name}}:: {{site.data.myself.name}}">
+        <meta property="og:title" content="{{page.conference}} - {{page.title}}">
+        <meta property="og:description" content="{{content}}">
+        <meta property="og:type" content="website">
+        <meta property="og:author" content="{{site.data.company.name}}">
+        <meta property="og:image" content="https://speakerd.s3.amazonaws.com/presentations/{{page.speakerdeck.data_id}}/slide_0.jpg">
     </head>
     <body>
 
