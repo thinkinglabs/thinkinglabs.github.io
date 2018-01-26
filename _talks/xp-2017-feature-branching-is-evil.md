@@ -6,7 +6,6 @@ date: 2017-05-23
 speakerdeck:
   data_id: 6e5c22252bbc42b09caedba221567c27
   download_link: https://speakerd.s3.amazonaws.com/presentations/6e5c22252bbc42b09caedba221567c27/XP2017_-_Feature_Branching_is_Evil.pdf
-redirect_from: "/talks/cdconfnl-2016"
 ---
 Why is our software industry vastly adopting Feature Branching ? "To isolate the work of the developer so he can be more productive" I was told. But does it really make your team more productive ? Are the projected benefits worth the problems it introduces ?
 

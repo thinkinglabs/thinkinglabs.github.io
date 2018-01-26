@@ -6,7 +6,6 @@ date: 2017-11-11
 speakerdeck:
   data_id: 73ad9041d9604f7b8e3b7eec35e3560c
   download_link: https://speakerd.s3.amazonaws.com/presentations/73ad9041d9604f7b8e3b7eec35e3560c/XPDays_Ukraine_2017_-_Feature_Branching_is_Evil.pdf
-redirect_from: "/talks/cdconfnl-2016"
 ---
 Feature branching is gaining in popularity due to the rise of Distributed Version Control Systems (DVCS) like Git and Mercurial. Mostly because proponents of DVCSs rely on feature branching to sell DVCS. And because of the success of branching models like GitFlow and GitHub Flow.
 
