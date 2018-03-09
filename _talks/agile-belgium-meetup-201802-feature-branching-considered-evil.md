@@ -1,6 +1,6 @@
 ---
 layout: talk
-title: Feature Branching considered Evil
+title: Feature Branching is Evil
 conference: Agile Belgium Meetup Feb 2018
 date: 2018-02-20
 speakerdeck:
