@@ -1,6 +1,6 @@
 ---
 layout: talk
-title: Continuous Delivery is more than just Tooling, It’s a Culture
+title: Continuous Delivery is more than just Tooling, It's a Mindset
 conference: ITAKE Unconference 2016
 date: 2016-05-20
 speakerdeck:
