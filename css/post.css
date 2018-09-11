@@ -34,6 +34,11 @@
   padding-top: 15px;
 }
 
+.post-content strong {
+ color: #ffb200;
+ font-weight: bold;
+}
+
 .post-content ul {
   list-style-position: inside;
   list-style-type: disc;
