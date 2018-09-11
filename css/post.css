@@ -26,7 +26,7 @@
   margin-right: 0;
 }
 
-.post-content h1, h2, h3, h4, h5, h6, p, pre, blockquote, ul, ol, dl {
+.post-content h1, h2, h3, h4, h5, h6, p, pre, blockquote, ul, ol, dl, li {
   margin-bottom: 15px;
 }
 
