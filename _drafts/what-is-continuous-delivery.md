@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "What is Continuous Delivery ?"
+author: Thierry de Pauw
+meta:
 categories:
 tags: [ continuous-delivery ]
 ---

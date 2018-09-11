@@ -1,11 +1,6 @@
 .post {
 }
 
-/*
-.post h1 {
-  font-size: 36px;
-}
-*/
 .post-title {
   margin-top: 0;
   letter-spacing: 2px;
@@ -14,7 +9,12 @@
   font-weight: 600;
 }
 
-.post-meta {font-size: 10px; letter-spacing: 1px; text-transform:uppercase; color: #797979 }
+.post-meta {
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform:uppercase;
+  color: #797979;
+}
 .post-meta a {color: #898989}
 
 .no-padding-bottom {
