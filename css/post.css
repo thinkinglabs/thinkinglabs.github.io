@@ -30,6 +30,10 @@
   margin-bottom: 15px;
 }
 
+.post-content h2 {
+  padding-top: 15px;
+}
+
 .post-content ul {
   list-style-position: inside;
   list-style-type: disc;
