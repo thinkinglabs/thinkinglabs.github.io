@@ -1,0 +1,34 @@
+.post {
+ margin-top: 30px;
+}
+
+.post h1 {
+  font-size: 36px;
+}
+
+.post-title {
+  margin-top: 0;
+}
+
+.no-padding-bottom {
+  margin-top: 0;
+}
+
+.row-no-margin {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.post-content h1, h2, h3, h4, h5, h6, p, pre, blockquote, ul, ol, dl {
+  margin-bottom: 15px;
+}
+
+.post-content ul {
+  list-style-position: inside;
+  list-style-type: disc;
+}
+
+.post-content li {
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}
