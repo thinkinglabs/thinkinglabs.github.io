@@ -672,9 +672,6 @@ footer ul.list-inline li:first-child {padding-left: 6px}
 .blog-post:hover img { -ms-transform: scale(1.2,1.2); -webkit-transform: scale(1.2,1.2);  transform: scale(1.2,1.2); transition: all .3s ease; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; opacity:0.5}
 .blog-post-images { width:auto; overflow:hidden; background-color:#4d4d4d;}
 .blog-post-images img { max-width: 101%}
-.post-title {font-size: 14px; letter-spacing: 2px; text-transform: uppercase; display: block; color: #000; margin: 40px 0 0 0; font-weight: 600}
-.post-meta {font-size: 10px; letter-spacing: 1px; text-transform:uppercase; color: #797979 }
-.post-meta a {color: #898989}
 
 /* blog grid */
 .blog-2col .col-md-6:nth-child(2n + 3) { clear: left; }
