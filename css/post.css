@@ -52,3 +52,6 @@
   font-size: 14pt;
 }
 
+.post-content a {
+  text-decoration: underline;
+}
