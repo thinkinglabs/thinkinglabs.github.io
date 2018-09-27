@@ -15,7 +15,6 @@
   text-transform:uppercase;
   color: #797979;
 }
-.post-meta a {color: #898989}
 
 .no-padding-bottom {
   margin-top: 0;
@@ -48,3 +47,8 @@
   padding-left: 1.5em;
   text-indent: -1.5em;
 }
+
+.post-content p {
+  font-size: 14pt;
+}
+
