@@ -48,7 +48,7 @@
   text-indent: -1.5em;
 }
 
-.post-content p {
+.post-content p, li {
   font-size: 14pt;
 }
 
