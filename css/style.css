@@ -471,9 +471,12 @@ section { padding: 100px 0;}
 /* new project */
 #new-project h5 { font-size: 14px; font-weight: 400;}
 
+/* TODO move to seperate css style sheet ???
+   Rename presentations to talks or change the navigation and section title ???
+*/
 /*  presentations */
 .presentation h3 {
-  height: 50px;
+  height: 25px;
 }
 
 .presentation p a {
