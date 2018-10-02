@@ -112,7 +112,10 @@ As the team can deploy on demand, how quickly we expose new functionality to cus
 
 As a result, the business can run more and more experiments because we can perform on-demand deployments and releases. These experiments allow businesses to discover and meet unmet needs of the users and to delight the users. Therefore, organisations achieve an exponential increase in customer satisfaction as described in the [Kano Model](https://en.wikipedia.org/wiki/Kano_model).
 
-Kano model
+![Kano Model](/images/interview-with-thierry-de-pauw/kano-model.gif "Kano Model")
+
+<p class="center">Kano Model</p>
+
 It is the IT — both the development and operations team — that is responsible for fast and frequent deployments. The business is responsible for improving the business outcomes of the releases.
 
 [Paul Hammant](https://twitter.com/paul_hammant) refers a paper [More Engineering, Less Dogma: The Path Toward Continuous Delivery Of Business Value](https://www.forrester.com/report/More+Engineering+Less+Dogma+The+Path+Toward+Continuous+Delivery+Of+Business+Value/-/E-RES106521) on [trunkbaseddevelopment.com](https://trunkbaseddevelopment.com/). I really would like to read it once to see if they mention things that I may have overlooked. But 499 USD for a report is too expensive for me :(
@@ -134,7 +137,13 @@ Once version control is in place, in the past, I usually focussed on the quality
 All these slow down your delivery process. But yet don’t prevent bugs from occurring in production. [Jez Humble](https://twitter.com/jezhumble) calls this [risk management theatre](https://continuousdelivery.com/2013/08/risk-management-theatre/).
 
 > This lack of confidence is usually due to a lack of automated tests resulting in a test strategy that resembles the testing [ice cream cone](http://saeedgatson.com/the-software-testing-ice-cream-cone/). Lots of manual end-to-end testing, very few or no **automated** unit testing. I emphasise automated for unit tests because I recently discovered that in some mainframe communities they use the term unit tests for manual tests. So when asked if they have unit testing they cheerfully answered yes ;)
+
+![Testing Ice Cream Cone](/images/interview-with-thierry-de-pauw/testing-ice-cream-cone.png "Testing Ice Cream Cone")
+
+<p class="center">
 Testing Ice cream Cone — the Anti-pattern
+</p>
+
 In these situations, I help teams adopt TDD for both unit tests and automated acceptance tests. I do that in a pair programming mode. I sit down with a team member and start working on something from the backlog. This can be implementing a new feature or fixing a bug. I discover the code together with that person.
 
 While discovering the code, I always try to improve the readability (say by renaming variables, extracting chunks of code as a method, removing comments). Once we (or better I) understand the codebase, we add a first failing unit test (or acceptance test), and off you go. After a couple of hours, I rotate and pair with another team member.
@@ -164,6 +173,8 @@ In an Improvement Kata, the organisation defines a goal, a vision of success, ar
 Once it knows the current situation, it can define the next target that brings the organisation closer to the vision of success. And finally, it can start running experiments (small bets) that get them closer to the next target.
 
 Using Improvement Kata, we follow the below steps to bootstrap Continuous Delivery:
+
+![Bootstrapping Continuous Delivery](/images/interview-with-thierry-de-pauw/bootstrapping-continuous-delivery.png "Bootstrapping Continuous Delivery")
 
 > The purpose is to **optimise for resilience** instead of optimising for robustness. The benefit, as I see, it also fixes the flow of the process. **Flow is a precondition to getting throughput and stability**.
 
