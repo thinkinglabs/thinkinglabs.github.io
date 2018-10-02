@@ -136,6 +136,16 @@ Once version control is in place, in the past, I usually focussed on the quality
 
 All these slow down your delivery process. But yet don’t prevent bugs from occurring in production. [Jez Humble](https://twitter.com/jezhumble) calls this [risk management theatre](https://continuousdelivery.com/2013/08/risk-management-theatre/).
 
+<div class="embed-article">
+<a href="https://continuousdelivery.com/2013/08/risk-management-theatre/" data-href="https://continuousdelivery.com/2013/08/risk-management-theatre/" title="https://continuousdelivery.com/2013/08/risk-management-theatre/" rel="nofollow">
+<strong>Risk Management Theatre: On Show At An Organization Near You - Continuous Delivery</strong>
+<br>
+<em>One of the concepts that will feature in the new book I am working on is "risk management theatre". This is the name I…</em>
+continuousdelivery.com
+</a>
+<a href="https://continuousdelivery.com/2013/08/risk-management-theatre/" class="image" data-media-id="6d07dac6741e670b84b6e30a6eb3ee82" data-thumbnail-img-id="0*bog8R0ejMKiSiAbO." style="background-image: url(https://cdn-images-1.medium.com/fit/c/320/320/0*bog8R0ejMKiSiAbO.);"></a>
+</div>
+
 > This lack of confidence is usually due to a lack of automated tests resulting in a test strategy that resembles the testing [ice cream cone](http://saeedgatson.com/the-software-testing-ice-cream-cone/). Lots of manual end-to-end testing, very few or no **automated** unit testing. I emphasise automated for unit tests because I recently discovered that in some mainframe communities they use the term unit tests for manual tests. So when asked if they have unit testing they cheerfully answered yes ;)
 
 ![Testing Ice Cream Cone](/images/interview-with-thierry-de-pauw/testing-ice-cream-cone.png "Testing Ice Cream Cone")
