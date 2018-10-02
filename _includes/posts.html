@@ -1,0 +1,42 @@
+<!-- Blog intro -->
+
+<section id="blog">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3 class="section-title">Latest from the Blog</h3>
+            </div>
+        </div>
+
+        {% for post in site.posts %}
+        {% assign is_row = forloop.index | modulo: 3 %}
+        {% if is_row == 1 %}
+        <div class="row">
+        {% endif %}
+
+            <div class="col-md-4 col-sm-4">
+                <div class="blog-post">
+                    <div class="post-details">
+                        <a href="{{ post.url }}" class="post-title">{{post.title}}</a>
+                        <div class="post-meta">{{ post.date | date_to_long_string }}</div>
+                        <p>{{ post.excerpt }}</p>
+                    </div>
+                </div>
+            </div>
+
+        {% if is_row == 0 or forloop.last %}
+        </div>
+        {% endif %}
+        {% endfor %}
+
+        <!--
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <a href="#" class="btn btn-small-yellow btn-small margin-six inner-link">View All Blog</a>
+            </div>
+        </div>
+        -->
+    </div>
+</section>
+
+<!-- End of Blog intro -->
