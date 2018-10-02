@@ -7,11 +7,11 @@ categories:
 tags: [ continuous-delivery tdd lean 'extreme programming' career]
 ---
 
-> This interview taken by my friend [Leena](https://twitter.com/leenasn) was originally published on [continuousdelivery.in](http://continuousdelivery.in) the 20th of March 2018. The original article can be found [here](https://medium.com/continuousdelivery/interview-with-thierry-de-pauw-about-his-journey-with-continuous-delivery-issues-with-feature-8e748203e8a5).
-
 In this post, I am interviewing [Thierry de Pauw](https://twitter.com/tdpauw), a Software Engineer who coaches on Continuous Delivery and other Software Engineering Practices. His focus is helping teams to improve the flow of software delivery.
 
 Thierry is a good friend of mine. He is usually very soft-spoken. But in this interview, he has a lot to say about his exciting career journey. Read on.
+
+> This interview taken by my friend [Leena](https://twitter.com/leenasn) was originally published on [continuousdelivery.in](http://continuousdelivery.in) the 20th of March 2018. The original article can be found [here](https://medium.com/continuousdelivery/interview-with-thierry-de-pauw-about-his-journey-with-continuous-delivery-issues-with-feature-8e748203e8a5).
 
 ---
 
@@ -72,6 +72,9 @@ Looking back, with the knowledge I have now, there was a lot we could have impro
 
 And then I got the opportunity to start a technical coaching mission to upscale the software engineering skills of the Operations and Support Tools team at [SWIFT](https://www.swift.com/) — a team of eight persons of which six were software engineers. This is the novice team I refer to in my presentation [“Feature Branching is Evil”](http://thinkinglabs.io/talks/agile-india-2018-feature=branching-is-evil.html).
 
+<p class="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/h4DM-Wa0aDQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</p>
 
 > Fortunately, we were two coaches: [Martin Van Aken](https://twitter.com/martinvanaken) and myself. From him, I learned the mentality — “it doesn’t matter what you do, as long as you do something to learn from it”. It helped me a lot as I used to be a thinker. Not daring to take a decision. Now I gained this just-do-it mentality. Thanks to him.
 
