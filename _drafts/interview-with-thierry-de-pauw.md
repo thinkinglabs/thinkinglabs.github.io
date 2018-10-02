@@ -11,7 +11,7 @@ In this post, I am interviewing [Thierry de Pauw](https://twitter.com/tdpauw), a
 
 Thierry is a good friend of mine. He is usually very soft-spoken. But in this interview, he has a lot to say about his exciting career journey. Read on.
 
-> This interview taken by my friend [Leena](https://twitter.com/leenasn) was originally published on [continuousdelivery.in](http://continuousdelivery.in) the 20th of March 2018. The original article can be found [here](https://medium.com/continuousdelivery/interview-with-thierry-de-pauw-about-his-journey-with-continuous-delivery-issues-with-feature-8e748203e8a5).
+> This interview taken by my friend [Leena](https://twitter.com/leenasn) was originally published on [continuousdelivery.in](http://continuousdelivery.in) the 20th of March 2018. This original article can be found [here](https://medium.com/continuousdelivery/interview-with-thierry-de-pauw-about-his-journey-with-continuous-delivery-issues-with-feature-8e748203e8a5).
 
 ---
 
@@ -177,6 +177,15 @@ Recently, I started playing with [value stream mapping](https://luis-goncalves.c
 > Additional manipulations can be not building a package once but building it for every environment which can be a source of risks and additional work as you need additional testing. Using the value stream map, you can easily identify the quick wins and the things that need to be worked on a longer term.
 
 I am yet to try out the [Improvement Kata](http://www-personal.umich.edu/~mrother/The_Improvement_Kata.html) by Mike Rother. Steve Smith mentions it in his book [Measuring Continuous Delivery](https://leanpub.com/measuringcontinuousdelivery) and in his [Resilience as Continuous Delivery Enabler](https://www.continuousdeliveryconsulting.com/blog/resilience-as-a-continuous-delivery-enabler/) article series.
+
+<div class="embed-article">
+<a href="https://www.continuousdeliveryconsulting.com/blog/resilience-as-a-continuous-delivery-enabler/" data-href="https://www.continuousdeliveryconsulting.com/blog/resilience-as-a-continuous-delivery-enabler/" title="https://www.continuousdeliveryconsulting.com/blog/resilience-as-a-continuous-delivery-enabler/" rel="nofollow">
+<strong>Resilience As A Continuous Delivery Enabler - Continuous Delivery Consulting</strong>
+<br>
+<em>The key to removing robustness risk management theatre is to visualise its costs to stakeholders and offer a practical…</em>
+www.continuousdeliveryconsulting.com</a>
+<a href="https://www.continuousdeliveryconsulting.com/blog/resilience-as-a-continuous-delivery-enabler/" class="image" data-media-id="93eac57663affbc81234cdbb76a1ae1e" data-thumbnail-img-id="0*4apR8Kr6-hBUjpeS." style="background-image: url(https://cdn-images-1.medium.com/fit/c/320/320/0*4apR8Kr6-hBUjpeS.);"></a>
+</div>
 
 In an Improvement Kata, the organisation defines a goal, a vision of success, around Continuous Delivery. Then it assesses its baseline. What is the current situation?
 
