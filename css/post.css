@@ -55,3 +55,7 @@
 .post-content a {
   text-decoration: underline;
 }
+
+.post-content p.center {
+  text-align: center
+}
