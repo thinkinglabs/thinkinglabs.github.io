@@ -20,7 +20,11 @@
                         <li><a href="/#home" class="inner-link">Home</a></li>
                         <li><a href="/#about" class="inner-link">About</a></li>
                         <li><a href="/#services" class="inner-link">Services</a></li>
+                        {% assign posts_size = site.posts.size | size %}
+                        {% if posts_size > 0 %}
                         <li><a href="/#talks" class="inner-link">Talks</a></li>
+                        {% endif %}
+
                         <li><a href="/#experience" class="inner-link">Experience</a></li>
                         {% assign posts_size = site.posts.size | size %}
                         {% if posts_size > 0 %}
