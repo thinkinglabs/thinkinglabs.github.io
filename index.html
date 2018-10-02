@@ -50,7 +50,10 @@
 
 {% include experience.html %}
 
-<!-- here should come the blogs part -->
+{% assign posts_size = site.posts.size | size %}
+{% if posts_size > 0 %}
+{% include posts.html %}
+{% endif %}
 
 {% include contact.html %}
 
