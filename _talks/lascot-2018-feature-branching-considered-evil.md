@@ -4,7 +4,7 @@ title: Feature Branching is Evil
 conference: Lean Agile Scotland 2018
 date: 2018-10-03
 speakerdeck:
-  data_id: 2adc25056dbe4cc0baadc5bc1e18b162
+  data_id: 81ead1340d2141afb1e22598bca01884
   download_link: https://speakerd.s3.amazonaws.com/presentations/81ead1340d2141afb1e22598bca01884/2018_LASCOT_-_Feature_Branching_considered_Evil.pdf
 ---
 Feature branching is again gaining in popularity due to the rise of distributed version control systems. Although branch creation has become very easy, it comes with a certain cost. Long living branches break the flow of the software delivery process, impacting throughput and stability.
