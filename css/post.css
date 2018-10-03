@@ -31,6 +31,7 @@
 
 .post-content h2 {
   padding-top: 15px;
+  text-transform: none;
 }
 
 .post-content strong {
@@ -50,6 +51,7 @@
 
 .post-content p, li {
   font-size: 14pt;
+  line-height: 28px;
 }
 
 .post-content a {
@@ -71,6 +73,7 @@
    font-weight: 400;
    font-style: normal;
    font-size: 15px;
+   line-height: 28px;
    position: relative;
    overflow: hidden;
    max-height: 280px;
@@ -130,3 +133,18 @@
 }
 
 
+@media only screen and (max-width: 992px) {
+  .no-padding-bottom {
+    margin-top: 50px;
+  }
+
+  .post-title {
+    line-height: 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .no-padding-bottom {
+    margin-top: 90px;
+  }
+}
