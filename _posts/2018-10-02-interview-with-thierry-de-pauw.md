@@ -2,7 +2,7 @@
 layout: post
 title: Interview with Thierry de Pauw — about his journey with Continuous Delivery
 author: Thierry de Pauw
-meta:
+meta: 16 min read
 date: 2018-10-02
 categories:
 tags: [ continuous-delivery, lean, career, tdd, testing, extreme-programming ]
