@@ -8,9 +8,9 @@ categories:
 tags: [ continuous-delivery, lean, career, tdd, testing, extreme-programming ]
 ---
 
-In this post, I am interviewing [Thierry de Pauw](https://twitter.com/tdpauw), a Software Engineer who coaches on Continuous Delivery and other Software Engineering Practices. His focus is helping teams to improve the flow of software delivery.
+In this post, [Leena](https://twitter.com/leenasn) interviews [Thierry de Pauw](https://twitter.com/tdpauw), a Software Engineer who coaches on Continuous Delivery and other Software Engineering Practices. His focus is helping teams to improve the flow of software delivery.
 
-Thierry is a good friend of mine. He is usually very soft-spoken. But in this interview, he has a lot to say about his exciting career journey. Read on.
+Thierry is a good friend of Leena. He is usually very soft-spoken. But in this interview, he has a lot to say about his exciting career journey. Read on.
 
 > This interview taken by my friend [Leena](https://twitter.com/leenasn) was originally published on [continuousdelivery.in](http://continuousdelivery.in) the 20th of March 2018. This original article can be found [here](https://medium.com/continuousdelivery/interview-with-thierry-de-pauw-about-his-journey-with-continuous-delivery-issues-with-feature-8e748203e8a5).
 
