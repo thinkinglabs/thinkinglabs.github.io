@@ -20,4 +20,5 @@ Take-aways:
 - explain why feature branching is problematic
 - describe alternatives to feature branching
 - run an experiment with trunk-based development
+- understand if all teams can adopt trunk-based development
 
