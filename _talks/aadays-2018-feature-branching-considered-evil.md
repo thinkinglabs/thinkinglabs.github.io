@@ -15,7 +15,7 @@ After this session, you’ll understand a different branching strategy and how i
 
 The target audience is anyone using version control systems in a Continuous Integration or Continuous Delivery context.
 
-Take-aways:
+Takeaways:
 - understand why teams are using feature branching
 - explain why feature branching is problematic
 - describe alternatives to feature branching
