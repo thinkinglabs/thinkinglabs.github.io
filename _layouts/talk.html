@@ -74,6 +74,16 @@
                     </header>
                     <article class="talk-content">
                     {{content}}
+                    <div class="conferences">
+                    <hr />
+                    {% if site.data.features.new_talk_layout %}
+                    <ul>
+                      {% for conference in page.conferences %}
+                      <li>@ {{conference}}</li>
+                      {% endfor %}
+                    </ul>
+                    {% endif %}
+                    </div>
                     </article>
                 </div>
                 <div class="col-md-4 padding-three">
@@ -86,14 +96,7 @@
                 <p>
                   <a href="{{page.speakerdeck.download_link}}"><span><i class="fa fa-download" aria-hidden="true"></i>Download PDF</span></a>
                 </p>
-                {% if site.data.features.new_talk_layout %}
-                <ul>
-                  {% for conference in page.conferences %}
-                    <li>@ {{conference}}</li>
-                  {% endfor %}
-                </ul>
-                {% endif %}
-              </div>
+               </div>
             </div>
     </section>
 </em>
