@@ -60,8 +60,10 @@
             <div class="row row-no-margin">
                 <div class="col-md-12 text-center">
                     <img src="/images/icon-presentations.png" class="padding-three no-padding-bottom"><br /><br />
+                    {% if site.data.features.new_talk_layout != true %}
                     <h4 class="talk-title">{{page.date | date_to_long_string}}</h4>
                     <h4 class="section-title talk-title">{{page.conference}}</h4>
+                    {% endif %}
                 </div>
             </div>
             <div class="row row-no-margin">
@@ -76,9 +78,16 @@
                 </div>
                 <div class="col-md-4 padding-three">
                 <script async class="speakerdeck-embed" data-id="{{page.speakerdeck.data_id}}" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-                <a href="{{page.speakerdeck.download_link}}">
-                  <span><i class="fa fa-download" aria-hidden="true"></i>Download PDF</span>
-                </a>
+                <p>
+                  <a href="{{page.speakerdeck.download_link}}"><span><i class="fa fa-download" aria-hidden="true"></i>Download PDF</span></a>
+                </p>
+                {% if site.data.features.new_talk_layout %}
+                <ul>
+                  {% for conference in page.conferences %}
+                    <li>@ {{conference}}</li>
+                  {% endfor %}
+                </ul>
+                {% endif %}
               </div>
             </div>
     </section>
