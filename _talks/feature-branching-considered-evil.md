@@ -1,6 +1,6 @@
 ---
 layout: talk
-title: Feature Branching is Evil
+title: Feature Branching considered Evil
 conferences:
   - name: SoCraTes-FR 2016
     date: 2016-10-29
