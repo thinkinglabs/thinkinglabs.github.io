@@ -79,7 +79,7 @@
                     {% if site.data.features.new_talk_layout %}
                     <ul>
                       {% for conference in page.conferences %}
-                      <li>@ {{conference}}</li>
+                      <li>@ {{conference.name}} {% if conference.video_link  %} (<a href="{{conference.video_link}}">video</a>) {% endif %}</li>
                       {% endfor %}
                     </ul>
                     {% endif %}
