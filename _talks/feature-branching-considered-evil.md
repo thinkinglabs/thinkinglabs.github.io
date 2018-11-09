@@ -3,20 +3,35 @@ layout: talk
 title: Feature Branching is Evil
 conferences:
   - name: SoCraTes-FR 2016
+    date: 2016-10-29
   - name: Continuous Delivery Conference NL 2016
+    date: 2016-12-01
   - name: XP 2017
+    date: 2017-05-23
   - name: XPDays Ukraine 2017
+    date: 2017-11-11
     video_link: https://youtube.com/h4DM-Wa0aDQ
-  - name: Agile Belgium Meetup Jan 2018
+  - name: SoCraTes-BE Meetup Jan 2018
+    date: 2018-01-24
+  - name: Agile Belgium Meetup Feb 2018
+    date: 2018-02-20
   - name: Agile India 2018
+    date: 2018-03-09
   - name: Software Craftsmanship Lille Meetup May 2018
+    date: 2018-05-03
   - name: NewCrafts 2018
+    date: 2018-05-17
     video_link: https://vimeo.com/275529985
   - name: Journée Agile 2018
+    date: 2018-05-18
   - name: WeCraft & DevOps Meetup Sept 2018
+    date: 2018-09-19
   - name: Lean Agile Scotland 2018
+    date: 2018-10-03
   - name: Agile & Automation Days Poland 2018
+    date: 2018-10-15
   - name: Agile Tour Brussels 2018
+    date: 2018-10-31
 speakerdeck:
   data_id: 81ead1340d2141afb1e22598bca01884
   download_link: https://speakerd.s3.amazonaws.com/presentations/81ead1340d2141afb1e22598bca01884/2018_LASCOT_-_Feature_Branching_considered_Evil.pdf
