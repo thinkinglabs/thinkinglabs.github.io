@@ -75,8 +75,8 @@
                     <article class="talk-content">
                     {{content}}
                     <div class="conferences">
-                    <hr />
                     {% if site.data.features.new_talk_layout %}
+                    <hr />
                     <ul>
                       {% for conference in page.conferences %}
                       <li>@ {{conference.name}} {% if conference.video_link  %} (<a href="{{conference.video_link}}">video</a>) {% endif %}</li>
