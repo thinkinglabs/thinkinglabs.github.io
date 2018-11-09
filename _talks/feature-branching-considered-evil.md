@@ -18,6 +18,8 @@ conferences:
 speakerdeck:
   data_id: 81ead1340d2141afb1e22598bca01884
   download_link: https://speakerd.s3.amazonaws.com/presentations/81ead1340d2141afb1e22598bca01884/2018_LASCOT_-_Feature_Branching_considered_Evil.pdf
+youtube:
+  data_id: h4DM-Wa0aDQ
 published: false
 ---
 Feature branching is again gaining in popularity due to the rise of distributed version control systems. Although branch creation has become very easy, it comes with a certain cost. Long living branches break the flow of the software delivery process, impacting throughput and stability.
