@@ -75,7 +75,7 @@
                     <article class="talk-content">
                     {{content}}
                     <div class="conferences">
-                    {% if site.data.features.new_talk_layout %}
+                    {% if page.conferences and site.data.features.new_talk_layout %}
                     <hr />
                     <ul>
                       {% for conference in page.conferences %}
