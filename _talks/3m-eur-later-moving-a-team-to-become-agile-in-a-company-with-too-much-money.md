@@ -1,6 +1,7 @@
 ---
 layout: talk
 title: 3M EUR later&#58; Moving a team to become Agile in a Company with Too Much Money
+date: 2015-12-03
 conferences:
   - name: XPDays Benelux 2015
     date: 2015-12-03
