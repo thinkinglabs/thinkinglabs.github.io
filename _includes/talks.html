@@ -7,7 +7,27 @@
             <img src="/images/icon-presentations.png" class="padding-three">
         </div>
     </div>
+
     <div class="container">
+    {% if site.data.features.new_talk_layout %}
+
+    {% for talk in site.talks %}
+      {% assign is_row = forloop.index | modulo: 3 %}
+      {% if is_row == 1 %}
+    <div class="row font-weight-600">
+      {% endif %}
+
+        <div class="col-md-4 presentation">
+            <h3><a href="{{talk.url}}">{{talk.title}}</a></h3>
+            <hr />
+            <p>{{talk.excerpt}}</p>
+        </div>
+      {% if is_row == 0 or forloop.last %}
+    </div>
+      {% endif %}
+    {% endfor %}
+
+    {% else %}
 
     {% assign talks = site.talks | group_by: "title" | sort: "date" | reverse %}
     {% for talk in talks %}
@@ -17,7 +37,7 @@
       {% endif %}
 
         <div class="col-md-4 presentation">
-            <h3>{{talk.name}}</a></h3>
+            <h3>{{talk.name}}</h3>
             <hr />
             <p>
                 {% for item in talk.items %}
@@ -28,5 +48,7 @@
     </div>
       {% endif %}
     {% endfor %}
+    {% endif %}
+    </div>
 </section>
 <!-- End of Talks -->
