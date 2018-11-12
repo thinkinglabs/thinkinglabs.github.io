@@ -1,6 +1,7 @@
 ---
 layout: talk
 title: Feature Branching considered Evil
+date: 2016-10-29
 conferences:
   - name: SoCraTes-FR 2016
     date: 2016-10-29

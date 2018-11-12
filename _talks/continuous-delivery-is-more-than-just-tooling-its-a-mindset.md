@@ -1,6 +1,7 @@
 ---
 layout: talk
 title: Continuous Delivery is more than just Tooling, It's a Mindset
+date: 2016-05-03
 conferences:
   - name: Continuous Lifecycle London 2016
     date: 2016-05-03

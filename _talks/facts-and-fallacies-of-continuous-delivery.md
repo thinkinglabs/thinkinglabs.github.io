@@ -1,6 +1,7 @@
 ---
 layout: talk
 title: Facts and Fallacies of Continuous Delivery
+date: 2015-11-02
 conferences:
   - name: Agile Tour Brussels 2015
     date: 2015-11-02
