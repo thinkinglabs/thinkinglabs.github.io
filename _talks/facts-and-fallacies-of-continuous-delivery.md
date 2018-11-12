@@ -7,6 +7,7 @@ conferences:
 speakerdeck:
   data_id: dfba593b9b8241bca1f4de597c7f7549
   download_link: https://speakerd.s3.amazonaws.com/presentations/dfba593b9b8241bca1f4de597c7f7549/ATBru_2015_-_Facts_and_Fallacies_of_Continuous_Delivery.pdf
+new_layout: true
 published: false
 ---
 Continuous Delivery brings a lot of value to your organisation. It will allow you to reduce your time to market for new features and bug fixes. It is a significant predictor of company performance.
