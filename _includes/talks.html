@@ -11,7 +11,7 @@
     <div class="container">
     {% if site.data.features.new_talk_layout %}
 
-    {% for talk in site.talks %}
+    {% for talk in site.talks | sort: "date" | reverse %}
       {% assign is_row = forloop.index | modulo: 3 %}
       {% if is_row == 1 %}
     <div class="row font-weight-600">
