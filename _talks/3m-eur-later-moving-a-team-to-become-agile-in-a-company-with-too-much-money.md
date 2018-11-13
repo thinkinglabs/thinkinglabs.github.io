@@ -10,6 +10,9 @@ speakerdeck:
   download_link: https://speakerd.s3.amazonaws.com/presentations/6049a9b9c36b40de8aff57918303ed91/XPDays_2015_-_3M_EUR_later_Moving_a_team_to_become_Agile_in_a_Company_with_Too_Much_Money.pdf
 new_layout: true
 published: false
+redirect_from:
+  - /talks/xpdays-benelux-2015
+  - /talks/xpdays-benelux-2015-3m-eur-later-moving-a-team-to-become-agile-in-a-company-with-too-much-money
 ---
 How do you go from a ragtag of people having no idea what it means to be Agile, stuck in eternal maintenance and operational work, applying none of the basic software engineering practices to a team of DevOps delivering value for their customers in sprints of 2 weeks ?
 
