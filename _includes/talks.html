@@ -30,7 +30,7 @@
 
     {% else %}
 
-    {% assign talks = site.talks | group_by: "title" | sort: "date" | reverse %}
+    {% assign talks = site.talks | where: "new_layout", false | group_by: "title" | sort: "date" | reverse %}
     {% for talk in talks %}
       {% assign is_row = forloop.index | modulo: 3 %}
       {% if is_row == 1 %}
