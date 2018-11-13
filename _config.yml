@@ -1,5 +1,12 @@
 collections:
   talks:
     output: true
+defaults:
+  -
+    scope:
+      path: ""
+      type: "talks"
+    values:
+      new_layout: false
 plugins:
   - jekyll-redirect-from
