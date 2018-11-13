@@ -21,10 +21,17 @@ speakerdeck:
 new_layout: true
 published: false
 redirect_from:
+  - /talks/continuous-lifecycle-london-2016
   - /talks/continuous-lifecycle-london-2016-continuous-delivery-is-more-than-just-tooling-its-a-culture
+  - /talks/itake-unconf-2016
   - /talks/itake-unconference-2016-continuous-delivery-is-more-than-just-tooling-its-a-culture
+  - /talks/swiftbe-it-techday-2016
+  - /talks/swift-be-it-techday-2016-continuous-delivery-is-more-than-just-tooling-its-a-mindset
+  - /talks/atbru-2016
   - /talks/atbru-2016-continuous-delivery-is-more-than-just-tooling-its-a-mindset
+  - /talks/cdsummit-amsterdam-2016
   - /talks/cd-summit-amsterdam-2016-continuous-delivery-is-more-than-just-tooling-its-a-mindset
+  - /talks/dataflow-tech-talk-feb-2017
   - /talks/dataflow-tech-talk-feb-2017-continuous-delivery-is-more-than-just-tooling-its-a-mindset
   - /talks/journee-agile-2017-continuous-delivery-is-more-than-just-tooling-its-a-mindset
 ---
