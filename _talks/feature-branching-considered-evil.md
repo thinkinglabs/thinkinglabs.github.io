@@ -40,6 +40,21 @@ youtube:
   data_id: h4DM-Wa0aDQ
 new_layout: true
 published: false
+redirect_from:
+  - /talks/socrates-fr-2016-feature-branching-is-evil
+  - /talks/cdconfnl-2016-feature-branching-is-evil
+  - /talks/xp-2017-feature-branching-is-evil
+  - /talks/xpdays-ukraine-2017-feature-branching-is-evil
+  - /talks/socrates-be-meetup-201801-feature-branching-considered-evil
+  - /talks/agile-belgium-meetup-201802-feature-branching-considered-evil
+  - /talks/agile-india-2018-feature=branching-is-evil
+  - /talks/software-craftsmanship-lille-meetup-201805-feature-branching-is-evil
+  - /talks/newcrafts-2018-feature-branching-is-evil
+  - /talks/journee-agile-2018-feature-branching-is-evil
+  - /talks/wecraft-devops-meetup-201809-feature-branching-is-evil
+  - /talks/lascot-2018-feature-branching-considered-evil
+  - /talks/aadays-2018-feature-branching-considered-evil
+  - /talks/atbru-2018-feature-branching-considered-evil
 ---
 Feature branching is again gaining in popularity due to the rise of distributed version control systems. Although branch creation has become very easy, it comes with a certain cost. Long living branches break the flow of the software delivery process, impacting throughput and stability.
 
