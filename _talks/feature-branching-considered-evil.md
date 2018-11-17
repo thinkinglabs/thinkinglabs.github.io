@@ -34,8 +34,8 @@ conferences:
   - name: Agile Tour Brussels 2018
     date: 2018-10-31
 speakerdeck:
-  data_id: 81ead1340d2141afb1e22598bca01884
-  download_link: https://speakerd.s3.amazonaws.com/presentations/81ead1340d2141afb1e22598bca01884/2018_LASCOT_-_Feature_Branching_considered_Evil.pdf
+  data_id: 6e5c22252bbc42b09caedba221567c27
+  download_link: https://speakerd.s3.amazonaws.com/presentations/6e5c22252bbc42b09caedba221567c27/Feature_Branching_considered_Evil.pdf
 youtube:
   data_id: h4DM-Wa0aDQ
 new_layout: true
