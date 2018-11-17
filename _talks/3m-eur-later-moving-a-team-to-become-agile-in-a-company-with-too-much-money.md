@@ -9,7 +9,6 @@ speakerdeck:
   data_id: 6049a9b9c36b40de8aff57918303ed91
   download_link: https://speakerd.s3.amazonaws.com/presentations/6049a9b9c36b40de8aff57918303ed91/XPDays_2015_-_3M_EUR_later_Moving_a_team_to_become_Agile_in_a_Company_with_Too_Much_Money.pdf
 new_layout: true
-published: false
 redirect_from:
   - /talks/xpdays-benelux-2015
   - /talks/xpdays-benelux-2015-3m-eur-later-moving-a-team-to-become-agile-in-a-company-with-too-much-money
