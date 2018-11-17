@@ -17,7 +17,7 @@ conferences:
     date: 2017-05-02
 speakerdeck:
   data_id: e7ac3fb9befd4f10ab062c44800f7b75
-  download_link: https://speakerd.s3.amazonaws.com/presentations/e7ac3fb9befd4f10ab062c44800f7b75/ATBru_2016_-_Continuous_Delivery_is_more_than_just_Tooling__It_s_a_Mindset.pdf
+  download_link: https://speakerd.s3.amazonaws.com/presentations/e7ac3fb9befd4f10ab062c44800f7b75/Continuous_Delivery_is_more_than_just_Tooling__It_s_a_Mindset.pdf
 new_layout: true
 published: false
 redirect_from:
