@@ -39,7 +39,6 @@ speakerdeck:
 youtube:
   data_id: h4DM-Wa0aDQ
 new_layout: true
-published: false
 redirect_from:
   - /talks/socrates-fr-2016-feature-branching-is-evil
   - /talks/cdconfnl-2016-feature-branching-is-evil

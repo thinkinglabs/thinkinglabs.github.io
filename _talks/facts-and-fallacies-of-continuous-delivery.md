@@ -9,7 +9,6 @@ speakerdeck:
   data_id: dfba593b9b8241bca1f4de597c7f7549
   download_link: https://speakerd.s3.amazonaws.com/presentations/dfba593b9b8241bca1f4de597c7f7549/ATBru_2015_-_Facts_and_Fallacies_of_Continuous_Delivery.pdf
 new_layout: true
-published: false
 redirect_from:
   - /talks/atbru-2015
   - /talks/atbru-2015-facts-and-fallacies-of-continuous-delivery
