@@ -11,7 +11,7 @@ conferences:
     date: 2017-05-23
   - name: XPDays Ukraine 2017
     date: 2017-11-11
-    video_link: https://youtube.com/h4DM-Wa0aDQ
+    video_link: https://youtube.com/watch?v=h4DM-Wa0aDQ
   - name: SoCraTes-BE Meetup Jan 2018
     date: 2018-01-24
   - name: Agile Belgium Meetup Feb 2018
