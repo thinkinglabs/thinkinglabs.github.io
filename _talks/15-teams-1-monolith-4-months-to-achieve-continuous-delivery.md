@@ -5,6 +5,8 @@ date: 2019-09-06
 conferences:
   - name: EXPANDConf 2019
     date: 2019-09-06
+  - name: XPDays Benelux 2019
+    date: 2019-11-28
 speakerdeck:
   data_id: a3cf8b65407147fc9d8875ce9c1a2dab
   download_link: https://speakerd.s3.amazonaws.com/presentations/a3cf8b65407147fc9d8875ce9c1a2dab/15_teams__1_monolith_and_4_months_to_achieve_Continuous_Delivery.pdf
