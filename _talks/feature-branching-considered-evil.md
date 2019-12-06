@@ -33,6 +33,10 @@ conferences:
     date: 2018-10-15
   - name: Agile Tour Brussels 2018
     date: 2018-10-31
+  - name: OSDC 2019
+    date: 2019-05-14
+  - name: DevTernity 2019
+    date: 2019-12-06
 speakerdeck:
   data_id: 6e5c22252bbc42b09caedba221567c27
   download_link: https://speakerd.s3.amazonaws.com/presentations/6e5c22252bbc42b09caedba221567c27/Feature_Branching_considered_Evil.pdf
