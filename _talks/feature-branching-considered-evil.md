@@ -29,6 +29,7 @@ conferences:
     date: 2018-09-19
   - name: Lean Agile Scotland 2018
     date: 2018-10-03
+    video_link: https://vimeo.com/299653588
   - name: Agile & Automation Days Poland 2018
     date: 2018-10-15
   - name: Agile Tour Brussels 2018
