@@ -8,3 +8,5 @@ defaults:
       type: "talks"
     values:
       new_layout: false
+plugins:
+  - jekyll-redirect-from
