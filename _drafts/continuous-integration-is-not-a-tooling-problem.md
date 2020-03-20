@@ -7,7 +7,7 @@ categories:
 tags: [ continuous-integration ]
 ---
 
-There is this commonly accepted, hard-grained belief in the software industry. By dropping a build server in a team, they get Continuous Integration for free. This belief further incentivised by the marketing of build server vendors.
+There is this commonly accepted, hard-grained belief in the software industry. By dropping a build server in a team, they get Continuous Integration for free. This belief is further incentivised by the marketing of build server vendors.
 
 Recently, [Nat Friedman](https://twitter.com/natfriedman), CEO of GitHub, announced ...
 
@@ -26,7 +26,7 @@ My friend [Steve Smith](https://twitter.com/SteveSmithCD) debunked that immediat
 >
 > -- [@SteveSmithCD](https://twitter.com/SteveSmithCD), [Twitter](https://twitter.com/SteveSmithCD/status/1192526800125136902)
 
-Despite the efforts of the XP community, people still belief a tool can build Continuous Integration into a team.
+Despite the efforts of the XP community, people still believe a tool can build Continuous Integration into a team.
 
 > This seems a niche hill on which to battle, but I'll bite. :-)
 >
