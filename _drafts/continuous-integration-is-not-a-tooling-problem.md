@@ -4,7 +4,7 @@ title: Continuous Integration is Not a Tooling Problem
 author: Thierry de Pauw
 meta:
 categories:
-tags: [ continuous-integration ]
+tags: [ Continuous Integration ]
 ---
 
 There is this commonly accepted, hard-grained belief in the software industry. By dropping a build server in a team, they get Continuous Integration for free. This belief is further incentivised by the marketing of build server vendors.
@@ -53,6 +53,8 @@ Despite the efforts of the XP community, people still believe a tool can build C
 1. Does everyone in the team push their code into a shared mainline (not branches) on a daily basis?
 2. Does every commit trigger an automated build and execution of all unit tests?
 3. When the build is broken, is it typically fixed within 10 minutes?
+
+![Continuous Integration test](/assets/ci_test.png)
 
 Only if you answer yes to all three questions, you are practicing Continuous Integration.
 
