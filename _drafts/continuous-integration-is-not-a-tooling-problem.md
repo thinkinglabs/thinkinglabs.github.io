@@ -30,7 +30,7 @@ Despite the efforts of the XP community, people still believe a tool can build C
 
 > This seems a niche hill on which to battle, but I'll bite. :-)
 >
-> Disagree. CI and CD are practices codified, automated, and > automatic. Else they are not continuous, nor integrative, nor do > they deploy reliably in any way.
+> Disagree. CI and CD are practices codified, automated, and automatic. Else they are not continuous, nor integrative, nor do they deploy reliably in any way.
 >
 > Lacking tooling, CI/CD are academic at best, yea?
 >
