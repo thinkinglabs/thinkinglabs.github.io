@@ -54,7 +54,7 @@ Despite the efforts of the XP community, people still believe a tool can build C
 2. Does every commit trigger an automated build and execution of all unit tests?
 3. When the build is broken, is it typically fixed within 10 minutes?
 
-![Continuous Integration test](/assets/ci_test.png)
+![Continuous Integration Test](/assets/ci_test.png "Jez Humble's Continuous Integration Test")
 
 Only if you answer yes to all three questions, you are practicing Continuous Integration.
 
