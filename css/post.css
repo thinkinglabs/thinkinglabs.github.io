@@ -55,10 +55,11 @@
 }
 
 .post-content a {
-  text-decoration: none;
   color: inherit;
   border-bottom: thin solid;
 }
+
+.post-content a:hover { color: #ffb200; }
 
 .post-content p.center {
   text-align: center
