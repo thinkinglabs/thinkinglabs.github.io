@@ -9,7 +9,7 @@ tags: [ continuous-integration ]
 
 There is this commonly accepted, hard-grained belief in the software industry. By dropping a build server in a team, they get Continuous Integration for free. This belief is further incentivised by the marketing of build server vendors.
 
-Recently, [Nat Friedman](https://twitter.com/natfriedman), CEO of GitHub, announced ...
+Back in August 2019, [Nat Friedman](https://twitter.com/natfriedman), CEO of GitHub, announced ...
 
 > So excited to announce that GitHub now includes built-in CI/CD!
 >
@@ -85,10 +85,14 @@ Does it mean you don't need tooling to practice Continuous Integration?
 
 Well, to be fair, you do need some basic tooling:
 
-- first of all, a centralised version control system
-- and something that enables you to run a build locally using one commandline command, like make, rake, npm, ant, gradle (maven if you absolutely want to), lein, ...
+- first of all, a centralised version control system;
+- and something that enables you to run a build and execute all unit tests locally using one commandline command, like make, rake, npm, ant, gradle (maven if you absolutely want to), lein, ... and many others.
 
-And that is it. Nothing more.
+And that is it. Nothing more, nothing less.
+
+## Conclusion
+
+A team needs to adopt all of the above mentionned practices to pass Jez’s Continuous Integration test and get into a state of Continuous Integration. A tool won’t enable this.
 
 ## Acknowledgement
 
