@@ -55,8 +55,9 @@
 }
 
 .post-content a {
-  text-decoration: underline;
+  text-decoration: none;
   color: inherit;
+  border-bottom: thin solid;
 }
 
 .post-content p.center {
