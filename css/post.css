@@ -34,6 +34,27 @@
   text-transform: none;
 }
 
+
+.post-content a {
+  color: inherit;
+  border-bottom: thin solid;
+}
+
+.post-content a:hover { color: #ffb200; }
+
+.post-content p, li {
+  font-size: 14pt;
+  line-height: 28px;
+}
+
+.post-content blockquote {
+  font-style: italic;
+}
+
+.post-content p.center {
+  text-align: center
+}
+
 .post-content strong {
  color: #ffb200;
  font-weight: bold;
@@ -47,22 +68,6 @@
 .post-content li {
   padding-left: 1.5em;
   text-indent: -1.5em;
-}
-
-.post-content p, li {
-  font-size: 14pt;
-  line-height: 28px;
-}
-
-.post-content a {
-  color: inherit;
-  border-bottom: thin solid;
-}
-
-.post-content a:hover { color: #ffb200; }
-
-.post-content p.center {
-  text-align: center
 }
 
 .post-content p>img {
