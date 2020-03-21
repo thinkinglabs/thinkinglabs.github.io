@@ -60,14 +60,18 @@
  font-weight: bold;
 }
 
+.post-content ol {
+  list-style-position: outside;
+}
+
 .post-content ul {
-  list-style-position: inside;
+  list-style-position: outside;
   list-style-type: disc;
+  margin-left: 35px;
 }
 
 .post-content li {
   padding-left: 1.5em;
-  text-indent: -1.5em;
 }
 
 .post-content p>img {
