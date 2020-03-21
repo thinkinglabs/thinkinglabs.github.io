@@ -67,7 +67,7 @@ This involves adopting the following practices:
 - 100% of the tests must pass for every build.
 - A product (i.e. a release candidate binary) is generated that can be deployed in a test environment to undergo acceptance tests.
 - Fixing broken builds is the highest priority.
-- Keep the builds (including running unit tests) fast to provide rapid feedback. The XP guideline is less than 10 min. I and [Dave Farley](https://twitter.com/davefarley77), co-author of the [Continuous Delivery](https://www.goodreads.com/book/show/8686650-continuous-delivery) book, aim for less than 5 min.
+- Keep the builds (including running unit tests) fast to provide rapid feedback. The XP guideline is less than 10 min. [Dave Farley](https://twitter.com/davefarley77), co-author of the [Continuous Delivery](https://www.goodreads.com/book/show/8686650-continuous-delivery) book, and myself aim for less than 5 min.
 
 ## Can a tool build this in
 
