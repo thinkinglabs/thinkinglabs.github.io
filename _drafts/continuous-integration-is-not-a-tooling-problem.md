@@ -54,6 +54,8 @@ Despite the efforts of the XP community, people still believe a tool can build C
 2. Does every commit trigger an automated build and execution of all unit tests?
 3. When the build is broken, is it typically fixed within 10 minutes?
 
+Only if you answer yes to all three questions, you are practicing Continuous Integration.
+
 This involves adopting the following practices:
 
 - All engineers run a private build on their own workstation before committing and pushing their code to a shared mainline. This to ensure their changes don't break the integration build.
@@ -93,6 +95,8 @@ And that is it. Nothing more, nothing less.
 ## Conclusion
 
 A team needs to adopt all of the above mentionned practices to pass Jez’s Continuous Integration test and get into a state of Continuous Integration. A tool won’t enable this.
+
+It is perfectly possible to practive Continuous Integration without using a build server (aka "CI-tool"). Conversely, using a build server is no guarantee to practice Continuous Integration.
 
 ## Acknowledgement
 
