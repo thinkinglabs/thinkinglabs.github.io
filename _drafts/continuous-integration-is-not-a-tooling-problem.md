@@ -7,7 +7,7 @@ categories:
 tags: [ Continuous Integration ]
 ---
 
-There is this commonly accepted, hard-grained belief in the software industry. By dropping a build server in a team, they get Continuous Integration for free. This belief is further incentivised by the marketing of build server vendors.
+There is this commonly accepted, hard-grained belief in the software industry. By dropping a build server in a team, they get Continuous Integration magically for free. This belief is further incentivised by the marketing of build server vendors.
 
 Back in August 2019, [Nat Friedman](https://twitter.com/natfriedman), CEO of GitHub, announced ...
 
@@ -38,7 +38,7 @@ Despite the efforts of the XP community, people still believe a tool can build C
 
 ## What is Continuous Integration
 
-> Continuous Integration is a software development practice where members of a team integrate their work frequently, usually each person integrates at least daily -- leading to multiple integrations per day. Each integration is verified by an automated build (including test) to detect integration errors as quickly as possible.
+> Continuous Integration is a software development practise where members of a team integrate their work frequently, usually, each person integrates at least daily -- leading to multiple integrations per day. Each integration is verified by an automated build (including test) to detect integration errors as quickly as possible.
 >
 > -- Martin Fowler, [Continuous Integration](https://martinfowler.com/articles/continuousIntegration.html)
 
@@ -56,7 +56,7 @@ Despite the efforts of the XP community, people still believe a tool can build C
 
 ![Continuous Integration Test](/assets/ci_test.png "Jez Humble's Continuous Integration Test")
 
-Only if you answer yes to all three questions, you are practicing Continuous Integration.
+Only if you answer yes to all three questions, you are practising Continuous Integration.
 
 This involves adopting the following practices:
 
@@ -79,7 +79,7 @@ Will a tool ensure 100% of the tests are green?
 
 Will a tool ensure a product is created that can be deployed at the end of the integration?
 
-Will a tool ensure a broken build get fixed within 10 min?
+Will a tool ensure a broken build gets fixed within 10 min?
 
 Will a tool ensure the build is fast to provide fast feedback?
 
@@ -90,15 +90,15 @@ Does it mean you don't need tooling to practice Continuous Integration?
 Well, to be fair, you do need some basic tooling:
 
 - first of all, a centralised version control system;
-- and something that enables you to run a build and execute all unit tests locally using one commandline command, like make, rake, npm, ant, gradle (maven if you absolutely want to), lein, ... and many others.
+- and something that enables you to run a build and execute all unit tests locally using one command-line command, like `make`, `rake`, `npm`, `ant`, `buildr`, `gradle` (`maven` if you absolutely want to), `lein`, ... and many others.
 
 And that is it. Nothing more, nothing less.
 
 ## Conclusion
 
-A team needs to adopt all of the above mentionned practices to pass Jez’s Continuous Integration test and get into a state of Continuous Integration. A tool won’t enable this.
+A team needs to adopt all of the above-mentioned practices to pass Jez’s Continuous Integration test and get into a state of Continuous Integration. A tool won’t enable this.
 
-It is perfectly possible to practive Continuous Integration without using a build server (aka "CI-tool"). Conversely, using a build server is no guarantee to practice Continuous Integration.
+It is perfectly possible to practice Continuous Integration without using a build server (aka "CI-tool"). Conversely, using a build server is no guarantee to practise Continuous Integration.
 
 ## Acknowledgement
 
@@ -106,7 +106,7 @@ Thanks to [Steve Smith](https://twitter.com/SteveSmithCD) for reviewing this art
 
 ## Bibliography
 
-- [Continous Integration](https://martinfowler.com/articles/continuousIntegration.html), Martin Fowler
+- [Continuous Integration](https://martinfowler.com/articles/continuousIntegration.html), Martin Fowler
 - [Continuous Integration](https://continuousdelivery.com/foundations/continuous-integration), Jez Humble
 - [On DVCS, Continuous Integration and Feature Branches](https://continuousdelivery.com/2011/07/on-dvcs-continuous-integration-and-feature-branches/), Jez Humble
 - The [Continuous Integration](https://www.goodreads.com/book/show/1311542.Continuous_Integration) book, Paul Duval
