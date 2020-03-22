@@ -486,6 +486,9 @@ section { padding: 100px 0;}
 .presentation p a:hover {
   color: #ffb200;
 }
+p.article-meta {
+  margin-top: .5em;
+}
 
 /* ===================================
     Footer
@@ -668,13 +671,6 @@ footer ul.list-inline li:first-child {padding-left: 6px}
 .pagination a.active  { border-bottom: 1px solid #000; font-weight: 600; color: #000}
 .pagination a:hover { color: #000}
 .pagination i { color: #000; font-size: 17px;}
-
-/* blog listing for home */
-.blog-post p{ padding:22px 0 0 0; margin:0}
-.blog-post img { transition: all .3s ease; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; opacity:1}
-.blog-post:hover img { -ms-transform: scale(1.2,1.2); -webkit-transform: scale(1.2,1.2);  transform: scale(1.2,1.2); transition: all .3s ease; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; opacity:0.5}
-.blog-post-images { width:auto; overflow:hidden; background-color:#4d4d4d;}
-.blog-post-images img { max-width: 101%}
 
 /* blog grid */
 .blog-2col .col-md-6:nth-child(2n + 3) { clear: left; }
