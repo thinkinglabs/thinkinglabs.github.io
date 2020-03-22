@@ -390,12 +390,6 @@
     .case-study-slider { padding: 90px 0; }
     .case-study-work { line-height: 18px; }
 
-    /*  blog  */
-    #blog .section-title { padding-bottom: 50px; }
-    .post-title { line-height: 16px; margin-bottom: 15px; }
-    .post-details { line-height: 15px; }
-    .blog-post p { line-height: 23px; }
-
     /*  approach  */
     .approach .col-sm-6 { margin: 0 0 90px; }
     .approach .col-sm-6:nth-child(3),
@@ -741,14 +735,6 @@
     .key-person-details { padding: 32px 10px 10px; }
     .key-person { max-height: 100%; }
     #key-person .col-xs-4 {width:100%}
-
-    /*  blog  */
-    #blog .col-sm-4 { margin-bottom: 15px; }
-    .blog-post-images { margin-bottom: 20px; }
-    .post-title { margin: 0; }
-    .post-author { display: block; margin-bottom: 10px; }
-    .blog-post p { padding: 0 0 20px; }
-    .below-header { margin-top: 55px; }
 
     /*  approach  */
     .approach .col-sm-6:nth-child(3) { margin-bottom: 90px; }
