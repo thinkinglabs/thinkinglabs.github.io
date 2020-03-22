@@ -16,7 +16,7 @@
 
       <div class="col-md-4 presentation">
         <h3><a href="{{ post.url }}" class="post-title">{{post.title}}</a></h3>
-        <p class="article-meta">{{ post.date | date_to_long_string }}</p>
+        <p class="article-meta">{{ post.date | date_to_long_string }}{% if post.meta %} • {{ post.meta }}{% endif %}</p>
         <hr />
         <p>{{ post.excerpt }}</p>
       </div>
