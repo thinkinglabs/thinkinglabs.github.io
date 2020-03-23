@@ -1,0 +1,13 @@
+#!/bin/sh
+
+if [[ $@ < 1 ]]; then
+   echo "usage: publish <draft>"
+   echo
+   echo "   <draft>  path to a draft article"
+   exit 1
+fi
+
+draft=$1
+
+mv $1 _posts/$(date +"%Y-%m-%d")-$(basename $draft)
+
