@@ -1,3 +1,7 @@
+title: ThinkingLabs
+description: Consulting in Continuous Integration and Continuous Delivery
+url: https://thinkinglabs.io
+author: Thierry de Pauw
 collections:
   talks:
     output: true
@@ -10,3 +14,4 @@ defaults:
       new_layout: false
 plugins:
   - jekyll-redirect-from
+  - jekyll-feed
