@@ -1,0 +1,19 @@
+$TTL 3600
+@	IN SOA dns109.ovh.net. tech.ovh.net. (2020052401 86400 3600 3600000 60)
+                          IN NS     dns109.ovh.net.
+                          IN NS     ns109.ovh.net.
+                          IN A      213.186.33.5
+                          IN TXT    "1|www.thinkinglabs.io"
+                      600 IN TXT    "v=spf1 +all"
+_autodiscover._tcp        IN SRV    0 0 443 mailconfig.ovh.net.
+_imaps._tcp               IN SRV    0 0 993 ssl0.ovh.net.
+_submission._tcp          IN SRV    0 0 465 ssl0.ovh.net.
+autoconfig                IN CNAME  mailconfig.ovh.net.
+autodiscover              IN CNAME  mailconfig.ovh.net.
+ftp                       IN CNAME  thinkinglabs.io.
+imap                      IN CNAME  ssl0.ovh.net.
+mail                      IN CNAME  ssl0.ovh.net.
+pop3                      IN CNAME  ssl0.ovh.net.
+smtp                      IN CNAME  ssl0.ovh.net.
+www                       IN A      213.186.33.5
+www                       IN TXT    "3|welcome"
