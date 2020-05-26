@@ -1,2 +1,8 @@
+# Jekyll
 _site/
 .jekyll-metadata
+
+# Terraform
+*.tfstate.backup
+.terraform
+tfplan
