@@ -45,13 +45,6 @@ locals {
     { subdomain = "_autodiscover._tcp", fieldtype = "SRV", target = "0 0 443 mailconfig.ovh.net." },
     { subdomain = "_imaps._tcp", fieldtype = "SRV", target = "0 0 993 ssl0.ovh.net." },
     { subdomain = "_submission._tcp", fieldtype = "SRV", target = "0 0 465 ssl0.ovh.net." },
-    { subdomain = "autoconfig", fieldtype = "CNAME", target = "mailconfig.ovh.net." },
-    { subdomain = "autodiscover", fieldtype = "CNAME", target = "mailconfig.ovh.net." },
-    { subdomain = "ftp", fieldtype = "CNAME", target = "thinkinglabs.be." },
-    { subdomain = "imap", fieldtype = "CNAME", target = "ssl0.ovh.net." },
-    { subdomain = "mail", fieldtype = "CNAME", target = "ssl0.ovh.net." },
-    { subdomain = "pop3", fieldtype = "CNAME", target = "ssl0.ovh.net." },
-    { subdomain = "smtp", fieldtype = "CNAME", target = "ssl0.ovh.net." },
   ]
 }
 
