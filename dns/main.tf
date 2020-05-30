@@ -40,12 +40,6 @@ locals {
     { subdomain = "pop3", fieldtype = "CNAME", target = "ssl0.ovh.net." },
     { subdomain = "smtp", fieldtype = "CNAME", target = "ssl0.ovh.net." },
   ]
-
-  be_records = [
-    { subdomain = "_autodiscover._tcp", fieldtype = "SRV", target = "0 0 443 mailconfig.ovh.net." },
-    { subdomain = "_imaps._tcp", fieldtype = "SRV", target = "0 0 993 ssl0.ovh.net." },
-    { subdomain = "_submission._tcp", fieldtype = "SRV", target = "0 0 465 ssl0.ovh.net." },
-  ]
 }
 
 resource "ovh_domain_zone_record" "io_name_server" {
@@ -138,13 +132,4 @@ resource "ovh_domain_zone_record" "be_spf" {
   fieldtype = "SPF"
   ttl       = 0
   target    = "\"v=spf1 +all\""
-}
-
-resource "ovh_domain_zone_record" "be_thinkinglabs_records" {
-  count     = length(local.be_records)
-  zone      = local.be_zone
-  subdomain = local.be_records[count.index].subdomain
-  fieldtype = local.be_records[count.index].fieldtype
-  ttl       = 0
-  target    = local.be_records[count.index].target
 }
