@@ -9,7 +9,7 @@ provider "ovh" {
 
 locals {
   zone_io = "thinkinglabs.io"
-  be_zone    = "thinkinglabs.be"
+  zone_be    = "thinkinglabs.be"
 
   # OVH does not accept a TTL lower than 60 !
   ttl     = 86400
@@ -77,36 +77,36 @@ resource "ovh_domain_zone_record" "io_gsuite_mail" {
 
 resource "ovh_domain_zone_record" "be_name_server" {
   count     = length(local.ns_records)
-  zone      = local.be_zone
+  zone      = local.zone_be
   fieldtype = "NS"
   ttl       = 0
   target    = local.ns_records[count.index]
 }
 
 resource "ovh_domain_zone_record" "be_thinkinglabs" {
-  zone      = local.be_zone
+  zone      = local.zone_be
   fieldtype = "A"
   ttl       = 0
   target    = local.ovh_ip
 }
 
 resource "ovh_domain_zone_record" "be_thinkinglabs_www" {
-  zone      = local.be_zone
+  zone      = local.zone_be
   subdomain = "www"
   fieldtype = "CNAME"
   ttl       = 0
-  target    = "${local.be_zone}."
+  target    = "${local.zone_be}."
 }
 
 resource "ovh_domain_zone_redirection" "be_thinkinglabs" {
-  zone      = local.be_zone
+  zone      = local.zone_be
   subdomain = ""
   type      = "visiblePermanent"
   target    = "http://thinkinglabs.io"
 }
 
 resource "ovh_domain_zone_record" "be_spf" {
-  zone      = local.be_zone
+  zone      = local.zone_be
   fieldtype = "SPF"
   ttl       = 0
   target    = "\"v=spf1 +all\""
