@@ -131,8 +131,8 @@ resource "ovh_domain_zone_record" "be_thinkinglabs_www" {
 resource "ovh_domain_zone_redirection" "be_thinkinglabs" {
   zone      = local.be_zone
   subdomain = ""
-  type      = "visible"
-  target    = "www.thinkinglabs.be"
+  type      = "visiblePermanent"
+  target    = "http://thinkinglabs.io"
 }
 
 
