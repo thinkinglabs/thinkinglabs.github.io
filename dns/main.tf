@@ -9,17 +9,17 @@ provider "ovh" {
 
 locals {
   io_zone = "thinkinglabs.io"
-  be_zone    = "thinkinglabs.be"
+  be_zone = "thinkinglabs.be"
 
   # OVH does not accept a TTL lower than 60 !
-  ttl     = 86400
-  ovh_ip  = "213.186.33.5"
+  ttl    = 86400
+  ovh_ip = "213.186.33.5"
 
   ns_records = [
     "dns109.ovh.net.",
     "ns109.ovh.net."
   ]
-  
+
   io_records = [
     { subdomain = "_autodiscover._tcp", fieldtype = "SRV", target = "0 0 443 mailconfig.ovh.net." },
     { subdomain = "_imaps._tcp", fieldtype = "SRV", target = "0 0 993 ssl0.ovh.net." },
