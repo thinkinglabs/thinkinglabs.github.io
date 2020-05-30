@@ -20,5 +20,6 @@ bundle exec jekyll serve .
 
 ## TODO
 
+- update TTL with values from Gandi
 - add SFP DNS record for GSuite
   see https://support.google.com/a/answer/33786?hl=en
