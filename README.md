@@ -17,3 +17,8 @@ To run the site locally:
 bundle install
 bundle exec jekyll serve .
 ```
+
+## TODO
+
+- add SFP DNS record for GSuite
+  see https://support.google.com/a/answer/33786?hl=en
