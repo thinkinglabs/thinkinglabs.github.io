@@ -8,7 +8,7 @@ provider "ovh" {
 }
 
 locals {
-  io_zone = "thinkinglabs.io"
+  zone_io = "thinkinglabs.io"
   be_zone    = "thinkinglabs.be"
 
   # OVH does not accept a TTL lower than 60 !
@@ -31,7 +31,7 @@ locals {
 
 resource "ovh_domain_zone_record" "io_name_server" {
   count     = length(local.ns_records)
-  zone      = local.io_zone
+  zone      = local.zone_io
   fieldtype = "NS"
   ttl       = 0
   target    = local.ns_records[count.index]
@@ -39,14 +39,14 @@ resource "ovh_domain_zone_record" "io_name_server" {
 
 resource "ovh_domain_zone_record" "io_thinkinglabs" {
   count     = length(var.website_ip)
-  zone      = local.io_zone
+  zone      = local.zone_io
   fieldtype = "A"
   ttl       = 0
   target    = var.website_ip[count.index]
 }
 
 resource "ovh_domain_zone_record" "io_thinkinglabs_www" {
-  zone      = local.io_zone
+  zone      = local.zone_io
   subdomain = "www"
   fieldtype = "CNAME"
   ttl       = 0
@@ -54,14 +54,14 @@ resource "ovh_domain_zone_record" "io_thinkinglabs_www" {
 }
 
 resource "ovh_domain_zone_record" "io_gsuite_site_verification" {
-  zone      = local.io_zone
+  zone      = local.zone_io
   fieldtype = "TXT"
   ttl       = 60
   target    = "\"google-site-verification=w-hqEldYqh27TytmgxPWJbbmJJfFt7-qcRiCQjE8Q78\""
 }
 
 resource "ovh_domain_zone_record" "io_spf" {
-  zone      = local.io_zone
+  zone      = local.zone_io
   fieldtype = "SPF"
   ttl       = 0
   target    = "\"v=spf1 +all\""
@@ -69,7 +69,7 @@ resource "ovh_domain_zone_record" "io_spf" {
 
 resource "ovh_domain_zone_record" "io_gsuite_mail" {
   count     = length(local.gsuite_mx_records)
-  zone      = local.io_zone
+  zone      = local.zone_io
   fieldtype = "MX"
   ttl       = 0
   target    = local.gsuite_mx_records[count.index]
