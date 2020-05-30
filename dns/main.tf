@@ -73,6 +73,13 @@ resource "ovh_domain_zone_record" "io_thinkinglabs_www" {
   target    = "thinkinglabs.github.io."
 }
 
+resource "ovh_domain_zone_record" "io_gsuite_site_verification" {
+  zone      = local.io_zone
+  fieldtype = "TXT"
+  ttl       = local.ttl
+  target    = "\"google-site-verification=w-hqEldYqh27TytmgxPWJbbmJJfFt7-qcRiCQjE8Q78\""
+}
+
 resource "ovh_domain_zone_record" "io_thinkinglabs_records" {
   count     = length(local.io_records)
   zone      = local.io_zone
