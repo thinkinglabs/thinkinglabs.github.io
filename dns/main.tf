@@ -19,6 +19,14 @@ locals {
     "dns109.ovh.net.",
     "ns109.ovh.net."
   ]
+
+  gsuite_mx_records = [
+    "1 aspmx.l.google.com.",
+    "3 alt1.aspmx.l.google.com.",
+    "3 alt2.aspmx.l.google.com.",
+    "5 aspmx2.googlemail.com.",
+    "5 aspmx3.googlemail.com."
+  ]
   
   io_records = [
     { subdomain = "_autodiscover._tcp", fieldtype = "SRV", target = "0 0 443 mailconfig.ovh.net." },
@@ -76,8 +84,16 @@ resource "ovh_domain_zone_record" "io_thinkinglabs_www" {
 resource "ovh_domain_zone_record" "io_gsuite_site_verification" {
   zone      = local.io_zone
   fieldtype = "TXT"
-  ttl       = local.ttl
+  ttl       = 60
   target    = "\"google-site-verification=w-hqEldYqh27TytmgxPWJbbmJJfFt7-qcRiCQjE8Q78\""
+}
+
+resource "ovh_domain_zone_record" "io_gsuite_mail" {
+  count     = length(local.gsuite_mx_records)
+  zone      = local.io_zone
+  fieldtype = "MX"
+  ttl       = 0
+  target    = local.gsuite_mx_records[count.index]
 }
 
 resource "ovh_domain_zone_record" "io_thinkinglabs_records" {
