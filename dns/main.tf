@@ -39,7 +39,6 @@ locals {
     { subdomain = "mail", fieldtype = "CNAME", target = "ssl0.ovh.net." },
     { subdomain = "pop3", fieldtype = "CNAME", target = "ssl0.ovh.net." },
     { subdomain = "smtp", fieldtype = "CNAME", target = "ssl0.ovh.net." },
-    { subdomain = "www", fieldtype = "TXT", target = "\"3|welcome\"" },
   ]
 
   be_records = [
