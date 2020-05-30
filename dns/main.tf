@@ -8,10 +8,12 @@ provider "ovh" {
 }
 
 locals {
-  # OVH does not accept a TTL lower than 60 !
-  ttl     = 86400
   io_zone = "thinkinglabs.io"
   be_zone    = "thinkinglabs.be"
+
+  # OVH does not accept a TTL lower than 60 !
+  ttl     = 86400
+  ovh_ip  = "213.186.33.5"
 
   ns_records = [
     "dns109.ovh.net.",
@@ -97,11 +99,10 @@ resource "ovh_domain_zone_record" "be_name_server" {
 }
 
 resource "ovh_domain_zone_record" "be_thinkinglabs" {
-  count     = length(var.website_ip)
   zone      = local.be_zone
   fieldtype = "A"
   ttl       = 0
-  target    = var.website_ip[count.index]
+  target    = local.ovh_ip
 }
 
 resource "ovh_domain_zone_record" "be_thinkinglabs_www" {
