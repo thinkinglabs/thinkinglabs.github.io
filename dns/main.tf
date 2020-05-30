@@ -88,6 +88,13 @@ resource "ovh_domain_zone_record" "io_gsuite_site_verification" {
   target    = "\"google-site-verification=w-hqEldYqh27TytmgxPWJbbmJJfFt7-qcRiCQjE8Q78\""
 }
 
+resource "ovh_domain_zone_record" "io_spf" {
+  zone      = local.io_zone
+  fieldtype = "SPF"
+  ttl       = 0
+  target    = "\"v=spf1 +all\""
+}
+
 resource "ovh_domain_zone_record" "io_gsuite_mail" {
   count     = length(local.gsuite_mx_records)
   zone      = local.io_zone
@@ -135,6 +142,12 @@ resource "ovh_domain_zone_redirection" "be_thinkinglabs" {
   target    = "http://thinkinglabs.io"
 }
 
+resource "ovh_domain_zone_record" "be_spf" {
+  zone      = local.be_zone
+  fieldtype = "SPF"
+  ttl       = 0
+  target    = "\"v=spf1 +all\""
+}
 
 resource "ovh_domain_zone_record" "be_thinkinglabs_records" {
   count     = length(local.be_records)
