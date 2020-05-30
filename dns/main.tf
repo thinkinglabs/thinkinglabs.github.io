@@ -27,12 +27,6 @@ locals {
     "5 aspmx2.googlemail.com.",
     "5 aspmx3.googlemail.com."
   ]
-  
-  io_records = [
-    { subdomain = "_autodiscover._tcp", fieldtype = "SRV", target = "0 0 443 mailconfig.ovh.net." },
-    { subdomain = "_imaps._tcp", fieldtype = "SRV", target = "0 0 993 ssl0.ovh.net." },
-    { subdomain = "_submission._tcp", fieldtype = "SRV", target = "0 0 465 ssl0.ovh.net." },
-  ]
 }
 
 resource "ovh_domain_zone_record" "io_name_server" {
@@ -79,15 +73,6 @@ resource "ovh_domain_zone_record" "io_gsuite_mail" {
   fieldtype = "MX"
   ttl       = 0
   target    = local.gsuite_mx_records[count.index]
-}
-
-resource "ovh_domain_zone_record" "io_thinkinglabs_records" {
-  count     = length(local.io_records)
-  zone      = local.io_zone
-  subdomain = local.io_records[count.index].subdomain
-  fieldtype = local.io_records[count.index].fieldtype
-  ttl       = 0
-  target    = local.io_records[count.index].target
 }
 
 resource "ovh_domain_zone_record" "be_name_server" {
