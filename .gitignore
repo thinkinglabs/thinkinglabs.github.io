@@ -3,6 +3,6 @@ _site/
 .jekyll-metadata
 
 # Terraform
-*.tfstate.backup
+*.tfstate.*backup
 .terraform
 tfplan
