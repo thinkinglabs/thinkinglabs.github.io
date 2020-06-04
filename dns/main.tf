@@ -12,9 +12,10 @@ locals {
   zone_be    = "thinkinglabs.be"
 
   # OVH does not accept a TTL lower than 60 !
-  ttl_mx = 28800
-  ttl_a  = 10800
-  ttl_ns = 86400
+  ttl_mx  = 28800
+  ttl_a   = 10800
+  ttl_ns  = 86400
+  ttl_spf = 3600
 
   ovh_ip  = "213.186.33.5"
 
@@ -30,6 +31,8 @@ locals {
     "5 aspmx2.googlemail.com.",
     "5 aspmx3.googlemail.com."
   ]
+
+  spf_record = "\"v=spf1 include:_spf.google.com ~all\""
 }
 
 resource "ovh_domain_zone_record" "io_name_server" {
@@ -66,8 +69,8 @@ resource "ovh_domain_zone_record" "io_gsuite_site_verification" {
 resource "ovh_domain_zone_record" "io_spf" {
   zone      = local.zone_io
   fieldtype = "SPF"
-  ttl       = 0
-  target    = "\"v=spf1 +all\""
+  ttl       = local.ttl_spf
+  target    = local.spf_record
 }
 
 resource "ovh_domain_zone_record" "io_gsuite_mail" {
