@@ -68,7 +68,7 @@ resource "ovh_domain_zone_record" "io_gsuite_site_verification" {
 
 resource "ovh_domain_zone_record" "io_spf" {
   zone      = local.zone_io
-  fieldtype = "SPF"
+  fieldtype = "TXT"
   ttl       = local.ttl_spf
   target    = local.spf_record
 }
