@@ -110,10 +110,3 @@ resource "ovh_domain_zone_redirection" "be_thinkinglabs" {
   type      = "visiblePermanent"
   target    = "http://thinkinglabs.io"
 }
-
-resource "ovh_domain_zone_record" "be_spf" {
-  zone      = local.zone_be
-  fieldtype = "SPF"
-  ttl       = 0
-  target    = "\"v=spf1 +all\""
-}
