@@ -16,21 +16,21 @@ variable "ipv4" {
 
 variable "aliases" {
   description = "List of CNAME aliases"
-  type        = list(object({
+  type = list(object({
     subdomain = string
     target    = string
   }))
-  default     = []
+  default = []
 }
 
 variable "redirections" {
   description = "List of HTTP redirections"
-  type        = list(object({
+  type = list(object({
     subdomain = string
     type      = string
     target    = string
   }))
-  default     = []
+  default = []
 }
 
 variable "google_site_verification" {
