@@ -20,4 +20,3 @@ bundle exec jekyll serve .
 
 ## TODO
 
-- Add DMARC
