@@ -20,5 +20,4 @@ bundle exec jekyll serve .
 
 ## TODO
 
-- Add DKIM: https://admin.google.com > Apps > GSuite > GMail > Authenticate
 - Add DMARC
