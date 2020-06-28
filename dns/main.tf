@@ -11,7 +11,7 @@ locals {
   zone_io = "thinkinglabs.io"
   zone_be = "thinkinglabs.be"
 
-  ovh_ip  = "213.186.33.5"
+  ovh_ip = "213.186.33.5"
 
   name_servers = [
     "dns109.ovh.net.",
@@ -35,14 +35,14 @@ module "io" {
   zone         = local.zone_io
   name_servers = local.name_servers
   ipv4         = var.website_ip
-  aliases      = [
-    {subdomain = "www", target = "thinkinglabs.github.io."}
+  aliases = [
+    { subdomain = "www", target = "thinkinglabs.github.io." }
   ]
 
   google_site_verification = "w-hqEldYqh27TytmgxPWJbbmJJfFt7-qcRiCQjE8Q78"
 
-  mx   = local.gsuite_mx_records
-  spf  = local.spf
+  mx  = local.gsuite_mx_records
+  spf = local.spf
 }
 
 module "be" {
@@ -51,10 +51,10 @@ module "be" {
   zone         = local.zone_be
   name_servers = local.name_servers
   ipv4         = [local.ovh_ip]
-  aliases      = [
-    {subdomain = "www", target = "${local.zone_be}."}
+  aliases = [
+    { subdomain = "www", target = "${local.zone_be}." }
   ]
   redirections = [
-    {subdomain = "", type = "visiblePermanent", target = "http://thinkinglabs.io"}
+    { subdomain = "", type = "visiblePermanent", target = "http://thinkinglabs.io" }
   ]
 }
