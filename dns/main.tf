@@ -9,7 +9,7 @@ provider "ovh" {
 
 locals {
   zone_io = "thinkinglabs.io"
-  zone_be    = "thinkinglabs.be"
+  zone_be = "thinkinglabs.be"
 
   # OVH does not accept a TTL lower than 60 !
   ttl_mx  = 28800
@@ -19,7 +19,7 @@ locals {
 
   ovh_ip  = "213.186.33.5"
 
-  ns_records = [
+  name_servers = [
     "dns109.ovh.net.",
     "ns109.ovh.net."
   ]
@@ -32,81 +32,35 @@ locals {
     "5 aspmx3.googlemail.com."
   ]
 
-  spf_record = "\"v=spf1 include:_spf.google.com ~all\""
+  spf = "\"v=spf1 include:_spf.google.com ~all\""
 }
 
-resource "ovh_domain_zone_record" "io_name_server" {
-  count     = length(local.ns_records)
-  zone      = local.zone_io
-  fieldtype = "NS"
-  ttl       = local.ttl_ns
-  target    = local.ns_records[count.index]
+module "io" {
+  source = "./modules/zone"
+
+  zone         = local.zone_io
+  name_servers = local.name_servers
+  ipv4         = var.website_ip
+  aliases      = [
+    {subdomain = "www", target = "thinkinglabs.github.io."}
+  ]
+
+  google_site_verification = "w-hqEldYqh27TytmgxPWJbbmJJfFt7-qcRiCQjE8Q78"
+
+  mx   = local.gsuite_mx_records
+  spf  = local.spf
 }
 
-resource "ovh_domain_zone_record" "io_thinkinglabs" {
-  count     = length(var.website_ip)
-  zone      = local.zone_io
-  fieldtype = "A"
-  ttl       = local.ttl_a
-  target    = var.website_ip[count.index]
-}
+module "be" {
+  source = "./modules/zone"
 
-resource "ovh_domain_zone_record" "io_thinkinglabs_www" {
-  zone      = local.zone_io
-  subdomain = "www"
-  fieldtype = "CNAME"
-  ttl       = local.ttl_a
-  target    = "thinkinglabs.github.io."
-}
-
-resource "ovh_domain_zone_record" "io_gsuite_site_verification" {
-  zone      = local.zone_io
-  fieldtype = "TXT"
-  ttl       = local.ttl_a
-  target    = "\"google-site-verification=w-hqEldYqh27TytmgxPWJbbmJJfFt7-qcRiCQjE8Q78\""
-}
-
-resource "ovh_domain_zone_record" "io_spf" {
-  zone      = local.zone_io
-  fieldtype = "TXT"
-  ttl       = local.ttl_spf
-  target    = local.spf_record
-}
-
-resource "ovh_domain_zone_record" "io_gsuite_mail" {
-  count     = length(local.gsuite_mx_records)
-  zone      = local.zone_io
-  fieldtype = "MX"
-  ttl       = local.ttl_mx
-  target    = local.gsuite_mx_records[count.index]
-}
-
-resource "ovh_domain_zone_record" "be_name_server" {
-  count     = length(local.ns_records)
-  zone      = local.zone_be
-  fieldtype = "NS"
-  ttl       = local.ttl_ns
-  target    = local.ns_records[count.index]
-}
-
-resource "ovh_domain_zone_record" "be_thinkinglabs" {
-  zone      = local.zone_be
-  fieldtype = "A"
-  ttl       = local.ttl_a
-  target    = local.ovh_ip
-}
-
-resource "ovh_domain_zone_record" "be_thinkinglabs_www" {
-  zone      = local.zone_be
-  subdomain = "www"
-  fieldtype = "CNAME"
-  ttl       = local.ttl_a
-  target    = "${local.zone_be}."
-}
-
-resource "ovh_domain_zone_redirection" "be_thinkinglabs" {
-  zone      = local.zone_be
-  subdomain = ""
-  type      = "visiblePermanent"
-  target    = "http://thinkinglabs.io"
+  zone         = local.zone_be
+  name_servers = local.name_servers
+  ipv4         = [local.ovh_ip]
+  aliases      = [
+    {subdomain = "www", target = "${local.zone_be}."}
+  ]
+  redirections = [
+    {subdomain = "", type = "visiblePermanent", target = "http://thinkinglabs.io"}
+  ]
 }
