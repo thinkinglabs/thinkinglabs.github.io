@@ -2,8 +2,9 @@
 locals {
   has_google_site_verification = var.google_site_verification == null ? 0 : 1
 
-  has_spf  = var.spf == null ? 0 : 1
-  has_dkim = var.dkim == null ? 0 : 1
+  has_spf   = var.spf == null ? 0 : 1
+  has_dkim  = var.dkim == null ? 0 : 1
+  has_dmarc = var.dmarc == null ? 0 : 1
 
   # OVH does not accept a TTL lower than 60 !
   ttl_ns  = 86400
@@ -76,4 +77,13 @@ resource "ovh_domain_zone_record" "dkim" {
   fieldtype = "TXT"
   ttl       = local.ttl_spf
   target    = var.dkim
+}
+
+resource "ovh_domain_zone_record" "dmarc" {
+  count     = local.has_dmarc
+  zone      = var.zone
+  subdomain = "_dmarc"
+  fieldtype = "TXT"
+  ttl       = local.ttl_spf
+  target    = var.dmarc
 }

@@ -56,3 +56,9 @@ variable "dkim" {
   type        = string
   default     = null
 }
+
+variable "dmarc" {
+  description = "DMARC record"
+  type        = string
+  default     = null
+}

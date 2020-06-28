@@ -26,8 +26,9 @@ locals {
     "5 aspmx3.googlemail.com."
   ]
 
-  spf  = "\"v=spf1 include:_spf.google.com ~all\""
-  dkim = "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCkECp1DSjE8YViTQ8dmnooEVXzBb8QZaOKUXJ/0T12EYxE14Wms+vtiOKsS+Ps1DszzFLOgm80l8gROzQKy5McEJ5q/01QQcBbgSFlu6IQ2D5UFbky2PFD0Vu9uzRxQX25QZaAIzd7CsuT/TDJrr8uMWReWKjz/mMAwoevxrzTCwIDAQAB"
+  spf   = "\"v=spf1 include:_spf.google.com ~all\""
+  dkim  = "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCkECp1DSjE8YViTQ8dmnooEVXzBb8QZaOKUXJ/0T12EYxE14Wms+vtiOKsS+Ps1DszzFLOgm80l8gROzQKy5McEJ5q/01QQcBbgSFlu6IQ2D5UFbky2PFD0Vu9uzRxQX25QZaAIzd7CsuT/TDJrr8uMWReWKjz/mMAwoevxrzTCwIDAQAB"
+  dmarc = "v=DMARC1; p=none; rua=mailto:admin@wayofthinking.be"
 }
 
 module "io" {
@@ -42,9 +43,10 @@ module "io" {
 
   google_site_verification = "w-hqEldYqh27TytmgxPWJbbmJJfFt7-qcRiCQjE8Q78"
 
-  mx   = local.gsuite_mx_records
-  spf  = local.spf
-  dkim = local.dkim
+  mx    = local.gsuite_mx_records
+  spf   = local.spf
+  dkim  = local.dkim
+  dmarc = local.dmarc
 }
 
 module "be" {
@@ -59,4 +61,6 @@ module "be" {
   redirections = [
     { subdomain = "", type = "visiblePermanent", target = "http://thinkinglabs.io" }
   ]
+
+  dmarc = local.dmarc
 }
