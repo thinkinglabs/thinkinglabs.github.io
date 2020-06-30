@@ -17,15 +17,15 @@ youtube:
   data_id: KQSLXgp-aP0
 new_layout: true
 ---
-This is the story of 15 teams and one monolithic application going from bi-annual releases to fortnightly releases in 4 months time achieving a state of Continuous Delivery.
 
-The reason for that move: the cost and time for testing quality into the software product, stabilising and releasing the product during each bi-annual release were skyrocketing.
+15 teams, 1 shared monolith, 1 release every 6 months, and product demand for 1 release every 2 weeks. How do you know where to start with Continuous Delivery, when you’re surrounded by technology and organisational challenges?
 
-Continuous Delivery involves a long list of technology and organisational changes that you have to apply to the unique circumstances of your organisation. Where do you start?
+This is the journey of 15 teams and their 1 shared monolith, at a federal Belgian agency.  They increased their throughput from bi-annual releases to fortnightly releases in under 4 months, achieving a state of Continuous Delivery.
 
-This is where The Improvement Kata, Value Stream Mapping and Theory of Constraints will help in identifying which change to apply first. However, because of the short time frame, it soon became an example of fear conversations.
+The cost and time for testing quality into the software product, stabilising and releasing the product during each bi-annual release were skyrocketing. The demand for Continuous Delivery was there, but the circumstances made it very difficult.
 
-After this session, you’ll understand how The Improvement Kata, Value Stream Mapping and Theory of Constraints can kick-start a Continuous Delivery program and mitigate fear.
+I’ll cover how we used the Improvement Kata, Value Stream Mapping, and the Theory Of Constraints to choose which changes to apply first, and kickstart the organisational changes we needed to improve quality and drive down lead times.
 
-Folks who should attend are anyone involved near and far in designing, creating, testing, deploying and releasing a software product.
+If you thought Continuous Delivery was just for the happy few having trendy microservices, think again!
+
 
