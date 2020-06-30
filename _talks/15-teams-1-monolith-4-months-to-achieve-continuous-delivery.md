@@ -7,9 +7,14 @@ conferences:
     date: 2019-09-06
   - name: XPDays Benelux 2019
     date: 2019-11-28
+  - name: ScanAgile 2020
+    date: 2020-05-04
+    video_link: https://www.youtube.com/watch?v=KQSLXgp-aP0&list=PLHxNOhe276_4fELp-u0TPjRNs9s9Dzqm2
 speakerdeck:
   data_id: a3cf8b65407147fc9d8875ce9c1a2dab
   download_link: https://speakerd.s3.amazonaws.com/presentations/a3cf8b65407147fc9d8875ce9c1a2dab/15_teams__1_monolith_and_4_months_to_achieve_Continuous_Delivery.pdf
+youtube:
+  data_id: KQSLXgp-aP0
 new_layout: true
 ---
 This is the story of 15 teams and one monolithic application going from bi-annual releases to fortnightly releases in 4 months time achieving a state of Continuous Delivery.
