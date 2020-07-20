@@ -19,4 +19,3 @@ bundle exec jekyll serve .
 ```
 
 ## TODO
-
