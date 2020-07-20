@@ -223,9 +223,6 @@ i { color: #9a9a9a; margin: 0 3px}
     Custom
 ====================================== */
 
-p.uppercase { text-transform:uppercase !important;}
-p.uppercase a { text-decoration:underline !important;}
-p.uppercase a:hover { text-decoration: none;}
 .line-break { display:block !important;}
 .z-index-1 {z-index:1 !important;}
 .z-index-0 {z-index:0 !important;}
