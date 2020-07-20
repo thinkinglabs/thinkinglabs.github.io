@@ -60,9 +60,6 @@ h6 { font-family: 'Open Sans', sans-serif; letter-spacing: 1px; font-size: 13px;
 /* section title */
 .section-title { text-transform: uppercase; font-weight: 700; font-size: 20px; letter-spacing: 2px; padding: 0 0 30px 0;}
 .section-subtitle { text-transform: uppercase; font-weight: 700; font-size: 16px; letter-spacing: 2px; padding: 0 0 30px 0;}
-h1.page-title { margin:95px auto 0; width: 100%; }
-.highlight-title span { font-weight:600}
-.work-process-title{font-size: 12px; letter-spacing: 2px; font-weight: 600; text-transform: uppercase; color: #000; }
 
 /* different text size */
 .text-small { font-size:11px !important; line-height:15px !important;}
