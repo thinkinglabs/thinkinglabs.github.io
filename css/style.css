@@ -84,15 +84,6 @@ h6 { font-family: 'Open Sans', sans-serif; letter-spacing: 1px; font-size: 13px;
 /* letter spacing */
 .no-letter-spacing { letter-spacing: 0px !important}
 .letter-spacing-1 { letter-spacing:1px !important}
-.letter-spacing-2 { letter-spacing:2px !important}
-.letter-spacing-3 { letter-spacing:3px !important}
-.letter-spacing-4 { letter-spacing:4px !important}
-.letter-spacing-5 { letter-spacing:5px !important}
-.letter-spacing-6 { letter-spacing:6px !important}
-.letter-spacing-7 { letter-spacing:7px !important}
-.letter-spacing-8 { letter-spacing:8px !important}
-.letter-spacing-9 { letter-spacing:9px !important}
-.letter-spacing-10 { letter-spacing:10px !important}
 
 /* font weight */
 .font-weight-100 { font-weight:100 !important}
