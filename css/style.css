@@ -220,12 +220,6 @@ i { color: #9a9a9a; margin: 0 3px}
 .parallax-gray-bg { background: rgba(246,246,246,1)}
 
 /* ===================================
-    Custom
-====================================== */
-
-.no-transition * { transition-timing-function: none; -moz-transition-timing-function: none; -webkit-transition-timing-function: none; -o-transition-timing-function: none; transition-duration: 0s; -moz-transition-duration: 0s; -webkit-transition-duration: 0s; -o-transition-duration: 0s; }
-
-/* ===================================
     Border
 ====================================== */
 
