@@ -223,23 +223,6 @@ i { color: #9a9a9a; margin: 0 3px}
     Custom
 ====================================== */
 
-/* width */
-.width { display: inline-block; position: relative; width: 90%; }
-.width-20 { width:20% !important;}
-.width-30 { width:30% !important;}
-.width-40 { width:40% !important;}
-.width-50 { width:50% !important;}
-.width-60 { width:60% !important;}
-.width-70 { width:70% !important;}
-.width-80 { width:80% !important;}
-.width-90 { width:90% !important;}
-.width-100 { width:100% !important;}
-.width-auto { width: auto !important}
-
-/* height */
-.height-100 { height: 100% !important}
-.height-auto { height:auto !important}
-
 .clear-both{ clear:both}
 .roundedimage { border-radius: 100%}
 .vertical-align-middle { vertical-align: middle !important;}
