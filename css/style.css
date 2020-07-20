@@ -220,11 +220,6 @@ i { color: #9a9a9a; margin: 0 3px}
     Custom
 ====================================== */
 
-/* float */
-.f-left { float:left !important}
-.f-right{ float:right !important}
-.no-float { float:none !important;}
-
 /* other col size */
 .col-large {width:90%;}
 .col-medium {width:85%;}
