@@ -223,7 +223,6 @@ i { color: #9a9a9a; margin: 0 3px}
     Custom
 ====================================== */
 
-.vertical-align-middle { vertical-align: middle !important;}
 .no-box-shadow { box-shadow:none !important}
 p.uppercase { text-transform:uppercase !important;}
 p.uppercase a { text-decoration:underline !important;}
