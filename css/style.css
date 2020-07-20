@@ -149,6 +149,9 @@ h6 { font-family: 'Open Sans', sans-serif; letter-spacing: 1px; font-size: 13px;
 .no-padding-bottom { padding-bottom:0 !important}
 .section-padding-inner{ padding: 140px 0}
 
+/* position */
+.position-relative{ position: relative !important; z-index: 5 }
+
 /* ===================================
     Icon
 ====================================== */
@@ -219,13 +222,6 @@ i { color: #9a9a9a; margin: 0 3px}
 /* ===================================
     Custom
 ====================================== */
-
-/* position */
-.position-relative{ position: relative !important; z-index: 5 }
-.position-absolute {position: absolute !important;}
-.position-right { right:0 !important; }
-.position-left { left:0 !important; }
-.position-top { top:0 !important; }
 
 /* width */
 .width { display: inline-block; position: relative; width: 90%; }
