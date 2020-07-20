@@ -15,11 +15,6 @@
   margin-top: 0;
 }
 
-.row-no-margin {
-  margin-left: 0;
-  margin-right: 0;
-}
-
 .talk-content ul {
   list-style-position: inside;
   list-style-type: disc;
