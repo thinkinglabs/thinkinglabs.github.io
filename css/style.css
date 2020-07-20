@@ -223,8 +223,6 @@ i { color: #9a9a9a; margin: 0 3px}
     Custom
 ====================================== */
 
-.z-index-1 {z-index:1 !important;}
-.z-index-0 {z-index:0 !important;}
 .no-transition * { transition-timing-function: none; -moz-transition-timing-function: none; -webkit-transition-timing-function: none; -o-transition-timing-function: none; transition-duration: 0s; -moz-transition-duration: 0s; -webkit-transition-duration: 0s; -o-transition-duration: 0s; }
 
 /* ===================================
