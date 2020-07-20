@@ -220,12 +220,6 @@ i { color: #9a9a9a; margin: 0 3px}
     Custom
 ====================================== */
 
-/* other col size */
-.col-large {width:90%;}
-.col-medium {width:85%;}
-.col-small{ width:75%;}
-.col-extra-small{ width:70%; }
-
 /* display */
 .display-block { display: block !important}
 .overflow-hidden{ overflow: hidden !important}
