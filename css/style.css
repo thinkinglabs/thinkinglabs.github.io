@@ -48,9 +48,6 @@ hr { border-top-color: #ffb200;}
     Typography
 ====================================== */
 
-/* font family */
-.main-font {font-family: 'Open Sans', sans-serif !important;}
-
 /* heading */
 h1, h2, h3, h4, h5 { text-transform: uppercase; margin:0; padding:0; color: #000; }
 h1 { font-size:32px; font-weight:700; line-height: 45px}
