@@ -220,14 +220,6 @@ i { color: #9a9a9a; margin: 0 3px}
     Custom
 ====================================== */
 
-/* display */
-.display-block { display: block !important}
-.overflow-hidden{ overflow: hidden !important}
-.overflow-hidden-mobile{ position:fixed !important; overflow: hidden !important}
-.display-inline-block { display: inline-block !important}
-.display-inline { display: inline !important}
-.display-none { display: none !important}
-
 /* position */
 .position-relative{ position: relative !important; z-index: 5 }
 .position-absolute {position: absolute !important;}
