@@ -60,8 +60,6 @@ h6 { font-family: 'Open Sans', sans-serif; letter-spacing: 1px; font-size: 13px;
 /* section title */
 .section-title{ text-transform: uppercase; font-weight: 700; font-size: 20px; letter-spacing: 2px; padding: 0 0 30px 0;}
 .section-subtitle{ text-transform: uppercase; font-weight: 700; font-size: 16px; letter-spacing: 2px; padding: 0 0 30px 0;}
-.title-gray{ border:1px solid #b5b5b5; color:#b5b5b5}
-.title-white{ border:1px solid #ffffff; color:#ffffff}
 h1.big { color:#ffffff; font-size:65px; font-weight:600; line-height:76px; margin-bottom:0px;}
 h1.big span { font-weight:300;}
 .banner-content { font-size:18px; line-height:28px;}
