@@ -220,29 +220,6 @@ i { color: #9a9a9a; margin: 0 3px}
 .parallax-gray-bg { background: rgba(246,246,246,1)}
 
 /* ===================================
-    Border
-====================================== */
-
-.white-round-border { border-radius: 50%; border: 1px solid #fff;}
-.border-black{ border:1px solid #000}
-.border-thick{ border-width:2px !important }
-.border-white { border:1px solid #FFF}
-.border-top { border-top: 1px solid #e5e5e5; }
-.border { border: 1px solid #e5e5e5;  }
-.border-right { border-right: 1px solid #e5e5e5; }
-.border-bottom { border-bottom: 1px solid #e5e5e5; }
-.border-left { border-left: 4px solid #fff; }
-.border-color-black { border-color: #000 !important}
-.border-color-white { border-color: #fff !important}
-.border-gray { border-color:#d7d7d7 !important}
-.border-color-orange { border-color:#ff513b !important}
-.no-border { border:none !important}
-.border-top-light { border-top: 1px solid rgba(0, 0, 0, 0.1);}
-.border-bottom-light { border-bottom: 1px solid rgba(0, 0, 0, 0.1);}
-.border-transperent-light { border-color:rgba(255,255,255,.25) !important}
-.no-border-round {border-radius:0 !important}
-
-/* ===================================
     Scroll to top
 ====================================== */
 
