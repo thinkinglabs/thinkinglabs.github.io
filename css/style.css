@@ -255,17 +255,11 @@ nav .container{ display: table-cell; vertical-align: middle; height: 75px; posit
 
 section { padding: 100px 0;}
 
+/* quotes section */
 .bubbles { background: url("../images/bgd-bubbles.png") no-repeat left 50%;}
 
 /* experience section */
 .client { padding: 5px 10px; background-color: #fff; margin: 0 5px 10px 5px; display: inline-block;}
-
-/* features section */
-.features-section { margin-bottom:80px; float:left}
-.features-section .col-xs-3 { width:20%}
-.features-section .col-xs-9 { width:75%}
-.features-section p { margin: 0 0 15px}
-.features-section .separator-line{ margin-left:0; margin-right:0}
 
 /* services section */
 .services-main{ padding: 7%; background-color: rgba(255,255,255,0.7)}
