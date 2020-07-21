@@ -264,9 +264,6 @@ section { padding: 100px 0;}
 /* testimonial section */
 .testimonial p{ font-size:14px; margin:50px 0 40px; line-height:24px}
 
-.tab-content > .tab-pane .top-icon { display:block;}
-.tab-content > .tab-pane .top-icon i { color: #5bcf21; font-size:70px;}
-
 /* new project */
 #new-project h5 { font-size: 14px; font-weight: 400;}
 
