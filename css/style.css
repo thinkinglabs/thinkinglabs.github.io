@@ -218,8 +218,6 @@ i { color: #9a9a9a; margin: 0 3px}
     Scroll to top
 ====================================== */
 
-#scroll_to_top { cursor: pointer; }
-#scroll_to_top:hover { opacity: 0.75; }
 .scrollToTop { display: none; font-weight: bold; height: auto; padding: 0; position: fixed; right: 45px; text-align: center; text-decoration: none; top: 91%; width: auto; background-color: #ffb200; z-index: 555; border-radius:2px; }
 .scrollToTop i { font-size: 18px; margin: 0 6px; color: #fff; }
 .scrollToTop:hover { opacity: 0.5; }
