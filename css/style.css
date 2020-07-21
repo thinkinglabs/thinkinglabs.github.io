@@ -215,15 +215,6 @@ i { color: #9a9a9a; margin: 0 3px}
 .bg-light-gray { background-color: #f8f7f7 !important; }
 
 /* ===================================
-    Scroll to top
-====================================== */
-
-.scrollToTop { display: none; font-weight: bold; height: auto; padding: 0; position: fixed; right: 45px; text-align: center; text-decoration: none; top: 91%; width: auto; background-color: #ffb200; z-index: 555; border-radius:2px; }
-.scrollToTop i { font-size: 18px; margin: 0 6px; color: #fff; }
-.scrollToTop:hover { opacity: 0.5; }
-.scrollToTop:hover i { position: relative; }
-
-/* ===================================
     Navigation
 ====================================== */
 
@@ -248,6 +239,23 @@ nav .container{ display: table-cell; vertical-align: middle; height: 75px; posit
 
 .sticky-nav.nav-border-bottom { border-bottom: 1px solid rgba(0,0,0,0)}
 .shrink-nav.nav-border-bottom { border-bottom: 1px solid rgba(0,0,0,0.1)}
+
+/* ===================================
+    Scroll down
+====================================== */
+
+.scroll-down{ bottom: 50px; position: absolute; text-align: center; width: 100%; z-index: 10}
+.scroll-down a i { background: #fff; border-radius: 2px; font-size: 17px; padding: 2px 6px; color: #000; }
+.scroll-down a i:hover { background:#000; color: #fff  }
+
+/* ===================================
+    Scroll to top
+====================================== */
+
+.scrollToTop { display: none; font-weight: bold; height: auto; padding: 0; position: fixed; right: 45px; text-align: center; text-decoration: none; top: 91%; width: auto; background-color: #ffb200; z-index: 555; border-radius:2px; }
+.scrollToTop i { font-size: 18px; margin: 0 6px; color: #fff; }
+.scrollToTop:hover { opacity: 0.5; }
+.scrollToTop:hover i { position: relative; }
 
 /* ===================================
     Section
@@ -288,15 +296,6 @@ p.article-meta {
 .copyright { font-size: 11px; text-transform:uppercase; color: #888888 }
 .footer-logo img { max-width: 100px;}
 .footer-bottom { position: relative; top:1px}
-
-/* scroll down */
-.scroll-down{ bottom: 50px; position: absolute; text-align: center; width: 100%; z-index: 10}
-.scroll-down a i { background: #fff; border-radius: 2px; font-size: 17px; padding: 2px 6px; color: #000; }
-.scroll-down a i:hover { background:#000; color: #fff  }
-.scroll-to-down { cursor:url("../images/arrow-down.png"), pointer;}
-.scroll-to-down-white { cursor:url("../images/arrow-down-white.png"), pointer;}
-.background-slider-text { position: absolute; width: 100%}
-#owl-demo-background .owl-item  { cursor: default !important}
 
 /* ===================================
     Slider and parallax typography
