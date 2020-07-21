@@ -264,10 +264,7 @@ section { padding: 100px 0;}
 /* testimonial section */
 .testimonial p{ font-size:14px; margin:50px 0 40px; line-height:24px}
 
-/* new project */
-#new-project h5 { font-size: 14px; font-weight: 400;}
-
-/* TODO move to seperate css style sheet ???
+/* TODO move to separate css style sheet ???
    Rename presentations to talks or change the navigation and section title ???
 */
 /*  presentations */
