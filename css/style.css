@@ -261,12 +261,6 @@ section { padding: 100px 0;}
 /* experience section */
 .client { padding: 5px 10px; background-color: #fff; margin: 0 5px 10px 5px; display: inline-block;}
 
-/* services section */
-.services-main{ padding: 7%; background-color: rgba(255,255,255,0.7)}
-.services-sub { padding: 100px 0 0 0; float: left}
-.services-main i { margin-bottom: 10%}
-.services-sub-section { padding-right:45px;}
-
 /* testimonial section */
 .testimonial p{ font-size:14px; margin:50px 0 40px; line-height:24px}
 
