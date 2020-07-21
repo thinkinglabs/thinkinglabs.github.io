@@ -285,22 +285,6 @@ p.article-meta {
     Footer
 ====================================== */
 
-footer { clear:both; background: #f4f4f4; font-size: 11px;}
-footer .bg-mid-gray { background: #d5d5d5}
-footer .footer-top {border-top:1px solid #e5e5e5 }
-footer h5 { margin-bottom: 20px;}
-footer .footer-middle { padding-top:80px; padding-bottom: 45px;}
-footer .onepage-footer-middle { padding-top:55px; padding-bottom: 45px;}
-footer ul li { padding: 1px 0}
-footer ul li a { color: #626262; font-size: 11px; text-transform: uppercase; letter-spacing: 1px}
-footer ul li a:hover { color: #000}
-footer ul.list-inline li a { color: #000; font-weight: 600}
-footer ul.list-inline li:first-child {padding-left: 6px}
-.footer-social i {  font-size: 22px;}
-.footer-social a { margin: 0 25px;}
-.footer-social a:last-child {margin-right: 0}
-.footer-social a i {color: #000; }
-.footer-social a:hover i { color: #868686}
 .copyright { font-size: 11px; text-transform:uppercase; color: #888888 }
 .footer-logo img { max-width: 100px;}
 .footer-bottom { position: relative; top:1px}
