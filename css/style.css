@@ -264,10 +264,6 @@ section { padding: 100px 0;}
 /* testimonial section */
 .testimonial p{ font-size:14px; margin:50px 0 40px; line-height:24px}
 
-.testimonial-style2 p{ font-size:13px; margin:30px 0 20px; line-height:22px; color: #828282}
-.testimonial-style2 .name{ font-size:11px; display:block; width:100%; font-weight:600; text-transform: uppercase; letter-spacing: 2px; color: #828282}
-.testimonial-style2 img { border-radius: 50%; max-width: 120px}
-
 .tab-content > .tab-pane .top-icon { display:block;}
 .tab-content > .tab-pane .top-icon i { color: #5bcf21; font-size:70px;}
 
