@@ -264,10 +264,8 @@ section { padding: 100px 0;}
 /* testimonial section */
 .testimonial p{ font-size:14px; margin:50px 0 40px; line-height:24px}
 
-/* TODO move to separate css style sheet ???
-   Rename presentations to talks or change the navigation and section title ???
-*/
-/*  presentations */
+/*  presentations section */
+/* TODO Rename presentation to talk or change the navigation and section title */
 .presentation h3 {
   height: 25px;
 }
