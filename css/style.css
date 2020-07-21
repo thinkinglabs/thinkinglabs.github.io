@@ -209,15 +209,10 @@ i { color: #9a9a9a; margin: 0 3px}
 .bg-yellow { background: #ffb200 !important; }
 .bg-dark-gray { background: #252525 !important; }
 .bg-mid-gray { background: #d4d4d4 !important; }
-.bg-black { background: #000000 !important; }
 .bg-gray { background-color: #f6f6f6 !important;}
-.bg-transparent { background:transparent !important}
 .bg-light-yellow {background:#f8f7f5 !important}
 .bg-light-blue { background:#67DDE0 !important;}
-.dark-section { color: #939393 !important}
 .bg-light-gray { background-color: #f8f7f7 !important; }
-.bg-slider { background: rgba(27, 22, 28, 0.9)}
-.parallax-gray-bg { background: rgba(246,246,246,1)}
 
 /* ===================================
     Scroll to top
