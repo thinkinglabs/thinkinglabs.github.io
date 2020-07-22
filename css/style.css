@@ -319,16 +319,6 @@ p.article-meta {
     One page
 ====================================== */
 
-.tab-portfolio img { transition: all .3s ease; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; opacity:1}
-.tab-portfolio:hover img { -ms-transform: scale(1.2,1.2); -webkit-transform: scale(1.2,1.2);  transform: scale(1.2,1.2); transition: all .3s ease; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; opacity:0.5}
-.tab-portfolio .portfolio-images { width:auto; overflow:hidden; background-color:#000; position:relative;}
-.tab-portfolio .view { left: 0; margin: 0 auto; position: absolute; right: 0; text-align: center; top:-47px; transition: all .3s ease; -webkit-transition: all .3s ease; -moz-transition: all .3s ease;}
-.tab-portfolio:hover .view { top:50%; margin-top:-25px;}
-.tab-portfolio .portfolio-details { padding:20px 20px; text-align:left; border-bottom:1px solid #d4d4d4;}
-.tab-portfolio .portfolio-details span { text-transform:uppercase;}
-.portfolio-right { float: right; margin-top:-10px;}
-.tab-portfolio .portfolio-details h3 { margin:0 0 2px 0;}
-.tab-portfolio .portfolio-details .portfolio-right .fa { color:#000000; margin:0 2px 0 0;}
 #contact-us textarea { min-height: 102px}
 #contact-us .btn { margin:0}
 .required { font-size:11px; display:block; text-transform: uppercase; letter-spacing: 1px}
