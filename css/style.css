@@ -313,16 +313,7 @@ p.article-meta {
     Parallax
 ====================================== */
 
-.overlay{ position: absolute; height: 100%; width: 100%; opacity: 0.2; z-index: 1; top: 0px; }
-.parallax-fix{ position: relative; background-size: cover !important; overflow: hidden; background-position: left center; background-repeat: no-repeat !important; transition-duration: .2s; -moz-transition-duration: .2s; -webkit-transition-duration: .2s; -o-transition-duration: .2s; transition-timing-function: ease-in; -moz-transition-timing-function: ease-in; -webkit-transition-timing-function: ease-in; -o-transition-timing-function: ease-in; background-attachment: fixed !important }
-.parallax-fix .row{ position: relative; z-index: 2; }
-.parallax-section-main { /* min-height: 700px; */ }
-.parallax-sub-title{  display: block; font-size: 22px; font-weight: 600; letter-spacing: 4px; line-height: 30px; text-transform: uppercase; }
-.fix-background{ position: relative; background-size: cover !important; overflow: hidden; background-position: center center; background-repeat: no-repeat !important; background-attachment: fixed !important}
-.cover-background{ position: relative; background-size: cover !important; overflow: hidden; background-position: center center; background-repeat: no-repeat !important;}
-.background-size-inherit {background-size: inherit !important}
-.blog-blockquote { padding:100px}
-.background-attachment-inherit {background-attachment: inherit !important}
+.parallax-fix { position: relative; background-size: cover !important; overflow: hidden; background-position: left center; background-repeat: no-repeat !important; transition-duration: .2s; -moz-transition-duration: .2s; -webkit-transition-duration: .2s; -o-transition-duration: .2s; transition-timing-function: ease-in; -moz-transition-timing-function: ease-in; -webkit-transition-timing-function: ease-in; -o-transition-timing-function: ease-in; background-attachment: fixed !important }
 
 /* ===================================
     One page
