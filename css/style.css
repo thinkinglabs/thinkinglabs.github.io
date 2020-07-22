@@ -319,16 +319,6 @@ p.article-meta {
 .parallax-fix { position: relative; background-size: cover !important; overflow: hidden; background-position: left center; background-repeat: no-repeat !important; transition-duration: .2s; -moz-transition-duration: .2s; -webkit-transition-duration: .2s; -o-transition-duration: .2s; transition-timing-function: ease-in; -moz-transition-timing-function: ease-in; -webkit-transition-timing-function: ease-in; -o-transition-timing-function: ease-in; background-attachment: fixed !important }
 
 /* ===================================
-    Bootstrap slider
-====================================== */
-
-.standard-slider { height: 60% !important; }
-.standard-with-slider { height: 73% !important; }
-.standard-with-slider .carousel-control.right,
-.standard-with-slider .carousel-control.left { top: 42%; }
-.list-icon i { margin-right: 3%; }
-
-/* ===================================
     Full width image
 ====================================== */
 
