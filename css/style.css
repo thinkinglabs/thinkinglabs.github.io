@@ -319,7 +319,6 @@ p.article-meta {
     One page
 ====================================== */
 
-.required { font-size:11px; display:block; text-transform: uppercase; letter-spacing: 1px}
 .service-year {font-weight: 300; font-size: 20px; text-transform: uppercase; letter-spacing: 5px;}
 .service-year strong { font-weight: 500}
 .clients-slider li { display: inline-block; margin: 0 4%; width: 15%; }
