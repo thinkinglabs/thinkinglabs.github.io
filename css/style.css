@@ -319,16 +319,6 @@ p.article-meta {
 .parallax-fix { position: relative; background-size: cover !important; overflow: hidden; background-position: left center; background-repeat: no-repeat !important; transition-duration: .2s; -moz-transition-duration: .2s; -webkit-transition-duration: .2s; -o-transition-duration: .2s; transition-timing-function: ease-in; -moz-transition-timing-function: ease-in; -webkit-transition-timing-function: ease-in; -o-transition-timing-function: ease-in; background-attachment: fixed !important }
 
 /* ===================================
-    Intro
-====================================== */
-
-.tp-banner-container-black { background: #000000;}
-.intro-icon-text { font-size: 16px; letter-spacing:4px; color: #fff; line-height: 20px;}
-.intro-icon i { font-size: 40px; color: #ffffff;}
-.work-img {background: #000000;}
-.work-img:hover a { opacity: 0.5;}
-
-/* ===================================
     Elements
 ====================================== */
 
