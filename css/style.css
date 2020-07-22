@@ -300,23 +300,14 @@ p.article-meta {
     Slider and parallax typography
 ====================================== */
 
+.slider-typography { text-align: center; width: 100%; height: 100%; position: absolute; z-index: 1; right: 0; left: 0; }
+
 .slider-text-middle-main { display: table; height: 100%; width: 100% }
-.slider-text-bottom { display: table-cell; vertical-align: bottom; }
-.slider-text-top { display: table-cell; vertical-align: top; }
 .slider-text-middle { display: table-cell; vertical-align: middle; }
 .slider-text-middle1 { padding: 0 15px;}
-.slider-typography { text-align: center; width: 100%; height: 100%; position: absolute; z-index: 1; right: 0; left: 0; }
-.slider-title-big1 {font-size: 14px; text-transform: uppercase; letter-spacing: 1px }
-.slider-text-middle1 .separator-line { margin: 3% 0 0 0}
-.slider-text-middle2 { padding:0 15px}
-.slider-subtitle3 {color: #ffffff; font-size: 24px; font-weight: 600; text-transform: uppercase; letter-spacing: 4px; }
-.slider-text-middle3 { padding:0 15px}
+
 .slider-title-big3 {color: #ffffff; display: inline-block; font-size: 56px; line-height: 90px; font-weight: 600; padding: 0; letter-spacing: 3px;}
-.slider-text-middle4 { padding: 0 15px;}
-.slider-subtitle4 {font-size: 14px; font-weight: 100; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 20px; display: block }
-.slider-text-middle5 { padding: 0 15px;}
-.slider-subtitle5 {font-size: 22px; font-weight: 600; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 50px; display: block; line-height: 30px }
-.slider-title-big6{ font-size:110px;}
+.slider-subtitle3 {color: #ffffff; font-size: 24px; font-weight: 600; text-transform: uppercase; letter-spacing: 4px; }
 
 /* ===================================
     Parallax
