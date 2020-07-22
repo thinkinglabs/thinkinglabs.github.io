@@ -263,6 +263,9 @@ nav .container{ display: table-cell; vertical-align: middle; height: 75px; posit
 
 section { padding: 100px 0;}
 
+/* social media section */
+.clients-slider li { display: inline-block; margin: 0 4%; width: 15%; }
+
 /* quotes section */
 .bubbles { background: url("../images/bgd-bubbles.png") no-repeat left 50%;}
 
@@ -314,12 +317,6 @@ p.article-meta {
 ====================================== */
 
 .parallax-fix { position: relative; background-size: cover !important; overflow: hidden; background-position: left center; background-repeat: no-repeat !important; transition-duration: .2s; -moz-transition-duration: .2s; -webkit-transition-duration: .2s; -o-transition-duration: .2s; transition-timing-function: ease-in; -moz-transition-timing-function: ease-in; -webkit-transition-timing-function: ease-in; -o-transition-timing-function: ease-in; background-attachment: fixed !important }
-
-/* ===================================
-    One page
-====================================== */
-
-.clients-slider li { display: inline-block; margin: 0 4%; width: 15%; }
 
 /* ===================================
     Bootstrap slider
