@@ -333,12 +333,5 @@ p.article-meta {
 
 .scrolloff { pointer-events: none; }
 
-/* sitemap */
-.sitemap-title { font-size: 13px; font-weight: 600; text-transform: uppercase; border: 1px solid rgba(0,0,0,.1); padding: 5px 15px; background: #f7f7f7}
-.sitemap li { border-bottom: 1px solid rgba(0,0,0,.1); padding: 10px 0; font-weight: 600; text-transform: uppercase; color: #000; font-size: 11px }
-.sitemap li ul { padding: 10px 0}
-.sitemap li ul li { border-bottom: 0; padding: 2px 0; font-weight: 400; font-size: 13px; text-transform: initial}
-.sitemap li ul li:before {content: "-"; padding-right: 5px;}
-
 /* 404 */
 .not-found-title { font-size:60px; line-height:100px; display:block; font-weight: 700}
