@@ -327,16 +327,6 @@ p.article-meta {
 .btn-big-yellow { font-size: 18px; letter-spacing: 3px; padding: 20px 25px; color: #fff; background-color: #ffb200;}
 .btn-big-yellow:hover { background-color: #FFF; color: #ffb200}
 
-/* heading */
-.subheader { display: inline-block; padding: 0 30px; position:relative; z-index:2}
-.dividers-header:before { border-top: 1px solid #e5e5e5; content: ""; height: 0; left: auto; position: absolute; right: 0; top: 50%; width: 100%; z-index: -1 }
-.double-line:before { border-top: 4px double rgba(0,0,0,.15); position: absolute; z-index: 2;}
-.dividers-header i { margin-bottom:10px;}
-.subheader h6 { margin: 7px 0 0 0}
-.subheader-double-line {border: 3px double #e5e5e5; padding: 15px 30px}
-.subheader-double-line h6 { margin: 3px 0 0}
-
-
 /* ===================================
     Pages
 ====================================== */
