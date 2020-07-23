@@ -331,10 +331,6 @@ p.article-meta {
     Pages
 ====================================== */
 
-/* about */
-.timeline-number { font-size: 25px; padding: 15px; line-height:25px;}
-.timeline-year {font-size: 20px; font-weight: 600; line-height:60px;}
-
 /*  only ie9, ie10, ie11 */
 @media screen\0 { .team-size span { /* ie7, ie9, ie10, ie11+ only */ display: block; margin-bottom: 38px; } }
 
