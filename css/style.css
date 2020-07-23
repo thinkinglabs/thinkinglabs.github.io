@@ -332,6 +332,3 @@ p.article-meta {
 ====================================== */
 
 .scrolloff { pointer-events: none; }
-
-/* 404 */
-.not-found-title { font-size:60px; line-height:100px; display:block; font-weight: 700}
