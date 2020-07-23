@@ -324,79 +324,9 @@ p.article-meta {
 
 /* buttons */
 .btn {display: inline-block;  margin-right: 20px; letter-spacing: 2px; border:1px solid transparent }
-.btn-round { border-radius:4px !important}
-.btn i { margin-right:5px}
-.btn.btn-large i { font-size: 24px;}
-
-.button { margin-top:0; margin-bottom: 0}
-.btn.btn-large { font-size: 18px; padding: 18px 35px;}
-.btn.btn-medium { font-size: 14px; padding: 10px 22px;}
-.btn.btn-small { font-size: 11px; padding: 2px 14px; letter-spacing:1px}
-.btn.btn-very-small {font-size: 9px; padding: 1px 12px; letter-spacing:1px}
-
-.highlight-button { border:2px solid #000; display: inline-block; padding: 8px 20px 9px; font-size: 12px; color:#000; background-color: transparent;   }
-.highlight-button:hover { background-color: #000; border: 2px solid #000; color:#fff}
-.highlight-button i { color: #000}
-.highlight-button:hover i {color:#fff}
-
-.highlight-button-dark { border:2px solid #000; display: inline-block; padding: 8px 20px 9px; font-size: 12px; color:#fff; background-color: #000;  }
-.highlight-button-dark:hover { background-color: transparent; border: 2px solid #000; color:#000}
-.highlight-button-dark i { color: #fff}
-.highlight-button-dark:hover i {color:#000}
-
-.btn-small-white-background { font-size: 11px; letter-spacing: 2px; padding: 6px 23px; color: #000; margin-right: 25px; background:#fff; border: 2px solid #fff }
-.btn-small-white-background:hover { background:transparent; border: 2px solid #fff; color: #fff; }
-.btn-small-white-background i { color: #000}
-.btn-small-white-background:hover i { color: #fff}
-
-.btn-small-yellow { border: 2px solid #ffb200; font-size: 18px; letter-spacing: 3px; padding: 20px 25px; color: #fff; background-color: #ffb200;}
-.btn-small-yellow:hover { background-color: #FFF; color: #ffb200}
 
 .btn-big-yellow { font-size: 18px; letter-spacing: 3px; padding: 20px 25px; color: #fff; background-color: #ffb200;}
 .btn-big-yellow:hover { background-color: #FFF; color: #ffb200}
-
-.btn-small-white-dark { font-size: 11px; letter-spacing: 3px; padding: 6px 25px; border: 2px solid #fff; color: #000; background:#fff}
-.btn-small-white-dark:hover { background-color:transparent; color: #fff; border: 2px solid #fff}
-
-.btn-very-small-white { font-size: 9px; letter-spacing: 2px; padding: 2px 15px; border: 1px solid #fff; color: #fff;}
-.btn-very-small-white:hover { background-color: #FFF; color: #000}
-
-.btn-black{ border: 2px solid #000; color: #fff; display: inline-block; background-color: #000; padding: 7px 20px 8px; width: auto;}
-.btn-black:hover {border: 2px solid #000; color: #000; background-color: transparent}
-
-.highlight-button-black-border{ border: 4px solid #000; background-color: transparent; font-size: 22px; padding: 20px 30px; color: #000; font-weight: 700}
-.highlight-button-black-border:hover { border: 4px solid #000; background-color: #000; color: #fff}
-
-.highlight-button-white-border{ border: 4px solid #fff; background-color: transparent; font-size: 22px; padding: 20px 30px; color: #fff; font-weight: 700}
-.highlight-button-white-border:hover { border: 4px solid #fff; background-color: #fff; color: #000}
-
-.highlight-button-black-background{ border: 4px solid #000; background-color: #000; font-size: 20px; padding: 20px 30px; color: #fff; font-weight: 700}
-.highlight-button-black-background:hover { border: 4px solid #000; background-color: #fff; color: #000}
-
-.btn-small-black-background { font-size: 11px; letter-spacing: 3px; padding: 6px 25px; border: 2px solid #000; color: #fff; background-color: #000 }
-.btn-small-black-background:hover { background-color:transparent; color: #000; border: 2px solid #000}
-.btn-small-black-border-light { font-size: 10px; letter-spacing: 3px; padding: 6px 25px; border: 1px solid #000; color: #000; }
-.btn-small-black-border-light:hover { background-color: #000; color: #fff}
-.btn-light-black{ border: 2px solid #000; color: #000; background-color: transparent}
-.btn-light-black:hover {border: 2px solid #000; background-color: #000; color: #fff}
-
-.button-desc { font-size:30px !important; line-height: 35px; font-family: 'Open Sans', sans-serif; font-weight: 600}
-.button-desc span { display: block; font-size: 18px; font-weight: 400 }
-
-.button-3d { border-bottom:2px solid rgba(0,0,0,0.2) !important;}
-
-/* reveal button */
-.button-reveal { overflow:hidden; position: relative; transition: all 200ms linear 0s; border: 2px solid #000; font-size:16px;}
-.button-reveal i { position:absolute; left:-25px; top: 30%; color: #000; font-size: 20px;}
-.button-reveal span {padding: 0 45px; display: block; line-height:54px}
-.button-reveal:hover span { padding: 0 30px 0 60px; transition: all 200ms linear 0s; color: #000 }
-.button-reveal:hover i { left:25px}
-.btn.btn-large.button-reveal { padding: 0}
-
-.button-reveal-black { background-color: #000; color: #fff}
-.button-reveal-black span { color: #fff}
-.button-reveal-black i { color: #fff}
-.button-reveal-black:hover span { color: #fff}
 
 /* features box */
 .features-box-style1 i { min-height:65px; transition-duration: .2s; -moz-transition-duration: .2s; -webkit-transition-duration: .2s; -o-transition-duration: .2s; }
