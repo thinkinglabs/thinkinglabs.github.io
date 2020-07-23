@@ -329,9 +329,9 @@ p.article-meta {
 .btn-big-yellow:hover { background-color: #FFF; color: #ffb200}
 
 /* blockquote */
-.blockqoute-dark { padding: 35px; border: none; }
-.blockqoute-dark p { font-size: 18px; line-height: 25px; width: 95%; color: #000000; font-style: italic; }
-.blockqoute-dark footer { font-weight:600; font-size: 14px; }
+.blockquote-dark { padding: 35px; border: none; }
+.blockquote-dark p { font-size: 18px; line-height: 25px; width: 95%; color: #000000; font-style: italic; }
+.blockquote-dark footer { font-weight:600; font-size: 14px; }
 
 /* list */
 ul.flat-list { list-style:inside disc; margin: 0 0 0 25px}
