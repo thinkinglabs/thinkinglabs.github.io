@@ -322,34 +322,6 @@ p.article-meta {
     Elements
 ====================================== */
 
-/* accordions */
-.panel > div {transition-duration: .2s; -moz-transition-duration: .2s; -webkit-transition-duration: initial; -o-transition-duration: .2s; }
-.panel-heading {padding-bottom:15px; }
-.panel-title { background-color: #fff; color: #767676; font-size: 12px; letter-spacing:2px; font-weight: 400; width:100%; display: block; padding: 10px 18px; border: 1px solid rgba(0,0,0,.1); text-transform: uppercase}
-.panel-body { padding:10px 18px 25px 18px; font-size: 13px; line-height: 23px;}
-.panel-heading i { font-size:10px; margin: 0}
-.active-accordion .panel-title{ color: #000}
-
-.accordion-style2 .panel-title  { background-color:#000; color: #fff}
-.accordion-style2 .panel-heading i { font-size:18px; margin: 0; color:#fff; padding-top:5px}
-
-.accordion-style3 .panel-title  { background-color:#ededed; color: #000; position:relative; border: none; padding:0 25px; font-size: 14px; line-height: 70px}
-.accordion-style3 .panel-heading { padding-bottom:30px}
-.accordion-style3 .panel-heading i { font-size:20px; margin: 0; color:#000; position: relative; top:3px}
-.accordion-style3 .panel-body{ padding: 0 60px 35px 25px;}
-.accordion-style3 .number { font-size: 18px; font-weight: 600; margin-right:10px; position: relative; top: 1px  }
-.toggles-style2 .panel-title  { background-color:#000; color: #fff}
-.toggles-style2 .panel-heading i { font-size:18px; margin: 0; color:#fff; padding-top:5px}
-
-.toggles-style3 {border:1px solid rgba(0,0,0,.15); border-top:none}
-.toggles-style3 .panel { border: none; border-top:1px solid rgba(0,0,0,.15); }
-.toggles-style3 .panel-title { border: none; padding:20px 25px; font-size: 14px; position: relative}
-.toggles-style3 .panel-title span { position: absolute; right: 25px; top: 20px; }
-.toggles-style3 .panel:first-child { border-bottom:none}
-.toggles-style3 .panel-heading { padding: 0}
-.toggles-style3 .panel-body{ padding: 0 60px 25px 25px; background-color:#fff}
-.toggles-style3 .active-accordion h4 { font-weight: 600}
-
 /* buttons */
 .btn {display: inline-block;  margin-right: 20px; letter-spacing: 2px; border:1px solid transparent }
 .btn-round { border-radius:4px !important}
