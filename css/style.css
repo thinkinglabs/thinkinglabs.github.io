@@ -328,9 +328,6 @@ p.article-meta {
 .btn-big-yellow { font-size: 18px; letter-spacing: 3px; padding: 20px 25px; color: #fff; background-color: #ffb200;}
 .btn-big-yellow:hover { background-color: #FFF; color: #ffb200}
 
-/* features box */
-.features-box-style1 i { min-height:65px; transition-duration: .2s; -moz-transition-duration: .2s; -webkit-transition-duration: .2s; -o-transition-duration: .2s; }
-
 /* forms controls */
 .input-round { border-radius:4px !important }
 .big-input, .big-textarea, .big-select { padding: 12px 25px 11px; border:1px solid rgba(0,0,0,.2);}
