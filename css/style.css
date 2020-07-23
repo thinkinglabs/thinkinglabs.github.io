@@ -332,14 +332,8 @@ p.article-meta {
 ====================================== */
 
 /* about */
-.about-year { border: 2px solid #6d6d6d; display: inline-block; font-size: 17px; height: 120px; margin-bottom: 40px; padding: 25px; width: 120px; }
-.about-year span { font-size: 50px; font-weight: 600; left: -4px; letter-spacing: -5px; position: relative; top: 13px; }
 .timeline-number { font-size: 25px; padding: 15px; line-height:25px;}
 .timeline-year {font-size: 20px; font-weight: 600; line-height:60px;}
-
-/* only ie7, ie9, ie10, ie11 */
-@media screen\0 { .about-year { /* ie7, ie9, ie10, ie11+ only */ padding-top: 20px !important; } }
-@media screen\0 { .about-year span { /* ie7, ie9, ie10, ie11+ only */ display: block !important; margin-bottom: 28px !important; } }
 
 /*  only ie9, ie10, ie11 */
 @media screen\0 { .team-size span { /* ie7, ie9, ie10, ie11+ only */ display: block; margin-bottom: 38px; } }
