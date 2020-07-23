@@ -328,24 +328,6 @@ p.article-meta {
 .btn-big-yellow { font-size: 18px; letter-spacing: 3px; padding: 20px 25px; color: #fff; background-color: #ffb200;}
 .btn-big-yellow:hover { background-color: #FFF; color: #ffb200}
 
-/* forms controls */
-.input-round { border-radius:4px !important }
-.big-input, .big-textarea, .big-select { padding: 12px 25px 11px; border:1px solid rgba(0,0,0,.2);}
-.big-label {font-size:14px; letter-spacing:2px;}
-
-/* only ie7, ie9, ie10, ie11 */
-@media screen\0 { .big-input, .big-textarea, .big-select { /* ie7, ie9, ie10, ie11+ only */ padding-bottom: 20px; } }
-
-.med-input, .med-textarea, .med-select { padding: 10px 15px; border:1px solid rgba(0,0,0,.2); border-radius:4px}
-.med-input.select-style select { padding: 14px 15px}
-.med-input.select-style { margin:0 0 20px }
-
-.select-style { padding: 0; margin: 0; border: 1px solid #ccc; width: 100%; overflow: hidden; background-color: #fff; margin: 0 0 40px;  background: #fff url("../images/select-arrow.png") no-repeat 97% 50%; }
-.select-style select { padding: 16px 15px; width: 100%; border: none; box-shadow: none; background-color: transparent; background-image: none; -webkit-appearance: none; -moz-appearance: none; appearance: none;  cursor: pointer; font-size:11px; text-transform: uppercase; letter-spacing:1px; margin-bottom:0; color:#999999 }
-.select-style select:focus { outline: none; border: none; box-shadow: none }
-
-.login-box { padding:35px; background-color:#fff; border-radius:8px; box-shadow: 0 0 2px #888888;}
-
 /* grid */
 .show-grid [class^="col-"] { background-color: #f5f5f5; border: 1px solid rgba(0, 0, 0, 0.2); margin-bottom: 15px; padding: 10px 0; text-align: center; }
 
