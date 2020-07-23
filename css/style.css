@@ -268,6 +268,8 @@ section { padding: 100px 0;}
 
 /* quotes section */
 .bubbles { background: url("../images/bgd-bubbles.png") no-repeat left 50%;}
+.blockquote-dark { padding: 35px; border: none; }
+.blockquote-dark p { font-size: 18px; line-height: 25px; width: 95%; color: #000000; font-style: italic; }
 
 /* experience section */
 .client { padding: 5px 10px; background-color: #fff; margin: 0 5px 10px 5px; display: inline-block;}
@@ -327,11 +329,6 @@ p.article-meta {
 
 .btn-big-yellow { font-size: 18px; letter-spacing: 3px; padding: 20px 25px; color: #fff; background-color: #ffb200;}
 .btn-big-yellow:hover { background-color: #FFF; color: #ffb200}
-
-/* blockquote */
-.blockquote-dark { padding: 35px; border: none; }
-.blockquote-dark p { font-size: 18px; line-height: 25px; width: 95%; color: #000000; font-style: italic; }
-.blockquote-dark footer { font-weight:600; font-size: 14px; }
 
 /* list */
 ul.flat-list { list-style:inside disc; margin: 0 0 0 25px}
