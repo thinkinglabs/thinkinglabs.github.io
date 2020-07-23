@@ -331,35 +331,6 @@ p.article-meta {
 /* grid */
 .show-grid [class^="col-"] { background-color: #f5f5f5; border: 1px solid rgba(0, 0, 0, 0.2); margin-bottom: 15px; padding: 10px 0; text-align: center; }
 
-/* icon */
-.icon-box i { margin:25px;}
-.i-large-box{ width:100px; height:100px; line-height:98px; text-align:center; font-size:40px}
-.i-medium-box{ width:80px; height:80px; line-height:80px; text-align:center; font-size:30px;}
-.i-small-box{ width:60px; height:60px; line-height:60px; text-align:center; font-size:22px}
-.i-extra-small-box{ width:40px; height:40px; line-height:40px; text-align:center; font-size:15px}
-.i-plain { color:#737373; background-color: transparent !important;}
-.i-plain:hover { color:#fff; background-color: #737373!important; -webkit-transform: scale(1.2); -moz-transform: scale(1.2); -o-transform: scale(1.2); -ms-transform: scale(1.2); transform: scale(1.2);}
-.i-rounded  { border-radius: 3px; background-color: #000; color:#fff; border:1px solid rgba(0,0,0,0.15);}
-.i-rounded:hover { background-color: #fff; color:#9a9a9a; border:1px solid rgba(0,0,0,0.15);}
-.i-bordered { border:1px solid rgba(0,0,0,0.15); background-color: transparent !important; color:#9a9a9a}
-.i-bordered:hover { background-color: #000 !important; color: #fff}
-.i-circled  { border-radius: 50%;}
-.i-light { background-color: #fff !important; box-shadow: 0 0 10px rgba(0, 0, 0, .08) inset; color:#9a9a9a; text-shadow: 1px 1px 1px #fff; }
-.i-light:hover { background-color: #fff !important; box-shadow: 0 0 30px rgba(0, 0, 0, .15) inset !important; color: #444; text-shadow:none }
-.i-3d { box-shadow: 0 0 3px rgba(0, 0, 0, .1); color:#9a9a9a !important;  background-color: #fff; color:#000}
-.i-3d:hover {box-shadow: 0 0 4px rgba(0, 0, 0, .3);}
-.i-3d-border { border-bottom:3px solid rgba(0,0,0,0.15) !important; color:#fff; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3)}
-.i-3d-border:hover { border-bottom:3px solid rgba(0,0,0,0.30) !important; color:#fff; -webkit-transform: scale(1.2); -moz-transform: scale(1.2); -o-transform: scale(1.2); -ms-transform: scale(1.2); transform: scale(1.2); }
-.glyphs .box1 {    border: 1px solid #e5e5e5; display: block; float: left; font-size: 13px; margin: -1px 0 0 -1px; padding: 0; width: 33%; padding: 20px; text-align: left}
-.glyphs .box1 span { font-size: 30px; vertical-align: middle; width: 50px;}
-.fa-examples div { border: 1px solid #e5e5e5; font-size: 13px; margin: -1px 0 0 -1px; padding: 15px 0 15px 15px; color: #868686; }
-.fa-examples div:hover { background-color: #fafafa}
-.fa-examples i {color:#555555; font-size:14px; letter-spacing: 0; margin-right: 5px;}
-.fa-examples span {margin-left: 6px;  display: none }
-
-/* only ie7, ie9, ie10, ie11 */
-@media screen\0 { #animated-tab .nav-tabs > li > a { /* ie7, ie9, ie10, ie11+ only */ float: none; } }
-
 /* blockquote */
 .blockqoute-dark { padding: 35px; border: none; }
 .blockqoute-dark p { font-size: 18px; line-height: 25px; width: 95%; color: #000000; font-style: italic; }
