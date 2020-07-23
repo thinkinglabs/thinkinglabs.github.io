@@ -331,9 +331,6 @@ p.article-meta {
     Pages
 ====================================== */
 
-/*  only ie9, ie10, ie11 */
-@media screen\0 { .team-size span { /* ie7, ie9, ie10, ie11+ only */ display: block; margin-bottom: 38px; } }
-
 /* contact */
 .contact-map iframe { width:100%; height:420px;}
 .view-map { position:absolute; bottom: 0; right: 0}
