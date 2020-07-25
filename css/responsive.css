@@ -1382,30 +1382,11 @@
     .slider-title-big6{ font-size:40px;}
 }
 @media (max-width: 466px) {
-    /*  key person   */
-    .key-person {max-height: 430px;}
-    .blog-date { letter-spacing: 1px; }
-
-    /*  text effect  */
-    .animation2 span b { font-size: 20px; line-height: 30px; }
-
-    /*  elements features box */
-    .work-process-title { letter-spacing: 0px;}
-
     /*     footer  */
-    .list-inline li { padding: 0 6px;}
-    footer ul li a { font-size: 10px;}
-    .footer-social a { margin: 0 15px;}
     .copyright { font-size: 9px;}
-
-    /****************************************************
-        faq
-    ****************************************************/
-    .faq-search input { padding-right: 67px; }
-    .faq-search-button { right: 30px; }
 }
 @media (max-width: 359px) {
-    /*     footer  */
+  /*     footer  */
     .copyright { font-size: 8px;}
 }
 /*  only mobile devices landscape view  */
