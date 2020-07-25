@@ -1410,19 +1410,6 @@
     .faq-search input { padding-right: 67px; }
     .faq-search-button { right: 30px; }
 }
-@media (max-width: 366px) {
-    /*  buttons   */
-    .btn-small-white { margin-right: 7px;}
-
-    /*  owl carousel    */
-    .owl-title {font-size: 22px; line-height: 30px}
-
-    /*  single - onepage portfolio single #2  */
-    .slider-text-middle4 { padding: 0 15px;}
-
-    /*  half screen video  */
-    .video-half-screen { min-height: 31%; }
-}
 @media (max-width: 359px) {
     /*     footer  */
     .copyright { font-size: 8px;}
