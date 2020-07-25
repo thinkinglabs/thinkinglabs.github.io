@@ -1054,14 +1054,6 @@
     /*  coming soon  */
     .notify-me-main { position: inherit; margin-top: 27px;}
 }
-@media (max-width: 700px) {
-    /*  countdown timer  */
-    .coming-soon-footer .footer-social a { margin: 0 0.06% !important; }
-    /****************************************************
-       shop
-   ****************************************************/
-    .shop-newsletter .btn.btn-small { width: inherit; }
-}
 @media (max-width: 640px) {
     /*  custom  */
     .section-title {padding: 0 0 50px 0;}
