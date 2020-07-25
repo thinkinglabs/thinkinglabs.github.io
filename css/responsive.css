@@ -1424,31 +1424,8 @@
     .video-half-screen { min-height: 31%; }
 }
 @media (max-width: 359px) {
-    /*  blog home slider  */
-    .blog-slider-con figcaption h3 { letter-spacing: 4px; font-size: 13px; }
-    .blog-slider-con figcaption span { letter-spacing: 0px; }
-    .blog-slider-con figcaption { padding: 15px 30px 15px; bottom: -55px; }
-
     /*     footer  */
-    .footer-social i { font-size: 20px;}
-    .footer-social a { margin: 0 10px;}
-    footer ul li a { font-size: 9px;}
-    .list-inline li { padding: 0 3px;}
     .copyright { font-size: 8px;}
-
-    /*  restaurant  */
-    .special-offers-sub { top: 26%;}
-
-    /* alert */
-    .alert-style6 .alert span { width: 77%; }
-
-    /*  half screen video  */
-    .video-half-screen { min-height: 37%; }
-
-    /*  primary style  */
-    .cd-headline span b { font-size: 18px; letter-spacing: 0;}
-
-
 }
 /*  only mobile devices landscape view  */
 @media screen and (max-width: 320px) , screen and (max-height: 480px) {
