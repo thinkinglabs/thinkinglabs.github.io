@@ -1137,18 +1137,6 @@
     .xs-letter-spacing-2 { letter-spacing: 2px !important; }
     .xs-min-height-inherit { min-height: inherit !important; }
 }
-@media (max-width: 580px) {
-    /*  key person   */
-    .key-person .person-post { display: block; min-height: 46px; }
-
-    /*  footer  */
-    .footer-social i { margin: 0;}
-    .list-inline li { padding: 0 15px;}
-
-    /*  ET-line icons */
-    .glyphs .box1 { width: 50%; font-size: 12px;}
-    .glyphs .box1 span { font-size: 30px; width: 40px;}
-}
 @media (max-width: 480px) {
     /*  navigation  */
     .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse { max-height: 394px; }
