@@ -1115,28 +1115,6 @@
 
     .table-scroll { overflow: hidden; overflow-x: scroll;}
 }
-@media (max-width: 589px) {
-    /*  countdown timer  */
-    .coming-soon-logo { margin: 25px 0 20px; }
-    .coming-soon-title { font-size: 14px; margin-bottom: 20px; }
-    #counter-underconstruction .counter-box { border-bottom: 1px solid rgba(0,0,0,0.1); margin: 0 10px 0; padding: 0 0 9px; width: 80px; }
-    #counter-underconstruction .counter-box:nth-child(2) { border-right: 0; }
-    #counter-underconstruction .counter-box:nth-child(3) { border-bottom: 0; border-left: 0; clear: both; }
-    #counter-underconstruction .last { border-bottom: 0; padding: 0 0 09px; width: 80px; }
-    .notify-me-main { padding: 20px 0; }
-    .notify-me-text { display: none; }
-    .notify-me-main .footer-social { margin: 28px 0 0; }
-    .notify-me-main input { width: 100%; margin-bottom: 3px; }
-    .notify-me-main .btn-small { width: 100%; }
-    .notify-me-main .footer-social i { margin: 0 14px; }
-
-     /*  restaurant  */
-    .special-offers-sub { top: 24%;}
-
-    /* typography */
-    .xs-letter-spacing-2 { letter-spacing: 2px !important; }
-    .xs-min-height-inherit { min-height: inherit !important; }
-}
 @media (max-width: 480px) {
     /*  navigation  */
     .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse { max-height: 394px; }
