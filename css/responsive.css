@@ -1065,55 +1065,9 @@
 @media (max-width: 640px) {
     /*  custom  */
     .section-title {padding: 0 0 50px 0;}
-    #blog-slider { padding-bottom: 30px; }
-    #blog-slider .owl-pagination { bottom: -10px; }
-
-    /*  features    */
-    #features .section-title { padding: 0 0 50px 0; }
-
-    /*  services   */
-    .services-main { padding: 50px 15px; }
-
-    /*  counter   */
-    .counter-section { margin-bottom: 50px; }
-    .counter-section:nth-child(3) { margin-bottom: 50px; }
-
-    /*  testimonial   */
-    .testimonial .carousel-indicators { bottom: -40px; }
-    .testimonial p { margin: 11px 0 39px; }
-
-    /*  key person   */
-    .key-person i { margin: 10px 8% 20px; }
-    .key-person-details { padding: 20px 10px 10px; }
-
-    /*  case study slider  */
-    .case-study-slider { padding: 50px 0 70px; }
 
     /*  blog  */
     #blog .section-title { padding-bottom: 50px; }
-    .blog-listing { margin-bottom: 40px; width: 100%; }
-
-    /*  approach  */
-    .approach .col-sm-6,
-    .approach .col-sm-6:nth-child(3) { margin: 0 0 50px; }
-
-    /*  slider text   */
-    .owl-title {font-size: 25px; line-height: 40px;}
-    .owl-subtitle {font-size: 14px; line-height: 20px;}
-    #animated-tab .nav-tabs {margin: 0 0 30px; width: 100%;}
-
-    /*  project img    */
-    .half-project-img { min-height: 420px; }
-    .project-title { line-height: 34px; }
-    .half-project-small-img { min-height: 242px; }
-
-    /*  onepage portfolio single #2    */
-    .half-project-img-slider { min-height: 420px;  }
-
-    /*      grid figcaption
-        .grid figcaption { bottom: 43%; }*/
-
-    .table-scroll { overflow: hidden; overflow-x: scroll;}
 }
 @media (max-width: 480px) {
     /*  navigation  */
