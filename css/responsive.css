@@ -1463,41 +1463,5 @@
     .navbar-fixed-bottom .navbar-collapse { max-height: 235px !important; }
 }
 @media (max-width: 320px) {
-    .highlight-button-black-border {font-size: 18px;padding: 10px 20px;}
-    .owl-title {font-size: 18px; line-height: 24px; margin-top: 5px;}
     h1 { font-size: 26px; line-height: 32px; }
-
-    .slider-text-bottom { vertical-align: middle; }
-
-    /*  key person   */
-    .key-person { max-height: 510px; }
-    .key-person-details { bottom: 25px; }
-    .key-person:hover .key-person-details { bottom: 130px; }
-
-    /*  Animated tab    */
-    #animated-tab .nav-tabs > li > a { font-size: 24px; }
-
-    /*  project img    */
-    .half-project-img { min-height: 220px; }
-    .half-project-small-img { min-height: 179px; }
-
-    /*  onepage portfolio single #2    */
-    .half-project-img-slider { min-height: 220px;  }
-
-    /****************************************************
-        shop
-    ****************************************************/
-    /*  home product     */
-    .onsale { bottom: 18%; }
-    .new { bottom: 18%;}
-    .slider-typography-shop .owl-subtitle { display: block; line-height: 18px; margin-bottom: 30px; width: 85%; }
-
-    /****************************************************
-        one page
-    ****************************************************/
-    /*======*  architecture  *======*/
-    .owl-title br { display: none; }
-
-    /*======*  wedding  *======*/
-    .wedding-header { margin-top: 40px; }
 }
