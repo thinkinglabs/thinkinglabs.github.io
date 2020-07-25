@@ -1381,12 +1381,6 @@
     /*  slider typography    */
     .slider-title-big6{ font-size:40px;}
 }
-@media (max-width: 420px) {
-    /*  typography    */
-    .title-med { font-size: 22px !important; line-height: 30px !important; }
-    .subheader { padding: 10px 15px; }
-    .spa-slider h1 { font-size: 35px; line-height: 75px; }
-}
 @media (max-width: 466px) {
     /*  key person   */
     .key-person {max-height: 430px;}
