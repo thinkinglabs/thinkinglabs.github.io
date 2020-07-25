@@ -1450,13 +1450,6 @@
 
 
 }
-@media (max-width: 330px) {
-    /*  blog home slider  */
-    .blog-slider-con figcaption { padding: 15px 5px 15px;  }
-    .blog-slider-con figcaption h3 { letter-spacing: 1px; font-size: 12px;  }
-    .blog-like, .blog-share, .comment { letter-spacing: 1px; margin-right: 18px;}
-    .blog-date { letter-spacing: 0px; }
-}
 /*  only mobile devices landscape view  */
 @media screen and (max-width: 320px) , screen and (max-height: 480px) {
     .navbar-fixed-top .navbar-collapse,
