@@ -14,25 +14,6 @@
     .blog-slider-con figcaption h3 { letter-spacing: 2px; }
     .blog-slider-con figcaption span { letter-spacing: 2px; }
 }
-@media (max-width: 1383px) {
-    /*  navigation  */
-    .sub-menu ul { right: -25px; z-index: 99; }
-
-    /*  blog home slider  */
-    .blog-slider-con figcaption h3 { letter-spacing: 1px; }
-    .blog-slider-con figcaption span { letter-spacing: 2px; }
-    .shop-newsletter { padding: 2% 45px 0; }
-
-    /* agency */
-    .agency-header span { margin-top: 12%; }
-
-    /* fashion */
-    .fashion-right .right-content .title-large { font-size: 23px !important}
-    .fashion-right .right-content { padding: 8%;}
-
-    /* spa */
-    .spa-sider .slider-content .get-bg { margin-bottom: 10%;}
-}
 @media only screen and (min-width: 991px) and (max-width: 1200px) {
     .md-display-block { display: block !important}
 }
@@ -41,25 +22,10 @@
 }
 @media (min-width: 992px) and (max-width: 1199px) {
     /*  typography  */
-    .md-full-width { width: 100% !important;}
-    .md-display-block { display: block !important}
-    .md-no-padding-bottom { padding-bottom: 0 !important}
-    .spa-our-packages .content-box { padding: 15px; }
-
-    /*  grid figcaption   */
     .md-bottom-10 { bottom: 10px !important;}
-
-    /* heading */
-    .subheader { padding: 0 15px; }
-
-    /* travel agency */
-    .popular-destinations-highlight { padding: 20px 15px; }
-    .popular-destinations-text { padding: 25px 0; }
-    .popular-destinations-highlight-sub { margin-bottom: 35px; }
-    .travel-about-img img { max-width: 100%; }
-    .agency-enjoy-right { padding: 100px 50px 100px 100px;}
-    .agency-enjoy-right .title-top { font-size: 75px; }
-    .agency-enjoy-right .title-top span { font-size: 28px;  line-height: 42px; }
+    .md-full-width { width: 100% !important;}
+    .md-no-padding-bottom { padding-bottom: 0 !important}
+    .md-display-block { display: block !important}
 }
 @media (max-width: 1199px) {
     /* navigation */
