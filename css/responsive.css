@@ -189,27 +189,6 @@
 @media (max-width: 1064px) {
     /*  parallax  */
     .parallax-fix{ background-attachment: scroll !important; }
-
-    /*  carousel slide  */
-    .slider-text .col-md-3 { margin-left: 10%; }
-
-    /*  case study slider  */
-    .case-study-slider .col-sm-5 { margin-right: 63px; }
-
-    /*  blog home slider  */
-    .blog-slider-con figcaption h3 { font-size: 14px; letter-spacing: 4px; line-height: 20px; }
-    .blog-slider-con figcaption { padding: 35px 25px }
-    .blog-slider-con figcaption span { letter-spacing: 2px; line-height: 18px; }
-
-    /****************************************************
-       features
-    ****************************************************/
-    .features-box-style1 br,
-    .features-box-style2 br { display: none; }
-
-    /* fashion */
-    .model-details-text { padding: 25px; }
-    .architecture-team {padding:0 45px 30px 45px;}
 }
 /******* Only for iPad Css *******/
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
