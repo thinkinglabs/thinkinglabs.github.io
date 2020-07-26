@@ -573,50 +573,6 @@
     .blog-slider-con figcaption { padding: 20px 15px 20px; bottom: -60px; }
     .blog-slider-con figcaption h3 { letter-spacing: 2px;}
 }
-@media (max-width: 768px) {
-    /*  custom  */
-    .separator-line { margin: 20px auto 15px; }
-    .lg-display-none { display: block; }
-
-    /*  key person   */
-    .key-person i { margin: 15px 10% 25px; }
-
-    /*  slider text   */
-    #animated-tab .nav-tabs {margin: 0 0 70px;}
-    .nav-tabs > li > a { border-right: 0; }
-    #animated-tab .nav-tabs > li > a {margin: 0 auto; }
-    .portfolio-filter { display: inline-block;}
-    .nav > li {width: auto;}
-    .nav-tabs > li.active > a { margin-bottom: 0px; }
-    .nav-tabs > li > a:hover { margin-bottom: 0px; vertical-align: top;}
-
-    .owl-title-big { font-size: 30px; letter-spacing: 5px; line-height: 44px; }
-
-    /*  single - onepage portfolio single #2  */
-    .slider-text-middle4 { padding: 0 15px 35px;}
-
-    /****************************************************
-        careers page
-    ****************************************************/
-    .urgent-job { top: 164px; }
-    .sm-bg-yellow { background: none repeat scroll 0 0 #e6af2a !important; }
-
-    /****************************************************
-        one page
-    ****************************************************/
-    /*======*  architecture  *======*/
-    .architecture-company .nav-tabs { width: auto !important; }
-    .architecture-company .nav-tabs > li { width: auto !important; }
-
-    /*======*  spa  *======*/
-    .spa-sider .owl-title { font-size: 24px; line-height: 16px; }
-
-     /*  careers  */
-    .career-form { padding: 5%; }
-
-    /*  text rotator  */
-    .cd-headline.slide span { padding-bottom: 2em}
-}
 @media (max-width: 767px) {
     /*  custom  */
     section { padding: 50px 0; }
