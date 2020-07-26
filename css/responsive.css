@@ -9,11 +9,6 @@
     .blog-text { padding: 60px 60px 0 60px; }
     .blog-comment-area { padding: 60px; }
 }
-@media (max-width: 1450px) {
-    /*  blog home slider  */
-    .blog-slider-con figcaption h3 { letter-spacing: 2px; }
-    .blog-slider-con figcaption span { letter-spacing: 2px; }
-}
 @media only screen and (min-width: 991px) and (max-width: 1200px) {
     .md-display-block { display: block !important}
 }
