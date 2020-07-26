@@ -218,18 +218,8 @@
     .navbar-nav > li > a.active { border-color: black !important;  }
 }
 @media (max-width: 1024px) {
-    /*  navigation position  */
-    .navbar-right .dropdown-menu { right: -147px; }
-
-    /*  text rotator  */
-    .cd-headline.slide .cd-words-wrapper { width: 100% !important; }
-
-    .timeline-number { padding: 35%; }
+    /*  typography  */
     .md-display-none { display: none !important}
-    .fix-background { background-attachment:inherit !important}
-
-    /* agency */
-    .agency-header span { margin-top: 15%; }
 }
 @media (max-width: 991px) {
     /*  navigation  */
@@ -260,6 +250,8 @@
     
     /*  custom  */
     section { padding: 90px 0; }
+
+    /*  typography  */
     .sm-no-margin { margin: 0 auto !important; }
     .sm-no-margin-top { margin-top: 0 !important; }
     .sm-no-margin-bottom { margin-bottom: 0 !important; }
