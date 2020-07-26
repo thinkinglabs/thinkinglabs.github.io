@@ -232,10 +232,8 @@ nav .container{ display: table-cell; vertical-align: middle; height: 75px; posit
 .navbar-default .navbar-nav > li > a { color: #fff;}
 .shrink-nav .navbar-nav li a { color: #000}
 
-.nav-white.sticky-nav .navbar-nav li a:hover, .nav-white.sticky-nav .navbar-nav > .open > a  { border-bottom-color: #fff}
-.nav-white.shrink-nav .navbar-nav li a:hover, .nav-white.shrink-nav .navbar-nav > .open > a { border-bottom-color: #000}
-.nav-dark.shrink-nav .navbar-nav li a:hover, .nav-dark.shrink-nav .navbar-nav > .open > a { border-bottom-color: #fff !important}
-.nav-dark-transparent.shrink-nav .navbar-nav li a:hover, .nav-dark-transparent.shrink-nav .navbar-nav > .open > a { border-bottom-color: #fff !important}
+.nav-white.sticky-nav .navbar-nav li a:hover { border-bottom-color: #fff}
+.nav-white.shrink-nav .navbar-nav li a:hover { border-bottom-color: #000}
 
 .sticky-nav.nav-border-bottom { border-bottom: 1px solid rgba(0,0,0,0)}
 .shrink-nav.nav-border-bottom { border-bottom: 1px solid rgba(0,0,0,0.1)}
