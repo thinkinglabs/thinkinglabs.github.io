@@ -2,14 +2,6 @@
 $(document).ready(function () {
     
     /*==============================================================*/
-    //Set Parallax - START CODE
-    /*==============================================================*/
-    SetParallax();
-    /*==============================================================*/
-    //Set Parallax - END CODE
-    /*==============================================================*/
-
-    /*==============================================================*/
     //Sliders owlCarousel - START CODE
     /*==============================================================*/
 
@@ -1177,7 +1169,7 @@ $(window).scroll(function () {
 //Parallax - START CODE
 /*==============================================================*/
 // Parallax Fix Image Scripts
-
+//TODO remove jquery parallax plugin
 $('.parallax-fix').each(function () {
     if ($(this).children('.parallax-background-img').length) {
         var imgSrc = jQuery(this).children('.parallax-background-img').attr('src');
@@ -1185,26 +1177,7 @@ $('.parallax-fix').each(function () {
         jQuery(this).children('.parallax-background-img').remove();
         $(this).css('background-position', '50% 0%');
     }
-
 });
-var IsParallaxGenerated = false;
-function SetParallax() {
-    if ($(window).width() > 1030 && !IsParallaxGenerated) {
-        $('.parallax1').parallax("50%", 0.1);
-        $('.parallax2').parallax("50%", 0.2);
-        $('.parallax3').parallax("50%", 0.3);
-        $('.parallax4').parallax("50%", 0.4);
-        $('.parallax5').parallax("50%", 0.5);
-        $('.parallax6').parallax("50%", 0.6);
-        $('.parallax7').parallax("50%", 0.7);
-        $('.parallax8').parallax("50%", 0.8);
-        $('.parallax9').parallax("50%", 0.05);
-        $('.parallax10').parallax("50%", 0.02);
-        $('.parallax11').parallax("50%", 0.01);
-        $('.parallax12').parallax("50%", 0.099);
-        IsParallaxGenerated = true;
-    }
-}
 /*==============================================================*/
 //Parallax - END CODE
 /*==============================================================*/
