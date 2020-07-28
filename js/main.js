@@ -6,19 +6,6 @@ var $blog;
 $(document).ready(function () {
     
     /*==============================================================*/
-    //Search Button Toggle - START CODE
-    /*==============================================================*/
-    jQuery(".search-button", "#top-search").on("click", function () {
-        //jQuery(".search-form").toggleClass("search-form-show", 0);
-    });
-    jQuery(".close-search", "#top-search").on("click", function () {
-        jQuery(".search-form").toggleClass("search-form-show", 0);
-    });
-    /*==============================================================*/
-    //Search Button Toggle - END CODE
-    /*==============================================================*/
-
-    /*==============================================================*/
     //For shopping cart- START CODE
     /*==============================================================*/
     var isMobile = false;
@@ -53,33 +40,8 @@ $(document).ready(function () {
         else {
             jQuery(".cart-content").css('opacity', '1');
             jQuery(".cart-content").css('visibility', 'visible');
-            jQuery(".search-form").css('opacity', '0');
-            jQuery(".search-form").css('visibility', 'hidden');
         }
     });
-    jQuery("#top-search i.search-button, #top-search .subtitle").click(function () {
-        //$('.navbar-collapse').collapse('hide');
-
-        if ($('.search-form').css('visibility') == 'visible') {
-            jQuery(".search-form").css('opacity', '0');
-            jQuery(".search-form").css('visibility', 'hidden');
-        }
-        else {
-            jQuery(".search-form").css('opacity', '1');
-            jQuery(".search-form").css('visibility', 'visible');
-            jQuery(".cart-content").css('opacity', '0');
-            jQuery(".cart-content").css('visibility', 'hidden');
-        }
-    });
-    if (!isMobile) {
-        jQuery("#top-search, .search-form").hover(function () {
-            jQuery(".search-form").css('opacity', '1');
-            jQuery(".search-form").css('visibility', 'visible');
-        }, function () {
-            jQuery(".search-form").css('opacity', '0');
-            jQuery(".search-form").css('visibility', 'hidden');
-        });
-    }
     /*==============================================================*/
     //For shopping cart - END CODE
     /*==============================================================*/
@@ -87,12 +49,7 @@ $(document).ready(function () {
     /*==============================================================*/
     //For shopping cart - START CODE
     /*==============================================================*/
-    jQuery(window).scroll(function () {
-        if (jQuery('.search-form').hasClass("search-form-show")) {
-
-            jQuery('.close-search').click();
-        }
-    });
+    
     /*==============================================================*/
     //Shrink nav on scroll - START CODE
     /*==============================================================*/
@@ -1017,19 +974,6 @@ $(document).ready(function () {
     /*==============================================================*/
     //Search - START CODE
     /*==============================================================*/
-    $("input.search-input").bind("keypress", function (event) {
-        if (event.which == 13 && !isMobile) {
-            $("button.search-button").click();
-            event.preventDefault();
-        }
-    });
-    $("form.search-form").submit(function (event) {
-        var action = $(this).attr('action');
-        action = action == '#' || action == '' ? 'blog-grid-3columns.html' : action;
-        action = action + '?' + $(this).serialize();
-        window.location = action;
-        event.preventDefault();
-    });
     $('.navbar .navbar-collapse a.dropdown-toggle, .accordion-style1 .panel-heading a, .accordion-style2 .panel-heading a, .accordion-style3 .panel-heading a, .toggles .panel-heading a, .toggles-style2 .panel-heading a, .toggles-style3 .panel-heading a, a.carousel-control, .nav-tabs a[data-toggle="tab"], a.shopping-cart').click(function (e) {
         e.preventDefault();
     });
@@ -1060,16 +1004,12 @@ $(document).ready(function () {
        if (isMobile){
             jQuery(".cart-content").css('opacity', '0');
             jQuery(".cart-content").css('visibility', 'hidden');
-            jQuery(".search-form").css('opacity', '0');
-            jQuery(".search-form").css('visibility', 'hidden');
         }
     });
     $("a.dropdown-toggle").click(function () {
        if (isMobile){
             jQuery(".cart-content").css('opacity', '0');
             jQuery(".cart-content").css('visibility', 'hidden');
-            jQuery(".search-form").css('opacity', '0');
-            jQuery(".search-form").css('visibility', 'hidden');
         }
     });
 
