@@ -6,51 +6,6 @@ var $blog;
 $(document).ready(function () {
     
     /*==============================================================*/
-    //For shopping cart- START CODE
-    /*==============================================================*/
-    var isMobile = false;
-    var isiPhoneiPad = false;
-
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        isMobile = true;
-    }
-    if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-        isiPhoneiPad = true;
-    }
-    if (!isMobile) {
-        jQuery(".top-cart a.shopping-cart, .cart-content").hover(function () {
-            jQuery(".cart-content").css('opacity', '1');
-            jQuery(".cart-content").css('visibility', 'visible');
-        }, function () {
-            jQuery(".cart-content").css('opacity', '0');
-            jQuery(".cart-content").css('visibility', 'hidden');
-        });
-    }
-    if (isiPhoneiPad) {
-        jQuery(".video-wrapper").css('display', 'none');
-    }
-
-    jQuery(".top-cart a.shopping-cart").click(function () {
-        //$('.navbar-collapse').collapse('hide');
-
-        if ($('.cart-content').css('visibility') == 'visible') {
-            jQuery(".cart-content").css('opacity', '0');
-            jQuery(".cart-content").css('visibility', 'hidden');
-        }
-        else {
-            jQuery(".cart-content").css('opacity', '1');
-            jQuery(".cart-content").css('visibility', 'visible');
-        }
-    });
-    /*==============================================================*/
-    //For shopping cart - END CODE
-    /*==============================================================*/
-
-    /*==============================================================*/
-    //For shopping cart - START CODE
-    /*==============================================================*/
-    
-    /*==============================================================*/
     //Shrink nav on scroll - START CODE
     /*==============================================================*/
 
@@ -974,7 +929,7 @@ $(document).ready(function () {
     /*==============================================================*/
     //Search - START CODE
     /*==============================================================*/
-    $('.navbar .navbar-collapse a.dropdown-toggle, .accordion-style1 .panel-heading a, .accordion-style2 .panel-heading a, .accordion-style3 .panel-heading a, .toggles .panel-heading a, .toggles-style2 .panel-heading a, .toggles-style3 .panel-heading a, a.carousel-control, .nav-tabs a[data-toggle="tab"], a.shopping-cart').click(function (e) {
+  $('.navbar .navbar-collapse a.dropdown-toggle, .accordion-style1 .panel-heading a, .accordion-style2 .panel-heading a, .accordion-style3 .panel-heading a, .toggles .panel-heading a, .toggles-style2 .panel-heading a, .toggles-style3 .panel-heading a, a.carousel-control, .nav-tabs a[data-toggle="tab"]').click(function (e) {
         e.preventDefault();
     });
     $('body').on('touchstart click', function (e) {
@@ -999,21 +954,6 @@ $(document).ready(function () {
         else
             $(this).addClass('active');
     });
-
-   $("button.navbar-toggle").click(function () {
-       if (isMobile){
-            jQuery(".cart-content").css('opacity', '0');
-            jQuery(".cart-content").css('visibility', 'hidden');
-        }
-    });
-    $("a.dropdown-toggle").click(function () {
-       if (isMobile){
-            jQuery(".cart-content").css('opacity', '0');
-            jQuery(".cart-content").css('visibility', 'hidden');
-        }
-    });
-
-
 
     /*==============================================================*/
     //Search - END CODE
