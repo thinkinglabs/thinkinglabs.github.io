@@ -6,14 +6,6 @@ var $blog;
 $(document).ready(function () {
     
     /*==============================================================*/
-    //Set Resize Header Menu - START CODE
-    /*==============================================================*/
-    SetResizeHeaderMenu();
-    /*==============================================================*/
-    //Set Resize Header Menu - END CODE
-    /*==============================================================*/
-
-    /*==============================================================*/
     //Search Button Toggle - START CODE
     /*==============================================================*/
     jQuery(".search-button", "#top-search").on("click", function () {
@@ -1393,13 +1385,6 @@ $(window).scroll(function () {
     }
 
 });
-// Resize Header Menu
-function SetResizeHeaderMenu() {
-    var width = jQuery('nav.navbar').children('div.container').width();
-    $("ul.mega-menu-full").each(function () {
-        jQuery(this).css('width', width + 'px');
-    });
-}
 /*==============================================================*/
 //Navigation - END CODE
 /*==============================================================*/
@@ -1535,9 +1520,6 @@ $(window).resize(function () {
         $(this).css('left', subNavOffset);
     });
     SetResizeContent();
-    setTimeout(function () {
-        SetResizeHeaderMenu();
-    }, 200);
     if ($(window).width() >= 992 && $('.navbar-collapse').hasClass('in')) {
         $('.navbar-collapse').removeClass('in');
         //$('.navbar-collapse').removeClass('in').find('ul.dropdown-menu').removeClass('in').parent('li.dropdown').addClass('open');
