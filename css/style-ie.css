@@ -35,7 +35,6 @@ zoom-in.mfp-zoom { cursor: url("images/icon-zoom.cur"), default;}
 .owl-carousel.light-pagination .owl-item{ cursor: url("images/icon-move-light.cur"), default;}
 
 /* search and cart */
-.top-cart a.shopping-cart { padding-bottom: 30px;}
 .search-cart-header i { padding-bottom: 30px;}
 .search-cart-header .subtitle { padding-bottom: 30px;}
 
