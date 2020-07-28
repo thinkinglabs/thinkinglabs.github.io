@@ -4,8 +4,7 @@ var $portfolio_selectors;
 var $blog;
 
 $(document).ready(function () {
-    // Show Animated Counters
-    animatecounters();
+    
     /*==============================================================*/
     //Smooth Scroll - START CODE
     /*==============================================================*/
@@ -1347,116 +1346,7 @@ $(document).ready(function () {
 
 });
 
-function animatecounters(){
-/*==============================================================*/
-    //Counter Number - START CODE
-    /*==============================================================*/
-    jQuery({ ValuerHbcO: 0 }).delay(0).animate({ ValuerHbcO: 312 },
-    {
-        duration: 2000,
-        easing: "swing",
-        step: function () {
-
-            $("#anim-number-pizza").text(Math.ceil(this.ValuerHbcO));
-        }
-    });
-    jQuery({ ValuerHbcO: 0 }).delay(0).animate({ ValuerHbcO: 980 },
-    {
-        duration: 2000,
-        easing: "swing",
-        step: function () {
-            $("#anim-number-client").text(Math.ceil(this.ValuerHbcO));
-        }
-    });
-    jQuery({ ValuerHbcO: 0 }).delay(0).animate({ ValuerHbcO: 810 },
-    {
-        duration: 2000,
-        easing: "swing",
-        step: function () {
-            $("#anim-number-projects").text(Math.ceil(this.ValuerHbcO));
-        }
-    });
-    jQuery({ ValuerHbcO: 0 }).delay(0).animate({ ValuerHbcO: 600 },
-    {
-        duration: 2000,
-        easing: "swing",
-        step: function () {
-            $("#anim-number-comments").text(Math.ceil(this.ValuerHbcO));
-        }
-    });
-    jQuery({ ValuerHbcO: 0 }).delay(0).animate({ ValuerHbcO: 450 },
-    {
-        duration: 2000,
-        easing: "swing",
-        step: function () {
-            $("#counter1").text(Math.ceil(this.ValuerHbcO));
-        }
-    });
-    jQuery({ ValuerHbcO: 0 }).delay(0).animate({ ValuerHbcO: 687 },
-    {
-        duration: 2000,
-        easing: "swing",
-        step: function () {
-            $("#counter2").text(Math.ceil(this.ValuerHbcO));
-        }
-    });
-    jQuery({ ValuerHbcO: 0 }).delay(0).animate({ ValuerHbcO: 835 },
-    {
-        duration: 2000,
-        easing: "swing",
-        step: function () {
-            $("#counter3").text(Math.ceil(this.ValuerHbcO));
-        }
-    });
-    jQuery({ ValuerHbcO: 0 }).delay(0).animate({ ValuerHbcO: 450 },
-    {
-        duration: 2000,
-        easing: "swing",
-        step: function () {
-            $("#counter4").text(Math.ceil(this.ValuerHbcO));
-        }
-    });
-    jQuery({ ValuerHbcO: 0 }).delay(0).animate({ ValuerHbcO: 875 },
-    {
-        duration: 2000,
-        easing: "swing",
-        step: function () {
-            $("#counter5").text(Math.ceil(this.ValuerHbcO));
-        }
-    });
-    jQuery({ ValuerHbcO: 0 }).delay(0).animate({ ValuerHbcO: 458 },
-    {
-        duration: 2000,
-        easing: "swing",
-        step: function () {
-            $("#counter6").text(Math.ceil(this.ValuerHbcO));
-        }
-    });
-    jQuery({ ValuerHbcO: 0 }).delay(0).animate({ ValuerHbcO: 696 },
-    {
-        duration: 2000,
-        easing: "swing",
-        step: function () {
-            $("#counter7").text(Math.ceil(this.ValuerHbcO));
-        }
-    });
-    /*==============================================================*/
-    //Counter Number - END CODE
-    /*==============================================================*/
-}
-
 var inViewchart = false;
-var inViewanimnumberpizza = false;
-var inViewanimnumberclient = false;
-var inViewanimnumberprojects = false;
-var inViewanimnumbercomments = false;
-var inViewcounter1 = false;
-var inViewcounter2 = false;
-var inViewcounter3 = false;
-var inViewcounter4 = false;
-var inViewcounter5 = false;
-var inViewcounter6 = false;
-var inViewcounter7 = false;
 
 function isScrolledIntoView(elem)
 {
@@ -1512,86 +1402,6 @@ $(window).scroll(function () {
         });
          }
     }
-
-
-    if (isScrolledIntoView('#anim-number-pizza')) {
-        if (inViewanimnumberpizza==false){
-            inViewanimnumberpizza = true;
-         animatecounters();
-        }
-
-    }
-
-    if (isScrolledIntoView('#anim-number-projects')) {
-        if (inViewanimnumberprojects==false){
-        inViewanimnumberprojects = true;
-
-         animatecounters();
-     }
-
-    }
-
-    if (isScrolledIntoView('#anim-number-comments')) {
-        if (inViewanimnumbercomments==false){
-        inViewanimnumbercomments = true;
-
-         animatecounters();
-     }
-    }
-
-    if (isScrolledIntoView('#counter1')) {
-        if (inViewcounter1==false){
-        inViewcounter1 = true;
-
-         animatecounters();
-     }
-    }
-
-    if (isScrolledIntoView('#counter2')) {
-        if (inViewcounter2==false){
-        inViewcounter2 = true;
-
-         animatecounters();
-     }
-    }
-
-    if (isScrolledIntoView('#counter3')) {
-        if (inViewcounter3==false){
-        inViewcounter3 = true;
-
-         animatecounters();
-     }
-    }
-
-    if (isScrolledIntoView('#counter4')) {
-        if (inViewcounter4==false){
-        inViewcounter4 = true;
-
-         animatecounters();
-     }
-    }
-
-    if (isScrolledIntoView('#counter5')) {
-        if (inViewcounter5==false){
-        inViewcounter5 = true;
-        animatecounters();
-    }
-    }
-
-    if (isScrolledIntoView('#counter6')) {
-        if (inViewcounter6==false){
-        inViewcounter6 = true;
-         animatecounters();
-     }
-    }
-    if (isScrolledIntoView('#counter7')) {
-        if (inViewcounter7==false){
-        inViewcounter7 = true;
-        animatecounters();
-    }
-    }
-
-
 
 });
 // Resize Header Menu
