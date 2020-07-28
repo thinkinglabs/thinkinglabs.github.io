@@ -36,7 +36,6 @@ zoom-in.mfp-zoom { cursor: url("images/icon-zoom.cur"), default;}
 
 /* search and cart */
 .top-cart a.shopping-cart { padding-bottom: 30px;}
-#top-search { padding-bottom: 0;}
 .search-cart-header i { padding-bottom: 30px;}
 .search-cart-header .subtitle { padding-bottom: 30px;}
 
