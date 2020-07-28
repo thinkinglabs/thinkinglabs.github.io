@@ -1,97 +1,6 @@
-var $portfolio;
-var $masonry_block;
-var $portfolio_selectors;
-var $blog;
 
 $(document).ready(function () {
     
-    /*==============================================================*/
-    //Portfolio - START CODE
-    /*==============================================================*/
-    if (Modernizr.touch) {
-        // show the close overlay button
-        $(".close-overlay").removeClass("hidden");
-        // handle the adding of hover class when clicked
-        $(".porfilio-item").click(function (e) {
-            if (!$(this).hasClass("hover")) {
-                $(this).addClass("hover");
-            }
-        });
-        // handle the closing of the overlay
-        $(".close-overlay").click(function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-            if ($(this).closest(".porfilio-item").hasClass("hover")) {
-                $(this).closest(".porfilio-item").removeClass("hover");
-            }
-        });
-    } else {
-        // handle the mouseenter functionality
-        $(".porfilio-item").mouseenter(function () {
-            $(this).addClass("hover");
-        })
-        // handle the mouseleave functionality
-        .mouseleave(function () {
-            $(this).removeClass("hover");
-        });
-    }
-
-    // use for portfolio sotring with masonry
-
-    $portfolio = $('.masonry-items');
-    $portfolio.imagesLoaded(function () {
-        $portfolio.isotope({
-            itemSelector: 'li',
-            layoutMode: 'masonry'
-        });
-    });
-
-    // use for simple masonry ( for example home-photography.html page )
-
-    $masonry_block = $('.masonry-block-items');
-    $masonry_block.imagesLoaded(function () {
-        $masonry_block.isotope({
-            itemSelector: 'li',
-            layoutMode: 'masonry'
-        });
-    });
-
-    $portfolio_selectors = $('.portfolio-filter > li > a');
-    $portfolio_selectors.on('click', function () {
-        $portfolio_selectors.parent().removeClass('active');
-        $(this).parent().addClass('active');
-        var selector = $(this).attr('data-filter');
-        $portfolio.isotope({ filter: selector });
-        return false;
-    });
-    $blog = $('.blog-masonry');
-    $blog.imagesLoaded(function () {
-
-        //ISOTOPE FUNCTION - FILTER PORTFOLIO FUNCTION
-        $blog.isotope({
-            itemSelector: '.blog-listing',
-            layoutMode: 'masonry'
-        });
-    });
-    $(window).resize(function () {
-        setTimeout(function () {
-            $portfolio.isotope('layout');
-            $blog.isotope('layout');
-            $masonry_block.isotope('layout');
-        }, 500);
-    });
-    /*==============================================================*/
-    //Portfolio - END CODE
-    /*==============================================================*/
-
-    /*==============================================================*/
-    //Set Parallax - START CODE
-    /*==============================================================*/
-    SetParallax();
-    /*==============================================================*/
-    //Set Parallax - END CODE
-    /*==============================================================*/
-
     /*==============================================================*/
     //Sliders owlCarousel - START CODE
     /*==============================================================*/
@@ -1260,7 +1169,7 @@ $(window).scroll(function () {
 //Parallax - START CODE
 /*==============================================================*/
 // Parallax Fix Image Scripts
-
+//TODO remove jquery parallax plugin
 $('.parallax-fix').each(function () {
     if ($(this).children('.parallax-background-img').length) {
         var imgSrc = jQuery(this).children('.parallax-background-img').attr('src');
@@ -1268,26 +1177,7 @@ $('.parallax-fix').each(function () {
         jQuery(this).children('.parallax-background-img').remove();
         $(this).css('background-position', '50% 0%');
     }
-
 });
-var IsParallaxGenerated = false;
-function SetParallax() {
-    if ($(window).width() > 1030 && !IsParallaxGenerated) {
-        $('.parallax1').parallax("50%", 0.1);
-        $('.parallax2').parallax("50%", 0.2);
-        $('.parallax3').parallax("50%", 0.3);
-        $('.parallax4').parallax("50%", 0.4);
-        $('.parallax5').parallax("50%", 0.5);
-        $('.parallax6').parallax("50%", 0.6);
-        $('.parallax7').parallax("50%", 0.7);
-        $('.parallax8').parallax("50%", 0.8);
-        $('.parallax9').parallax("50%", 0.05);
-        $('.parallax10').parallax("50%", 0.02);
-        $('.parallax11').parallax("50%", 0.01);
-        $('.parallax12').parallax("50%", 0.099);
-        IsParallaxGenerated = true;
-    }
-}
 /*==============================================================*/
 //Parallax - END CODE
 /*==============================================================*/
