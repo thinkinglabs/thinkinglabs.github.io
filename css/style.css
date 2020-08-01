@@ -324,9 +324,3 @@ p.article-meta {
 
 .btn-big-yellow { font-size: 18px; letter-spacing: 3px; padding: 20px 25px; color: #fff; background-color: #ffb200;}
 .btn-big-yellow:hover { background-color: #FFF; color: #ffb200}
-
-/* ===================================
-    Pages
-====================================== */
-
-.scrolloff { pointer-events: none; }
