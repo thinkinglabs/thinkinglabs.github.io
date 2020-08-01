@@ -71,15 +71,6 @@ $('.inner-link').smoothScroll({
     speed: 900,
     offset: -0
 });
-// Scroll To Down
-function scrollToDown() {
-    var target = $('#features');
-    $('html, body').animate({ scrollTop: $(target).offset().top }, 800);
-}
-function scrollToDownSection() {
-    var target = $('#about');
-    $('html, body').animate({ scrollTop: $(target).offset().top }, 800);
-}
 /*==============================================================*/
 //Smooth Scroll - END CODE
 /*==============================================================*/
