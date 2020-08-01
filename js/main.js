@@ -51,27 +51,6 @@ $('.parallax-fix').each(function () {
 /*==============================================================*/
 
 /*==============================================================*/
-//Mobile Toggle Control - START CODE
-/*==============================================================*/
-
-$('.mobile-toggle').click(function () {
-    $('nav').toggleClass('open-nav');
-});
-$('.dropdown-arrow').click(function () {
-    if ($('.mobile-toggle').is(":visible")) {
-        if ($(this).children('.dropdown').hasClass('open-nav')) {
-            $(this).children('.dropdown').removeClass('open-nav');
-        } else {
-            $('.dropdown').removeClass('open-nav');
-            $(this).children('.dropdown').addClass('open-nav');
-        }
-    }
-});
-/*==============================================================*/
-//Mobile Toggle Control - END CODE
-/*==============================================================*/
-
-/*==============================================================*/
 //Position Fullwidth Subnavs fullwidth correctly - START CODE
 /*==============================================================*/
 $('.dropdown-fullwidth').each(function () {
