@@ -2,36 +2,17 @@
 $(document).ready(function () {
 
     /*==============================================================*/
-    //Search - START CODE
+    //Navbar dropdown menu responsive - START CODE
     /*==============================================================*/
-  $('.navbar .navbar-collapse a.dropdown-toggle, .accordion-style1 .panel-heading a, .accordion-style2 .panel-heading a, .accordion-style3 .panel-heading a, .toggles .panel-heading a, .toggles-style2 .panel-heading a, .toggles-style3 .panel-heading a, a.carousel-control, .nav-tabs a[data-toggle="tab"]').click(function (e) {
-        e.preventDefault();
-    });
     $('body').on('touchstart click', function (e) {
         if ($(window).width() < 992) {
             if (!$('.navbar-collapse').has(e.target).is('.navbar-collapse') && $('.navbar-collapse').hasClass('in') && !$(e.target).hasClass('navbar-toggle')) {
                 $('.navbar-collapse').collapse('hide');
             }
         }
-        else {
-            if (!$('.navbar-collapse').has(e.target).is('.navbar-collapse') && $('.navbar-collapse ul').hasClass('in')) {
-                console.log(this);
-                $('.navbar-collapse').find('a.dropdown-toggle').addClass('collapsed');
-                $('.navbar-collapse').find('ul.dropdown-menu').removeClass('in');
-                $('.navbar-collapse a.dropdown-toggle').removeClass('active');
-            }
-        }
     });
-    $('.navbar-collapse a.dropdown-toggle').on('touchstart', function (e) {
-        $('.navbar-collapse a.dropdown-toggle').not(this).removeClass('active');
-        if ($(this).hasClass('active'))
-            $(this).removeClass('active');
-        else
-            $(this).addClass('active');
-    });
-
     /*==============================================================*/
-    //Search - END CODE
+    //Navbar dropdown menu responsive - END CODE
     /*==============================================================*/
 
     /*==============================================================*/
