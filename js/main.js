@@ -17,28 +17,6 @@ $(document).ready(function () {
 
 });
 
-var inViewchart = false;
-
-function isScrolledIntoView(elem)
-{
-    try {
-        var docViewTop = $(window).scrollTop();
-        var docViewBottom = docViewTop + $(window).height();
-
-        var elemTop = $(elem).offset().top;
-        var elemBottom = elemTop + $(elem).height();
-
-        return ((elemTop <= docViewBottom) && (elemBottom >= docViewTop));
-        }
-        catch (ex) {
-            return false;
-        }
-
-
-}
-
-
-
 /*==============================================================*/
 //Navigation - START CODE
 /*==============================================================*/
@@ -49,31 +27,6 @@ $(window).scroll(function () {
     } else {
         $('nav').removeClass('shrink-nav');
     }
-
-    //Animate Elements in view position
-    if (isScrolledIntoView('.chart')) {
-        if (inViewchart==false)
-        {
-        inViewchart = true;
-
-        $( ".chart" ).each(function() {
-        try {
-            $(this).data('easyPieChart').update(0);
-            $(this).data('easyPieChart').update($(this).attr("data-percent"));
-        }
-        catch (ex) {}
-        });
-
-        $( ".chart2" ).each(function() {
-        try {
-            $(this).data('easyPieChart').update(0);
-            $(this).data('easyPieChart').update($(this).attr("data-percent"));
-        }
-        catch (ex) {}
-        });
-         }
-    }
-
 });
 /*==============================================================*/
 //Navigation - END CODE
