@@ -16,33 +16,6 @@ $(document).ready(function () {
     /*==============================================================*/
 
     /*==============================================================*/
-    //Parallax - START CODE
-    /*==============================================================*/
-    // TODO remove jquery.parallax
-    var $elem = $('#content');
-    $('#scroll_to_top').fadeIn('slow');
-    $('#nav_down').fadeIn('slow');
-    $(window).bind('scrollstart', function () {
-        $('#scroll_to_top,#nav_down').stop().animate({ 'opacity': '0.2' });
-    });
-    $(window).bind('scrollstop', function () {
-        $('#scroll_to_top,#nav_down').stop().animate({ 'opacity': '1' });
-    });
-    $('#nav_down').click(
-            function (e) {
-                $('html, body').animate({ scrollTop: $elem.height() }, 800);
-            }
-    );
-    $('#scroll_to_top').click(
-            function (e) {
-                $('html, body').animate({ scrollTop: '0px' }, 800);
-            }
-    );
-    /*==============================================================*/
-    //Parallax - END CODE
-    /*==============================================================*/
-
-    /*==============================================================*/
     //FORM TO EMAIL - START CODE
     /*==============================================================*/
     $("#success").hide();
