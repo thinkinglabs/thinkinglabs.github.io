@@ -106,13 +106,10 @@ $(window).resize(function () {
 //Scroll To Top - START CODE
 /*==============================================================*/
 $(window).scroll(function () {
-    if ($(this)
-            .scrollTop() > 100) {
-        $('.scrollToTop')
-                .fadeIn();
+    if ($(this).scrollTop() > 100) {
+      $('.scrollToTop').fadeIn();
     } else {
-        $('.scrollToTop')
-                .fadeOut();
+      $('.scrollToTop').fadeOut();
     }
 });
 //Click event to scroll to top
