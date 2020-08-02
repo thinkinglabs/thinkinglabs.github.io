@@ -93,24 +93,9 @@ SetResizeContent();
 //Window Resize Events - START CODE
 /*==============================================================*/
 $(window).resize(function () {
-    //Position Fullwidth Subnavs fullwidth correctly
-    $('.dropdown-fullwidth').each(function () {
-        $(this).css('width', $('.row').width());
-        var subNavOffset = -($('nav .row').innerWidth() - $('.menu').innerWidth() - 15);
-        $(this).css('left', subNavOffset);
-    });
     SetResizeContent();
     if ($(window).width() >= 992 && $('.navbar-collapse').hasClass('in')) {
         $('.navbar-collapse').removeClass('in');
-        //$('.navbar-collapse').removeClass('in').find('ul.dropdown-menu').removeClass('in').parent('li.dropdown').addClass('open');
-        $('.navbar-collapse ul.dropdown-menu').each(function () {
-            if ($(this).hasClass('in')) {
-                $(this).removeClass('in'); //.parent('li.dropdown').addClass('open');
-            }
-        });
-        $('ul.navbar-nav > li.dropdown > a.dropdown-toggle').addClass('collapsed');
-        $('.logo').focus();
-        $('.navbar-collapse a.dropdown-toggle').removeClass('active');
     }
 });
 /*==============================================================*/
