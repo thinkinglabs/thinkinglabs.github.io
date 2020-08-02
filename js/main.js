@@ -75,9 +75,9 @@ $('.inner-link').smoothScroll({
 /*==============================================================*/
 
 /*==============================================================*/
-//Full Screen Header - START CODE
+//Full Screen Home - START CODE
 /*==============================================================*/
-
+// resize min-height of full-screen canvas
 function SetResizeContent() {
     var minheight = $(window).height();
     $(".full-screen").css('min-height', minheight);
@@ -85,7 +85,7 @@ function SetResizeContent() {
 
 SetResizeContent();
 /*==============================================================*/
-//Full Screen Header - END CODE
+//Full Screen Home - END CODE
 /*==============================================================*/
 
 
