@@ -10,7 +10,7 @@
     Reset
 ====================================== */
 
-body{ font-family: 'Open Sans', sans-serif; -webkit-font-smoothing: antialiased; font-size:14px; color:#9a9a9a; line-height:23px; letter-spacing: 0.02em }
+body{ font-family: 'Open Sans', sans-serif; -webkit-font-smoothing: antialiased; font-size:14px; color:#9a9a9a; line-height:23px; letter-spacing: 0.02em; overflow-x: hidden; }
 a{ color: #000; }
 a:hover{ color: #ffb200; }
 img { -webkit-backface-visibility: hidden; max-width:100%; height:auto; }
