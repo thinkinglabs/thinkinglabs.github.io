@@ -1,3 +1,5 @@
+// hightlight the navigation bar item when scrolling
+
 function init_scroll_navigate() {
 
     var sections = $("section");
