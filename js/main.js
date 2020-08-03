@@ -35,8 +35,6 @@ $(window).scroll(function () {
 /*==============================================================*/
 //Parallax - START CODE
 /*==============================================================*/
-// Parallax Fix Image Scripts
-//TODO remove jquery parallax plugin
 $('.parallax-fix').each(function () {
     if ($(this).children('.parallax-background-img').length) {
         var imgSrc = jQuery(this).children('.parallax-background-img').attr('src');
