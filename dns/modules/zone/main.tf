@@ -79,11 +79,11 @@ resource "ovh_domain_zone_record" "dkim" {
   target    = var.dkim
 }
 
-resource "ovh_domain_zone_record" "dmarc" {
-  count     = local.has_dmarc
-  zone      = var.zone
-  subdomain = "_dmarc"
-  fieldtype = "TXT"
-  ttl       = local.ttl_spf
-  target    = var.dmarc
-}
+# resource "ovh_domain_zone_record" "dmarc" {
+#   count     = local.has_dmarc
+#   zone      = var.zone
+#   subdomain = "_dmarc"
+#   fieldtype = "TXT"
+#   ttl       = local.ttl_spf
+#   target    = var.dmarc
+# }
