@@ -55,8 +55,7 @@
 
 {% include experience.html %}
 
-{% assign posts_size = site.posts.size | size %}
-{% if posts_size > 0 %}
+{% if site.posts.size > 0 %}
 {% include posts.html %}
 {% endif %}
 
