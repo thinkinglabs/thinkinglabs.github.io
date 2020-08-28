@@ -30,6 +30,9 @@
                         {% if posts_size > 0 %}
                         <li><a href="/#blog" class="inner-link">Blog</a></li>
                         {% endif %}
+                        {% if site.data.features.notes_enabled and site.notes.size > 0 %}
+                        <li><a href="/#notes" class="inner-link">Notes</a></li>
+                        {% endif %}
                         <li><a href="/#contact" class="inner-link">Contact</a></li>
 
                     </ul>
