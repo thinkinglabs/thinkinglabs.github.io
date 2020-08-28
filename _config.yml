@@ -5,6 +5,8 @@ author: Thierry de Pauw
 collections:
   talks:
     output: true
+  notes:
+    output: true
 defaults:
   -
     scope:

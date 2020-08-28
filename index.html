@@ -60,6 +60,10 @@
 {% include posts.html %}
 {% endif %}
 
+{% if site.data.features.notes_enabled and site.notes.size > 0 %}
+{% include notes.html %}
+{% endif %}
+
 {% include contact.html %}
 
 {% include footer.html %}

@@ -1,0 +1,31 @@
+<!-- Notes -->
+
+<section id="notes">
+  <div class="row">
+      <div class="col-md-12 text-center">
+          <h3 class="section-title">Notes</h3>
+      </div>
+  </div>
+
+  <div class="container">
+    {% for note in site.notes %}
+    {% assign is_row = forloop.index | modulo: 3 %}
+    {% if is_row == 1 %}
+    <div class="row">
+    {% endif %}
+
+      <div class="col-md-4 presentation">
+        <h3><a href="{{ note.url }}" class="post-title">{{note.title}}</a></h3>
+        <p class="article-meta">{{ note.date | date_to_long_string }}{% if note.meta %} • {{ note.meta }}{% endif %}</p>
+        <hr />
+        <p>{{ note.excerpt }}</p>
+      </div>
+
+    {% if is_row == 0 or forloop.last %}
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+<!-- End of Notes -->
