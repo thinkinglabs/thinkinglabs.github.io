@@ -38,8 +38,7 @@
 
 {% include services.html %}
 
-{% assign talks_size = site.talks.size | size %}
-{% if talks_size > 0 %}
+{% if site.talks.size > 0 %}
 {% include talks.html %}
 {% endif %}
 
