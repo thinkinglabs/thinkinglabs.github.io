@@ -1,6 +1,6 @@
 ---
 layout: talk
-title: 15 teams, 1 monolith, 4 months to achieve Continuous Delivery
+title: Continuous Delivery in 4 months for 15 teams and their 1 monolith
 date: 2019-09-06
 conferences:
   - name: EXPANDConf 2019
@@ -10,9 +10,11 @@ conferences:
   - name: ScanAgile 2020
     date: 2020-05-04
     video_link: https://www.youtube.com/watch?v=KQSLXgp-aP0&list=PLHxNOhe276_4fELp-u0TPjRNs9s9Dzqm2
+  - name: Lean Agile Exchange 2020
+    date: 2020-09-10
 speakerdeck:
   data_id: a3cf8b65407147fc9d8875ce9c1a2dab
-  download_link: https://speakerd.s3.amazonaws.com/presentations/a3cf8b65407147fc9d8875ce9c1a2dab/15_teams__1_monolith_and_4_months_to_achieve_Continuous_Delivery.pdf
+  download_link: https://files.speakerdeck.com/presentations/a3cf8b65407147fc9d8875ce9c1a2dab/Continuous_Delivery_in_4_months_for_15_teams_and_their_1_monolith.pdf
 youtube:
   data_id: KQSLXgp-aP0
 new_layout: true
