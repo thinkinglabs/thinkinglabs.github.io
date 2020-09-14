@@ -9,9 +9,8 @@
     </div>
 
     <div class="container">
-    {% if site.data.features.new_talk_layout %}
 
-    {% assign talks = site.talks | where: "new_layout", true | sort: "date" | reverse %}
+    {% assign talks = site.talks | sort: "date" | reverse %}
     {% for talk in talks %}
       {% assign is_row = forloop.index | modulo: 3 %}
       {% if is_row == 1 %}
@@ -28,28 +27,6 @@
       {% endif %}
     {% endfor %}
 
-    {% else %}
-
-    {% assign talks = site.talks | where: "new_layout", false | group_by: "title" | sort: "date" | reverse %}
-    {% for talk in talks %}
-      {% assign is_row = forloop.index | modulo: 3 %}
-      {% if is_row == 1 %}
-    <div class="row font-weight-600">
-      {% endif %}
-
-        <div class="col-md-4 presentation">
-            <h3>{{talk.name}}</h3>
-            <hr />
-            <p>
-                {% for item in talk.items %}
-                <a href="{{item.url}}">@ {{item.conference}}</a><br /> {% endfor %}
-            </p>
-        </div>
-      {% if is_row == 0 or forloop.last %}
-    </div>
-      {% endif %}
-    {% endfor %}
-    {% endif %}
     </div>
 </section>
 <!-- End of Talks -->
