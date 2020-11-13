@@ -8,6 +8,11 @@
   margin-top: 0;
 }
 
+.talk-content p, li {
+  font-size: 16px;
+  line-height: 28px;
+}
+
 .no-padding-bottom {
   margin-top: 0;
 }
