@@ -58,8 +58,8 @@ h5 { letter-spacing: 2px; font-weight:600; font-size:11px}
 h6 { font-family: 'Open Sans', sans-serif; letter-spacing: 1px; font-size: 13px; font-weight: 400; line-height: 20px}
 
 /* section title */
-.section-title { text-transform: uppercase; font-weight: 700; font-size: 20px; letter-spacing: 2px; padding: 0 0 30px 0;}
-.section-subtitle { text-transform: uppercase; font-weight: 700; font-size: 16px; letter-spacing: 2px; padding: 0 0 30px 0;}
+.section-title { font-weight: 700; font-size: 20px; letter-spacing: 2px; padding: 0 0 30px 0;}
+.section-subtitle { font-weight: 700; font-size: 16px; letter-spacing: 2px; padding: 0 0 30px 0;}
 
 /* different text size */
 .text-small { font-size:11px !important; line-height:15px !important;}
