@@ -3,11 +3,6 @@
 
 /* same formatting as section-title */
 .talk-title {
-  text-transform: uppercase; 
-  font-weight: 700;
-  font-size: 20px;
-  letter-spacing: 2px;
-  padding: 0 0 30px 0;
   margin-top: 0;
 }
 
