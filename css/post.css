@@ -2,9 +2,10 @@
 }
 
 .post-title {
+  font-weight: 600;
+  letter-spacing: 2px;
   margin-top: 0;
   display: block;
-  font-weight: 600;
 }
 
 .post-meta {
