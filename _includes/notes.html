@@ -16,7 +16,11 @@
 
       <div class="col-md-4 presentation">
         <h3><a href="{{ note.url }}" class="post-title">{{note.title}}</a></h3>
-        <p class="article-meta">{{ note.date | date_to_long_string }}{% if note.meta %} • {{ note.meta }}{% endif %}</p>
+        <p class="article-meta">
+          {{ note.date | date_to_long_string }}
+          {% if note.conference %} • {{ note.conference }}{% endif %}
+          {% if note.meta %} • {{ note.meta }}{% endif %}
+        </p>
         <hr />
         <p>{{ note.excerpt }}</p>
       </div>
