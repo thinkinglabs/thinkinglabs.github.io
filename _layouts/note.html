@@ -31,7 +31,10 @@
             <h2 class="post-title no-padding-bottom">{{page.title}}</h2>
             <p class="post-meta">
               {% if page.date %}{{ page.date | date: "%b %-d, %Y" }}{% endif %}
-              {% if page.author %} • {{ page.author }}{% endif %}{% if page.conference %} at {{ page.conference }} {{ page.date | date: '%Y'}}{% endif %}
+              {% if page.author %}
+               • {% if page.author.twitter %}<a href="https://twitter.com/{{ page.author.twitter }}">{% endif %}{{ page.author.name }}{% if page.author.twitter %}</a>{% endif %}
+              {% endif %}
+              {% if page.conference %} at {{ page.conference }} {{ page.date | date: '%Y'}}{% endif %}
               {% if page.meta %} • {{ page.meta }}{% endif %}
             </p>
             <hr />
