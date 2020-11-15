@@ -6,31 +6,11 @@
     <head>
         <title>{{site.data.company.name}}:: {{site.data.myself.name}}</title>
         <meta name="description" content="{{site.data.myself.name}}: {{site.data.myself.title}}">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
-        <!-- rss feed -->
-        <link rel="alternate" type="application/atom+xml" title="{{site.title}}" href="/feed.xml">
-        <!-- favicon -->
-        <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32" />
-        <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16" />
 
         {% include google_analytics.html %}
+        {% include html_head.html %}
 
-        <!-- bootstrap -->
-        <link rel="stylesheet" href="/css/bootstrap.css" />
-        <!-- font-awesome icon -->
-        <link rel="stylesheet" href="/css/font-awesome.min.css" />
-        <!-- common -->
-        <link rel="stylesheet" href="/css/style.css" />
-        <!-- responsive -->
-        <link rel="stylesheet" href="/css/responsive.css" />
         <link rel="stylesheet" href="/css/talk.css" />
-        <!--[if IE]>
-            <link rel="stylesheet" href="css/style-ie.css" />
-        <![endif]-->
-        <!--[if IE]>
-            <script src="js/html5shiv.js"></script>
-        <![endif]-->
         
         {% capture og_image %}
         https://speakerd.s3.amazonaws.com/presentations/{{ page.speakerdeck.data_id }}/slide_0.jpg
