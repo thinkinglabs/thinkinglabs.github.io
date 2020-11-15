@@ -17,5 +17,3 @@ To run the site locally:
 bundle install
 bundle exec jekyll serve .
 ```
-
-## TODO
