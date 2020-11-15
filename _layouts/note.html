@@ -35,6 +35,8 @@
                • {% if page.author.twitter %}<a href="https://twitter.com/{{ page.author.twitter }}">{% endif %}{{ page.author.name }}{% if page.author.twitter %}</a>{% endif %}
               {% endif %}
               {% if page.conference %} at {{ page.conference }} {{ page.date | date: '%Y'}}{% endif %}
+              {% if page.slides %} <i class="fa fa-file-powerpoint-o"></i><a href="{{ page.slides }}">Slides</a>{% endif %}
+              {% if page.video %} <i class="fa fa-video-camera"></i><a href="{{ page.video }}">Video</a>{% endif %}
               {% if page.meta %} • {{ page.meta }}{% endif %}
             </p>
             <hr />
