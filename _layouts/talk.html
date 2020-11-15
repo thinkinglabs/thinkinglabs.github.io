@@ -71,19 +71,18 @@
 <!-- scroll to top End... -->
 
 
-<!-- javascript libraries -->
-    <script type="text/javascript" src="/js/jquery.min.js"></script>
-    <script type="text/javascript" src="/js/bootstrap.js"></script>
-    <!-- TODO remove one page scrolling for talks -->
-    <script type="text/javascript" src="/js/jquery.viewport.mini.js"></script>
-    <script type="text/javascript" src="/js/jquery.smooth-scroll.min.js"></script>
-    <!-- one page navigation-->
-    <script type="text/javascript" src="/js/one-page-main.js"></script>
-    <!-- TODO shrink-nav should be static inside the navigation include 
-         add a parameter to navigation to set shrink-nav
-    -->
-    <script type="text/javascript">
-      $('nav').addClass('shrink-nav');
-    </script>
+  {% include html_scripts.html %}
+  
+  <!-- TODO remove one page scrolling for talks -->
+  <script type="text/javascript" src="/js/jquery.viewport.mini.js"></script>
+  <script type="text/javascript" src="/js/jquery.smooth-scroll.min.js"></script>
+  <!-- one page navigation-->
+  <script type="text/javascript" src="/js/one-page-main.js"></script>
+  <!-- TODO shrink-nav should be static inside the navigation include 
+        add a parameter to navigation to set shrink-nav
+  -->
+  <script type="text/javascript">
+    $('nav').addClass('shrink-nav');
+  </script>
 </body>
 </html>
