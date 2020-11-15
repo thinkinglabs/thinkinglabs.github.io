@@ -15,6 +15,9 @@
   color: #797979;
 }
 
+.post-meta a { border-bottom: thin solid; }
+.post-meta a:hover { color: #ffb200; }
+
 .no-padding-bottom {
   margin-top: 0;
 }
