@@ -38,19 +38,14 @@
           ga('send', 'pageview');
 
         </script>
-        <meta property="og:url" content="{{site.url}}{{page.url}}">
-        <meta property="og:site_name" content="{{site.data.company.name}}:: {{site.data.myself.name}}">
-        <meta property="og:title" content="{{page.title}}">
-        <meta property="og:description" content="{{page.excerpt | strip_html}}">
-        <meta property="og:type" content="website">
-        <meta property="og:author" content="{{site.data.company.name}}">
-        <meta property="og:image" content="{{site.url}}/images/logo-light.png">
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:site" content="@tdpauw">
-        <meta name="twitter:creator" content="@tdpauw">
-        <meta name="twitter:title" content="{{page.title}}">
-        <meta name="twitter:description" content="{{page.excerpt | strip_html}}">
-        <meta name="twitter:image:src" content="{{site.url}}/images/logo-light.png">
+
+        {% capture og_description %}
+        {{ page.excerpt | strip_html }}
+        {% endcapture %}
+        {% capture og_image %}
+        {{site.url}}/images/logo-light.png
+        {% endcapture %}
+        {% include open_graph_headers.html description=og_description author=site.data.company.name image=og_image %}
     </head>
     <body>
 
