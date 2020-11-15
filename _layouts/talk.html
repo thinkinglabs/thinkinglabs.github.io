@@ -38,19 +38,11 @@
           ga('send', 'pageview');
 
         </script>
-        <meta property="og:url" content="{{site.url}}{{page.url}}">
-        <meta property="og:site_name" content="{{site.data.company.name}}:: {{site.data.myself.name}}">
-        <meta property="og:title" content="{{page.title}}">
-        <meta property="og:description" content="{{content}}">
-        <meta property="og:type" content="website">
-        <meta property="og:author" content="{{site.data.company.name}}">
-        <meta property="og:image" content="https://speakerd.s3.amazonaws.com/presentations/{{page.speakerdeck.data_id}}/slide_0.jpg">
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:site" content="@tdpauw">
-        <meta name="twitter:creator" content="@tdpauw">
-        <meta name="twitter:title" content="{{page.title}}">
-        <meta name="twitter:description" content="{{content}}">
-        <meta name="twitter:image:src" content="https://speakerd.s3.amazonaws.com/presentations/{{page.speakerdeck.data_id}}/slide_0.jpg">
+        
+        {% capture og_image %}
+        https://speakerd.s3.amazonaws.com/presentations/{{ page.speakerdeck.data_id }}/slide_0.jpg
+        {% endcapture %}
+        {% include open_graph_headers.html description=content author=site.data.company.name image=og_image %}
     </head>
     <body>
 
