@@ -3,7 +3,6 @@ layout: post
 title: Continuous Integration is Not a Tooling Problem
 author: Thierry de Pauw
 meta: 4 min read
-date: 2020-03-23
 categories:
 tags: [ Continuous Integration ]
 ---
