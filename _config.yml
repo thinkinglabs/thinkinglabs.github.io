@@ -7,7 +7,6 @@ collections:
     output: true
   notes:
     output: true
-    permalink: /:collection/:year/:month/:day/:title:output_ext
 defaults:
   -
     scope:
