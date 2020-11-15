@@ -29,7 +29,11 @@
         <div class="col-md-8 col-md-offset-2">
           <header class="post-header">
             <h2 class="post-title no-padding-bottom">{{page.title}}</h2>
-            <p class="post-meta">{% if page.date %} {{ page.date | date: "%b %-d, %Y" }} {% endif %} {% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+            <p class="post-meta">
+              {% if page.date %}{{ page.date | date: "%b %-d, %Y" }}{% endif %}
+              {% if page.author %} • {{ page.author }}{% endif %}{% if page.conference %} at {{ page.conference }} {{ page.date | date: '%Y'}}{% endif %}
+              {% if page.meta %} • {{ page.meta }}{% endif %}
+            </p>
             <hr />
           </header>
           <article class="post-content">
