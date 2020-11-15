@@ -21,7 +21,7 @@
 
 
 
-{% include navigation.html %}
+{% include navigation.html shrink=true %}
 <em>
     <section id="talk" class="bg-light-yellow padding-section-bottom">
             <div class="row no-margin-lr">
@@ -68,11 +68,5 @@
 
   {% include html_scripts.html %}
 
-  <!-- TODO shrink-nav should be static inside the navigation include 
-        add a parameter to navigation to set shrink-nav
-  -->
-  <script type="text/javascript">
-    $('nav').addClass('shrink-nav');
-  </script>
 </body>
 </html>
