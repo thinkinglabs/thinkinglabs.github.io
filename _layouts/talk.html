@@ -3,70 +3,69 @@
 
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>{{site.data.company.name}}:: {{site.data.myself.name}}</title>
-        <meta name="description" content="{{site.data.myself.name}}: {{site.data.myself.title}}">
+  <head>
+    <title>{{site.data.company.name}}:: {{site.data.myself.name}}</title>
+    <meta name="description" content="{{site.data.myself.name}}: {{site.data.myself.title}}">
 
-        {% include google_analytics.html %}
-        {% include html_head.html %}
+    {% include google_analytics.html %}
+    {% include html_head.html %}
 
-        <link rel="stylesheet" href="/css/talk.css" />
-        
-        {% capture og_image %}
-        https://speakerd.s3.amazonaws.com/presentations/{{ page.speakerdeck.data_id }}/slide_0.jpg
-        {% endcapture %}
-        {% include open_graph_headers.html description=content author=site.data.company.name image=og_image %}
-    </head>
-    <body>
+    <link rel="stylesheet" href="/css/talk.css" />
+    
+    {% capture og_image %}
+    https://speakerd.s3.amazonaws.com/presentations/{{ page.speakerdeck.data_id }}/slide_0.jpg
+    {% endcapture %}
+    {% include open_graph_headers.html description=content author=site.data.company.name image=og_image %}
+  </head>
+  <body>
 
-
-
-{% include navigation.html shrink=true %}
-<em>
-    <section id="talk" class="bg-light-yellow padding-section-bottom">
-            <div class="row no-margin-lr">
-                <div class="col-md-12 text-center">
-                    <img src="/images/icon-presentations.png" class="padding-three no-padding-bottom"><br /><br />
-                </div>
-            </div>
-            <div class="row no-margin-lr">
-                <div class="col-md-4 col-md-offset-2">
-                    <header>
-                      <h2 class="talk-title no-padding-bottom"><br/>{{page.title}}</h2>
-                      <hr />
-                    </header>
-                    <article class="talk-content">
-                    {{content}}
-                    <div class="conferences">
-                    {% if page.conferences %}
-                    <hr />
-                    <ul>
-                      {% for conference in page.conferences %}
-                      <li>@ {{conference.name}} {% if conference.video_link  %} (<a href="{{conference.video_link}}">video</a>) {% endif %}</li>
-                      {% endfor %}
-                    </ul>
-                    {% endif %}
-                    </div>
-                    </article>
-                </div>
-                <div class="col-md-4 padding-three">
-                <script async class="speakerdeck-embed" data-id="{{page.speakerdeck.data_id}}" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-                {% if page.youtube %}
-                <div class="youtube-embed-wrapper">
-                <iframe src="https://www.youtube-nocookie.com/embed/{{page.youtube.data_id}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+    {% include navigation.html shrink=true %}
+    <!-- TODO remove <em> -->
+    <em>
+      <section id="talk" class="bg-light-yellow padding-section-bottom">
+        <div class="row no-margin-lr">
+          <div class="col-md-12 text-center">
+            <img src="/images/icon-presentations.png" class="padding-three no-padding-bottom"><br /><br />
+          </div>
+        </div>
+        <div class="row no-margin-lr">
+          <div class="col-md-4 col-md-offset-2">
+            <header>
+              <h2 class="talk-title no-padding-bottom"><br/>{{page.title}}</h2>
+              <hr />
+            </header>
+            <article class="talk-content">
+              {{ content }}
+              <div class="conferences">
+                {% if page.conferences %}
+                <hr />
+                <ul>
+                  {% for conference in page.conferences %}
+                  <li>@ {{conference.name}} {% if conference.video_link  %} (<a href="{{conference.video_link}}">video</a>) {% endif %}</li>
+                  {% endfor %}
+                </ul>
                 {% endif %}
-                <p>
-                  <a href="{{page.speakerdeck.download_link}}"><span><i class="fa fa-download" aria-hidden="true"></i>Download PDF</span></a>
-                </p>
-               </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4 padding-three">
+            <script async class="speakerdeck-embed" data-id="{{page.speakerdeck.data_id}}" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+            {% if page.youtube %}
+            <div class="youtube-embed-wrapper">
+              <iframe src="https://www.youtube-nocookie.com/embed/{{page.youtube.data_id}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-    </section>
-</em>
+            {% endif %}
+            <p>
+              <a href="{{page.speakerdeck.download_link}}"><span><i class="fa fa-download" aria-hidden="true"></i>Download PDF</span></a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </em>
 
-{% include footer.html %}
+    {% include footer.html %}
 
-  {% include html_scripts.html %}
+    {% include html_scripts.html %}
 
-</body>
+  </body>
 </html>
