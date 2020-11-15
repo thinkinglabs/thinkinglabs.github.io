@@ -1,0 +1,47 @@
+---
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>{{site.data.company.name}}:: {{site.data.myself.name}} - {{page.title}}</title>
+    <meta name="description" content="{{site.data.myself.name}}: {{site.data.myself.title}} - {{page.title}}">
+
+    {% include google_analytics.html %}
+    {% include html_head.html %}
+
+    <link rel="stylesheet" href="/css/post.css" />
+
+    {% capture og_description %}
+    {{ page.excerpt | strip_html }}
+    {% endcapture %}
+    {% capture og_image %}
+    {{site.url}}/images/logo-light.png
+    {% endcapture %}
+    {% include open_graph_headers.html description=og_description author=site.data.company.name image=og_image %}
+  </head>
+  <body>
+
+    {% include navigation.html shrink=true %}
+
+    <section id="post" class="post bg-white padding-section-bottom">
+      <div class="row no-margin-lr">
+        <div class="col-md-8 col-md-offset-2">
+          <header class="post-header">
+            <h2 class="post-title no-padding-bottom">{{page.title}}</h2>
+            <p class="post-meta">{% if page.date %} {{ page.date | date: "%b %-d, %Y" }} {% endif %} {% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+            <hr />
+          </header>
+          <article class="post-content">
+            {{ content }}
+          </article>
+        </div>
+      </div>
+    </section>
+
+    {% include footer.html %}
+
+    {% include html_scripts.html %}
+
+  </body>
+</html>
