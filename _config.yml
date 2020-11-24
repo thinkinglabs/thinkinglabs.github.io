@@ -4,8 +4,10 @@ url: https://thinkinglabs.io
 author: Thierry de Pauw
 collections:
   talks:
+    title: Talk
     output: true
   notes:
+    title: Note
     output: true
 defaults:
   -
@@ -16,4 +18,3 @@ defaults:
       new_layout: false
 plugins:
   - jekyll-redirect-from
-  - jekyll-feed
