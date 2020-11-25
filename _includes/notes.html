@@ -21,8 +21,8 @@
           </a>
         </h3>
         <p class="article-meta">
-          {{ note.date | date_to_long_string }}
-          {% if note.conference %} • {{ note.conference }}{% endif %}
+          {% if note.event.date %}{{ note.event.date | date_to_long_string }}{% endif %}
+          {% if note.event.name %} • {{ note.event.name }}{% endif %}
           {% if note.meta %} • {{ note.meta }}{% endif %}
         </p>
         <hr />
