@@ -1,21 +1,24 @@
 ---
 layout: note
 title: Measuring Continuous Delivery
-conference: Pipeline Conference
-author: 
+event:
+  name: PipelineConf
+  date: 2017-03-21
+author:
   name: Steve Smith
   twitter: SteveSmith_Tech
-date: 2017-03-21
-published_at: 2020-11-16
+date: 2020-11-16
 video: https://www.youtube.com/watch?v=uzydNhFZRGY
 slides: https://speakerdeck.com/stevesmithcd/measuring-continuous-delivery
 meta: 24 min read
-categories:
-tags: [ Continuous Delivery ]
+categories: 
+tags: [ Continuous Delivery, PipelineConf ]
+redirect_from:
+  - /notes/2017-pipelineconf-measuring-continuous-delivery-steve-smith
 ---
 
 > This is a full write out, almost word for word, of Steve Smith's presentation '*Measuring Continuous Delivery*' at
-> Pipeline Conf 2017. I've written down this presentation, together with the first version of this presentation, to be
+> Pipeline Conf 2017. I've written down this presentation, together with the first version of this presentation at the [LondonCD meetup](https://www.meetup.com/London-Continuous-Delivery/), to be
 > better prepared to review Steve's book [Measuring Continuous Delivery](https://leanpub.com/measuringcontinuousdelivery).
 >
 > -- Thierry
