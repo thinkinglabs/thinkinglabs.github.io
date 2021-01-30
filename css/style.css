@@ -44,6 +44,12 @@ hr { border-top-color: #ffb200;}
 @media screen\0 { input { /* ie7, ie9, ie10, ie11+ only */ padding-bottom: 19px; } }
 /* Remove inner shadow from inputs on mobile iOS */
 
+table { width: 100%; margin-bottom: 20px; }
+thead { font-size: 18px; letter-spacing: inherit; line-height: 30px; }
+thead > tr { border-bottom: 1px solid #373737; }
+tbody > tr { border-bottom: 1px solid #ababab; }
+td, th { padding: 5px; }
+
 /* ===================================
     Typography
 ====================================== */
