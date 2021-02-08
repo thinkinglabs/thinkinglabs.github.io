@@ -654,6 +654,10 @@ Feature Toggles different maintainable [implementation techniques](https://marti
 
 ## Conclusion
 
+## Acknowledgment
+
+Thanks to [Steve Smith](https://twitter.com/SteveSmithCD) for his feedback.
+
 ## Bibliography
 
 - [Software Configuration Management Patterns](https://www.goodreads.com/book/show/367720.Software_Configuration_Management_Patterns), Steve Berczuk with Brad Appleton
