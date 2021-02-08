@@ -71,8 +71,9 @@ practices.
   or the central build server. It involves checking out the latest sources
   from mainline and at a minimum compiling the sources, running a set of commit
   tests, and building a binary artefact for deployment.
-- **Commit Tests**: All of the Unit Tests together with some Integration Tests
-  deemed important enough to get early feedback on.
+- **Commit Tests**: All of the Unit Tests together with a small simple smoke
+  test suite. This smoke test suite includes a few simple Integration and
+  Acceptance Tests deemed important enough to get early feedback on.
 
 ## Version Control Everything
 
@@ -355,7 +356,7 @@ right after the deployment of a new release. They take less than 5min.
 
 During the *Local Build* and *Commit Build* only Unit Tests are executed
 together with a small simple smoke test suite. This smoke test suite performs
-a few simple integration and acceptance tests to make sure the most commonly
+a few simple Integration and Acceptance Tests to make sure the most commonly
 used features are not broken. To commit frequently into mainline, we need to
 run these tests repeatedly. Therefore, they should be very fast. The rest of the
 Integration Tests and the Automated Acceptance Tests will run in later
