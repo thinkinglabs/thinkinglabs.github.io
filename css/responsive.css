@@ -119,8 +119,8 @@
     /*  services   */
     #services { background-color: #ffffff !important; background-image: none !important; }
 
-    /* presentation */
-    .presentation h3 { height: auto;}
+    /* articles/notes/talks */
+    .article h3 { height: auto;}
 }
 @media (max-width: 767px) {
     /*  custom  */
@@ -194,9 +194,9 @@
     /*  background color  */
     .xs-bg-gray { background-color: #f6f6f6 !important;}
 
-    /*  presentations   */
-    .presentation { margin: 30px 0 40px 0;}
-    .presentation h3 { height: auto;}
+    /*  articles/notes/talks   */
+    .article { margin: 30px 0 40px 0;}
+    .article h3 { height: auto;}
 
     /*  quotes   */
     .jumbotron { padding: 30px 0; }
