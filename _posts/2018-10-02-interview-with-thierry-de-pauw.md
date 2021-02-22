@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: Interview with Thierry de Pauw — about his journey with Continuous Delivery
 author: Thierry de Pauw
 meta: 16 min read

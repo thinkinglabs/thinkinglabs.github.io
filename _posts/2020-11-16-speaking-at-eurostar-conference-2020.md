@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: Speaking at EuroSTAR Conference 2020
 author: Thierry de Pauw
 meta: 2 min read

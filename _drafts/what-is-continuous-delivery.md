@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "What is Continuous Delivery ?"
 author: Thierry de Pauw
 meta:

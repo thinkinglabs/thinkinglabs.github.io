@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: The Practices That Make Continuous Integration
 author: Thierry de Pauw
 meta: 25 min read
@@ -32,7 +32,7 @@ mainline allowing the team to perform on-demand production releases from
 mainline at any given moment in time.
 
 This is one of the most critical practices to adopt to enable the fast flow of
-work through the value stream and getting close to the single piece flow similar
+work through the value stream and getting close to the single-piece flow similar
 to the manufacturing industry.
 
 We say a team is in a state of Continuous Integration when:
