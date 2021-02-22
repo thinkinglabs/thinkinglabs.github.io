@@ -1,77 +1,77 @@
-.post {
+.article {
 }
 
-.post-title {
+.article-title {
   font-weight: 600;
   letter-spacing: 2px;
   margin-top: 0;
   display: block;
 }
 
-.post-meta {
+.article-meta {
   font-size: 14px;
   letter-spacing: 1px;
   text-transform:uppercase;
   color: #797979;
 }
 
-.post-meta a { border-bottom: thin solid; }
-.post-meta a:hover { color: #ffb200; }
+.article-meta a { border-bottom: thin solid; }
+.article-meta a:hover { color: #ffb200; }
 
 .no-padding-bottom {
   margin-top: 0;
 }
 
-.post-content h1, h2, h3, h4, h5, h6, p, pre, blockquote, ul, ol, dl, li {
+.article-content h1, h2, h3, h4, h5, h6, p, pre, blockquote, ul, ol, dl, li {
   margin-bottom: 15px;
 }
 
-.post-content h2 {
+.article-content h2 {
   padding-top: 15px;
   text-transform: none;
 }
 
 
-.post-content a {
+.article-content a {
   color: inherit;
   border-bottom: thin solid;
 }
 
-.post-content a:hover { color: #ffb200; }
+.article-content a:hover { color: #ffb200; }
 
-.post-content p, li {
+.article-content p, li {
   font-size: 16px;
   line-height: 28px;
 }
 
-.post-content blockquote {
+.article-content blockquote {
   font-style: italic;
 }
 
-.post-content p.center {
+.article-content p.center {
   text-align: center
 }
 
-.post-content strong {
+.article-content strong {
  color: #ffb200;
  font-weight: bold;
 }
 
-.post-content ol {
+.article-content ol {
   list-style-position: outside;
 }
 
-.post-content ul {
+.article-content ul {
   list-style-position: outside;
   list-style-type: disc;
   margin-left: 35px;
 }
 
-.post-content li {
+.article-content li {
   padding-left: 1.5em;
 }
 
-.post-content p>img {
+.article-content p>img {
   display: block;
   margin: 0px auto;
 }
@@ -147,7 +147,7 @@
     margin-top: 50px;
   }
 
-  .post-title {
+  .article-title {
     line-height: 30px;
   }
 }
