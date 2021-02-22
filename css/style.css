@@ -278,19 +278,19 @@ section { padding: 100px 0;}
 /* experience section */
 .client { padding: 5px 10px; background-color: #fff; margin: 0 5px 10px 5px; display: inline-block;}
 
-/*  presentations section */
-/* TODO Rename presentation to talk or change the navigation and section title */
-.presentation h3 {
+/*  articles/notes/talks section */
+.article h3 {
   height: 25px;
 }
 
-.presentation p a {
+.article p a {
   color: #9a9a9a;
 }
 
-.presentation p a:hover {
+.article p a:hover {
   color: #ffb200;
 }
+
 p.article-meta {
   margin-top: .5em;
 }
