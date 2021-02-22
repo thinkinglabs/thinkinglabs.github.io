@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: Continuous Integration is Not a Tooling Problem
 author: Thierry de Pauw
 meta: 4 min read
