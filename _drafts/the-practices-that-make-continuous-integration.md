@@ -12,6 +12,8 @@ tags: [ Continuous Integration ]
 team can achieve by adopting a series of practices. In this article, I would
 like to go deeper into the practices that together make Continuous Integration.
 
+--
+
 To be honest, it feels a bit awkward to still write about Continuous
 Integration. It has been over 20 years Continuous Integration was introduced by
 [Kent Beck](https://twitter.com/KentBeck) in
