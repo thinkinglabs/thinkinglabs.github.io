@@ -172,5 +172,105 @@ experience working with that novice team. Although I used quite some branching
 strategies in my past career, I never really paid attention to the problems
 they introduce.
 
-So, I took the opportunity to observe what happens when a team adopts a
-branching strategy like GitFlow which resulted in this article.
+Here was the opportunity to observe what happens when a team adopts a
+branching strategy like GitFlow, which resulted in this article.
+
+## Some Definitions
+
+To make sure we are all aligned on the meaning of some practices, I am going to
+reintroduce some of them. I'm sure you know them. But some people in our
+industry love to redefine practices to assure the practice is applied in their
+organisation.
+
+### Mainline
+
+> **Mainline** is the line of development which is the reference from which the
+> builds of your system are created that feed into your deployment pipeline.
+>
+> -- Jez Humble
+
+For Git, this is the *master* branch or, preferably the *main* branch. For
+Mercurial this is the default branch. For CVS and SubVersion, this is *trunk*.
+
+### Feature Branching
+
+> **Feature Branching** is a practice where people do not merge their code into
+> mainline until the feature they are working on is "*done*"
+> (but not yet “*done done*”).
+>
+> -- Jez Humble
+
+**Done** means it is dev-complete. but there is still a lot of work to be done
+before it gets into production:
+
+- a new build has to be created;
+- all the automated tests have to be executed;
+- it has to be deployed in a staging environment;
+- smoke tests have to be executed;
+- then manual exploratory testing can start;
+- eventually, in parallel, security and performance tests have to be executed;
+- if everything was successful, it can be deployed into production;
+- again smoke tests have to be executed;
+- to finally being able to release to the end-user.
+
+The implementation of a feature starts with the creation of a branch. The
+feature grows on that branch. When the feature is finished it goes through a
+gating process called a code review. After successfully going through that
+gating process, it gets merged back into mainline.
+
+To be clear, when we speak about *feature branching* we really mean long-running
+branches that live for **longer than a day**.
+
+## Continuous Integration
+
+> Continuous Integration is a practice where members of a team integrate their
+> work frequently - usually each person integrates at least daily - leading to
+> multiple integrations per day. Each integration is verified by an automated
+> build […].
+>
+> -- Martin Fowler
+
+*It is a practice to ensure always working software and to get feedback within
+a few minutes as to whether any given change broke the application or not.*,
+Jez Humble
+
+This involves that:
+
+- Everyone in the team commits to mainline at least once a day.
+- Every commit triggers an automated build and execution of all the automated
+- tests.
+- And if the build fails it is back to green within 10 minutes.
+
+The easiest way to fix a broken build is to revert the last commit. This brings
+you back to the last known good state.
+
+Note! CI is really a practice! You do not need much tooling for this.
+
+The only things you need for Continuous Integrations are :
+
+- a version control system,
+- an automated build,
+- and eam commitment to never break the build
+
+### The Goal of an Organisation
+
+> The goal of an Organisation is
+> to **sustainably minimise** the **lead time**
+> to create positive **business impact**.
+
+Where **Lead Time** is the clock wall time between *we as a team have an idea*
+and that idea gets implemented, deployed in production, released to users and
+used by real users.
+
+**Business Impact** is anything that:
+
+- Creates money, this is your turnover.
+- Saves money, this your cost reductions.
+- And protects money, this is being ahead of your competition.
+
+We want to reduce the lead time because we want to accelerate feedback. We want
+to know as fast as possible if the thing we just implemented and deployed into
+production is actually being used and how it is being used. Based on this
+information we can make new decisions. We can run new experiments to find out
+new unmet needs of our customers and new ways to delight our customers. Which is
+a huge competitive advantage.
