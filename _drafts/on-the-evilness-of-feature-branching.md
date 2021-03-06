@@ -264,9 +264,9 @@ used by real users.
 
 **Business Impact** is anything that:
 
-- Creates money, this is your turnover.
-- Saves money, this your cost reductions.
-- And protects money, this is being ahead of your competition.
+- Creates money this is your turnover.
+- Saves money this your cost reductions.
+- And protects money this is being ahead of your competition.
 
 We want to reduce the lead time because we want to accelerate feedback. We want
 to know as fast as possible if the thing we just implemented and deployed into
@@ -274,3 +274,129 @@ production is actually being used and how it is being used. Based on this
 information we can make new decisions. We can run new experiments to find out
 new unmet needs of our customers and new ways to delight our customers. Which is
 a huge competitive advantage.
+
+## Why Feature Branches?
+
+Before I could ever suggest trunk-based development again, I had to understand
+why teams are using feature branches. What problems are they trying to solve
+with long-running branches.
+
+I asked proponents of feature branching for their reasons. Here follows four of
+them.
+
+### It allows us to work in isolation, therefore we are more productive
+
+This sounds fair. It seems rather obvious. But, when you think about it, it
+feels it is a local optimisation.
+
+We are optimising for individual developer productivity. But developing IT
+systems is rarely an individual activity. Most of the time it is a team
+activity.
+
+>Developing in isolation can help an **individual** go faster. But it does not
+> help a **team** go faster. Merge time and rework cannot be estimated and will
+> vary wildly, and the team can only go as fast as the slowest merge.
+>
+> -- Steve Smith
+
+Your team will only go as fast as the slowest merge.
+
+As long as you have not merged back to mainline you simply do not know how much
+work is still left to do. Potential merge conflicts will introduce  rework at
+merge time. Integrating changes into mainline becomes a time-consuming and very
+unpredictable activity. This makes the whole IT delivery process very
+unpredictable and increases the lead time, and the time to market.
+
+Remember, the goal of any organisation is to sustainably reduce this lead time
+in order to create positive business impact. To get early feedback. To find new
+ways to delight the customer. Here we are doing quite the opposite!
+
+Therefore instead of optimising for developer productivity we should optimise
+for team productivity and adopt a team-oriented branching strategy.
+
+### If a refactoring goes nowhere, we can just delete it
+
+Again fair enough. This looks very obvious.
+
+However, what I think they are trying to say here is: "*We have this problem for
+which we do not know the solution right away. So we are just trying something,
+by committing code into a remote branch hoping that somewhere we will get to a
+solution. If in the end we do not get to a solution, we can just delete that
+work by deleting the remote branch.*"
+
+If you don't know the solution right away, why do you not spike out some ideas?
+
+> A spike solution is a very simple program to explore potential solutions.
+> Build the spike to only address the problem under examination and ignore all
+> other concerns. Most spikes are not good enough to keep, so expect to throw it
+> away.
+>
+> -- Don Wells, extremeprogramming.org
+
+The purpose of a **Spike** is to write some throwaway code to test out an idea.
+
+The output of a spike is not production code. During a spike you should never
+ever commit code to a version control system. From my humble experience, once
+code lands in version control it somehow get seen as production code. It becomes
+very hard to overcome the [sunk cost fallacy](https://en.wikipedia.org/wiki/Sunk_cost#Fallacy_effect)
+to throw away that code.
+
+The output of a spike is in fact knowledge, not code.
+
+After a couple of hours you should know if your idea worked out or not.
+If it did not work out, throw away that code and try another idea.
+If it did work out, fantastic, you just found the solution to your problem.
+Again throw away that code, and start over again. But this time implement the
+solution in small incremental steps using the knowledge you have just created
+during that spike.
+
+### It allows us to control the quality of what goes into production
+
+Only features that went successfully through a quality gating process, called a
+code review, get merged into mainline. As such these features get deployed into
+production.
+
+I would think that quality control is the whole purpose of having Continuous
+Integration and Continuous Delivery in place.
+
+> The objective is to eliminate unfit release candidates as early in the process
+> as we can ... You are effectively prevented from releasing into production
+> builds that are not thoroughly tested and found to be fit for their intended
+> purpose.
+>
+> -- Dave Farley and Jez Humble, Continuous Delivery: Reliable Software Releases
+> through Build, Test, and Deployment Automation
+
+The objective of Continuous Integration and by extension Continuous Delivery is
+to eliminate bad quality release candidates as early as possible. Only changes
+that successfully went through all stages of the deployment pipeline, and that
+have been thoroughly tested, get into production.
+
+In my humble opinion, this is the only effective way to control the quality of
+what goes into production. Instead of trying to control quality through manual
+merging.
+
+<!-- needs to be elaborated: manual regression testing, risk of keeping the 
+branch open for longer because of the manual regression testing -->
+
+### It allows us to control which features get into production
+
+Or more specifically, we can prevent that unfinished features get into
+production. Because unfinished functionality sits on the feature branch. As long
+as the branch has not been merged back into mainline, the feature cannot get
+into production.
+
+> Feature Branching is a poor man's modular architecture, instead of building
+> systems with the ability to easy swap in and out features at
+> runtime or deploy-time they couple themselves to the source control providing
+> this mechanism through manual merging.
+>
+> -- Dan Bodart
+
+What we are in fact doing here is using the Version Control System to turn
+features off and on through manual merging. This is nothing else than a poor
+man’s modular architecture.
+
+Instead of using our Version Control System as a manual toggling mechanism we
+should design our systems in such a way that we can turn features off and on at
+deploy or runtime.
