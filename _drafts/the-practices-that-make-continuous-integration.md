@@ -7,6 +7,8 @@ categories:
 tags: [ Continuous Integration ]
 ---
 
+<!-- replace don't, isn't, haven't by do not, is not, have not -->
+
 [Continuous Integration is not a tooling problem]({% post_url
 2020-03-23-continuous-integration-is-not-a-tooling-problem %}). It is a state a
 team can achieve by adopting a series of practices. In this article, I would
@@ -589,6 +591,8 @@ refactoring is on-going. We are never blocking the flow of work through the
 value stream. We are never blocking the delivery of new functionality.
 
 ## Hide Unfinished Functionality
+
+<!-- different kinds of toggles according to longevity and dynamism -->
 
 What if a feature takes too long to implement?
 
