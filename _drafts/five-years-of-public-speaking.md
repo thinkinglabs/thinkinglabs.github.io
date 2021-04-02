@@ -2,7 +2,7 @@
 layout: article
 title: Five Years of Public Speaking
 author: Thierry de Pauw
-meta: 18 min read
+meta: 19 min read
 categories:
 tags: [Public Speaking]
 ---
@@ -114,9 +114,9 @@ the above advise: start to speak at a meetup. It will be less stressful.
 
 Although it felt as a failure. It was the start for many new encounters.
 
-[Ben Linders](https://twitter.com/BenLinders) was attending Agile Tour Brussels.
-Such a nice man. I started following Ben on Twitter. From that I discovered
-the interview with [Steve Smith](https://twitter.com/SteveSmith_Tech)
+[Ben Linders](https://twitter.com/BenLinders) was attending Agile Tour Brussels
+that year. I started following Ben on Twitter. From that I discovered
+an interview with [Steve Smith](https://twitter.com/SteveSmith_Tech)
 [*More Feature Branching Means Less Continuous Integration*](https://www.infoq.com/news/2015/10/branching-continuous-integration/). The original interview mentioned
 [PIPELINE Conference](https://pipelineconf.info/), a conference on Continuous
 Delivery.
@@ -137,9 +137,9 @@ Mindset*]({% link _talks/continuous-delivery-is-more-than-just-tooling-its-a-min
 
 **Side note on writing a proposal:**
 
-When you have never done this, writing a proposal is not easy. At least it
-was not for me. Luckily, there are nice people online willing to help you with
-that.
+When you have never written a proposal, it is not a simple task. At least it
+was not for me. Luckily, there is this lovely community of speakers online
+willing to help you with that.
 
 Have a look at [HelpMeAbstract](https://helpmeabstract.com/).
 
@@ -154,22 +154,25 @@ I learned from the failure of my first speaking experience. That went very well.
 
 ## Attending PIPELINE Conference 2016
 
-In the end I did not get selected to speak at
+In the end I was not selected to speak at
 [PIPELINE Conference](https://pipelineconf.info/) 2016.
 
 > This was a very good proposal that narrowly missed out. We liked the emphasis upon culture for Continuous Delivery rather than tools, particularly the mention of delivery, feedback, and continuous integration. However, we were uncomfortable with the 3 Ways Of DevOps as the cornerstone of the proposal. Continuous Delivery != DevOps (see http://blog.xebialabs.com/2014/12/10/cargo-cult-devops by Dave Farley), and while using the 3 Ways to drive cultural change is a good idea we would have preferred a different cornerstone that was less DevOps-centric. If the submitter is interested this could be a LondonCD talk later in the year, and we can recommend other conferences if it helps e.g. DevOpsDays
 >
 > -- feedback from PIPELINE Conference
 
-I have to say, this was lovely feedback, but I was a bit pissed off. Because of
-that DevOps thingy. But well ... that is not important any more.
+I have to say, this was lovely feedback, but ... I was a bit pissed off. I was
+not to happy with the DevOps remark. But well ... that is not important any
+more.
 
 I still attended PIPELINE Conference and it was a blast. I was literally blown
-away by the quality and the high standard of the presented topics. From that
-year on, I attended every edition of PIPELINE Conference till it ended after the
-2018 edition. For which I was very sad. It was the one conference that stood
-out where I got my butter. In the mean time, I discovered
-[Lean Agile Scotland](https://2020.leanagile.scot/) with similar high standards.
+away by the quality and the high standard of the presented topics. From then on
+I attended every edition of PIPELINE Conference till it ended after the
+2018 edition. That made me very sad. PIPELINE Conference was my little nugget.
+I was the only Belgian attending. It was the one conference that stood. That is
+where I got my knowledge. Luckily, in the mean time, I discovered
+[Lean Agile Scotland](https://2020.leanagile.scot/) that applies similar high
+standards to the content.
 
 At PIPELINE Conference I stumbled into
 [John Clapham](https://twitter.com/johnC_bristol). Before PIPELINE Conference,
@@ -188,24 +191,15 @@ Did I say I am shy? Even asking a total stranger who blogs is a fantastic
 challenge. You have to know I tend to put people writing articles online on a
 springboard.
 
-That year, I got to know the organisers of PIPELINE Conference:
-[Matthew Skelton](https://twitter.com/matthewpskelton),
-[Chris Ann O'Dell](https://twitter.com/ChrisAnnODell). Unfortunately,
-[Steve Smith](https://twitter.com/SteveSmith_Tech) was not present that year.
-Steve had [more important things on his mind](https://twitter.com/SteveSmith_Tech/status/712171266191597568). I had to wait for the next edition,
-in 2017, to meet Steve Smith. In 2017, we closed the conference at midnight.
+Unfortunately, I was not able to meet with
+[Steve Smith](https://twitter.com/SteveSmith_Tech).
+Steve had [more important things on his mind that day](https://twitter.com/SteveSmith_Tech/status/712171266191597568). I had to wait for the next edition,
+in 2017, to meet Steve. In 2017, we closed the conference at midnight.
 From that, a beautiful friendship arose.
 
 PIPELINE Conference is the best thing that happened to me. I got enrolled in
-this remarkable Continuous Delivery community. I have met and spoken to some
-great minds like [Leena S N](https://twitter.com/leenasn),
-[Dave Farley](https://twitter.com/davefarley77),
-[Allan Kelly](https://twitter.com/allankellynet),
-[Wouter Lagerweij](https://twitter.com/wouterla),
-[Michiel Rook](https://twitter.com/michieltcs).
-[Karel Boekhout](https://twitter.com/karelboekhout),
-[Kenny Baas-Schwegler](https://twitter.com/kenny_baas),
-[Tommy Tynjä](https://twitter.com/tommysdk)
+this remarkable Continuous Delivery community. I have met and spoken with some
+great minds.
 
 ## Continuous Lifecycle London 2016: Continuous Delivery is more than just Tooling, It's a Mindset
 
@@ -213,21 +207,21 @@ great minds like [Leena S N](https://twitter.com/leenasn),
 committee for
 [Continuous Lifecycle London](https://www.continuouslifecycle.london/) 2016.
 
-You can imagine how proud I was hearing I was selected with
+You can imagine how proud when hearing the news I was selected with
 [*Continuous Delivery is more than just Tooling, It's a Mindset*]({% link _talks/continuous-delivery-is-more-than-just-tooling-its-a-mindset.md %})
 
-This was the very first edition of Continuous Lifecycle London. And the very
-first version of that presentation.
+This was the very first edition of Continuous Lifecycle London. And also the
+very first version of *Continuous Delivery is more than just Tooling, It's a
+Mindset*.
 
-This was going to be my 3th conference. Here I was with a 3th topic in 6 months
-time. Oh dear!
+3th conference and 3th topic in 6 months time. Oh dear!
 
 Continuous Lifecycle felt as a rather "enterprisey" type of conference. They
-asked to submit the slides one week before the conference. Well, most of the
-time, my slides still change the evening before. By and by, that was not
-really a problem.
+asked to submit the slides one week in advance before the conference started.
+That felt a bit uncomfortable as my slides usually still change the evening
+before speaking. By and by, that was not really a problem.
 
-The nice thing, however, was: I got a conference room manager assigned. The
+However, the nice thing was: I got a conference room manager assigned. The
 morning of my presentation, I received a text message saying:
 *Hello, I am xxx. I am your room manager. Let me know when you arrive and we'll
 arrange everything for you*.
@@ -235,28 +229,28 @@ That feeling of being taken care of is so reassuring. You do not have to think
 of anything. They set up everything for you. You just have to make sure you are
 ready to serve your presentation.
 
-The presentation went super well. The room was full. Speaking in front of a
-full room, even the smallest one, is a confidence booster. After my session, I
-got hijacked by Swiss people active in hearing devices (embedded software). They
-had a lot of questions about applying Continuous Delivery with embedded
-software. This resulted in an email conversation on the topic that lasted for
-several months. That was very enlightening for me. Yet another beautiful
-experience.
+The presentation went really well. I had a full room. Speaking in front of a
+full room, even the smallest one, is a real confidence booster. After my
+session, I got hijacked by Swiss people active in hearing devices (embedded
+software). They had a lot of questions about applying Continuous Delivery with
+embedded software. This resulted in an email conversation on the topic that
+lasted for several months. That was very enlightening for me. Yet another
+wonderful experience.
 
 This time, I reused my presentation for several other conferences in 2016.
 Apparently, it takes time to learn from your mistakes 🙄.
 
 The high of that year was
-[Agile Tour Brussels](http://www.agiletourbrussels.be/) 2016 where I was
+[Agile Tour Brussels](http://www.agiletourbrussels.be/) 2016. I was
 scheduled in the morning single track. My very first time presenting in front of
 125 people. The whole Belgian agile big league was present. Afterwards,
-[Inge Gorgon](https://twitter.com/IngeGorgon) gave me the sweetest feedback:
+[Inge Gorgon](https://twitter.com/IngeGorgon) gave me this fabulous feedback:
 *You may be shy, nobody noticed that, you did very well!*.
 
 The low of that year was CD Summit & Jenkins Days Amsterdam 2016. I started
 speaking in front of 5 people. During the presentation that increased by 100% to
-... 10 people. One advise: avoid speaking at vendor conferences when your topic
-is not about the product of the vendor.
+... 10 people. One advise: avoid speaking at vendor conferences unless your topic
+is about the product of the vendor.
 
 ## Continuous Delivery Conference NL 2016: Feature Branching is Evil
 
@@ -266,24 +260,22 @@ is not about the product of the vendor.
 >
 > -- Jez Humble, [On DVCS, continuous integration, and feature branches](https://continuousdelivery.com/2011/07/on-dvcs-continuous-integration-and-feature-branches/)
 
-Let me fix that for you! Alright, I might have been a bit pretentious on this
-one. To be faire, I absolutely did not realise what I was starting.
+Let me fix that for you! Alright, this might have been a bit pretentious. To be
+faire, I had no idea what I was going to start.
 
-I wanted to speak at Continuous Delivery Conference NL because
-[Steve Smith](https://twitter.com/SteveSmith_Tech)
-had spoken at Continuous Delivery Conference NL the year before. Knowing people
-you value have spoken at a conference before is usually a good sign of the
-quality of a conference.
+I figured out [Steve Smith](https://twitter.com/SteveSmith_Tech) had spoken at
+Continuous Delivery Conference NL the year before. So, I thought that might be
+a good conference to speak at.
 
 I submitted two topics:
 
 - [*Continuous Delivery is more than just Tooling, It's a Mindset*]({% link _talks/continuous-delivery-is-more-than-just-tooling-its-a-mindset.md %})
 - [*Feature Branching is Evil*]({% link _talks/feature-branching-considered-evil.md %})
 
-Continuous Delivery Conference NL also radiated an "enterprisey" character. I
+Because of the "enterprisey" character of Continuous Delivery Conference NL, I
 was expecting, if I get selected, they would select *Continuous Delivery is more
 than just Tooling, It's a Mindset*. Well no! They went for the provocative
-topic. Look at that! The journey was going to start.
+topic. Look at that! The journey is starting.
 
 One month before speaking at Continuous Delivery Conference NL, I attended the
 [SoCraTes France](https://socrates-fr.github.io/) 2016 open space conference for
@@ -299,8 +291,10 @@ presentation. The session helped tremendously in organising my thoughts and
 producing the very first version for Continuous Delivery Conference NL.
 
 At Continuous Delivery Conference NL, I was scheduled as the last session of the
-day. That was a bummer. I have a hard time enjoying the conference as long as I
-have not given my presentation. At last, the session went well.
+day. That was a pity. I always have a hard time enjoying the conference until I
+have given my presentation. At last, the session went ok.
+
+<!-- tweet Chris Mc... speaker's feeling -->
 
 That evening, I published my slides on Twitter. Something unexpected happened.
 A retweet storm happened from all the people I admire. 😳
@@ -315,13 +309,13 @@ is one of them, together with Agile20xx, Lean Agile Scotland and Agile India.
 Did I mention [imposter syndrome](https://en.wikipedia.org/wiki/Impostor_syndrome)?
 
 Before submitting, I made use of the ask for feedback option.
-[Dana Pylayeva](https://twitter.com/DanaPylayeva) gave me
+[Dana Pylayeva](https://twitter.com/DanaPylayeva) gave me this
 [constructive feedback](https://submissions.agilealliance.org/xp2017/sessions/5106/reviews/8371#end_of_session)
-on how to improve my proposal to become an excellent proposal. Ever since, I use
-[this template](https://submissions.agilealliance.org/xp2017/sessions/5106)
+on how to improve my proposal to turn it into an excellent proposal. Ever since,
+I use [this template](https://submissions.agilealliance.org/xp2017/sessions/5106)
 for all my submissions.
 
-In the end, I got selected for XP Conference 2017. Wow. So proud.
+In the end, I got selected for XP Conference 2017. Wow. So proud, again.
 
 On the Thalys to XP Conference and at the hotel that night, I improved the
 slides by adding the required illustrations.
@@ -330,12 +324,7 @@ slides by adding the required illustrations.
 >
 > -- Jeff Sussna, [May 24, 2017](https://twitter.com/jeffsussna/status/867392165336502273)
 
-At XP Conference I met [Giovanni Asproni](https://twitter.com/gasproni). I had
-both hilarious moments and very serious discussions with Giovanni. Good
-memories. It took another 2 years before I could meet Giovanni again in 2019
-in Milan at CodeMotion where we were both speaking.
-
-For some mysterious reason, the presentation at XP Conference received quite
+For some mysterious reason, my XP Conference presentation received quite
 some attention on Twitter. It even got mentioned in
 [Gareth Rushgrove](https://twitter.com/garethr)'s
 [DevOps Weekly](https://www.devopsweekly.com/).
@@ -348,7 +337,7 @@ some attention on Twitter. It even got mentioned in
 2017 was becoming a rather lean year from a public speaking perspective. I was
 rejected from many conferences.
 
-Then, out of the blue, I received this email from
+Then, out of the blue, without notice, I received this email from
 [Mikalai Alimenkou](https://twitter.com/xpinjection)
 with as subject: "*XP Days Ukraine 2017 speaker invitation*". You can
 imagine my surprise.
@@ -358,33 +347,36 @@ imagine my surprise.
 >
 > -- Mikalai Alimenkou
 
-This, together with XP Conference made my year. Proud.
+This, together with XP Conference made my year. Again, I was super proud (I am
+repeating myself).
 
-On top of that, there was a bonus.
+As a bonus
 [XP Days Ukraine recorded my session](https://www.youtube.com/watch?v=h4DM-Wa0aDQ).
 I finally had a video of me presenting. For some reason it pops up now and then
 on Twitter. It almost reached 5.000 views. 🤷‍♂️
 
 By the end of 2017, [Leena S N](https://twitter.com/leenasn) nudged me to submit
-at [Agile India 2018](https://2018.agileindia.org/). I did and thought we will
-see. We will see turned out to become, I am travelling to India in 2018. 😳
-That was a wonderful experience I will never forget.
+at [Agile India 2018](https://2018.agileindia.org/). I hesitated because of the
+travel and the impact on the family. Finally, I did, but was thinking we will
+see what happens. It turned out I was going to travel to India in 2018. 😳
+That was a wonderful experience I am not going to forget.
 
 ## CodeMotion Milan 2018
 
-In one year, I only presented *Feature Branching is Evil* at 3 conferences. My
-believe was the world had to hear more about the evilness of feature
-branching. I decided to continue for another year to submit this presentation.
+Over the past year, I only presented *Feature Branching is Evil* at 3
+conferences. I thought the world had to hear more about the evilness of feature
+branching. So I decided to continue to submit this presentation for another
+year.
 
-2018 was a packed year. I spoke at 14 events. These were conferences, meetups
-and even paid speaking assignments at company events.
+2018 was a packed year. I spoke at 14 events. Conferences, meetups and even
+paid speaking assignments at company events.
 
-I would never have thought when starting this journey, one day I would be paid
+At the start of this journey, I would never had thought one day I would be paid
 by companies to present.
 
 The highs of 2018 were speaking at [Agile India](https://2018.agileindia.org/),
 [NCrafts](http://ncrafts.io/) and
-[Lean Agile Scotland](https://leanagile.scot/2018/). As said, I have the
+[Lean Agile Scotland](https://leanagile.scot/2018/). As said, I have this
 tendency to put some conferences on a pedestal.
 
 The absolute high was
@@ -433,8 +425,8 @@ That room was jam-packed. People were sitting on the floor in front of the
 stage. Others were standing the back! 😳 Afterwards, I learned the room had a
 capacity of 300 seats. 300 seats! 😳
 
-2018 was also the year I learned, to avoid submitting an abstract for which you
-have no material yet and you know upfront you will not have the time to put
+2018 was also the year I learned, to avoid submitting an abstract about a topic
+you have no material yet and you know upfront you will not have the time to put
 together a presentation. [Seb Rose](https://twitter.com/sebrose) nudged me to
 propose a follow up to "*Feature Branching is Evil*" with code examples to XP
 Conference 2018 and Agile 2018. Guess what? They both got selected 🤦‍♂️ There I
@@ -442,7 +434,7 @@ was. At long last, I decided to cancel both. That was a painful experience.
 
 ## Expand Conf 2019: Continuous Delivery for 15 teams and there single monolith
 
-It is only late 2019 I came up with a new subject thanks to
+It 2019 I came up with a new subject thanks to
 [Jeffrey Fredrick](https://twitter.com/Jtf) and
 [Douglas Squirrel](https://twitter.com/douglassquirrel):
 [*Continuous Delivery for 15 teams and there single monolith*]({% link _talks/15-teams-1-monolith-4-months-to-achieve-continuous-delivery.md %})
@@ -450,23 +442,27 @@ It is only late 2019 I came up with a new subject thanks to
 That year I organised [CITCON 2019](https://citconf.com/archive/ghent2019/)
 in my home town, Ghent. Jeffrey is the founder of CITCON together with
 [Paul Julius](https://twitter.com/PaulJulius) (aka PJ). Douglas (aka Squirrel)
-is a long time attendee of CITCON. Together with Jeffrey they are the authors of
-the book [Agile Conversations](https://www.conversationaltransformation.com/agile-conversation-book/).
+is a long time attendee of CITCON. Together with Jeffrey they were writing this
+book [Agile Conversations](https://www.conversationaltransformation.com/agile-conversation-book/) since many years. It became a running joke at CITCON.
 
 Squirrel did a session on Agile War stories. One of the attendees mentioned the
 work I was doing at the agency he was working for. At the time I was
 helping a federal public agency adopting Continuous Delivery for 15 teams
-all working on that single monolith. Continuous Delivery was achieved in less
+all working on one single monolith. Continuous Delivery was achieved in less
 than 4 months.
 
-Squirrel immediately grabbed me asking: "*How did you manage their fear?*".
-This became the fear conversation case in their book Agile Conversations. Proud!
+Squirrel immediately grabbed me asking: "*How did you manage their fear?*". They
+interviewed me and this became the fear conversation case in their book *Agile
+Conversations*. Proud!
+
+The interview was of great help to bring order in my mind and to craft this new
+presentation *Continuous Delivery for 15 teams and there single monolith*.
 
 ## Agile Tour Vilnius 2020: I have 99 Problems. Where do I start? Theory of Constraints applied
 
 At SoCraTes Germany 2019, my dear friend
-[Tobias Goeschel](https://twitter.com/w3ltraumpirat) and I gave an
-improvised introductory session to Theory of Constraints. That got quite some
+[Tobias Goeschel](https://twitter.com/w3ltraumpirat) and I did an
+improvised introductory session on Theory of Constraints. That got quite some
 attention. After the session, we thought we should turn this into a real
 presentation and present this at conferences. It took some time to realise this.
 But eventually, we presented this at three online conferences at the end of
