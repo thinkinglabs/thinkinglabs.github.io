@@ -132,15 +132,15 @@ Therefore, I had to attend the next PIPELINE Conference.
 
 And also, I had to submit something to PIPELINE Conference. But I could not
 propose *Facts and Fallacies of Continuous Delivery*. Too long. Too much linked
-with failure. But it had interesting content. From that presentation I distilled [*Continuous Delivery is more than just Tooling, It's a Mindset*]({% link _talks/continuous-delivery-is-more-than-just-tooling-its-a-mindset.md %}).
+with failure. But it had interesting content. So, I distilled [*Continuous Delivery is more than just Tooling, It's a Mindset*]({% link _talks/continuous-delivery-is-more-than-just-tooling-its-a-mindset.md %}).
 
 ---
 
 **Side note on writing a proposal:**
 
-When you have never written a proposal before, it is a daunting task. At least it
-was for me. Luckily, there is this lovely community of speakers online willing
-to help you with that.
+When you have never written a proposal before, it can be a daunting task. At
+least it was for me. Luckily, there is this lovely community of speakers online
+willing to help you with that.
 
 Have a look at [HelpMeAbstract](https://helpmeabstract.com/).
 
@@ -164,8 +164,8 @@ In the end, I was not selected to speak at
 >
 > -- feedback from PIPELINE Conference
 
-I have to say, this was lovely feedback, but ... I was a bit pissed off. I was
-not too happy with the DevOps remark. But well ... that is not important any
+This was lovely feedback, but ... I was a bit pissed off. I was
+not amused with the DevOps remark. But well ... that is not important any
 more.
 
 I still attended PIPELINE Conference. It was a blast. I was blown
@@ -193,13 +193,14 @@ You can imagine how pleased I was when hearing I was selected with
 3rd conference, 3rd topic in 6 months. Oh dear! 😱
 
 The presentation went certainly well. I was well prepared. The room was full.
-Speaking in front of a full room, even the smallest one, really boosts your
+Speaking in front of a full room, even the smallest one, boosts your
 confidence. After my session, I got hijacked by Swiss people active in hearing
 devices (embedded software). They had lots of questions about applying
 Continuous Delivery in the embedded software world. This resulted in an email conversation on the topic that lasted for several months. That was an
 enlightening experience.
 
-This time, I reused my presentation at several other conferences in 2016.
+This time, I reused my presentation at several other conferences in 2016. Far
+more economical.
 
 The high of that year was
 [Agile Tour Brussels](http://www.agiletourbrussels.be/) 2016. I was
@@ -234,7 +235,7 @@ I submitted two topics:
 - [*Feature Branching is Evil*]({% link _talks/feature-branching-considered-evil.md %})
 
 Continuous Delivery Conference NL reflected a rather "enterprisey" character. I
-was expecting, if I get selected, they would select *Continuous Delivery is more
+was expecting, if I got selected, they would select *Continuous Delivery is more
 than just Tooling, It's a Mindset*. Well no! They went for the provocative
 topic. Look at that! The ball was about to get rolling.
 
@@ -256,14 +257,17 @@ day. That was a pity. It is difficult to enjoy the conference when you still
 have to give your presentation. At last, the session went ok, I think.
 
 > The 3 realities of conference speaking:
+>
 > Speakers: That was awful! I ran out of time, didn’t deliver at the right pace and I forgot a point
+>
 > Audience: OMG! That was mind blowing, greatest talk I’ve heard in years
+>
 > Actual: Decent talk. Good ideas, wasn’t delivered by Laurence Olivier
 >
 > -- Chris McDermott, [Oct 8, 2019](https://twitter.com/chrisvmcd/status/1181538809718214658)
 
 That evening, I published my slides on Twitter. Something unexpected happened.
-A retweet storm happened from all the people I admire. 😳
+A retweet storm happened by the people I admire. 😳
 
 ## XP Conference 2017
 
@@ -274,10 +278,10 @@ is one of them, together with Agile20xx, Lean Agile Scotland and Agile India.
 
 Did I mention [imposter syndrome](https://en.wikipedia.org/wiki/Impostor_syndrome)?
 
-I asked for feedback about my proposal. I received
+I asked for feedback about my proposal. I received this
 [constructive feedback](https://submissions.agilealliance.org/xp2017/sessions/5106/reviews/8371#end_of_session)
 on how to improve my proposal to turn it into an excellent proposal. Ever since,
-I use [this template](https://submissions.agilealliance.org/xp2017/sessions/5106)
+I use [this same template](https://submissions.agilealliance.org/xp2017/sessions/5106)
 for all my submissions.
 
 In the end, I got selected for XP Conference 2017. I was thrilled.
@@ -298,7 +302,7 @@ some attention on Twitter. It even got mentioned in
 >
 > -- Gareth Rushgrove, DevOps Weekly [#335](https://devopsweeklyarchive.com/335/)
 
-2017 was becoming a rather lean year from a public speaking perspective. I was
+2017 was becoming a lean year from a public speaking perspective. I was
 rejected from many conferences.
 
 Then, out of the blue, without notice, I received this email from
@@ -323,7 +327,7 @@ By the end of 2017, [Leena S N](https://twitter.com/leenasn) nudged me to submit
 at [Agile India 2018](https://2018.agileindia.org/). I hesitated because of the
 travel and the impact on the family. Ultimately, I did propose but was thinking
 we will see what happens. It turned out I was going to travel to India in
-2018. 😳 That was a wonderful experience I am not going to forget.
+2018. 😳 A wonderful experience I am not going to forget soon.
 
 ## CodeMotion Milan 2018
 
@@ -338,10 +342,8 @@ paid by companies to present.
 
 The highs of 2018 were speaking at [Agile India](https://2018.agileindia.org/),
 [NCrafts](http://ncrafts.io/) and
-[Lean Agile Scotland](https://leanagile.scot/2018/). As said, I have this
-tendency to put some conferences on a pedestal.
-
-The absolute high was
+[Lean Agile Scotland](https://leanagile.scot/2018/) because they were out of my
+league. But the absolute high was
 [CodeMotion Milan 2018](https://milan2018.codemotionworld.com/).
 
 > Finally, I managed to get "Feature Branching considered Evil" accepted at a
@@ -359,8 +361,8 @@ pure developer-oriented conferences like NDC, OreDev, Devoxx, BuildStuff.
 In my humble opinion, this the audience that needs to hear this. As opposed to
 agile, XP or software-crafts conferences where I have the impression to preach
 in front of the convinced. But, "*Feature Branching is Evil*" was always
-rejected. I do not know why. Obviously, you do not receive any feedback from
-these conferences.
+rejected. I do not know why. Obviously, these conferences do not give you any
+feedback. Why would they?
 
 I do not mind being rejected. I do mind not receiving any feedback because of
 the fallacy reason "*we have received too many proposals*". I get it, it takes
@@ -368,9 +370,10 @@ time to reply to every submitter. But that is the least you could do to show
 some respect for the time these persons have put into crafting a proposal for
 your conference.
 
-I remember [Steve Smith](https://twitter.com/SteveSmith_Tech) making a point of
-personally informing each submitter why they were not selected for
-PIPELINE Conference.
+> Speaking from experience, you either make the time to give feedback - or you
+> lose proposers for the following year
+>
+> -- Steve Smith, [Oct 17, 2017](https://twitter.com/SteveSmith_Tech/status/920049306228412416)
 
 Never mind, CodeMotion Milan was an outright success. They scheduled me in
 the smallest room. I remember thinking at the time: "*I can imagine
