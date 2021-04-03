@@ -8,13 +8,12 @@ tags: [Public Speaking]
 ---
 
 It has been 5 years, I started with public speaking. This is my journey into
-public speaking. My highs and my lows. This will be a more personal, emotional
-writing. I hope this will help others thinking of public speaking to make the
-leap forward.
+public speaking. My highs and my lows. Maybe, my experience as a shy,
+introverted person can help others to leap forward into public speaking.
 
 ---
 
-Those who know me a know I am a rather reserved, shy and introvert person. I do
+Those who know me know I am a rather reserved, shy and introverted person. I do
 not like attention or being in the spotlights.
 I prefer the intimate conversations with a few people I feel at ease with and
 the hallway conversations at conferences.
@@ -26,8 +25,8 @@ of people is a rather challenging experience for me. Let me be clear,
 At the start of my public speaking journey, I used to start every presentation
 saying something along the lines of:
 
-> Look, I am shy and introvert. What I am doing here is kind of demanding.
-> Please, bare with me.
+> Look, I am shy and introverted. What I am doing here is kind of demanding.
+> Please, bear with me.
 
 Having said that, seemed to remove all the anxiety and stress. That
 helped me a lot.
@@ -42,11 +41,11 @@ You can wonder: *If it is such a pain, why are you doing this?*
 
 Good question. Although, I do not like the spotlights. I do like the attention
 afterwards. The questions, the congrats, the mentions on Twitter, the requests
-for advise. That is all very gratifying and enjoyable. It is a tremendous ego
+for advice. That is all very gratifying and enjoyable. It is a tremendous ego
 boost.
 
 There is however another, far more important reason why I continue doing this.
-In my experience, when you are shy and introvert, people tend to look over you.
+In my experience, when you are shy and introverted, people tend to look over you.
 They tend to treat you as less knowledgeable. Public speaking helped me to
 become recognised for my knowledge. Unfortunately, I am still a stranger for
 Belgian organisations 😒 although I am quite known outside of Belgium.
@@ -57,7 +56,7 @@ never wanted to present the achievements of the team to the organisation. He
 wanted me to also take credit. I preferred to stay this "émince grise" in the
 shadow and have the other team members take the honours.
 
-He kept nudging me into that direction. Finally, it triggered something. On
+He kept nudging me in that direction. Finally, it triggered something. On
 one night, in all my craziness, I submitted two proposals at two Belgian agile
 conferences. One proposal per conference. Two different topics.
 
@@ -75,7 +74,7 @@ Experienced speakers confirmed this to me.
 
 [James Lewis](https://twitter.com/boicy) from ThoughtWorks told me
 [Neil Ford](https://twitter.com/neal4d) counts 1 hour of preparation per slide.
-A 40 slides presentation, would take 40 hours preparation. And then you have not
+A 40 slides presentation, would take 40 hours of preparation. And then you have not
 yet taken the additional time spent rehearsing in front of each and every
 conference into account.
 
@@ -93,7 +92,7 @@ _talks/3m-eur-later-moving-a-team-to-become-agile-in-a-company-with-too-much-mon
 
 ## Agile Tour Brussels 2015: Facts and Fallacies of Continuous Delivery
 
-1 hour timeslot. Massive failure.
+1-hour timeslot. Massive failure.
 
 I was so stressed I did not sleep the night before.
 
@@ -104,19 +103,19 @@ embarrassing experience.
 ---
 **Side note on how to start with public speaking:**
 
-At many open spaces the question get asked:
-*How do I start with public speaking*. Many times the exact same advise is
+At many open spaces the question gets asked:
+*How do I start with public speaking*. Many times the exact same advice is
 given: start small, start at a local user group or a meetup.
-It seems I have not done this. Well, it works. However, I would advise to follow
-the above advise: start to speak at a meetup. It will be less stressful.
+It seems I have not done this. Well, it works. However, I would advise following
+the above advice: start to speak at a meetup. It will be less stressful.
 
 ---
 
-Although it felt as a failure. It was the start for many new encounters.
+Although it felt like a failure. It was the start of many new encounters.
 
 [Ben Linders](https://twitter.com/BenLinders) was attending Agile Tour Brussels
-that year. I started following Ben on Twitter. From that I discovered
-an interview with [Steve Smith](https://twitter.com/SteveSmith_Tech)
+that year. I started following Ben on Twitter. Sometime later, Ben shared an
+interview he had taken from [Steve Smith](https://twitter.com/SteveSmith_Tech)
 [*More Feature Branching Means Less Continuous Integration*](https://www.infoq.com/news/2015/10/branching-continuous-integration/). The original interview mentioned
 [PIPELINE Conference](https://pipelineconf.info/), a conference on Continuous
 Delivery.
@@ -124,13 +123,13 @@ Delivery.
 2015 was also the year I decided to focus on advising organisations in
 the adoption of Continuous Delivery. Later, I extended this to Continuous
 Integration. It seems there is still plenty of work to do in that area. That
-meant I definitely had to attend the next PIPELINE Conference.
+meant I certainly had to attend the next PIPELINE Conference.
 
-I also wanted to submit to PIPELINE Conference. But I could not submit
+And also I had to submit something to PIPELINE Conference. But I could not submit
 *Facts and Fallacies of Continuous Delivery*. Too long. Too much linked with
 failure. But it had interesting content.
 
-From that I distilled [*Continuous Delivery is more than just Tooling, It's a
+From that, I distilled [*Continuous Delivery is more than just Tooling, It's a
 Mindset*]({% link _talks/continuous-delivery-is-more-than-just-tooling-its-a-mindset.md %}).
 
 ---
@@ -154,7 +153,7 @@ I learned from the failure of my first speaking experience. That went very well.
 
 ## Attending PIPELINE Conference 2016
 
-In the end I was not selected to speak at
+In the end, I was not selected to speak at
 [PIPELINE Conference](https://pipelineconf.info/) 2016.
 
 > This was a very good proposal that narrowly missed out. We liked the emphasis upon culture for Continuous Delivery rather than tools, particularly the mention of delivery, feedback, and continuous integration. However, we were uncomfortable with the 3 Ways Of DevOps as the cornerstone of the proposal. Continuous Delivery != DevOps (see http://blog.xebialabs.com/2014/12/10/cargo-cult-devops by Dave Farley), and while using the 3 Ways to drive cultural change is a good idea we would have preferred a different cornerstone that was less DevOps-centric. If the submitter is interested this could be a LondonCD talk later in the year, and we can recommend other conferences if it helps e.g. DevOpsDays
@@ -162,7 +161,7 @@ In the end I was not selected to speak at
 > -- feedback from PIPELINE Conference
 
 I have to say, this was lovely feedback, but ... I was a bit pissed off. I was
-not to happy with the DevOps remark. But well ... that is not important any
+not too happy with the DevOps remark. But well ... that is not important any
 more.
 
 I still attended PIPELINE Conference and it was a blast. I was literally blown
@@ -170,7 +169,7 @@ away by the quality and the high standard of the presented topics. From then on
 I attended every edition of PIPELINE Conference till it ended after the
 2018 edition. That made me very sad. PIPELINE Conference was my little nugget.
 I was the only Belgian attending. It was the one conference that stood. That is
-where I got my knowledge. Luckily, in the mean time, I discovered
+where I got my knowledge. Luckily, in the meantime, I discovered
 [Lean Agile Scotland](https://2020.leanagile.scot/) that applies similar high
 standards to the content.
 
@@ -185,7 +184,7 @@ training to teams of a bank. To make the training a bit more interactive, I
 searched for ideas and stumbled into this attractive version of the
 [Ball Point Game](https://play14.org/games/ball-point-game).
 I gathered up my courage and emailed John all of my questions. John
-was so friendly to reply and provide me all the clarifications I asked for.
+was so friendly to reply and provide me with all the clarifications I asked for.
 
 Did I say I am shy? Even asking a total stranger who blogs is a fantastic
 challenge. You have to know I tend to put people writing articles online on a
@@ -214,9 +213,9 @@ This was the very first edition of Continuous Lifecycle London. And also the
 very first version of *Continuous Delivery is more than just Tooling, It's a
 Mindset*.
 
-3th conference and 3th topic in 6 months time. Oh dear!
+3rd conference and 3rd topic in 6 months. Oh dear!
 
-Continuous Lifecycle felt as a rather "enterprisey" type of conference. They
+Continuous Lifecycle felt like a rather "enterprisey" type of conference. They
 asked to submit the slides one week in advance before the conference started.
 That felt a bit uncomfortable as my slides usually still change the evening
 before speaking. By and by, that was not really a problem.
@@ -245,11 +244,11 @@ The high of that year was
 scheduled in the morning single track. My very first time presenting in front of
 125 people. The whole Belgian agile big league was present. Afterwards,
 [Inge Gorgon](https://twitter.com/IngeGorgon) gave me this fabulous feedback:
-*You may be shy, nobody noticed that, you did very well!*.
+*You may be shy, nobody noticed that you did very well!*.
 
 The low of that year was CD Summit & Jenkins Days Amsterdam 2016. I started
 speaking in front of 5 people. During the presentation that increased by 100% to
-... 10 people. One advise: avoid speaking at vendor conferences unless your topic
+... 10 people. One advice: avoid speaking at vendor conferences unless your topic
 is about the product of the vendor.
 
 ## Continuous Delivery Conference NL 2016: Feature Branching is Evil
@@ -283,9 +282,9 @@ the very first time.
 
 Again I gathered up my courage and proposed a *Feature Branching is Evil*
 session at SoCraTes France. You have to know, at the time, I did not have the
-confidence I have now to treat the subject. In addition, most attendees of
+confidence I have now to treat the subject. Besides, most attendees of
 such conference use feature branches. I was expecting some backfire. But my
-purpose of having that session was to gather as much feedback as possible from
+purpose in having that session was to gather as much feedback as possible from
 proponents of branching. The night before I drafted in 3 hours a draft of my
 presentation. The session helped tremendously in organising my thoughts and
 producing the very first version for Continuous Delivery Conference NL.
@@ -352,12 +351,12 @@ repeating myself).
 
 As a bonus
 [XP Days Ukraine recorded my session](https://www.youtube.com/watch?v=h4DM-Wa0aDQ).
-I finally had a video of me presenting. For some reason it pops up now and then
+I finally had a video of me presenting. For some reason, it pops up now and then
 on Twitter. It almost reached 5.000 views. 🤷‍♂️
 
 By the end of 2017, [Leena S N](https://twitter.com/leenasn) nudged me to submit
 at [Agile India 2018](https://2018.agileindia.org/). I hesitated because of the
-travel and the impact on the family. Finally, I did, but was thinking we will
+travel and the impact on the family. Finally, I did but was thinking we will
 see what happens. It turned out I was going to travel to India in 2018. 😳
 That was a wonderful experience I am not going to forget.
 
@@ -371,7 +370,7 @@ year.
 2018 was a packed year. I spoke at 14 events. Conferences, meetups and even
 paid speaking assignments at company events.
 
-At the start of this journey, I would never had thought one day I would be paid
+At the start of this journey, I would never have thought one day I would be paid
 by companies to present.
 
 The highs of 2018 were speaking at [Agile India](https://2018.agileindia.org/),
@@ -393,11 +392,11 @@ The absolute high was
 > -- Thierry de Pauw, [Sep 26, 2018](https://twitter.com/tdpauw/status/1045043533693022208)
 
 I've tried many times to submit "*Feature Branching is Evil*" at what I call
-pure developer oriented conferences like NDC, OreDev, Devoxx, BuildStuff.
-In my humble opinion, this the audience that needs hear this. As opposed to
+pure developer-oriented conferences like NDC, OreDev, Devoxx, BuildStuff.
+In my humble opinion, this the audience that needs to hear this. As opposed to
 agile, XP or software-crafts conferences where I have the impression to preach
 in front of the convinced. But, "*Feature Branching is Evil*" was always
-rejected. I do not know why. Obviously you do not receive any feedback from
+rejected. I do not know why. Obviously, you do not receive any feedback from
 these conferences.
 
 I do not mind being rejected. I do mind not receiving any feedback because of
@@ -412,7 +411,7 @@ PIPELINE Conference.
 
 Never mind, CodeMotion Milan was an outright success. They scheduled me in
 the smallest room. I remember thinking at the time: "*I can imagine in this kind
-of conference less people will be interested*".
+of conference fewer people will be interested*".
 
 > Thierry de Pauw live in very shortly at Room 3. Make sure to get down to the
 > stages early as places fill up fast 🚀 🙋‍♀️ 🙋‍♂️
@@ -422,28 +421,28 @@ of conference less people will be interested*".
 > -- Codemotion, [Nov 29, 2018](https://twitter.com/CodemotionIT/status/1068159252806680576)
 
 That room was jam-packed. People were sitting on the floor in front of the
-stage. Others were standing the back! 😳 Afterwards, I learned the room had a
+stage. Others were standing in the back! 😳 Afterwards, I learned the room had a
 capacity of 300 seats. 300 seats! 😳
 
-2018 was also the year I learned, to avoid submitting an abstract about a topic
-you have no material yet and you know upfront you will not have the time to put
-together a presentation. [Seb Rose](https://twitter.com/sebrose) nudged me to
-propose a follow up to "*Feature Branching is Evil*" with code examples to XP
+That year I also learned you better not submit something when you have nothing
+prepared and you know upfront you will lack the time to put something together.
+[Seb Rose](https://twitter.com/sebrose) nudged me to
+propose a follow up on "*Feature Branching is Evil*" with code examples to XP
 Conference 2018 and Agile 2018. Guess what? They both got selected 🤦‍♂️ There I
 was. At long last, I decided to cancel both. That was a painful experience.
 
-## Expand Conf 2019: Continuous Delivery for 15 teams and there single monolith
+## Expand Conf 2019: Continuous Delivery for 15 teams and their single monolith
 
-It 2019 I came up with a new subject thanks to
+In 2019 I came up with a new subject thanks to
 [Jeffrey Fredrick](https://twitter.com/Jtf) and
 [Douglas Squirrel](https://twitter.com/douglassquirrel):
-[*Continuous Delivery for 15 teams and there single monolith*]({% link _talks/15-teams-1-monolith-4-months-to-achieve-continuous-delivery.md %})
+[*Continuous Delivery for 15 teams and their single monolith*]({% link _talks/15-teams-1-monolith-4-months-to-achieve-continuous-delivery.md %})
 
 That year I organised [CITCON 2019](https://citconf.com/archive/ghent2019/)
 in my home town, Ghent. Jeffrey is the founder of CITCON together with
 [Paul Julius](https://twitter.com/PaulJulius) (aka PJ). Douglas (aka Squirrel)
-is a long time attendee of CITCON. Together with Jeffrey they were writing this
-book [Agile Conversations](https://www.conversationaltransformation.com/agile-conversation-book/) since many years. It became a running joke at CITCON.
+is a long time attendee of CITCON. Together with Jeffrey, they were writing this
+book [Agile Conversations](https://www.conversationaltransformation.com/agile-conversation-book/) for many years. It became a running joke at CITCON.
 
 Squirrel did a session on Agile War stories. One of the attendees mentioned the
 work I was doing at the agency he was working for. At the time I was
@@ -455,15 +454,15 @@ Squirrel immediately grabbed me asking: "*How did you manage their fear?*". They
 interviewed me and this became the fear conversation case in their book *Agile
 Conversations*. Proud!
 
-The interview was of great help to bring order in my mind and to craft this new
-presentation *Continuous Delivery for 15 teams and there single monolith*.
+The interview was of great help to bring order to my mind and to craft this new
+presentation *Continuous Delivery for 15 teams and their single monolith*.
 
 ## Agile Tour Vilnius 2020: I have 99 Problems. Where do I start? Theory of Constraints applied
 
 At SoCraTes Germany 2019, my dear friend
 [Tobias Goeschel](https://twitter.com/w3ltraumpirat) and I did an
-improvised introductory session on Theory of Constraints. That got quite some
-attention. After the session, we thought we should turn this into a real
+improvised introductory session on the Theory of Constraints. That got quite
+some attention. After the session, we thought we should turn this into a real
 presentation and present this at conferences. It took some time to realise this.
 But eventually, we presented this at three online conferences at the end of
 2020 and beginning of 2021. The first was
@@ -474,21 +473,21 @@ presenting on your own.
 
 Preparing that presentation was lots of fun. Tobias and I met each other at
 [SoCraTes France](https://socrates-fr.github.io/) in 2016. A click happened. We
-enjoy the conversations we have together. Ever since, we met each other at least
+enjoy the conversations we have together. Ever since we met each other at least
 once a year at SoCraTes France. This is another beautiful friendship I deeply
-care of.
+care about.
 
 ## Final Thoughts
 
 Looking back, this was quite a journey. It unlocked experiences
-I would never had ran into, had I never submitted my very first proposal in
+I would never have run into, had I never submitted my very first proposal in
 2015 to Agile Tour Brussels.
 
 I have been invited to speak at several conferences. For an imposter,
 this is quite an experience. It really boosts your ego. I can use that.
 
 During that time, I have been asked to review two books. One of my work
-experiences is mentioned as a case in another book.
+experiences are mentioned as a case in another book.
 
 I have travelled a lot. Spoken with lots of interesting people. I have seen lots
 of places. I am delighted about what I have accomplished. But, I am also tired.
@@ -497,10 +496,10 @@ of places. I am delighted about what I have accomplished. But, I am also tired.
 Over these five years, I have spoken at 30 conferences and another 13 meetups
 and private company events. Though, I have spoken so many times. Though, some
 see me as an experienced speaker. I still do not get used to it. I am still
-freaking out to the idea of speaking public. But, it is worth the
+freaking out about the idea of public speaking. But, it is worth the
 investment.
 
 ## Acknowledgment
 
 To Els, the one I love since I am 15 years, who made all of this possible.
-Thank you my love!
+Thank you, my love!
