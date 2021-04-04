@@ -2,7 +2,7 @@
 layout: article
 title: Five Years of Public Speaking
 author: Thierry de Pauw
-meta: 16 min read
+meta: 15 min read
 categories:
 tags: [Public Speaking]
 ---
@@ -28,8 +28,9 @@ saying something along the lines of:
 > Look, I am shy and introverted. What I am doing here is kind of demanding.
 > Please, bear with me.
 
-Having said that, allowed me to get rid of all the anxiety and stress. And to
-deliver my presentation with confidence. I have to say, that helped me a lot.
+Having said that, allowed me to get rid of some of the anxiety and stress. It
+allowed me to deliver my presentation with a bit more confidence. I have to say,
+that helped me a lot.
 
 Nowadays, after five years, I do not dare to say that any more. I am afraid
 people would think: "*Yeah, right. It's been five years he's speaking. Shouldn't
@@ -118,12 +119,8 @@ be less stressful.
 
 Although it felt like a failure. It was the start of many new encounters.
 
-[Ben Linders](https://twitter.com/BenLinders) was attending Agile Tour Brussels
-that year. I started following Ben on Twitter. Sometime later, Ben shared an
-interview he had taken from [Steve Smith](https://twitter.com/SteveSmith_Tech)
-[*More Feature Branching Means Less Continuous Integration*](https://www.infoq.com/news/2015/10/branching-continuous-integration/). During the interview
-[PIPELINE Conference](https://pipelineconf.info/), a conference on Continuous
-Delivery, was mentioned.
+First, I discovered about [PIPELINE Conference](https://pipelineconf.info/), a conference on Continuous Delivery, during an interview with [Steve Smith](https://twitter.com/SteveSmith_Tech) titled
+[*More Feature Branching Means Less Continuous Integration*](https://www.infoq.com/news/2015/10/branching-continuous-integration/).
 
 2015 was also the year I decided to focus on advising organisations in
 the adoption of Continuous Delivery. Later, I extended this to Continuous
@@ -149,24 +146,10 @@ Have a look at [HelpMeAbstract](https://helpmeabstract.com/).
 ## Attending PIPELINE Conference 2016
 
 In the end, I was not selected to speak at
-[PIPELINE Conference](https://pipelineconf.info/) 2016.
-
-> This was a very good proposal that narrowly missed out. We liked the emphasis
-> upon culture for Continuous Delivery rather than tools, particularly the
-> mention of delivery, feedback, and continuous integration. However, we were
-> uncomfortable with the 3 Ways Of DevOps as the cornerstone of the proposal.
-> Continuous Delivery != DevOps
-> (see http://blog.xebialabs.com/2014/12/10/cargo-cult-devops by Dave Farley),
-> and while using the 3 Ways to drive cultural change is a good idea we would
-> have preferred a different cornerstone that was less DevOps-centric. If the
-> submitter is interested this could be a LondonCD talk later in the year, and
-> we can recommend other conferences if it helps e.g. DevOpsDays
->
-> -- feedback from PIPELINE Conference
-
-This was lovely feedback, but ... I was a bit pissed off. I was
-not amused with the DevOps remark. But well ... that is not important any
-more.
+[PIPELINE Conference](https://pipelineconf.info/) 2016. In fact, I have never
+been selected for PIPELINE Conference over the next 3 years PIPELINE Conference
+still existed. Each time the proposal narrowly missed out. That is not bad,
+though it feels a bit like a fiasco.
 
 I still attended PIPELINE Conference. It was a blast. I was blown
 away by the quality and the high standard of the topics. From then on
@@ -187,20 +170,20 @@ At [Continuous Lifecycle London](https://www.continuouslifecycle.london/) 2016
 [Dave Farley](https://twitter.com/davefarley77) was part of the program
 committee.
 
-You can imagine how pleased I was when hearing I was selected with
+You can imagine how pleased I was hearing I was selected with
 [*Continuous Delivery is more than just Tooling, It's a Mindset*]({% link _talks/continuous-delivery-is-more-than-just-tooling-its-a-mindset.md %})
 
 3rd conference, 3rd topic in 6 months. Oh dear! 😱
 
-The presentation went certainly well. I was well prepared. The room was full.
-Speaking in front of a full room, even the smallest one, boosts your
+The presentation went certainly well this time. I was well prepared. The room
+was full. Speaking in front of a full room, even the smallest one, boosts your
 confidence. After my session, I got hijacked by Swiss people active in hearing
 devices (embedded software). They had lots of questions about applying
 Continuous Delivery in the embedded software world. This resulted in an email conversation on the topic that lasted for several months. That was an
 enlightening experience.
 
-This time, I reused my presentation at several other conferences in 2016. Far
-more economical.
+I reused my presentation for several other conferences in 2016. Far more
+economical.
 
 The high of that year was
 [Agile Tour Brussels](http://www.agiletourbrussels.be/) 2016. I was
@@ -225,9 +208,8 @@ is about the product of the vendor.
 Let me fix that for you! Alright, this might have been a bit pretentious. To be
 faire, I had no idea what I was starting.
 
-I figured out [Steve Smith](https://twitter.com/SteveSmith_Tech) had spoken at
-Continuous Delivery Conference NL the year before. So, I thought that might be
-a good conference to speak at.
+When Lanyrd was still a thing, I searched for Continuous Delivery conferences
+and discovered Continuous Delivery Conference NL.
 
 I submitted two topics:
 
@@ -243,7 +225,7 @@ One month before speaking at Continuous Delivery Conference NL, I attended the
 [SoCraTes France](https://socrates-fr.github.io/) 2016 open space conference for
 the very first time.
 
-Again I gathered up my courage and proposed a *Feature Branching is Evil*
+I gathered up my courage and proposed a *Feature Branching is Evil*
 session at SoCraTes France. You have to know, at the time, I did not have the
 confidence I have now to treat this subject. Besides, most attendees of
 such conference use feature branches. I was expecting some backfire. But my
@@ -278,7 +260,7 @@ is one of them, together with Agile20xx, Lean Agile Scotland and Agile India.
 
 Did I mention [imposter syndrome](https://en.wikipedia.org/wiki/Impostor_syndrome)?
 
-I asked for feedback about my proposal. I received this
+I asked for feedback about my proposal and received this
 [constructive feedback](https://submissions.agilealliance.org/xp2017/sessions/5106/reviews/8371#end_of_session)
 on how to improve my proposal to turn it into an excellent proposal. Ever since,
 I use [this same template](https://submissions.agilealliance.org/xp2017/sessions/5106)
@@ -315,19 +297,19 @@ imagine my surprise.
 >
 > -- Mikalai Alimenkou
 
-This, together with XP Conference made my year. I was so proud of this
-accomplishment.
-
 As a bonus
 [XP Days Ukraine recorded my session](https://www.youtube.com/watch?v=h4DM-Wa0aDQ).
 For some reason, it pops up now and then on Twitter. It almost reached
 5.000 views. 🤷‍♂️
 
+Looking back, XP Days Ukraine and XP Conference made my year and launched me as
+a speaker. I was so proud of this accomplishment.
+
 By the end of 2017, [Leena S N](https://twitter.com/leenasn) nudged me to submit
 at [Agile India 2018](https://2018.agileindia.org/). I hesitated because of the
 travel and the impact on the family. Ultimately, I did propose but was thinking
-we will see what happens. It turned out I was going to travel to India in
-2018. 😳 A wonderful experience I am not going to forget soon.
+we will see what happens. It turned out I was going to travel to India in 2018.
+😳 A wonderful experience I am not going to forget soon.
 
 ## CodeMotion Milan 2018
 
@@ -336,9 +318,9 @@ conferences. I thought the world had to hear more about the evilness of feature
 branching. So I decided to continue to submit this presentation for another
 year.
 
-2018 was a packed year. I spoke at 14 events. Some were even paid speaking
+2018 was a packed year. I spoke at 14 events. I started getting paid speaker
 assignments at company events. I would never have thought one day I would be
-paid by companies to present.
+once paid for speaking.
 
 The highs of 2018 were speaking at [Agile India](https://2018.agileindia.org/),
 [NCrafts](http://ncrafts.io/) and
@@ -358,7 +340,7 @@ league. But the absolute high was
 
 I've tried many times to submit "*Feature Branching is Evil*" at what I call
 pure developer-oriented conferences like NDC, OreDev, Devoxx, BuildStuff.
-In my humble opinion, this the audience that needs to hear this. As opposed to
+In my humble opinion, it is that audience that needs to hear this. As opposed to
 agile, XP or software-crafts conferences where I have the impression to preach
 in front of the convinced. But, "*Feature Branching is Evil*" was always
 rejected. I do not know why. Obviously, these conferences do not give you any
@@ -392,29 +374,23 @@ capacity of 300 seats. 300 seats! 😳
 
 ## Expand Conf 2019: Continuous Delivery for 15 teams and their single monolith
 
-In 2019 I came up with a new subject thanks to
-[Jeffrey Fredrick](https://twitter.com/Jtf) and
-[Douglas Squirrel](https://twitter.com/douglassquirrel):
-[*Continuous Delivery for 15 teams and their single monolith*]({% link _talks/15-teams-1-monolith-4-months-to-achieve-continuous-delivery.md %})
+In 2019 I organised [CITCON](https://citconf.com/archive/ghent2019/)
+in my home town, Ghent.
 
-That year I organised [CITCON 2019](https://citconf.com/archive/ghent2019/)
-in my home town, Ghent. Jeffrey is the founder of CITCON together with
-[Paul Julius](https://twitter.com/PaulJulius) (aka PJ). Douglas (aka Squirrel)
-is a long time attendee of CITCON. Together with Jeffrey, they were writing this
-book [Agile Conversations](https://www.conversationaltransformation.com/agile-conversation-book/) for many years. It became a running joke at CITCON.
-
-Squirrel did a session on Agile War stories. One of the attendees mentioned the
+[Douglas Squirrel](https://twitter.com/douglassquirrel) did a session on
+Agile War stories. One of the attendees mentioned the
 work I was doing at the agency he was working for. At the time I was
 helping a federal public agency adopting Continuous Delivery for 15 teams
 all working on one single monolith. Continuous Delivery was achieved in less
 than 4 months.
 
-Squirrel immediately grabbed me asking: "*How did you manage their fear?*". They
-interviewed me. this became the fear conversation case in their book *Agile
-Conversations*. Proud!
+Squirrel immediately grabbed me asking: "*How did you manage their fear?*".
+Squirrel interviewed me and this became the fear conversation case in
+[*Agile Conversations*](https://www.conversationaltransformation.com/agile-conversation-book/), the book he was writing with
+[Jeffrey Fredrick](https://twitter.com/Jtf).
 
-The interview was of great help to bring order to my mind and to craft this new
-presentation *Continuous Delivery for 15 teams and their single monolith*.
+That helped to bring order in my thoughts and to craft this new presentation
+[*Continuous Delivery for 15 teams and their single monolith*]({% link _talks/15-teams-1-monolith-4-months-to-achieve-continuous-delivery.md %}).
 
 ## Final Thoughts
 
@@ -422,25 +398,27 @@ Looking back, this was quite a journey. It unlocked experiences
 I would never have run into, had I never submitted my very first proposal in
 2015 to Agile Tour Brussels.
 
+During this journey I made some warm-hearted friendships.
+
 I have been invited to speak at several conferences. For an imposter,
-this is quite an experience. This is a real confidence booster.
+this is quite an experience. It does something with your self-esteem.
 
 During that time, I have been asked to review two books. A work
-experience is mentioned as a case in another book.
+experience was mentioned as a case in another book. And I was asked to be
+part of the reviewing committee for 2 conferences.
 
-I have travelled a lot. Spoken with lots of fascinating people. Seen lots
-of places.
+I have travelled a lot. Spoken with plenty of fascinating people. Seen many
+places.
 
-Some friendships I deeply care of grew from this journey.
-
-I am delighted about my accomplishments, but, also tired.
-2021 should be a break. At least, that is the plan.
-
-Over these five years, I have spoken at 30 conferences and another 13 meetups
+Over these five years, I have spoken at 27 conferences and another 12 meetups
 and private company events. Though I have spoken so many times and some
-see me as an experienced speaker. I still do not get used to public speaking.
+see me as an experienced speaker, I still do not get used to public speaking.
 But, it was worth the investment. I now feel acknowledged for the knowledge I
 have.
+
+I am delighted about my accomplishments. By the end of 2020 I was also
+exhausted. I had the plan of having a break. It seems this feeling has gone
+away.
 
 ## Acknowledgment
 
