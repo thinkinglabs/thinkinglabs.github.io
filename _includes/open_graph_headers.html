@@ -5,10 +5,10 @@
 <meta property="og:description" content="{{ include.description }}">
 <meta property="og:type" content="website">
 <meta property="og:author" content="{{ include.author }}">
-<meta property="og:image" content="{{ include.image }}">
+<meta property="og:image" content="{%if page.image %}{{site.url}}{{page.image}}{%else%}{{include.image}}{%endif%}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@tdpauw">
 <meta name="twitter:creator" content="@tdpauw">
 <meta name="twitter:title" content="{{page.title}}">
 <meta name="twitter:description" content="{{ include.description }}">
-<meta name="twitter:image:src" content="{{ include.image }}">
+<meta name="twitter:image:src" content="{%if page.image %}{{site.url}}{{page.image}}{%else%}{{include.image}}{%endif%}">
