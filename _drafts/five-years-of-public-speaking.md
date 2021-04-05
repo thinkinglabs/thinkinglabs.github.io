@@ -5,6 +5,7 @@ author: Thierry de Pauw
 meta: 15 min read
 categories:
 tags: [Public Speaking]
+image: /images/five-years-of-public-speaking/codemotion.jpg
 ---
 
 It has been five years since I started with public speaking. I wanted to share
@@ -12,6 +13,8 @@ my journey into public speaking. My highs and my lows. Maybe my experience as a
 shy, introverted person can help others.
 
 ---
+
+![Thierry de Pauw at CodeMotion Milan 2018](/images/five-years-of-public-speaking/codemotion.jpg)
 
 People who know me know I am a rather reserved, shy and introverted person. I do
 not like the attention or being in the spotlights.
