@@ -1,10 +1,19 @@
+{% capture author %}
+{% if page.collection == "posts" or page.collection == "talks" and page.author %}
+{{page.author}}
+{% elsif page.collection == "notes" and page.author.name %}
+{{page.author.name}}
+{% else %}
+{{include.author}}
+{% endif %}
+{% endcapture %}
 
+<meta name="author" content="{{author | strip}}">
 <meta property="og:url" content="{{site.url}}{{page.url}}">
 <meta property="og:site_name" content="{{site.data.company.name}}:: {{site.data.myself.name}}">
 <meta property="og:title" content="{{page.title}}">
 <meta property="og:description" content="{{ include.description }}">
 <meta property="og:type" content="website">
-<meta property="og:author" content="{{ include.author }}">
 <meta property="og:image" content="{%if page.image %}{{site.url}}{{page.image}}{%else%}{{include.image}}{%endif%}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@tdpauw">
