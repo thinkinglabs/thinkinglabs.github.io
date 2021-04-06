@@ -56,12 +56,14 @@ stranger to Belgian organisations 😒 though I am somehow known outside of
 Belgium.
 
 It all started in 2015. At the time, I was helping a team of 10 people
-improving their software engineering skills. The team manager was concerned I
-never wanted to present the achievements of the team to the organisation. He
-wanted me to also take credit. I preferred to stay this "émince grise" in the
-comfy shadow and have the other team members take the honours.
+improving their software engineering skills.
+[Stefan De Moerloose](https://www.linkedin.com/in/stefandemoerloose/),
+the team manager,  was concerned I never wanted to present the achievements of
+the team to the organisation. Stefan wanted me to also take credit. I preferred
+to stay this "émince grise" in the comfy shadow and have the other team members
+take the honours.
 
-He kept nudging me in that direction. Finally, it triggered something. On
+Stefan kept nudging me in that direction. Finally, it triggered something. On
 one night, in all my craziness, I submitted two proposals at two Belgian agile
 conferences. One proposal per conference. Two different topics.
 
@@ -110,7 +112,9 @@ At many open spaces the question gets asked:
 *How do I start with public speaking*.
 
 Many times the same advice is given: "*Start small. Start at a local user
-group or a meetup*". It looks like I have done it the other way around. First the
+group or a meetup*".
+
+It looks like I have done it the other way around. First the
 conference, then the meetups. Well, it also works like that. However, I would
 advise following the above advice: start to speak at a meetup. It will
 be less stressful.
@@ -130,7 +134,8 @@ Therefore, it was clear I had to attend the next PIPELINE Conference.
 And also, I wanted to submit something to PIPELINE Conference. But I could not
 propose *Facts and Fallacies of Continuous Delivery*. Too long. Too much linked
 with failure. But it had compelling content. So, I distilled
-[*Continuous Delivery is more than just Tooling, It's a Mindset*]({% link _talks/continuous-delivery-is-more-than-just-tooling-its-a-mindset.md %}).
+[*Continuous Delivery is more than just Tooling, It's a Mindset*]({% link _talks/continuous-delivery-is-more-than-just-tooling-its-a-mindset.md %})
+from that.
 
 ---
 
@@ -148,9 +153,9 @@ Have a look at [HelpMeAbstract](https://helpmeabstract.com/).
 
 In the end, I was not selected to speak at
 [PIPELINE Conference](https://pipelineconf.info/) 2016. In fact, I have never
-been selected for PIPELINE Conference over the next three years PIPELINE
-Conference still existed. Each time the proposal narrowly missed out. That is
-not bad at all, though it feels a bit disappointing.
+been selected for PIPELINE Conference for the time it still existed. I tried
+three times. Each time the proposal narrowly missed out. That is not bad at all,
+though it feels a bit disappointing.
 
 I still attended PIPELINE Conference. It was a blast. I was blown
 away by the quality and the high standard of the topics. From then on
@@ -183,7 +188,7 @@ devices (embedded software). They had lots of questions about applying
 Continuous Delivery in the embedded software world. That resulted in an email conversation on the topic that lasted for several months. That was an
 enlightening experience.
 
-I reused my presentation for several other conferences in 2016. Far more
+I reused my presentation for several other conferences in 2016. That is far more
 economical.
 
 The high of that year was
@@ -191,7 +196,7 @@ The high of that year was
 scheduled in the morning single track. My very first time presenting in front of
 125 people. The whole Belgian agile big league was present. Afterwards,
 a kind lady gave me this fabulous feedback:
-*You may be shy, nobody noticed. You did very well!*.
+*You may be shy, nobody noticed. You did very well!*
 
 The low of that year was CD Summit & Jenkins Days Amsterdam 2016. I started
 speaking in front of 5 people. That increased by 100% during the presentation to
@@ -237,8 +242,8 @@ my presentation. The session helped tremendously in organising my thoughts and
 producing the very first version for Continuous Delivery Conference NL.
 
 At Continuous Delivery Conference NL, I was scheduled as the last session of the
-day. That was a pity. It is difficult to enjoy the conference when you still
-have to give your presentation. At last, the session went ok, I think.
+day. That was a pity. I have a hard time enjoying a conference when I
+still have to give my presentation. At last, the session went ok, I think.
 
 > The 3 realities of conference speaking:
 >
@@ -251,7 +256,7 @@ have to give your presentation. At last, the session went ok, I think.
 > -- Chris McDermott, [Oct 8, 2019](https://twitter.com/chrisvmcd/status/1181538809718214658)
 
 That evening, I published my slides on Twitter. Something unexpected happened.
-A retweet storm happened by the people I admire. 😳
+A retweet storm occurred by the people I admire. 😳
 
 ## XP Conference 2017
 
@@ -392,7 +397,7 @@ in my home town, Ghent.
 
 [Douglas Squirrel](https://twitter.com/douglassquirrel) did a session on
 Agile War stories. One of the attendees mentioned the
-work I was doing at the agency he was part of. At the time, I was
+work I was doing at the agency he was working at. At the time, I was
 helping a federal public agency adopting Continuous Delivery for 15 teams
 all working on one single monolith. The agency achieved Continuous Delivery
 in less than four months.
