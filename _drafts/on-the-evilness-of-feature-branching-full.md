@@ -2,7 +2,7 @@
 layout: article
 title: On the Evilness of Feature Branching
 author: Thierry de Pauw
-meta: 15 min read
+meta: 21 min read
 categories:
 tags: [Version Control, Continuous Integration]
 ---
