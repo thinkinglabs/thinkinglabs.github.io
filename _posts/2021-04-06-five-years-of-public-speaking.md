@@ -2,7 +2,7 @@
 layout: article
 title: Five Years of Public Speaking
 author: Thierry de Pauw
-meta: 15 min read
+meta: 12 min read
 categories:
 tags: [Public Speaking]
 image: /images/five-years-of-public-speaking/codemotion.jpg
