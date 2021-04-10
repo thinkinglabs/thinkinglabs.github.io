@@ -10,7 +10,7 @@ author:
 date: 2020-11-16
 video: https://www.youtube.com/watch?v=uzydNhFZRGY
 slides: https://speakerdeck.com/stevesmithcd/measuring-continuous-delivery
-meta: 24 min read
+meta: 20 min read
 categories: 
 tags: [ Continuous Delivery, PipelineConf ]
 redirect_from:
