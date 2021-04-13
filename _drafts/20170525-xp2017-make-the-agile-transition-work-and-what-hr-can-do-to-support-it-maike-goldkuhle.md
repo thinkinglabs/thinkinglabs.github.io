@@ -13,8 +13,9 @@ categories:
 tags: [ Agile, HR, XP2017 ]
 ---
 
-Global company
-Started agile transition in 2012
+A Global company
+
+Started an agile transition in 2012
 
 3 phases of the agile transition
 
@@ -23,37 +24,39 @@ Started agile transition in 2012
 - break with old rules
 
 ## Phase 1: Sharing (feedback) is caring
+
 when starting an agile transition, people don't have experience, so sharing is important and managers are in the way for that
 
 or let MANY build your organisation !
-many organisations have an annual feedback process, which is in fact an appraisal proces
-we split the feedback process in many different tools and made it distinct from the appraisal proces
+many organisations have an annual feedback process, which is in fact an appraisal process
+we split the feedback process in many different tools and made it distinct from the appraisal process
 
 Team Feedback Session
 
--  make it a feedback process for the team (not the manager saying ...): replace old feedback processes - install new real feedback process
--  run, run, run feedback training !
--  let feedback be facilitated
+- make it a feedback process for the team (not the manager saying ...): replace old feedback processes - install new rel feedback process
+- run, run, run feedback training !
+- let feedback be facilitated
 
 Contribution Matrix
 
--  we cut of from the feedback proces more like a performance process
--  something like a skills matrix
--  it will include not only technology part but also a soft skills part
--  let the team define needed skills and competences based on product or business needs
--  include regular review process for skills and competences
--  include standardised sections like: contribution to team performance, motivation, sharing knowledge or ...
--  replace former performance rating processes based on manager decisions - start contribution matrix for performance rating
+- we cut of from the feedback process more like a performance process
+- something like a skills matrix
+- it will include not only technology part but also a soft skills part
+- let the team define needed skills and competences based on product or business needs
+- include regular review process for skills and competences
+- include standardised sections like: contribution to team performance, motivation, sharing knowledge or ...
+- replace former performance rating processes based on manager decisions - start contribution matrix for performance rating
 
 Development Coaches
 
--  he needs to be the goto person who cares about your development
--  install coaches who focus on individual development needs
--  max people to take care ~ 30
+- he needs to be the goto person who cares about your development
+- install coaches who focus on individual development needs
+- max people to take care ~ 30
 
 phase 1: when people get in touch with agile
 
 ## Phase 2: Reduce hierarchical thinking (also structures)
+
 or grow ALL your people
 
 Vacation planning
@@ -68,7 +71,7 @@ the team organises the vacation themselves on defined rules
 
 we took away the management decisions and made it a team decision
 
-=> nobody needs anymore to go to the manager
+=> nobody needs any more to go to the manager
 
 benefit: growing self responsibility
 
@@ -102,11 +105,12 @@ In this phase: try to eliminate management decisions
 
 there is still management to decide on the budgets
 
-only they are not sitting in the production teams anymore
+only they are not sitting in the production teams any more
 
 cleverly split up the things that need to be in the team, and the things that can be outside the process
 
 ## Phase 3: Break with old (or common) rules
+
 or unleash the power of ALL employees
 
 Team Bonus
@@ -142,9 +146,3 @@ but it starts with complaints in retrospectives, complaints to scrum masters, de
 eventually HR tries to relocate the person in another team, sometimes this works because the skills better fit
 
 the good thing is: it again creates transparency on the fact that performance is important and there are a lot of people involved in the process
-
-
-
-
-
-
