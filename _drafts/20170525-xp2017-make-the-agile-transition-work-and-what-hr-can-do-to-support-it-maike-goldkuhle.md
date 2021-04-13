@@ -1,4 +1,17 @@
-# Make the agile transition work! And what HR can do to support it...., Maike Goldkuhle
+---
+layout: note
+title: Make the agile transition work! And what HR can do to support it...
+event:
+  name: XP2017
+  date: 2017-05-25
+author:
+  name: Maike Goldkuhle
+  twitter: MaikeGoldkuhle
+date: 2021-04-13
+meta: 3 min read
+categories: 
+tags: [ Agile, HR, XP2017 ]
+---
 
 Global company
 Started agile transition in 2012
