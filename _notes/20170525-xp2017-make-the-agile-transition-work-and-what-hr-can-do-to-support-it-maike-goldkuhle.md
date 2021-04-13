@@ -2,7 +2,7 @@
 layout: note
 title: Make the agile transition work! And what HR can do to support it...
 event:
-  name: XP2017
+  name: XP Conference
   date: 2017-05-25
 author:
   name: Maike Goldkuhle
@@ -11,6 +11,12 @@ date: 2021-04-13
 meta: 3 min read
 categories: 
 tags: [ Agile, HR, XP2017 ]
+---
+
+There are my notes on Maike Goldkuhle's session at XP2017 on HR and Agile. I
+wanted to attend this session because there is very little said about the role
+of HR in agile transitions.
+
 ---
 
 A Global company
