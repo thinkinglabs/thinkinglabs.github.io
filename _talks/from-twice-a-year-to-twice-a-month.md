@@ -8,7 +8,6 @@ conferences:
 speakerdeck:
   data_id: 8403b9a9a996497daae6c55008b51ef6
   download_link: https://speakerd.s3.amazonaws.com/presentations/8403b9a9a996497daae6c55008b51ef6/From_twice_a_year_to_twice_a_month_-_the_story_of_No_More_Majors.pdf
-new_layout: true
 ---
 The Belgian Federal Pension Service (SFPD) has a large IT department with more than a dozen teams working on the same application. Over the course of a few years, these teams developed an agile way of working at the team level but were struggling to work effectively on a larger scale.
 

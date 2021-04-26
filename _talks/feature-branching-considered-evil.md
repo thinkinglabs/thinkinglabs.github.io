@@ -44,7 +44,6 @@ speakerdeck:
   download_link: https://speakerd.s3.amazonaws.com/presentations/6e5c22252bbc42b09caedba221567c27/Feature_Branching_considered_Evil.pdf
 youtube:
   data_id: h4DM-Wa0aDQ
-new_layout: true
 redirect_from:
   - /talks/socrates-fr-2016-feature-branching-is-evil
   - /talks/cdconfnl-2016-feature-branching-is-evil

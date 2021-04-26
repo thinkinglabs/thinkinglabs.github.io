@@ -9,12 +9,6 @@ collections:
   notes:
     title: Note
     output: true
-defaults:
-  -
-    scope:
-      path: ""
-      type: "talks"
-    values:
-      new_layout: false
+defaults: []
 plugins:
   - jekyll-redirect-from

@@ -17,7 +17,6 @@ speakerdeck:
   download_link: https://files.speakerdeck.com/presentations/a3cf8b65407147fc9d8875ce9c1a2dab/Continuous_Delivery_in_4_months_for_15_teams_and_their_1_monolith.pdf
 youtube:
   data_id: KQSLXgp-aP0
-new_layout: true
 ---
 
 15 teams, 1 shared monolith, 1 release every 6 months, and product demand for 1 release every 2 weeks. How do you know where to start with Continuous Delivery, when you’re surrounded by technology and organisational challenges?
