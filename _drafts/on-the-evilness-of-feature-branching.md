@@ -9,7 +9,7 @@ tags: [Version Control, Continuous Integration]
 
 Branch creation became very easy with the advent of Distributed Version Control
 Systems. However, it comes at an unquestionable cost. Long living branches break
-the flow of the IT delivery process, impacting stability and throughput.
+the flow of the IT delivery process, impacting both stability and throughput.
 
 ---
 
@@ -26,3 +26,9 @@ rather, the real reasons why teams are using them.
 5. Questions I Regularly Get Asked about Trunk-Based Development
 6. What Are The Benefits of Trunk-Based Development?
 7. Where is the Evilness of Feature Branching?
+
+## Acknowledgments
+
+[Steve Smith](https://twitter.com/SteveSmith_Tech) for nudging me to write this
+down, reviewing the result and suggesting to break the article up into an
+article series.
