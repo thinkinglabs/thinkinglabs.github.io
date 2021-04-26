@@ -18,7 +18,7 @@ redirect_from:
 ---
 
 > This is a full write out, almost word for word, of Steve Smith's presentation '*Measuring Continuous Delivery*' at
-> Pipeline Conf 2017. I've written down this presentation, together with the first version of this presentation at the [LondonCD meetup](https://www.meetup.com/London-Continuous-Delivery/), to be
+> Pipeline Conf 2017. I've written this presentation down, together with the first version of this presentation at the [LondonCD meetup](https://www.meetup.com/London-Continuous-Delivery/), to be
 > better prepared to review Steve's book [Measuring Continuous Delivery](https://leanpub.com/measuringcontinuousdelivery).
 >
 > -- Thierry

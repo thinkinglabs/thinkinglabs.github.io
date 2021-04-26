@@ -13,7 +13,7 @@ categories:
 tags: [ Agile, HR, XP2017 ]
 ---
 
-There are my notes on Maike Goldkuhle's session at XP2017 on HR and Agile. I
+These are my notes on Maike Goldkuhle's session at XP2017 on HR and Agile. I
 wanted to attend this session because there is very little said about the role
 of HR in agile transitions.
 
