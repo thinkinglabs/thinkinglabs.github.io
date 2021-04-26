@@ -3,7 +3,7 @@ layout: note
 title: Kickstart your Performance Testing
 event:
   name: Agile & Automation Days
-  date: 2017-05-25
+  date: 2018-10-15
 author:
   name: Konrad Marszalek
   linkedin: konradmarszalek
