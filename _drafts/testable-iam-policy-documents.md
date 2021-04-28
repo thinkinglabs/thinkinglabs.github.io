@@ -10,10 +10,26 @@ thing that is disappointing is it misses a proper API for manipulating AWS IAM
 Policy documents.
 
 Policy documents are assigned using JSON objects that should follow the AWS
-IAM JSON policy syntax. But there is no validation. It is perfectly possible to
-pass an invalid IAM Policy document. You will only be noticed the minute you
+IAM JSON Policy syntax.
+
+```typescript
+const policy = new aws.iam.Policy("policy", {
+    description: "My test policy",
+    policy: JSON.stringify({
+        Version: "2012-10-17",
+        Statement: [{
+            Action: ["ec2:Describe*"],
+            Effect: "Allow",
+            Resource: "*",
+        }],
+    }),
+});
+```
+
+But there is no validation. It is perfectly possible to
+pass an invalid IAM Policy document. You will only notice this the minute you
 apply it to the AWS cloud. That is a quite long feedback loop incurring a
-non-neglectable amount of wait time.
+non-neglectable amount of wait time and correction time.
 
 To avoid this, I prefer to write my policies as Policy as Code. It avoids
 common syntax errors. Therefore it reduces the feedback cycle. And increases
@@ -22,9 +38,9 @@ your delivery throughput.
 Having to pass a JSON as policy document was a bit disappointing.
 
 Add to that I work in the financial industry. Compliance is kind of important.
-So, I was in search for something to easily unit test IAM Policy documents,
-preferably at the Statement level. That would help us to adhere to the required
-security requirements.
+So, I was in search for something that allowed me to easily unit test IAM Policy
+documents, preferably at the Statement level. That would help us to adhere to
+the certain security requirements.
 
 Before reinventing the wheel, I looked around for what already existed in the
 JavaScript world for manipulating IAM Policy documents.
@@ -32,19 +48,22 @@ JavaScript world for manipulating IAM Policy documents.
 Pulumi has the
 [`aws.iam.getPolicyDocument`](https://www.pulumi.com/docs/reference/pkg/aws/iam/getpolicydocument/)
 API. That looked interesting. It allows to write the policies as Policy as Code.
-But to unit test the IAM Policy Document, you have to mock the function call
-`aws.iam.getPolicyDocument`. Huh. That is not really helpful.
+But you cannot properly unit test the IAM Policy document produced by
+`aws.iam.getPolicyDocument`. `aws.iam.getPolicyDocument` is a function. When
+Pulumi runs in testing mode, that function is not available unless you mock it.
+Huh. That is not really helpful.
 
 I dug further to see what Node.js packages has to offer for manipulating IAM
 Policy documents. Not much. Except for
 [AWS CDK](https://docs.aws.amazon.com/cdk/api/latest/typescript/api/aws-iam.html).
 But then you drag the whole CDK Node.js package into your project just to handle
-IAM Policy documents. However, AWS CDK was a good basis for designing
+IAM Policy documents. But, AWS CDK was a good basis for designing
 [@thinkinglabs/aws-iam-policy](https://www.npmjs.com/package/@thinkinglabs/aws-iam-policy).
 
 ## A simple identity-based policy
 
-Let's look at the code example for `aws.iam.Policy` provided by Pulumi.
+Let's look at the code sample on `pulumi.com` for
+[`aws.iam.Policy`](https://www.pulumi.com/docs/reference/pkg/aws/iam/policy/).
 
 ```typescript
 import * as pulumi from "@pulumi/pulumi";
@@ -63,7 +82,7 @@ const policy = new aws.iam.Policy("policy", {
 });
 ```
 
-Using `@thinkinglabs/aws-iam-policy` that would look like this.
+Using `@thinkinglabs/aws-iam-policy` that would look as follows.
 
 ```typescript
 import * as pulumi from "@pulumi/pulumi";
@@ -86,10 +105,9 @@ function grantEC2Describe() {
 }
 ```
 
-Now we would like to test if our IAM Policy is a valid identity-based IAM
-Policy. For that we can use `PolicyDocument.validateForIdentityPolicy()` which
-returns an array of `string` error messages. If it returns an empty array, the
-IAM Policy is valid.
+To test if the IAM Policy is a valid identity-based IAM Policy we can use
+`PolicyDocument.validateForIdentityPolicy()`. This returns an array of `string`
+error messages. If it returns an empty array, the IAM Policy is valid.
 
 ```typescript
 import {expect} from "chai";
@@ -116,17 +134,16 @@ describe("IAM Policy", function() {
 ## A more complicated resource-based policy
 
 Being regulated requires from us that we control closely who has access to what.
-And that we do not inadvertently grant a right to someone that could be painful.
-Let's say, the ability to delete a bucket or have access to confidential
-information stored in an S3 Bucket.
+The biggest risk is to inadvertently grant a right to someone that could be
+painful. Let's say, the ability to delete a bucket or have access to
+confidential information stored in an S3 Bucket.
 
-Therefore, we always define S3 Bucket policies with several statements granting
-admin access to administrators and usage access to users and denying delete
-bucket rights for everyone.
+To avoid this, we make extensive use of S3 Bucket policies having several
+statements granting:
 
-To simplify and make unit tests more documenting, we wanted to be able to test
-an individual statement. `@thinkinglabs/aws-iam-policy` provides the ability
-to retrieve a single Statement by `Sid` if one was provided.
+- admin access to administrators,
+- usage access to users
+- and denying delete bucket rights for everyone.
 
 ```typescript
 const statement = policy.getStatement("MyFancySID");
@@ -210,8 +227,12 @@ export function createS3BucketPolicy(
 }
 ```
 
-A test to check if the S3 Bucket Policy allows access for bucket administrators
-would look like this.
+To test if the S3 Bucket Policy allows access for bucket administrators we
+needed something to check if a Statement is present in the Policy and to test
+that the content of that single Statement.
+
+`@thinkinglabs/aws-iam-policy` provides the ability to retrieve a single
+Statement by its `Sid` if one was provided.
 
 ```typescript
 import {expect} from "chai";
@@ -258,8 +279,8 @@ describe("S3 Bucket Policy", function() {
 });
 ```
 
-For this test we need to create some fake IAM Roles. This is achieved by
-including the `mocks` module.
+The test needs some fake IAM Roles. This is achieved by including a `mocks`
+module.
 
 ```typescript
 import * as pulumi from '@pulumi/pulumi';
@@ -296,5 +317,6 @@ pulumi.runtime.setMocks({
 Because of laziness from my side, there is no object model for `Condition`,
 neither support for `NotPrincipal`, `NotAction` and `NotResource`.
 
-At the moment, `Condition` accept any JSON object. This is planned for version
-2.0.
+At the moment, `Condition` accept any JSON object. An object model for the
+`Condition` element is planned for version 2.0 because this introduces a
+breaking change.
