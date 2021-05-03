@@ -17,7 +17,8 @@ tags: [ API, REST, Design ]
 ---
 
 Les Hazlewood, CTO @ [Stormpath](https://stormpath.com/) gives an in-depth
-overview of what makes a RESTfull API.
+overview of what makes a RESTfull API. The original video on which these notes
+are based is not available any more. I fell back on the video of JAXConf.
 
 ---
 
