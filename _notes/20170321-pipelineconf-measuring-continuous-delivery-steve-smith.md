@@ -13,7 +13,7 @@ video: https://www.youtube.com/watch?v=uzydNhFZRGY
 slides: https://speakerdeck.com/stevesmithcd/measuring-continuous-delivery
 meta: 20 min read
 categories: 
-tags: [ Continuous Delivery, PipelineConf ]
+tags: [ Continuous Delivery ]
 redirect_from:
   - /notes/2017-pipelineconf-measuring-continuous-delivery-steve-smith
 ---
