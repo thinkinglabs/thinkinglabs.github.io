@@ -1,10 +1,24 @@
-# How to Measure your CD Journey, Steve Smith
+---
+layout: note
+title: How to Measure your CD Journey, Steve Smith
+event:
+  name: LondonCD
+  date: 2017-02-28
+author:
+  name: Steve Smith
+  twitter: SteveSmith_Tech
+video: https://www.youtube.com/watch?v=wFRdYLcPwns
+slides: https://speakerdeck.com/stevesmithcd/measuring-continuous-delivery
+meta: 17 min read
+created_at: 2017-03-22
+date: 2020-11-16
+published: false
+categories: 
+tags: [ Continuous Delivery ]
+---
 
-[@stevesmithcd](https://twitter.com/stevesmithcd)
-
-Several criticism on Dave and Jez's book:
-
-Continuous Delivery is very valuable but it is extremely difficult and the book do underplay how hard this thing is
+Several criticism on Dave and Jez's book: Continuous Delivery is very valuable
+but it is extremely difficult and the book do underplay how hard this thing is
 
 ## How do you know what to fix first ?
 
