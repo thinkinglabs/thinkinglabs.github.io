@@ -7,6 +7,7 @@ event:
 author:
   name: Steve Smith
   twitter: SteveSmith_Tech
+created_at: 2017-04-17
 date: 2020-11-16
 video: https://www.youtube.com/watch?v=uzydNhFZRGY
 slides: https://speakerdeck.com/stevesmithcd/measuring-continuous-delivery

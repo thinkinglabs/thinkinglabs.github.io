@@ -7,6 +7,7 @@ event:
 author:
   name: Les Hazlewood
   twitter: lhazlewood
+created_at: 2014-02-24
 date: 2021-04-26
 video: https://www.youtube.com/watch?v=mZ8_QgJ5mbs
 slides: http://www.slideshare.net/stormpath/rest-jsonapis

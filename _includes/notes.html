@@ -8,7 +8,8 @@
   </div>
 
   <div class="container">
-    {% for note in site.notes %}
+    {% assign ordered_notes = site.notes | sort: "created_at" | reverse %}
+    {% for note in ordered_notes %}
     {% assign is_row = forloop.index | modulo: 3 %}
     {% if is_row == 1 %}
     <div class="row">
