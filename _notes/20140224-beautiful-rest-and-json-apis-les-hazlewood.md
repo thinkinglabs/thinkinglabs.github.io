@@ -1,9 +1,6 @@
 ---
 layout: note
 title: Beautiful REST + JSON APIs
-event:
-  name: JAXConf
-  date: 2013-06-04
 author:
   name: Les Hazlewood
   twitter: lhazlewood
@@ -14,6 +11,8 @@ slides: http://www.slideshare.net/stormpath/rest-jsonapis
 meta: 8 min read
 categories: 
 tags: [ API, REST, Design ]
+redirect_from:
+  - /notes/20130604-jaxconf-beautiful-rest-and-json-apis-les-hazlewood
 ---
 
 Les Hazlewood, CTO @ [Stormpath](https://stormpath.com/) gives an in-depth
