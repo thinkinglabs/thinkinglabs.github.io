@@ -2,12 +2,16 @@
 layout: talk
 title: "From twice a year to twice a month: the story of No More Majors"
 date: 2019-09-12
+category: talks
+tags: [ Continuous Delivery, Improvement Kata, Theory of Constraints, Scaling ]
 conferences:
   - name: Less Conference 2019
     date: 2019-09-12
 speakerdeck:
   data_id: 8403b9a9a996497daae6c55008b51ef6
   download_link: https://speakerd.s3.amazonaws.com/presentations/8403b9a9a996497daae6c55008b51ef6/From_twice_a_year_to_twice_a_month_-_the_story_of_No_More_Majors.pdf
+redirect_from:
+  - /talks/from-twice-a-year-to-twice-a-month
 ---
 The Belgian Federal Pension Service (SFPD) has a large IT department with more than a dozen teams working on the same application. Over the course of a few years, these teams developed an agile way of working at the team level but were struggling to work effectively on a larger scale.
 

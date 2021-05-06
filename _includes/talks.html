@@ -10,7 +10,7 @@
 
     <div class="container">
 
-    {% assign talks = site.talks | sort: "date" | reverse %}
+    {% assign talks = site.posts | where:"category", "talks" %}
     {% for talk in talks %}
       {% assign is_row = forloop.index | modulo: 3 %}
       {% if is_row == 1 %}

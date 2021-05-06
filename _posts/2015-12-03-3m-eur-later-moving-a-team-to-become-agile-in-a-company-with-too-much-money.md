@@ -2,6 +2,8 @@
 layout: talk
 title: 3M EUR later&#58; Moving a team to become Agile in a Company with Too Much Money
 date: 2015-12-03
+category: talks
+tags: [ Agile, Agile Adoption ]
 conferences:
   - name: XPDays Benelux 2015
     date: 2015-12-03
@@ -11,6 +13,7 @@ speakerdeck:
 redirect_from:
   - /talks/xpdays-benelux-2015
   - /talks/xpdays-benelux-2015-3m-eur-later-moving-a-team-to-become-agile-in-a-company-with-too-much-money
+  - /talks/3m-eur-later-moving-a-team-to-become-agile-in-a-company-with-too-much-money
 ---
 How do you go from a ragtag of people having no idea what it means to be Agile, stuck in eternal maintenance and operational work, applying none of the basic software engineering practices to a team of DevOps delivering value for their customers in sprints of 2 weeks ?
 

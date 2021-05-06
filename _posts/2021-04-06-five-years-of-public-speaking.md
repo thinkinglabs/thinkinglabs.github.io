@@ -3,9 +3,11 @@ layout: article
 title: Five Years of Public Speaking
 author: Thierry de Pauw
 meta: 12 min read
-categories:
+category: articles
 tags: [Public Speaking]
 image: /images/five-years-of-public-speaking/codemotion.jpg
+redirect_from:
+  - /2021/04/06/five-years-of-public-speaking.html
 ---
 
 It has been five years since I started with public speaking. I wanted to share
@@ -90,10 +92,8 @@ and having absolutely no prior speaking experience. Doh 🤦
 
 Both proposals got selected. The journey is about to start.
 
-- Agile Tour Brussels 2015: [*Facts and Fallacies of Continuous Delivery*]({% link
-_talks/facts-and-fallacies-of-continuous-delivery.md %})
-- XP Days Benelux 2015: [*3M EUR later: Moving a team to become Agile in a Company with Too Much Money*]({% link
-_talks/3m-eur-later-moving-a-team-to-become-agile-in-a-company-with-too-much-money.md %})
+- Agile Tour Brussels 2015: [*Facts and Fallacies of Continuous Delivery*]({% post_url 2015-11-02-facts-and-fallacies-of-continuous-delivery %})
+- XP Days Benelux 2015: [*3M EUR later: Moving a team to become Agile in a Company with Too Much Money*]({% post_url 2015-12-03-3m-eur-later-moving-a-team-to-become-agile-in-a-company-with-too-much-money %})
 
 ## Agile Tour Brussels 2015: Facts and Fallacies of Continuous Delivery
 
@@ -134,7 +134,7 @@ Therefore, it was clear I had to attend the next PIPELINE Conference.
 And also, I wanted to submit something to PIPELINE Conference. But I could not
 propose *Facts and Fallacies of Continuous Delivery*. Too long. Too much linked
 with failure. But it had compelling content. So, I distilled
-[*Continuous Delivery is more than just Tooling, It's a Mindset*]({% link _talks/continuous-delivery-is-more-than-just-tooling-its-a-mindset.md %})
+[*Continuous Delivery is more than just Tooling, It's a Mindset*]({% post_url 2016-05-03-continuous-delivery-is-more-than-just-tooling-its-a-mindset %})
 from that.
 
 ---
@@ -177,7 +177,7 @@ At [Continuous Lifecycle London](https://www.continuouslifecycle.london/) 2016
 committee.
 
 You can imagine how pleased I was hearing I was selected with
-[*Continuous Delivery is more than just Tooling, It's a Mindset*]({% link _talks/continuous-delivery-is-more-than-just-tooling-its-a-mindset.md %})
+[*Continuous Delivery is more than just Tooling, It's a Mindset*]({% post_url 2016-05-03-continuous-delivery-is-more-than-just-tooling-its-a-mindset %})
 
 3rd conference, 3rd topic in 6 months. Oh dear! 😱
 
@@ -220,8 +220,8 @@ Conference NL.
 
 I submitted two topics:
 
-- [*Continuous Delivery is more than just Tooling, It's a Mindset*]({% link _talks/continuous-delivery-is-more-than-just-tooling-its-a-mindset.md %})
-- [*Feature Branching is Evil*]({% link _talks/feature-branching-considered-evil.md %})
+- [*Continuous Delivery is more than just Tooling, It's a Mindset*]({% post_url 2016-05-03-continuous-delivery-is-more-than-just-tooling-its-a-mindset %})
+- [*Feature Branching is Evil*]({% post_url 2016-10-29-feature-branching-considered-evil %})
 
 Continuous Delivery Conference NL reflected a rather "enterprisey" character. I
 was expecting, if I got selected, they would pick *Continuous Delivery is more
@@ -408,7 +408,7 @@ He interviewed me. This became the "*fear conversation*" case in
 [Jeffrey Fredrick](https://twitter.com/Jtf).
 
 That helped to bring order in my thoughts and to craft this new presentation
-[*Continuous Delivery for 15 teams and their single monolith*]({% link _talks/15-teams-1-monolith-4-months-to-achieve-continuous-delivery.md %}).
+[*Continuous Delivery for 15 teams and their single monolith*]({% post_url 2019-09-06-15-teams-1-monolith-4-months-to-achieve-continuous-delivery %}).
 
 ## Final Thoughts
 

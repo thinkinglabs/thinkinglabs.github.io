@@ -2,6 +2,8 @@
 layout: talk
 title: Facts and Fallacies of Continuous Delivery
 date: 2015-11-02
+category: talks
+tags: [ Continuous Delivery ]
 conferences:
   - name: Agile Tour Brussels 2015
     date: 2015-11-02
@@ -11,6 +13,7 @@ speakerdeck:
 redirect_from:
   - /talks/atbru-2015
   - /talks/atbru-2015-facts-and-fallacies-of-continuous-delivery
+  - /talks/facts-and-fallacies-of-continuous-delivery
 ---
 Continuous Delivery brings a lot of value to your organisation. It will allow you to reduce your time to market for new features and bug fixes. It is a significant predictor of company performance.
 

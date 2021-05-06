@@ -13,8 +13,10 @@ meta: 17 min read
 created_at: 2017-03-22
 date: 2020-11-16
 published: false
-categories: 
+category: notes
 tags: [ Continuous Delivery ]
+redirect_from:
+  - /notes/20170228-londoncd-how-to-measure-your-cd-journey-steve-smith
 ---
 
 Several criticism on Dave and Jez's book: Continuous Delivery is very valuable

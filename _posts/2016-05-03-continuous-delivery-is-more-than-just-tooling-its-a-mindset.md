@@ -2,6 +2,8 @@
 layout: talk
 title: Continuous Delivery is more than just Tooling, It's a Mindset
 date: 2016-05-03
+category: talks
+tags: [ Continuous Delivery ]
 conferences:
   - name: Continuous Lifecycle London 2016
     date: 2016-05-03
@@ -17,7 +19,7 @@ conferences:
     date: 2017-05-02
 speakerdeck:
   data_id: e7ac3fb9befd4f10ab062c44800f7b75
-  download_link: https://speakerd.s3.amazonaws.com/presentations/e7ac3fb9befd4f10ab062c44800f7b75/Continuous_Delivery_is_more_than_just_Tooling__It_s_a_Mindset.pdf
+  download_link: https://speakerd.s3.amazonaws.com/presentations/e7ac3fb9befd4f10ab062c44800f7b75/Continuous_Delivery_is_more_than_just_Tooling__It_s_a_Mindset.pdf ]
 redirect_from:
   - /talks/continuous-lifecycle-london-2016
   - /talks/continuous-lifecycle-london-2016-continuous-delivery-is-more-than-just-tooling-its-a-culture
@@ -32,5 +34,6 @@ redirect_from:
   - /talks/dataflow-tech-talk-feb-2017
   - /talks/dataflow-tech-talk-feb-2017-continuous-delivery-is-more-than-just-tooling-its-a-mindset
   - /talks/journee-agile-2017-continuous-delivery-is-more-than-just-tooling-its-a-mindset
+  - /talks/continuous-delivery-is-more-than-just-tooling-its-a-mindset
 ---
 So your organisation wants to implement Continuous Delivery. But is your organisation ready for this ? Does it have the right mindset ? To be successful with Continuous Delivery, you have to adopt the proper mindset as a whole organisation. Just throwing tools at it will not do the job.

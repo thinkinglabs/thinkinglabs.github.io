@@ -12,10 +12,11 @@ date: 2020-11-16
 video: https://www.youtube.com/watch?v=uzydNhFZRGY
 slides: https://speakerdeck.com/stevesmithcd/measuring-continuous-delivery
 meta: 20 min read
-categories: 
+category: notes
 tags: [ Continuous Delivery ]
 redirect_from:
   - /notes/2017-pipelineconf-measuring-continuous-delivery-steve-smith
+  - /notes/20170321-pipelineconf-measuring-continuous-delivery-steve-smith
 ---
 
 This is a full write out, almost word for word, of Steve Smith's presentation '*Measuring Continuous Delivery*' at
