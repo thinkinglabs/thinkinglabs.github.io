@@ -3,8 +3,10 @@ layout: article
 title: Scrum Master Toolbox Interview - Continuous Delivery for Scrum teams
 author: Thierry de Pauw
 meta: 1 min read
-categories:
+category: articles
 tags: [ Scrum, Continuous Delivery, Interview ]
+redirect_from:
+  - /2021/02/22/scrum-master-toolbox-interview-continuous-delivery-for-scrum-teams.html
 ---
 
 Back in October 2019, [Vasco Duarte](https://twitter.com/duarte_vasco) wanted

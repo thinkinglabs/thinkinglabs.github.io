@@ -10,8 +10,10 @@ author:
 created_at: 2018-10-16
 date: 2021-04-13
 meta: 4 min read
-categories: 
+category: notes
 tags: [ Testing, Performance ]
+redirect_from:
+  - /notes/20181015-aadays-kickstart-your-performance-testing-konrad-marszalek
 ---
 
 My notes from a performance testing workshop I followed at AADays 2018 in

@@ -3,8 +3,10 @@ layout: article
 title: Interview with Thierry de Pauw — about his journey with Continuous Delivery
 author: Thierry de Pauw
 meta: 16 min read
-categories:
+category: articles
 tags: [ Continuous Delivery, Lean, Career, TDD, Testing, Extreme Programming ]
+redirect_from:
+  - /2018/10/02/interview-with-thierry-de-pauw.html
 ---
 
 In this post, [Leena](https://twitter.com/leenasn) interviews [Thierry de Pauw](https://twitter.com/tdpauw), a Software Engineer who coaches on Continuous Delivery and other Software Engineering Practices. His focus is helping teams to improve the flow of software delivery.

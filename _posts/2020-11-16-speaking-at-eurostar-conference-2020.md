@@ -3,8 +3,10 @@ layout: article
 title: Speaking at EuroSTAR Conference 2020
 author: Thierry de Pauw
 meta: 2 min read
-categories:
+category: articles
 tags: [ Continuous Integration ]
+redirect_from:
+  - /2020/11/16/speaking-at-eurostar-conference-2020.html
 ---
 
 This week I will be speaking at
@@ -20,7 +22,7 @@ community. Any time I had the chance to have testers in the team, we delivered
 better products.
 
 Join me for my talk [Continuous Delivery in 4 Months for 15 Teams and their
-1 Monolith]({% link _talks/15-teams-1-monolith-4-months-to-achieve-continuous-delivery.md %}).
+1 Monolith]({% post_url 2019-09-06-15-teams-1-monolith-4-months-to-achieve-continuous-delivery %}).
 
 Attendees will learn how to:
 

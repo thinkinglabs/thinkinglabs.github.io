@@ -10,8 +10,10 @@ author:
 created_at: 2018-10-31
 date: 2021-05-04
 meta: 3 min read
-categories: 
+category: notes
 tags: [ NoProjects ]
+redirect_from:
+  - /notes/20181031-atbru-evolution-from-noprojects-to-continuous-digital-allan-kelly
 ---
 
 We are trying to tell something positive about #NoProjects instead of just saying No.
@@ -50,7 +52,7 @@ CPU cycles $$$ expensive => planning is cheap
 
 buy at 35USD
 
-![2016 Raspberry Pi](../images/atbru2018-evolution-from-noprojects-to-continuous-digital/2016-raspberry-pi.png)
+![2016 Raspberry Pi](/images/atbru2018-evolution-from-noprojects-to-continuous-digital/2016-raspberry-pi.png)
 
 CPU cycles are cheap => planning is expensive
 
@@ -82,7 +84,7 @@ projects are a technology of the 40s, 50s and 60s, they didn't exist before the 
 - the polaris project
 - planning, programming and budgeting system (PPBS)
 
-![1968 PMI](../images/atbru2018-evolution-from-noprojects-to-continuous-digital/1968-pmi.png)
+![1968 PMI](/images/atbru2018-evolution-from-noprojects-to-continuous-digital/1968-pmi.png)
 
 We still use Projects:
 
@@ -94,7 +96,7 @@ Projects create risk, impact quality.
 
 **2013**: #NoProjects
 
-![2013 #NoProjects](../images/atbru2018-evolution-from-noprojects-to-continuous-digital/2013-noprojects.png)
+![2013 #NoProjects](/images/atbru2018-evolution-from-noprojects-to-continuous-digital/2013-noprojects.png)
 
 - projects suffer commitment escalation
 

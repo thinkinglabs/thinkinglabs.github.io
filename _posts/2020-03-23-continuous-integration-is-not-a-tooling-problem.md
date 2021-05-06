@@ -3,8 +3,10 @@ layout: article
 title: Continuous Integration is Not a Tooling Problem
 author: Thierry de Pauw
 meta: 4 min read
-categories:
+category: articles
 tags: [ Continuous Integration ]
+redirect_from:
+  - /2020/03/23/continuous-integration-is-not-a-tooling-problem.html
 ---
 
 There is this commonly accepted, hard-grained belief in the software industry. By dropping a build server in a team, they get Continuous Integration magically for free. This belief is further incentivised by the marketing of build server vendors.

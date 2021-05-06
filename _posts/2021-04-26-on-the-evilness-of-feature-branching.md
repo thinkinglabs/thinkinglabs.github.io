@@ -3,8 +3,10 @@ layout: article
 title: On the Evilness of Feature Branching
 author: Thierry de Pauw
 meta: 1 min read
-categories:
+category: articles
 tags: [Version Control, Continuous Integration]
+redirect_from:
+  - /2021/04/26/on-the-evilness-of-feature-branching.html
 ---
 
 Branch creation became very easy with the advent of Distributed Version Control

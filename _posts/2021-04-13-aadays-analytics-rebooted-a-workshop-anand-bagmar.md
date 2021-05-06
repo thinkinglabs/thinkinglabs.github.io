@@ -10,8 +10,10 @@ author:
 created_at: 2018-10-16
 date: 2021-04-13
 meta: 7 min read
-categories: 
+category: notes
 tags: [ Testing, Analytics ]
+redirect_from:
+  - /notes/20181016-aadays-analytics-rebooted-a-workshop-anand-bagmar
 ---
 
 My notes from the Anand Bagmar's Analytics workshop I followed at AADays 2018 in

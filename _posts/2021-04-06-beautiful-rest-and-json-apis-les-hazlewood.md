@@ -9,10 +9,11 @@ date: 2021-04-26
 video: https://www.youtube.com/watch?v=mZ8_QgJ5mbs
 slides: http://www.slideshare.net/stormpath/rest-jsonapis
 meta: 8 min read
-categories: 
+category: notes
 tags: [ API, REST, Design ]
 redirect_from:
   - /notes/20130604-jaxconf-beautiful-rest-and-json-apis-les-hazlewood
+  - /notes/20140224-beautiful-rest-and-json-apis-les-hazlewood
 ---
 
 Les Hazlewood, CTO @ [Stormpath](https://stormpath.com/) gives an in-depth

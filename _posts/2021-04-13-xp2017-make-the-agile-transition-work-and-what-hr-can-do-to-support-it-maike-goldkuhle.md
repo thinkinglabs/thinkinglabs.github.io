@@ -10,8 +10,10 @@ author:
 created_at: 2017-05-25
 date: 2021-04-13
 meta: 3 min read
-categories: 
+category: notes
 tags: [ Agile, HR, XP2017 ]
+redirect_from:
+  - /notes/20170525-xp2017-make-the-agile-transition-work-and-what-hr-can-do-to-support-it-maike-goldkuhle
 ---
 
 These are my notes on Maike Goldkuhle's session at XP2017 on HR and Agile. I

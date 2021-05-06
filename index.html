@@ -21,17 +21,20 @@
 
 {% include services.html %}
 
-{% if site.talks.size > 0 %}
+{% assign talks = site.posts | where:"category","talks" %}
+{% if talks.size > 0 %}
 {% include talks.html %}
 {% endif %}
 
 {% include experience.html %}
 
-{% if site.posts.size > 0 %}
+{% assign articles = site.posts | where:"category","articles" %}
+{% if articles.size > 0 %}
 {% include articles.html %}
 {% endif %}
 
-{% if site.data.features.notes_enabled and site.notes.size > 0 %}
+{% assign notes = site.posts | where:"category","notes" %}
+{% if site.data.features.notes_enabled and notes.size > 0 %}
 {% include notes.html %}
 {% endif %}
 
