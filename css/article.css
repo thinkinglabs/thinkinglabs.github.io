@@ -158,6 +158,9 @@
 }
 
 @media only screen and (max-width: 768px) {
+  section {
+    padding: 90px 0px;
+  }
   .no-padding-bottom {
     margin-top: 25px;
   }
