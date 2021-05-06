@@ -1,8 +1,8 @@
 {% capture author %}
-{% if page.collection == "posts" or page.collection == "talks" and page.author %}
-{{page.author}}
-{% elsif page.collection == "notes" and page.author.name %}
+{% if page.author.name %}
 {{page.author.name}}
+{% elsif page.author %}
+{{page.author}}
 {% else %}
 {{include.author}}
 {% endif %}
