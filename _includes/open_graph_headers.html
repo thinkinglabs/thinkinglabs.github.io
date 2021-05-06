@@ -9,7 +9,7 @@
 {% endcapture %}
 
 {% capture type %}
-{% if page.collection == "posts" or page.collection == "talks" or page.collection == "notes" %}
+{% if page.category %}
 article
 {% else %}
 website
