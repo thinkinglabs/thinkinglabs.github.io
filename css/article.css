@@ -1,6 +1,4 @@
-section.article {
-  padding: 125px 0;
-}
+.article {}
 
 .article-title {
   font-weight: 600;
@@ -143,9 +141,15 @@ section.article {
 }
 
 
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 1440px) {
   .no-padding-bottom {
-    margin-top: 50px;
+    padding: 50px 0;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .no-padding-bottom {
+    margin-top: 25px;
   }
 
   .article-title {
@@ -155,6 +159,6 @@ section.article {
 
 @media only screen and (max-width: 768px) {
   .no-padding-bottom {
-    margin-top: 90px;
+    margin-top: 25px;
   }
 }
