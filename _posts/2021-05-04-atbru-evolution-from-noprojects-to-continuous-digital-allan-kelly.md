@@ -6,7 +6,7 @@ event:
   date: 2018-10-31
 author:
   name: Allan Kelly
-  twitter: allankellynetty
+  twitter: allankellynet
 created_at: 2018-10-31
 date: 2021-05-04
 meta: 3 min read
