@@ -3,7 +3,7 @@ layout: article
 title: The Practices That Make Continuous Integration
 author: Thierry de Pauw
 meta: 25 min read
-categories:
+category: articles
 tags: [ Continuous Integration ]
 ---
 
