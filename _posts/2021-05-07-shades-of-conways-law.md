@@ -5,7 +5,7 @@ author:
   name: Thierry de Pauw
   twitter: tdpauw
 created_at: 2021-05-07
-meta: 8 min read
+meta: 4 min read
 category: articles
 tags: [ Conway's Law ]
 ---
@@ -40,7 +40,7 @@ Summarising the COBOL example from the paper.
 >
 > -— Eric Raymond, The New Hacker's Dictionary (3rd ed.) p. 124., 1996
 
-Tom Cheatham's Amendment to Conway's Law.
+Adding *Tom Cheatham's Amendment to Conway's Law*.
 
 > If a group of N persons implements a COBOL compiler, there will be N−1 passes. Someone in the group has to be the manager.
 >
@@ -54,14 +54,16 @@ James Coplien and Neil Harrison expressed it as follows.
 
 Ruth Malan is good at formulating Conway's Law in catchy ways.
 
+> Another implication of Conway’s Law is that if we have managers deciding on teams, and deciding which services will be built, by which teams, we implicitly have managers deciding on the system architecture.
+
 The following relates to the closing thoughts of Melvin Conway: "*The initial design of a system is never the best. The system may need to change. Therefore it requires flexibility of the organisation to design effectively.*".
 
-> Another implication of Conway’s Law is that if we have managers deciding on teams, and deciding which services will be built, by which teams, we implicitly have managers deciding on the system architecture.
->
 > Conway’s Law also kicks in if we take an initial guess at the system decomposition allocate subsystems to teams, and sally forth–the team boundaries will tend to become boundaries within the system.
 >
 > -- Ruth Malan, [Conway's Law, Feb 13, 2008](https://web.archive.org/web/20181022001505/http://traceinthesand.com:80/blog/2008/02/13/conways-law/)
 
+> Anything else will be a feat of architectural heroics; hard to accomplish, when architectural heroics have to compete with schedule heroics driven by the steady beat of integration clocks.
+>
 > Architecture needs to happen across the interfaces, and this also means across the system/organization interfaces. It means that system architects (who we call architects) and business architects (who we call managers) should not work as if one has no impact on the other.
 >
 > -- Ruth Malan, [Conway's Law, Feb 13, 2008](https://web.archive.org/web/20181022001505/http://traceinthesand.com:80/blog/2008/02/13/conways-law/)
