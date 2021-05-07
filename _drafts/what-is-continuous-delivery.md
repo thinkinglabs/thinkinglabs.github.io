@@ -3,8 +3,8 @@ layout: article
 title: "What is Continuous Delivery ?"
 author: Thierry de Pauw
 meta:
-categories:
-tags: [ continuous-delivery ]
+category: articles
+tags: [ Continuous Delivery ]
 ---
 
 Continuous Delivery is a holistic approach to software delivery. It is a set of practices to reduce the time between committing a change to a system - be it a feature, a configuration change, a bug fix or an experiment - and getting that change into the hands of the users safely, quickly and sustainably.

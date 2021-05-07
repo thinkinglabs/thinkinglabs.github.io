@@ -2,6 +2,8 @@
 layout: article
 title: Testable IAM Policy documents
 author: Thierry de Pauw
+category: articles
+tags: [ Infrastructure as Code, Pulumi, AWS, IAM ]
 ---
 
 I was relieved to find Pulumi. Finally, we have testable Infrastructure as Code. We can write fast unit tests that we can execute locally without needing the cloud. However, I was disappointed that Pulumi does not have a proper API for manipulating AWS IAM Policy documents.
