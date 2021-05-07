@@ -5,7 +5,7 @@ author:
   name: Melvin Conway
   twitter: conways_law
 created_at: 2021-05-02
-meta: 4 min read
+meta: 5 min read
 category: notes
 tags: [ Conway's Law ]
 ---
