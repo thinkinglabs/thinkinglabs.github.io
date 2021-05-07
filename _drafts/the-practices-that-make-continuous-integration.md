@@ -688,6 +688,6 @@ Thanks to [Steve Smith](https://twitter.com/SteveSmithCD) for his feedback.
 - The [Continuous Delivery](https://www.goodreads.com/book/show/8686650-continuous-delivery) book, Jez Humble and Dave Farley
 - [Make Large Scale Changes Incrementally with Branch by Abstraction](https://continuousdelivery.com/2011/05/make-large-scale-changes-incrementally-with-branch-by-abstraction/), Jez Humble
 - [Parallel Change](https://martinfowler.com/bliki/ParallelChange.html), Danilo Sato
-- [Feature Branching is Evil]({% link _talks/feature-branching-considered-evil.md %}), Thierry de Pauw
+- [Feature Branching is Evil]({% post_url 2016-10-29-feature-branching-considered-evil %}), Thierry de Pauw
 - [Feature Toggles](https://martinfowler.com/articles/feature-toggles.html), Pete Hodgson
 - [Branch by Abstraction](https://www.branchbyabstraction.com/), Paul Hammant
