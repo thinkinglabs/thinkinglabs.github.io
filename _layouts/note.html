@@ -24,16 +24,23 @@
 
     {% include navigation.html shrink=true %}
 
+    {% capture author %}
+    {% if page.author.name %}
+    {% if page.author.twitter %}<a href="https://twitter.com/{{ page.author.twitter }}">{% endif %}{{ page.author.name
+      }}{% if page.author.twitter %}</a>{% endif %}
+    {% elsif page.author %}
+    {{ page.author }}
+    {% endif %}
+    {% endcapture %}
+
+
     <section id="article" class="article bg-white padding-section-bottom">
       <div class="row no-margin-lr">
         <div class="col-md-8 col-md-offset-2">
           <header class="article-header">
             <h2 class="article-title no-padding-bottom">{{page.title}}</h2>
             <p class="article-meta">
-              {% if page.author %}
-                {% if page.author.twitter %}<a href="https://twitter.com/{{ page.author.twitter }}">{% endif %}{{ page.author.name
-                }}{% if page.author.twitter %}</a>{% endif %}
-              {% endif %}
+              {{ author }}
               {% if page.event.name %} at {{ page.event.name }} {{ page.event.date | date: '%Y'}}{% endif %}
               {% if page.slides %} <i class="fa fa-file-powerpoint-o"></i><a href="{{ page.slides }}">Slides</a>{% endif %}
               {% if page.video %} <i class="fa fa-video-camera"></i><a href="{{ page.video }}">Video</a>{% endif %}
