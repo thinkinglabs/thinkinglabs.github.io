@@ -265,6 +265,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-redirect-from
+  jemoji
   minima (~> 2.0)
   tzinfo-data
 
