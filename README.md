@@ -14,6 +14,6 @@ To run the site locally:
 
 ```bash
 #once
-bundle install
-bundle exec jekyll serve .
+make install
+make serve
 ```
