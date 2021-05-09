@@ -6,7 +6,7 @@ author:
   twitter: mamund
 slides: http://amundsen.com/talks/2015-10-velocity-teams/index.html
 created_at: 2021-05-08
-meta: 7 min read
+meta: 8 min read
 category: notes
 tags: [ Conway's Law ]
 ---
@@ -15,7 +15,9 @@ tags: [ Conway's Law ]
 >
 > -- Mike Amundsen
 
-The notes were taken based on the slides only without the voice over.
+Note taker note: *The notes were taken based only on the slides without the voice over.*
+
+Here and there I've added my own observations in an italic paragraph.
 
 ---
 
@@ -23,17 +25,17 @@ The notes were taken based on the slides only without the voice over.
 
 > [Microservices] allow organizations [to align] the architecture of their systems to the structure of their teams.
 >
-> -- Sam Newman, Demystifying Conway’s Law, (2015)
+> -- Sam Newman, [Demystifying Conway’s Law](https://www.thoughtworks.com/insights/articles/demystifying-conways-law), 2015
 
 ## Conway's Law
 
 > Any organization that designs a system (defined more broadly here than just information systems) will inevitably produce a design whose structure is a copy of the organization's communication structure.
 >
-> -- Mel Conway, How Do Committees Invent?, 1967
+> -- Mel Conway, [How Do Committees Invent?](https://www.melconway.com/Home/Committees_Paper.html), 1967
 
 => A system’s design is a copy of the organization’s communication structure.
 
-=> **Communication dictates design.**
+=> **Communication *[structures/channels]* dictates design.**
 
 **Brooks’ Law**:
 
@@ -51,10 +53,12 @@ n * (n − 1) / 2
 
 =>
 
-- team of 5: 5*(5–1)/2 = 10
-- team of 15: 15*(15–1)/2 = 105
-- team of 50: 50*(50–1)/2 = 1,225
-- team of 150: 150*(150–1)/2 = 11,175
+| team size | formula          | # intercommunications |
+| ----------| -----------------| ----------------------|
+| 5         | => 5*(5–1)/2     | = 10                  |
+| 15        | => 15*(15–1)/2   | = 105                 |
+| 50        | => 50*(50–1)/2   | = 1,225               |
+| 150       | => 150*(150–1)/2 | = 11,175              |
 
 **Dunbar’s Number**:
 
@@ -75,23 +79,23 @@ n * (n − 1) / 2
 >
 > -- Robin Dunbar, 1992
 
-## Conway's First Law
-
 Fred Brooks intercommunication formula `n * (n - 1) / 2` together with Conway's "*Communication dictates design*"
 
 => Conway's First Law tells us: **team size is important**
 
-=> *make the teams as small as necessary*
+=> make the teams as small as necessary
 
 Assessment: If you don’t have a personal relationship with every member of your TEAM, your team is probably TOO BIG.
 
 Guidance: Aim for TEAM SIZE of “Dunbar level 1” (5), possibly “Dunbar level 2” (15).
 
+*=> Amazon's two pizza teams*
+
 ## Conway's Second Law
 
 > There is never enough time to do something right, but there is always enough time to do it over.
 >
-> -- Mel Conway, How Do Committees Invent?, 1967
+> -- Mel Conway, [How Do Committees Invent?](https://www.melconway.com/Home/Committees_Paper.html), 1967
 
 **Efficiency-Thoroughness Trade Offs (ETTOs)**:
 
@@ -151,7 +155,7 @@ Example: two interpretations of safety
 
 > intractability
 >
-> A problem that can be solved in theory (e.g. given large but finite resources, especially time), but for which in practice any solution takes **too many resources** to be useful, is known as an intractable problem.
+> A problem that can be solved in theory (e.g. given large but finite resources, **especially time**), but for which in practice any solution takes **too many resources** to be useful, is known as an intractable problem.
 >
 > -- [Wikipedia](https://en.wikipedia.org/wiki/Computational_complexity_theory#Intractability)
 
@@ -165,11 +169,11 @@ Increasing Intractability
 
 => Conway's Second Law tells us: **PROBLEM SIZE is important**
 
-=> *make the solution as small as necessary*
+=> make the solution as small as necessary
 
 Assessment: If you (or your team) cannot explain ALL the code in your release package, your release is TOO LARGE
 
-[*my observation: relates to Dan North - keep code as simple as possible to make it fit in your head*]
+*relates to Dan North - keep code as simple as possible, code that fits in your head*
 
 Guidance: Execute many SMALL releases instead of a few LARGE releases.
 
@@ -188,7 +192,7 @@ Guidance: Execute many SMALL releases instead of a few LARGE releases.
 
 > There is a homomorphism from the linear graph of a system to the linear graph of its design organization
 >
-> -- Mel Conway, How Do Committees Invent?, 1967
+> -- Mel Conway, [How Do Committees Invent?](https://www.melconway.com/Home/Committees_Paper.html), 1967
 
 > homomorphism
 >
@@ -199,15 +203,16 @@ Guidance: Execute many SMALL releases instead of a few LARGE releases.
 > -- [Oxford Languages](https://www.google.com/search?q=homomorphism+definition)
 
 > structure-preserving relationship between two sets of things is called a *homomorphism*
-> -- Mel Conway,  How Do Committees Invent?, 1967
+>
+> -- Mel Conway, [How Do Committees Invent?](https://www.melconway.com/Home/Committees_Paper.html), 1967
 
 => Conway’s Third Law tells us: **CROSS-TEAM INDEPENDENCE is important**
 
-=> *make each team fully independent*
+=> make each team fully independent
 
-=> If you have to hold a release until some other team is ready, you are not an INDEPENDENT TEAM
+Assessment: If you have to hold a release until some other team is ready, you are not an INDEPENDENT TEAM
 
-[*my observation: Because of the homomorphic force, when teams are dependent on each other, systems will become coupled and dependent. Therefore, the more teams are independent, the more systems become decoupled and independent from each other.*]
+*Because of the homomorphic force, when teams are dependent on each other, systems will become coupled and dependent. Therefore, the more teams are independent, the more systems become decoupled and independent from each other.*
 
 **How engineers mitigate (anticipated) problems with dependencies on other teams?**
 
@@ -227,33 +232,33 @@ There were five strong responses that **minimize the dependency** itself, and tw
 
 > The structures of large systems tend to disintegrate during development, qualitatively more so than with small systems.
 >
-> -- Mel Conway, How Do Committees Invent?, 1967
+> -- Mel Conway, [How Do Committees Invent?](https://www.melconway.com/Home/Committees_Paper.html), 1967
 
 Three reasons Disintegration occurs...
 
 1. > The realization that the system will be large, together with organization pressures, make irresistible the temptation to assign too many people to a design effort
    >
-   > -- Mel Conway, How Do Committees Invent?, 1967
+   > -- Mel Conway, [How Do Committees Invent?](https://www.melconway.com/Home/Committees_Paper.html), 1967
 
    => Brooks’ Law: *Adding manpower to a late software project makes it later.*
 
 2. > Application of the conventional wisdom of management to a large design organization causes its communication structure to disintegrate.
    >
-   > -- Mel Conway, How Do Committees Invent?, 1967
+   > -- Mel Conway, [How Do Committees Invent?](https://www.melconway.com/Home/Committees_Paper.html), 1967
 
    => Dunbar’s Number: *A measurement of the “cognitive limit to the number of individuals with whom any one person can maintain stable relationships.*
 
 3. > Homomorphism insures that the structure of the system will reflect the disintegration which has occurred in the design organization.
    >
-   > -- Mel Conway, How Do Committees Invent?, 1967
+   > -- Mel Conway, [How Do Committees Invent?](https://www.melconway.com/Home/Committees_Paper.html), 1967
 
    => Conway's Law: *Communication dictates design.*
 
 => Conway’s Fourth Law tells us: **TIME is against LARGE teams**
 
-=> *make release cycles short and small*
+=> make release cycles short and small
 
-=> Size/Complexity: The more complex and bigger the higher the risk of failure.
+=> Size/Complexity: The more complex and bigger [the product is] the higher the risk of failure.
 
 ![Size/Complexity table from Standish Chaos Report 2015](https://res.infoq.com/articles/standish-chaos-2015/en/resources/Complexity%20Matrix.jpg)
 
@@ -269,11 +274,31 @@ Guidance: Aim for a SCOPE that supports a release cycle of two weeks or less.
 
    system dependencies vs team dependencies
 
-   => Reduce [System] Complexity => Reduce Uncertainty [*=> reduce communication*]
+   => Reduce [System] Complexity => Reduce Uncertainty
 
    -- Herbsleb, [Tactics for Global Software Development](https://herbsleb.org/web-pres/slides/Siemens-conference-7-17-08-dist.pdf), 2008
 
-   [*If communication is required =>* ] increase communication via:
+   > I'm puzzled :thinking:
+   >
+   > I went over slides about Conway's 3 other laws. Very insightful!
+   >
+   > It affirms: the lesson from Conway's Law is:
+   > increase communication
+   >
+   > I thought Conway's Law was exactly about reducing communication.
+   > Too much communication = too much system coupling.
+   >
+   > Am I wrong?
+   >
+   > -- [@tdpauw](https://twitter.com/tdpauw), [May 8, 2021](https://twitter.com/tdpauw/status/1391099588778549249)
+   >
+   > Lines of communication, structures. System coupling results from mirroring how communication flows, the bureaucratic roles and functions involved etc. Not the volume of communication. If anything,  in a flat hierarchy of teams working in the open you want an increased flow
+   >
+   > -- [@HimalMandalia](https://twitter.com/HimalMandalia), [May 8, 2021](https://twitter.com/HimalMandalia/status/1391103879249637376)
+
+   *=> keep teams small => increase communication*
+
+   => increase communication via:
 
    - real-time chat tools
    - video conferencing
@@ -281,9 +306,6 @@ Guidance: Aim for a SCOPE that supports a release cycle of two weeks or less.
    - wiki and web sites
 
    => reduce the effort required to locate and interact with the "right people"
-
-   [*my observation: I don't really understand this part on increasing communication. I    thought the whole point of Conway's Law is to avoid communication as much as possible.*]
-
 
 2. **Conway’s Second Law**: Remember the process is continually repeating.
 
@@ -311,7 +333,7 @@ Guidance: Aim for a SCOPE that supports a release cycle of two weeks or less.
    >
    > -- James Lewis & Martin Fowler, [Microservices](https://martinfowler.com/articles/microservices.html), 2014
 
-   => Organize teams by product or BU
+   => Organize teams by product or Business Unit
 
    - Combine design, develop, test, & deploy
    - Include storage, business process, & UI
@@ -338,7 +360,7 @@ Guidance: Aim for a SCOPE that supports a release cycle of two weeks or less.
 
 ## Conway’s Lessons from 1967
 
-1. Increase communications [*?? I still don't get this. I was always in the believe the point was to reduce communication. ??* :thinking:]
+1. Increase communications
 2. Support continuous process
 3. Organize teams by products
-4. Make teams small as necessary
+4. Make teams as small as necessary
