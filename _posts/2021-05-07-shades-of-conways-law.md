@@ -52,6 +52,12 @@ James Coplien and Neil Harrison expressed it as follows.
 >
 > -— James Coplien & Neil Harrison Organisation patterns of agile software development, 2004
 
+Allan Kelly’s Corollary:
+
+> Organisational design is system design.
+>
+> -— Allan Kelly, 2005
+
 Ruth Malan is good at formulating Conway's Law in catchy ways.
 
 > Another implication of Conway’s Law is that if we have managers deciding on teams, and deciding which services will be built, by which teams, we implicitly have managers deciding on the system architecture.
