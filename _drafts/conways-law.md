@@ -15,25 +15,9 @@ tags: [ Conway's Law ]
 
 - [A Trace in the Sand](https://www.ruthmalan.com/Journal/2014/2014JournalMay.htm)
 
-> Another implication of Conway’s Law is that if we have managers deciding on teams, and deciding which services will be built, by which teams, we implicitly have managers deciding on the system architecture.
->
-> Conway’s Law also kicks in if we take an initial guess at the system decomposition allocate subsystems to teams, and sally forth–the team boundaries will tend to become boundaries within the system.
-
-This relates to the closing thoughts of Melvin Conway: "*The initial design of a system is never the best. The system may need to change. Therefore it requires flexibility of the organisation to design effectively.*"
-
-> Anything else will be a feat of architectural heroics; hard to accomplish, when architectural heroics have to compete with schedule heroics driven by the steady beat of integration clocks.
->
-> Architecture needs to happen across the interfaces, and this also means across the system/organization interfaces. It means that system architects (who we call architects) and business architects (who we call managers) should not work as if one has no impact on the other.
-
--- [Conway's Law, Feb 13, 2008](https://web.archive.org/web/20181022001505/http://traceinthesand.com:80/blog/2008/02/13/conways-law/)
-
 > The iron triangle (scope, budget, schedule) is one of the key interfaces between the organizational architects (management) and the product/application architects. If it is not architected across, the organizational architecture wins.
 
 — [Who Needs Carrots Anyway, Sept 13, 2007](https://web.archive.org/web/20180929084027/http://www.ruthmalan.com/Journal/2007/2007JournalSeptember.htm#Who_Needs_Carrots)
-
-> Conway's Law by [@mfeathers](https://twitter.com/mfeathers) - or "you always ship your organization, so design your organization well" #craftconf
->
-> -- [Bjorn Freeman-Benson](https://twitter.com/bjorn_fb), [Apr 24, 2014](https://twitter.com/bjorn_fb/status/459367064470573056)
 
 > You can read the history of an enterprise's political struggles in its system architecture.
 >
@@ -96,8 +80,6 @@ This relates to the closing thoughts of Melvin Conway: "*The initial design of a
 
 Inverse Conway's Law: teams own service groups and backend stores
 
-- [Conway’s Three Other Laws](https://mamund.site44.com/talks/2015-10-velocity-teams/), Mike Amundsen
-
 - [Conway's Law and You](https://www.youtube.com/watch?v=odJ8esf2h6E), Michael Feathers
 
 ## Inverse Conway's Law
@@ -117,5 +99,3 @@ Inverse Conway's Law: teams own service groups and backend stores
 > “Why are you hacking my org? Aren’t you a tech person? Stay in your > lane”
 >
 > -- [himal](https://twitter.com/HimalMandalia), [May 3, 2021](https://twitter.com/HimalMandalia/status/1389124875047088129)
-
-
