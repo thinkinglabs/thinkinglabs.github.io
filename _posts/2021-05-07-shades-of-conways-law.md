@@ -123,7 +123,7 @@ Lastly, I found in Dan Slimmon's slides [Conway's Law: The Skeleton of Devops](h
 ## Bibliography
 
 - [*How Do Committees Invent?*](https://www.melconway.com/Home/Committees_Paper.html), Melvin Conway
-- [*What do I think about Conway's Law now?*](https://www.allankellyassociates.co.uk/static/presentations/EuroPLoP2005/ConwaysLawFocusGroup.pdf), Lise Hvatum and Allan Kelly's at EuroPLoP 2006
+- [*What do I think about Conway's Law now?*](https://www.allankellyassociates.co.uk/static/presentations/EuroPLoP2005/ConwaysLawFocusGroup.pdf), Lise Hvatum and Allan Kelly's at EuroPLoP 2005
 - [*Continuous Delivery and Conway’s Law*](https://www.slideshare.net/allankellynet/conways-law-continuous-delivery), Allan Kelly
 - [*A Trace in the Sand*](https://www.ruthmalan.com/Journal/2014/2014JournalMay.htm), Ruth Malan
 - [Conway's Law](https://en.wikipedia.org/wiki/Conway%27s_law) on Wikipedia
