@@ -4,16 +4,29 @@ title: How Do Committees Invent?
 author:
   name: Melvin Conway
   twitter: conways_law
+paper: https://www.melconway.com/Home/Committees_Paper.html
 created_at: 2021-05-02
 meta: 5 min read
 category: notes
 tags: [ Conway's Law ]
 ---
 
-This is [the paper]((https://www.melconway.com/Home/Committees_Paper.html)) behind **Conway's Law**. I've assembled
+This is [the paper](https://www.melconway.com/Home/Committees_Paper.html) behind **Conway's Law**. I've assembled
 some snippets from the paper that triggered me and added some thoughts.
 
 ---
+
+Informal version:
+
+> > Any organization that designs a system (defined more broadly here than just information systems) will inevitably produce a design whose structure is a copy of the organization's communication structure.
+>
+> -- **Conway's Law**
+
+## Stages of Design
+
+> there's never enough time to do something right, but there's always enough time to do it over.
+>
+> -- **Conway's Second Law**
 
 ## The designed system
 
@@ -54,6 +67,10 @@ In turn each subsystem can again be viewed as a linear graph consisting of subsy
 >
 > This kind of a structure-preserving relationship between two sets of things is called a homomorphism.
 
+> ... there is a homomorphism from the linear graph of a system to the linear graph of its design organization.
+>
+> -- **Conway's Third Law**
+
 ## Systems image their design groups
 
 > ... it is reasonable to assume that for any system requirement there is a family of system designs which will meet that requirement, we must also inquire whether the choice of design organization influences the process of selection of a system design from that family.
@@ -71,6 +88,8 @@ In turn each subsystem can again be viewed as a linear graph consisting of subsy
 
 > The structures of large systems tend to disintegrate during development, qualitatively more so than with small systems.
 >
+> -- **Conway's Fourth Law**
+
 > Why do large systems disintegrate?
 >
 > First, It is a natural temptation of the initial designer to delegate tasks when the apparent complexity of the system approaches his limits of comprehension. ... Either he struggles to reduce the system to comprehensibility and wins, or else he loses control of it.
@@ -120,6 +139,8 @@ Manager's prestige is linked to the size of the design budget and the size of th
 
 ## Conclusion
 
+Formal version:
+
 > ... organizations which design systems (in the broad sense used here) are constrained to produce designs which are copies of the communication structures of these organizations.
 >
 > -- **Conway's Law**
@@ -134,8 +155,11 @@ Manager's prestige is linked to the size of the design budget and the size of th
 
 > This criterion creates problems because the need to communicate at any time depends on the system concept in effect at that time. Because the design which occurs first is almost never the best possible, the prevailing system concept may need to change.
 
+[Jeff Sussna calls this **Conway's Corrollary**](https://twitter.com/jeffsussna/status/1391441776829943809):
 
 > Therefore, flexibility of organization is important to effective design.
+>
+> -- **Conway's Corrollary**
 
 
 > Ways must be found to reward design managers for keeping their organizations lean and flexible. There is need for a philosophy of system design management which is not based on the assumption that adding manpower simply adds to productivity.
