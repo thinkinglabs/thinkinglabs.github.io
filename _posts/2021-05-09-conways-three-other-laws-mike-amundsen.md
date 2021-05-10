@@ -5,10 +5,11 @@ author:
   name: Mike Amundsen
   twitter: mamund
 slides: http://amundsen.com/talks/2015-10-velocity-teams/index.html
+video: https://www.oreilly.com/library/view/velocity-conference-amsterdam/9781491928042/video231746.html
 created_at: 2021-05-08
 meta: 8 min read
 category: notes
-tags: [ Conway's Law ]
+tags: [ Conway's Law, Brook's Law, Dunbar ]
 ---
 
 > Most of us know about Conway’s adage “*Any organization will produce a design which is a copy of the organization’s communication structure.*” But Conway coined four laws in his 1968 paper “*How Do Committees Invent?*” What are the other ones? Why are we not talking about them? And what do they tell us about optimizing teams in a distributed world?
