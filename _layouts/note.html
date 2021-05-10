@@ -44,6 +44,7 @@
               {% if page.event.name %} at {{ page.event.name }} {{ page.event.date | date: '%Y'}}{% endif %}
               {% if page.slides %} <i class="fa fa-file-powerpoint-o"></i><a href="{{ page.slides }}">Slides</a>{% endif %}
               {% if page.video %} <i class="fa fa-video-camera"></i><a href="{{ page.video }}">Video</a>{% endif %}
+              {% if page.paper %} <i class="fa fa-file-text"></i><a href="{{ page.paper }}">Paper</a>{% endif %}
               {% if page.meta %} • {{ page.meta }}{% endif %}
               • Notes taken on {{ page.created_at | date: "%b %-d, %Y" }}
             </p>
