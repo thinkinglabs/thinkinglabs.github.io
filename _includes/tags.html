@@ -1,0 +1,8 @@
+<ul class="tags">
+  {% for tag in page.tags %}
+  {% assign tag_path = tag | downcase | replace: ' ', '-' | replace: "'", "" %}
+  <li>
+    <p class="tag"><a href="/tags/{{ tag_path }}"><i class="fa fa-tag"></i> {{ tag }}</a></p>
+  </li>
+  {% endfor %}
+</ul>

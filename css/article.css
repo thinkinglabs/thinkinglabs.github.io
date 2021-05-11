@@ -10,12 +10,17 @@
 .article-meta {
   font-size: 14px;
   letter-spacing: 1px;
-  text-transform:uppercase;
+  text-transform: uppercase;
   color: #797979;
 }
 
 .article-meta a { border-bottom: thin solid; }
 .article-meta a:hover { color: #ffb200; }
+
+.tag {
+  font-weight: 600;
+  text-transform: uppercase;
+}
 
 .no-padding-bottom {
   margin-top: 0;
@@ -139,7 +144,6 @@
   -webkit-box-shadow: inset 0 0 0 1px rgba(0,0,0,.09);
   box-shadow: inset 0 0 0 1px rgba(0,0,0,.09);
 }
-
 
 @media only screen and (min-width: 1440px) {
   .no-padding-bottom {
