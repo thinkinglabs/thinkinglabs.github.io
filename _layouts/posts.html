@@ -1,0 +1,49 @@
+---
+---
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>{{site.data.company.name}}:: {{site.data.myself.name}}</title>
+  <meta name="description" content="{{site.data.myself.name}}: {{site.data.myself.title}}">
+
+  {% include google_analytics.html %}
+  {% include html_head.html %}
+
+</head>
+
+<body>
+
+  {% include navigation.html shrink=true %}
+
+  <section id="posts">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h3 class="section-title">{{ page.category }}{{ page.tag }}</h3>
+      </div>
+    </div>
+  
+    <div class="container">
+      {% assign articles = site.posts | where:"category", page.category | where: "tags", page.tag %}
+      {% for article in articles %}
+      <div class="row">
+  
+        <div class="col-md-8 col-md-offset-2">
+          <h3><a href="{{ article.url }}" class="post-title">{{article.title}}</a></h3>
+          <p>{{ article.date | date: "%b %-d, %Y" }}{% if article.meta %} • {{ article.meta }}{%
+            endif %}</p>
+          <hr />
+          <p>{{ article.excerpt | strip_html }}</p>
+        </div>
+  
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  {% include footer.html %}
+  
+  {% include html_scripts.html %}
+
+</html>
