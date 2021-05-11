@@ -4,7 +4,7 @@ title: Speaking at EuroSTAR Conference 2020
 author: Thierry de Pauw
 meta: 2 min read
 category: articles
-tags: [ Continuous Integration ]
+tags: [ Continuous Integration, Public Speaking ]
 redirect_from:
   - /2020/11/16/speaking-at-eurostar-conference-2020.html
 ---
