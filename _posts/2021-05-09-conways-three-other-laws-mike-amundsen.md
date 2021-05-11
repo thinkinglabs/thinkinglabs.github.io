@@ -9,7 +9,7 @@ video: https://www.oreilly.com/library/view/velocity-conference-amsterdam/978149
 created_at: 2021-05-08
 meta: 8 min read
 category: notes
-tags: [ Conway's Law, Brooks' Law, Dunbar ]
+tags: [ Conway's Law, Brooks' Law, Dunbar's Number ]
 ---
 
 > Most of us know about Conway’s adage “*Any organization will produce a design which is a copy of the organization’s communication structure.*” But Conway coined four laws in his 1968 paper “*How Do Committees Invent?*” What are the other ones? Why are we not talking about them? And what do they tell us about optimizing teams in a distributed world?
