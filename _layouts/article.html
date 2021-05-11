@@ -36,15 +36,25 @@
     <section id="article" class="article bg-white padding-section-bottom">
       <div class="row no-margin-lr">
         <div class="col-md-8 col-md-offset-2">
-          <header class="article-header">
+          
+          <div class="row">
+          <header class="col-md-7 article-header">
             <h2 class="article-title no-padding-bottom">{{page.title}}</h2>
-            <p class="article-meta">{% if page.date %} {{ page.date | date: "%b %-d, %Y" }} {% endif %} {% if author %} • {{ author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-            <hr />
+            <p class="article-meta">{% if page.date %} {{ page.date | date: "%b %-d, %Y" }} {% endif %} {% if author %} • {{
+              author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
           </header>
+          <aside class="col-md-5">
+            {% include tags.html %}
+          </aside>
+          </div>
+
+          <hr />
+
           <article class="article-content">
             {{ content }}
           </article>
         </div>
+        
       </div>
     </section>
 

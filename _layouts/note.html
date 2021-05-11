@@ -37,19 +37,29 @@
     <section id="article" class="article bg-white padding-section-bottom">
       <div class="row no-margin-lr">
         <div class="col-md-8 col-md-offset-2">
-          <header class="article-header">
-            <h2 class="article-title no-padding-bottom">{{page.title}}</h2>
-            <p class="article-meta">
-              {{ author }}
-              {% if page.event.name %} at {{ page.event.name }} {{ page.event.date | date: '%Y'}}{% endif %}
-              {% if page.slides %} <i class="fa fa-file-powerpoint-o"></i><a href="{{ page.slides }}">Slides</a>{% endif %}
-              {% if page.video %} <i class="fa fa-video-camera"></i><a href="{{ page.video }}">Video</a>{% endif %}
-              {% if page.paper %} <i class="fa fa-file-text"></i><a href="{{ page.paper }}">Paper</a>{% endif %}
-              {% if page.meta %} • {{ page.meta }}{% endif %}
-              • Notes taken on {{ page.created_at | date: "%b %-d, %Y" }}
-            </p>
-            <hr />
-          </header>
+
+          <div class="row">
+            <header class="col-md-7 article-header">
+              <h2 class="article-title no-padding-bottom">{{page.title}}</h2>
+              <p class="article-meta">
+                {{ author }}
+                {% if page.event.name %} at {{ page.event.name }} {{ page.event.date | date: '%Y'}}{% endif %}
+                {% if page.slides %} <i class="fa fa-file-powerpoint-o"></i><a href="{{ page.slides }}">Slides</a>{% endif %}
+                {% if page.video %} <i class="fa fa-video-camera"></i><a href="{{ page.video }}">Video</a>{% endif %}
+                {% if page.paper %} <i class="fa fa-file-text"></i><a href="{{ page.paper }}">Paper</a>{% endif %}
+                {% if page.meta %} • {{ page.meta }}{% endif %}
+              </p>
+              <p class="article-meta">
+                Notes taken on {{ page.created_at | date: "%b %-d, %Y" }}
+              </p>
+            </header>
+            <aside class="col-md-5">
+              {% include tags.html %}
+            </aside>
+          </div>
+
+          <hr />
+
           <article class="article-content">
             {{ content }}
           </article>
