@@ -10,7 +10,7 @@ event:
 slides: https://www.slideshare.net/allankellynet/conways-law-continuous-delivery
 video: https://www.youtube.com/watch?v=Cu0AU8vw3xw
 created_at: 2018-04-03
-meta: 23 min read
+meta: 24 min read
 category: notes
 tags: [ Conway's Law, Continuous Delivery ]
 ---
