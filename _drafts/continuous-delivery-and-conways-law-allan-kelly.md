@@ -36,7 +36,15 @@ The laws that govern your life as a software engineer:
 >
 > -— Melvin Conway, [How Do Committees Invent?](https://www.melconway.com/Home/Committees_Paper.html), 1968
 
-Rephrased by Eric Raymond:
+Eric Raymond provisional:
+
+> The rule that organization of the so8ware and the organization of the so8ware team will be congruent.
+>
+> -— The New Hacker's Dictionary, 1996
+
+Originally stated by Eric Raymond as:
+
+> The rule that organization of the so8ware and the organiza1on of the so8ware team will be congruent;
 
 > If you have 4 groups working on a compiler, you’ll get a 4-pass compiler.
 >
@@ -44,12 +52,16 @@ Rephrased by Eric Raymond:
 
 Coplien and Harrison:
 
-> Make sure the organisation is compatible with the product architecture.
+> If the parts of an organiza1on (e.g. teams, departments, or subdivisions) do not closely reflect the essen1al parts of the product, or if the rela1onship between organiza1ons do not reflect the rela1onships between product parts, then the project will be in trouble. ...
+>
+> Therefore: **Make sure the organisation is compatible with the product architecture**.
 >
 > -— Organisation patterns of agile software development, 2004
 
 This is the key bit: **the organisation and the software must be in harmony**.
 If the organisation and the software aren’t in harmony one of them will impose their will on the other.
+
+## The Homomorphic Force
 
 Underlying Conway’s Law is the **Homomorphic Force**:
 
@@ -79,6 +91,8 @@ That is why COBOL organisations find it very difficult to do anything approachin
 
 > Organisational design is system design.
 >
+> Architect the organization to architect the system.
+>
 > -— Allan Kelly, many times since 2005
 
 I sometimes look at books about architecture, I hear Simon Brown talk about architecture and I think: what’s the freaking point. The organisation will create the software design.
@@ -103,7 +117,7 @@ I sometimes look at books about architecture, I hear Simon Brown talk about arch
 
 Back in Conway’s article (45 years ago, scary isn’t it):
 
-Why do large systems disintegrate?
+## Why do large systems disintegrate?
 
 3 steps to disintegrate (from Conway):
 
@@ -180,11 +194,13 @@ Unfortunately in software terms that goes for a lot of managers and other organi
 
 Unless you appreciate that, you will go against the force. You will go across the homomorphic force and the force will come back. The force will win in the end.
 
+## Advice for Continuous Delivery
+
 **So what advise can I give you ?** Particularly what advise can I give you in terms of Continuous Delivery?
 
 **You don't want to be cutting across the gray if you want to continuously deliver. You need everything to go into the right direction.**
 
-## Whole team: include everyone
+### Whole team: include everyone
 
 - developers, testers, analysts, product managers, etc. ...
   
@@ -220,7 +236,7 @@ Unless you appreciate that, you will go against the force. You will go across th
   - no "us & them"
   - one shared goal
 
-## Start small: Delay staffing
+### Start small: Delay staffing
 
 Hold off delaying staff for as long as possible.
 
@@ -262,7 +278,7 @@ When you add staff you are adding more communication. When you add staff you are
 
     An awful lot of corporate groups consider the IT department as a service function. The service function ain't supposed to answer back. It is supposed to do what is being told and deliver. Actually IT departments have a lot of brains in them. And actually more and more companies are dependent on software. More and more the business relies on software. The business and the software are the same thing. If you put a communication divide in their it is reflected in your architecture.
 
-## Multi-skilled Willing Staff
+### Multi-skilled Willing Staff
 
 - all hands, one team
 
@@ -284,7 +300,7 @@ When you add staff you are adding more communication. When you add staff you are
 
   You all need to go over all the system otherwise you are introducing hierarchy. You are introducing communication path. And that will be reflected in your software. Your software will be more complicated. It'll be the model of the more complex organisation you are in. You make the organisation more complex. You put in organisational boundaries. You put in specialism. It will be modelled in your software.
 
-## Amoeba Teams
+### Amoeba Teams
 
 - start small
 
@@ -329,7 +345,7 @@ So you grow a team until you can successfully split it. And these do not need to
 
 And if you need to you can always go in reverse. You can always shrink them back in to one another.
 
-## Teams & Duration
+### Teams & Duration
 
 prefer:
 
@@ -358,7 +374,7 @@ Often you see in organisation each developer got there own one man project, ther
 What it does require, it requires from management to say to a customer: sorry you will have to wait until we have finished this next thing.
 I think so often we have these multiple projects going on slowly in parallel because we can't just say no to people.
 
-## NoProjects
+### NoProjects
 
 - keep the team together
   - grow them, shrink them,
@@ -378,7 +394,7 @@ If you kill the team, you don't let the software change. As a result the Homomor
 
 Don't disband the team. Flow the work to the team. Why break up a team ? It's continuous. Does Manchester United at the end of the season say: "*season's over guys, go and get a summer job we see you in august ?*"
 
-## Avoid Rock Stars
+### Avoid Rock Stars
 
 Rock Stars leave their marks on your software.
 
@@ -399,7 +415,7 @@ And that is what it'll do to your software. Your software will be temperamental,
 
 If you got a team that lives with the software. If you have a team that have to live the consequences of their choices, they are gonna fix those problems. Software developers are engineers. Engineers are proud of their work.
 
-## Conway's Second Law ?
+## Conway's Second Law?
 
 Hidden in the Conway's Law paper, there is another law. He doesn't call it out. When I was preparing this talk, it came out in a google search result.
 
