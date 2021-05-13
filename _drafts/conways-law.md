@@ -81,6 +81,10 @@ tags: [ Conway's Law ]
 Inverse Conway's Law: teams own service groups and backend stores
 
 - [Conway's Law and You](https://www.youtube.com/watch?v=odJ8esf2h6E), Michael Feathers
+- [Microservices and the Inverse Conway](https://www.youtube.com/watch?v=uamh7xppO3E), James Lewis
+  slides: https://www.slideshare.net/Codemotion/microservices-and-the-inverse-conway-manoeuvre-james-lewis-codemotion-rome-2017
+
+- Conway's Law 50 years later
 
 ## Inverse Conway's Law
 
