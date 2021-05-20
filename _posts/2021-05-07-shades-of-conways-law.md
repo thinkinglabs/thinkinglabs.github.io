@@ -5,7 +5,7 @@ author:
   name: Thierry de Pauw
   twitter: tdpauw
 created_at: 2021-05-07
-meta: 4 min read
+meta: 5 min read
 category: articles
 tags: [ Conway's Law ]
 ---
@@ -64,6 +64,10 @@ Ruth Malan is good at formulating Conway's Law in catchy ways.
 
 The following relates to the closing thoughts of Melvin Conway: "*The initial design of a system is never the best. The system may need to change. Therefore it requires flexibility of the organisation to design effectively.*".
 
+> The architecture of the system gets cemented in the forms of the teams that develop it.
+>
+> ...
+>
 > Conway’s Law also kicks in if we take an initial guess at the system decomposition allocate subsystems to teams, and sally forth–the team boundaries will tend to become boundaries within the system.
 >
 > -- Ruth Malan, [Conway's Law, Feb 13, 2008](https://web.archive.org/web/20181022001505/http://traceinthesand.com:80/blog/2008/02/13/conways-law/)
@@ -126,10 +130,17 @@ Lastly, I found in Dan Slimmon's slides [Conway's Law: The Skeleton of Devops](h
 >
 > -- Adam Jacob
 
+Which seemingly flows into Mel Conway's observation:
+
+> [Conway's Law] creates an imperative (1) to keep asking: “Is there a better design that is not available to us because of our organization?” and (2) to be open to changing the organization if a better design is found.
+>
+> -- Mel Conway, [Toward Simplifying Application Development in a Dozen Lessons](http://melconway.com/Home/pdf/simplify.pdf), 2016
+
 ## Bibliography
 
 - [*How Do Committees Invent?*](https://www.melconway.com/Home/Committees_Paper.html), Melvin Conway
+- [*Toward Simplifying Application Development in a Dozen Lessons*](http://melconway.com/Home/pdf/simplify.pdf), Mel Conway
 - [*What do I think about Conway's Law now?*](https://www.allankellyassociates.co.uk/static/presentations/EuroPLoP2005/ConwaysLawFocusGroup.pdf), Lise Hvatum and Allan Kelly's at EuroPLoP 2005
 - [*Continuous Delivery and Conway’s Law*](https://www.slideshare.net/allankellynet/conways-law-continuous-delivery), Allan Kelly
 - [*A Trace in the Sand*](https://www.ruthmalan.com/Journal/2014/2014JournalMay.htm), Ruth Malan
-- [Conway's Law](https://en.wikipedia.org/wiki/Conway%27s_law) on Wikipedia
+- [*Conway's Law*](https://en.wikipedia.org/wiki/Conway%27s_law) on Wikipedia
