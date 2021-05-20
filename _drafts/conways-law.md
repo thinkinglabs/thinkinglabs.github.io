@@ -11,13 +11,9 @@ category: notes
 tags: [ Conway's Law ]
 ---
 
-## Ruth Malan on Conway's Law
+Definitions of Conway's Law can be found in [Shades of Conway's Law]({% post_url 2021-05-07-shades-of-conways-law %})
 
-- [A Trace in the Sand](https://www.ruthmalan.com/Journal/2014/2014JournalMay.htm)
-
-> The iron triangle (scope, budget, schedule) is one of the key interfaces between the organizational architects (management) and the product/application architects. If it is not architected across, the organizational architecture wins.
-
-— [Who Needs Carrots Anyway, Sept 13, 2007](https://web.archive.org/web/20180929084027/http://www.ruthmalan.com/Journal/2007/2007JournalSeptember.htm#Who_Needs_Carrots)
+## Observing the history of decisions from software
 
 > You can read the history of an enterprise's political struggles in its system architecture.
 >
@@ -38,8 +34,9 @@ tags: [ Conway's Law ]
 
 > Politics plays a huge role. And a lot of the role it plays is in what it silences.
 >
-> -- [Conway's Law-ish, Aug 5, 2013](https://web.archive.org/web/20200621234405/http://www.ruthmalan.com:80/Journal/2013/2013JournalMay.htm#Conways_Law_ish)
+> -- Ruth Malan, [Conway's Law-ish, Aug 5, 2013](https://web.archive.org/web/20200621234405/http://www.ruthmalan.com:80/Journal/2013/2013JournalMay.htm#Conways_Law_ish)
 
+## Incremental development and Refactoring
 
 > Piecemeal growth, or incremental development, is not just desirable but a fact of life in software. Even so, we need to build more learning into our process.
 
@@ -59,34 +56,28 @@ tags: [ Conway's Law ]
 
 > Integrating across organizational divides is a challenge. When left to happy accident, may well have all the smack of accident rather than design - as in, designed to get more what we want, looking for consequences so we get less unintended side-effecting from being system-blind.
 
--- [Conway's Law Reverb, May 5, 2014](https://www.ruthmalan.com/Journal/2014/2014JournalMay.htm)
+-- Ruth Malan, [Conway's Law Reverb, May 5, 2014](https://www.ruthmalan.com/Journal/2014/2014JournalMay.htm)
 
-- [Conway's Law: The Skeleton of DevOps](https://www.slideshare.net/danslimmon/conways-law-the-skeleton-of-devops)
+> your org structure isn't solving your problem.
+> it's an artifact of how you've solved it before.
+>
+> -- Adam Jacob
 
-   > your org structure isn't solving your problem.
-   > it's an artifact of how you've solved it before.
-   >
-   > -- Adam Jacob
+> architectural innovations destroy the usefulness of the architecture knowledge of established firms
+>
+> -- architecture innovation: the reconfiguration of existing product technologies and the failure of established firms, henderson, r. & clark, k. 1990
 
-   > architectural innovations destroy the usefulness of the architecture knowledge of established firms
-   >
-   > -- architecture innovation: the reconfiguration of existing product technologies and the failure of established firms, henderson, r. & clark, k. 1990
+=> we continuously redesign our systems to make them better and to adjust to changing stimuli
 
-   => we continuously redesign our systems to make them better and to adjust to changing stimuli
+=> so we must do the same for our team structures
 
-   => so we must do the same for our team structures
+and this reinforces the significance of piecemeal growth and refactoring and how it impacts organisational design
 
-   (see piecemeal growth and refactoring)
-
-Inverse Conway's Law: teams own service groups and backend stores
-
-- [Conway's Law and You](https://www.youtube.com/watch?v=odJ8esf2h6E), Michael Feathers
-- [Microservices and the Inverse Conway](https://www.youtube.com/watch?v=uamh7xppO3E), James Lewis
-  slides: https://www.slideshare.net/Codemotion/microservices-and-the-inverse-conway-manoeuvre-james-lewis-codemotion-rome-2017
-
-- Conway's Law 50 years later
+-- [Conway's Law: The Skeleton of DevOps](https://www.slideshare.net/danslimmon/conways-law-the-skeleton-of-devops), Dan Slimmon
 
 ## Inverse Conway's Law
+
+Teams own service groups and backend stores
 
 > Prefer evolving team and organisational structure to reflect the domain and service boundaries of the problem space.
 >
@@ -103,3 +94,14 @@ Inverse Conway's Law: teams own service groups and backend stores
 > “Why are you hacking my org? Aren’t you a tech person? Stay in your > lane”
 >
 > -- [himal](https://twitter.com/HimalMandalia), [May 3, 2021](https://twitter.com/HimalMandalia/status/1389124875047088129)
+
+
+## Resources
+
+- [Conway's Law and You](https://www.youtube.com/watch?v=odJ8esf2h6E), Michael Feathers
+- [Microservices and the Inverse Conway](https://www.youtube.com/watch?v=uamh7xppO3E), James Lewis
+
+  slides: https://www.slideshare.net/Codemotion/microservices-and-the-inverse-conway-manoeuvre-james-lewis-codemotion-rome-2017
+
+- [Conway's Law 50 years later](http://melconway.com/keynote/Presentation.pdf), Melvin Conway
+- [Conway's Law as a Theorem](https://www.melconway.com/keynote/Theorem.pdf), Melvin Conway
