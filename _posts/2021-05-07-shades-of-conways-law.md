@@ -58,19 +58,27 @@ Allan Kelly’s Corollary:
 >
 > -— Allan Kelly, 2005
 
-Ruth Malan is good at formulating Conway's Law in catchy ways.
+Or put differently by Ruth Malan.
+
+> If the architecture of the system and the architecture of the organization are at odds, the architecture of the organization wins.
+>
+> -- Ruth Malan, [Conway's Law, Feb 13, 2008](https://web.archive.org/web/20181022001505/http://traceinthesand.com:80/blog/2008/02/13/conways-law/)
+
+Ruth Malan has always been good at formulating Conway's Law in catchy ways.
 
 > Another implication of Conway’s Law is that if we have managers deciding on teams, and deciding which services will be built, by which teams, we implicitly have managers deciding on the system architecture.
-
-The following relates to the closing thoughts of Melvin Conway: "*The initial design of a system is never the best. The system may need to change. Therefore it requires flexibility of the organisation to design effectively.*".
+>
+> -- Ruth Malan, [Conway's Law, Feb 13, 2008](https://web.archive.org/web/20181022001505/http://traceinthesand.com:80/blog/2008/02/13/conways-law/)
 
 > The architecture of the system gets cemented in the forms of the teams that develop it.
 >
 > ...
 >
-> Conway’s Law also kicks in if we take an initial guess at the system decomposition allocate subsystems to teams, and sally forth–the team boundaries will tend to become boundaries within the system.
+> Conway’s Law also kicks in if we take an initial guess at the system decomposition, allocate subsystems to teams, and sally forth–the team boundaries will tend to become boundaries within the system.
 >
 > -- Ruth Malan, [Conway's Law, Feb 13, 2008](https://web.archive.org/web/20181022001505/http://traceinthesand.com:80/blog/2008/02/13/conways-law/)
+
+Which relates to the closing thoughts of Melvin Conway in his seminal paper: "*The initial design of a system is never the best. The system may need to change. Therefore it requires flexibility of the organisation to design effectively.*". This in turn suggests the requirement for Conway's Corollary which we will get to at the end of the article.
 
 > Anything else will be a feat of architectural heroics; hard to accomplish, when architectural heroics have to compete with schedule heroics driven by the steady beat of integration clocks.
 >
@@ -78,7 +86,7 @@ The following relates to the closing thoughts of Melvin Conway: "*The initial de
 >
 > -- Ruth Malan, [Conway's Law, Feb 13, 2008](https://web.archive.org/web/20181022001505/http://traceinthesand.com:80/blog/2008/02/13/conways-law/)
 
-Over beer and food, Martin Tompson and Pieter Hintjes came with the following definition.
+Over beer and food, Martin Thompson and Pieter Hintjes came with the following definition.
 
 > Conway's Law, which states, roughly, that the things an organization produces will reflect how the organization communicates.
 >
