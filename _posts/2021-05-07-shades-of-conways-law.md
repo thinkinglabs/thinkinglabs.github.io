@@ -10,9 +10,9 @@ category: articles
 tags: [ Conway's Law ]
 ---
 
-Over time, different paraphrased versions of **Conway's Law** got in use into
-addition to the original one. This is an attempt to give an overview of the
-ones I have found when recently going over Conway's Law literature.
+Over time, different people have paraphrased **Conway's Law** in different ways.
+This is an overview of the variations I found when recently going over Conway's
+Law literature.
 
 ---
 
