@@ -136,6 +136,16 @@ Which seemingly flows into Mel Conway's observation:
 >
 > -- Mel Conway, [Toward Simplifying Application Development in a Dozen Lessons](http://melconway.com/Home/pdf/simplify.pdf), 2016
 
+To change the organisation you need **Conway's Corollary**:
+
+> And then there is what I call Conway’s Corollary:
+>
+> “organizational flexibility is important to effective design”.
+>
+> IMO this is the the most profound part of his article.
+>
+> -- [@jeffsussna](https://twitter.com/jeffsussna), [May 9, 2021](https://twitter.com/jeffsussna/status/1391441776829943809?s=20)
+
 ## Bibliography
 
 - [*How Do Committees Invent?*](https://www.melconway.com/Home/Committees_Paper.html), Melvin Conway
