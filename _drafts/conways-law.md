@@ -13,6 +13,10 @@ tags: [ Conway's Law ]
 
 Definitions of Conway's Law can be found in [Shades of Conway's Law]({% post_url 2021-05-07-shades-of-conways-law %})
 
+> [Conway's Law] creates an imperative (1) to keep asking: “Is there a better design that is not available to us because of our organization?” and (2) to be open to changing the organization if a better design is found.
+>
+> -- Mel Conway, [Toward Simplifying Application Development in a Dozen Lessons](http://melconway.com/Home/pdf/simplify.pdf), 2016
+
 ## Observing the history of decisions from software
 
 > You can read the history of an enterprise's political struggles in its system architecture.
@@ -80,25 +84,17 @@ and this reinforces the significance of piecemeal growth and refactoring and how
 
 -- [Conway's Law: The Skeleton of DevOps](https://www.slideshare.net/danslimmon/conways-law-the-skeleton-of-devops), Dan Slimmon
 
-## Inverse Conway's Law
+## Contradictions in definitions
 
-Teams own service groups and backend stores
+> I wonder how many readers of your extensive blog post discover contradictions in different interpretations.
+> It is quite important considering e.g. gross misinterpretation of creating stiff teams structure that correlates with microservices (each teams owns a bunch).
+>
+> [@vgrgic](https://twitter.com/vgrgic),  [May 21, 2021](https://twitter.com/vgrgic/status/1395626485256364032?s=20)
 
-> Prefer evolving team and organisational structure to reflect the domain and service boundaries of the problem space.
->
-> -- [himal](https://twitter.com/HimalMandalia), [May 3, 2021](https://twitter.com/HimalMandalia/status/1389118556235776003)
->
-> Otherwise known as the “inverse Conway manoeuvre.”
->
-> Ultimately a big part of architecture isn’t about the technical or > solution detail. It’s about putting in the right structures, ways of > working, lines of communication and overall conditions
->
-> -- [himal](https://twitter.com/HimalMandalia), [May 3, 2021](https://twitter.com/HimalMandalia/status/1389119305145634816)
->
-> I’ve had mixed experiences on this. Leadership that understands it has > supported me in making the necessary structural changes. Leadership > that does not understand... I run into problems with very quickly.
->
-> “Why are you hacking my org? Aren’t you a tech person? Stay in your > lane”
->
-> -- [himal](https://twitter.com/HimalMandalia), [May 3, 2021](https://twitter.com/HimalMandalia/status/1389124875047088129)
+https://threadreaderapp.com/thread/1395680362953461761.html
+
+https://threadreaderapp.com/thread/1395701960305610755.html
+
 
 
 ## Resources
