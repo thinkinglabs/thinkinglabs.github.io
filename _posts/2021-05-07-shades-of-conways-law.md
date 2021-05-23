@@ -215,7 +215,7 @@ I want to thank [Paul Hammant](https://paulhammant.com/2018/10/07/conways-observ
 - [*How Do Committees Invent?*](https://www.melconway.com/Home/Committees_Paper.html), Melvin Conway
 - [*Toward Simplifying Application Development in a Dozen Lessons*](http://melconway.com/Home/pdf/simplify.pdf), Mel Conway
 - [*What do I think about Conway's Law now?*](https://www.allankellyassociates.co.uk/static/presentations/EuroPLoP2005/ConwaysLawFocusGroup.pdf), Lise Hvatum and Allan Kelly's at EuroPLoP 2005
-- [Return to Conway's Law](https://www.allankellyassociates.co.uk/archives/1169/return-to-conways-law/), Allan Kelly
+- [*Return to Conway's Law*](https://www.allankellyassociates.co.uk/archives/1169/return-to-conways-law/), Allan Kelly
 - [*Continuous Delivery and Conway’s Law*](https://www.slideshare.net/allankellynet/conways-law-continuous-delivery), Allan Kelly
 - [*A Trace in the Sand*](https://www.ruthmalan.com/Journal/2014/2014JournalMay.htm), Ruth Malan
 - [*Conway's Law*](https://en.wikipedia.org/wiki/Conway%27s_law) on Wikipedia
