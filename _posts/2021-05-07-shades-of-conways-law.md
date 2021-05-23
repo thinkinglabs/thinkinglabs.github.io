@@ -208,7 +208,7 @@ But ...
 
 ## Acknowledgment
 
-I want to thank [Paul Hammant](https://twitter.com/paul_hammant) for nudging me to include the Inverse Conway's Manoeuvre and more over for saying this is a great article. Thank you, Paul!
+I want to thank [Paul Hammant](https://paulhammant.com/2018/10/07/conways-observation) for nudging me to include the Inverse Conway's Manoeuvre and for saying this is a great article. Thank you, Paul!
 
 ## Bibliography
 
