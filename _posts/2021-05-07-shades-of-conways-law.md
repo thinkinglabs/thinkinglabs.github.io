@@ -113,7 +113,7 @@ According to Michael Nygard system architecture is a good source for archaeologi
 
 > You can read the history of an enterprise's political struggles in its system architecture.
 >
-> -- [Michael Nygard](https://twitter.com/mtnygard), [May 8, 2013](https://twitter.com/mtnygard/status/332131878830211073)
+> -- [@mntnygard](https://twitter.com/mtnygard), [May 8, 2013](https://twitter.com/mtnygard/status/332131878830211073)
 
 Michael Feathers says when you ship your product, you ship your organisation.
 
