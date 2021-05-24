@@ -74,7 +74,10 @@ Ruth Malan has always been good at formulating Conway's Law in catchy ways.
 >
 > -- Ruth Malan, [Conway's Law](https://web.archive.org/web/20181022001505/http://traceinthesand.com:80/blog/2008/02/13/conways-law/), Feb 13, 2008
 
-Which relates to the closing thoughts of Melvin Conway in his seminal paper: "*The initial design of a system is never the best. The system may need to change. Therefore it requires flexibility of the organisation to design effectively.*". This in turn suggests the requirement for Conway's Corollary which we will get to at further down the article.
+This relates to two points raised by Melvin Conway in his seminal paper:
+
+- At the very beginning: "*the very act of organizing a design team means that certain design decisions have already been made, explicitly or otherwise.*"
+- And towards the end as a closing thought: "*The initial design of a system is never the best. The system may need to change. Therefore it requires flexibility of the organisation to design effectively.*". This in turn suggests the requirement for Conway's Corollary which we will get to further down the article.
 
 > Anything else will be a feat of architectural heroics; hard to accomplish, when architectural heroics have to compete with schedule heroics driven by the steady beat of integration clocks.
 >
