@@ -10,7 +10,8 @@
     Reset
 ====================================== */
 
-body{ font-family: 'Open Sans', sans-serif; -webkit-font-smoothing: antialiased; font-size:14px; color:#9a9a9a; line-height:23px; letter-spacing: 0.02em; overflow-x: hidden; }
+body{ font-family: 'Open Sans', sans-serif; -webkit-font-smoothing: antialiased; font-size:16px; color:#727272; line-height:23px; letter-spacing: 0.02em; overflow-x: hidden; }
+blockquote { font-size: 16px; font-weight: 300; }
 a{ color: #000; }
 a:hover{ color: #ffb200; }
 img { -webkit-backface-visibility: hidden; max-width:100%; height:auto; }
@@ -162,7 +163,7 @@ h6 { font-family: 'Open Sans', sans-serif; letter-spacing: 1px; font-size: 13px;
     Icon
 ====================================== */
 
-i { color: #9a9a9a; margin: 0 3px}
+i { color: #727272; margin: 0 3px}
 
 /* social icon */
 .social-icon .fa { font-size: 14px; text-align: center; display: table-cell; vertical-align: middle; width: 30px; height: 30px !important; line-height: 1; -webkit-transition: all 0.4s ease; transition: all 0.4s ease; color: #000; background-color: #fff;}
@@ -284,7 +285,7 @@ section { padding: 100px 0;}
 }
 
 .article p a {
-  color: #9a9a9a;
+  color: #727272;
 }
 
 .article p a:hover {

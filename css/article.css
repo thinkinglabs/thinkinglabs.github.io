@@ -11,7 +11,6 @@
   font-size: 14px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #797979;
 }
 
 .article-meta a { border-bottom: thin solid; }
@@ -44,7 +43,6 @@
 .article-content a:hover { color: #ffb200; }
 
 .article-content p, li {
-  font-size: 16px;
   line-height: 28px;
 }
 
@@ -92,7 +90,7 @@
    max-height: 280px;
    -webkit-box-sizing: border-box;
    box-sizing: border-box;
-   color: #9a9a9a;
+   color: #727272;
    -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.04), inset 0 0 0 1px rgba(0,0,0,.09);
    box-shadow: 0 1px 4px rgba(0,0,0,.04), inset 0 0 0 1px rgba(0,0,0,.09);
    display: table;
@@ -105,13 +103,13 @@
     vertical-align: middle;
     padding: 20px;
     text-decoration: none;
-    color: #9a9a9a;
+    color: #727272;
 }
 
 .embed-article em {
     font-size: 16px;
     font-style: normal;
-    color: #9a9a9a;
+    color: #727272;
     display: block;
     margin-top: -1px;
     margin-bottom: 10px;
