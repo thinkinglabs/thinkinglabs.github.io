@@ -5,7 +5,7 @@ author:
   name: Thierry de Pauw
   twitter: tdpauw
 created_at: 2021-05-07
-meta: 7 min read
+meta: 9 min read
 category: articles
 tags: [ Conway's Law ]
 ---
@@ -85,7 +85,7 @@ This relates to two points raised by Melvin Conway in his seminal paper:
 >
 > -- Ruth Malan, [Conway's Law](https://web.archive.org/web/20181022001505/http://traceinthesand.com:80/blog/2008/02/13/conways-law/), Feb 13, 2008
 
-Which nicely winks towards [*Team Topologies*](https://teamtopologies.com/) which discusses team interfaces in depth.
+Which nicely winks towards [*Team Topologies*](https://teamtopologies.com/). It discusses team interfaces in depth.
 
 Over beer and food, Martin Thompson and Pieter Hintjes came with the following definition.
 
@@ -109,11 +109,39 @@ Again Ruth Malan.
 >
 > -- Ruth Malan, [Conway's Law](https://web.archive.org/web/20190924192153/http://www.ruthmalan.com:80/Journal/2013/2013JournalDecember.htm#Conways_Law), Dec 17, 2013
 
-According to Michael Nygard system architecture is a good source for archaeological research on past enterprise decisions.
+According to Michael Nygard system architecture is a good source for archaeological research on past enterprise decisions which opens an interesting discussion on technology and politics.
 
 > You can read the history of an enterprise's political struggles in its system architecture.
 >
 > -- [@mntnygard](https://twitter.com/mtnygard), [May 8, 2013](https://twitter.com/mtnygard/status/332131878830211073)
+> 
+> @mtnygard A history of Conway's Law
+>
+> -- [@SteveSmith_Tech](https://twitter.com/SteveSmith_Tech), [May 8, 2013](https://twitter.com/SteveSmith_Tech/status/332146069221810176)
+>
+> @mtnygard That's some sort of corollary to Conway's Law.
+>
+> -- [@jmbroad](https://twitter.com/jmbroad), [May 8, 2013](https://twitter.com/jmbroad/status/332132484902948866)
+>
+> @jmbroad Definitely! It is the effect of changes in structure over time. (Credit goes to @mfeathers for the original thought there.)
+>
+> -- [@mntnygard](https://twitter.com/mtnygard), [May 8, 2013](https://twitter.com/mtnygard/status/332133107245408256)
+>
+> @mtnygard @mfeathers Unsurprising. I esteem you both as masters of software sociology. I recommend Arch w/o End State to everyone I know. :)
+>
+> -- [@jmbroad](https://twitter.com/jmbroad), [May 8, 2013](https://twitter.com/jmbroad/status/332133754724286464)
+
+[Architecture without an end state](https://www.oreilly.com/content/michael-nygard-on-architecture-without-an-end-state/) means accepting that “*changes you’re starting now will co-exist with changes that started last year and the year before. If you adopt that perspective, then you stop trying to rip up the pavement and do something completely new, and you focus a lot more on incremental change*”. And here starts your history of decisions.
+
+> Software, like all technologies is inherently political. Code inevitably reflects the choices, biases and desires of its creators" J Cascio
+>
+> -- [@stephanierieger](https://twitter.com/stephanierieger), [May 5, 2014](https://twitter.com/stephanierieger/status/463328024591478784)
+
+> Politics plays a huge role. And a lot of the role it plays is in what it silences. But we don't know the stories of silence.
+>
+> -- Ruth Malan, [Conway's Law-ish](https://web.archive.org/web/20200621234405/http://www.ruthmalan.com:80/Journal/2013/2013JournalMay.htm#Conways_Law_ish), Aug 5, 2013
+
+Interestingly, al this discussion on history and politics also lays the foundations on how piecemeal growth, like Ruth Malan and Allan Kelly like to say, or what I call incremental software development impacts the organisation. At some point I should include Ruth Malan's thoughts on piece meal growth. I'll get to that ... some day.
 
 Michael Feathers says when you ship your product, you ship your organisation.
 
@@ -209,17 +237,22 @@ But ...
 >
 > -- [@himal](https://twitter.com/HimalMandalia), [May 3, 2021](https://twitter.com/HimalMandalia/status/1389124875047088129)
 
+Alright, what started as just summarising the various ways different people have formulated Conway's Law as a sort of note-taking for myself, became a cross-reference of thoughts, observations and links between this whole mix. This article looks to become a never ending work.
+
 ## Acknowledgment
 
 I want to thank [Paul Hammant](https://paulhammant.com/2018/10/07/conways-observation) for nudging me to include the Inverse Conway's Manoeuvre and for saying this is a great article. Thank you, Paul!
 
+I also would like to thank [Ruth Malan](https://twitter.com/ruthmalan) for writing down and sharing here reflections on Conway's Law. A lot of the above content is influenced by the traces Ruth wrote in the sand.
+
 ## Bibliography
 
-- [*How Do Committees Invent?*](https://www.melconway.com/Home/Committees_Paper.html), Melvin Conway
-- [*Toward Simplifying Application Development in a Dozen Lessons*](http://melconway.com/Home/pdf/simplify.pdf), Mel Conway
+- [*How Do Committees Invent?*](https://www.melconway.com/Home/Committees_Paper.html), Melvin Conway, 1968
 - [*What do I think about Conway's Law now?*](https://www.allankellyassociates.co.uk/static/presentations/EuroPLoP2005/ConwaysLawFocusGroup.pdf), Lise Hvatum and Allan Kelly's at EuroPLoP 2005
-- [*Return to Conway's Law*](https://www.allankellyassociates.co.uk/archives/1169/return-to-conways-law/), Allan Kelly
-- [*Continuous Delivery and Conway’s Law*](https://www.slideshare.net/allankellynet/conways-law-continuous-delivery), Allan Kelly
-- [*A Trace in the Sand*](https://www.ruthmalan.com/Journal/2014/2014JournalMay.htm), Ruth Malan
+- [*Return to Conway's Law*](https://www.allankellyassociates.co.uk/archives/1169/return-to-conways-law/), Allan Kelly, 2006
+- [*Conway's Law Reverb*](https://www.ruthmalan.com/Journal/2014/2014JournalMay.htm#Conways_Law), Ruth Malan, 2013
+- [*Continuous Delivery and Conway’s Law*]({% post_url 2021-05-13-continuous-delivery-and-conways-law-allan-kelly %}), Allan Kelly, 2014
+- [*Toward Simplifying Application Development in a Dozen Lessons*](http://melconway.com/Home/pdf/simplify.pdf), Mel Conway, 2016
+- [*Team Topologies*](https://teamtopologies.com), Matthew Skelton and Manuel Pais, 2019
 - [*Conway's Law*](https://en.wikipedia.org/wiki/Conway%27s_law) on Wikipedia
-- [*Team Topologies*](https://teamtopologies.com/), Matthew Skelton and Manuel Pais
+

@@ -17,28 +17,7 @@ Definitions of Conway's Law can be found in [Shades of Conway's Law]({% post_url
 >
 > -- Mel Conway, [Toward Simplifying Application Development in a Dozen Lessons](http://melconway.com/Home/pdf/simplify.pdf), 2016
 
-## Observing the history of decisions from software
-
-> You can read the history of an enterprise's political struggles in its system architecture.
->
-> -- [Michael Nygard](https://twitter.com/mtnygard), [May 8, 2013](https://twitter.com/mtnygard/status/332131878830211073)
->
-> @mtnygard A history of Conway's Law
->
-> -- [Steve Smith](https://twitter.com/SteveSmith_Tech), [May 8, 2013](https://twitter.com/SteveSmith_Tech/status/332146069221810176)
->
-> @mtnygard That's some sort of corollary to Conway's Law.
->
-> -- [Curious Jon](https://twitter.com/jmbroad), [May 8, 2013](https://twitter.com/jmbroad/status/332132484902948866)
-
-
-> Software, like all technologies is inherently political. Code inevitably reflects the choices, biases and desires of its creators" J Cascio
->
-> -- [Stephanie Rieger](https://twitter.com/stephanierieger/status/463328024591478784?s=20), [May 5, 2014](https://twitter.com/stephanierieger/status/463328024591478784?s=20)
-
-> Politics plays a huge role. And a lot of the role it plays is in what it silences.
->
-> -- Ruth Malan, [Conway's Law-ish, Aug 5, 2013](https://web.archive.org/web/20200621234405/http://www.ruthmalan.com:80/Journal/2013/2013JournalMay.htm#Conways_Law_ish)
+[Brede Meyer, Why do we need software architecture](https://web.archive.org/web/20060403044638/http://www.bredemeyer.com/why.html)
 
 ## Incremental development and Refactoring
 
