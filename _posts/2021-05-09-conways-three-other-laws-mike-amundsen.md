@@ -16,9 +16,11 @@ tags: [ Conway's Law, Brooks' Law, Dunbar's Number ]
 >
 > -- Mike Amundsen
 
-Note taker note: *The notes were taken based only on the slides without the voice over.*
+Note: 
 
-Here and there I've added my own observations in an italic paragraph.
+*The notes were taken based solely on the slides without the voice over.*
+
+*Here and there I've added my own observations in an italic paragraph or when notes takes up several paragraphs in between horizontal rules.*
 
 ---
 
@@ -297,7 +299,17 @@ Guidance: Aim for a SCOPE that supports a release cycle of two weeks or less.
    >
    > -- [@HimalMandalia](https://twitter.com/HimalMandalia), [May 8, 2021](https://twitter.com/HimalMandalia/status/1391103879249637376)
 
+   ---
+
    *=> keep teams small => increase communication*
+
+   *This relates to Team Topologies' team interactions, specifically the collaboration mode. Teams should collaborate for a limited period of time when in discovery mode or be facilitated/coached to learn and adopt new practices and ways of working. After discovery, when back in delivery mode, teams should go back to x-as-a-service mode with a defined, clear team boundary. Facilitation and coaching will stay regardless if in discovery mode or delivery mode.*
+
+   > facilitating (or potentially deliberately limiting) communication between teams has a much better chance of building systems that work wel in production ... The corollary here is that increased communication is not always the same as increased communication.
+   >
+   > -- Team Topologies p180
+
+   ---
 
    => increase communication via:
 
