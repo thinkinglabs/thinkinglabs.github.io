@@ -171,7 +171,8 @@ Which is already an expression of the Inverse Conway Manoeuvre. We will come bac
 
 This seemingly flows into Mel Conway's observation:
 
-> [Conway's Law] creates an imperative (1) to keep asking: “Is there a better design that is not available to us because of our organization?” and (2) to be open to changing the organization if a better design is found.
+> The importance of [Conway's Law] ... is not that your design organization determines the things you can design.
+> The importance of the principle ... is ... that **your design organization** is **keeping you from designing some things** that perhaps **you should be building**. The principle creates an imperative (1) to keep asking: “Is there a better design that is not available to us because of our organization?” and (2) to be open to changing the organization if a better design is found.
 >
 > -- Mel Conway, [Toward Simplifying Application Development in a Dozen Lessons](http://melconway.com/Home/pdf/simplify.pdf), 2016
 
@@ -185,7 +186,7 @@ To change the organisation you need **Conway's Corollary**:
 >
 > -- [@jeffsussna](https://twitter.com/jeffsussna), [May 9, 2021](https://twitter.com/jeffsussna/status/1391441776829943809?s=20)
 
-Without that organisational flexibility, as Ruth Malan says, "*[when] architecture of the system and the architecture of the organisation are at odds, the organisation wins*".
+Without organisational flexibility, as Ruth Malan says, "*[when] architecture of the system and the architecture of the organisation are at odds, the organisation wins*".
 
 The organisation will always be limited to produce designs that match the real, on-the-ground communication structure of the organisation. Note that the real on-the-ground communication structure are not necessarily the ones depicted on the traditional organisation chart. People do not restrict their communications only to the lines on the org chart. Teams reach out to whomever they *depend on* to get their work done. Again team interfaces from [*Team Topologies*](https://teamtopologies.com/).
 
