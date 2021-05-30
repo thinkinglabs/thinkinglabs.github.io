@@ -9,7 +9,7 @@ tags: [Agile, HR]
 
 A set of questions I use during the occasional times I have to run an interview to hire engineers inside an agile team.
 
-These questions are distilled from the community book *[Community TIPS for hiring great people](https://docs.google.com/document/d/1v2mPQcaCuEMzhYQi_0rgSPtZ30TzDxHtImAUqKo-FBw)* started by [Yves Hanoulle](http://www.hanoulle.be).
+These questions are distilled from the community book *[Community TIPS for hiring great people](https://leanpub.com/hiring)* started by [Yves Hanoulle](http://www.hanoulle.be).
 
 ---
 
