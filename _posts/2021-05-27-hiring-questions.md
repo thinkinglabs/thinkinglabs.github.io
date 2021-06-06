@@ -113,6 +113,11 @@ The purpose of the questions is to find out how the candidate learns. In our fas
   the topic is on purpose very broad, it’s up to the candidate to talk about a technical or non technical book. There is no right or wrong choice, both give an interesting conversation that show a different part of the candidate.
 * Who are some people in your field that you follow? Who are your role models?
 
+### Fun Factor
+
+[Joris Buijle](https://www.linkedin.com/in/joris-buijle-62648612/) broad me this one to my attention.
+
+* Give an example of how you brought fun to one of the previous teams you worked in.
 ### Technical Questions
 
 As already said, it is less important to know a certain technology, than to learn fast.
