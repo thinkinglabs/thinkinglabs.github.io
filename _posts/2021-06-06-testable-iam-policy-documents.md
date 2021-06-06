@@ -2,10 +2,16 @@
 layout: article
 title: Testable IAM Policy documents
 author: Thierry de Pauw
+meta: 6 min read
 category: articles
-tags: [ Infrastructure as Code, Pulumi, AWS, IAM ]
+tags: [ Infrastructure as Code, Testing ]
 ---
-I was relieved to find Pulumi. Finally, we have testable Infrastructure as Code. We can write fast unit tests that we can execute locally without needing the cloud. However, I was a bit disappointed. Pulumi does not have a full representation of IAM Policy documents. Fortunately, it was relatively easy to build a library that did this!
+[Pulumi](https://www.pulumi.com/) is the new kid on the block in the cloud infrastructure as code arena. I was relieved to find Pulumi. Finally, we have testable Infrastructure as Code. We can write fast unit tests that we can execute locally without needing the cloud. However, I was a bit disappointed. Pulumi does not have a full representation of IAM Policy documents. Fortunately, it was relatively easy to build a library that did this!
+
+---
+This article was first published on Pulumi's Blog on [May 12th, 2021](https://www.pulumi.com/blog/testable-iam-policy-documents/). The intro and conclusion of the article has been slightly modified to better fit with ThinkingLab's philosophy.
+
+---
 
 Policy documents are assigned using JSON objects that should follow the AWS
 IAM JSON Policy syntax.
@@ -306,6 +312,11 @@ new Statement({
   ]
 })
 ```
+
+---
+In the mean time, support for `Condition` has been added to `@thinkinglabs/aws-iam-policy`.
+
+---
 
 I am also planning to add validation for `Sid`s. According to the AWS IAM documentation, a `Sid` only accepts alphanumerical characters `[a-zA-Z0-9]`. But I see that resource-based Policies for some services accept spaces for `Sid`s. AWS does not document this. Although the documentation for [S3 Bucket Policies](https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies.html#example-bucket-policies-use-case-4) and [KMS Key Policies](https://docs.aws.amazon.com/kms/latest/developerguide/key-policies.html#key-policy-default) clearly show examples with spaces for `Sid`s.
 
