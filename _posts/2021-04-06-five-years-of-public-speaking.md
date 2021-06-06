@@ -16,7 +16,7 @@ shy, introverted person can help others.
 
 ---
 
-![Thierry de Pauw at CodeMotion Milan 2018](/images/five-years-of-public-speaking/codemotion.jpg)
+![Me at CodeMotion Milan 2018](/images/five-years-of-public-speaking/codemotion.jpg)
 
 People who know me know I am a rather reserved, shy and introverted person. I do
 not like the attention or being in the spotlights.
@@ -39,11 +39,11 @@ that helped me a lot.
 Nowadays, after five years, I do not dare to say that any more. I am afraid
 people would think: "*Yeah, right. It's been five years he's speaking. Shouldn't
 he get used to it?*". Well no. I do not get used to this. I am still worried,
-nervous and distressed before my session. When rehearsing, I am already breaking
+nervous and distressed before every session. When rehearsing, I am already breaking
 out in cold sweat. I feel horrible, so little and very insignificant. Many times
 I am wondering "*Why am I doing this?*".
 
-If it is such a pain, why am I persevering with this?
+If it is such a pain, why am I persevering in doing this?
 
 Good question. Although, I do not like the spotlights. I do like the attention
 afterwards. The questions, the congrats, the mentions on Twitter, the requests
@@ -62,7 +62,7 @@ improving their software engineering skills.
 [Stefan De Moerloose](https://www.linkedin.com/in/stefandemoerloose/),
 the team manager,  was concerned I never wanted to present the achievements of
 the team to the organisation. Stefan wanted me to also take credit. I preferred
-to stay this "émince grise" in the comfy shadow and have the other team members
+to stay that "*émince grise*" in the comfy shadow and have the other team members
 take the honours.
 
 Stefan kept nudging me in that direction. Finally, it triggered something. On
@@ -87,7 +87,7 @@ rehearsing before every conference.
 
 ---
 
-You can imagine the work you are facing when sending in two different topics
+You can imagine the work I was facing when sending in two different topics
 and having absolutely no prior speaking experience. Doh 🤦
 
 Both proposals got selected. The journey is about to start.
@@ -128,7 +128,7 @@ First, I discovered about [PIPELINE Conference](https://pipelineconf.info/), a c
 
 2015 was also the year I decided to focus on advising organisations in
 the adoption of Continuous Delivery. Later, I extended this to Continuous
-Integration. It appears there is still plenty of work to do in that area.
+Integration. It appears there is still plenty of work to be done in that area.
 Therefore, it was clear I had to attend the next PIPELINE Conference.
 
 And also, I wanted to submit something to PIPELINE Conference. But I could not
@@ -142,7 +142,7 @@ from that.
 **Side note on writing an abstract:**
 
 When you have never written an abstract before, it can be a daunting task. At
-least it was for me. Luckily, there is this lovely community of speakers online
+least it was for me. Luckily, there is this lovely online community of speakers
 willing to help you with that.
 
 Have a look at [HelpMeAbstract](https://helpmeabstract.com/).
@@ -153,16 +153,17 @@ Have a look at [HelpMeAbstract](https://helpmeabstract.com/).
 
 In the end, I was not selected to speak at
 [PIPELINE Conference](https://pipelineconf.info/) 2016. In fact, I have never
-been selected for PIPELINE Conference for the time it still existed. I tried
-three times. Each time the proposal narrowly missed out. That is not bad at all,
-though it feels a bit disappointing.
+been selected for PIPELINE Conference. I tried three times. Each time the
+proposal narrowly missed out. That is not bad at all,
+though not being able to speak at PIPELINE Conference when Continuous Delivery
+is your business focus feels a bit disappointing.
 
 I still attended PIPELINE Conference. It was a blast. I was blown
 away by the quality and the high standard of the topics. From then on
 I attended every edition of PIPELINE Conference till it ended after the
 2018 edition. That made me very sad. PIPELINE Conference was my little nugget.
-I was the only Belgian attending. It was the one conference that stood out. This
-was where I got my knowledge. Luckily, in the meantime, I discovered
+I was the only Belgian attending. It was the one conference that stood out and
+where I got my knowledge. Luckily, in the meantime, I discovered
 [Lean Agile Scotland](https://2020.leanagile.scot/). They apply similar high
 standards to the content.
 
@@ -185,7 +186,8 @@ The presentation went pretty well this time. I was well prepared. The room
 was filled. Speaking in front of a crowded room, even the smallest one, boosts your
 confidence. After my session, I got hijacked by Swiss people active in hearing
 devices (embedded software). They had lots of questions about applying
-Continuous Delivery in the embedded software world. That resulted in an email conversation on the topic that lasted for several months. That was an
+Continuous Delivery in the embedded software world. That resulted in an email
+conversation on the topic that lasted for several months. That was an
 enlightening experience.
 
 I reused my presentation for several other conferences in 2016. That is far more
@@ -235,10 +237,10 @@ the very first time.
 I gathered up my courage and proposed a *Feature Branching is Evil*
 session at SoCraTes France. You have to know, at the time, I did not have the
 confidence I have now to treat this subject. Besides, most attendees of
-such conference use feature branches. I was expecting some backfire. But my
-purpose in having that session was to gather as much feedback as possible from
+such conference use feature branches. I was expecting some backfire. But the
+purpose of having this session was to gather as much feedback as possible from
 proponents of branching. The night before, I drafted in three hours a draft of
-my presentation. The session helped tremendously in organising my thoughts and
+the presentation. The session helped tremendously in organising my thoughts and
 producing the very first version for Continuous Delivery Conference NL.
 
 At Continuous Delivery Conference NL, I was scheduled as the last session of the
@@ -280,7 +282,8 @@ A good proposal contains obviously a title and an abstract. You are always
 limited in the number of words or characters for the abstract. Use the
 additional information to the organisers to provide extra content on top of
 the abstract. Also, add a timeline or at least an outline. Do not forget to
-mention learning outcomes for your session.
+mention learning outcomes for your session. It helps reviewers to make up an
+idea of how well the session will be delivered.
 
 Some conferences ask for past speaking experience. Obviously, when you start
 with public speaking, you cannot provide this. You have to start somewhere.
@@ -291,7 +294,9 @@ not so much on speaking experience.
 
 In the end, I got selected for XP Conference 2017. I was thrilled.
 
-I improved the slides by adding the missing illustrations.
+On my way to XP Conference 2017, I improved the slides by adding the missing illustrations.
+
+![On my way to XP Conference 2017](/images/five-years-of-public-speaking/xp2017.jpg)
 
 > your use of illustrations was very effective
 >
@@ -307,7 +312,7 @@ some attention on Twitter. It even got mentioned in
 >
 > -- Gareth Rushgrove, DevOps Weekly [#335](https://devopsweeklyarchive.com/335/)
 
-2017 was becoming a lean year from a public speaking perspective. I was
+From a public speaking perspective, 2017 was becoming a very lean year. I was
 rejected from many conferences.
 
 Then, out of the blue, without notice, I received this email from
@@ -322,6 +327,7 @@ imagine my surprise.
 
 As a bonus
 [XP Days Ukraine recorded my session](https://www.youtube.com/watch?v=h4DM-Wa0aDQ).
+My very first session recording. Woohoo!
 For some reason, it pops up now and then on Twitter. It almost reached
 5.000 views. 🤷‍♂️
 
@@ -339,7 +345,7 @@ conferences. I thought the world had to hear more about the evilness of feature
 branching. So I decided to continue to submit this presentation for another
 year.
 
-2018 was a packed year. I spoke at 14 events. I started getting paid speaker
+2018 was a packed year. I spoke at 14 events. I even started getting paid speaker
 assignments at company events.
 
 The highs of 2018 were speaking at [Agile India](https://2018.agileindia.org/),
@@ -367,7 +373,7 @@ rejected. I do not know why. They never gave me any feedback.
 I do not mind being rejected. I do mind not receiving any feedback because of
 the fallacy reason "*we have received too many proposals*". I get it, it takes
 time to reply to every submitter. But that is the least you could do to show
-some respect for the time these persons have put into crafting a proposal for
+some respect for the time these people have put into crafting a proposal for
 your conference.
 
 > Speaking from experience, you either make the time to give feedback - or you
@@ -408,7 +414,8 @@ He interviewed me. This became the "*fear conversation*" case in
 [Jeffrey Fredrick](https://twitter.com/Jtf).
 
 That helped to bring order in my thoughts and to craft this new presentation
-[*Continuous Delivery for 15 teams and their single monolith*]({% post_url 2019-09-06-15-teams-1-monolith-4-months-to-achieve-continuous-delivery %}).
+[*Continuous Delivery for 15 teams and their single monolith*]({% post_url 2019-09-06-15-teams-1-monolith-4-months-to-achieve-continuous-delivery %})
+for [Expand Conf](https://www.expand-conf.io/) 2019.
 
 ## Final Thoughts
 
@@ -421,7 +428,7 @@ During this journey, I made some warm-hearted friendships.
 I have been invited to speak at several conferences. For an imposter,
 this is quite an experience. It does something with your self-esteem.
 
-Over the past five years, I also have been asked to review two books. One of my
+Over the past five years, I have been asked to review two books. One of my
 work experiences was mentioned as a case in a third book. And I was asked to be
 part of the reviewing committee for two conferences.
 
