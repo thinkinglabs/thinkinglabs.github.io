@@ -5,7 +5,7 @@ author:
   name: Thierry de Pauw
   twitter: tdpauw
 created_at: 2021-05-07
-meta: 10 min read
+meta: 11 min read
 category: articles
 tags: [ Conway's Law ]
 ---
