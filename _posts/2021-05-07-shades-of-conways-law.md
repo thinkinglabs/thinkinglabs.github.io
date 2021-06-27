@@ -10,7 +10,7 @@ category: articles
 tags: [ Conway's Law ]
 ---
 
-Over time, different people have paraphrased **Conway's Law** in different ways.
+Over time, different people have articulated **Conway's Law** in various different ways.
 This is an overview of the variations I found when recently going over Conway's
 Law literature.
 
@@ -85,7 +85,7 @@ This relates to two points raised by Melvin Conway in his seminal paper:
 >
 > -- Ruth Malan, [Conway's Law](https://web.archive.org/web/20181022001505/http://traceinthesand.com:80/blog/2008/02/13/conways-law/), Feb 13, 2008
 
-Which nicely winks towards [*Team Topologies*](https://teamtopologies.com/). It discusses team interfaces in depth.
+Which nicely winks towards [*Team Topologies*](https://teamtopologies.com/) that discusses team interfaces in depth.
 
 Over beer and food, Martin Thompson and Pieter Hintjes came with the following definition.
 
@@ -172,7 +172,10 @@ Which is already an expression of the Inverse Conway Manoeuvre. We will come bac
 This seemingly flows into Mel Conway's observation:
 
 > The importance of [Conway's Law] ... is not that your design organization determines the things you can design.
-> The importance of the principle ... is ... that **your design organization** is **keeping you from designing some things** that perhaps **you should be building**. The principle creates an imperative (1) to keep asking: “Is there a better design that is not available to us because of our organization?” and (2) to be open to changing the organization if a better design is found.
+>
+> The importance of the principle ... is ... that **your design organization is keeping you from designing some things** that perhaps **you should be building**.
+>
+> The principle creates an imperative (1) to keep asking: “Is there a better design that is not available to us because of our organization?” and (2) to be open to changing the organization if a better design is found.
 >
 > -- Mel Conway, [Toward Simplifying Application Development in a Dozen Lessons](http://melconway.com/Home/pdf/simplify.pdf), 2016
 
@@ -238,7 +241,7 @@ But ...
 >
 > -- [@himal](https://twitter.com/HimalMandalia), [May 3, 2021](https://twitter.com/HimalMandalia/status/1389124875047088129)
 
-Alright, what started as just summarising the various ways different people have formulated Conway's Law as a sort of note-taking for myself, became a cross-reference of thoughts, observations and links between this whole mix. This article looks to become a never ending work.
+Alright, what started as just summarising the various ways different people have articulated Conway's Law as a sort of note-taking for myself, became a cross-reference of thoughts, observations and links between this whole mix. This article seems to become a never ending work.
 
 ## Acknowledgment
 
