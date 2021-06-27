@@ -5,7 +5,7 @@ author:
   name: Thierry de Pauw
   twitter: tdpauw
 created_at: 2021-05-07
-meta: 9 min read
+meta: 10 min read
 category: articles
 tags: [ Conway's Law ]
 ---
@@ -77,7 +77,7 @@ Ruth Malan has always been good at formulating Conway's Law in catchy ways.
 This relates to two points raised by Melvin Conway in his seminal paper:
 
 - At the very beginning: "*the very act of organizing a design team means that certain design decisions have already been made, explicitly or otherwise.*"
-- And towards the end as a closing thought: "*The initial design of a system is never the best. The system may need to change. Therefore it requires flexibility of the organisation to design effectively.*". This in turn suggests the requirement for Conway's Corollary which we will get to further down the article.
+- And towards the end as a closing thought: "*The initial design of a system is never the best. The system may need to change. Therefore it requires flexibility of the organisation to design effectively.*" This in turn suggests the requirement for Conway's Corollary which we will get to further down the article.
 
 > Anything else will be a feat of architectural heroics; hard to accomplish, when architectural heroics have to compete with schedule heroics driven by the steady beat of integration clocks.
 >
@@ -141,15 +141,47 @@ According to Michael Nygard system architecture is a good source for archaeologi
 >
 > -- Ruth Malan, [Conway's Law-ish](https://web.archive.org/web/20200621234405/http://www.ruthmalan.com:80/Journal/2013/2013JournalMay.htm#Conways_Law_ish), Aug 5, 2013
 
-Interestingly, al this discussion on history and politics also lays the foundations on how piecemeal growth, like Ruth Malan and Allan Kelly like to say, or what I call incremental software development impacts the organisation. At some point I should include Ruth Malan's thoughts on piece meal growth. I'll get to that ... some day.
+Interestingly, this discussion on history and politics lays the foundations on how piecemeal growth or incremental software development impacts the organisation.
 
-Michael Feathers says when you ship your product, you ship your organisation.
+Incremental software development is an essential condition to growing IT systems based on feedback and learning. It is the only way we can satisfy what is required to support users of IT systems the right way.
+
+> Piecemeal growth, or incremental development, is not just desirable but a fact of life in software. Even so, we need to build more learning into our process. More learning when it is cheaper to find and fix problems with the vision (doing course corrections toward "right system") and structure (built right).
+>
+> Then, accepting that we will continue to learn and evolve our system, we need to invest in fixing the mistakes. Incrementally adding functionality yes, but repairing structural defects too. This investment is the crucial dual to piecemeal growth that we too often forget in software.
+>
+> When we keep marching to a frenetic "add value" drumbeat, we get into a situation where the system threatens to crumble under the mass of deferred structural issues.
+>
+> ...
+>
+> Going from the messiness of our discovery-oriented process to the well-factored, tested integrity of our engineered system shouldn't be considered rework or waste! Unless we leave it until after it has sorely impacted users and our business viability. That is waste.
+>
+> As we proceed in the fog of uncertainty, entropy grows -- and produces more fog! Under uncertainty we "give things a try"; accept good enough, and try the next thing. As entropy grows, it introduces its own uncertainty...
+>
+> -- Ruth Malan, [Conway's Law Reverb](https://www.ruthmalan.com/Journal/2014/2014JournalMay.htm#Conways_Law), May 5, 2014
+
+But incremental software development has a consequential corollary. As software grows, entropy grows. To contain entropy, we need to refactor systems. In the end, many refactorings result in a significant redesign of systems. Incremental software development requires growing and redesigning the organisation to fit the new system. It is a consequence of the Inverse Conway Manoeuvre. We will come back to this at the end of the article. Grow the organisation alongside the growing systems.
+
+> Refactoring is the corollary to piecemeal growth, allowing entropy containment. But we have to refactor the organization too? If it would subvert the system (re)design and evolution.
+>
+> ...
+>
+> There is a relationship between the architecture of the organization (and its communication flows) and the architecture of the system (and its boundaries and flows). We need to take this into account, to reap synergies rather than doing the harder thing, trying to "swim against the current."
+>
+> ...
+>
+> Integrating across organizational divides is a challenge. When left to happy accident, may well have all the smack of accident rather than design - as in, designed to get more what we want, looking for consequences so we get less unintended side-effecting from being system-blind.
+>
+> -- Ruth Malan, [Conway's Law Reverb](https://www.ruthmalan.com/Journal/2014/2014JournalMay.htm#Conways_Law), May 5, 2014
+
+All this naturally follows Allan Kelly's advice: "_Grow the team with the system. Small teams, small systems, piecemeal growth. Start as small as you can and grow as you need too. Don’t start thinking big._"
+
+According to Michael Feathers, when you ship your product, you ship your organisation.
 
 > Conway's Law by [@mfeathers](https://twitter.com/mfeathers) - or "you always ship your organization, so design your organization well" [#craftconf](https://twitter.com/hashtag/craftconf)
 >
 > -- [@bjorn_fb](https://twitter.com/bjorn_fb), [Apr 24, 2014](https://twitter.com/bjorn_fb/status/459367064470573056)
 
-Again Michael Feathers.
+Again from Michael Feathers.
 
 > In capsule form, Conway’s Law implies that if you have, say, three teams, chances are you will end up with three subsystems whether you intend to or not.
 >
@@ -167,7 +199,7 @@ Lastly, I found in Dan Slimmon's slides [Conway's Law: The Skeleton of Devops](h
 >
 > -- Adam Jacob
 
-Which is already an expression of the Inverse Conway Manoeuvre. We will come back to this at the end of the article.
+Which is again an expression of the Inverse Conway Manoeuvre.
 
 This seemingly flows into Mel Conway's observation:
 
@@ -254,7 +286,7 @@ I also would like to thank [Ruth Malan](https://twitter.com/ruthmalan) for writi
 - [*How Do Committees Invent?*](https://www.melconway.com/Home/Committees_Paper.html), Melvin Conway, 1968
 - [*What do I think about Conway's Law now?*](https://www.allankellyassociates.co.uk/static/presentations/EuroPLoP2005/ConwaysLawFocusGroup.pdf), Lise Hvatum and Allan Kelly's at EuroPLoP 2005
 - [*Return to Conway's Law*](https://www.allankellyassociates.co.uk/archives/1169/return-to-conways-law/), Allan Kelly, 2006
-- [*Conway's Law Reverb*](https://www.ruthmalan.com/Journal/2014/2014JournalMay.htm#Conways_Law), Ruth Malan, 2013
+- [*Conway's Law Reverb*](https://www.ruthmalan.com/Journal/2014/2014JournalMay.htm#Conways_Law), Ruth Malan, 2014
 - [*Continuous Delivery and Conway’s Law*]({% post_url 2021-05-13-continuous-delivery-and-conways-law-allan-kelly %}), Allan Kelly, 2014
 - [*Toward Simplifying Application Development in a Dozen Lessons*](http://melconway.com/Home/pdf/simplify.pdf), Mel Conway, 2016
 - [*Team Topologies*](https://teamtopologies.com), Matthew Skelton and Manuel Pais, 2019
