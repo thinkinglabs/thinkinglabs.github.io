@@ -268,7 +268,7 @@ When you add staff you are adding more communication. When you add staff you are
 
     small teams, small systems, piecemeal growth.
 
-    Start as small as you can and grow as you need too. Don't start thinking big.
+    Start as small as you can and grow as you need to. Don't start thinking big.
 
     instead of thinking Universal Credit is going to be a big system, you think Universal Credit could be small (like a small app on a phone). I think you'll have more success.
 
