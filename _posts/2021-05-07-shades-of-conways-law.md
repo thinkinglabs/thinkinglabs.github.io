@@ -279,7 +279,7 @@ Alright, what started as just summarising the various ways different people have
 
 I want to thank [Paul Hammant](https://paulhammant.com/2018/10/07/conways-observation) for nudging me to include the Inverse Conway's Manoeuvre and for saying this is a great article. Thank you, Paul!
 
-I also would like to thank [Ruth Malan](https://twitter.com/ruthmalan) for writing down and sharing here reflections on Conway's Law. A lot of the above content is influenced by the traces Ruth wrote in the sand.
+I also would like to thank [Ruth Malan](https://twitter.com/ruthmalan) for writing down and sharing her reflections on Conway's Law. A lot of the above content is influenced by the traces Ruth wrote in the sand.
 
 ## Bibliography
 
@@ -291,4 +291,3 @@ I also would like to thank [Ruth Malan](https://twitter.com/ruthmalan) for writi
 - [*Toward Simplifying Application Development in a Dozen Lessons*](http://melconway.com/Home/pdf/simplify.pdf), Mel Conway, 2016
 - [*Team Topologies*](https://teamtopologies.com), Matthew Skelton and Manuel Pais, 2019
 - [*Conway's Law*](https://en.wikipedia.org/wiki/Conway%27s_law) on Wikipedia
-
