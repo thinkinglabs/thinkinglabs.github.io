@@ -153,14 +153,29 @@ IT industry.**
 
 In the end, I failed miserably in trying to get that organisation to just run a
 small experiment with trunk-based development. I was not able to bring over the
-possible benefits of trunk-based development. I only had that one experience
-working with that one team. I lacked the correct arguments. Though I have used
-quite some branching strategies in my past career. But, unfortunately, I never
-really paid attention to the problems they introduce.
+possible benefits of trunk-based development. I lacked the correct arguments as
+I only had that one experience with that one novice team. Though I have used
+quite some branching strategies in my past career, I never really paid attention
+to the problems they introduce.
 
-That mission was my opportunity to observe what happens when a team adopts a
-branching strategy like GitFlow, which produced my presentation
+That mission was an opportunity to observe what happens when a team adopts a
+branching strategy like GitFlow, which resulted in my seminal presentation
 [Feature Branching is Evil]({% post_url 2016-10-29-feature-branching-considered-evil %}).
+
+In closing, from the narrow set of data I have, we can conclude that you do not
+have to be a rock-star team to practice trunk-based development. Novice teams
+can do this, as well as experienced teams are not able to. It all comes down to
+having the right mindset. A can-do mindset. A whatever-happens-this-will-work
+mindset. And also knowing which practices will help you in applying this. I will
+come back on this in a future article.
+
+Though I have a limited set of data, others having enough data as [The State
+of DevOps Report](https://puppet.com/resources/report/2020-state-of-devops-report/)
+and the book [Accelerate](https://itrevolution.com/accelerate-book/)
+have equally confirmed trunk-based development together with
+Continuous Integration is a predictor for Continuous Delivery,
+which in turn together with Lean Product Management and a
+Generative organisational culture predicts a high performing organisation.
 
 ## Acknowledgment
 
