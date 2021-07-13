@@ -626,6 +626,14 @@ changes, commit and push. This is fairly easy, fairly simple. In the end team
 members only have to remember a small set of VCS-commands to perform their
 day-to-day work.
 
+### Multi-repos, feature branching and the nervous breakdown
+
+If you absolutely want to persevere with feature branching, please use a
+mono-repo if you don't want your team members to have a nervous breakdown.
+
+### You don't use feature branches. Feature Branches use you
+
+
 ## How can we avoid all of this?
 
 By adopting Continuous Integration as it was meant when introduced by the
