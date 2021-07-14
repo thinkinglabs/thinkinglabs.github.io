@@ -40,8 +40,10 @@
           <div class="row">
           <header class="col-md-7 article-header">
             <h2 class="article-title no-padding-bottom">{{page.title}}</h2>
-            <p class="article-meta">{% if page.date %} {{ page.date | date: "%b %-d, %Y" }} {% endif %} {% if author %} • {{
-              author }}{% endif %} • {{ page.content | number_of_words | divided_by: 225 }} min</p>
+            <p class="article-meta">
+              {% if page.date %} {{ page.date | date: "%b %-d, %Y" }} {% endif %}
+              {% if author %} • {{ author }}{% endif %}
+               • {{ page.content | number_of_words | divided_by: site.data.features.words_per_minute }} min</p>
           </header>
           <aside class="col-md-5">
             {% include tags.html %}

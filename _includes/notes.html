@@ -24,7 +24,7 @@
         <p class="article-meta">
           {{ note.created_at | date: "%b %-d, %Y" }}
           {% if note.event.name %} • {{ note.event.name }} {%if note.event.date %}{{ note.event.date | date: '%Y' }}{% endif %}{% endif %}
-           • {{ note.content | number_of_words | divided_by: 225 }} min
+           • {{ note.content | number_of_words | divided_by: site.data.features.words_per_minute }} min
         </p>
         <hr />
         <p>{{ note.excerpt | strip_html }}</p>
