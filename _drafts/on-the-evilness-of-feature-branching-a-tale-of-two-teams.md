@@ -125,7 +125,7 @@ project. That experiment was not going to be very risky, is it?
 
 Whenever I suggest trunk-based development, especially in front of experienced,
 skilled engineers, I always get that same reaction: People stare at me like I
-am a retarded moron. "*Are you insane? Branching is a commonly accepted
+am an idiot. "*Are you insane? Branching is a commonly accepted
 practice in the industry. Are you suggesting to have the whole team committing
 immediately into mainline? It will be a mess. We will have to merge conflicts
 all over the place!*".
