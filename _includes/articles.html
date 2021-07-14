@@ -17,7 +17,7 @@
 
       <div class="col-md-4 article">
         <h3><a href="{{ article.url }}" class="post-title">{{article.title}}</a></h3>
-        <p class="article-meta">{{ article.date | date: "%b %-d, %Y" }}{% if article.meta %} • {{ article.meta }}{% endif %}</p>
+        <p class="article-meta">{{ article.date | date: "%b %-d, %Y" }} • {{ article.content | number_of_words | divided_by: 225 }} min</p>
         <hr />
         <p>{{ article.excerpt }}</p>
       </div>
