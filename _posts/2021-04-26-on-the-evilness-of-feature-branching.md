@@ -21,7 +21,7 @@ avoid them altogether. Finally, I will explore what exactly is evil about
 feature branches, which is not necessarily the problems they introduce - but
 rather, the real reasons why teams are using them.
 
-1. A Tale of Two Teams
+1. [A Tale of Two Teams]({% post_url 2021-07-14-on-the-evilness-of-feature-branching-a-tale-of-two-teams %})
 2. Why Do Teams Use Feature Branches?
 3. Why Are Feature Branches a Problem?
 4. How Can We Avoid Feature Branching Problems?
