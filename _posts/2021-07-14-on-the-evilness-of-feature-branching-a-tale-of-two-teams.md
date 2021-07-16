@@ -7,6 +7,12 @@ category: articles
 tags: [Version Control, Continuous Integration]
 ---
 
+On the experience of working with two totally different teams: one novice
+practising trunk-based development, the other very experienced being used by
+GitFlow.
+
+---
+
 In 2012, I started a technical coaching mission to upscale the software
 engineering skills of a rather novice team. Novice from an engineering
 perspective, not so much from a working-experience perspective. They had
