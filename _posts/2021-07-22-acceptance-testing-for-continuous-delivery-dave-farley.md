@@ -16,6 +16,10 @@ category: notes
 tags: [ Continuous Delivery, Testing ]
 ---
 
+[Dave Farley](https://twitter.com/davefarley77) describes approaches to acceptance testing that allow teams to work quickly and effectively, build functional coverage tests and maintain those tests throughout change.
+
+---
+
 Acceptance Tests are run in a production like environment.
 
 ## What's so hard?
