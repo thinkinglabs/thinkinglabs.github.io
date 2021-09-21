@@ -11,24 +11,31 @@ In [part 1 of this series - a Tale of Two Teams]({% post_url 2021-07-14-on-the-e
 I introduced two quite different teams.
 One novice team practising trunk-based development,
 the other experienced but being used by GitFlow.
-Now I would like to explore what are the reasons teams are using feature
-branches for.
+Now I would like to explore what are the reasons teams
+are using feature branches for.
 
 ---
+
+> I like the way that question is asked. It gets people in the state of mind of
+> wondering _why_ someone else doesn't see the world like they/we do. And they
+> really don't, but it's gonna make sense in their own context.
+>
+> Wouter Lagerweij ([@wouterla](https://twitter.com/wouterla)), [Aug 16, 2021](https://twitter.com/wouterla/status/1427352220362739712)
 
 Before I could ever suggest trunk-based development again, I had to understand
 why teams are using feature branches. What problems are they trying to solve
 with long-running branches? I asked proponents of feature branching for their
 reasons.
 
-But let me first introduce two definitions: *mainline* and *feature branching*.
+Before we move on, let me first clarify two definitions. It is important you
+what is *mainline*  and what is *feature branching*.
 
 > **Mainline** is the line of development which is the reference from which the
 > builds of your system are created that feed into your deployment pipeline.
 >
 > -- Jez Humble
 
-- For Git, this is the *main* branch (also known as master).
+- For Git, this is the *main* branch.
 - For Mercurial this is the *default* branch.
 - For CVS and SubVersion, this is *trunk*.
 
@@ -59,6 +66,9 @@ gating process, it gets merged back into mainline.
 
 To be clear, when we speak about *feature branching* we really mean long-running
 branches, i.e. branches that live for **longer than a day**.
+
+Now that mainline and feature branching are clear, let us move on with what are
+the reasons teams put forward to use feature branches.
 
 ## It allows us to work in isolation, therefore we are more productive
 
@@ -195,19 +205,51 @@ Instead of using our Version Control System as a manual toggling mechanism we
 should design our systems in such a way that we can turn features off and on at
 deploy or runtime.
 
-## Cargo Cult GitHub and Open Source
+## It is a Safety Blanket
 
-This is my favourite argument from individuals and teams: "*Yes, but GitHub!*".
+Of course it is a safety blanket. This is obvious for people from the XP and
+Continuous Delivery community. But are teams aware of the safety blanket.
 
-Or said differently:
+To this, [Wouter Lagerwije](https://twitter.com/wouterla)
+[replied](https://www.linkedin.com/feed/update/urn:li:activity:6829049430356828160?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A6829049430356828160%2C6829160062494281728%29&replyUrn=urn%3Ali%3Acomment%3A%28activity%3A6829049430356828160%2C6830417880614518784%29)
+to me:
+
+"*They are aware of the problems they would see if they switch to
+trunk-based development. They do not want to confront those problems. And
+moreover they do not know how to confront those problems.*
+
+*They see those problems as a result of inherent complexity of software
+development. While we see them as accidental complexity. In other words: they do
+not think there is another way to avoid those problems, and see feature branches
+as a healthy compromise. While we see that the compromise is keeping them from
+progressing from that local optimum they are in.*"
+
+By adopting feature branches, teams and organisations seek for security. They
+add more process to fix for missing technical excellence. Hoping to avoid to
+break things in front of stakeholders, i.e. first of all users, but also C-level
+and investors. They are trying to avoid looking bad and damaging their
+reputation.
+
+But ... it is in fact a **false sense of security**. Because ... it delays feedback,
+it increases batch sizes, it increases the amount of code released into the
+wild, which in turn increases risks. In the end, what they are trying to avoid
+is actually enlarged by the adoption of more process through the use of
+feature branching.
+
+It is exactly all of this that makes feature branching so evil. They hide the
+problems for teams, instead of uncovering the problems and therefore allowing
+teams to actually do something about it.
+
+## Yes, but GitHub
 
 > Literally every GitHub repository that accepts pull requests uses short lived
 > branches. It’s insane to say it “doesn’t work” when it’s the pre-eminent
 > method of software collaboration today.
 >
-> James Nugent [@jen20](https://twitter.com/jen20) [Jul 13 2021](https://twitter.com/jen20/status/1415047268575727619?s=20)
+> -- James Nugent ([@jen20](https://twitter.com/jen20)), [Jul 13 2021](https://twitter.com/jen20/status/1415047268575727619?s=20)
 
-Well, this sounds like Cargo Cult.
+This is my favourite argument from individuals and teams. It sounds very much
+like Cargo Culting the Open Source world.
 
 > A cargo cult is an indigenist millenarian belief system in which adherents
 > perform rituals which they believe will cause a more technologically advanced
@@ -215,7 +257,7 @@ Well, this sounds like Cargo Cult.
 >
 > -- [Wikipedia](https://en.wikipedia.org/wiki/Cargo_cult)
 
-There is this belief that by copying the Open Source world, teams will achieve
+Many teams have this belief that by copying the Open Source world, teams will achieve
 a higher technological maturity, unseen quality levels and the ultimate
 team coolness because they use all the features of GitHub.
 
@@ -226,8 +268,8 @@ in the past years from SSL to LDAP.
 Let me repeat this ...
 
 > What works for the open-source community, where a core team maintains
-> a system and accepts contributions from the outside, does not necessarily work
-> very well for a co-located team in a corporate environment.
+> a system and accepts contributions from the outside world, does not
+> necessarily work very well for a co-located team in a corporate environment.
 >
 > Thierry de Pauw, [On the Evilness of Feature Branching - A Tale of Two Teams]({% post_url 2021-07-14-on-the-evilness-of-feature-branching-a-tale-of-two-teams %})
 
