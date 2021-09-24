@@ -2,7 +2,7 @@
 layout: article
 title: On the Evilness of Feature Branching - Why do Teams use Feature Branches
 author: Thierry de Pauw
-meta: 6 min read
+meta: 11 min read
 category: articles
 tags: [Version Control, Continuous Integration]
 ---
@@ -18,8 +18,7 @@ are using feature branches for.
 
 Before I could ever suggest trunk-based development again, I had to understand
 why teams are using feature branches. What problems are they trying to solve
-with long-running branches? I asked proponents of feature branching for their
-reasons.
+with long-running branches?
 
 > I like the way that question is asked. It gets people in the state of mind of
 > wondering _why_ someone else doesn't see the world like they/we do. And they
@@ -27,14 +26,13 @@ reasons.
 >
 > Wouter Lagerweij ([@wouterla](https://twitter.com/wouterla)), [Aug 16, 2021](https://twitter.com/wouterla/status/1427352220362739712)
 
-
 Before we move on, let me first clarify two definitions. It is important you
-what is *mainline*  and what is *feature branching*.
+understand what is *mainline*  and what is *feature branching*.
 
 > **Mainline** is the line of development which is the reference from which the
 > builds of your system are created that feed into your deployment pipeline.
 >
-> -- Jez Humble
+> -- [Jez Humble](https://twitter.com/jezhumble)
 
 - For Git, this is the *main* branch.
 - For Mercurial this is the *default* branch.
@@ -44,7 +42,7 @@ what is *mainline*  and what is *feature branching*.
 > mainline until the feature they are working on is "*done*"
 > (but not yet “*done done*”).
 >
-> -- Jez Humble
+> -- [Jez Humble](https://twitter.com/jezhumble)
 
 **Done** means it is dev-complete. But there is still a lot of work to be done
 before the feature gets into production.
@@ -69,7 +67,8 @@ To be clear, when we speak about *feature branching* we really mean long-running
 branches, i.e. branches that live for **longer than a day**.
 
 Now that mainline and feature branching are clear, let us move on with what are
-the reasons teams put forward to use feature branches.
+the reasons teams put forward to use feature branches. I asked proponents of
+feature branching for their reasons.
 
 ## It allows us to work in isolation, therefore we are more productive
 
@@ -84,7 +83,7 @@ activity.
 > help a **team** go faster. Merge time and rework cannot be estimated and will
 > vary wildly, and the team can only go as fast as the slowest merge.
 >
-> -- Steve Smith
+> -- [Steve Smith](https://twitter.com/SteveSmith_Tech)
 
 As long as you have not merged back to mainline you simply do not know how much
 work is still left to do. Potential merge conflicts will introduce rework at
@@ -96,9 +95,9 @@ product.
 But, the goal of any organisation is to make money by sustainably minimising
 the lead time to create positive business impact.
 
-Lead Time is the clock wall time between we, as an organisation, have an idea and
-that idea gets designed, implemented and gets in the hands of the users and gets
-used by real users.
+Lead Time is the clock wall time between we, as a team, as an organisation, have
+an idea and that idea gets designed, implemented and gets in the hands of the
+users and gets used by real users.
 
 Business impact is anything that:
 
@@ -114,6 +113,10 @@ unmet needs of our customers and new ways to delight our customers. Which is
 a huge competitive advantage.
 
 With feature branching we are doing the exact opposite!
+
+> If it hurts, do it more often, bring the pain forward.
+>
+> -- [Dave Farley](https://twitter.com/davefarley77)
 
 Therefore instead of optimising for developer productivity we should optimise
 for team productivity and adopt a team-oriented branching strategy.
@@ -135,7 +138,7 @@ If we don't know the solution right away, why do we not spike out some ideas?
 > other concerns. Most spikes are not good enough to keep, so expect to throw it
 > away.
 >
-> -- Don Wells, extremeprogramming.org
+> -- Don Wells, [extremeprogramming.org](http://www.extremeprogramming.org/rules/spike.html)
 
 The purpose of a **Spike** is to write some throwaway code to test out an idea.
 
@@ -157,8 +160,16 @@ during that spike.
 
 ## It allows us to control the quality of what goes into production
 
-Only features that went successfully through a quality gating process get merged
-into mainline. As such these features get deployed into production.
+Only features that went successfully through a quality gating process, called
+a Pull Request, get merged into mainline. As such these features get deployed
+into production. This is how teams control the quality of what goes into
+production.
+
+At best the quality gating process consists of executing automated tests against
+the branch and hopefully rerunning them on mainline after the merge which is
+not necessarily a standard practice. At worst it consists of manual regression
+testing and some code review followed by more manual regression testing on
+mainline. Note how much rework and waste this involves for few quality benefits.
 
 I would think quality control is the exact reason why Continuous Delivery came
 to the world.
@@ -168,18 +179,16 @@ to the world.
 > builds that are not thoroughly tested and found to be fit for their intended
 > purpose.
 >
-> -- Dave Farley and Jez Humble, Continuous Delivery: Reliable Software Releases
+> -- [Dave Farley](https://twitter.com/davefarley77) and [Jez Humble](https://twitter.com/jezhumble), Continuous Delivery: Reliable Software Releases
 > through Build, Test, and Deployment Automation
 
-<!-- needs rephrasing, repeats the quote -->
-
-We aim to eliminate bad quality release
-candidates as early as possible. Only changes that successfully went through all
-stages of the deployment pipeline, and that have been thoroughly tested, get into production.
+We aim to eliminate bad quality release candidates as early as possible. Only
+changes that successfully went through all stages of the deployment pipeline,
+and that have been thoroughly tested, get into production.
 
 In my humble opinion, this is the only effective way to control the quality of
-what goes into production. Instead of trying to control quality through manual
-merging.
+what goes into production. As opposed to trying to control quality through
+manual merges.
 
 <!-- needs to be elaborated: manual regression testing, risk of keeping the 
 branch open for longer because of the manual regression testing -->
@@ -208,34 +217,34 @@ to accumulate more code that could potentially not integrate with the code
 accumulated on the branch.
 
 I guess, the reason why teams and organisations think they need branches to
-keep mainline stable is because they simply do not know how to keep an IT
-system always working on mainline while having a whole team committing
-continuously into mainline. They are also not good at making changes without
-blocking the rest of the team. Lastly, they are just used to work like that.
+keep mainline stable is because:
+
+- They have trouble accepting you can actually commit intermediate changes into
+  mainline when a feature is not yet finalised. This is for most teams
+  inconceivable.
+- They simply do not know how to keep an IT system always working on mainline
+  while having a whole team committing continuously into mainline.
+- They are also not good at applying changes to a codebase without blocking the rest
+  of the team.
+- Lastly, they have always worked like this way and they are used to work this
+  way.
+
 Branching is a commonly accepted practice in our industry. Few question this.
-Many cannot see a different way of doing. 
-This often creates a negative feedback. Because we are used to work like that
-and because we are bad at keeping an IT system always working we keep this mode
-of operation. They are stuck in a local optimum instead of adopting a continuous
-improvement mindset.
+Many cannot see a different way of doing.  This often creates
+a negative feedback loop. Because we are bad at keeping an IT system always
+working and because we are used to work this way we continue with this mode of
+operation. This results with teams being stuck in a local optimum instead of
+adopting a continuous improvement mindset.
 
 To be honest, breaking with this way of working requires quite some expertise
-and experience. Changing this is not an overnight task. It is a massive change
-in approach and mindset. It requires to adopt a fair share of practices. To be fair,
-organisations can only take a certain amount of change at the same time. How can
-they pace that many changes? How can they organise and sequence this? It seems
-there are too many practices to learn which makes it insurmountable for these
-organisations although it is enormously liberating once they have learned the
+and experience. Changing this is not an overnight task. It is a tremendous
+change in approach and mindset. It requires to adopt a fair share of practices,
+and to apply a reasonable amount of organisational and technological changes to
+the organisation. The problem is however, organisations can only take a certain
+amount of change at the same time. How can they pace that many changes? How can
+they organise and sequence this? Many organisations see the amount of changes as
+insurmountable although it is enormously liberating once they have learned the
 required practices.
-
-It also requires to let go and accept that you can actually commit intermediate
-changes into mainline for a feature when the feature is not yet finalised.
-
-we are not good at making changes to the code base without blocking others of the team
-
-we are used to working like that
-
-negative feedback loop, because we are bad at it we continue doing it
 
 ## It allows us to control which features get into production
 
@@ -249,7 +258,7 @@ into production.
 > runtime or deploy-time they couple themselves to the source control providing
 > this mechanism through manual merging.
 >
-> -- Dan Bodart
+> -- [Dan Bodart](https://twitter.com/DanielBodart)
 
 What we are in fact doing here is using the Version Control System to turn
 features off and on through manual merging. This is nothing else than a poor
@@ -279,29 +288,27 @@ not think there is another way to avoid those problems, and see feature branches
 as a healthy compromise. While we see that the compromise is keeping them from
 progressing from that local optimum they are in.*"
 
-By adopting feature branches, teams and organisations seek for security. They
-add more process to fix for missing technical excellence. Hoping to avoid to
-break things in front of stakeholders, i.e. first of all users, but also C-level
-and investors. They are trying to avoid looking bad and damaging their
-reputation.
+By adopting feature branches, teams and organisations seek security. They
+add more process to fix for missing technical excellence and lack of trust.
+Hoping to avoid to break things in front of stakeholders, i.e. first of all
+users, but also C-level and investors. They are trying to avoid looking bad and
+damaging their reputation.
 
-But ... it is in fact a **false sense of security**. Because ... it delays feedback,
-it increases batch sizes, it increases the amount of code released into the
-wild, which in turn increases risks. In the end, what they are trying to avoid
-is actually enlarged by the adoption of more process through the use of
-feature branching.
+Because of the lack of technical excellence and the fear of breaking things,
+their is also this uncontrollable fear of getting bad code into the codebase.
+Where as, bad code is not necessarily an issue even if it gets into production.
+As long as you are able to detect it and fix it fast.
 
-more process to scale
+But branching only brings a **false sense of security**, **a false sense of
+control**. Because ... it delays feedback. It increases batch sizes. It
+increases the amount of code released into the wild, which in turn increases
+risks. In the end, what they are trying to avoid, i.e. taking risks, breaking
+things, is actually emphasised by the adoption of more process through the use
+of feature branching.
 
-To be honest, it is actually, exactly all of this that makes feature branching
-so evil. They hide the problems for teams, instead of uncovering the problems
-and therefore allowing teams to actually do something about it.
-
-fear of getting bad code in the codebase based on not having mechanism to detect it
-
-## Control (lack of trust)
-
-This sense of security also gives a sense of control.
+To be honest, it is this false sense of security that makes feature branching
+so evil. They hide the real problems teams have, instead of uncovering the
+problems and therefore allowing teams to actually do something about it.
 
 ## Yes, but GitHub
 
@@ -313,8 +320,9 @@ This is my favourite argument from individuals and teams.
 >
 > -- James Nugent ([@jen20](https://twitter.com/jen20)), [Jul 13 2021](https://twitter.com/jen20/status/1415047268575727619?s=20)
 
-Really? That is such a substantiated argument. In my humble opinion, this sounds
-like Cargo Culting the Open Source world.
+Well, that is such a well-founded argument.
+
+In my humble opinion, this sounds like Cargo Culting the Open Source world.
 
 > A cargo cult is an indigenist millenarian belief system in which adherents
 > perform rituals which they believe will cause a more technologically advanced
@@ -322,13 +330,15 @@ like Cargo Culting the Open Source world.
 >
 > -- [Wikipedia](https://en.wikipedia.org/wiki/Cargo_cult)
 
-Many teams have this belief that by copying the Open Source world, teams will
-achieve a higher technological maturity, unseen quality levels and the ultimate
-team coolness because they use all the features of GitHub.
+Many IT teams adopt Open Source rituals, i.e. branching and Pull Requests, with
+the idea they will achieve higher technological maturity, unseen quality levels
+and profound team coolness.
 
-Obviously, none of this is true. The "many eyes" in Open Source is a myth as we
-have seen with the [many security incidents](https://twitter.com/tastapod/status/1415203858465312768?s=20)
-in the past years from SSL to LDAP.
+Obviously, none of this is true. I agree you may look cool. Though you won't
+achieve technological maturity when you are hiding your problems behind
+branches. And you won't achieve better quality with the "many eyes" principle
+as the [many security incidents](https://twitter.com/tastapod/status/1415203858465312768?s=20)
+of the past years, from SSL to LDAP, have made clear.
 
 Let me repeat this ...
 
@@ -336,7 +346,7 @@ Let me repeat this ...
 > a system and accepts contributions from the outside world, does not
 > necessarily work very well for a co-located team in a corporate environment.
 >
-> Thierry de Pauw, [On the Evilness of Feature Branching - A Tale of Two Teams]({% post_url 2021-07-14-on-the-evilness-of-feature-branching-a-tale-of-two-teams %})
+> -- Me, [On the Evilness of Feature Branching - A Tale of Two Teams]({% post_url 2021-07-14-on-the-evilness-of-feature-branching-a-tale-of-two-teams %})
 
 ## Acknowledgment
 
