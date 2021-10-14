@@ -101,6 +101,8 @@ The Constraint is the one, physical resource (or set of equivalent resources) th
 
 we end up with a definition of the Constraint to which we can apply the 5 focusing steps
 
+Note: some resources limit the flow but are *not* the Constraint. These are *Rate Limiters*.
+
 ## The question for the "ultimate" Constraint
 
 it was so clear from The Goal there was only one constraint
@@ -164,6 +166,7 @@ How do we reconcile this?
 I don't want to allow that.
 
 Multiple constraints leads us back to the Cost World!
+
 - this system has multiple constraints
 
 To solve this:
@@ -193,8 +196,6 @@ whenever we say a system has multiple constraints we abstract away the observer
 **The dispassionate observer fallacy**
 
 - an attempt to make **observations** about a goal-directed system, while abstracting away the **observer**
-
-A better definition for a Constraint: **A Constraint is a rate-limiter.**
 
 > BTW, "Goldratt said" is not an argument and Goldratt said it himself.
 >
