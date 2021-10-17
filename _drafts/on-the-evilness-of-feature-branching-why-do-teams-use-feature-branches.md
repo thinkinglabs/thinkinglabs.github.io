@@ -11,14 +11,10 @@ In [part 1 of this series - a Tale of Two Teams]({% post_url 2021-07-14-on-the-e
 I introduced two quite different teams.
 One novice team practising trunk-based development,
 the other experienced but being used by GitFlow.
-Now I would like to explore what are the reasons teams
-are using feature branches for.
+Now I would like to explore why teams use feature branches. What are their
+reasons. What problems are they trying to solve with long-running branches?
 
 ---
-
-Before I could ever suggest trunk-based development again, I had to understand
-why teams are using feature branches. What problems are they trying to solve
-with long-running branches?
 
 > I like the way that question is asked. It gets people in the state of mind of
 > wondering _why_ someone else doesn't see the world like they/we do. And they
@@ -26,17 +22,19 @@ with long-running branches?
 >
 > Wouter Lagerweij ([@wouterla](https://twitter.com/wouterla)), [Aug 16, 2021](https://twitter.com/wouterla/status/1427352220362739712)
 
-Before we move on, let me first clarify two definitions. It is important you
-understand what is *mainline*  and what is *feature branching*.
+Before we move on, let me first clarify two definitions: 
+
+- what is *mainline*, and
+- what is *feature branching*.
 
 > **Mainline** is the line of development which is the reference from which the
 > builds of your system are created that feed into your deployment pipeline.
 >
 > -- [Jez Humble](https://twitter.com/jezhumble)
 
-- For Git, this is the *main* branch.
-- For Mercurial this is the *default* branch.
-- For CVS and SubVersion, this is *trunk*.
+For Git, this is the *main* branch.
+For Mercurial this is the *default* branch.
+For CVS and SubVersion, this is *trunk*.
 
 > **Feature Branching** is a practice where people do not merge their code into
 > mainline until the feature they are working on is "*done*"
@@ -47,37 +45,39 @@ understand what is *mainline*  and what is *feature branching*.
 **Done** means it is dev-complete. But there is still a lot of work to be done
 before the feature gets into production.
 
-- all the developer tests have to be executed;
-- a new release candidate has to be created;
-- it has to be deployed into a staging environment;
-- smoke tests have to be executed;
-- all the automated acceptance tests have to be executed;
+- execution of all the unit tests and static code analysis;
+- creation of a new release candidate;
+- deployment of the release candidate to a staging environment;
+- execution of the smoke tests;
+- execution of all the automated acceptance tests;
 - then manual exploratory testing can start;
-- eventually, in parallel, security and performance tests have to be executed;
-- if all testing was successful, it can be deployed into production;
-- again smoke tests have to be executed;
+- eventually, in parallel, execution of the security and performance tests;
+- if all testing was successful, deployment into into production can start;
+- again execution of the smoke tests;
 - and finally it can be released to the end-user.
+
+When all of the above is done, we call the feature *done done*.
 
 The implementation of a feature starts with the creation of a branch. The
 feature grows on that branch. When the feature is finished it goes through a
-gating process called a *code review*. After successfully going through that
-gating process, it gets merged back into mainline.
+gating process called a *code review*. When the gating process was successful,
+the feature gets merged back into mainline.
 
-To be clear, when we speak about *feature branching* we really mean long-running
-branches, i.e. branches that live for **longer than a day**.
+To be clear, when speaking about *feature branching* we really mean long-running
+branches, i.e. branches that last for **longer than a day**.
 
-Now that mainline and feature branching are clear, let us move on with what are
-the reasons teams put forward to use feature branches. I asked proponents of
-feature branching for their reasons.
+To understand the reasons teams put forward to use feature branches, I asked
+proponents of feature branching for their reasons.
 
 ## It allows us to work in isolation, therefore we are more productive
 
-This sounds fair and rather obvious. But, when you think this through,
-this feels like a local optimisation.
+When I first heart of this argument, I have to admit this sounded fair to me.
+But, then I started to think this through. Wait a minute, this is a local
+optimisation.
 
 We are optimising for individual developer productivity. But designing IT
-systems is rarely an individual activity. Most of the time it is a team
-activity.
+systems and software products is rarely an individual activity. Most of the time
+it is a team activity.
 
 > Developing in isolation can help an **individual** go faster. But it does not
 > help a **team** go faster. Merge time and rework cannot be estimated and will
@@ -86,20 +86,21 @@ activity.
 > -- [Steve Smith](https://twitter.com/SteveSmith_Tech)
 
 As long as you have not merged back to mainline you simply do not know how much
-work is still left to do. Potential merge conflicts will introduce rework at
-merge time. Integrating changes into mainline becomes a time-consuming and very
+work is still left to do. Because of potential merge conflicts, and because of
+potential rework caused by merge conflicts at merge time. Integrating changes
+into mainline becomes then a time-consuming and a rather
 unpredictable activity. This makes the whole IT delivery process very
-unpredictable and increases the lead time, and the time to market for your
+unpredictable which increases the lead time, and the time to market for your
 product.
 
-But, the goal of any organisation is to make money by sustainably minimising
-the lead time to create positive business impact.
+But, the goal of any organisation is actually to make money by sustainably 
+minimising the lead time to create positive business impact.
 
-Lead Time is the clock wall time between we, as a team, as an organisation, have
-an idea and that idea gets designed, implemented and gets in the hands of the
-users and gets used by real users.
+*Lead Time* is the clock wall time between we, as a team or as an organisation, have
+an idea, that idea gets designed and implemented and finally gets in the hands of the
+users and used by real users.
 
-Business impact is anything that:
+*Business impact* is anything that:
 
 - creates money, this is turn-over;
 - saves money, this is cost-savings;
@@ -108,30 +109,32 @@ Business impact is anything that:
 We want to reduce the lead time because we want to accelerate feedback. We want
 to know as fast as possible if the thing we have just implemented and deployed
 into production is actually being used and how it is being used. Based on this
-information we can make new decisions. We can run new experiments to find new
-unmet needs of our customers and new ways to delight our customers. Which is
+information we can make new decisions and run new experiments to find new
+unmet needs of our customers and find new ways to delight our customers. Which is
 a huge competitive advantage.
 
-With feature branching we are doing the exact opposite!
-
-> If it hurts, do it more often, bring the pain forward.
->
-> -- [Dave Farley](https://twitter.com/davefarley77)
+By using feature branching we are, in fact, doing the quite the opposite! We
+are going to delay feedback by increasing lead time and time to market.
 
 Therefore instead of optimising for developer productivity we should optimise
 for team productivity and adopt a team-oriented branching strategy.
 
+> If it hurts, do it more often. Bring the pain forward.
+>
+> -- [Dave Farley](https://twitter.com/davefarley77)
+
 ## If a refactoring goes nowhere, we can just delete it
 
-Again fair enough. This looks very evident.
+Again, when I first heard this argument, I thought: "Fair enough. This sounds
+evident."
 
 However, what I think they are trying to say here is: "*We have this problem for
 which we do not know the solution right away. So we are just trying something,
-by committing code into a remote branch hoping that somewhere we will get to a
-solution. If in the end we do not get to a solution, we can just delete that
+by committing code into a remote branch, hoping that somewhere we will get to a
+solution. If in the end we do not get to a solution, we can just delete our
 work by deleting the remote branch.*"
 
-If we don't know the solution right away, why do we not spike out some ideas?
+If we don't know the solution right away, why do we not **spike out some ideas**?
 
 > A spike solution is a very simple program to explore potential solutions.
 > Build the spike to only address the problem under examination and ignore all
@@ -143,10 +146,10 @@ If we don't know the solution right away, why do we not spike out some ideas?
 The purpose of a **Spike** is to write some throwaway code to test out an idea.
 
 The output of a spike is not production code. During a spike you should never
-ever commit code to a version control system. From my humble experience, once
-code lands in version control it gets the label production code. It becomes
-very hard to overcome the [sunk cost fallacy](https://en.wikipedia.org/wiki/Sunk_cost#Fallacy_effect)
-and throw away that code.
+ever commit code into a version control system. From my humble experience, the
+minute code lands into version control it is labelled production code. From then
+on it becomes very hard to throw away that code because of the
+[sunk cost fallacy](https://en.wikipedia.org/wiki/Sunk_cost#Fallacy_effect).
 
 The output of a spike is **knowledge, not code**.
 
@@ -162,17 +165,21 @@ during that spike.
 
 Only features that went successfully through a quality gating process, called
 a Pull Request, get merged into mainline. As such these features get deployed
-into production. This is how teams control the quality of what goes into
-production.
+into production. This is how, most of the time, teams try to control the quality
+of what goes into production.
 
 At best the quality gating process consists of executing automated tests against
-the branch and hopefully rerunning them on mainline after the merge which is
-not necessarily a standard practice. At worst it consists of manual regression
-testing and some code review followed by more manual regression testing on
-mainline. Note how much rework and waste this involves for few quality benefits.
+the branch. Hopefully they get reran on mainline after the merge. This is not
+necessarily a standard practice. At worst it consists of manual regression
+testing and some code review on the branch. This on its own already blocks the
+flow of work through the value stream and delays feedback because it keeps the
+branch open for a long period of time. Eventually, this is followed by more
+manual regression testing on mainline. Note how this involves a lot of rework
+and waste of time for little quality benefits.
 
-I would think quality control is the exact reason why Continuous Delivery came
-to the world.
+Controlling quality is the exact purpose of Continuous Integration and by
+extension Continuous Delivery. As opposed to trying to control quality through
+manual merges.
 
 > The objective is to eliminate unfit release candidates as early in the process
 > as we can ... You are effectively prevented from releasing into production
@@ -186,72 +193,64 @@ We aim to eliminate bad quality release candidates as early as possible. Only
 changes that successfully went through all stages of the deployment pipeline,
 and that have been thoroughly tested, get into production.
 
-In my humble opinion, this is the only effective way to control the quality of
-what goes into production. As opposed to trying to control quality through
-manual merges.
-
-<!-- needs to be elaborated: manual regression testing, risk of keeping the 
-branch open for longer because of the manual regression testing -->
-
 ## It allows us to keep mainline stable
 
 There is this commonly accepted belief that branches are required to keep
-mainline stable. Here is a newsflash for you:
-**Branches usually do the exact opposite. They will more often than not be the
-cause of an unstable mainline.**
+mainline stable. However, the opposite is more often true. **More often than not,
+branches will be the cause of an unstable mainline.**
 
 Why is that?
 
-Because branches delay integration. Therefore enabling a bigger inventory of
-unintegrated code. Meaning the merge will pull in more and more changes. Making
-the merge of the branch back into mainline harder and harder. Resulting in
-difficult merges that often will lead to an unstable mainline.
+Because branches delay integration, they create a bigger inventory of
+un-integrated code. Which means the merge will pull in more and more changes.
+Merging back the branch into mainline becomes harder and harder. Resulting in
+difficult, time-consuming merges that often will result in an unstable mainline.
 
-Because branches also delay communication with the team. When committing
-directly into mainline, the rest of the team will probably be aware of your
-changes in a couple of minutes. They can accommodate immediately with your
-changes. Conversely, when keeping a branch open for 8, 24, 72 hours, 5 days,
-30 days, ... It is clear your team can only adapt to your changes at best 8, 24,
-72 hours, 5 or 30 days later. That leaves a lot of time for the team
-to accumulate more code that could potentially not integrate with the code
-accumulated on the branch.
+Because branches also delay communication with the team, integrating the branch
+becomes exponentially more difficult with the lifetime of the branch.
+When keeping a branch open for 8 hours, 5 days or 30 days, the team can only adapt
+to the changes on the branch at best within 8 hours, 5 days or 30 days. That
+leaves a lot of time for the team to accumulate more and more code which makes the
+integration of the branch harder and harder. On the other hand, when
+committing directly into mainline, the team sees the changes within minutes,
+allowing the team to accommodate immediately with the new changes.
 
-I guess, the reason why teams and organisations think they need branches to
-keep mainline stable is because:
+I guess, the reasons for this commonly accepted belief we need branches to keep
+mainline stable are:
 
-- They have trouble accepting you can actually commit intermediate changes into
-  mainline when a feature is not yet finalised. This is for most teams
+- Teams have trouble accepting they can actually commit intermediate changes into
+  mainline when a feature is not yet finalised. This is for many teams
   inconceivable.
-- They simply do not know how to keep an IT system always working on mainline
+- Teams simply do not know how to keep an IT system always working on mainline
   while having a whole team committing continuously into mainline.
-- They are also not good at applying changes to a codebase without blocking the rest
+- Teams are often not good at applying changes to a codebase without blocking the rest
   of the team.
-- Lastly, they have always worked like this way and they are used to work this
-  way.
-
-Branching is a commonly accepted practice in our industry. Few question this.
-Many cannot see a different way of doing.  This often creates
-a negative feedback loop. Because we are bad at keeping an IT system always
-working and because we are used to work this way we continue with this mode of
-operation. This results with teams being stuck in a local optimum instead of
-adopting a continuous improvement mindset.
+- Branching is a commonly accepted practice in the industry. Few question this.
+- Lastly, teams have usually always worked this way. They cannot imagine another
+  way of working.
+  
+All of the above, often creates a negative feedback loop. Because teams are bad
+at keeping IT systems always working on mainline, because teams are not good
+at applying changes without blocking team members, and because teams are used
+to work this way, they continue this mode of operation. As a result, teams are
+stuck in a local optimum instead of adopting a continuous improvement mindset.
 
 To be honest, breaking with this way of working requires quite some expertise
-and experience. Changing this is not an overnight task. It is a tremendous
-change in approach and mindset. It requires to adopt a fair share of practices,
-and to apply a reasonable amount of organisational and technological changes to
-the organisation. The problem is however, organisations can only take a certain
-amount of change at the same time. How can they pace that many changes? How can
-they organise and sequence this? Many organisations see the amount of changes as
-insurmountable although it is enormously liberating once they have learned the
+and experience. Changing this is not an overnight task. It requires a tremendous
+change in approach and mindset. And it requires the adoption a reasonable amount
+of organisational and technological changes. But, the problem is however,
+organisations can only take a certain amount of changes at the same time. How can
+they pace that many changes? How can they organise and sequence this? Many
+organisations are overwhelmed and see the amount of changes as insurmountable.
+Although it is enormously liberating once organisations have learned the
 required practices.
 
 ## It allows us to control which features get into production
 
-Or more specifically, we can prevent that unfinished features get into
+Or more precisely, we can prevent that unfinished features get into
 production. Because unfinished functionality sits on the feature branch. As long
-as the branch has not been merged back into mainline, the feature cannot get
-into production.
+as the branch has not been merged back into mainline, the feature cannot be
+deployed into production.
 
 > Feature Branching is a poor man's modular architecture, instead of building
 > systems with the ability to easy swap in and out features at
@@ -266,13 +265,13 @@ man’s modular architecture.
 
 Instead of using our Version Control System as a manual toggling mechanism we
 should design our systems in such a way that we can turn features off and on at
-deploy or runtime.
+deploy time or at runtime time.
 
 ## It is a safety blanket
 
 Of course it is a safety blanket. This is obvious to me and to the members of
-the XP and Continuous Delivery community. But are teams aware of the safety
-blanket? Are they aware of that safety blanket?
+the XP and Continuous Delivery community. But are teams aware of that safety
+blanket?
 
 To this, [Wouter Lagerwije](https://twitter.com/wouterla)
 [replied](https://www.linkedin.com/feed/update/urn:li:activity:6829049430356828160?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A6829049430356828160%2C6829160062494281728%29&replyUrn=urn%3Ali%3Acomment%3A%28activity%3A6829049430356828160%2C6830417880614518784%29)
@@ -291,19 +290,21 @@ progressing from that local optimum they are in.*"
 By adopting feature branches, teams and organisations seek security. They
 add more process to fix for missing technical excellence and lack of trust.
 Hoping to avoid to break things in front of stakeholders, i.e. first of all
-users, but also C-level and investors. They are trying to avoid looking bad and
-damaging their reputation.
+the users, but also C-level and investors. They try to avoid to look bad
+and avoid to damage their reputation.
 
-Because of the lack of technical excellence and the fear of breaking things,
-their is also this uncontrollable fear of getting bad code into the codebase.
+This lack of technical excellence and this fear of breaking things,
+creates this uncontrollable fear of getting bad code into the codebase and
+getting bad code into production.
 Where as, bad code is not necessarily an issue even if it gets into production.
 As long as you are able to detect it and fix it fast.
 
-But branching only brings a **false sense of security**, **a false sense of
-control**. Because ... it delays feedback. It increases batch sizes. It
-increases the amount of code released into the wild, which in turn increases
+However, branching will only bring a **false sense of security** and **a false sense of
+control**. Because again ... it delays feedback. It introduces batching up work.
+Because of the increased batch sizes, it increases change sets and thus
+increases the amount of code released into the wild. In turn, this increases
 risks. In the end, what they are trying to avoid, i.e. taking risks, breaking
-things, is actually emphasised by the adoption of more process through the use
+things, is actually emphasised by adopting more processes through the use
 of feature branching.
 
 To be honest, it is this false sense of security that makes feature branching
@@ -312,15 +313,13 @@ problems and therefore allowing teams to actually do something about it.
 
 ## Yes, but GitHub
 
-This is my favourite argument from individuals and teams.
+This is my favourite argument from proponents of feature branching.
 
 > Literally every GitHub repository that accepts pull requests uses short lived
 > branches. It’s insane to say it “doesn’t work” when it’s the pre-eminent
 > method of software collaboration today.
 >
 > -- James Nugent ([@jen20](https://twitter.com/jen20)), [Jul 13 2021](https://twitter.com/jen20/status/1415047268575727619?s=20)
-
-Well, that is such a well-founded argument.
 
 In my humble opinion, this sounds like Cargo Culting the Open Source world.
 
@@ -330,14 +329,13 @@ In my humble opinion, this sounds like Cargo Culting the Open Source world.
 >
 > -- [Wikipedia](https://en.wikipedia.org/wiki/Cargo_cult)
 
-Many IT teams adopt Open Source rituals, i.e. branching and Pull Requests, with
-the idea they will achieve higher technological maturity, unseen quality levels
+Many IT teams adopt Open Source rituals, like branching and Pull Requests,
+thinking they will achieve higher technological maturity, unseen quality levels
 and profound team coolness.
 
-Obviously, none of this is true. I agree you may look cool. Though you won't
-achieve technological maturity when you are hiding your problems behind
-branches. And you won't achieve better quality with the "many eyes" principle
-as the [many security incidents](https://twitter.com/tastapod/status/1415203858465312768?s=20)
+Obviously, none of this is true. Teams will not ever achieve technological maturity
+when they are hiding their problems behind branches. They will not achieve better
+quality with the "many eyes" principle as the [many security incidents](https://twitter.com/tastapod/status/1415203858465312768?s=20)
 of the past years, from SSL to LDAP, have made clear.
 
 Let me repeat this ...
@@ -357,3 +355,5 @@ and many more who replied to my LinkedIn question
 
 All the amazing people present at my SoCraTes 2021 session
 [*Why do teams use Feature Branching?*](https://overjoyed-bar-e2f.notion.site/SoCraTes-Germany-2021-932e61b2144b4b68b2da4625e3a808e7?p=217f01fdeee24746970e9a8828f74980).
+
+Lagavulin, Port Charlotte, Glenfarclas and Black Bottle for keeping me company late at night.
