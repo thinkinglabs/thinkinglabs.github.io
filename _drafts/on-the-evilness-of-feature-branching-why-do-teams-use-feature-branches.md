@@ -326,9 +326,7 @@ as a healthy compromise. While we see that the compromise is keeping them from
 progressing from that local optimum they are in.*"
 
 By adopting feature branches, teams and organisations seek security. They
-add more processes to fix for missing technical excellence and lack of trust.
-
-[//]: # (Wouter: trust, en zelfvertrouwen?)
+add more processes to fix for missing technical excellence and lack of trust and self-confidence.
 
 Hoping to avoid breaking things in front of stakeholders, i.e. first of all
 the users, but also C-level and investors. They try to avoid looking bad
