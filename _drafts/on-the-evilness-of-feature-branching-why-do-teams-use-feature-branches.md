@@ -34,9 +34,8 @@ Before we move on, let me first clarify two definitions:
 
 For Git, this is the *main* branch.
 For Mercurial, this is the *default* branch.
-For CVS and SubVersion, this is *trunk*.
-
-[//]: # (Wouter: even link terug maken naar trunk-based development zodat het duidelijk is dat we het over hetzelfde hebben?)
+For CVS and SubVersion, this is *trunk*. Hence, why we speak about
+*trunk-based development*.
 
 > **Feature Branching** is a practice where people do not merge their code into
 > mainline until the feature they are working on is "*done*"
