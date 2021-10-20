@@ -100,16 +100,18 @@ unpredictable activity. This makes the whole IT delivery process very
 unpredictable which increases the lead time, and the time to market for your
 product.
 
-[//]: # (Wouter: Mijn gedachten gaan naar: assumptie is dat individuele performance leidend is, maar tegelijk wordt al geaccepteerd dat wat opgeleverd moet worden niet individueel is: waarom anders de code review? code-review is laat in process, wachten op andere mensen, traag, etc. En dat leidt tot lead time discussie?)
+There is, however, more. Though, individual productivity is seen as leading, it
+is already accepted that what has to be delivered is not individual. Why else
+are teams obsessed by code reviews and pull requests? But the code review comes
+too late in the process, introduces waiting and is too slow. And this, again,
+increases lead time and time market.
 
-But, the goal of any organisation is actually to make money by sustainably 
+But, the goal of any organisation is actually to make money by sustainably
 minimising the lead time to create a positive business impact.
 
-*Lead Time* is the clock wall time between us, as a team or as an organisation, have
-an idea, that idea gets designed and implemented and finally gets in the hands of the
-users and used by real users.
-
-[//]: # (Wouter: bovenstaande zin loopt niet helemaal... have -> having?)
+*Lead Time* is the clock wall time between us, as a team or as an organisation,
+having an idea, that idea gets designed and implemented and finally gets in the
+hands of the users and used by real users.
 
 *Business impact* is anything that:
 
