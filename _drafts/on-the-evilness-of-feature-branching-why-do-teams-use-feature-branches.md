@@ -66,10 +66,9 @@ When all of the above is done, we call the feature *done done*.
 
 The implementation of a feature starts with the creation of a branch. The
 feature grows on that branch. Upon completion of the feature it goes through a
-gating process called a *code review*. When the gating process is successful,
-the feature gets merged back into mainline.
-
-[//]: # (Wouter: ook 'pull request' noemen, aangezien dat vaak synoniem wordt gebruikt?)
+manual gating process called a *code review*, or today more commonly known as a
+*pull request*. When the gating process is successful, the feature gets merged
+back into mainline.
 
 To be clear, when speaking about *feature branching* we truly mean long-running
 branches, i.e. branches that last for **longer than a day**.
