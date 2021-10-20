@@ -343,10 +343,8 @@ control**. Because again ... it delays feedback. It introduces batching up work.
 Because of the increased batch sizes, it increases changesets and thus
 increases the amount of code released into the wild. In turn, this increases
 risks. In the end, what they are trying to avoid, i.e. taking risks, breaking
-things, is actually emphasised by adopting more processes through using
+things, is actually reinforced by adopting more processes through using
 feature branching.
-
-[//]: # (Wouter: emphasised is niet het goede woord. exacerbated?)
 
 In all honesty, it is this false sense of security that makes feature branching
 so evil. Feature branches tend to hide the real problems teams have. Whereas,
