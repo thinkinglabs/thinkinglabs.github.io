@@ -67,7 +67,7 @@ When all of the above is done, we call the feature *done done*.
 The implementation of a feature starts with the creation of a branch. The
 feature grows on that branch. Upon completion of the feature it goes through a
 manual gating process called a *code review*, or today more commonly known as a
-*pull request*. When the gating process is successful, the feature gets merged
+*Pull Request*. When the gating process is successful, the feature gets merged
 back into mainline.
 
 To be clear, when speaking about *feature branching* we truly mean long-running
@@ -101,7 +101,7 @@ time, and the time to market for your product.
 
 There is, however, more. Though, individual productivity is seen as leading, it
 is already accepted that what has to be delivered is not individual. Why else
-are teams obsessed by code reviews and pull requests? But the code review comes
+are teams obsessed by code reviews and Pull Requests? But the code review comes
 too late in the process, introduces waiting and is too slow. And this, again,
 increases lead time and time market.
 
@@ -373,9 +373,7 @@ Many IT teams adopt Open Source rituals, like branching and Pull Requests,
 thinking they will achieve higher technological maturity, unseen quality levels
 and profound team coolness.
 
-Obviously, none of this is true. Teams will not ever achieve technological maturity
-when they are hiding their problems behind branches. They will not reach better
-quality with the "many eyes" principle as the [many security incidents](https://twitter.com/tastapod/status/1415203858465312768?s=20)
+Obviously, none of this is true. Teams will not ever achieve technological maturity when they are hiding their problems behind branches. They will not reach better quality with the "many eyes" principle as the [many security incidents](https://twitter.com/tastapod/status/1415203858465312768?s=20)
 of the past years, from SSL to LDAP, have made clear.
 
 Let me repeat this ...
@@ -386,7 +384,9 @@ Let me repeat this ...
 >
 > -- Me, [On the Evilness of Feature Branching - A Tale of Two Teams]({% post_url 2021-07-14-on-the-evilness-of-feature-branching-a-tale-of-two-teams %})
 
-[//]: # (Wouter: Open Source development is een model met weinig mensen met veel kennis en veel mensen met weinig kennis. Daarvoor is het een goede match met PRs en aparte branches. Dat maakt het ook fragiel, en langzaam. Als je in een commerciele organisatie je teams op dezelfde manier opzet, en kennis niet deelt, te veel juniors voor te weinig seniors, etc., dan kan feature branching een work-around zijn voor het personeels- en team-configuratie- probleem dat je creeert. Maar het betekent ook dat je langzaam bent, niet flexibel in hoe je mensen in kan zetten, en saai werk en frustraties maakt voor je juniors. Bravo.)
+The Open Source development is a model with few people having plenty of knowledge (seniors) and many people having little knowledge (juniors). Therefore, Pull Requests for accepting outside contributions is a good fit. But it is also fragile and slow. If you apply this model in a commercial organisation, organise teams the same way, do not share knowledge inside and outside the team, and their are too many juniors for too few seniors, than feature branching could be a work-around to fix for that. But, it means they will move slowly, they will not be flexible and it will create dull and frustrating work for team members.
+
+That said, there is no reason for core teams of Open Source projects to use Pull Requests for changes applied by the core team. They can perfectly do this by practicing trunk-based development. Not practicing this, is again a trust and self-confidence issue.
 
 ## Acknowledgment
 
