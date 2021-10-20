@@ -36,6 +36,8 @@ For Git, this is the *main* branch.
 For Mercurial, this is the *default* branch.
 For CVS and SubVersion, this is *trunk*.
 
+[//]: # (Wouter: even link terug maken naar trunk-based development zodat het duidelijk is dat we het over hetzelfde hebben?)
+
 > **Feature Branching** is a practice where people do not merge their code into
 > mainline until the feature they are working on is "*done*"
 > (but not yet “*done done*”).
@@ -44,6 +46,8 @@ For CVS and SubVersion, this is *trunk*.
 
 **Done** means it is dev-complete. But there is still a lot of work to be done
 before the feature gets into production.
+
+[//]: # (Wouter: misschien aangeven wat 'dev-complete' _wel_ in zich heeft (bijv. unit-tests...) )
 
 - execution of all the unit tests and static code analysis;
 - creation of a new release candidate;
@@ -62,6 +66,8 @@ The implementation of a feature starts with the creation of a branch. The
 feature grows on that branch. Upon completion of the feature it goes through a
 gating process called a *code review*. When the gating process is successful,
 the feature gets merged back into mainline.
+
+[//]: # (Wouter: ook 'pull request' noemen, aangezien dat vaak synoniem wordt gebruikt?)
 
 To be clear, when speaking about *feature branching* we truly mean long-running
 branches, i.e. branches that last for **longer than a day**.
@@ -93,12 +99,16 @@ unpredictable activity. This makes the whole IT delivery process very
 unpredictable which increases the lead time, and the time to market for your
 product.
 
+[//]: # (Wouter: Mijn gedachten gaan naar: assumptie is dat individuele performance leidend is, maar tegelijk wordt al geaccepteerd dat wat opgeleverd moet worden niet individueel is: waarom anders de code review? code-review is laat in process, wachten op andere mensen, traag, etc. En dat leidt tot lead time discussie?)
+
 But, the goal of any organisation is actually to make money by sustainably 
 minimising the lead time to create a positive business impact.
 
 *Lead Time* is the clock wall time between us, as a team or as an organisation, have
 an idea, that idea gets designed and implemented and finally gets in the hands of the
 users and used by real users.
+
+[//]: # (Wouter: bovenstaande zin loopt niet helemaal... have -> having?)
 
 *Business impact* is anything that:
 
@@ -161,6 +171,8 @@ Again we throw away that code and start over again. But this time, we implement
 the solution in small incremental steps using the knowledge we have just created
 during that spike.
 
+[//]: # (Wouter: Ja, nice. Toevoeging: spikes zijn 'sharp', focus op 1 probleem, and 'short', klein experiment. Als je het 'we kunnen de refactoring weggooien' argument aanneemt is het dus ook zo dat je die refactoring niet te groot wil laten zijn, anders is het zonde van het werk en gaje 'm nooit weggooien. Maar als het een kleine refactoring is, waarom zou je dan die feature branch nog nodig hebben? Punt is: kleine stapjes zijn beter)
+
 ## It allows us to control the quality of what goes into production
 
 Only features that went successfully through a quality gating process, called
@@ -177,6 +189,8 @@ branch open for an extended period of time. Eventually, this is followed by more
 manual regression testing on mainline. Note how this involves a lot of rework
 and waste of time for little quality benefits.
 
+[//]: # (Wouter: Je laat niet echt expliciet zien dat het voor rework zorgt, of dat de quality benefits klein zijn. Misschien maakt dat deze sectie meteen te groot, hoor. Maar aangezien ik net voor m'n boek over onbedoelde side-effects heb zitten schrijven: developers moeten wachten op feedback, gaan iets anders doen, en zijn daar dan druk mee, zitten niet meer in de vorige PR, andere developers moeten review doen, maar goed doen kost tijd, grote PRs, want long lived feature branch, dus wordt vaak gehaast gedaan, dus niet heel goed, dus levert niet veel op. Plus: developers die PR review doen kennen context niet goed, mede door focus op individueel werk, dus kunnen vaak alleen oppervlakkig of puur technisch reviewen en niet op bedoelde functionaliteit, dus weer beperkte waarde. En omdat die waarde beperkt is, wordt het doen van review minder belangrijk, dus uitgesteld, dus nog trager. En geeft irritatie over en weer. Jezus, mensen, ga toch pairen, of doe op z'n minst even een korte design sessie samen voor je begint te programmeren! <ok, ik word weer kalm...>)
+
 Controlling quality is the exact purpose of Continuous Integration and, by
 extension, Continuous Delivery. As opposed to trying to control quality through
 manual merges.
@@ -192,6 +206,8 @@ manual merges.
 We aim to eliminate bad quality release candidates as early as possible. Only
 changes that successfully went through all stages of the deployment pipeline,
 and that have been thoroughly tested, get into production.
+
+[//]: # (Wouter: roept bij mij wat vragen op over 'wat is quality', wat weer ver gaat. Maar 1 van de dingen die ik vaak zie is dat met niet precies weet wat voor soort dingen eigenlijk uit een code-review zouden moeten komen, behalve 'het is beter als meer mensen het gezien hebben', en dat daardoor de echt vraag van 'wanneer is iets goed of niet' onbeantwoord blijft.)
 
 ## It allows us to keep mainline stable
 
@@ -212,7 +228,9 @@ When keeping a branch open for 8 hours, 5 days or 30 days, the team can only ada
 to the changes on the branch at best within 8 hours, 5 days or 30 days. That
 leaves a lot of time for the team to accumulate more and more code which makes the
 integration of the branch harder and harder. On the other hand, when
-committing directly into mainline, the team sees the changes within minutes,
+committing directly into mainline, the 
+[//]: # (Wouter:whole) 
+team sees the changes within minutes,
 allowing the team to accommodate immediately with the new changes.
 
 I guess the reason for this commonly accepted belief we need branches to keep
@@ -234,6 +252,8 @@ at keeping IT systems always working on mainline, because teams are not good
 at applying changes without blocking team members, and because teams are used
 to work this way, they continue this mode of operation. As a result, teams are
 stuck in a local optimum instead of adopting a continuous improvement mindset.
+
+[//]: # (Wouter: Ik vind dit een belangrijk punt. De 'bad at' enzo is wat confronterend... De 'local optimum' is belangrijk. Ze hebben gewoon niet de _andere_ practices in-place om van feature branching af te kunnen stappen. En dat gaat richting het afety blanket waar ik al een kopje van zie hieronder...)
 
 In all sincerity, breaking with this way of working requires quite some expertise
 and experience. Changing this is not an overnight task. It requires a tremendous
@@ -266,6 +286,8 @@ Instead of using our Version Control System as a manual toggling mechanism we
 should design our systems in such a way that we can turn features off and on at
 deploy time or at runtime time.
 
+[//]: # (Wouter: Plus: het risico! _Manual_ merge, onverwachte bijwerkingen, moeilijk terug te draaien, onmogelijk om in verschillende configuraties te testen... Het is gewoon veel te gevaarlijk om dingen op die manier te doen. Matches for children, zoals Ron Jeffries wel eens zegt?)
+
 ## It is a safety blanket
 
 Of course, it is a safety blanket. This is obvious to me and to the members of
@@ -288,6 +310,9 @@ progressing from that local optimum they are in.*"
 
 By adopting feature branches, teams and organisations seek security. They
 add more processes to fix for missing technical excellence and lack of trust.
+
+[//]: # (Wouter: trust, en zelfvertrouwen?)
+
 Hoping to avoid breaking things in front of stakeholders, i.e. first of all
 the users, but also C-level and investors. They try to avoid looking bad
 and avoid damaging their reputation.
@@ -305,6 +330,8 @@ increases the amount of code released into the wild. In turn, this increases
 risks. In the end, what they are trying to avoid, i.e. taking risks, breaking
 things, is actually emphasised by adopting more processes through using
 feature branching.
+
+[//]: # (Wouter: emphasised is niet het goede woord. exacerbated?)
 
 In all honesty, it is this false sense of security that makes feature branching
 so evil. Feature branches tend to hide the real problems teams have. Whereas,
@@ -345,6 +372,8 @@ Let me repeat this ...
 > necessarily work very well for a co-located team in a corporate environment.
 >
 > -- Me, [On the Evilness of Feature Branching - A Tale of Two Teams]({% post_url 2021-07-14-on-the-evilness-of-feature-branching-a-tale-of-two-teams %})
+
+[//]: # (Wouter: Open Source development is een model met weinig mensen met veel kennis en veel mensen met weinig kennis. Daarvoor is het een goede match met PRs en aparte branches. Dat maakt het ook fragiel, en langzaam. Als je in een commerciele organisatie je teams op dezelfde manier opzet, en kennis niet deelt, te veel juniors voor te weinig seniors, etc., dan kan feature branching een work-around zijn voor het personeels- en team-configuratie- probleem dat je creeert. Maar het betekent ook dat je langzaam bent, niet flexibel in hoe je mensen in kan zetten, en saai werk en frustraties maakt voor je juniors. Bravo.)
 
 ## Acknowledgment
 
