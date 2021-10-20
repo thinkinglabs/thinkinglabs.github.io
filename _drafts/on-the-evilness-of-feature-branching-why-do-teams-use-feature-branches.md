@@ -43,10 +43,13 @@ For CVS and SubVersion, this is *trunk*. Hence, why we speak about
 >
 > -- [Jez Humble](https://twitter.com/jezhumble)
 
-**Done** means it is dev-complete. But there is still a lot of work to be done
-before the feature gets into production.
+**Done** means it is dev-complete. This means the feature is implemented.
+Hopefully unit tests and automated acceptance tests exist for the feature. At
+best, it has been validated by the product manager on the branch. But, there is
+no guarantee for this.
 
-[//]: # (Wouter: misschien aangeven wat 'dev-complete' _wel_ in zich heeft (bijv. unit-tests...) )
+But there is still a lot of work to be done before the feature gets into
+production.
 
 - execution of all the unit tests and static code analysis;
 - creation of a new release candidate;
