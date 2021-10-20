@@ -20,9 +20,9 @@ reasons? What problems are they trying to solve with long-running branches?
 > wondering _why_ someone else doesn't see the world like they/we do. And they
 > really don't, but it's gonna make sense in their own context.
 >
-> Wouter Lagerweij ([@wouterla](https://twitter.com/wouterla)), [Aug 16, 2021](https://twitter.com/wouterla/status/1427352220362739712)
+> -- Wouter Lagerweij ([@wouterla](https://twitter.com/wouterla)), [Aug 16, 2021](https://twitter.com/wouterla/status/1427352220362739712)
 
-Before we move on, let me first clarify two definitions: 
+Before we move on, let me first clarify two definitions:
 
 - what is *mainline*, and
 - what is *feature branching*.
@@ -95,10 +95,9 @@ it is a team activity.
 As long as you have not merged back into mainline you simply do not know how much
 work is still left to do. Because of potential merge conflicts, and because of
 potential rework caused by merge conflicts at merge time. Integrating changes
-into mainline becomes then a time-consuming and rather
-unpredictable activity. This makes the whole IT delivery process very
-unpredictable which increases the lead time, and the time to market for your
-product.
+into mainline becomes a time-consuming and rather unpredictable activity. This
+makes the whole IT delivery process very unpredictable which increases the lead
+time, and the time to market for your product.
 
 There is, however, more. Though, individual productivity is seen as leading, it
 is already accepted that what has to be delivered is not individual. Why else
@@ -141,6 +140,15 @@ for team productivity and adopt a team-oriented branching strategy.
 Again, when I first heard this argument, I thought: "Fair enough. This sounds
 evident."
 
+If we accept the "throwing the refactoring away"-argument, we still could argue
+we don't want to let the refactoring grow to big as it would be a pitiful waste
+of the work and we will not ever throw it away. Again, because of the
+[sunk cost fallacy](https://en.wikipedia.org/wiki/Sunk_cost#Fallacy_effect).
+Conversely, if we would keep the refactoring small, why bother the overhead of
+creating a feature branch?
+
+The point is, small steps are better.
+
 However, what I think they are trying to say here is: "*We have this problem for
 which we do not know the solution right away. So we are just trying something,
 by committing code into a remote branch, hoping that somewhere we will get to a
@@ -158,6 +166,9 @@ If we do not know the solution right away, why do we not **spike out some ideas*
 
 The purpose of a **Spike** is to write some throwaway code to test out an idea.
 
+Spikes are *sharp*, they focus on one problem, and *short*, they are a small
+experiment.
+
 The output of a spike is not production code. During a spike, you should never
 commit code into a version control system. From my humble experience, the
 minute code lands into version control, it is labelled production code. From then
@@ -173,8 +184,6 @@ If it did work out, fantastic, we have just found the solution to our problem.
 Again we throw away that code and start over again. But this time, we implement
 the solution in small incremental steps using the knowledge we have just created
 during that spike.
-
-[//]: # (Wouter: Ja, nice. Toevoeging: spikes zijn 'sharp', focus op 1 probleem, and 'short', klein experiment. Als je het 'we kunnen de refactoring weggooien' argument aanneemt is het dus ook zo dat je die refactoring niet te groot wil laten zijn, anders is het zonde van het werk en gaje 'm nooit weggooien. Maar als het een kleine refactoring is, waarom zou je dan die feature branch nog nodig hebben? Punt is: kleine stapjes zijn beter)
 
 ## It allows us to control the quality of what goes into production
 
