@@ -293,13 +293,17 @@ merged back into mainline.
 > -- [Dan Bodart](https://twitter.com/DanielBodart)
 
 In fact, we are now using the Version Control System to turn features off and on
-through manual merging. This is nothing else than a poor man’s modular architecture.
+through manual merging. This is nothing else than a poor man’s modular
+architecture.
+
+Not to mention the risks introduced by turning features off and on using
+manual merging. Manual merging can have unintended side effects. It is
+impossible to test features turned off or on in different configurations. This way of working is downright dangerous. It is a sure way to hell. Or like
+[Ron Jeffries](https://twitter.com/RonJeffries) puts it "*Matches for children*".
 
 Instead of using our Version Control System as a manual toggling mechanism we
 should design our systems in such a way that we can turn features off and on at
 deploy time or at runtime time.
-
-[//]: # (Wouter: Plus: het risico! _Manual_ merge, onverwachte bijwerkingen, moeilijk terug te draaien, onmogelijk om in verschillende configuraties te testen... Het is gewoon veel te gevaarlijk om dingen op die manier te doen. Matches for children, zoals Ron Jeffries wel eens zegt?)
 
 ## It is a safety blanket
 
