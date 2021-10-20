@@ -240,9 +240,7 @@ When keeping a branch open for 8 hours, 5 days or 30 days, the team can only ada
 to the changes on the branch at best within 8 hours, 5 days or 30 days. That
 leaves a lot of time for the team to accumulate more and more code which makes the
 integration of the branch harder and harder. On the other hand, when
-committing directly into mainline, the 
-[//]: # (Wouter:whole) 
-team sees the changes within minutes,
+committing directly into mainline, the whole team sees the changes within minutes,
 allowing the team to accommodate immediately with the new changes.
 
 I guess the reason for this commonly accepted belief we need branches to keep
