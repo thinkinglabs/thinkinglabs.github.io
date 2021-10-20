@@ -13,6 +13,9 @@ GitFlow.
 
 ---
 
+*Update Oct 20, 2021: Add [Johanna Rothman](https://twitter.com/johannarothman)'s
+confirmation that novice teams can practise trunk-based development.*
+
 In 2012, I started a technical coaching mission to upscale the software
 engineering skills of a rather novice team. Novice from an engineering
 perspective, not so much from a working-experience perspective. They had
@@ -128,7 +131,7 @@ project. That experiment was not going to be very risky, is it?
 > Convincing people about the immeasurable rewards of Trunk Based Development is
 > not an overnight task.
 >
-> -- Iqbal Ahmed @propattern, [Nov 24, 2016](https://twitter.com/propattern/status/801803007461650433)
+> -- Iqbal Ahmed ([@propattern](https://twitter.com/propattern)), [Nov 24, 2016](https://twitter.com/propattern/status/801803007461650433)
 
 Whenever I suggest trunk-based development, especially in front of experienced,
 skilled engineers, I always get that same reaction: People stare at me like I
@@ -171,7 +174,15 @@ branching strategy like GitFlow, which resulted in my seminal presentation
 
 In closing, from the narrow set of data I have, we can conclude that you do not
 have to be a rock-star team to practice trunk-based development. Novice teams
-can do this, as well as experienced teams are not able to. It all comes down to
+can do this, as well as experienced teams are not able to.
+
+> Showing my age: Before we had version control, we only did trunk-based
+> development. Even with several people. I was certainly a novice then. It
+> worked. (We talked to each other when things didn't work.)
+>
+> -- Johanna Rothman ([@johannarothman](https://twitter.com/johannarothman)), [Jul 15, 2021](https://twitter.com/johannarothman/status/1415658424956772354)
+
+It all comes down to
 having the right mindset. A can-do mindset. A whatever-happens-this-will-work
 mindset. And also knowing what practices to apply to facilitate this. I will
 come back to this in a future article.
