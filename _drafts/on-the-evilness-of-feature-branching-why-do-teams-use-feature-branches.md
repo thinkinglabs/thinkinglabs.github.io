@@ -246,24 +246,27 @@ allowing the team to accommodate immediately with the new changes.
 I guess the reason for this commonly accepted belief we need branches to keep
 mainline stable is:
 
-- Teams have trouble accepting they can actually commit intermediate changes into
-  mainline when a feature is not yet finalised. For many teams, this is
+- Teams have trouble accepting they can actually commit intermediate changes
+  into mainline when a feature is not yet finalised. For many teams, this is
   inconceivable.
-- Teams simply do not know how to keep an IT system always working on mainline
+- Teams often lack the skills to keep an IT system always working on mainline
   while having a whole team committing continuously into mainline.
-- Teams are often not good at applying changes to a codebase without blocking the rest
-  of the team.
+- Teams commonly miss the practices to apply changes to a codebase without
+  blocking the rest of the team.
 - Branching is a commonly accepted practice in the industry. Few question this.
-- Lastly, teams have usually always worked this way. They cannot imagine another
-  way of working.
-  
-All of the above often creates a negative feedback loop. Because teams are bad
-at keeping IT systems always working on mainline, because teams are not good
-at applying changes without blocking team members, and because teams are used
-to work this way, they continue this mode of operation. As a result, teams are
-stuck in a local optimum instead of adopting a continuous improvement mindset.
+- Lastly, teams have usually always worked this way. They simply cannot imagine
+  another way of working.
 
-[//]: # (Wouter: Ik vind dit een belangrijk punt. De 'bad at' enzo is wat confronterend... De 'local optimum' is belangrijk. Ze hebben gewoon niet de _andere_ practices in-place om van feature branching af te kunnen stappen. En dat gaat richting het afety blanket waar ik al een kopje van zie hieronder...)
+All of the above often creates a negative feedback loop. Because teams don't
+know how to keep IT systems always working on mainline, because teams are often
+not good at applying changes without blocking team members, and because teams are
+used to work this way, they continue this mode of operation. As a result, teams
+are stuck in a local optimum instead of adopting a continuous improvement
+mindset.
+
+To conclude, teams do not have the necessary practices in-place allowing them to
+move away from feature branches. Which brings us to the *safety blanket* handled
+below.
 
 In all sincerity, breaking with this way of working requires quite some expertise
 and experience. Changing this is not an overnight task. It requires a tremendous
