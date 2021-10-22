@@ -22,6 +22,8 @@ reasons? What problems are they trying to solve with long-running branches?
 >
 > -- Wouter Lagerweij ([@wouterla](https://twitter.com/wouterla)), [Aug 16, 2021](https://twitter.com/wouterla/status/1427352220362739712)
 
+## Some definitions
+
 Before we move on, let me first clarify two definitions:
 
 - what is *mainline*, and
@@ -73,10 +75,12 @@ back into mainline.
 To be clear, when speaking about *feature branching* we truly mean long-running
 branches, i.e. branches that last for **longer than a day**.
 
+## Reasons for Feature Branching
+
 To understand the reasons teams put forward to use feature branches, I asked
 proponents of feature branching for their reasons.
 
-## It allows us to work in isolation, therefore we are more productive
+### It allows us to work in isolation, therefore we are more productive
 
 When I first heard of this argument, I have to admit this sounded fair to me.
 But, then I started to think this through. Wait a minute, this is a local
@@ -135,7 +139,7 @@ for team productivity and adopt a team-oriented branching strategy.
 >
 > -- [Dave Farley](https://twitter.com/davefarley77)
 
-## If a refactoring goes nowhere, we can just delete it
+### If a refactoring goes nowhere, we can just delete it
 
 Again, when I first heard this argument, I thought: "Fair enough. This sounds
 evident."
@@ -185,21 +189,14 @@ Again we throw away that code and start over again. But this time, we implement
 the solution in small incremental steps using the knowledge we have just created
 during that spike.
 
-## It allows us to control the quality of what goes into production
+### It allows us to control the quality of what goes into production
 
 Only features that went successfully through a quality gating process, called
 a Pull Request, get merged into mainline. As such, these features get deployed
 into production. This is how, most of the time, teams try to control the quality
 of what goes into production.
 
-At best, the quality gating process consists of executing automated tests against
-the branch. Hopefully, tests are rerun on mainline after the merge. This is not
-necessarily standard practice. At worst, it consists of manual regression
-testing and some code review on the branch. This on its own already blocks the
-flow of work through the value stream and delays feedback because it keeps the
-branch open for an extended period of time. Eventually, this is followed by more
-manual regression testing on mainline. Note how this involves a lot of rework
-and waste of time for little quality benefits.
+At best, the quality gating process consists of executing automated tests against the branch. Hopefully, tests are rerun on mainline after the merge. This is not necessarily standard practice. At worst, it consists of manual regression testing and some code review on the branch. This on its own already blocks the flow of work through the value stream and delays feedback because it keeps the branch open for an extended period of time. Eventually, this is followed by more manual regression testing on mainline. Note how this involves a lot of rework and waste of time for little quality benefits.
 
 [//]: # (Wouter: Je laat niet echt expliciet zien dat het voor rework zorgt, of dat de quality benefits klein zijn. Misschien maakt dat deze sectie meteen te groot, hoor. Maar aangezien ik net voor m'n boek over onbedoelde side-effects heb zitten schrijven: developers moeten wachten op feedback, gaan iets anders doen, en zijn daar dan druk mee, zitten niet meer in de vorige PR, andere developers moeten review doen, maar goed doen kost tijd, grote PRs, want long lived feature branch, dus wordt vaak gehaast gedaan, dus niet heel goed, dus levert niet veel op. Plus: developers die PR review doen kennen context niet goed, mede door focus op individueel werk, dus kunnen vaak alleen oppervlakkig of puur technisch reviewen en niet op bedoelde functionaliteit, dus weer beperkte waarde. En omdat die waarde beperkt is, wordt het doen van review minder belangrijk, dus uitgesteld, dus nog trager. En geeft irritatie over en weer. Jezus, mensen, ga toch pairen, of doe op z'n minst even een korte design sessie samen voor je begint te programmeren! <ok, ik word weer kalm...>)
 
@@ -221,7 +218,7 @@ and that have been thoroughly tested, get into production.
 
 [//]: # (Wouter: roept bij mij wat vragen op over 'wat is quality', wat weer ver gaat. Maar 1 van de dingen die ik vaak zie is dat met niet precies weet wat voor soort dingen eigenlijk uit een code-review zouden moeten komen, behalve 'het is beter als meer mensen het gezien hebben', en dat daardoor de echt vraag van 'wanneer is iets goed of niet' onbeantwoord blijft.)
 
-## It allows us to keep mainline stable
+### It allows us to keep mainline stable
 
 There is this commonly accepted belief that branches are required to keep
 mainline stable. However, the opposite is more often true. **More often than not,
@@ -278,7 +275,7 @@ organisations are overwhelmed and see the number of changes as insurmountable.
 Although it is enormously liberating once organisations have learned the
 required practices.
 
-## It allows us to control which features get into production
+### It allows us to control which features get into production
 
 Or, more precisely, we can prevent that unfinished features get into
 production. Because incomplete functionality sits on the feature branch. The
@@ -351,7 +348,7 @@ so evil. Feature branches tend to hide the real problems teams have. Whereas,
 when teams commit immediately into mainline, it will uncover their
 problems and allowing teams to actually do something about it.
 
-## Yes, but GitHub
+### Yes, but GitHub
 
 This is my favourite argument from proponents of feature branching.
 
