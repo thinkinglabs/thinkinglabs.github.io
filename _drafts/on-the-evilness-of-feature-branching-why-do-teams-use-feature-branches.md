@@ -99,12 +99,7 @@ it is a team activity.
 >
 > -- [Steve Smith](https://twitter.com/SteveSmith_Tech)
 
-As long as you have not merged back into mainline you simply do not know how much
-work is still left to do. Because of potential merge conflicts, and because of
-potential rework caused by merge conflicts at merge time. Integrating changes
-into mainline becomes a time-consuming and rather unpredictable activity. This
-makes the whole IT delivery process very unpredictable which increases the lead
-time, and the time to market for your product.
+As long as you have not merged back into mainline you cannot know how much work is still left to do. Because of potential merge conflicts, and because of potential rework caused by merge conflicts at merge time. Integrating changes into mainline becomes a time-consuming and rather unpredictable activity. This makes the whole IT delivery process very unpredictable which increases the lead time, and the time to market for your product.
 
 There is, however, more. Though, individual productivity is seen as leading, it
 is already accepted that what has to be delivered is not individual. Why else
@@ -136,7 +131,7 @@ By using feature branching we are, in fact, doing quite the opposite! We
 are going to delay feedback by increasing lead time and time to market.
 
 Therefore instead of optimising for developer productivity, we should optimise
-for team productivity and adopt a team-oriented branching strategy.
+for team productivity and team flow and adopt a team-oriented branching strategy, like trunk-based development.
 
 > If it hurts, do it more often. Bring the pain forward.
 >
