@@ -257,20 +257,6 @@ used to work this way, they continue this mode of operation. As a result, teams
 are stuck in a local optimum instead of adopting a continuous improvement
 mindset.
 
-To conclude, teams do not have the necessary practices in-place allowing them to
-move away from feature branches. Which brings us to the *safety blanket* handled
-below.
-
-In all sincerity, breaking with this way of working requires quite some expertise
-and experience. Changing this is not an overnight task. It requires a tremendous
-change in approach and mindset. And it demands the adoption of a reasonable amount
-of organisational and technological changes. But, the problem is, however,
-organisations can only take a certain amount of changes at the same time. How can
-they pace that many changes? How can they organise and sequence this? Many
-organisations are overwhelmed and see the number of changes as insurmountable.
-Although it is enormously liberating once organisations have learned the
-required practices.
-
 ### It allows us to control which features get into production
 
 Or, more precisely, we can prevent that unfinished features get into
@@ -298,53 +284,7 @@ Instead of using our Version Control System as a manual toggling mechanism we
 should design our systems in such a way that we can turn features off and on at
 deploy time or at runtime time.
 
-## It is a safety blanket
-
-Of course, it is a safety blanket. This is obvious to me and to the members of
-the XP and Continuous Delivery community. But are teams aware of that safety
-blanket?
-
-To this, [Wouter Lagerwije](https://twitter.com/wouterla)
-[replied](https://www.linkedin.com/feed/update/urn:li:activity:6829049430356828160?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A6829049430356828160%2C6829160062494281728%29&replyUrn=urn%3Ali%3Acomment%3A%28activity%3A6829049430356828160%2C6830417880614518784%29)
-to me:
-
-"*They are aware of the problems they would see if they switch to
-trunk-based development. They do not want to confront those problems. And
-moreover they do not know how to confront those problems.*
-
-*They see those problems as a result of inherent complexity of software
-development. While we see them as accidental complexity. In other words: they do
-not think there is another way to avoid those problems, and see feature branches
-as a healthy compromise. While we see that the compromise is keeping them from
-progressing from that local optimum they are in.*"
-
-By adopting feature branches, teams and organisations seek security. They
-add more processes to fix for missing technical excellence and lack of trust and self-confidence.
-
-Hoping to avoid breaking things in front of stakeholders, i.e. first of all
-the users, but also C-level and investors. They try to avoid looking bad
-and avoid damaging their reputation.
-
-This lack of technical excellence and this fear of breaking things,
-creates this uncontrollable fear of getting bad code into the codebase and
-getting bad code into production.
-But, bad code is not necessarily a problem even if it gets into production,
-as long as we can detect it and fix it fast.
-
-However, branching will only bring a **false sense of security** and **a false sense of
-control**. Because again ... it delays feedback. It introduces batching up work.
-Because of the increased batch sizes, it increases changesets and thus
-increases the amount of code released into the wild. In turn, this increases
-risks. In the end, what they are trying to avoid, i.e. taking risks, breaking
-things, is actually reinforced by adopting more processes through using
-feature branching.
-
-In all honesty, it is this false sense of security that makes feature branching
-so evil. Feature branches tend to hide the real problems teams have. Whereas,
-when teams commit immediately into mainline, it will uncover their
-problems and allowing teams to actually do something about it.
-
-### Yes, but GitHub
+### This is how GitHub does it
 
 This is my favourite argument from proponents of feature branching.
 
@@ -380,6 +320,52 @@ Let me repeat this ...
 The Open Source development is a model with few people having plenty of knowledge (seniors) and many people having little knowledge (juniors). Therefore, Pull Requests for accepting outside contributions is a good fit. But it is also fragile and slow. If you apply this model in a commercial organisation, organise teams the same way, do not share knowledge inside and outside the team, and their are too many juniors for too few seniors, than feature branching could be a work-around to fix for that. But, it means they will move slowly, they will not be flexible and it will create dull and frustrating work for team members.
 
 That said, there is no reason for core teams of Open Source projects to use Pull Requests for changes applied by the core team. They can perfectly do this by practicing trunk-based development. Not practicing this, is again a trust and self-confidence issue.
+
+## Conclusion
+
+It is a safety blanket. This is obvious to me and to the members of
+the XP and Continuous Delivery community. But are teams aware of that safety
+blanket?
+
+To this, [Wouter Lagerwije](https://twitter.com/wouterla)
+[replied](https://www.linkedin.com/feed/update/urn:li:activity:6829049430356828160?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A6829049430356828160%2C6829160062494281728%29&replyUrn=urn%3Ali%3Acomment%3A%28activity%3A6829049430356828160%2C6830417880614518784%29)
+to me:
+
+"*They are aware of the problems they would see if they switch to
+trunk-based development. They do not want to confront those problems. And
+moreover they do not know how to confront those problems.*
+
+*They see those problems as a result of inherent complexity of software
+development. While we see them as accidental complexity. In other words: they do
+not think there is another way to avoid those problems, and see feature branches
+as a healthy compromise. While we see that the compromise is keeping them from
+progressing from that local optimum they are in.*"
+
+By adopting feature branches, teams and organisations seek security. They
+add more processes to fix for missing technical excellence, lack of trust and lack of self-confidence.
+
+Hoping to avoid breaking things in front of stakeholders, i.e. first of all
+the users, but also C-level and investors. They try to avoid looking bad
+and avoid damaging their reputation.
+
+This lack of technical excellence and this fear of breaking things,
+creates this uncontrollable fear of getting bad code into the codebase and
+getting bad code into production.
+But, bad code is not necessarily a problem even if it gets into production,
+as long as we can detect it and fix it fast.
+
+However, branching will only bring a **false sense of security** and **a false sense of control**. Because again ... it delays feedback. It introduces batching up work. Because of the increased batch sizes, it increases changesets and thus increases the amount of code released into the wild. In turn, this increases risks. In the end, what they are trying to avoid, i.e. taking risks, breaking things, is actually reinforced by adopting more processes through using feature branching.
+
+In all honesty, it is this false sense of security that makes feature branching
+so evil. Feature branches tend to hide the real problems teams have. Whereas,
+when teams commit immediately into mainline, it will uncover their problems and allow teams to actually do something about it.
+
+To conclude, teams do not have the necessary practices in-place allowing them to
+move away from feature branches. This is the exact reason teams are reaching to that *safety blanket*.
+
+Sincerely, breaking with this way of working requires quite some expertise
+and experience. Changing this is not an overnight task. It requires a tremendous
+change in approach and mindset. It demands the adoption of a reasonable amount of organisational and technological changes. But, the problem is, however, organisations can only take a certain amount of changes at the same time. How can they pace that many changes? How can they organise and sequence this? Many organisations are overwhelmed and see the number of changes as insurmountable. Although it is enormously liberating once organisations have learned the required practices allowing them to move away from branching and enabling the fast flow of work through their value stream by adopting trunk-based development.
 
 ## Acknowledgment
 
