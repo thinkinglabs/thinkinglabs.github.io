@@ -45,13 +45,15 @@ For CVS and SubVersion, this is *trunk*. Hence, why we speak about
 >
 > -- [Jez Humble](https://twitter.com/jezhumble)
 
-**Done** means it is dev-complete. This means the feature is implemented.
+Without pretence, in 2021, **Done** should at least mean *running satisfactorily in production*.
+
+However, this is still not a standard practice. Many times, *Done* still means developer-complete. This means the feature is implemented.
 Hopefully unit tests and automated acceptance tests exist for the feature. At
 best, it has been validated by the product manager on the branch. But, there is
 no guarantee for this.
 
 But there is still a lot of work to be done before the feature gets into
-production.
+production. Here is a minimal list of activities to move from developer-complete to live traffic:
 
 - execution of all the unit tests and static code analysis;
 - creation of a new release candidate;
@@ -64,13 +66,12 @@ production.
 - again execution of the smoke tests;
 - and finally, it can be released to the end-user.
 
-When all of the above is done, we call the feature *done done*.
+When all of the above has been executed, we call the feature *done done*.
 
 The implementation of a feature starts with the creation of a branch. The
 feature grows on that branch. Upon completion of the feature it goes through a
 manual gating process called a *code review*, or today more commonly known as a
-*Pull Request*. When the gating process is successful, the feature gets merged
-back into mainline.
+*Pull Request*. When the gating process is successful, the feature branch gets merged back into mainline.
 
 To be clear, when speaking about *feature branching* we truly mean long-running
 branches, i.e. branches that last for **longer than a day**.
