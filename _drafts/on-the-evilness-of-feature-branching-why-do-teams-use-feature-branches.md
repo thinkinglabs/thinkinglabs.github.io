@@ -71,7 +71,9 @@ When all of the above has been executed, we call the feature *done done*.
 The implementation of a feature starts with the creation of a branch. The
 feature grows on that branch. Upon completion of the feature it goes through a
 manual gating process called a *code review*, or today more commonly known as a
-*Pull Request*. When the gating process is successful, the feature branch gets merged back into mainline.
+*Pull Request*. When the gating process is successful, the feature branch gets merged back into mainline. This is *GitHub Flow*'s definition of a feature branch. But, it is easy to slip out of merging after 24 hours.
+
+Sometimes, depending on the organisation, a feature branch contains more than one feature. It might contain an epic of features.
 
 To be clear, when speaking about *feature branching* we truly mean long-running
 branches, i.e. branches that last for **longer than a day**.
