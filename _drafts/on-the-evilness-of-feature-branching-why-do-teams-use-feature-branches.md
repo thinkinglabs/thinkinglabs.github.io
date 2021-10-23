@@ -103,7 +103,7 @@ As long as you have not merged back into mainline you cannot know how much work 
 
 There is, however, more. Though, individual productivity is seen as leading, it
 is already accepted that what has to be delivered is not individual. Why else
-are teams obsessed by code reviews and Pull Requests? But the code review comes
+are teams obsessed by code reviews and pull requests? But the code review comes
 too late in the process, introduces waiting and is too slow. And this, again,
 increases lead time and time market.
 
@@ -187,14 +187,25 @@ during that spike.
 
 ### It allows us to control the quality of what goes into production
 
-Only features that went successfully through a quality gating process, called
-a Pull Request, get merged into mainline. As such, these features get deployed
-into production. This is how, most of the time, teams try to control the quality
-of what goes into production.
+Only features that went successfully through a quality gating process get merged into mainline. As such, these features get deployed into production. This is how teams again and again try to control the quality of what goes into production.
 
-At best, the quality gating process consists of executing automated tests against the branch. Hopefully, tests are rerun on mainline after the merge. This is not necessarily standard practice. At worst, it consists of manual regression testing and some code review on the branch. This on its own already blocks the flow of work through the value stream and delays feedback because it keeps the branch open for an extended period of time. Eventually, this is followed by more manual regression testing on mainline. Note how this involves a lot of rework and waste of time for little quality benefits.
+The quality gating mostly involves a manual code review through a pull request. This manual step introduces unexpected side-effects.
 
-[//]: # (Wouter: Je laat niet echt expliciet zien dat het voor rework zorgt, of dat de quality benefits klein zijn. Misschien maakt dat deze sectie meteen te groot, hoor. Maar aangezien ik net voor m'n boek over onbedoelde side-effects heb zitten schrijven: developers moeten wachten op feedback, gaan iets anders doen, en zijn daar dan druk mee, zitten niet meer in de vorige PR, andere developers moeten review doen, maar goed doen kost tijd, grote PRs, want long lived feature branch, dus wordt vaak gehaast gedaan, dus niet heel goed, dus levert niet veel op. Plus: developers die PR review doen kennen context niet goed, mede door focus op individueel werk, dus kunnen vaak alleen oppervlakkig of puur technisch reviewen en niet op bedoelde functionaliteit, dus weer beperkte waarde. En omdat die waarde beperkt is, wordt het doen van review minder belangrijk, dus uitgesteld, dus nog trager. En geeft irritatie over en weer. Jezus, mensen, ga toch pairen, of doe op z'n minst even een korte design sessie samen voor je begint te programmeren! <ok, ik word weer kalm...>)
+When the pull request is ready, engineers wait for the code review to happen. Because the review does not start immediately, engineers start new work. This is already a violation of lean principles: *Stop Starting, Start Finishing*. It creates more work in progress. Work in progress hinders the flow of work through the value stream. It blocks delivery of features. Therefore it also delays feedback and delays taking new decisions on how to delight the customer.
+
+Other engineers should start reviewing the pull request as soon as possible, but that does not happen either as they are too busy completing their feature. As a result, pull requests pile up. Again, this creates more work in progress. More feedback is delayed.
+
+Because feature branches involve a full feature or worse several features, pull requests are often big. Reviewing these pull requests takes a considerable amount of time. As a consequence, pull requests are reviewed hastily in a shallow way. What are the quality benefits of code reviews when done superficially? What is the added value for the time spent and the delays it introduces?
+
+Also, engineers reviewing the pull request have very little context about the feature being reviewed. This is caused by this focus on individual productivity. One engineer, one feature. For that reason, engineers limit code reviews to purely technical reviews and do not review the functionality. Again, this has a limited quality value.
+
+When comments or issues arise from a review, engineers must get back into the context of the pull request. This introduces context switching. Again, this takes time and again introduces delays. Furthermore, it initiates rework that is happening far too late.
+
+Not to speak about the time wasted in the regular ping-pongs between reviewee and reviewer.
+
+Because these reviews have hardly any value, doing the review becomes less and less important. Hence, they are regularly delayed and thus it takes even more time to get passed the review. Accordingly, it introduces the necessary irritations and frustrations inside the team.
+
+This whole quality control via pull requests is at best a quality theatre with little quality benefits that introduces lots of delays and rework. We might as well stop with code reviews. It would at least have the benefit to stop blocking the flow of work.
 
 Controlling quality is the exact purpose of Continuous Integration and, by
 extension, Continuous Delivery. As opposed to trying to control quality through
@@ -302,7 +313,7 @@ In my humble opinion, this sounds like Cargo Culting the Open Source world.
 >
 > -- [Wikipedia](https://en.wikipedia.org/wiki/Cargo_cult)
 
-Many IT teams adopt Open Source rituals, like branching and Pull Requests,
+Many IT teams adopt Open Source rituals, like branching and pull requests,
 thinking they will achieve higher technological maturity, unseen quality levels
 and profound team coolness.
 
@@ -317,9 +328,9 @@ Let me repeat this ...
 >
 > -- Me, [On the Evilness of Feature Branching - A Tale of Two Teams]({% post_url 2021-07-14-on-the-evilness-of-feature-branching-a-tale-of-two-teams %})
 
-The Open Source development is a model with few people having plenty of knowledge (seniors) and many people having little knowledge (juniors). Therefore, Pull Requests for accepting outside contributions is a good fit. But it is also fragile and slow. If you apply this model in a commercial organisation, organise teams the same way, do not share knowledge inside and outside the team, and their are too many juniors for too few seniors, than feature branching could be a work-around to fix for that. But, it means they will move slowly, they will not be flexible and it will create dull and frustrating work for team members.
+The Open Source development is a model with few people having plenty of knowledge (seniors) and many people having little knowledge (juniors). Therefore, pull requests for accepting outside contributions is a good fit. But it is also fragile and slow. If you apply this model in a commercial organisation, organise teams the same way, do not share knowledge inside and outside the team, and their are too many juniors for too few seniors, than feature branching could be a work-around to fix for that. But, it means they will move slowly, they will not be flexible and it will create dull and frustrating work for team members.
 
-That said, there is no reason for core teams of Open Source projects to use Pull Requests for changes applied by the core team. They can perfectly do this by practicing trunk-based development. Not practicing this, is again a trust and self-confidence issue.
+That said, there is no reason for core teams of Open Source projects to use pull requests for changes applied by the core team. They can perfectly do this by practicing trunk-based development. Not practicing this, is again a trust and self-confidence issue.
 
 ## Conclusion
 
