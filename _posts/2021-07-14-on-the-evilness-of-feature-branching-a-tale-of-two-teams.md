@@ -204,7 +204,7 @@ Generative organisational culture predicts a high performing organisation.
 The [On the Evilness of Feature Branching]({% post_url 2021-04-26-on-the-evilness-of-feature-branching %}) series:
 
 1. A Tale of Two Teams
-2. Why Do Teams Use Feature Branches?
+2. [Why Do Teams Use Feature Branches?]({% post_url 2021-10-25-on-the-evilness-of-feature-branching-why-do-teams-use-feature-branches %})
 3. Why Are Feature Branches a Problem?
 4. How Can We Avoid Feature Branching Problems?
 5. Questions I Regularly Get Asked about Trunk-Based Development

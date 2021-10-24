@@ -22,7 +22,7 @@ feature branches, which is not necessarily the problems they introduce - but
 rather, the real reasons why teams are using them.
 
 1. [A Tale of Two Teams]({% post_url 2021-07-14-on-the-evilness-of-feature-branching-a-tale-of-two-teams %})
-2. Why Do Teams Use Feature Branches?
+2. [Why Do Teams Use Feature Branches?]({% post_url 2021-10-25-on-the-evilness-of-feature-branching-why-do-teams-use-feature-branches %})
 3. Why Are Feature Branches a Problem?
 4. How Can We Avoid Feature Branching Problems?
 5. Questions I Regularly Get Asked about Trunk-Based Development

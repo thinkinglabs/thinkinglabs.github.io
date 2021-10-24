@@ -381,3 +381,15 @@ The many people who replied to my LinkedIn question
 [*Why do teams use Feature Branching?*](https://www.linkedin.com/posts/tdpauw_lean-versioncontrol-productivity-activity-6829049430356828160-g07L/).
 
 Lagavulin, Port Charlotte, Glenfarclas and Black Bottle for keeping me company late at night.
+
+## The Series
+
+The [On the Evilness of Feature Branching]({% post_url 2021-04-26-on-the-evilness-of-feature-branching %}) series:
+
+1. [A Tale of Two Teams]({% post_url 2021-07-14-on-the-evilness-of-feature-branching-a-tale-of-two-teams %})
+2. Why Do Teams Use Feature Branches?
+3. Why Are Feature Branches a Problem?
+4. How Can We Avoid Feature Branching Problems?
+5. Questions I Regularly Get Asked about Trunk-Based Development
+6. What Are The Benefits of Trunk-Based Development?
+7. Where is the Evilness of Feature Branching?
