@@ -24,10 +24,10 @@ reasons? What problems are they trying to solve with long-running branches?
 
 ## Some definitions
 
-Before we move on, let me first clarify two definitions:
+Before we move on, let me first clarify two definitions. I am sure you know these concepts. But, as it often goes in our industry, people like to redefine practices and concepts to make sure they align with their way of working. Therefore, I am going to reiterate these definitions to make sure we are all aligned on the definitions.
 
-- what is *mainline*, and
-- what is *feature branching*.
+- What is *mainline*? and
+- What is *feature branching*?
 
 > **Mainline** is the line of development which is the reference from which the
 > builds of your system are created that feed into your deployment pipeline.
@@ -199,7 +199,7 @@ And thus ...
 
 > Quality is meeting some person's requirements.
 >
-> Jerry Weinberg
+> -- Jerry Weinberg
 
 Often, the quality gating involves a manual code review through a pull request. This manual step introduces unexpected side-effects.
 
