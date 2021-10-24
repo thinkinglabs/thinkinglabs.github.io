@@ -215,9 +215,7 @@ Because these reviews have hardly any value, doing the review becomes less and l
 
 This whole quality control via pull requests is at best a quality theatre with little quality benefits that introduces lots of delays and rework. We might as well stop performing code reviews for the sake of code reviews. It would at least have the benefit to stop blocking the flow of work.
 
-As opposed to trying to control quality through
-manual merges we should control quality through the adoption of 
-Continuous Integration and, by extension, Continuous Delivery.
+As opposed to trying to control quality through manual merges we should control quality through the adoption of Continuous Integration and, by extension, Continuous Delivery.
 
 > The objective is to eliminate unfit release candidates as early in the process
 > as we can ... You are effectively prevented from releasing into production
@@ -231,7 +229,7 @@ We aim to eliminate bad quality release candidates as early as possible. Only
 changes that successfully went through all stages of the deployment pipeline,
 and that have been thoroughly tested, get into production.
 
-[//]: # (Wouter: roept bij mij wat vragen op over 'wat is quality', wat weer ver gaat. Maar 1 van de dingen die ik vaak zie is dat met niet precies weet wat voor soort dingen eigenlijk uit een code-review zouden moeten komen, behalve 'het is beter als meer mensen het gezien hebben', en dat daardoor de echt vraag van 'wanneer is iets goed of niet' onbeantwoord blijft.)
+How is that meeting quality? It starts with the execution of unit tests which are the expression of how engineers have understood functionality. It is followed with the execution of the automated acceptance tests which are the expression of how the [three amigos](https://www.agileconnection.com/article/three-amigos-strategy-developing-user-stories) understood the functionality. It continues with the manual exploratory testing which uncovers more unknowns that feed into improving unit tests and automated acceptance tests. If any of these tests fail, it blocks the release candidate because it does not meet the value that matters to someone, the user.
 
 ### It allows us to keep mainline stable
 
