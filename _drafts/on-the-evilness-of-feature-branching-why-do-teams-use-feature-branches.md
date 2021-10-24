@@ -189,7 +189,19 @@ during that spike.
 
 Only features that went successfully through a quality gating process get merged into mainline. As such, these features get deployed into production. This is how teams again and again try to control the quality of what goes into production.
 
-The quality gating mostly involves a manual code review through a pull request. This manual step introduces unexpected side-effects.
+What is quality? Handling this would require a whole article on its own. Therefore, I will limit the discussion to ...
+
+> What is adequate quality to one person may be inadequate quality to another.
+>
+> -- Jerry Weinberg
+
+And thus ...
+
+> Quality is meeting some person's requirements.
+>
+> Jerry Weinberg
+
+Often, the quality gating involves a manual code review through a pull request. This manual step introduces unexpected side-effects.
 
 When the pull request is ready, engineers wait for the code review to happen. Because the review does not start immediately, engineers start new work. This is already a violation of lean principles: *Stop Starting, Start Finishing*. It creates more work in progress. Work in progress hinders the flow of work through the value stream. It blocks delivery of features. Therefore it also delays feedback and delays taking new decisions on how to delight the customer.
 
