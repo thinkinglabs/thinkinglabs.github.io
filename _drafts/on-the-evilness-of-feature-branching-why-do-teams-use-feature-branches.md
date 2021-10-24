@@ -191,15 +191,9 @@ Only features that went successfully through a quality gating process get merged
 
 What is quality? Handling this would require a whole article on its own. Therefore, I will limit the discussion to ...
 
-> What is adequate quality to one person may be inadequate quality to another.
+> It’s highly contextual, once we get beyond obvious problems like systems crashing. I go with value to someone who matters. I ask them what value means to them.
 >
-> -- Jerry Weinberg
-
-And thus ...
-
-> Quality is meeting some person's requirements.
->
-> -- Jerry Weinberg
+> -- Fiona Charles ([@FionaCCharles](https://twitter.com/FionaCCharles)), [Oct 20, 2021](https://twitter.com/FionaCCharles/status/1450594362908348420)
 
 Often, the quality gating involves a manual code review through a pull request. This manual step introduces unexpected side-effects.
 
