@@ -195,27 +195,29 @@ What is quality? Handling this would require a whole article on its own. Therefo
 >
 > -- Fiona Charles ([@FionaCCharles](https://twitter.com/FionaCCharles)), [Oct 20, 2021](https://twitter.com/FionaCCharles/status/1450594362908348420)
 
-Often, the quality gating involves a manual code review through a pull request. This manual step introduces unexpected side-effects.
+Frequently, the quality gating is a manual code review through a pull request. This manual step introduces unexpected side-effects.
 
-When the pull request is ready, engineers wait for the code review to happen. Because the review does not start immediately, engineers start new work. This is already a violation of lean principles: *Stop Starting, Start Finishing*. It creates more work in progress. Work in progress hinders the flow of work through the value stream. It blocks delivery of features. Therefore it also delays feedback and delays taking new decisions on how to delight the customer.
+When the pull request is ready, engineers wait for the code review to happen. Because the review does not start immediately, engineers start new work. This is already a violation of the lean principle: *Stop Starting, Start Finishing*. It creates more work in progress. Work in progress hinders the flow of work through the value stream. It blocks delivery of features. Therefore it also delays feedback and delays finding new ways to delight the customer.
 
-Other engineers should start reviewing the pull request as soon as possible, but that does not happen either as they are too busy completing their feature. As a result, pull requests pile up. Again, this creates more work in progress. More feedback is delayed.
+Other engineers should start reviewing the pull request as soon as possible. But that does not happen either as they are too busy completing their feature. As a result, pull requests pile up. Again, this creates more work in progress. More feedback is delayed. Less unmet needs of the customer are found.
 
-Because feature branches involve a full feature or worse several features, pull requests are often big. Reviewing these pull requests takes a considerable amount of time. As a consequence, pull requests are reviewed hastily in a shallow way. What are the quality benefits of code reviews when done superficially? What is the added value for the time spent and the delays it introduces?
+Because feature branches involve a full feature or worse several features, pull requests are commonly big. Reviewing these pull requests takes a considerable amount of time. As a consequence, pull requests are reviewed hastily in a shallow way. We can then ask the question: What are the quality benefits of code reviews when done superficially? What is the added value for the time spent and the delays it introduces? Asking the question is to answer it.
 
 Also, engineers reviewing the pull request have very little context about the feature being reviewed. This is caused by this focus on individual productivity. One engineer, one feature. For that reason, engineers limit code reviews to purely technical reviews and do not review the functionality. Again, this has a limited quality value.
 
-When comments or issues arise from a review, engineers must get back into the context of the pull request. This introduces context switching. Again, this takes time and again introduces delays. Furthermore, it initiates rework that is happening far too late.
+When comments or issues arise from a review, engineers must get back into the context of the pull request. This introduces context switching. Again, this takes time and again introduces delays. Furthermore, it initiates rework that is happening far too late in the process.
 
 Not to speak about the time wasted in the regular ping-pongs between reviewee and reviewer.
 
-Because these reviews have hardly any value, doing the review becomes less and less important. Hence, they are regularly delayed and thus it takes even more time to get passed the review. Accordingly, it introduces the necessary irritations and frustrations inside the team.
+Lastly, I want to make this significant observation. Regularly one does not know what kind of things should come out of a code review, except "*it is better when more eyes have seen the code*". Thereby, the real question "*when is something good or not*" remains unanswered.
 
-This whole quality control via pull requests is at best a quality theatre with little quality benefits that introduces lots of delays and rework. We might as well stop with code reviews. It would at least have the benefit to stop blocking the flow of work.
+Because these reviews have hardly any value, doing the review becomes less and less important. Hence, they are regularly delayed and thus it takes even more time to get passed the review. Consequently, it introduces the necessary irritations and frustrations inside the team.
 
-Controlling quality is the exact purpose of Continuous Integration and, by
-extension, Continuous Delivery. As opposed to trying to control quality through
-manual merges.
+This whole quality control via pull requests is at best a quality theatre with little quality benefits that introduces lots of delays and rework. We might as well stop performing code reviews for the sake of code reviews. It would at least have the benefit to stop blocking the flow of work.
+
+As opposed to trying to control quality through
+manual merges we should control quality through the adoption of 
+Continuous Integration and, by extension, Continuous Delivery.
 
 > The objective is to eliminate unfit release candidates as early in the process
 > as we can ... You are effectively prevented from releasing into production
@@ -234,8 +236,7 @@ and that have been thoroughly tested, get into production.
 ### It allows us to keep mainline stable
 
 There is this commonly accepted belief that branches are required to keep
-mainline stable. However, the opposite is more often true. **More often than not,
-branches will be the cause of an unstable mainline.**
+mainline stable. However, the opposite is more frequently true. **More often than not, branches will be the cause of an unstable mainline.**
 
 Why is that?
 
