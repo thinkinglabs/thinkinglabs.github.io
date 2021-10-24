@@ -47,7 +47,7 @@ For CVS and SubVersion, this is *trunk*. Hence, why we speak about
 Without pretence, in 2021, **Done** should at least mean *running satisfactorily in production*.
 
 However, this is still not a standard practice. Many times, *Done* still means developer-complete, i.e. the feature is implemented.
-Hopefully the feature is guarded by unit tests and automated acceptance tests. At best, it has been validated by the product manager on the branch.
+Hopefully, the feature is guarded by unit tests and automated acceptance tests. At best, it has been validated by the product manager on the branch.
 
 But there is still a lot of work to be done before the feature gets into
 production. Here is a minimal list of activities to move from developer-complete to live traffic:
@@ -66,7 +66,7 @@ production. Here is a minimal list of activities to move from developer-complete
 When all of the above has been executed, we call the feature **Done Done**.
 
 The implementation of a feature starts with the creation of a branch. The
-feature grows on that branch. Upon completion of the feature it goes through a
+feature grows on that branch. Upon completion of the feature, it goes through a
 manual gating process called a *Code Review*, also known as a
 *Pull Request*. When the gating process is successful, the feature branch gets merged back into mainline. This aligns with *GitHub Flow*'s definition of a feature branch. It is, nevertheless, easy to slip out of merging after 24 hours.
 
@@ -98,13 +98,11 @@ it is a team activity.
 
 As long as we have not merged back into mainline we cannot know how much work is still left to do. Because of potential merge conflicts, and because of potential rework caused by merge conflicts at merge time. Integrating changes into mainline becomes a time-consuming and rather unpredictable activity. This makes the whole IT delivery process very unpredictable which increases the lead time, and the time to market for your product.
 
-There is, however, more. Though, individual productivity is seen as leading, it
+There is, however, more. Though individual productivity is seen as leading, it
 is already accepted that what has to be delivered is not individual. Why else
-are teams obsessed by code reviews and pull requests? But the code review comes
-too late in the process, introduces waiting and is too slow. And this, again,
-increases lead time and time market.
+are teams obsessed with code reviews and pull requests? But the code review comes too late in the process, introduces waiting and is too slow. And this, again, increases lead time and time market.
 
-But, the goal of any organisation is to actually make money by sustainably
+But, the goal of any organisation is to make money by sustainably
 minimising the lead time to create a positive business impact.
 
 *Lead Time* is the clock wall time between us, as a team or as an organisation,
@@ -123,7 +121,7 @@ into production is actually being used and how it is being used. Based on this
 information, we can make new decisions. We can run new experiments to find new
 unmet needs of our customers and find new ways to delight our customers. Which is an immense competitive advantage.
 
-By using feature branching we are, in fact, doing quite the opposite! We
+By using feature branching we are doing quite the opposite! We
 are going to delay feedback by increasing lead time and time to market.
 
 Therefore instead of optimising for developer productivity, we should optimise
@@ -138,7 +136,7 @@ for team productivity and introduce team flow by adopting a team-oriented branch
 Again, when I first heard this argument, I thought: fair enough, this sounds
 evident.
 
-If we accept the "throwing the refactoring away"-argument, we can still argue we do not want to let the refactoring grow to big. If it grows too big, throwing it away would be a waste of the work. As a result, the refactoring will never be thrown away because of the [sunk cost fallacy](https://en.wikipedia.org/wiki/Sunk_cost#Fallacy_effect).
+If we accept the "throwing the refactoring away"-argument, we can still argue we do not want to let the refactoring grow too big. If it grows too big, throwing it away would be a waste of the work. As a result, the refactoring will never be thrown away because of the [sunk cost fallacy](https://en.wikipedia.org/wiki/Sunk_cost#Fallacy_effect).
 
 Conversely, if we would keep the refactoring small, why bother the overhead of
 creating a feature branch?
@@ -169,7 +167,7 @@ The output of a spike is not production code.
 
 The output of a spike is **knowledge, not code**.
 
-During a spike, you should never commit code into a version control system. From my humble experience, the minute code lands in version control, it is labelled production code. From then on, it becomes extremely hard to throw away that code. Again, because of the [sunk cost fallacy](https://en.wikipedia.org/wiki/Sunk_cost#Fallacy_effect). I have to admit, this is hard core spiking. This only works when keeping the spike under 24 hours. This is maybe not always possible. Sometimes spikes require more investigation, reading, meetings. There will be confusion and sometimes a need for sharing. To safe us from landing spike code into production code, we should commit into a "spikes" branch that is automatically deleted after 72 hours.
+During a spike, you should never commit code into a version control system. From my humble experience, the minute code lands in version control, it is labelled production code. From then on, it becomes extremely hard to throw away that code. Again, because of the [sunk cost fallacy](https://en.wikipedia.org/wiki/Sunk_cost#Fallacy_effect). I have to admit, this is hardcore spiking. This only works when keeping the spike under 24 hours. This is maybe not always possible. Sometimes spikes require more investigation, reading, meetings. There will be confusion and sometimes a need for sharing. To save us from landing spike code into production code, we should commit into a "spikes" branch that is automatically deleted after 72 hours.
 
 We need to make a distinction, here, between a feature branch and a temporary shared space. However, a spike that takes longer than 3 days, is not a spike.
 
@@ -183,7 +181,7 @@ during that spike.
 
 ### It allows us to control the quality of what goes into production
 
-Only features that went successfully through a quality gating process get merged into mainline. As such, these features get deployed into production. This is how teams again and again try to control the quality of what goes into production.
+Only features that went successfully through a quality gating process get merged into mainline. As such, these features get deployed into production. This is how teams, again and again, try to control the quality of what goes into production.
 
 What is quality? Handling this would require a whole article on its own. Therefore, I will limit the discussion to ...
 
@@ -191,7 +189,7 @@ What is quality? Handling this would require a whole article on its own. Therefo
 >
 > -- Fiona Charles ([@FionaCCharles](https://twitter.com/FionaCCharles)), [Oct 20, 2021](https://twitter.com/FionaCCharles/status/1450594362908348420)
 
-Frequently, the quality gating is a manual code review through a pull request. This manual step introduces unexpected side-effects.
+Frequently, the quality gating is a manual code review through a pull request. This manual step introduces unexpected side effects.
 
 When the pull request is ready, engineers wait for the code review to happen. Because the review does not start immediately, engineers start new work. This is already a violation of the lean principle: *Stop Starting, Start Finishing*. It creates more work in progress. Work in progress hinders the flow of work through the value stream. It blocks delivery of features. Therefore it also delays feedback and delays finding new ways to delight the customer.
 
@@ -201,15 +199,15 @@ Because feature branches involve a full feature or worse an epic of features, pu
 
 Also, engineers reviewing the pull request have very little context about the feature being reviewed. This is caused by this focus on individual productivity: one engineer, one feature. For that reason, engineers limit code reviews to purely technical reviews. They do not review the functionality. Again, this has a limited quality benefit.
 
-When comments or issues arise from a review, engineers must get back into the context of the pull request. This context switching again takes time and introduces delays. These code review issues also initiates rework happening far too late in the process.
+When comments or issues arise from a review, engineers must get back into the context of the pull request. This context switching again takes time and introduces delays. These code review issues also initiate rework happening far too late in the process.
 
-Not to speak about the time wasted in the regular ping-pongs between reviewee and reviewer.
+Not to speak about the time wasted in the regular ping-pongs between the reviewee and reviewer.
 
 Lastly, I want to make this vital observation. Regularly one does not know what the purpose is of a code review, what kind of things should come out of a code review, except "*it is better when more eyes have seen the code*". Thereby, the real question "*when is something good or not*" remains unanswered.
 
 Because these reviews have hardly any value, doing the review becomes less and less important. Hence, they are regularly delayed and thus it takes even more time to get passed the review. Consequently, it introduces the necessary irritations and frustrations inside the team.
 
-This whole **quality control via pull requests is at best a quality theatre** with little quality benefits that introduces lots of delays and rework. We might as well stop performing code reviews for the sake of code reviews. It would at least have the benefit to stop blocking the flow of work.
+This whole **quality control via pull requests is at best a quality theatre** with little quality benefits that introduce lots of delays and rework. We might as well stop performing code reviews for the sake of code reviews. It would at least have the benefit to stop blocking the flow of work.
 
 As opposed to trying to control quality through manual merges we should control quality through the adoption of Continuous Integration and, by extension, Continuous Delivery.
 
@@ -324,11 +322,11 @@ Let me repeat this ...
 >
 > -- Me, [On the Evilness of Feature Branching - A Tale of Two Teams]({% post_url 2021-07-14-on-the-evilness-of-feature-branching-a-tale-of-two-teams %})
 
-The Open Source development is a model with few people having plenty of knowledge (seniors) and many people having little knowledge (juniors). Therefore, pull requests for accepting outside contributions is a good fit. But it is also fragile and slow. If you apply this model in a commercial organisation, organise teams the same way, do not share knowledge inside and outside the team, and their are too many juniors for too few seniors, than feature branching could be a work-around to fix for that. But, it means they will move slowly, they will not be flexible and it will create dull and frustrating work for team members.
+The Open Source development is a model with few people having plenty of knowledge (seniors) and many people having little knowledge (juniors). Therefore, pull requests for accepting outside contributions is a good fit. But it is also fragile and slow. If you apply this model in a commercial organisation, organise teams the same way, do not share knowledge inside and outside the team, and there are too many juniors for too few seniors, then feature branching could be a work-around to fix for that. But, it means they will move slowly, they will not be flexible and it will create dull and frustrating work for team members.
 
 ## Conclusion
 
-It is a safety blanket. This is obvious to me and to the members of
+It is a safety blanket. This is obvious to me and the members of
 the XP and Continuous Delivery community. But are teams aware of that safety
 blanket?
 
@@ -359,14 +357,14 @@ getting bad code into production.
 But, bad code is not necessarily a problem even if it gets into production,
 as long as we can detect it and fix it fast.
 
-However, branching will only bring a **false sense of security** and **a false sense of control**. Because again ... it delays feedback. It introduces batch work. Because of the increased batch sizes, it increases changesets and thus increases the amount of code released into the wild. In turn, this increases risks. In the end, what they are trying to avoid, i.e. taking risks, breaking things, is actually reinforced by adopting more processes through using feature branching.
+However, branching will only bring a **false sense of security** and **a false sense of control**. Because again ... it delays feedback. It introduces batch work. Because of the increased batch sizes, it increases changesets and thus increases the amount of code released into the wild. In turn, this increases risks. In the end, what they are trying to avoid, i.e. taking risks, breaking things, is in effect reinforced by adopting more processes through using feature branching.
 
 In all honesty, **it is this false sense of security that makes feature branching
 so evil**. Feature branches tend to hide the real problems teams have. Whereas,
-when teams commit immediately into mainline, it will uncover their problems and allow teams to actually do something about it.
+when teams commit immediately into mainline, it will uncover their problems and allow teams to literally do something about it.
 
-To conclude, teams do not have the necessary practices in-place allowing them to
-move away from feature branches. This is the exact reason teams are reaching to that *safety blanket*.
+To conclude, teams do not have the necessary practices in place allowing them to
+move away from feature branches. This is the exact reason teams are reaching that *safety blanket*.
 
 Sincerely, breaking with this way of working requires quite some expertise
 and experience. Changing this is not an overnight task. It requires a tremendous
