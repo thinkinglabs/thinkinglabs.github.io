@@ -209,7 +209,7 @@ When comments or issues arise from a review, engineers must get back into the co
 
 Not to speak about the time wasted in the regular ping-pongs between reviewee and reviewer.
 
-Lastly, I want to make this significant observation. Regularly one does not know what kind of things should come out of a code review, except "*it is better when more eyes have seen the code*". Thereby, the real question "*when is something good or not*" remains unanswered.
+Lastly, I want to make this vital observation. Regularly one does not know what kind of things should come out of a code review, except "*it is better when more eyes have seen the code*". Thereby, the real question "*when is something good or not*" remains unanswered.
 
 Because these reviews have hardly any value, doing the review becomes less and less important. Hence, they are regularly delayed and thus it takes even more time to get passed the review. Consequently, it introduces the necessary irritations and frustrations inside the team.
 
@@ -385,7 +385,7 @@ change in approach and mindset. It demands the adoption of a reasonable amount o
 
 ## Acknowledgment
 
-[Steve Smith](https://twitter.com/SteveSmith_Tech), [Wouter Lagerweij](https://twitter.com/wouterla) and [Dietrich Moerman](https://www.linkedin.com/in/dietrichm/) for reviewing the article.
+[Steve Smith](https://twitter.com/SteveSmith_Tech), [Wouter Lagerweij](https://twitter.com/wouterla) and [Dietrich Moerman](https://www.linkedin.com/in/dietrichm/) for reviewing and providing essential feedback on the article.
 
 All the magnificent people present at my SoCraTes 2021 session
 [*Why do teams use Feature Branching?*](https://overjoyed-bar-e2f.notion.site/SoCraTes-Germany-2021-932e61b2144b4b68b2da4625e3a808e7?p=217f01fdeee24746970e9a8828f74980).
