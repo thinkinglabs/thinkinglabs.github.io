@@ -23,7 +23,7 @@ reasons? What problems are they trying to solve with long-running branches?
 
 ## Some definitions
 
-Before we move on, let me first clarify two definitions. I am sure you know these concepts. But, as it often goes in our industry, people like to redefine practices and concepts to make sure they align with their way of working. Therefore, I am going to reiterate these definitions to make sure we are all aligned on the definitions.
+Before we move on, let me first clarify two definitions. I am sure you know these concepts. But, as it often goes in our industry, people like to redefine practices and concepts to make sure they align with their way of working. Therefore, I am going to reiterate these definitions to make sure we are all aligned on their meaning.
 
 - What is *mainline*? and
 - What is *feature branching*?
@@ -50,7 +50,7 @@ However, this is still not a standard practice. Many times, *Done* still means d
 Hopefully, the feature is guarded by unit tests and automated acceptance tests. At best, it has been validated by the product manager on the branch.
 
 But there is still a lot of work to be done before the feature gets into
-production. Here is a minimal list of activities to move from developer-complete to live traffic:
+production. Here is a typical example of a minimal list of activities to move from developer-complete to live traffic. But of course, your mileage may vary according to the type of application being designed.
 
 - execution of all the unit tests and static code analysis;
 - creation of a new release candidate;
@@ -100,7 +100,7 @@ As long as we have not merged back into mainline we cannot know how much work is
 
 There is, however, more. Though individual productivity is seen as leading, it
 is already accepted that what has to be delivered is not individual. Why else
-are teams obsessed with code reviews and pull requests? But the code review comes too late in the process, introduces waiting and is too slow. And this, again, increases lead time and time market.
+are teams obsessed with code reviews and pull requests? But the code review comes too late in the process, introduces waiting and is too slow. And this, again, increases lead time and time to market.
 
 But, the goal of any organisation is to make money by sustainably
 minimising the lead time to create a positive business impact.
@@ -201,7 +201,7 @@ Also, engineers reviewing the pull request have very little context about the fe
 
 When comments or issues arise from a review, engineers must get back into the context of the pull request. This context switching again takes time and introduces delays. These code review issues also initiate rework happening far too late in the process.
 
-Not to speak about the time wasted in the regular ping-pongs between the reviewee and reviewer.
+Not to speak about the time wasted in the regular ping-pongs between the reviewee and the reviewer.
 
 Lastly, I want to make this vital observation. Regularly one does not know what the purpose is of a code review, what kind of things should come out of a code review, except "*it is better when more eyes have seen the code*". Thereby, the real question "*when is something good or not*" remains unanswered.
 
