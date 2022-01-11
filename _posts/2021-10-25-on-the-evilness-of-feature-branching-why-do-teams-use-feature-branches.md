@@ -15,6 +15,8 @@ reasons? What problems are they trying to solve with long-running branches?
 
 ---
 
+*Update Jan 10, 2022: Add [Jez Humble](https://twitter.com/jezhumble)'s tweet on Pair Programming vs Code Review as a conclusion to the controlling quality section.*
+
 > I like the way that question is asked. It gets people in the state of mind of
 > wondering _why_ someone else doesn't see the world like they/we do. And they
 > really don't, but it's gonna make sense in their own context.
@@ -224,6 +226,12 @@ changes that successfully went through all stages of the deployment pipeline,
 and that have been thoroughly tested, get into production.
 
 How is that meeting quality? It starts with the execution of unit tests which are the expression of how engineers have understood functionality. It is followed by the execution of the automated acceptance tests which are the expression of how the [three amigos](https://www.agileconnection.com/article/three-amigos-strategy-developing-user-stories) understood the functionality. It continues with the manual exploratory testing which uncovers more unknowns that feed into improving unit tests and automated acceptance tests. If any of these tests fail, it blocks the release candidate because it does not meet the value that matters to someone, the user.
+
+To conclude ...
+
+> If you think pair programming is inefficient, try waiting hours to get your code reviewed & having to context switch between tasks while you wait. And then switch back when you get the feedback & have to rethink your approach because you weren’t discussing it as you wrote it.
+>
+> -- Jez Humble ([@jezhumble](https://twitter.com/jezhumble)), [Nov 4, 2021](https://twitter.com/jezhumble/status/1456100358762074120)
 
 ### It allows us to keep mainline stable
 
