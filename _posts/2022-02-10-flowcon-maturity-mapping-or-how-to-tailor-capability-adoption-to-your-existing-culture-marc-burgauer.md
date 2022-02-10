@@ -11,7 +11,7 @@ slides: https://t.co/ZzbXij79wD?amp=1
 video: https://www.youtube.com/watch?v=Prb8E65k_Yo
 created_at: 2020-11-05
 category: notes
-tags: [ Maturity Mapping, Wardley Maps ]
+tags: [ Maturity Mapping, Wardley Maps, Social Practice Theory, Cynefin ]
 ---
 
 One of the issues with the maturity models we often use to assess teams is they are context free. They don’t take the environment into account, missing the challenges and the specific needs we have in our context. We will explore an alternative: Maturity Mapping. How can Wardley Mapping, Social Practice Theory and Cynefin be applied together to develop situational awareness and build a shared understanding of the practices you use and the unique challenges you face.
