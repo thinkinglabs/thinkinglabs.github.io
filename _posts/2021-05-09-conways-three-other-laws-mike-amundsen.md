@@ -16,9 +16,7 @@ tags: [ Conway's Law, Brooks' Law, Dunbar's Number ]
 >
 > -- Mike Amundsen
 
-Note: 
-
-*The notes were taken based solely on the slides without the voice over.*
+*Note: The notes were taken based solely on the slides without the voice over.*
 
 *Here and there I've added my own observations in an italic paragraph or when notes takes up several paragraphs in between horizontal rules.*
 

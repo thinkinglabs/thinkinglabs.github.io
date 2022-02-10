@@ -9,7 +9,6 @@ author:
   twitter: simonmcc
 slides: https://speakerdeck.com/simonmcc/autopilot-but-never-let-go-of-the-wheel
 created_at: 2020-02-03
-date: 2022-01-20
 category: notes
 tags: [ Infrastructure as Code ]
 ---
