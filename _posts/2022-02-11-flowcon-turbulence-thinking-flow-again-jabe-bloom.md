@@ -97,7 +97,7 @@ When we look at a transitional value stream map we see these flows.
 
 > If we are examining a particular device designed by the engineer to perform specific tasks under a rather narrow range of predictable external conditions, we are likely to be more concerned with consistent nonvariable performance in which slight departures from the performance goal are immediately counteracted.
 >
-> -- CS Holding
+> -- CS Holling
 
 ## Some different ways of thinking
 
