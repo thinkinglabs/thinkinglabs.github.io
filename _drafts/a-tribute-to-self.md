@@ -1,0 +1,119 @@
+---
+layout: article
+title: A Tribute to Self
+author: Thierry de Pauw
+category: articles
+tags: []
+---
+
+A breath of kindness to remind me of the lovely people who appreciate me.
+
+---
+
+> Thierry de Pauw live in very shortly at Room 3. Make sure to get down to the stages early as places fill up fast 🚀🙋‍♀️🙋‍♂️ @CodemotionIT @tdpauw
+>
+> -- Codemotion ([@CodemotionIT](https://twitter.com/CodemotionIT)), [Nov 29, 2018](https://twitter.com/CodemotionIT/status/1068159252806680576)
+
+> Narcissism or not, enjoy it to the full. You've worked for it, challenged yourself and achieved it. All on your own. You deserve to celebrate it. But most important of all, keep on doing it.
+>
+> -- Beren Van Daele ([@isleoftesting](https://twitter.com/isleoftesting)), [Dec 4, 2018](https://twitter.com/isleoftesting/status/1069964072572108800)
+
+> I heard a wise man a while ago say that you are amazing. Now over 300 people were inteigued enough to teat this assumption 😉
+>
+> -- Erik Talboom ([@talboomerik](https://twitter.com/talboomerik)), [Dec 4, 2018](https://twitter.com/talboomerik/status/1069842925868208129)
+
+> [...] Awesome conversations on #testingindevops, #moderntesting & more. @tdpauw is a walking encyclopedia of testing & devOps knowledge, so glad to meet him [...]
+>
+> -- Lisa Crispin ([@lisacrispin](https://twitter.com/lisacrispin)), [Sept 23, 2019](https://twitter.com/lisacrispin/status/1176217057412747266)
+
+> [...] Thierry is the kindest person I ever met and he has a very deep understanding in everything related to CI/CD
+>
+> -- Krisztina ([@YellowBrickC](https://twitter.com/YellowBrickC)), [Nov 29, 2019](https://twitter.com/YellowBrickC/status/1200394577385021440)
+
+> you just have prove the first half! 😃 And all of your other tweets and talks are the prove of the second half.
+>
+> I'm very happy to finally met you in person in Gent even if we hadn't really  the chance to have a relaxed discussion. But it's ok, we will get to it next time
+>
+> -- Krisztina ([@YellowBrickC](https://twitter.com/YellowBrickC)), [Nov 29, 2019](https://twitter.com/YellowBrickC/status/1200502332984889344)
+
+> This will be good. In the #ContinuousDelivery community, @tdpauw is the preeminent contemporary thinker on the evils of feature branching
+>
+> -- Steve Smith ([@SteveSmith_Tech](https://twitter.com/SteveSmith_Tech)), [Dec 14, 2019](https://twitter.com/SteveSmith_Tech/status/1205864579718356993)
+
+> [...]
+>
+> Your CD talks have been consistently excellent.
+>
+> -- Matthew Skelton ([@matthewpskelton](https://twitter.com/matthewpskelton)), [Jan 23, 2021](https://twitter.com/matthewpskelton/status/1353056467943755783)
+>
+> I second that!
+>
+> -- Giovanni Asproni ([@gasproni](https://twitter.com/gasproni)), [Jan 23, 2021](https://twitter.com/gasproni/status/1353057546710392832)
+
+> I'm not fit for public speaking, what you have achieved as an introvert is amazing
+>
+> -- Guillem Canal ([@buraitopengin](https://twitter.com/buraitopengin)), [Jan 23, 2021](https://twitter.com/buraitopengin/status/1353032809951223808)
+
+> Thank you for sharing your journey it is an inspiration for folks who may feel too shy to speak in public. I haven’t seen you speak but I can see you care a lot about your craft and community and I’m sure you have helped a lot of people by sharing your ideas and experiences.
+>
+> -- David Heath ([@dgheath21](https://twitter.com/dgheath21)) [Jan 23, 2021](https://twitter.com/dgheath21/status/1353036092077912071)
+
+> Big hugs to you, my friend. I'm happy we met, and I cherish our joint venture in conference speaking :)
+>
+> [...]
+>
+> -- Tobias Goeschel ([@w3ltraumpirat](https://twitter.com/w3ltraumpirat)), [Jan 26, 2021](https://twitter.com/w3ltraumpirat/status/1354057210083614725)
+
+> I still remember the day we met at @PipelineConf in the hotel lobby for a drink. I was just a participant, eager to get on stage and I feel really welcomed by you to do so the next year! Thank you @tdpauw
+>
+> -- Kenny Baas ([@kenny_baas](https://twitter.com/kenny_baas)), [Jan 26, 2021](https://twitter.com/kenny_baas/status/1354053177780428800)
+
+> People listen to your talk because you are from the field and you tell truth that help us make better choice.
+> Your speech are full of real life experiences and a good amount of humility which create a real connection between you and your audience.
+> Keep on talking you inspire us!
+>
+> -- Sébastien Barbieri ([@scips](https://twitter.com/scips)), [Apr 14, 2021](https://twitter.com/scips/status/1382438221808816144)
+
+> You're very welcome. I love a good experience report! Sorry I didn't tag you in the original tweet.
+>
+> -- Daniel Terhorst-North ([@tastapod](https://twitter.com/tastapod)), [Jul 16, 2021](https://twitter.com/tastapod/status/1415956155566862337)
+>
+> It's great to see how @tdpauw's low ego, experience-driven approach has sparked so many interesting, respectful conversations about this
+>
+> -- Steve Smith ([@SteveSmith_Tech](https://twitter.com/SteveSmith_Tech)), [Jul 16, 2021](https://twitter.com/SteveSmith_Tech/status/1415996182866845696)
+
+> Ik ga morgen je artikel lezen! Ben erg benieuwd, en ik steek van jouw schrijfwerk altijd mooie nieuwe manieren op om het over dingen te hebben...
+>
+> -- Wouter L, Oct 18, 2021
+
+> [...] additional bonus: Thierry is an amazing human I'm happy to know, and might be up for a conversation about the topic (@tdpauw: Toyer is my learning partner for many years now and an amazing human as well 😉)
+>
+> -- Lisi Hocke ([@lisihocke](https://twitter.com/lisihocke)), [Nov 24, 2021](https://twitter.com/lisihocke/status/1463498037364408329)
+
+> I probably haven’t told you enough how much I appreciate everything you do for this company (and when I say that I mean group of individuals). It’s a real pleasure and source of comfort to have you aboard and I just hope you feel the same way
+>
+> -- Guillaume d., Nov 25, 2021
+
+> I would also like to take this opportunity to say a massive thank you from me and the team for all your support this year. We had our team retrospective the other week, and we make a post it tree of all the great things from the year - and your name was on our tree :)
+>
+> -- Allison B., Dec 22, 2021
+
+> All over the world, @tdpauw! Thank you for all that you do.
+>
+> -- Paul Julius ([@PaulJulius](https://twitter.com/PaulJulius)), [Feb 9, 2022](https://twitter.com/PaulJulius/status/1491212046100484096)
+
+> Thierry de laatste dagen/ weken ben je echt in een flow. Wat je schrijft de laatste weken, is close to geniaal. Elke keer er boink op.
+>
+> -- Yves H., Feb 14, 2022
+
+> you ve been extremely caring and a breath of fresh air in this sea of unkind macho type latin men.
+>
+> -- Paula, Feb 14, 2022
+
+> Ah Twitter vient seulement de me montrer ta réponse. Congrats on being... "blunt".
+>
+> Et les quotes tweets sont élogieux (à raison t'as fait un solide debunk)
+> 
+> 1/le sujet est hot 2/le initial take est contreversial 3/Tu as réussi à être brutal dans l'accroche ("bullshit") mais après à fournir une réponse argumentée et documentée. Sans le brutal, tu n'auras pas suscité l'intérêt (désolé c'est pas moi qui fait les règlles), mais tu as pu artiuler aussi une réponse détaillée et pas en rester là. Nice job
+>
+> -- Martin V., Feb 15, 2022
