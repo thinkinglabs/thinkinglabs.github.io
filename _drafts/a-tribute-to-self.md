@@ -18,7 +18,7 @@ A breath of kindness to remind me of the lovely people who appreciate me.
 >
 > -- Beren Van Daele ([@isleoftesting](https://twitter.com/isleoftesting)), [Dec 4, 2018](https://twitter.com/isleoftesting/status/1069964072572108800)
 
-> I heard a wise man a while ago say that you are amazing. Now over 300 people were inteigued enough to teat this assumption 😉
+> I heard a wise man a while ago say that you are amazing. Now over 300 people were intrigued enough to teat this assumption 😉
 >
 > -- Erik Talboom ([@talboomerik](https://twitter.com/talboomerik)), [Dec 4, 2018](https://twitter.com/talboomerik/status/1069842925868208129)
 
@@ -131,6 +131,6 @@ A breath of kindness to remind me of the lovely people who appreciate me.
 >
 > Et les quotes tweets sont élogieux (à raison t'as fait un solide debunk)
 > 
-> 1/le sujet est hot 2/le initial take est contreversial 3/Tu as réussi à être brutal dans l'accroche ("bullshit") mais après à fournir une réponse argumentée et documentée. Sans le brutal, tu n'auras pas suscité l'intérêt (désolé c'est pas moi qui fait les règlles), mais tu as pu artiuler aussi une réponse détaillée et pas en rester là. Nice job
+> 1/le sujet est hot 2/le initial take est contreversial 3/Tu as réussi à être brutal dans l'accroche ("bullshit") mais après à fournir une réponse argumentée et documentée. Sans le brutal, tu n'auras pas suscité l'intérêt (désolé c'est pas moi qui fait les règles), mais tu as pu articuler aussi une réponse détaillée et pas en rester là. Nice job
 >
 > -- Martin V., Feb 15, 2022
