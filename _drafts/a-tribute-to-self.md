@@ -10,7 +10,7 @@ A breath of kindness to remind me of the lovely people who appreciate me.
 
 ---
 
-> Thierry de Pauw live in very shortly at Room 3. Make sure to get down to the stages early as places fill up fast 🚀🙋‍♀️🙋‍♂️ @CodemotionIT @tdpauw
+> Thierry de Pauw live in very shortly at Room 3. Make sure to get down to the stages early as places fill up fast 🚀🙋‍♀️🙋‍♂️ [@CodemotionIT](https://twitter.com/CodemotionIT) [@tdpauw](https://twitter.com/tdpauw)
 >
 > -- Codemotion ([@CodemotionIT](https://twitter.com/CodemotionIT)), [Nov 29, 2018](https://twitter.com/CodemotionIT/status/1068159252806680576)
 
@@ -22,7 +22,7 @@ A breath of kindness to remind me of the lovely people who appreciate me.
 >
 > -- Erik Talboom ([@talboomerik](https://twitter.com/talboomerik)), [Dec 4, 2018](https://twitter.com/talboomerik/status/1069842925868208129)
 
-> [...] Awesome conversations on #testingindevops, #moderntesting & more. @tdpauw is a walking encyclopedia of testing & devOps knowledge, so glad to meet him [...]
+> [...] Awesome conversations on #testingindevops, #moderntesting & more. [@tdpauw](https://twitter.com/tdpauw) is a walking encyclopedia of testing & devOps knowledge, so glad to meet him [...]
 >
 > -- Lisa Crispin ([@lisacrispin](https://twitter.com/lisacrispin)), [Sept 23, 2019](https://twitter.com/lisacrispin/status/1176217057412747266)
 
@@ -36,7 +36,7 @@ A breath of kindness to remind me of the lovely people who appreciate me.
 >
 > -- Krisztina ([@YellowBrickC](https://twitter.com/YellowBrickC)), [Nov 29, 2019](https://twitter.com/YellowBrickC/status/1200502332984889344)
 
-> This will be good. In the #ContinuousDelivery community, @tdpauw is the preeminent contemporary thinker on the evils of feature branching
+> This will be good. In the #ContinuousDelivery community, [@tdpauw](https://twitter.com/tdpauw) is the preeminent contemporary thinker on the evils of feature branching
 >
 > -- Steve Smith ([@SteveSmith_Tech](https://twitter.com/SteveSmith_Tech)), [Dec 14, 2019](https://twitter.com/SteveSmith_Tech/status/1205864579718356993)
 
@@ -64,12 +64,13 @@ A breath of kindness to remind me of the lovely people who appreciate me.
 >
 > -- Tobias Goeschel ([@w3ltraumpirat](https://twitter.com/w3ltraumpirat)), [Jan 26, 2021](https://twitter.com/w3ltraumpirat/status/1354057210083614725)
 
-> I still remember the day we met at @PipelineConf in the hotel lobby for a drink. I was just a participant, eager to get on stage and I feel really welcomed by you to do so the next year! Thank you @tdpauw
+> I still remember the day we met at @PipelineConf in the hotel lobby for a drink. I was just a participant, eager to get on stage and I feel really welcomed by you to do so the next year! Thank you [@tdpauw](https://twitter.com/tdpauw)
 >
 > -- Kenny Baas ([@kenny_baas](https://twitter.com/kenny_baas)), [Jan 26, 2021](https://twitter.com/kenny_baas/status/1354053177780428800)
 
 > People listen to your talk because you are from the field and you tell truth that help us make better choice.
 > Your speech are full of real life experiences and a good amount of humility which create a real connection between you and your audience.
+>
 > Keep on talking you inspire us!
 >
 > -- Sébastien Barbieri ([@scips](https://twitter.com/scips)), [Apr 14, 2021](https://twitter.com/scips/status/1382438221808816144)
@@ -78,10 +79,21 @@ A breath of kindness to remind me of the lovely people who appreciate me.
 >
 > -- Daniel Terhorst-North ([@tastapod](https://twitter.com/tastapod)), [Jul 16, 2021](https://twitter.com/tastapod/status/1415956155566862337)
 >
-> It's great to see how @tdpauw's low ego, experience-driven approach has sparked so many interesting, respectful conversations about this
+> It's great to see how [@tdpauw](https://twitter.com/tdpauw)'s low ego, experience-driven approach has sparked so many interesting, respectful conversations about this
 >
 > -- Steve Smith ([@SteveSmith_Tech](https://twitter.com/SteveSmith_Tech)), [Jul 16, 2021](https://twitter.com/SteveSmith_Tech/status/1415996182866845696)
 
+> Thanks to [@tdpauw](https://twitter.com/tdpauw)
+> and [@w3ltraumpirat](https://twitter.com/w3ltraumpirat)
+> for your nice little "theatre play" (dialogue) at [#SoCraTes2021](https://twitter.com/hashtag/SoCraTes2021?src=hashtag_click) on the Theory of Constraints, it was very entertaining and educational. I think "The Goal" by  Eliyahu M. Goldratt will be one of my next reads.
+>
+> -- Stephan Roth ([@_StephanRoth](https://twitter.com/_StephanRoth)), [Aug 29, 2021](https://twitter.com/_StephanRoth/status/1431978861940576261)
+
+> Sinon vu https://twitter.com/_StephanRoth/status/1431978861940576261 tu deviens un type important. Je vais pouvoir mettre sur mon CV "Je connaissais Thierry Depauw avant qu'il soit célèbre"
+>
+> Prochaine étape (et je rigole pas) - tu penses pas à écrire un bouquin (lean mode, en construisant une audience via mailing list, etc)
+>
+> -- Martin V, Aug 30 2021
 > Ik ga morgen je artikel lezen! Ben erg benieuwd, en ik steek van jouw schrijfwerk altijd mooie nieuwe manieren op om het over dingen te hebben...
 >
 > -- Wouter L, Oct 18, 2021
@@ -98,7 +110,7 @@ A breath of kindness to remind me of the lovely people who appreciate me.
 >
 > -- Allison B., Dec 22, 2021
 
-> All over the world, @tdpauw! Thank you for all that you do.
+> All over the world, [@tdpauw](https://twitter.com/tdpauw)! Thank you for all that you do.
 >
 > -- Paul Julius ([@PaulJulius](https://twitter.com/PaulJulius)), [Feb 9, 2022](https://twitter.com/PaulJulius/status/1491212046100484096)
 
@@ -109,6 +121,10 @@ A breath of kindness to remind me of the lovely people who appreciate me.
 > you ve been extremely caring and a breath of fresh air in this sea of unkind macho type latin men.
 >
 > -- Paula, Feb 14, 2022
+
+> Tu pense refaire du speaking à un moment ? Ou écrire un livre (je rigole pas tu as le matos)
+>
+> -- Martin V., Feb 15, 2022
 
 > Ah Twitter vient seulement de me montrer ta réponse. Congrats on being... "blunt".
 >
