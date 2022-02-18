@@ -56,7 +56,7 @@ A breath of kindness to remind me of the lovely people who appreciate me.
 
 > Thank you for sharing your journey it is an inspiration for folks who may feel too shy to speak in public. I haven’t seen you speak but I can see you care a lot about your craft and community and I’m sure you have helped a lot of people by sharing your ideas and experiences.
 >
-> -- David Heath ([@dgheath21](https://twitter.com/dgheath21)) [Jan 23, 2021](https://twitter.com/dgheath21/status/1353036092077912071)
+> -- David Heath ([@dgheath21](https://twitter.com/dgheath21)), [Jan 23, 2021](https://twitter.com/dgheath21/status/1353036092077912071)
 
 > Big hugs to you, my friend. I'm happy we met, and I cherish our joint venture in conference speaking :)
 >
@@ -89,16 +89,17 @@ A breath of kindness to remind me of the lovely people who appreciate me.
 >
 > -- Stephan Roth ([@_StephanRoth](https://twitter.com/_StephanRoth)), [Aug 29, 2021](https://twitter.com/_StephanRoth/status/1431978861940576261)
 
-> Sinon vu https://twitter.com/_StephanRoth/status/1431978861940576261 tu deviens un type important. Je vais pouvoir mettre sur mon CV "Je connaissais Thierry Depauw avant qu'il soit célèbre"
+> Sinon vu https://twitter.com/_StephanRoth/status/1431978861940576261 tu deviens un type important. Je vais pouvoir mettre sur mon CV "Je connaissais Thierry de Pauw avant qu'il soit célèbre"
 >
 > Prochaine étape (et je rigole pas) - tu penses pas à écrire un bouquin (lean mode, en construisant une audience via mailing list, etc)
 >
 > -- Martin V, Aug 30 2021
+
 > Ik ga morgen je artikel lezen! Ben erg benieuwd, en ik steek van jouw schrijfwerk altijd mooie nieuwe manieren op om het over dingen te hebben...
 >
 > -- Wouter L, Oct 18, 2021
 
-> [...] additional bonus: Thierry is an amazing human I'm happy to know, and might be up for a conversation about the topic (@tdpauw: Toyer is my learning partner for many years now and an amazing human as well 😉)
+> [...] additional bonus: Thierry is an amazing human I'm happy to know, and might be up for a conversation about the topic ([@tdpauw](https://twitter.com/tdpauw): Toyer is my learning partner for many years now and an amazing human as well 😉)
 >
 > -- Lisi Hocke ([@lisihocke](https://twitter.com/lisihocke)), [Nov 24, 2021](https://twitter.com/lisihocke/status/1463498037364408329)
 
