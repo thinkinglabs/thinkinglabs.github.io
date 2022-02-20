@@ -123,6 +123,14 @@ A breath of kindness to remind me of the lovely people who appreciate me.
 >
 > -- Paula, Feb 14, 2022
 
+> Yours is so much better.
+>
+> I used 1000 words more to say less.
+>
+> Very well written!
+>
+> -- Anton Stöckl ([@TonyBologni](https://twitter.com/TonyBologni)), [Feb 14, 2022](https://twitter.com/TonyBologni/status/1493293344688115715)
+
 > Tu pense refaire du speaking à un moment ? Ou écrire un livre (je rigole pas tu as le matos)
 >
 > -- Martin V., Feb 15, 2022
@@ -134,3 +142,19 @@ A breath of kindness to remind me of the lovely people who appreciate me.
 > 1/le sujet est hot 2/le initial take est contreversial 3/Tu as réussi à être brutal dans l'accroche ("bullshit") mais après à fournir une réponse argumentée et documentée. Sans le brutal, tu n'auras pas suscité l'intérêt (désolé c'est pas moi qui fait les règles), mais tu as pu articuler aussi une réponse détaillée et pas en rester là. Nice job
 >
 > -- Martin V., Feb 15, 2022
+
+> Thx Thierry! 💛
+>
+> I decided I just add my thoughts on some aspects and otherwise link to great material, like yours and Fowlers.
+>
+> -- Anton Stöckl ([@TonyBologni](https://twitter.com/TonyBologni)), [Feb 19, 2022](https://twitter.com/TonyBologni/status/1494955403440009217)
+>
+> It's an honour being mentioned next to Martin.
+>
+> You are too kind, Anton!
+>
+> -- Me
+>
+> Don’t be too humble! :-)
+>
+> -- Anton Stöckl ([@TonyBologni](https://twitter.com/TonyBologni)), [Feb 19, 2022](https://twitter.com/TonyBologni/status/1494956641850204162)
