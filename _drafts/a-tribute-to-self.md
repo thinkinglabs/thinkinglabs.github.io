@@ -89,15 +89,15 @@ A breath of kindness to remind me of the lovely people who appreciate me.
 >
 > -- Stephan Roth ([@_StephanRoth](https://twitter.com/_StephanRoth)), [Aug 29, 2021](https://twitter.com/_StephanRoth/status/1431978861940576261)
 
-> Sinon vu https://twitter.com/_StephanRoth/status/1431978861940576261 tu deviens un type important. Je vais pouvoir mettre sur mon CV "Je connaissais Thierry de Pauw avant qu'il soit célèbre"
+> Sinon vu [https://twitter.com/_StephanRoth/status/1431978861940576261](https://twitter.com/_StephanRoth/status/1431978861940576261) tu deviens un type important. Je vais pouvoir mettre sur mon CV "Je connaissais Thierry de Pauw avant qu'il soit célèbre"
 >
 > Prochaine étape (et je rigole pas) - tu penses pas à écrire un bouquin (lean mode, en construisant une audience via mailing list, etc)
 >
-> -- Martin V, Aug 30 2021
+> -- Martin Van Aken ([@martinvanaken](https://twitter.com/martinvanaken)), Aug 30 2021
 
 > Ik ga morgen je artikel lezen! Ben erg benieuwd, en ik steek van jouw schrijfwerk altijd mooie nieuwe manieren op om het over dingen te hebben...
 >
-> -- Wouter L, Oct 18, 2021
+> -- Wouter L., Oct 18, 2021
 
 > [...] additional bonus: Thierry is an amazing human I'm happy to know, and might be up for a conversation about the topic ([@tdpauw](https://twitter.com/tdpauw): Toyer is my learning partner for many years now and an amazing human as well 😉)
 >
@@ -117,7 +117,7 @@ A breath of kindness to remind me of the lovely people who appreciate me.
 
 > Thierry de laatste dagen/ weken ben je echt in een flow. Wat je schrijft de laatste weken, is close to geniaal. Elke keer er boink op.
 >
-> -- Yves H., Feb 14, 2022
+> -- Yves Hanoulle ([@YvesHanoulle](https://twitter.com/YvesHanoulle)), Feb 14, 2022
 
 > you ve been extremely caring and a breath of fresh air in this sea of unkind macho type latin men.
 >
@@ -133,15 +133,15 @@ A breath of kindness to remind me of the lovely people who appreciate me.
 
 > Tu pense refaire du speaking à un moment ? Ou écrire un livre (je rigole pas tu as le matos)
 >
-> -- Martin V., Feb 15, 2022
+> -- [Martin Van Aken]([@martinvanaken](https://twitter.com/martinvanaken)), Feb 15, 2022
 
 > Ah Twitter vient seulement de me montrer ta réponse. Congrats on being... "blunt".
 >
 > Et les quotes tweets sont élogieux (à raison t'as fait un solide debunk)
-> 
+>
 > 1/le sujet est hot 2/le initial take est contreversial 3/Tu as réussi à être brutal dans l'accroche ("bullshit") mais après à fournir une réponse argumentée et documentée. Sans le brutal, tu n'auras pas suscité l'intérêt (désolé c'est pas moi qui fait les règles), mais tu as pu articuler aussi une réponse détaillée et pas en rester là. Nice job
 >
-> -- Martin V., Feb 15, 2022
+> -- [Martin Van Aken]([@martinvanaken](https://twitter.com/martinvanaken)), Feb 15, 2022
 
 > Thx Thierry! 💛
 >
