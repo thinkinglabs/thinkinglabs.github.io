@@ -6,7 +6,7 @@ category: articles
 tags: [Compliance, Version Control, Pull Request, Continuous Integration]
 ---
 
-In [part 2 of this series - Why do Teams use Feature Branches?]({% post_url 2021-10-25-on-the-evilness-of-feature-branching-why-do-teams-use-feature-branches%}) - I examined all the possible reasons teams mention for why they use feature branches. There was one reason, I did not mention that people referenced as the ultimate reason: "*We use feature branches and pull requests to comply with regulations*". I would like to explore this and see if we have alternatives that still comply.
+In [part 2 of this series - Why do Teams use Feature Branches?]({% post_url 2021-10-25-on-the-evilness-of-feature-branching-why-do-teams-use-feature-branches %}) - I examined all the possible reasons teams mention for why they use feature branches. There was, however, one reason, I did not mention that people referenced as the ultimate reason: "*We use feature branches and pull requests to comply with regulations*". I would like to explore this and show there are other options to comply that do not have the same drawbacks.
 
 ---
 
@@ -38,7 +38,7 @@ In the case of technology, governance provides the vision and the goals on how t
 
 ## Are Feature Branches and Pull Requests a necessity for Compliance?
 
-It depends on the regulatory requirements of the organisation.
+Feature Branches and Pull Requests are definitely not required for compliance. Except in some odd companies that wrote down policies more recently.
 
 First of all, most regulations and frameworks like [ITIL](https://en.wikipedia.org/wiki/ITIL), [COBIT](https://en.wikipedia.org/wiki/COBIT) or [Sarbanes-Oxley](https://en.wikipedia.org/wiki/Sarbanes%E2%80%93Oxley_Act) do not prescribe specific practices to implement like 4-eyes and segregation of duties. For instance, many think Sarbanes-Oxley section 404 imposes this. Oftentimes, heavy processes are established as a result of someone misinterpreting what is required, but not mandated by the said regulation or framework. Only the [PCI-DSS](https://en.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard) regulation explicitly requires segregation of duties ([PCI DSS v3.2.1](https://www.pcisecuritystandards.org/documents/PCI_DSS_v3-2-1.pdf?agreement=true), Requirements 6.3.2 Code Reviews, 6.4 Change Control and 6.4.2 Separation of Duties).
 
@@ -54,7 +54,7 @@ In this context, pull request based code reviews are an example of segregation o
 
 - It increases the risk for delayed delivery as team members have to wait for reviewers, followed by the obvious ping-pong between reviewer and reviewee. Before they realise, they are a couple of days later and delivery is delayed.
 - It often encourages large batches of changes, creating big changesets, in turn introducing higher risks for failure and again delayed delivery.
-- Large changesets usually result in expediting the code review, executing the review in a shallow way resulting in poor added value. A behaviour known as [Law of Triviality](https://en.wikipedia.org/wiki/Law_of_triviality).
+- Large changesets usually result in expediting the code review, executing the review in a shallow way resulting in poor added value. A behaviour known as bikeshedding or the [Law of Triviality](https://en.wikipedia.org/wiki/Law_of_triviality).
 
   > 10 lines of code = 10 issues.
   >
@@ -84,11 +84,7 @@ That said, if our activity is covered by PCI-DSS, alright, unfortunately, we wil
 
 First ...
 
-> **Trust, but verify**
->
-> -- a Russian proverb from Lean Enterprise, Chapter 12. Embrace Lean Thinking for Governance, Risk and, Compliance, p240
-
-Trust the people they will do the right thing! Then verify they are not abusing the trust through monitoring and regularly reviewing and auditing.
+Trust, but verify. Trust the people they will do the right thing! Then verify they are not abusing the trust through monitoring and regularly reviewing and auditing.
 
 Second ...
 
@@ -114,13 +110,7 @@ How can we perform Code Reviews in compliance with regulations? We have several 
 
    Teams tag every commit with a ticket number from the ticketing system. When the change is done and ready for review, they create a code review in a code reviewing tool like [JetBrains Upsource](https://www.jetbrains.com/upsource/) or [Atlassian Crucible](https://www.atlassian.com/software/crucible) (I only know these two and I only have experience with Crucible). These tools can group commits based on a ticket number into a code review. The code review can be linked to the ticketing system. Now we have full traceability on when a feature was reviewed by who in the context of which feature or bug and which commits were involved.
 
-3. Feature Flagging allows us to turn on the feature only when everything has been thoroughly checked and approved. This can easily complement the first two approaches: Pair/Ensemble Programming and Asynchronous reviews.
-
-   > Well, this is where my handy-dandy tool comes in.
-   >
-   > Feature flagging means you’re committing to trunk all the time, but not always releasing until everything is checked, approved, tested, etc.
-   >
-   > -- Heidi, Sticker Thoughtleader ([@wiredferret](https://twitter.com/wiredferret)), [Jul 15, 2021](https://twitter.com/wiredferret/status/1415733359523811328)
+3. Feature Flagging allows us to commit to mainline but not always release. We only turn on the feature and release to users when everything has been thoroughly checked, tested and approved. Before releasing, the change already sits in production days or weeks in advance, giving us valuable feedback on how it behaves in production. We can even mimic production load by having invisible calls to the change.  This can easily complement the first two approaches: Pair/Ensemble Programming and Asynchronous reviews.
 
 ## Conclusion
 
@@ -132,9 +122,7 @@ In conclusion, feature branching with pull requests is [Risk Management Theatre]
 
 ## Acknowledgment
 
-[Steve Smith](https://twitter.com/SteveSmith_Tech) and [Wouter Lagerweij](https://twitter.com/wouterla) for reviewing and suggesting to rewrite drafts of the article.
-
-Quarantine due to COVID symptoms gave me plenty of time to finally finalise this difficult article.
+[Steve Smith](https://twitter.com/SteveSmith_Tech) and [Wouter Lagerweij](https://twitter.com/wouterla) for reviewing multiple drafts of the article.
 
 ## Bibliography
 
