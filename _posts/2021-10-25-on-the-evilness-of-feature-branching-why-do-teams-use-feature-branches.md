@@ -4,7 +4,7 @@ title: On the Evilness of Feature Branching - Why do Teams use Feature Branches
 author: Thierry de Pauw
 meta: 11 min read
 category: articles
-tags: [Version Control, Continuous Integration]
+tags: [Version Control, Continuous Integration, Pull Request]
 ---
 
 In [part 1 of this series - a Tale of Two Teams]({% post_url 2021-07-14-on-the-evilness-of-feature-branching-a-tale-of-two-teams %}) - I introduced two quite different teams.
