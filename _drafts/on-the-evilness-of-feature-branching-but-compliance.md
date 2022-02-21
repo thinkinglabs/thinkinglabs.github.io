@@ -94,7 +94,7 @@ How can we perform Code Reviews in compliance with regulations? We have several 
 
 1. [Pair Programming](https://martinfowler.com/articles/on-pair-programming.html) or [Ensemble Programming](https://ensembleprogramming.xyz/) gives us continuous pre-commit code review for free without blocking the flow of work. The change is being reviewed while it is being authored. In addition, the change is never authored by a single person. Peer pressure ensures fraud is unlikely to happen.
 
-   [Dave Farley](https://twitter.com/davefarley77) repeatedly reports Pair Programming is good enough as a code review in highly regulated industries like finance, healthcare and gambling.
+   [Dave Farley](https://twitter.com/davefarley77) repeatedly [reports Pair Programming is good enough as a code review](http://www.davefarley.net/?p=285) in highly regulated industries like finance, healthcare and gambling to demonstrate that the code has been reviewed and that there is some independent oversight/verification of changes.
 
    It has the benefit of *building quality into* the product instead of "*inspecting quality in*" later after the fact.
 
@@ -106,7 +106,7 @@ How can we perform Code Reviews in compliance with regulations? We have several 
 
    Here Alice commits with her SSL certificate but the commit is signed with Bob's PGP key. The SSL certificate identifies Alice and the PGP signing identifies Bob. We now have evidence the code has been seen by two pairs of eyes and we can trace back which eyes have seen which code.
 
-   When pairs or ensemble teams, in addition, tag each commit with a ticket number from the ticketing system, we now have full traceability on who has seen which commit in the context of which ticket.
+   When pairs or ensemble teams, in addition, also tag each commit with a ticket number from the ticketing system, we now have full traceability on who has seen/authored which commit in the context of which ticket.
 
 2. Asynchronous code reviews, i.e reviewing each commit on mainline after the fact when the change is already committed into mainline. It has the advantage of never blocking the flow of work through the value stream. Code reviews can be traced on a Kanban board with code review work-in-progress limits to ensure they will be done. Reviews are run by a different person from the one authoring the change, enabling segregation.
 
@@ -143,6 +143,7 @@ In conclusion, feature branching with pull requests is [Risk Management Theatre]
   *Chapter 7. Management Practices for Software - Implement a Lightweight Change Approval Process*
 
 - [Compliance in the DevOps Culture](https://martinfowler.com/articles/devops-compliance.html), Carl Nygard
+- [Continuous Compliance](http://www.davefarley.net/?p=285), Dave Farley
 - [Regulatory compliance](https://en.wikipedia.org/wiki/Regulatory_compliance), Wikipedia
 - [Governance, Risk Management and Compliance (GRC)](https://www.investopedia.com/terms/g/grc.asp), Investopedia
 - [Corporate Governance](https://www.investopedia.com/terms/c/corporategovernance.asp), Investopedia
