@@ -26,15 +26,15 @@ Compliance is an often-cited reason to introduce all sorts of wasteful non-value
 
 ## What is compliance?
 
-**Compliance** is taking steps to comply with relevant laws, policies, industry standards and regulations, legally binding contracts or even cultural norms. **Generally, compliance is not optional** when imposed by law, regulation or contract. In these cases, not complying increases risks for fines, reputational damage or even a shutdown of the business.
+**Compliance** is taking steps to comply with relevant laws, industry regulations, legally binding contracts or even cultural norms. **Generally, compliance is not optional** when imposed by law, regulation or contract. In these cases, not complying increases risks for fines, reputational damage or even a shutdown of the business.
 
-Compliance never comes alone. It goes together with Governance and Risk Management. Usually referred to as GRC (Governance, Risk Management and Compliance).
+Compliance never comes alone. It goes together with Governance and Risk Management. Together they are referred to as GRC (Governance, Risk Management and Compliance).
 
-**Governance** is about keeping the organisation on track while balancing the interests of the many stakeholders of a company such as shareholders, senior management executives, customers, suppliers, financiers, the government, and the community. The board of directors is the primary force of influence on governance. It consists of a set of guiding principles, practices and processes to direct its operations from ethical behaviour to risk management over compensation and corporate strategy.
+**Governance** is about keeping the organisation on track while balancing the interests of the organisation's stakeholders such as shareholders, senior management executives, customers, suppliers, financiers, the government, and the community.
 
-In the case of technology, governance provides the vision and the goals on how to implement technology changes to ensure the right stability and throughput to create positive business impact, i.e. generating money (turnover), saving money (cost savings) or protecting money (being ahead of the competition).
+In the case of technology, governance provides the vision and the goals on how to implement technology changes to ensure the right stability and throughput to create positive business impact.
 
-**Risk** is the possibility of something bad happening. It involves the uncertainty of the effects of an activity often focusing on negative, undesirable outcomes. Risk is ubiquitous. It is impossible to eliminate all risks. This brings us to **Risk Management**, i.e. the coordinated activities to direct and control an organization concerning risk. Or said differently: "*Which risks are we willing to accept and which ones not?*". **As we take steps to mitigate risk in one area, we inevitably introduce more risk in another area.**
+**Risk** is the possibility of something bad happening. It is ubiquitous. We can never eliminate all risks. That's why there is a need for **Risk Management**. *Which risks are we willing to accept and which ones not?*. Therefore, **as we are taking steps to mitigate risk in one area, we inevitably introduce more risk in another area.**
 
 ## Are Feature Branches and Pull Requests a necessity for Compliance?
 
