@@ -64,7 +64,7 @@ A breath of kindness to remind me of the lovely people who appreciate me.
 >
 > -- Tobias Goeschel ([@w3ltraumpirat](https://twitter.com/w3ltraumpirat)), [Jan 26, 2021](https://twitter.com/w3ltraumpirat/status/1354057210083614725)
 
-> I still remember the day we met at @PipelineConf in the hotel lobby for a drink. I was just a participant, eager to get on stage and I feel really welcomed by you to do so the next year! Thank you [@tdpauw](https://twitter.com/tdpauw)
+> I still remember the day we met at [@PipelineConf](https://twitter.com/PipelineConf) in the hotel lobby for a drink. I was just a participant, eager to get on stage and I feel really welcomed by you to do so the next year! Thank you [@tdpauw](https://twitter.com/tdpauw)
 >
 > -- Kenny Baas ([@kenny_baas](https://twitter.com/kenny_baas)), [Jan 26, 2021](https://twitter.com/kenny_baas/status/1354053177780428800)
 
