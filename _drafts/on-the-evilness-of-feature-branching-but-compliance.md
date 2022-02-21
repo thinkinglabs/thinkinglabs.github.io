@@ -104,13 +104,17 @@ How can we perform Code Reviews in compliance with regulations? We have several 
    >
    > -- Daniel Terhorst-North ([@tastapod](https://twitter.com/tastapod)), [Jul 15, 2021](https://twitter.com/tastapod/status/1415593667008634882)
 
+   Here Alice commits with her SSL certificate but the commit is signed with Bob's PGP key. The SSL certificate identifies Alice and the PGP signing identifies Bob. We now have evidence the code has been seen by two pairs of eyes and we can trace back which eyes have seen which code.
+
+   When pairs or ensemble teams, in addition, tag each commit with a ticket number from the ticketing system, we now have full traceability on who has seen which commit in the context of which ticket.
+
 2. Asynchronous code reviews, i.e reviewing each commit on mainline after the fact when the change is already committed into mainline. It has the advantage of never blocking the flow of work through the value stream. Code reviews can be traced on a Kanban board with code review work-in-progress limits to ensure they will be done. Reviews are run by a different person from the one authoring the change, enabling segregation.
 
    Again, what about traceability? How do we prove the changes have been reviewed?
 
    Teams tag every commit with a ticket number from the ticketing system. When the change is done and ready for review, they create a code review in a code reviewing tool like [JetBrains Upsource](https://www.jetbrains.com/upsource/) or [Atlassian Crucible](https://www.atlassian.com/software/crucible) (I only know these two and I only have experience with Crucible). These tools can group commits based on a ticket number into a code review. The code review can be linked to the ticketing system. Now we have full traceability on when a feature was reviewed by who in the context of which feature or bug and which commits were involved.
 
-3. Feature Flagging allows us to commit to mainline but not always release. We only turn on the feature and release to users when everything has been thoroughly checked, tested and approved. Before releasing, the change already sits in production days or weeks in advance, giving us valuable feedback on how it behaves in production. We can even mimic production load by having users perform invisible calls to the change. This can easily complement the first two approaches: Pair/Ensemble Programming or Asynchronous reviews.
+3. Feature Flagging allows us to commit to mainline but not always release. We only turn on the feature and release to users when everything has been thoroughly checked, tested and approved. Before releasing, the change already sits in production days or weeks in advance, giving us valuable feedback on how it behaves in production. We can even mimic production load by having users perform invisible calls to the change. This can easily complement the first two approaches: Pair/Ensemble Programming or Asynchronous reviews where a third, other person decides to turn the feature on. Further increasing segregation without impacting the flow of work.
 
 ## Conclusion
 
@@ -122,7 +126,7 @@ In conclusion, feature branching with pull requests is [Risk Management Theatre]
 
 ## Acknowledgment
 
-[Steve Smith](https://twitter.com/SteveSmith_Tech) and [Wouter Lagerweij](https://twitter.com/wouterla) for reviewing multiple drafts of the article.
+[Steve Smith](https://twitter.com/SteveSmith_Tech) and [Wouter Lagerweij](https://twitter.com/wouterla) for reviewing and providing feedback on multiple drafts of the article.
 
 ## Bibliography
 
