@@ -158,3 +158,19 @@ A breath of kindness to remind me of the lovely people who appreciate me.
 > Don’t be too humble! :-)
 >
 > -- Anton Stöckl ([@TonyBologni](https://twitter.com/TonyBologni)), [Feb 19, 2022](https://twitter.com/TonyBologni/status/1494956641850204162)
+
+Reactions on publishing this:
+
+> Seeing your journey from being embarassed at any positive feedback to listing your accomplishments is so, so cool.
+>
+> Keep them coming!
+>
+> -- [Martin Van Aken]([@martinvanaken](https://twitter.com/martinvanaken)), [Feb 21, 2022](https://twitter.com/martinvanaken/status/1495684130964709377)
+
+> Another inspiring example on how @tdpauw leads the way.
+>
+> Making me think about a kindness journal too.
+>
+> [https://twitter.com/tdpauw/status/1495682477930815490](https://twitter.com/tdpauw/status/1495682477930815490)
+>
+> -- Yves Hanoulle ([@YvesHanoulle](https://twitter.com/YvesHanoulle)), [Feb 21, 2022](https://twitter.com/YvesHanoulle/status/1495683819562840065)
