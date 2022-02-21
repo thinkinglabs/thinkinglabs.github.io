@@ -10,6 +10,8 @@ In [part 2 of this series - Why do Teams use Feature Branches?]({% post_url 2021
 
 ---
 
+Compliance is an often-cited reason to introduce all sorts of wasteful non-value-adding activities.
+
 > For us we do [feature branching] because it is the least worst solution when you need to be compliant and implement segregation of duties, enforce 4 eyes principles, strict legal rules, get audited by the national bank, etc… We do strive to automate everything in our pipeline though, so we limit the damage and get the smallest possible delays in the process. I do agree with all you wrote in your post though.
 >
 > ...
@@ -22,8 +24,6 @@ The organisation uses feature branches to adopt a pull request based code review
 
 Interestingly, the 4-eyes principle was already achieved with pair programming. Feature branching is merely in place for tracking purposes - having an audit trail to prove code reviews have been done - and segregation of duty - the person that approves the change is different from the person(s) that implemented the change to avoid fraud, compromised or malicious engineers, or mistakes.
 
-Compliance is an often-cited reason to introduce all sorts of wasteful non-value-adding activities.
-
 ## What is compliance?
 
 **Compliance** is taking steps to comply with relevant laws, industry regulations, legally binding contracts or even cultural norms. **Generally, compliance is not optional** when imposed by law, regulation or contract. In these cases, not complying increases risks for fines, reputational damage or even a shutdown of the business.
@@ -34,17 +34,17 @@ Compliance never comes alone. It goes together with Governance and Risk Manageme
 
 In the case of technology, governance provides the vision and the goals on how to implement technology changes to ensure the right stability and throughput to create positive business impact.
 
-**Risk** is the possibility of something bad happening. It is ubiquitous. We can never eliminate all risks. That's why there is a need for **Risk Management**. *Which risks are we willing to accept and which ones not?*. Therefore, **as we are taking steps to mitigate risk in one area, we inevitably introduce more risk in another area.**
+**Risk** is the possibility of something bad happening. It is ubiquitous. We can never eliminate all risks. Therefore, the need for **Risk Management**. *Which risks are we willing to accept and which ones not?*. **As we are taking steps to mitigate risk in one area, we inevitably introduce more risk in another area.**
 
 ## Are Feature Branches and Pull Requests a necessity for Compliance?
 
-Feature Branches and Pull Requests are definitely not required for compliance. Except in some odd companies that wrote down policies more recently.
+Feature Branches and Pull Requests are definitely not required for compliance.
 
 First of all, most regulations and frameworks like [ITIL](https://en.wikipedia.org/wiki/ITIL), [COBIT](https://en.wikipedia.org/wiki/COBIT) or [Sarbanes-Oxley](https://en.wikipedia.org/wiki/Sarbanes%E2%80%93Oxley_Act) do not prescribe specific practices to implement like 4-eyes and segregation of duties. For instance, many think Sarbanes-Oxley section 404 imposes this. Oftentimes, heavy processes are established as a result of someone misinterpreting what is required, but not mandated by the said regulation or framework. Only the [PCI-DSS](https://en.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard) regulation explicitly requires segregation of duties ([PCI DSS v3.2.1](https://www.pcisecuritystandards.org/documents/PCI_DSS_v3-2-1.pdf?agreement=true), Requirements 6.3.2 Code Reviews, 6.4 Change Control and 6.4.2 Separation of Duties).
 
 Sadly enough, organisations frequently follow the "**wouldn't it be horrible if**" approach to risk management (from "*How to measure anything*", Douglas Hubbard). They imagine a particularly catastrophic event that could happen. It must be prevented at any cost regardless of its likelihood.
 
-Instead, we should quantify risks using [Impact Mapping](https://www.impactmapping.org/) and prioritise using the [Cost of Delay](https://blackswanfarming.com/cost-of-delay/). This upfront risk assessment will prevent a lot of pain when going to production. By identifying these risks we can introduce the most appropriate controls to comply with the organisation's regulations. However, the challenge will be to find the right balance of controls, in the context of the applicable regulations, that still allow teams to deliver value fast and keep risks at an acceptable low level.
+Instead, we should quantify risks using [Impact Mapping](https://www.impactmapping.org/) and prioritise using the [Cost of Delay](https://blackswanfarming.com/cost-of-delay/). This upfront risk assessment will prevent a lot of pain when going to production. By identifying these risks we can introduce the most appropriate controls to comply with the organisation's regulations. However, the challenge will be to find the right balance of controls, in the context of the applicable regulations, that still allow teams to deliver value fast while keeping risks at an acceptable low level.
 
 The controls can be **preventive** by applying barriers or **detective** by monitoring.
 
@@ -70,13 +70,13 @@ In this context, pull request based code reviews are an example of segregation o
 >
 > -- someone leading the DevOps initiative at a large US financial services organisation from The DevOps Handbook, Chapter 23. Protecting the Deployment Pipeline, p344
 
-*Despite having established preventive controls like code reviews and approvals, fraud happened at that large financial US organisation. One malicious engineer planted a backdoor in the code deployed to the ATM cash machines. They were able to put the ATMs into maintenance mode at certain times allowing them to take cash out of the machines. The fraud was not detected through code review. It was quickly detected employing detective controls using proactive production monitoring.*
+*Despite having established preventive controls like code reviews and approvals, fraud still happened at that large financial US organisation. One malicious engineer planted a backdoor in the code deployed to the ATM cash machines. They were able to put the ATMs into maintenance mode at certain times allowing them to take cash out of the machines. The fraud was not detected through code review. It was quickly detected employing detective controls using proactive production monitoring.*
 
 ---
 
-Scientific research from [Dr Nicole Forsgren](https://twitter.com/nicolefv) and the book [Accelerate](https://www.goodreads.com/book/show/35747076-accelerate) (also by Dr Nicole Forsgren and friends) found that change approval does not reduce risks nor does it increase the stability of systems. On the contrary, it slows down IT delivery. They also found that both teams reporting no change approval and teams performing peer-reviews achieve a higher delivery performance.
+Scientific research from [Dr Nicole Forsgren](https://twitter.com/nicolefv) and the book [Accelerate](https://www.goodreads.com/book/show/35747076-accelerate) (also by Dr Nicole Forsgren and friends) found that change approval does not reduce risks nor does it increase the stability of systems. On the contrary, it slows down IT delivery. They also found that teams reporting no change approval and teams reporting to perform peer-reviews both achieve a higher delivery performance.
 
-Preventive controls like pull request based code reviews become easily useless and introduce a false sense of security. It reduces feedback for engineers. Did we implement the right thing? Is it being used? Is it behaving as expected? How is it being used? Is it behaving nicely? Doesn't it cause any harm? ... In the end, it prevents engineers to take full responsibility for their work and it reduces learning.
+Preventive controls like pull request based code reviews become easily useless and introduce a false sense of security. It reduces feedback for engineers. Did we implement the right thing? Is it being used? Is it behaving as expected? How is it being used? Is it behaving nicely? Does it not cause any harm? ... In the end, it prevents engineers to take full responsibility for their work and it reduces learning.
 
 That said, if our activity is covered by PCI-DSS, alright, unfortunately, we will have to rely on code reviews with segregation of duties where the person who reviews the change is different from the person(s) authoring the change. However, that does not mean we have to adopt feature branching and pull requests. There are other ways to achieve the same. Now be aware, we only have to implement this control for that one activity covered by PCI-DSS, not for the whole organisation (see [PCI-DSS and continuous deployment at Etsy](https://continuousdelivery.com/2012/07/pci-dss-and-continuous-deployment-at-etsy/) and "*Case Study: PCI Compliance and a Cautionary Tale of Separating Duties at Etsy*" from The DevOps Handbook p339).
 
@@ -110,7 +110,7 @@ How can we perform Code Reviews in compliance with regulations? We have several 
 
    Teams tag every commit with a ticket number from the ticketing system. When the change is done and ready for review, they create a code review in a code reviewing tool like [JetBrains Upsource](https://www.jetbrains.com/upsource/) or [Atlassian Crucible](https://www.atlassian.com/software/crucible) (I only know these two and I only have experience with Crucible). These tools can group commits based on a ticket number into a code review. The code review can be linked to the ticketing system. Now we have full traceability on when a feature was reviewed by who in the context of which feature or bug and which commits were involved.
 
-3. Feature Flagging allows us to commit to mainline but not always release. We only turn on the feature and release to users when everything has been thoroughly checked, tested and approved. Before releasing, the change already sits in production days or weeks in advance, giving us valuable feedback on how it behaves in production. We can even mimic production load by having invisible calls to the change.  This can easily complement the first two approaches: Pair/Ensemble Programming and Asynchronous reviews.
+3. Feature Flagging allows us to commit to mainline but not always release. We only turn on the feature and release to users when everything has been thoroughly checked, tested and approved. Before releasing, the change already sits in production days or weeks in advance, giving us valuable feedback on how it behaves in production. We can even mimic production load by having users perform invisible calls to the change.  This can easily complement the first two approaches: Pair/Ensemble Programming or Asynchronous reviews.
 
 ## Conclusion
 
