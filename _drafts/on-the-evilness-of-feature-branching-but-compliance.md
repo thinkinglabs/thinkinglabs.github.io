@@ -44,7 +44,7 @@ First of all, most regulations and frameworks like [ITIL](https://en.wikipedia.o
 
 Sadly enough, organisations frequently follow the "**wouldn't it be horrible if**" approach to risk management (from "*How to measure anything*", Douglas Hubbard). They imagine a particularly catastrophic event that could happen. It must be prevented at any cost regardless of its likelihood.
 
-Instead, we should quantify risks using [Impact Mapping](https://www.impactmapping.org/) and prioritise using the [Cost of Delay](https://blackswanfarming.com/cost-of-delay/). This upfront risk assessment will prevent a lot of pain when going to production. By identifying these risks we can introduce the most appropriate controls to comply with the organisation's regulations. However, the challenge will be to find the right balance of controls, in the context of the applicable regulations, that still allow teams to deliver value fast while keeping risks at an acceptable low level.
+Instead, we should quantify risks using [Impact Mapping](https://www.impactmapping.org/) and prioritise using the [Cost of Delay](https://blackswanfarming.com/cost-of-delay/). This upfront risk assessment will prevent a lot of pain when going to production. By identifying these risks we can introduce the most appropriate controls to comply with the organisation's regulations. However, the challenge will be to find the right balance of controls, in the context of the applicable regulations, that still allow teams to deliver value fast while keeping risks at an acceptable low level. Even so, compliance and speed are not a dichotomy. We can have both.
 
 The controls can be **preventive** by applying barriers or **detective** by monitoring.
 
@@ -74,7 +74,7 @@ In this context, pull request based code reviews are an example of segregation o
 
 ---
 
-Scientific research from [Dr Nicole Forsgren](https://twitter.com/nicolefv) and the book [Accelerate](https://www.goodreads.com/book/show/35747076-accelerate) (also by Dr Nicole Forsgren and friends) found that change approval does not reduce risks nor does it increase the stability of systems. On the contrary, it slows down IT delivery. They also found that teams reporting no change approval and teams reporting to perform peer-reviews both achieve a higher delivery performance.
+Scientific research from [Dr Nicole Forsgren](https://twitter.com/nicolefv) and the book [Accelerate](https://www.goodreads.com/book/show/35747076-accelerate) (also by Dr Nicole Forsgren and friends) found that change approval does not reduce risks nor does it increase the stability of systems. Though, it certainly slows down IT delivery. They also found that teams reporting no change approval and teams reporting to perform peer-reviews both achieve a higher delivery performance.
 
 Preventive controls like pull request based code reviews become easily useless and introduce a false sense of security. It reduces feedback for engineers. Did we implement the right thing? Is it being used? Is it behaving as expected? How is it being used? Is it behaving nicely? Does it not cause any harm? ... In the end, it prevents engineers to take full responsibility for their work and it reduces learning.
 
