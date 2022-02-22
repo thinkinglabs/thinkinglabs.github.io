@@ -40,15 +40,15 @@ In the case of technology, governance provides the vision and the goals on how t
 
 Feature Branches and Pull Requests are definitely not required for compliance.
 
-First of all, most regulations and frameworks like [ITIL](https://en.wikipedia.org/wiki/ITIL), [COBIT](https://en.wikipedia.org/wiki/COBIT) or [Sarbanes-Oxley](https://en.wikipedia.org/wiki/Sarbanes%E2%80%93Oxley_Act) do not prescribe specific practices to implement like 4-eyes and segregation of duties. For instance, many think Sarbanes-Oxley section 404 imposes this. Oftentimes, heavy processes are established as a result of someone misinterpreting what is required, but not mandated by the said regulation or framework. Only the [PCI-DSS](https://en.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard) regulation explicitly requires segregation of duties ([PCI DSS v3.2.1](https://www.pcisecuritystandards.org/documents/PCI_DSS_v3-2-1.pdf?agreement=true), Requirements 6.3.2 Code Reviews by individuals other than the originating code author and 6.4.2 Separation of Duties between development/test and production environments).
+First of all, most regulations and frameworks like [ITIL](https://en.wikipedia.org/wiki/ITIL), [COBIT](https://en.wikipedia.org/wiki/COBIT) or [Sarbanes-Oxley](https://en.wikipedia.org/wiki/Sarbanes%E2%80%93Oxley_Act) do not prescribe specific practices to implement like 4-eyes and segregation of duties. For instance, many think Sarbanes-Oxley section 404 imposes this. Oftentimes, heavy processes are established as a result of someone misinterpreting what is required, but not mandated by the said regulation or framework. Only the [PCI-DSS](https://en.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard) regulation explicitly requires segregation of duties ([PCI DSS v3.2.1](https://www.pcisecuritystandards.org/documents/PCI_DSS_v3-2-1.pdf?agreement=true), Requirements *6.3.2 Code Reviews by individuals other than the originating code author* and *6.4.2 Separation of Duties between development/test and production environments*).
 
 Sadly enough, organisations frequently follow the "**wouldn't it be horrible if**" approach to risk management (from "*How to measure anything*", Douglas Hubbard). They imagine a particularly catastrophic event that could happen. It must be prevented at any cost regardless of its likelihood.
 
-Instead, we should quantify risks using [Impact Mapping](https://www.impactmapping.org/) and prioritise using the [Cost of Delay](https://blackswanfarming.com/cost-of-delay/). This upfront risk assessment will prevent a lot of pain when going to production. By identifying these risks we can introduce the most appropriate controls to comply with the organisation's regulations. However, the challenge will be to find the right balance of controls, in the context of the applicable regulations, that still allow teams to deliver value fast while keeping risks at an acceptable low level. Even so, compliance and speed are not a dichotomy. We can have both.
+Instead, we should quantify risks using [Impact Mapping](https://www.impactmapping.org/) and prioritise using the [Cost of Delay](https://blackswanfarming.com/cost-of-delay/). This upfront risk assessment will prevent a lot of pain when going to production. By identifying these risks we can introduce the most appropriate controls to comply with the organisation's regulations. However, the challenge will be to find the right balance of controls, in the context of the applicable regulations, that still allow teams to deliver value fast while keeping risks at an acceptable low level. Nevertheless, compliance and speed are not a dichotomy. We can have both.
 
 The controls can be **preventive** by applying barriers or **detective** by monitoring.
 
-Often organisations rely on segregation of duties as a preventive control to reduce the risk for fraud or mistakes. Many think preventive controls are more effective. But, the opposite is true. In today's highly complex systems where cause and effects are only known in hindsight with unpredictable, emergent outcomes, we can only probe, sense and respond. Therefore, we can only conduct safe to fail experiments to obtain fast feedback on the outcomes of our changes. Enabling us to take new decisions for new experiments to run. Also, teams need to get things done, often under delivery pressure. To deliver, they will find all sorts of creative ways to get around these preventive controls. In the end, the outcome of preventive controls is not reducing risks. But, paradoxically, they will increase risks, lead to unnecessarily high costs, or worse people will stop caring and improvement will come to a halt.
+Often organisations rely on segregation of duties as a preventive control to reduce the risk for fraud or mistakes. Many think preventive controls are more effective. But, the opposite is true. In today's highly complex systems where cause and effects are only known in hindsight with unpredictable, emergent outcomes, we can only probe, sense and respond. Therefore, we can only conduct safe to fail experiments to obtain fast feedback on the outcomes of our changes. Enabling us to make new decisions about new experiments to run. Also, teams need to get things done, often under delivery pressure. To deliver, they will find all sorts of creative ways to get around these preventive controls. In the end, the outcome of preventive controls is not reducing risks. But, paradoxically, they will increase risks, lead to unnecessarily high costs, or worse people will stop caring and improvement will come to a halt.
 
 In this context, pull request based code reviews are an example of segregation of duties and as such a preventive control. It creates an illusion of control on technology changes together with an illusion of quality and it allows to tick the compliance checkbox. But, in general, it is bad for delivery.
 
@@ -74,7 +74,7 @@ In this context, pull request based code reviews are an example of segregation o
 
 ---
 
-Scientific research from [Dr Nicole Forsgren](https://twitter.com/nicolefv) and the book [Accelerate](https://www.goodreads.com/book/show/35747076-accelerate) (also by Dr Nicole Forsgren and friends) found that change approval does not reduce risks nor does it increase the stability of systems. Though, it certainly slows down IT delivery. They also found that teams reporting no change approval and teams reporting to perform peer-reviews both achieve a higher delivery performance.
+Scientific research from [Dr Nicole Forsgren](https://twitter.com/nicolefv) and the book [Accelerate](https://www.goodreads.com/book/show/35747076-accelerate) (also by Dr Nicole Forsgren and friends) found that change approval does not reduce risks nor does it increase the stability of systems. Though, it certainly slows down IT delivery. They also found that teams reporting no change approval and teams performing peer-reviews both achieve a higher delivery performance.
 
 Preventive controls like pull request based code reviews become easily useless and introduce a false sense of security. It reduces feedback for engineers. Did we implement the right thing? Is it being used? Is it behaving as expected? How is it being used? Is it behaving nicely? Does it not cause any harm? ... In the end, it prevents engineers to take full responsibility for their work and it reduces learning.
 
@@ -106,7 +106,7 @@ How can we perform Code Reviews in compliance with regulations? We have several 
 
    Here Alice commits with her SSL certificate but the commit is signed with Bob's PGP key. The SSL certificate identifies Alice and the PGP signing identifies Bob. We now have evidence the code has been seen by two pairs of eyes and we can trace back which eyes have seen which code.
 
-   When pairs or ensemble teams, in addition, also tag each commit with a ticket number from the ticketing system, we now have full traceability on who has seen/authored which commit in the context of which ticket.
+   When pairs or ensemble teams, in addition, also tag each commit with a ticket number from the ticketing system, we now have full traceability on who has seen/authored which commit in the context of which feature or bug.
 
 2. Asynchronous code reviews, i.e reviewing each commit on mainline after the fact when the change is already committed into mainline. It has the advantage of never blocking the flow of work through the value stream. Code reviews can be traced on a Kanban board with code review work-in-progress limits to ensure they will be done. Reviews are run by a different person from the one authoring the change, enabling segregation.
 
@@ -118,7 +118,7 @@ How can we perform Code Reviews in compliance with regulations? We have several 
 
 ## Conclusion
 
-Lean principles and continuous delivery enable a fine-grained and adaptive approach to risk management. As we work in small batches and we can trace each change from commit to deployment, we can quantify the risk of each change and manage it appropriately.
+Lean principles and Continuous Delivery enable a fine-grained and adaptive approach to risk management. As we work in small batches and we can trace each change from commit to deployment, we can quantify the risk of each change and manage it appropriately.
 
 It is a fallacy to think feature branches are a necessity to comply with regulations. Compliance can be achieved with trunk-based development. It requires a bit more creativity, a bit more thinking out of the box, a bit more of engineering talking with legal and auditors, a bit less control and a bit more trust.
 
@@ -148,3 +148,16 @@ In conclusion, feature branching with pull requests is [Risk Management Theatre]
 - [Governance, Risk Management and Compliance (GRC)](https://www.investopedia.com/terms/g/grc.asp), Investopedia
 - [Corporate Governance](https://www.investopedia.com/terms/c/corporategovernance.asp), Investopedia
 - [Risk](https://en.wikipedia.org/wiki/Risk), Wikipedia
+
+## The Series
+
+The [On the Evilness of Feature Branching]({% post_url 2021-04-26-on-the-evilness-of-feature-branching %}) series:
+
+1. [A Tale of Two Teams]({% post_url 2021-07-14-on-the-evilness-of-feature-branching-a-tale-of-two-teams %})
+2. [Why Do Teams Use Feature Branches?]({% post_url 2021-10-25-on-the-evilness-of-feature-branching-why-do-teams-use-feature-branches %})
+3. But Compliance!?
+4. Why Are Feature Branches a Problem?
+5. How Can We Avoid Feature Branching Problems?
+6. Questions I Regularly Get Asked about Trunk-Based Development
+7. What Are The Benefits of Trunk-Based Development?
+8. Where is the Evilness of Feature Branching?
