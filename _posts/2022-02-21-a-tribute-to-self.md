@@ -180,3 +180,9 @@ Reactions on publishing this:
 > [https://twitter.com/tdpauw/status/1495682477930815490](https://twitter.com/tdpauw/status/1495682477930815490)
 >
 > -- Gerald Benischke ([@giskard23](https://twitter.com/giskard23)), [Feb 22, 2021](https://twitter.com/giskard23/status/1495919136819531779)
+
+> Retweeting this so more people follow Thierry.  Worth your time.
+>
+> [https://twitter.com/tdpauw/status/1495682477930815490](https://twitter.com/tdpauw/status/1495682477930815490)
+>
+> -- Marc Burgauer ([@somesheep](https://twitter.com/somesheep)), [Feb 23, 2022](https://twitter.com/somesheep/status/1496586942162640905)
