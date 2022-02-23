@@ -174,3 +174,9 @@ Reactions on publishing this:
 > [https://twitter.com/tdpauw/status/1495682477930815490](https://twitter.com/tdpauw/status/1495682477930815490)
 >
 > -- Yves Hanoulle ([@YvesHanoulle](https://twitter.com/YvesHanoulle)), [Feb 21, 2022](https://twitter.com/YvesHanoulle/status/1495683819562840065)
+
+> It’s ok to be proud of your achievements! To do it in a way that spreads kindness in a medium that so often feeds off malice takes real skill. Well done [@tdpauw](https://twitter.com/tdpauw) !
+>
+> [https://twitter.com/tdpauw/status/1495682477930815490](https://twitter.com/tdpauw/status/1495682477930815490)
+>
+> -- Gerald Benischke ([@giskard23](https://twitter.com/giskard23)), [Feb 22, 2021](https://twitter.com/giskard23/status/1495919136819531779)
