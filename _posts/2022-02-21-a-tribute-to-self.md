@@ -10,6 +10,42 @@ A breath of kindness to remind me of the lovely people who appreciate me.
 
 ---
 
+*Update Mar 9, 2022: Add reactions to the publication of this article. Add more tributes from the time around XP2017.*
+
+> [@tdpauw](https://twitter.com/tdpauw) demolishing the reasons for feature branching one by one [#XP2017](https://twitter.com/hashtag/XP2017?src=hashtag_click)
+>
+> -- Giovanni Asproni ([@gasproni](https://twitter.com/gasproni)), [May 23, 2017](https://twitter.com/gasproni/status/866981883166502913)
+
+> I liked your preso very much.
+>
+> -- Jeff Sussna ([@jeffsussna](https://twitter.com/jeffsussna)), [May 24, 2017](https://twitter.com/jeffsussna/status/867380674344386560)
+>
+> your use of illustrations was very effective
+>
+> -- Jeff Sussna ([@jeffsussna](https://twitter.com/jeffsussna)), [May 24, 2017](https://twitter.com/jeffsussna/status/867392165336502273)
+
+> My pleasure. I really enjoy materials which challenge that which has become (essentially) "unchallengeable." Great job!
+>
+> -- Ash Winter, ([@northern_tester](https://twitter.com/northern_tester)), [May 24, 2017](https://twitter.com/northern_tester/status/867395235239927809)
+
+> ... [@tdpauw](https://twitter.com/tdpauw) nice preso, BTW
+>
+> -- Paul Hammant ([@paul_hammant](https://twitter.com/paul_hammant)), [May 25, 2017](https://twitter.com/paul_hammant/status/867785096719474688)
+>
+> And yes it's great to see this preso get so much positive feedback, including from the Godfather of TBD :)
+>
+> -- Steve Smith ([@SteveSmith_Tech](https://twitter.com/SteveSmith_Tech)), [May 29, 2017](https://twitter.com/SteveSmith_Tech/status/868975823612764160)
+
+> A solid argument against feature branching, arguing that there are many ways of using a distributed version control system, not all of them good.
+>
+> [https://speakerdeck.com/tdpauw/xp2017-feature-branching-is-evil](https://speakerdeck.com/tdpauw/xp2017-feature-branching-is-evil)
+>
+> -- DevOps Weekly, [#335 May 28, 2017](https://devopsweeklyarchive.com/335/)
+
+> [@tdpauw](https://twitter.com/tdpauw) congrats for the devops weekly mention : [https://speakerdeck.com/tdpauw/xp2017-feature-branching-is-evil](https://speakerdeck.com/tdpauw/xp2017-feature-branching-is-evil) ! Not sure I have always the maturity for it.
+>
+> -- Stéphan Mestach ([@mestachs](https://twitter.com/mestachs)), [May 29, 2017](https://twitter.com/mestachs/status/869272907352092673)
+
 > Thierry de Pauw live in very shortly at Room 3. Make sure to get down to the stages early as places fill up fast 🚀🙋‍♀️🙋‍♂️ [@CodemotionIT](https://twitter.com/CodemotionIT) [@tdpauw](https://twitter.com/tdpauw)
 >
 > -- Codemotion ([@CodemotionIT](https://twitter.com/CodemotionIT)), [Nov 29, 2018](https://twitter.com/CodemotionIT/status/1068159252806680576)
@@ -21,6 +57,10 @@ A breath of kindness to remind me of the lovely people who appreciate me.
 > I heard a wise man a while ago say that you are amazing. Now over 300 people were intrigued enough to teat this assumption 😉
 >
 > -- Erik Talboom ([@talboomerik](https://twitter.com/talboomerik)), [Dec 4, 2018](https://twitter.com/talboomerik/status/1069842925868208129)
+
+> [@ChrisAnnODell](https://twitter.com/ChrisAnnODell) [@tdpauw](https://twitter.com/tdpauw) Hey, Both of you! Stop whining! You know you are very good speakers, get over it!
+>
+> -- Giovanni Asproni ([@gasproni](https://twitter.com/gasproni)), [Jan 17, 2019](https://twitter.com/gasproni/status/1085993578952830977)
 
 > [...] Awesome conversations on #testingindevops, #moderntesting & more. [@tdpauw](https://twitter.com/tdpauw) is a walking encyclopedia of testing & devOps knowledge, so glad to meet him [...]
 >
@@ -83,6 +123,12 @@ A breath of kindness to remind me of the lovely people who appreciate me.
 >
 > -- Steve Smith ([@SteveSmith_Tech](https://twitter.com/SteveSmith_Tech)), [Jul 16, 2021](https://twitter.com/SteveSmith_Tech/status/1415996182866845696)
 
+> A post on the complexity of branching strategies and the fact many teams just take that friction for granted rather than try something simpler.
+>
+> [https://thinkinglabs.io/articles/2021/07/14/on-the-evilness-of-feature-branching-a-tale-of-two-teams.html](https://thinkinglabs.io/articles/2021/07/14/on-the-evilness-of-feature-branching-a-tale-of-two-teams.html)
+>
+> -- DevOps Weekly, [#551 Jul 18, 2021](https://devopsweeklyarchive.com/551/)
+
 > Thanks to [@tdpauw](https://twitter.com/tdpauw)
 > and [@w3ltraumpirat](https://twitter.com/w3ltraumpirat)
 > for your nice little "theatre play" (dialogue) at [#SoCraTes2021](https://twitter.com/hashtag/SoCraTes2021?src=hashtag_click) on the Theory of Constraints, it was very entertaining and educational. I think "The Goal" by  Eliyahu M. Goldratt will be one of my next reads.
@@ -98,6 +144,10 @@ A breath of kindness to remind me of the lovely people who appreciate me.
 > Ik ga morgen je artikel lezen! Ben erg benieuwd, en ik steek van jouw schrijfwerk altijd mooie nieuwe manieren op om het over dingen te hebben...
 >
 > -- Wouter L., Oct 18, 2021
+
+> [On the Evilness of Feature Branching - Why Do Teams Use Feature Branches]({% post_url 2021-10-25-on-the-evilness-of-feature-branching-why-do-teams-use-feature-branches %}). Thierry's comprehensive and thought-provoking article is definitely a recommended read to get inspired from and improve your delivery pipeline.
+>
+> -- Lisi Hocke ([@lisihocke](https://twitter.com/lisihocke)), [Recommended Resources on Testing and Quality](https://www.lisihocke.com/p/testing-and-quality.html#blogs)
 
 > [...] additional bonus: Thierry is an amazing human I'm happy to know, and might be up for a conversation about the topic ([@tdpauw](https://twitter.com/tdpauw): Toyer is my learning partner for many years now and an amazing human as well 😉)
 >
