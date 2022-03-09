@@ -217,7 +217,7 @@ Reactions on publishing this:
 >
 > -- [Martin Van Aken]([@martinvanaken](https://twitter.com/martinvanaken)), [Feb 21, 2022](https://twitter.com/martinvanaken/status/1495684130964709377)
 
-> Another inspiring example on how @tdpauw leads the way.
+> Another inspiring example on how [@tdpauw](https://twitter.com/tdpauw) leads the way.
 >
 > Making me think about a kindness journal too.
 >
