@@ -74,7 +74,7 @@ In the past, I had my fair share of discussions with teams about what is an acce
 >
 > -- Brian Marick, [How to Misuse Code Coverage](http://www.exampler.com/testing-com/writings/coverage.pdf)
 
-Often, teams use code coverage because they want to have a feeling of whether they test enough. However, as we have seen, high coverage numbers do not mean much. Moreover, it [promotes ignorance for the unknowns](https://sriramnarayan.blogspot.com/2011/04/dashboards-promote-ignorance.html?m=0). Where here, the unknowns are the missing assertions. Therefore, **having a green metric has very little value**. It only tells us the coverage seems ok but it requires subjectivity to assess whether the testing is in effect valuable or not.
+Often, teams use code coverage because they want to have a feeling of whether they test enough. However, as we have seen, high coverage numbers do not mean much. Moreover, it [promotes ignorance for the unknowns](https://sriramnarayan.blogspot.com/2011/04/dashboards-promote-ignorance.html?m=0). Where here, the unknowns are the missing assertions. Therefore, **having a green metric has very little value**. It only tells us the coverage seems ok, but it requires subjectivity to assess whether the testing is in effect valuable or not. Too many teams rely solely on code coverage to gain confidence in their releases. Or worse, to pretend they do not need testers because their code is fully covered. Yet, it just shows teams do not know which feedback they are missing while having a false sense of safety.
 
 In this way, coverage metrics do not tell us anything useful about the quality of our system or the quality of our testing, nor what has been tested.
 
