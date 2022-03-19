@@ -54,9 +54,7 @@ This is a perfect example of [Goodhart's Law](https://en.wikipedia.org/wiki/Good
 >
 > -- Goodhart's Law, [Wikipedia](https://en.wikipedia.org/wiki/Goodhart%27s_law)
 
-Or said differently:
-
-> Any metric loses its value whenever it becomes a target.
+Or said differently: **Any metric loses its value whenever it becomes a target.**
 
 To illustrate the madness of a 100% code coverage target, I have put together  [`the-100percent-code-coverage-fallacy` GitHub repo](https://github.com/thinkinglabs/the-100percent-code-coverage-fallacy). It showcases a system having 100% code coverage. But all tests are [Assertion Free Tests](https://martinfowler.com/bliki/AssertionFreeTesting.html). When executing [Mutation Testing](https://en.wikipedia.org/wiki/Mutation_testing), zero of the mutations are being killed. Which results in zero helpful tests. Although the system has 100% code coverage, it achieves an abysmally low testing quality.
 
