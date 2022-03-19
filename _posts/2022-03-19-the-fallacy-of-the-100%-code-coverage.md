@@ -96,7 +96,7 @@ To conclude, 100% code coverage is a lousy target. More interesting is to unders
 
 ## Acknowledgments
 
-[Lisi Hocke](https://twitter.com/lisihocke) for reviewing multiple drafts of this article and providing constructive feedback.
+[Lisi Hocke](https://twitter.com/lisihocke) for reviewing multiple drafts of this article and providing constructive feedback and new insights.
 
 ## Bibliography
 
