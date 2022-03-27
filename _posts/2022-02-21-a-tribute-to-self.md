@@ -10,7 +10,11 @@ A breath of kindness to remind me of the lovely people who appreciate me.
 
 ---
 
-*Update Mar 9, 2022: Add reactions to the publication of this article. Add more tributes from the time around XP2017.*
+*Update Mar 9, 2022: Add reactions to the publication of this article.*
+
+*Update Mar 9, 2022: Add more tributes from the time around XP2017.*
+
+---
 
 > [@tdpauw](https://twitter.com/tdpauw) demolishing the reasons for feature branching one by one [#XP2017](https://twitter.com/hashtag/XP2017?src=hashtag_click)
 >

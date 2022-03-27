@@ -20,6 +20,8 @@ Law literature.
 
 *Update June 27, 2021: Add how incremental software development impacts the organisation.*
 
+---
+
 The original definition of **Conway's Law** by Melvin Conway.
 
 > Organisations which design systems are constrained to produce designs which are copies of the communication structures of these organisations.

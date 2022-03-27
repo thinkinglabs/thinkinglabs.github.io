@@ -17,6 +17,8 @@ reasons? What problems are they trying to solve with long-running branches?
 
 *Update Jan 10, 2022: Add [Jez Humble](https://twitter.com/jezhumble)'s tweet on Pair Programming vs Code Review as a conclusion to the controlling quality section.*
 
+---
+
 > I like the way that question is asked. It gets people in the state of mind of
 > wondering _why_ someone else doesn't see the world like they/we do. And they
 > really don't, but it's gonna make sense in their own context.
