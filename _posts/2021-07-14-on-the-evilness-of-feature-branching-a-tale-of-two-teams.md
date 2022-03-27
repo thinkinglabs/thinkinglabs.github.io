@@ -16,6 +16,10 @@ GitFlow.
 *Update Oct 20, 2021: Add [Johanna Rothman](https://twitter.com/johannarothman)'s
 confirmation that novice teams can practise trunk-based development.*
 
+*Update Mar 27, 2021: Add [Steve Freeman](https://twitter.com/sf105)'s confirmation novice teams can practice trunk-based development*
+
+---
+
 In 2012, I started a technical coaching mission to upscale the software
 engineering skills of a rather novice team. Novice from an engineering
 perspective, not so much from a working-experience perspective. They had
@@ -182,9 +186,12 @@ can do this, as well as experienced teams are not able to.
 >
 > -- Johanna Rothman ([@johannarothman](https://twitter.com/johannarothman)), [Jul 15, 2021](https://twitter.com/johannarothman/status/1415658424956772354)
 
-It all comes down to
-having the right mindset. A can-do mindset. A whatever-happens-this-will-work
-mindset. And also knowing what practices to apply to facilitate this. I will
+> Of course novice teams can do trunk-based development, for a long time that was all we had.
+>
+> -- Steve Freeman ([@sf105](https://twitter.com/sf105)), [Jul 15, 2021](https://twitter.com/sf105/status/1415643751255580673)
+
+It all comes down to having the right mindset. A can-do mindset. A whatever-happens-this-will-work
+mindset. As well as knowing what practices to apply to facilitate this. I will
 come back to this in a future article.
 
 Though I have a limited set of data, others having enough data as [The State
