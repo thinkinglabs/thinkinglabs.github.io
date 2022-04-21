@@ -16,7 +16,7 @@ GitFlow.
 *Update Oct 20, 2021: Add [Johanna Rothman](https://twitter.com/johannarothman)'s
 confirmation that novice teams can practise trunk-based development.*
 
-*Update Mar 27, 2021: Add [Steve Freeman](https://twitter.com/sf105)'s confirmation novice teams can practice trunk-based development*
+*Update Mar 27, 2021: Add [Steve Freeman](https://twitter.com/sf105)'s confirmation novice teams can practice trunk-based development.*
 
 ---
 
@@ -48,7 +48,7 @@ expected as I discovered again in 2018 and 2020.
 >
 > Last category may even lack tooling
 >
-> -- Allan Kelly [@allankellynet](https://twitter.com/allankellynet), [Nov 8, 2020](https://twitter.com/allankellynet/status/1325491840146149377)
+> -- Allan Kelly ([@allankellynet](https://twitter.com/allankellynet)), [Nov 8, 2020](https://twitter.com/allankellynet/status/1325491840146149377)
 
 Obviously, as a first action, we **introduced version control**. As the
 team was a novice in using version control systems, I thought Git would be a

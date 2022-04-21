@@ -8,6 +8,8 @@ tags: [Testing]
 
 Is pursuing 100% code coverage a good or a bad thing? Code coverage is an interesting metric. However, 100% code coverage is a crappy target. It encourages gaming.
 
+*Update Apr 21, 2022: Add [Micheal Feathers](https://twitter.com/mfeathers)' observation it is hard to go wrong when you use curiosity to drive your test writing.*
+
 ---
 
 In 2019, at one of those exquisite dinners that define [SoCraTes France](https://socrates-fr.github.io/) I had the following conversation:
@@ -22,7 +24,7 @@ In 2019, at one of those exquisite dinners that define [SoCraTes France](https:/
 
 ## Definitions
 
-Before we move on, let me first clarify what *Code Coverage* is and how it relates to *Test Coverage*? Many people, including myself, conflate both terms and use both interchangeably. Though, they mean different things.
+Before we move on, let me first clarify what *Code Coverage* is and how it relates to *Test Coverage*. Many people, including myself, conflate both terms and use both interchangeably. Though, they mean different things.
 
 **Test Coverage** gives the percentage of functional requirements covered by tests. It is a somewhat subjective measure. The measure only relates to the *known* functional requirements and does not include all of the *unknowns*. It is an attempt to measure the effectiveness of testing. Yet, the Testers' community also questions that. A better approach to measure the efficacy is using [Mutation Testing](https://en.wikipedia.org/wiki/Mutation_testing). We will come back to this further down the article.
 
@@ -84,7 +86,13 @@ But, what is good code coverage in the end?
 >
 > -- Alberto Savoia, [How much test coverage do you need? - The Testivus Answer](https://getpocket.com/read/154805457)
 
-We should focus our test design on the high-risk code, i.e. the code that could cause severe damage, has many users or might have many mistakes whose costs add up or focus on the core of the system. It might be we only achieve 30% coverage. In reality, this is ok if with this 30% we cover the core of our system or all high-risk code.
+We should focus our test design on the high-risk code, i.e. the code that could cause severe damage, has many users or might have many mistakes whose costs add up. It might be we only achieve 30% coverage. In reality, this is ok if with this 30% we cover the core of our system or all high-risk code.
+
+> [...] Only thing I'd add is that it is hard to go wrong when you use curiosity to guide your test writing. Tests are driven by the need to understand. The right things get covered.
+>
+> -- Michael Feathers ([@mfeathers](https://twitter.com/mfeathers)), [Mar 25, 2022](https://twitter.com/mfeathers/status/1507401657092501504)
+
+**Curiosity helps to articulate questions as tests.** Which is not surprising, as an exploratory mindset helps to discover new and valuable information. As soon as we understand the problem better, we will find better ways to cover the right things with tests.
 
 In the end, we could say we have enough (automated) tests when production bugs are rare and we are rarely afraid of breaking anything after a code change. Though as [Lisi Hocke](https://twitter.com/lisihocke) rightfully observes, the first is not only accomplished with automated tests. There is more at play to reduce the likelihood of production bugs, like manual exploratory testing and other kinds of tests. That said, enough automated tests will likely reduce both the obvious and the harmful production bugs because the automated tests introduce the required fast feedback to allow for quick fixes. Any other less obvious or less harmful issues, which in the end might be quite a lot, are maybe not hurting enough to justify being caught upfront. As long as we have the right practices in place, allowing for fast recovery.
 
