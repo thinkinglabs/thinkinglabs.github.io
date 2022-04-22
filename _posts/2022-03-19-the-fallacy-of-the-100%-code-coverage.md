@@ -92,7 +92,7 @@ We should focus our test design on the high-risk code, i.e. the code that could 
 >
 > -- Michael Feathers ([@mfeathers](https://twitter.com/mfeathers)), [Mar 25, 2022](https://twitter.com/mfeathers/status/1507401657092501504)
 
-**Curiosity helps to articulate questions as tests.** Which is not surprising, as an exploratory mindset helps to discover new and valuable information. As soon as we understand the problem better, we will find better ways to cover the right things with tests.
+That is also not surprising. An exploratory mindset helps to discover new and valuable information. As soon as we understand the problem better, we will find better ways to cover the right things with tests. Here, **curiosity helps to articulate the questions as tests**. As such, the correct use cases get covered. Which inevitably leads to higher coverage of the high-risk code.
 
 In the end, we could say we have enough (automated) tests when production bugs are rare and we are rarely afraid of breaking anything after a code change. Though as [Lisi Hocke](https://twitter.com/lisihocke) rightfully observes, the first is not only accomplished with automated tests. There is more at play to reduce the likelihood of production bugs, like manual exploratory testing and other kinds of tests. That said, enough automated tests will likely reduce both the obvious and the harmful production bugs because the automated tests introduce the required fast feedback to allow for quick fixes. Any other less obvious or less harmful issues, which in the end might be quite a lot, are maybe not hurting enough to justify being caught upfront. As long as we have the right practices in place, allowing for fast recovery.
 
