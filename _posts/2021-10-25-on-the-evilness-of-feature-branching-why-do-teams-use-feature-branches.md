@@ -35,7 +35,7 @@ Before we move on, let me first clarify two definitions. I am sure you know thes
 > **Mainline** is the line of development which is the reference from which the
 > builds of your system are created that feed into your deployment pipeline.
 >
-> -- [Jez Humble](https://twitter.com/jezhumble)
+> -- [Jez Humble](https://twitter.com/jezhumble), [On DVCS, Continuous Integration and Feature Branches](https://continuousdelivery.com/2011/07/on-dvcs-continuous-integration-and-feature-branches/)
 
 For Git, this is the *main* branch.
 For Mercurial, this is the *default* branch.
@@ -46,7 +46,7 @@ For CVS and SubVersion, this is *trunk*. Hence, why we speak about
 > mainline until the feature they are working on is "*done*"
 > (but not yet “*done done*”).
 >
-> -- [Jez Humble](https://twitter.com/jezhumble)
+> -- [Jez Humble](https://twitter.com/jezhumble), [On DVCS, Continuous Integration and Feature Branches](https://continuousdelivery.com/2011/07/on-dvcs-continuous-integration-and-feature-branches/)
 
 Without pretence, in 2021, **Done** should at least mean *running satisfactorily in production*.
 
@@ -399,7 +399,7 @@ The [On the Evilness of Feature Branching]({% post_url 2021-04-26-on-the-evilnes
 1. [A Tale of Two Teams]({% post_url 2021-07-14-on-the-evilness-of-feature-branching-a-tale-of-two-teams %})
 2. Why Do Teams Use Feature Branches?
 3. [But Compliance!?]({% post_url 2022-02-22-on-the-evilness-of-feature-branching-but-compliance %})
-4. Why Are Feature Branches a Problem?
+4. The Problems
 5. How Can We Avoid Feature Branching Problems?
 6. Questions I Regularly Get Asked about Trunk-Based Development
 7. What Are The Benefits of Trunk-Based Development?
