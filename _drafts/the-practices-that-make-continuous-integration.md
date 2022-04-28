@@ -6,7 +6,7 @@ meta: 25 min read
 category: articles
 tags: [ Continuous Integration ]
 ---
-
+  
 <!-- replace don't, isn't, haven't by do not, is not, have not -->
 
 [Continuous Integration is not a tooling problem]({% post_url
@@ -23,7 +23,7 @@ Integration. It has been over 20 years Continuous Integration was introduced by
 realise team's and organisations are still struggling with the adoption of
 Continuous Integration.
 
-<br/>
+---
 
 > Continuous Integration is a practice to ensure always working software and to
 > get feedback within a few minutes to whether any given change broke the
