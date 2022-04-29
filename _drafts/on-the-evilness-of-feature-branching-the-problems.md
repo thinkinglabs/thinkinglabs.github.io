@@ -76,9 +76,32 @@ regressions against the tests that exist inside that isolated branch. We do not 
 feedback on whether our changes integrate well with the changes that live on
 all the other existing parallel branches.
 
-From this moment on CI does not stand for Continuous Integration but stands for
-**[Continuous Isolation](https://continuousisolation.com)**. We are not integrating outside changes and the rest
-of the team do not know how our changes integrate with their work.
+From this moment on **CI stands for [Continuous Isolation](https://continuousisolation.com)** and not any more for Continuous Integration. We are not integrating outside changes and the rest of the team do not know how our changes integrate with their work.
+
+## It is expensive
+
+Branch creation is cheap and easy. But keeping the branch up-to-date and integrating the latest changes from mainline (and other parallel branches) is far more expensive.
+
+The longer engineers keep their code changes in isolation and do not integrate them with the code changes from other team members the higher the risk the changes will conflict.
+
+This is totally unrelated to the quality of merge tools. Current distributed version control systems have actually very decent merge tools. Most of the time merges are simple and automatic, except when they are not. No merge tool can predict if two features being implemented in parallel, each on their branch, will work together. This can only be discovered at merge time. Again, delayed feedback.
+
+The minute we need to manually intervene in a merge conflict, there is a cost. How big that cost will be is totally unknown until merge time resulting in **Merge Debt**. The increasing cost from working in isolation on a branch without integrating outside changes.
+
+- Rework due to merge conflicts or regressions introduced by [semantic bugs](https://martinfowler.com/bliki/SemanticConflict.html), i.e. syntactically correct changes that are functionally incorrect,
+- Wasted time due to fixing merge conflicts and rework efforts,
+- A high risk for lost changes that vanish entirely,
+- Or worse finding out the differences are so big we are unable to integrate the changes and we have to throw away days or weeks of work and start over again.
+
+This is precisely why Continuous Integration was introduced. To avoid the cost of integrating changes grown in isolation. To avoid Merge Debt. We do not want to delay the pain of merging. The longer we wait, the more likely the pain will get worse rather than better. It is better to take the pain of a merge now so we know where we stand.
+
+> If it hurts, do it more often. Bring the pain forward.
+>
+> -- [Dave Farley](https://twitter.com/davefarley77), Continuous Delivery: Reliable Software Releases Through Build, Test and Deployment Automation
+
+Apart from Merge Debt, there are other non-negligible costs introduced by feature branching. Automated tests need to be executed on the branch and re-executed on mainline after integrating the branch. Branches introduce inventory and inventory is money. Branches introduce higher risks due to deferred feedback and bigger changesets. The longer we defer, the greater the risk that something unexpected, unusual and usually bad will happen.
+
+This is another the reason why Continuous Integration was introduced, to have better feedback and greater insights into the effect of changes. Feedback results in better, more maintainable code which reduces costs.
 
 ## It hinders integration of features
 
@@ -150,7 +173,7 @@ the adoption of refactoring.
 When we are just adding new code, integrating that code is fairly straightforward.
 But if we are refactoring our code, we are introducing new abstractions and new concepts.
 Unfortunately, Version Control Systems are not aware of semantic changes which
-makes merging very difficult.
+makes merging very difficult. In contrast, refactoring is pretty easy when adopting [trunk-based development](https://trunkbaseddevelopment.com) together with [Expand-Contract](https://martinfowler.com/bliki/ParallelChange.html) and [Branch by Abstraction](https://www.branchbyabstraction.com).
 
 If we have two team members working on a codebase, each working in parallel on
 their feature branch.
@@ -175,6 +198,8 @@ the code base becomes harder and harder and more time consuming. Again, this
 slows down the team. To then end in this vicious circle where the team slows
 down over time. Eventually coming to a halt and nobody really understanding why and how
 this happened.
+
+## It initiates merge hell
 
 ## It creates batch work and inventory
 
@@ -257,9 +282,14 @@ changes, we then commit and push. This is fairly easy, fairly simple. In the end
 members only have to remember a small set of version control commands to perform their
 day-to-day work.
 
+## It is less efficient
+
+## It hurts testing
+
+## It makes releases unpredictable
+
+
 ## Multi-repos, feature branching and the nervous breakdown
 
 If you absolutely want to persevere with feature branching, please use a
 mono-repo if you do not want your team members to have a nervous breakdown.
-
-## You do not use feature branches. Feature Branches use you
