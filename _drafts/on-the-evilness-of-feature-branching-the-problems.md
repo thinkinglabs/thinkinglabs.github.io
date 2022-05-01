@@ -66,15 +66,13 @@ Remember, Continuous Integration is a practice to ensure always working software
 and to get feedback within minutes whether a change broke the application or
 not.
 
-Lot’s of teams like to redefine Continuous Integration by saying: "*We have our Jenkins running against all of our branches*".
+Lot’s of teams like to redefine Continuous Integration by saying: "*We have our [fill in your preferred centralised build tool] running against all of our branches*".
 
 Having an automated build running against all of our branches is actually a
-really, really good thing. But it is not Continuous Integration. We are not
-integrating. The only feedback we get is whether the code that exists inside
-our isolated branch still compiles and whether we have not introduced any
+really, really good thing. But it is not Continuous Integration. We are not integrating. But, it is still a lie. The only feedback we get is whether the code that exists inside our isolated branch still compiles and whether we have not introduced any
 regressions against the tests that exist inside that isolated branch. We do not get any
 feedback on whether our changes integrate well with the changes that live on
-all the other existing parallel branches.
+all the other existing parallel branches. Even when all tests pass on the branch, they may fail when merging back into mainline. It is also slow as we have to execute tests twice. The real authoritative feedback only happens at merge time, once the feature is finished. Everything else is a guess.
 
 From this moment on **CI stands for [Continuous Isolation](https://continuousisolation.com)** and not any more for Continuous Integration. We are not integrating outside changes and the rest of the team do not know how our changes integrate with their work.
 
@@ -82,7 +80,11 @@ From this moment on **CI stands for [Continuous Isolation](https://continuousiso
 
 This continual committing changes into mainline forces us to work in small incremental steps that preserve existing functionality. We take smaller steps, which generally breaks less and keeps the application always working and releasable at any given moment in time, reducing risks. When we do break something, we can find it sooner and fix it faster, instead of waiting days or weeks to discover it. Also, we have more context about how to fix broken things then when we commit infrequently into mainline and having to wait for days or weeks. An important engineering skill is the ability to break up large changes into small increments.
 
-## It is expensive
+The point here is to grow a feature over multiple commits versus designing and implementing the feature in isolation.
+
+The value in accelerating feedback lays in failing fast. Problems are spotted really early, within minutes. This is best achieved when committing frequently, multiple times a day. This does not change with code complexity or team size. But it requires we work very hard to keep getting fast feedback. This means if the build is too slow, speed up the build; if tests are too slow, write better, more concise tests; if hardware is too slow, buy faster hardware; if the codebase is too coupled, disabling use to write concise tests, decouple the codebase.
+
+## It is expensive and therefore less efficient
 
 Branch creation is cheap and easy. But keeping the branch up-to-date and integrating the latest changes from mainline (and other parallel branches) is far more expensive.
 
@@ -153,11 +155,9 @@ area they are each blind to how their work affects the other person.
 
 On the other hand, if we are committing more frequently into mainline, we
 communicate to the rest of the team the direction we are taking with the code to
-implement this feature. For example, we could add a conditional indicating the
-start of the new code we are working on and have it disabled by default. From
-then on the rest of the team can see the changes we are introducing. They can
-immediately see how this affects their work and they can instantly adapt to
-these changes.
+implement this feature. For example, we could add a conditional indicating the start of the new code we are working on and have it disabled by default. From then on the rest of the team the new changes we are introducing. They immediately spot how this affects their work and therefore can instantly adapt to these changes.
+
+This is precisely the purpose of Version Control Systems and Continuous Integration: to publish our ideas to the rest of the team and see the impact on others and for the rest of the team to see the direction of our thinking.
 
 We could argue that introducing this conditional, increases the complexity of
 the codebase. Which is true. On the other hand by using a feature branch and not
@@ -170,6 +170,21 @@ Remember, the purpose of a Version Control System is not only to version source
 code. **A Version Control System is really a communication tool** to communicate
 changes with the rest of the team. This will again help in gaining a shared
 understanding of the system and achieve [collective ownership](http://www.extremeprogramming.org/rules/collective.html). Again, this will inevitably lead to better quality, higher IT delivery throughput, shorter lead times and time to market.
+
+Continuous Integration is about exposing changes as quickly as possible to increase feedback.
+
+Any form of branches is about isolating changes. By design it hides changes for the rest of the team. But, branches with a very short lifetime can achieve Continuous Integration.
+
+> Teams that did well had fewer than three active branches at any time, their branches had very short lifetimes (less than a day) before being merged into trunk and never had "code freeze" or stabilization periods. It is worth re-emphasising that these results are independent of team size, organisation size or industry.
+>
+> -- [Accelerate](https://itrevolution.com/accelerate-book/), p55, Dr. Nicole Forsgren et al.
+
+However, if less than a day, why bother with the overhead of branches?
+
+> [A branch] is antithetical to CI, the clue is in the name “CONTINUOUS INTEGRATION”!
+>
+> Dave Farley, [Continuous Integration and Feature Branching](http://www.davefarley.net/?p=247)
+
 
 ## It works against refactoring
 
@@ -261,6 +276,8 @@ production releases at any given moment in time. Which obviously will have a neg
 
 Increasing the size of changes increases risk. It’s essentially the same as deploying your code less frequently. The amount of change is larger and the risk is greater.
 
+Also the longer we defer feedback, the greater the risk something unexpected, unusual and usually very bad will happen. We have zero-visibility on what is happening on the other parallel branches. Our work may not merge. we can loose days or weeks of work. Which again comes with a non-negligible cost. Earlier feedback results in smaller change sets and in better code.
+
 ## It creates cognitive overload
 
 Lastly, it creates cognitive overhead for the team members.
@@ -286,9 +303,12 @@ changes, we then commit and push. This is fairly easy, fairly simple. In the end
 members only have to remember a small set of version control commands to perform their
 day-to-day work.
 
-## It is less efficient
+## It disables testing
 
-## It hurts testing
+no feedback on the quality of our work until we think that we are finished – _**Too Late!
+
+the definitive point is the testing happening at merge time: my change works with everyone else's
+before that, you don't know, you hope nobody did something horrid that breaks your work
 
 ## It makes releases unpredictable
 
