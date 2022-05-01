@@ -222,15 +222,29 @@ this happened.
 
 ## It initiates merge hell
 
-## It creates batch work and inventory
+## It introduces batch work and inventory
 
 When using branches we are in fact introducing batch work. The longer the
 branch lives, the more changes are accumulated on the branch, the bigger the
 batch size becomes. Where the batch size is the number of commits that exist
 on the branch since the creation of the branch.
 
-The bigger the batch size, the more work we have in progress. Where work in progress is nothing else than inventory.
-And **inventory is just money stuck into the system**.
+The drawbacks of batching were discovered by [Taiichi Ohno](https://en.wikipedia.org/wiki/Taiichi_Ohno) at Toyota back in the 1950's.
+
+> ... he made an unexpected discovery -- it actually costs less per part to make small batches of stampings than to run off enormous lots.
+>
+> ... Making small batches eliminated the carrying cost of the huge inventories ...
+> Even more important, making only a few parts before assembling them [...] caused stamping mistakes to show up almost instantly.
+>
+> The consequences of this latter discovery were enormous. It made [workers] much more concerned about quality and it eliminated waste of large numbers of defective parts.
+>
+> ... But to make this system work at all [...] Ohno needed both extremely skilled and a highly motivated workforce.
+>
+> -- The Machine That Changed The World, p52, Womack, Jones and Roos
+
+Womack, Jones and Roos called this Lean Manufacturing. Later it was proved by [Mary and Tom Poppendieck](http://www.poppendieck.com) [this also applies to software development](https://en.wikipedia.org/wiki/Lean_software_development). And Donald Reinertsen spend a whole chapter "*Reducing Batch Size*" to the topic in his book [The Principles of Product Development Flow](https://www.goodreads.com/book/show/6278270-the-principles-of-product-development-flow).
+
+The bigger the batch size, the more work we have in progress. The more work in progress the more inventory inventory we have. And **inventory is just money stuck into the system**.
 
 ![It creates batch work and inventory](/images/on-the-evilness-of-feature-branching-the-problems/it-creates-batch-work.png)
 
@@ -320,8 +334,10 @@ mono-repo if you do not want your team members to have a nervous breakdown.
 
 ## Acknowledgments
 
-## Bibliographie
+## Bibliography
 
+- [Accelerate](https://itrevolution.com/accelerate-book/), ch 4 Technical Practices, Dr. Nicole Forsgren, Jez Humbe and Gene Kim
+- [The Machine That Changed The World](https://en.wikipedia.org/wiki/The_Machine_That_Changed_the_World_(book)), p52, Womack, Jones and Roos
 - [Continuous Integration on a dollar a day](http://www.jamesshore.com/Blog/Continuous-Integration-on-a-Dollar-a-Day.html), James Shore
 - [On DVCS, Continuous Integration and Feature Branching](https://continuousdelivery.com/2011/07/on-dvcs-continuous-integration-and-feature-branches/), Jez Humble
 - [Don't Feature Branch](http://www.davefarley.net/?p=160), Dave Farley
@@ -329,6 +345,10 @@ mono-repo if you do not want your team members to have a nervous breakdown.
 - [Long-Running Branches Considered Harmfull](https://newrelic.com/blog/best-practices/long-running-branches-considered-harmful), Jade Rubick
 - [Git Branching Strategies vs. Trunk-Based Development](https://launchdarkly.com/blog/git-branching-strategies-vs-trunk-based-development/), LaunchDarkly
 - [Branching Strategies](http://www.chrisoldwood.com/articles/branching-strategies.html), Chris Oldwood
+- [If you still insist on feature branching, you are hurting your business and our profession](https://mrdevops.io/if-you-still-insist-on-feature-branching-you-are-hurting-your-business-and-our-profession-32e1109d4594#.cmqfxsbir), Jon Arild Tørresdal
+
+...
+
 - [Feature Branch](https://martinfowler.com/bliki/FeatureBranch.html), Martin Fowler
 - [More Feature Branches means less Continuous Integration](https://www.infoq.com/news/2015/10/branching-continuous-integration), InfoQ interview with Steve Smith
 - [The Death of Continuous Integration](https://speakerdeck.com/stevesmithcd/the-death-of-continuous-integration), Steve Smith
