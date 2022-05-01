@@ -88,28 +88,32 @@ The value in accelerating feedback lays in failing fast. Problems are spotted re
 
 Branch creation is cheap and easy. But keeping the branch up-to-date and integrating the latest changes from mainline (and other parallel branches) is far more expensive.
 
-The longer engineers keep their code changes in isolation and do not integrate them with the code changes from other team members the higher the risk the changes will conflict.
+The longer engineers keep their code changes in isolation and do not integrate them with the code changes from other team members the higher the risk the changes will conflict leading to the well known "*Merge Hell*".
 
-This is totally unrelated to the quality of merge tools. Current distributed version control systems have actually very decent merge tools. Most of the time merges are simple and automatic, except when they are not. No merge tool can predict if two features being implemented in parallel, each on their branch, will work together. This can only be discovered at merge time. Again, delayed feedback.
+This is totally unrelated to the quality of merge tools. Current distributed version control systems have actually very decent merge tools. Most of the time merges are simple and automatic, except when they are not. No merge tool can predict if two features being implemented in parallel, each on their isolated branch, will work together. This can only be discovered at merge time. Again, we have delayed feedback.
 
-The minute we need to manually intervene in a merge conflict, there is a cost. How big that cost will be is totally unknown until merge time resulting in **Merge Debt**. The increasing cost from working in isolation on a branch without integrating outside changes.
+The minute we need to manually intervene in a merge conflict, there is a cost. How big that cost will be is totally unknown until merge time resulting in building up **Merge Debt**, i.e. the increasing cost from working in isolation on a branch without integrating outside changes.
 
 - Rework due to merge conflicts or regressions introduced by [semantic bugs](https://martinfowler.com/bliki/SemanticConflict.html), i.e. syntactically correct changes that are functionally incorrect,
 - Wasted time due to fixing merge conflicts and rework efforts,
 - A high risk for lost changes that vanish entirely,
 - Or worse finding out the differences are so big we are unable to integrate the changes and we have to throw away days or weeks of work and start over again.
 
-The longer we wait, the more likely the pain will get worse rather than better. It is better to take the pain of a merge now so we know where we stand.
-
 > If it hurts, do it more often. Bring the pain forward.
 >
 > -- [Dave Farley](https://twitter.com/davefarley77), Continuous Delivery: Reliable Software Releases Through Build, Test and Deployment Automation
 
-This is precisely why Continuous Integration was introduced. When we merge our code more frequently to mainline, the pain of integrating new changes happens at the beginning instead of at the end of our work. We can now find issues faster. Fixing those issues is easier and happens at the earliest possible moment, saving us a lot of pain and time, and avoiding Merge Debt. The pain of merging is now not delayed.
+The longer we wait, the more likely the pain will get worse rather than better. It is better to take the pain of a merge now so we know where we stand.
 
-Apart from Merge Debt, there are other non-negligible costs introduced by feature branching. Automated tests need to be executed on the branch and re-executed on mainline after integrating the branch. Branches introduce inventory and inventory is money. Branches introduce higher risks due to deferred feedback and bigger changesets. The longer we defer, the greater the risk that something unexpected, unusual and usually bad will happen.
+This is precisely why Continuous Integration was introduced. When we merge our code more frequently to mainline, the pain of integrating new changes happens at the beginning instead of at the end of our work. We can now find issues faster. Fixing those issues is easier and happens at the earliest possible moment, saving us a lot of pain and time, and avoiding Merge Debt.
 
-This is another the reason why Continuous Integration was introduced, to have better feedback and greater insights into the effect of changes. Feedback results in better, more maintainable code which reduces costs.
+Apart from Merge Debt, there are other non-negligible costs introduced by feature branching.
+
+- Automated tests need to be executed twice: on the branch and re-executed on mainline after integrating the branch.
+- Branches introduce batch-work, which in turn introduce inventory and inventory is money.
+- Branches introduce higher risks due to deferred feedback and bigger changesets. The longer we defer, the greater the risk that something unexpected, unusual and usually bad will happen.
+
+Feedback is another reason why Continuous Integration was introduced. To have better greater insights into the effect of changes. Feedback results in better, more maintainable code which reduces costs.
 
 ## It hinders integration of features
 
@@ -141,7 +145,7 @@ Inevitably, this will result in a better quality of our product and
 a higher throughput of our software delivery process. Thus reducing the lead time
 and the time to market.
 
-## It hides work for the rest of the team
+## It hides work for the rest of the team and disables communication
 
 As long as we have not yet merged our branch back to mainline, the rest of the team
 simply do not know in which direction we are taking the code to implement the feature
@@ -219,8 +223,6 @@ the code base becomes harder and harder and more time consuming. Again, this
 slows down the team. To then end in this vicious circle where the team slows
 down over time. Eventually coming to a halt and nobody really understanding why and how
 this happened.
-
-## It initiates merge hell
 
 ## It introduces batch work and inventory
 
@@ -326,11 +328,6 @@ before that, you don't know, you hope nobody did something horrid that breaks yo
 
 ## It makes releases unpredictable
 
-
-## Multi-repos, feature branching and the nervous breakdown
-
-If you absolutely want to persevere with feature branching, please use a
-mono-repo if you do not want your team members to have a nervous breakdown.
 
 ## Acknowledgments
 
