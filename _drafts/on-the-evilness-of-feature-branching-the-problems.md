@@ -78,6 +78,10 @@ all the other existing parallel branches.
 
 From this moment on **CI stands for [Continuous Isolation](https://continuousisolation.com)** and not any more for Continuous Integration. We are not integrating outside changes and the rest of the team do not know how our changes integrate with their work.
 
+*TODO: move to It increases risks?*
+
+This continual committing changes into mainline forces us to work in small incremental steps that preserve existing functionality. We take smaller steps, which generally breaks less and keeps the application always working and releasable at any given moment in time, reducing risks. When we do break something, we can find it sooner and fix it faster, instead of waiting days or weeks to discover it. Also, we have more context about how to fix broken things then when we commit infrequently into mainline and having to wait for days or weeks. An important engineering skill is the ability to break up large changes into small increments.
+
 ## It is expensive
 
 Branch creation is cheap and easy. But keeping the branch up-to-date and integrating the latest changes from mainline (and other parallel branches) is far more expensive.
@@ -93,11 +97,13 @@ The minute we need to manually intervene in a merge conflict, there is a cost. H
 - A high risk for lost changes that vanish entirely,
 - Or worse finding out the differences are so big we are unable to integrate the changes and we have to throw away days or weeks of work and start over again.
 
-This is precisely why Continuous Integration was introduced. To avoid the cost of integrating changes grown in isolation. To avoid Merge Debt. We do not want to delay the pain of merging. The longer we wait, the more likely the pain will get worse rather than better. It is better to take the pain of a merge now so we know where we stand.
+The longer we wait, the more likely the pain will get worse rather than better. It is better to take the pain of a merge now so we know where we stand.
 
 > If it hurts, do it more often. Bring the pain forward.
 >
 > -- [Dave Farley](https://twitter.com/davefarley77), Continuous Delivery: Reliable Software Releases Through Build, Test and Deployment Automation
+
+This is precisely why Continuous Integration was introduced. When we merge our code more frequently to mainline, the pain of integrating new changes happens at the beginning instead of at the end of our work. We can now find issues faster. Fixing those issues is easier and happens at the earliest possible moment, saving us a lot of pain and time, and avoiding Merge Debt. The pain of merging is now not delayed.
 
 Apart from Merge Debt, there are other non-negligible costs introduced by feature branching. Automated tests need to be executed on the branch and re-executed on mainline after integrating the branch. Branches introduce inventory and inventory is money. Branches introduce higher risks due to deferred feedback and bigger changesets. The longer we defer, the greater the risk that something unexpected, unusual and usually bad will happen.
 
@@ -242,20 +248,18 @@ changesets. Bigger changesets mean more risks.
 If we commit more frequently to mainline, the Continuous Integration process
 will have to process a smaller changeset. If the build breaks, finding the root cause
 will be fairly easy because the changeset is so small and also because we
-introduced the failing change just a couple of minutes ago. We will still have enough context
-to fix that build. In the end, we will be able to fix the build within 10 minutes.
+introduced the failing change just a couple of minutes ago. We will still have enough context to fix that build. In the end, we will be able to fix the build within 10 minutes.
 
 On the other hand, when using feature branches, merging back to mainline happens
-less often. As a result the Continuous Integration process will have to process a bigger
-changeset. If the build happens to break, finding the root cause will be far
+less often. As a result the Continuous Integration process will have to process a bigger changeset. If the build happens to break, finding the root cause will be far
 more difficult because of the changeset is so big and probably also because we
 introduced the failing change a couple of hours or, worse, a couple of days ago.
 This time, we do not have enough context any more to fix this build easily. Fixing the
-build will become difficult and time consuming. From now on, we run the risk of having a
-broken build for a very long period of time. We now lost the monitoring of the
+build will become difficult and time consuming. From now on, we run the risk of having a broken build for a very long period of time. We now lost the monitoring of the
 health of our application. So we lost the ability to perform on demand
-production releases at any given moment in time. Which obviously will have a negative impact on lead time
-and time to market.
+production releases at any given moment in time. Which obviously will have a negative impact on lead time and time to market.
+
+Increasing the size of changes increases risk. It’s essentially the same as deploying your code less frequently. The amount of change is larger and the risk is greater.
 
 ## It creates cognitive overload
 
@@ -293,3 +297,31 @@ day-to-day work.
 
 If you absolutely want to persevere with feature branching, please use a
 mono-repo if you do not want your team members to have a nervous breakdown.
+
+## Acknowledgments
+
+## Bibliographie
+
+- [Continuous Integration on a dollar a day](http://www.jamesshore.com/Blog/Continuous-Integration-on-a-Dollar-a-Day.html), James Shore
+- [On DVCS, Continuous Integration and Feature Branching](https://continuousdelivery.com/2011/07/on-dvcs-continuous-integration-and-feature-branches/), Jez Humble
+- [Don't Feature Branch](http://www.davefarley.net/?p=160), Dave Farley
+- [Continuous Integration and Feature Branching](http://www.davefarley.net/?p=247), Dave Farley
+- [Long-Running Branches Considered Harmfull](https://newrelic.com/blog/best-practices/long-running-branches-considered-harmful), Jade Rubick
+- [Git Branching Strategies vs. Trunk-Based Development](https://launchdarkly.com/blog/git-branching-strategies-vs-trunk-based-development/), LaunchDarkly
+- [Branching Strategies](http://www.chrisoldwood.com/articles/branching-strategies.html), Chris Oldwood
+- [Feature Branch](https://martinfowler.com/bliki/FeatureBranch.html), Martin Fowler
+- [More Feature Branches means less Continuous Integration](https://www.infoq.com/news/2015/10/branching-continuous-integration), InfoQ interview with Steve Smith
+- [The Death of Continuous Integration](https://speakerdeck.com/stevesmithcd/the-death-of-continuous-integration), Steve Smith
+- [Continuous Isolation](https://paulhammant.com/2017/02/14/fake-news-via-continuous-isolation/), Paul Hammant
+- [What is Trunk Based Development?](http://paulhammant.com/2013/04/05/what-is-trunk-based-development/), Paul Hammant
+- [Trunk Based Development](https://mrdevops.io/trunk-based-development-8376fe577c11), Jon Arild Tørresdal
+- [You Are What You Eat](https://vimeo.com/162625187), Dave Hounslow
+- [Google's Scaled Trunk Based Development](http://paulhammant.com/2013/05/06/googles-scaled-trunk-based-development/), Paul Hammant
+- [Legacy App Rejuvenation](http://paulhammant.com/2013/03/11/legacy-app-rejuvenation/), Paul Hammant
+- [Why Google Stores Billions of Lines of Code in a Single Repository?](http://m.cacm.acm.org/magazines/2016/7/204032-why-google-stores-billions-of-lines-of-code-in-a-single-repository/fulltext), Google
+- [4 Simple Tricks to avoid Merge Conflicts](http://team-coder.com/avoid-merge-conflicts/), Robert Mißbach
+- [From GitFlow to Trunk Based Development](http://team-coder.com/from-git-flow-to-trunk-based-development/), Robert Mißbach
+- [Short-lived branches](http://articles.coreyhaines.com/posts/short-lived-branches/), Corey Haines
+
+## The Series
+
