@@ -226,6 +226,22 @@ As opposed, earlier feedback results in smaller change sets and in better code. 
 
 Herein is an important engineering skill: the ability to break up large changes into small increments. A feature grows over multiple commits on mainline versus designing and implementing the feature in isolation on a branch.
 
+## It disables testing
+
+As long as we have not merged back into mainline, we have no feedback on the quality of our work. Alright, some will say, but we can test the feature in isolation. We can even spin up dedicated environments within minutes just for the branch. I have to say, this shows off and looks clever ... but such a waste of time, energy and money. As you should not need this.
+
+Testing in isolation is good. It gives us some information. But it does not tell the whole story. It does not tell us anything about whether the feature integrates with all the other features being implemented in parallel on their own isolated branch.
+
+The only definitive point is the testing happening at merge time. Our change works with everyone else's changes. Before that, it is just a guess. We do not know. We can only hope nobody did something horrid that breaks our work.
+
+It is only when the feature is finished and it gets integrated with all the other features that we know it works or not. That is too late!
+
+Also, it requires to test twice. Once on the branch and once on mainline once the branch has been merged back. That is rework, not efficient, wasted time and spoiled money.
+
+A better approach is to test continuously while the feature grows on mainline. Every day we know where we stand. Because we have fast feedback, if some new development breaks we can fix it easily because we have enough fresh context. When the feature is finished we know it works. It can be released at any given moment in time. Which again reduces lead time and time to market.
+
+We are never in a situation of surprise discovering something does not work after days or weeks of development. We do not have horrible rework or having to throw away and start over again. Therefore it is also more cost effective.
+
 ## It is expensive and therefore less efficient
 
 Branch creation is cheap and easy. But keeping the branch up-to-date and integrating the latest changes from mainline as well as from all other parallel branches is far more expensive.
@@ -252,6 +268,7 @@ This is precisely why Continuous Integration was introduced. When we merge our c
 Apart from Merge Debt, there are other non-negligible costs introduced by feature branching.
 
 - Automated tests need to be executed twice: once the branch and one more time on mainline at merge time after integrating the branch.
+- Also manual exploratory testing happens twice.
 - Branches introduce batch-work, which in turn introduce inventory and as we have seen before inventory is money stuck into the system.
 - Branches introduce higher risks due to deferred feedback and bigger changesets. The longer we defer, the greater the risk that something bad will happen.
 
@@ -273,13 +290,6 @@ the workflow. We pull the latest changes from the remote repository, we add our 
 changes, to then commit and push. This is fairly easy, fairly simple. In the end team
 members only have to remember a small set of version control commands to perform their
 day-to-day work.
-
-## It disables testing
-
-no feedback on the quality of our work until we think that we are finished – _**Too Late!
-
-the definitive point is the testing happening at merge time: my change works with everyone else's
-before that, you don't know, you hope nobody did something horrid that breaks your work
 
 ## It makes releases unpredictable
 
