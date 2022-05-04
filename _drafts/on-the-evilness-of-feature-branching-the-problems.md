@@ -242,6 +242,16 @@ A better approach is to test continuously while the feature grows on mainline. E
 
 We are never in a situation of surprise discovering something does not work after days or weeks of development. We do not have horrible rework or having to throw away and start over again. Therefore it is also more cost effective.
 
+## It makes releases unpredictable
+
+As long as we have not merged back into mainline we cannot know how much work is still left to do. Because of potential merge conflicts, and because of potential rework caused by merge conflicts at merge time. Because of the review and approval process of which the duration can vary wildly and is often too slow. And also, because we do not know how the different new features will influence each other at merge time requiring additional testing.
+
+Integrating features into mainline therefore becomes a time-consuming and unpredictable activity making the whole IT delivery process very unpredictable which increases the lead time, and the time to market for our product.
+
+Compare this with growing a feature on mainline where we can release the feature the minute we think it is good enough because our codebase is always working and in a releasable state.
+
+Remember, our goal is to sustainably minimise our lead time to create positive business impact!
+
 ## It is expensive and therefore less efficient
 
 Branch creation is cheap and easy. But keeping the branch up-to-date and integrating the latest changes from mainline as well as from all other parallel branches is far more expensive.
@@ -291,8 +301,6 @@ changes, to then commit and push. This is fairly easy, fairly simple. In the end
 members only have to remember a small set of version control commands to perform their
 day-to-day work.
 
-## It makes releases unpredictable
-
 ## Conclusion
 
 Continuous Integration is really about exposing changes as quickly as possible to increase feedback.
@@ -330,6 +338,8 @@ To obtain all of this, it means no branches!
 - [If you still insist on feature branching, you are hurting your business and our profession](https://mrdevops.io/if-you-still-insist-on-feature-branching-you-are-hurting-your-business-and-our-profession-32e1109d4594#.cmqfxsbir), Jon Arild Tørresdal
 - [The Machine That Changed The World](https://en.wikipedia.org/wiki/The_Machine_That_Changed_the_World_(book)), p52, Womack, Jones and Roos
 - [Branching Strategies](http://www.chrisoldwood.com/articles/branching-strategies.html), Chris Oldwood
+- [From GitFlow to Trunk Based Development](http://team-coder.com/from-git-flow-to-trunk-based-development/), Robert Mißbach
+- [GitHub Workflow vs Mainline Development](http://www.multunus.com/blog/2013/06/github-workflow-vs-mainline-development/?__s=sxqabdsbwdzoo1apdvkd), Leena S N
 
 ...
 
@@ -343,7 +353,6 @@ To obtain all of this, it means no branches!
 - [Legacy App Rejuvenation](http://paulhammant.com/2013/03/11/legacy-app-rejuvenation/), Paul Hammant
 - [Why Google Stores Billions of Lines of Code in a Single Repository?](http://m.cacm.acm.org/magazines/2016/7/204032-why-google-stores-billions-of-lines-of-code-in-a-single-repository/fulltext), Google
 - [4 Simple Tricks to avoid Merge Conflicts](http://team-coder.com/avoid-merge-conflicts/), Robert Mißbach
-- [From GitFlow to Trunk Based Development](http://team-coder.com/from-git-flow-to-trunk-based-development/), Robert Mißbach
 - [Short-lived branches](http://articles.coreyhaines.com/posts/short-lived-branches/), Corey Haines
 
 ## The Series
