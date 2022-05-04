@@ -126,21 +126,6 @@ But it is not obvious and absolutely not visible. Because the conditional is now
 Version Control System branch. From now on, **our changes are invisible
 for the rest of the team**. They have no idea how those changes will impact their work.
 
-Continuous Integration is really about exposing changes as quickly as possible to increase feedback.
-
-Any form of branches is about isolating changes. By design it hides changes for the rest of the team. Although, branches with a very short lifetime (less than a day) can achieve Continuous Integration.
-
-> Teams that did well had fewer than three active branches at any time, their branches had very short lifetimes (less than a day) before being merged into trunk and never had "code freeze" or stabilization periods. It is worth re-emphasising that these results are independent of team size, organisation size or industry.
->
-> -- [Accelerate](https://itrevolution.com/accelerate-book/), p55, Dr. Nicole Forsgren et al.
-
-However, if less than a day, why bother with the overhead of branches?
-
-> [A branch] is antithetical to CI, the clue is in the name “CONTINUOUS INTEGRATION”!
->
-> -- Dave Farley, [Continuous Integration and Feature Branching](http://www.davefarley.net/?p=247)
-
-
 Remember, the purpose of a Version Control System is not just to version source
 code. **A Version Control System is really a communication tool** to communicate
 changes with the rest of the team. This will again help in gaining a shared
@@ -270,8 +255,6 @@ Apart from Merge Debt, there are other non-negligible costs introduced by featur
 - Branches introduce batch-work, which in turn introduce inventory and as we have seen before inventory is money stuck into the system.
 - Branches introduce higher risks due to deferred feedback and bigger changesets. The longer we defer, the greater the risk that something bad will happen.
 
-Continuous Integration was also introduced to obtain faster feedback to have better, greater insights into the effect of changes. Faster feedback requires more frequent commits into mainline. This forces us to work in smaller increments, resulting in better, more maintainable code. More frequent commits result in smaller changesets, less risks, single-piece flow which in turn increases quality. All of this inevitably reduces costs.
-
 ## It creates cognitive overload
 
 Lastly, it creates cognitive overhead for the team members.
@@ -299,6 +282,26 @@ the definitive point is the testing happening at merge time: my change works wit
 before that, you don't know, you hope nobody did something horrid that breaks your work
 
 ## It makes releases unpredictable
+
+## Conclusion
+
+Continuous Integration is really about exposing changes as quickly as possible to increase feedback.
+
+Any form of branches is about isolating changes. By design it hides changes for the rest of the team. Although, branches with a very short lifetime (less than a day) can achieve Continuous Integration.
+
+> Teams that did well had fewer than three active branches at any time, their branches had very short lifetimes (less than a day) before being merged into trunk and never had "code freeze" or stabilization periods. It is worth re-emphasising that these results are independent of team size, organisation size or industry.
+>
+> -- [Accelerate](https://itrevolution.com/accelerate-book/), p55, Dr. Nicole Forsgren et al.
+
+But ... if less than a day, why bother with the overhead of branches?
+
+> [A branch] is antithetical to CI, the clue is in the name “CONTINUOUS INTEGRATION”!
+>
+> -- Dave Farley, [Continuous Integration and Feature Branching](http://www.davefarley.net/?p=247)
+
+Continuous Integration was exactly introduced to obtain faster feedback to have better, greater insights into the effects of changes. Faster feedback requires more frequent commits into mainline. This forces us to work in smaller increments, resulting in better, more maintainable code. More frequent commits result in smaller changesets, less risks. In the end, achieving single-piece flow which in turn increases quality and IT delivery throughput together with reducing lead time for change and time to market. Inevitable, it also reduces costs.
+
+To obtain all of this, it means no branches!
 
 ## Acknowledgments
 
