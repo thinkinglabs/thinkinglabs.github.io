@@ -323,6 +323,8 @@ To obtain all of this, it means no branches!
 
 ## Acknowledgments
 
+As always, thank you to [Lisi Hocke](https://twitter.com/lisihocke) and [Steve Smith](https://twitter.com/SteveSmith_Tech) for taking the time and energy to review this article.
+
 ## Bibliography
 
 - [Continuous Integration](https://martinfowler.com/articles/continuousIntegration.html), Martin Fowler
