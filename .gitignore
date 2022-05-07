@@ -6,3 +6,6 @@ _site/
 *.tfstate.*backup
 .terraform
 tfplan
+
+# VSCode
+.vscode/
