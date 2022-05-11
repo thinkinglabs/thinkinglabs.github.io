@@ -193,7 +193,7 @@ The bigger the batch size, the more work we have in progress. The more work in p
 
 ![It creates batch work and inventory](/images/on-the-evilness-of-feature-branching-the-problems/it-creates-batch-work.png)
 
-It is stuck into the system because the organisation invested quite lot of money to create this inventory consisting of all the code that lies around on all those parallel branches. But this investment does not generate any revenue for the organisation. **As long as we have not merged back into mainline, deployed the code into production and released it to the end users, it does not create any value**. Only when this code gets into production in the hands of the users it will generate feedback on how it behaves in production and how it is being used by the users. Only then we can take new decisions and come with new ideas on how to satisfy the user.
+It is stuck into the system because the organisation invested quite lot of money to create this inventory consisting of all the code that lies around on all those parallel branches. But this investment does not generate any revenue for the organisation. **As long as we have not merged back into mainline, deployed the code into production and released it to the end users, it does not create any value**. Only when this code gets into production in the hands of the users it will generate feedback on how it behaves in production and how it is being used by the users. Only then we can take new decisions and come with new ideas on how to find new ways to delight the user and solve their problems and needs. This will have an enormous impact on business growth and opportunities.
 
 To reduce this inventory, we know from Lean Manufacturing, we have to reduce the work in progress.
 
