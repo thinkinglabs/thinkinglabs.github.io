@@ -94,7 +94,7 @@ that feature branch into our branch. We are now actually communicating changes b
 
 However, the biggest concern Martin Fowler has against Promiscuous Integration, apart
 from introducing a lot of process complexity, is that with all that cherry
-picking, **we lose track of who has what on which branch**.
+picking, **we lose track of who has what on which branch**. Also for testers it becomes a painful exercise to figure out where the risk resides, on which branch and what to focus feedback on.
 
 Compare this complexity with the simplicity of having everyone in the team
 commit its changes immediately to mainline. As such  they communicate their
