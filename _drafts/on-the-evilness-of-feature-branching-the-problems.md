@@ -217,8 +217,9 @@ less often. As a result the Continuous Integration process has to process a bigg
 more difficult because of the changeset is so big. Probably, also because we
 introduced the failing change a couple of hours or, worse, a couple of days ago.
 This time, we do not have enough context any more to fix that build easily. Fixing the
-build will become difficult and time consuming. From now on, we run the risk of having a broken build for a very long period of time. **We just lost the monitoring of the health of the application**. So we lost the ability to perform on demand
-production releases at any given moment in time. Obviously, this has a negative impact on lead time and time to market.
+build will become difficult and time consuming. From now on, we run the risk of having a broken build for a very long period of time. **We just lost the monitoring of the health of the application**. So we lost the ability to perform on demand production releases at any given moment in time. Obviously, this has a negative impact on lead time and time to market.
+
+Lisi Hocke's observed when having huge changesets, any kind of feedback activity will find less than when you have a small change set. A small change set we can keep in our headspace and have a good mental model. We can think about the implications and risks. We probably would find lots of small improvements. However, huge changesets on the other hand take already long to just ... read through, not talking about understanding or even picture what the impact might be from a risk perspective. In spite of the effort put by the author, the bigger the change set, the more people just want to get done with this. The willingness to make improvements decreases. Anything we find, we often postpone. And finally, it is also difficult to give feedback, because people are more reluctant to hear the bad news or to change direction. Because of the [Sunk Cost Fallacy](https://en.wikipedia.org/wiki/Sunk_cost).
 
 As we see, increasing the size of changes increases risk. It’s essentially the same as deploying our code less frequently. The amount of change is larger and the risk is greater.
 
