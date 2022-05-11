@@ -62,13 +62,15 @@ If the branch lives for a couple of hours, feedback is delayed by a couple of
 hours. If the branch lives for a couple of days, feedback is delayed by a couple
 of days.
 
+As Lisi Hocke observed from her past career, the solution to delayed feedback is often to start even more work, instead of finishing the work that is already in progress. Or, throw even more people to the problem to then hit [Brooks's Law](https://en.wikipedia.org/wiki/Brooks%27s_law). Hence, again increasing the work in progress, the number of parallel branches and waiting times even more. All of this, of course, to optimise for utilisation and **here we are in hell**.
+
 Remember, Continuous Integration is a practice to ensure always working software on mainline
 and to get feedback within minutes whether a change broke the application or
 not.
 
 Lot’s of teams, however, like to redefine Continuous Integration by saying: "*We have our [fill in your preferred centralised build tool] running against all of our branches*".
 
-Having an automated build running against all of our branches is actually a really, really good thing. But it is not Continuous Integration. We are not integrating. It is still a lie. The only feedback we get is whether the code that exists inside our isolated branch still compiles and whether we have not introduced any regressions against the tests that exist inside that isolated branch. We do not get any feedback whatsoever on whether our changes integrate well with the changes that exist on all the other prevailing parallel branches. Even when all tests pass on the branch, they still may fail when merging back into mainline. It is also slow as we have to execute the automated tests twice: once on the branch and once when integrating on mainline. The real authoritative feedback only happens at merge time when integrating, once the feature is finished. Everything else is a guess.
+Having an automated build running against all of our branches is actually a really, really good thing. But it is not Continuous Integration. We are not integrating. It is still a lie. The only feedback we get is whether the code that exists inside our isolated branch still compiles and whether we have not introduced any regressions against the tests that exist inside that isolated branch. We do not get any feedback whatsoever on whether our changes integrate well with the changes that exist on all the other prevailing parallel branches. Even when all tests pass on the branch, they still may fail when merging back into mainline. It is also slow as we have to execute the automated tests twice: once on the branch and once when integrating on mainline. The real authoritative feedback only happens at merge time when integrating, once the feature is finished. Everything else is a guess. Sadly enough, as Lisi Hocke remarks, often software engineers do not see this feedback. After merging, the next work item is started, missing out on the feedback.
 
 Therefore, from this moment on **CI stands for [Continuous Isolation](https://continuousisolation.com)** and not any more for *Continuous Integration*. We are not integrating outside changes and the rest of the team do not know how our changes integrate with their work.
 
@@ -227,6 +229,8 @@ As opposed, earlier feedback results in smaller change sets and in better code. 
 Herein is an important engineering skill: the ability to break up large changes into small increments. A feature grows over multiple commits on mainline versus designing and implementing the feature in isolation on a branch.
 
 ## It disables testing
+
+> Oh and to be clear: I'm agreeing regarding the feedback from integration to mainline and automated tests, and at the same time I'm also thinking of any form of valuable feedback - like from testing or product or design and even code review (I know I know, yet still it's found very commonly in nature).
 
 As long as we have not merged back into mainline, we have no feedback on the quality of our work. Alright, some will say, but we can test the feature in isolation. We can even spin up dedicated environments within minutes just for the branch. I have to say, this shows off and looks clever ... but such a waste of time, energy and money. As you should not need this.
 
