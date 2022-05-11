@@ -151,7 +151,7 @@ their feature branch.
 One team member refactors and merges back first. The other person has a
 significant amount of changes on their branch. Merging back to mainline will be
 far more painful for that second person. And probably, that will create the
-necessary tension inside the team.
+necessary tension inside the team. Even in teams that work really well together, where they understand this can happen and therefore do not necessarily get upset, yet still one has to "give in" and compromise. Which is never a good feeling.
 
 The longer the branch lives, the more refactoring has taken place, the harder
 it becomes to merge back because of all the potential merge conflicts and all
