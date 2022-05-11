@@ -297,6 +297,8 @@ Lastly, it creates cognitive overhead for the team members.
 - To switch work between features - which is never a good idea, but it happens - we have to switch between branches.
 - When the feature is dev-complete and merged back into mainline, we may not forget to delete the branch. Otherwise we end up with a repository having a truck load of branches no-one dares to delete. Which in turn introduces another kind of technical debt.
 
+Now imagine the insane context and branch switching for a tester inside a team that uses feature branches. It is not just the three branches a software engineer is juggling between. Is is three branches per software engineer. So, in a team of 5 engineers, it means a tester juggles between 15 branches. Each branch is a different topic. Each branch has different dependencies requiring to reinstall these on each branch switch. If you were wondering why your tester is exhausted at the end of the day, here is the story.
+
 To summarise, to implement a feature, team members have to perform lots of version control operations on a day-to-day basis. Therefore, they need to remember a large set of version control commands. This creates cognitive overhead that could slow down the team. Again, this will inevitably have a negative impact on IT delivery throughput, lead time and time to market.
 
 Compare this complexity with the simplicity of having everyone on the team
