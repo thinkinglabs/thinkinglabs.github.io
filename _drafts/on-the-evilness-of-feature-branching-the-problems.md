@@ -338,24 +338,23 @@ As always, thank you to [Lisi Hocke](https://twitter.com/lisihocke) and [Steve S
 - [Accelerate](https://itrevolution.com/accelerate-book/), ch 4 Technical Practices, Dr. Nicole Forsgren, Jez Humbe and Gene Kim
 - [Git Branching Strategies vs. Trunk-Based Development](https://launchdarkly.com/blog/git-branching-strategies-vs-trunk-based-development/), LaunchDarkly
 - [If you still insist on feature branching, you are hurting your business and our profession](https://mrdevops.io/if-you-still-insist-on-feature-branching-you-are-hurting-your-business-and-our-profession-32e1109d4594#.cmqfxsbir), Jon Arild Tørresdal
+- [Trunk Based Development](https://mrdevops.io/trunk-based-development-8376fe577c11), Jon Arild Tørresdal
 - [The Machine That Changed The World](https://en.wikipedia.org/wiki/The_Machine_That_Changed_the_World_(book)), p52, Womack, Jones and Roos
 - [Branching Strategies](http://www.chrisoldwood.com/articles/branching-strategies.html), Chris Oldwood
 - [From GitFlow to Trunk Based Development](http://team-coder.com/from-git-flow-to-trunk-based-development/), Robert Mißbach
 - [GitHub Workflow vs Mainline Development](http://www.multunus.com/blog/2013/06/github-workflow-vs-mainline-development/?__s=sxqabdsbwdzoo1apdvkd), Leena S N
+- [You Are What You Eat]({%post_url 2022-05-07-pipeline-you-are-what-you-eat-how-branching-affects-team-culture-dave-hounslow%}), Dave Hounslow
 
-...
-
-- [Feature Branch](https://martinfowler.com/bliki/FeatureBranch.html), Martin Fowler
-- [More Feature Branches means less Continuous Integration](https://www.infoq.com/news/2015/10/branching-continuous-integration), InfoQ interview with Steve Smith
-- [The Death of Continuous Integration](https://speakerdeck.com/stevesmithcd/the-death-of-continuous-integration), Steve Smith
-- [What is Trunk Based Development?](http://paulhammant.com/2013/04/05/what-is-trunk-based-development/), Paul Hammant
-- [Trunk Based Development](https://mrdevops.io/trunk-based-development-8376fe577c11), Jon Arild Tørresdal
-- [You Are What You Eat](https://vimeo.com/162625187), Dave Hounslow
-- [Google's Scaled Trunk Based Development](http://paulhammant.com/2013/05/06/googles-scaled-trunk-based-development/), Paul Hammant
-- [Legacy App Rejuvenation](http://paulhammant.com/2013/03/11/legacy-app-rejuvenation/), Paul Hammant
-- [Why Google Stores Billions of Lines of Code in a Single Repository?](http://m.cacm.acm.org/magazines/2016/7/204032-why-google-stores-billions-of-lines-of-code-in-a-single-repository/fulltext), Google
-- [4 Simple Tricks to avoid Merge Conflicts](http://team-coder.com/avoid-merge-conflicts/), Robert Mißbach
-- [Short-lived branches](http://articles.coreyhaines.com/posts/short-lived-branches/), Corey Haines
 
 ## The Series
 
+The [On the Evilness of Feature Branching]({% post_url 2021-04-26-on-the-evilness-of-feature-branching %}) series:
+
+1. [A Tale of Two Teams]({% post_url 2021-07-14-on-the-evilness-of-feature-branching-a-tale-of-two-teams %})
+2. [Why Do Teams Use Feature Branches?]({% post_url 2021-10-25-on-the-evilness-of-feature-branching-why-do-teams-use-feature-branches %})
+3. [But Compliance!?]({% post_url 2022-02-22-on-the-evilness-of-feature-branching-but-compliance %})
+4. The Problems
+5. How Can We Avoid Feature Branching Problems?
+6. Questions I Regularly Get Asked about Trunk-Based Development
+7. What Are The Benefits of Trunk-Based Development?
+8. Where is the Evilness of Feature Branching?
