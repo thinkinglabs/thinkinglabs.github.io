@@ -249,11 +249,11 @@ We are never in a situation of surprise discovering something does not work afte
 
 ## It makes releases unpredictable
 
-As long as we have not merged back into mainline we cannot know how much work is still left to do. Because of potential merge conflicts, and because of potential rework caused by merge conflicts at merge time. Because of the review and approval process of which the duration can vary wildly and is often too slow. And also, because we do not know how the different new features will influence each other at merge time requiring additional testing.
+As long as we have not merged back into mainline we cannot know how much work is still left to do. Potential merge conflicts could arise at merge time caused by incompatibilities introduced by different branches. Introducing potential additional rework usually requiring attention in a rush. The review and approval process usually varies wildly in lead time and is often too slow. Lastly, we are never sure how the different new features will influence each other at merge time and how they might require additional unplanned retesting.
 
-Integrating features into mainline therefore becomes a time-consuming and unpredictable activity making the whole IT delivery process very unpredictable which increases the lead time, and the time to market for our product.
+Integrating features into mainline become a time-consuming and unpredictable activity making the whole IT delivery process very unpredictable increasing the lead time, and the time to market for our product.
 
-Compare this with growing a feature on mainline where we can release the feature the minute we think it is good enough because our codebase is always working and in a releasable state.
+Compare this with growing a feature on mainline. The feature can be released the minute we think it is good enough. This is possible because our codebase is always in a releasable state, always working.
 
 Remember, our goal is to sustainably minimise our lead time to create positive business impact!
 
@@ -324,9 +324,11 @@ But ... if less than a day, why bother with the overhead of branches?
 >
 > -- Dave Farley, [Continuous Integration and Feature Branching](http://www.davefarley.net/?p=247)
 
-Continuous Integration was exactly introduced to obtain faster feedback to have better, greater insights into the effects of changes. Faster feedback requires more frequent commits into mainline. This forces us to work in smaller increments, resulting in better, more maintainable code. More frequent commits result in smaller changesets, less risks. In the end, achieving single-piece flow which in turn increases quality and IT delivery throughput together with reducing lead time for change and time to market. Inevitable, it also reduces costs.
+Continuous Integration was exactly introduced to obtain faster feedback to have better, greater insights into the effects of changes. Faster feedback requires more frequent commits into mainline. This forces us to work in smaller increments, resulting in better, more maintainable code. More frequent commits result in smaller changesets, less risks. In the end, achieving single-piece flow which in turn increases quality and IT delivery throughput together with reducing lead time for change and time to market. Inevitable, this also reduces costs.
 
-To obtain all of this, it means no branches!
+To obtain all of this, this means no branches!
+
+Over the past decade, branching became a standard in most teams. But it does not bring any benefits to the bottom line: deliver quality software in production at speed. They actually slow us down and impact quality!
 
 ## Acknowledgments
 
@@ -350,6 +352,7 @@ As always, thank you to [Lisi Hocke](https://twitter.com/lisihocke) and [Steve S
 - [Branching Strategies](http://www.chrisoldwood.com/articles/branching-strategies.html), Chris Oldwood
 - [From GitFlow to Trunk Based Development](http://team-coder.com/from-git-flow-to-trunk-based-development/), Robert Mißbach
 - [GitHub Workflow vs Mainline Development](http://www.multunus.com/blog/2013/06/github-workflow-vs-mainline-development/?__s=sxqabdsbwdzoo1apdvkd), Leena S N
+- [Why you should not use (long-lived) feature branches](https://www.freecodecamp.org/news/why-you-should-not-use-feature-branches-a86950126124/), Jean-Paul Delimat
 - [You Are What You Eat]({%post_url 2022-05-07-pipeline-you-are-what-you-eat-how-branching-affects-team-culture-dave-hounslow%}), Dave Hounslow
 
 
