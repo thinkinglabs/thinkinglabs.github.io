@@ -76,6 +76,12 @@ Therefore, from this moment on **CI stands for [Continuous Isolation](https://co
 
 The value of accelerating this feedback resides in failing fast. Problems are spotted really early, within minutes. We achieve this when committing frequently, multiple times a day, regardless of code complexity or team size. But it requires we work very hard to keep getting fast feedback. This means if the build is too slow, we need to speed up the build; if tests are too slow, we need to write better and more concise tests; if hardware is too slow, we need to buy faster hardware; if the codebase is too coupled, disabling us to write concise tests, we need to decouple the codebase.
 
+## It sacrifices collaboration
+
+Collaboration is sacrificed because everyone is focussed on the changes happening in their isolated branch.
+
+Working on mainline forces communication.
+
 ## It hinders integration of features
 
 If we are implementing multiple features at the same time in parallel,
@@ -339,7 +345,7 @@ Continuous Integration was exactly introduced to obtain faster feedback to have 
 
 To obtain all of this, this means no branches!
 
-Over the past decade, branching became a standard in most teams. But it does not bring any benefits to the bottom line: deliver quality software in production at speed. They actually slow us down and impact quality!
+Over the past decade, branching became a standard in most teams. But it does not bring any benefits to the bottom line: deliver quality software in production at speed. They actually slow us down and impact quality! If they can be avoided, team's productivity and confidence will increase by an incredible order of magnitude.
 
 ## Acknowledgments
 
