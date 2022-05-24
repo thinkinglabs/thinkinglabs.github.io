@@ -139,7 +139,8 @@ Because feature branches hide work for the rest of the team, it also discourages
 the adoption of refactoring.
 
 When we are just adding new code, integrating that code is fairly straightforward.
-But if we are refactoring our code, we are introducing new abstractions and new concepts.
+But if we are refactoring our code, we are introducing new abstractions and new concepts. For instance, we rename a method, extract code as a new method or new class, or we reorder methods inside a class, move code between classes. All this will introduce tons of conflicts.
+
 Unfortunately, Version Control Systems are not aware of semantic changes which
 makes merging very difficult. In contrast, refactoring is pretty easy when adopting [trunk-based development](https://trunkbaseddevelopment.com) together with [Baby Steps](http://www.slideshare.net/davidvoelkel/baby-steps-tdd-approaches), [Expand-Contract](https://martinfowler.com/bliki/ParallelChange.html) and [Branch by Abstraction](https://www.branchbyabstraction.com).
 
@@ -219,7 +220,7 @@ introduced the failing change a couple of hours or, worse, a couple of days ago.
 This time, we do not have enough context any more to fix that build easily. Fixing the
 build will become difficult and time consuming. From now on, we run the risk of having a broken build for a very long period of time. **We just lost the monitoring of the health of the application**. So we lost the ability to perform on demand production releases at any given moment in time. Obviously, this has a negative impact on lead time and time to market.
 
-Lisi Hocke's observed when having huge changesets, any kind of feedback activity will find less than when you have a small change set. A small change set we can keep in our headspace and have a good mental model. We can think about the implications and risks. We probably would find lots of small improvements. However, huge changesets on the other hand take already long to just ... read through, not talking about understanding or even picture what the impact might be from a risk perspective. In spite of the effort put by the author, the bigger the change set, the more people just want to get done with this. The willingness to make improvements decreases. Anything we find, we often postpone. And finally, it is also difficult to give feedback, because people are more reluctant to hear the bad news or to change direction. Because of the [Sunk Cost Fallacy](https://en.wikipedia.org/wiki/Sunk_cost).
+When having huge changesets, [Lisi Hocke](https://twitter.com/lisihocke) remarks, any kind of feedback activity will find less improvements than when you have a small change set. A small change set that fits in our head allows us to create a good mental model about it. We can think about the implications and risks. We probably will find lots of small improvements. However, huge changesets on the other hand take already long to just ... read through. Not even talking about understanding or even picture what the impact might be from a risk perspective. Regardless the effort put in by the author, the bigger the change set, the more people just want to get done with this as fast as possible. The willingness to make improvements decreases. Anything we find, we will often postpone. Finally, it is also difficult to give feedback. People have spend so much time creating this they are more reluctant to hear the bad news or to change direction. Because of the [Sunk Cost Fallacy](https://en.wikipedia.org/wiki/Sunk_cost).
 
 As we see, increasing the size of changes increases risk. It’s essentially the same as deploying our code less frequently. The amount of change is larger and the risk is greater.
 
@@ -229,11 +230,21 @@ As opposed, earlier feedback results in smaller change sets and in better code. 
 
 Herein is an important engineering skill: the ability to break up large changes into small increments. A feature grows over multiple commits on mainline versus designing and implementing the feature in isolation on a branch.
 
-## It disables testing
+## It disables Collective Ownership
+
+https://www.google.com/search?q=collective+code+ownership+benefits
+
+[Collective Ownership](http://www.extremeprogramming.org/rules/collective.html)
+
+> I’ve encountered many teams where people feel this is bad form: you don’t change someone else’s work. To me this is at odds with the most fundamental reason why we construct teams: to be less dependent on individuals. If a single person owns a set of changes then you aren’t getting a lot of value out of being a team. So don’t feel bad about committing changes to amend someone else’s work.
+
+## It impairs testing
 
 > Oh and to be clear: I'm agreeing regarding the feedback from integration to mainline and automated tests, and at the same time I'm also thinking of any form of valuable feedback - like from testing or product or design and even code review (I know I know, yet still it's found very commonly in nature).
 
-As long as we have not merged back into mainline, we have no feedback on the quality of our work. Alright, some will say, but we can test the feature in isolation. We can even spin up dedicated environments within minutes just for the branch. I have to say, this shows off and looks clever ... but such a waste of time, energy and money. As you should not need this.
+As long as we have not merged back into mainline, we have no feedback on the quality of our work. Alright, some will say, but we can test the feature in isolation. We can even spin up a dedicated environment just for the branch within minutes. I have to say, this shows off and looks clever ... but such a waste of time, energy and money. As you should not need this.
+
+If we only have one test environment to deploy the feature branch to for testing, testers cannot test other features at the same time that require specific data. Testers end up switching back and forth between deploying different branches to test different features. That takes quite some time and introduces quite some context switching. In the worst case, different features have different database schemas and require different database migrations resulting in having to rebuild the database to switch testing between features. Even more time consuming.
 
 Testing in isolation is good. It gives us some information. But it does not tell the whole story. It does not tell us anything about whether the feature integrates with all the other features being implemented in parallel on their own isolated branch.
 
@@ -336,6 +347,8 @@ As always, thank you to [Lisi Hocke](https://twitter.com/lisihocke) and [Steve S
 
 ## Bibliography
 
+- [Accelerate](https://itrevolution.com/accelerate-book/), ch 4 Technical Practices, Dr. Nicole Forsgren, Jez Humbe and Gene Kim
+- [The Machine That Changed The World](https://en.wikipedia.org/wiki/The_Machine_That_Changed_the_World_(book)), p52, Womack, Jones and Roos
 - [Continuous Integration](https://martinfowler.com/articles/continuousIntegration.html), Martin Fowler
 - [On DVCS, Continuous Integration and Feature Branching](https://continuousdelivery.com/2011/07/on-dvcs-continuous-integration-and-feature-branches/), Jez Humble
 - [Continuous Integration on a dollar a day](http://www.jamesshore.com/Blog/Continuous-Integration-on-a-Dollar-a-Day.html), James Shore
@@ -344,17 +357,15 @@ As always, thank you to [Lisi Hocke](https://twitter.com/lisihocke) and [Steve S
 - [Continuous Isolation](https://paulhammant.com/2017/02/14/fake-news-via-continuous-isolation/), Paul Hammant
 - [Promiscuous Integration vs. Continuous Integration](https://dzone.com/articles/promiscuous-integration-vs), Martin Fowler
 - [Long-Running Branches Considered Harmfull](https://newrelic.com/blog/best-practices/long-running-branches-considered-harmful), Jade Rubick
-- [Accelerate](https://itrevolution.com/accelerate-book/), ch 4 Technical Practices, Dr. Nicole Forsgren, Jez Humbe and Gene Kim
 - [Git Branching Strategies vs. Trunk-Based Development](https://launchdarkly.com/blog/git-branching-strategies-vs-trunk-based-development/), LaunchDarkly
 - [If you still insist on feature branching, you are hurting your business and our profession](https://mrdevops.io/if-you-still-insist-on-feature-branching-you-are-hurting-your-business-and-our-profession-32e1109d4594#.cmqfxsbir), Jon Arild Tørresdal
 - [Trunk Based Development](https://mrdevops.io/trunk-based-development-8376fe577c11), Jon Arild Tørresdal
-- [The Machine That Changed The World](https://en.wikipedia.org/wiki/The_Machine_That_Changed_the_World_(book)), p52, Womack, Jones and Roos
 - [Branching Strategies](http://www.chrisoldwood.com/articles/branching-strategies.html), Chris Oldwood
 - [From GitFlow to Trunk Based Development](http://team-coder.com/from-git-flow-to-trunk-based-development/), Robert Mißbach
 - [GitHub Workflow vs Mainline Development](http://www.multunus.com/blog/2013/06/github-workflow-vs-mainline-development/?__s=sxqabdsbwdzoo1apdvkd), Leena S N
-- [Why you should not use (long-lived) feature branches](https://www.freecodecamp.org/news/why-you-should-not-use-feature-branches-a86950126124/), Jean-Paul Delimat
 - [You Are What You Eat]({%post_url 2022-05-07-pipeline-you-are-what-you-eat-how-branching-affects-team-culture-dave-hounslow%}), Dave Hounslow
-
+- [Why you should not use (long-lived) feature branches](https://www.freecodecamp.org/news/why-you-should-not-use-feature-branches-a86950126124/), Jean-Paul Delimat
+- [Why I don't like feature branches](https://www.pgrs.net/2011/08/29/why-i-dont-like-feature-branches/), Paul Gross
 
 ## The Series
 
