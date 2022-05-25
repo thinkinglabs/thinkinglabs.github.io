@@ -13,7 +13,7 @@ In [part 2 of this series - Why do Teams use Feature Branches?]({% post_url 2021
 Before we move on, let me again first clarify two definitions.
 
 - What is *mainline*?
-- What is *Continuous Delivery*?
+- What is *Continuous Integration*?
 
 > **Mainline** is the line of development which is the reference from which the
 > builds of your system are created that feed into your deployment pipeline.
@@ -46,6 +46,8 @@ The only tools we need for Continuous Integrations are :
 - an automated build,
 
 and team commitment to never break the build.
+
+[Extreme Programming](http://www.extremeprogramming.org) defined Continuous Integration this way in the late nineties. The idea was to have one branch for the whole team. They wanted to be alerted of unintegratable code at the earliest moment as possible. The practice could be performed by humans. No servers or daemons were required.
 
 ## It delays feedback
 
@@ -81,6 +83,8 @@ The value of accelerating this feedback resides in failing fast. Problems are sp
 Collaboration is sacrificed because everyone is focussed on the changes happening in their isolated branch.
 
 Working on mainline forces communication.
+
+see it hides work and disables communication
 
 ## It hinders integration of features
 
@@ -138,6 +142,18 @@ Remember, the purpose of a Version Control System is not just to version source
 code. **A Version Control System is really a communication tool** to communicate
 changes with the rest of the team. This will again help in gaining a shared
 understanding of the system and achieve [collective ownership](http://www.extremeprogramming.org/rules/collective.html). Again, this will inevitably lead to better quality, higher IT delivery throughput, shorter lead times and time to market.
+
+## It introduces rework
+
+>To increase developer productivity, some teams have developers work isolated from each other on their own branches, both to keep mainline stable, and to prevent them treading on each other’s toes.
+
+>However, over time these branches diverge from each other. While merging a single one of these branches into mainline is not usually troublesome, the work required to integrate multiple long-lived branches into mainline is usually painful, requiring significant amounts of re-work as conflicting assumptions of developers are revealed and must be resolved.
+
+>Teams using long-lived branches often require code freezes, or even integration and stabilization phases, as they work to integrate these branches prior to a release. Despite modern tooling, this process is still expensive and unpredictable. On teams larger than a few developers, the integration of multiple branches requires multiple rounds of regression testing and bug fixing to validate that the system will work as expected following these merges. This problem becomes exponentially more severe as team sizes grow, and as branches become more long-lived.
+
+>The practice of continuous integration was invented to address these problems. CI (continuous integration) follows the XP (extreme programming) principle that if something is painful, we should do it more often, and bring the pain forward. Thus in CI developers integrate all their work into trunk (also known as mainline or master) on a regular basis (at least daily). A set of automated tests is run both before and after the merge to validate that no regressions are introduced. If these automated tests fail, the team stops what they are doing and someone fixes the problem immediately.
+
+=> ensure always working software, enabling on demand production releases.
 
 ## It works against refactoring
 
@@ -341,11 +357,11 @@ But ... if less than a day, why bother with the overhead of branches?
 >
 > -- Dave Farley, [Continuous Integration and Feature Branching](http://www.davefarley.net/?p=247)
 
-Continuous Integration was exactly introduced to obtain faster feedback to have better, greater insights into the effects of changes. Faster feedback requires more frequent commits into mainline. This forces us to work in smaller increments, resulting in better, more maintainable code. More frequent commits result in smaller changesets, less risks. In the end, achieving single-piece flow which in turn increases quality and IT delivery throughput together with reducing lead time for change and time to market. Inevitable, this also reduces costs.
+Continuous Integration was exactly introduced to obtain faster feedback to have better, greater insights into the effects of changes. Faster feedback requires more frequent commits into mainline. Forcing us to work in smaller increments, resulting in better, more maintainable code. More frequent commits means smaller changesets and less risks. In the end, achieving a single-piece flow which in turn increases quality and IT delivery throughput together with reducing lead time for change and time to market. Inevitable, this all comes with reduced costs.
 
-To obtain all of this, this means no branches!
+This means: **Don't use branches!**
 
-Over the past decade, branching became a standard in most teams. But it does not bring any benefits to the bottom line: deliver quality software in production at speed. They actually slow us down and impact quality! If they can be avoided, team's productivity and confidence will increase by an incredible order of magnitude.
+Over the past decade, branching became a standard for most teams. But it does not bring any benefits to the bottom line: deliver quality software in production at speed. In fact, they essentially slow us down and impact quality! When they can be avoided, a team's productivity and confidence will drastically increase.
 
 ## Acknowledgments
 
@@ -353,19 +369,24 @@ As always, thank you to [Lisi Hocke](https://twitter.com/lisihocke) and [Steve S
 
 ## Bibliography
 
-- [Accelerate](https://itrevolution.com/accelerate-book/), ch 4 Technical Practices, Dr. Nicole Forsgren, Jez Humbe and Gene Kim
-- [The Machine That Changed The World](https://en.wikipedia.org/wiki/The_Machine_That_Changed_the_World_(book)), p52, Womack, Jones and Roos
-- [Continuous Integration](https://martinfowler.com/articles/continuousIntegration.html), Martin Fowler
+- [Continuous Integration (original version)](https://www.martinfowler.com/articles/originalContinuousIntegration.html), Martin Fowler
+- [Continuous Integration](https://continuousdelivery.com/foundations/continuous-integration/), Jez Humble
+- [ContinuousIntegrationCertification](https://martinfowler.com/bliki/ContinuousIntegrationCertification.html)
 - [On DVCS, Continuous Integration and Feature Branching](https://continuousdelivery.com/2011/07/on-dvcs-continuous-integration-and-feature-branches/), Jez Humble
 - [Continuous Integration on a dollar a day](http://www.jamesshore.com/Blog/Continuous-Integration-on-a-Dollar-a-Day.html), James Shore
 - [Don't Feature Branch](http://www.davefarley.net/?p=160), Dave Farley
 - [Continuous Integration and Feature Branching](http://www.davefarley.net/?p=247), Dave Farley
 - [Continuous Isolation](https://paulhammant.com/2017/02/14/fake-news-via-continuous-isolation/), Paul Hammant
+- [Fake News Via Continuous Isolation](https://paulhammant.com/2017/02/14/fake-news-via-continuous-isolation/), Paul Hammant
+- [continuousisolation.com](https://continuousisolation.com), Paul Hammant
 - [Promiscuous Integration vs. Continuous Integration](https://dzone.com/articles/promiscuous-integration-vs), Martin Fowler
 - [Long-Running Branches Considered Harmfull](https://newrelic.com/blog/best-practices/long-running-branches-considered-harmful), Jade Rubick
+- [Accelerate](https://itrevolution.com/accelerate-book/), ch 4 Technical Practices, Dr. Nicole Forsgren, Jez Humbe and Gene Kim
 - [Git Branching Strategies vs. Trunk-Based Development](https://launchdarkly.com/blog/git-branching-strategies-vs-trunk-based-development/), LaunchDarkly
 - [If you still insist on feature branching, you are hurting your business and our profession](https://mrdevops.io/if-you-still-insist-on-feature-branching-you-are-hurting-your-business-and-our-profession-32e1109d4594#.cmqfxsbir), Jon Arild Tørresdal
+- [trunkbaseddevelopment.com](https://trunkbaseddevelopment.com), Paul Hammant
 - [Trunk Based Development](https://mrdevops.io/trunk-based-development-8376fe577c11), Jon Arild Tørresdal
+- [The Machine That Changed The World](https://en.wikipedia.org/wiki/The_Machine_That_Changed_the_World_(book)), p52, Womack, Jones and Roos
 - [Branching Strategies](http://www.chrisoldwood.com/articles/branching-strategies.html), Chris Oldwood
 - [From GitFlow to Trunk Based Development](http://team-coder.com/from-git-flow-to-trunk-based-development/), Robert Mißbach
 - [GitHub Workflow vs Mainline Development](http://www.multunus.com/blog/2013/06/github-workflow-vs-mainline-development/?__s=sxqabdsbwdzoo1apdvkd), Leena S N
