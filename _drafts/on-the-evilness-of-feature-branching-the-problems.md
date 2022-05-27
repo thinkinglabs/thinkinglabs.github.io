@@ -154,15 +154,21 @@ In contrast, refactoring is pretty easy and down right fast when adopting [trunk
 
 [Collective Owernership](http://www.extremeprogramming.org/rules/collective.html) is one of key practices of [Extreme Programming](https://en.wikipedia.org/wiki/Extreme_programming): *anyone who sees an opportunity to add value to any portion of the code is required to do so at any time*.
 
-It has the benefit that complex code does not live very long, because someone else will soon simplify it. Adding new functionality will as a consequence never be difficult.
+It has the benefits:
 
-Also knowledge of the system is now shared between team members. Anyone is able to add functionality or apply changes to any part of the system removing bottlenecks and enabling the fast flow of work through the value stream.
+- Complex code does not live very long, because someone else will soon simplify it. As a consequence, adding new functionality will never be difficult.
+- Anyone who finds a problem, will fix it immediately, leading to higher quality.
+- Knowledge of the system is now shared between team members. Anyone is able to add functionality or apply changes to any part of the system removing bottlenecks and enabling the fast flow of work through the value stream.
 
-However, with feature branches each team member is working on its own isolated branch hidden from everyone else on the team, hence it works against collective ownership. Code is written by one individual. This introduces the strong tendency to see the code they wrote as "my code".
+However, with feature branches each team member is working on its own isolated branch hidden from the rest of the team, hence it works against collective ownership. Code is written by one individual. This introduces the strong tendency to see the code they wrote as "my code".
 
-We loose the benefit of being a team as the team now dependents on individuals and is not resilient any more. We now rely on specific team members to change specific parts of the system.  Inevitably this introduces bottlenecks for change, reducing throughput and increasing time to market.
+We loose the benefit of being a team as the team now dependents on individuals and is not resilient any more. We now rely on specific team members to change specific parts of the system. Inevitably this introduces bottlenecks for change, reducing throughput and increasing time to market.
 
 Because it goes against collective ownership, code will tend to be more complex. Adding new functionality will be more difficult and more time consuming. Again reducing IT delivery throughput and increasing time to market.
+
+Because knowledge of certain parts of the system is concentrated in specific individuals, it increases risk.
+
+At last, because feature branching cancels collective ownership, nobody shares the responsibility for the quality of the IT systems.
 
 ### It introduces batch work and inventory
 
@@ -364,6 +370,7 @@ As always, thank you to [Lisi Hocke](https://twitter.com/lisihocke) and [Steve S
 - [Git Branching Strategies vs. Trunk-Based Development](https://launchdarkly.com/blog/git-branching-strategies-vs-trunk-based-development/), LaunchDarkly
 - [If you still insist on feature branching, you are hurting your business and our profession](https://mrdevops.io/if-you-still-insist-on-feature-branching-you-are-hurting-your-business-and-our-profession-32e1109d4594#.cmqfxsbir), Jon Arild Tørresdal
 - [Extreme Programming Explained](https://www.goodreads.com/book/show/67833.Extreme_Programming_Explained), p59, p67, p99-100,  Kent Beck
+- [The Art of Agile Development](https://www.goodreads.com/book/show/1654215.The_Art_of_Agile_Development?ac=1&from_search=true&qid=CrLqXaqSQW&rank=1), p192, James Shore and Shane Warden
 - [trunkbaseddevelopment.com](https://trunkbaseddevelopment.com), Paul Hammant
 - [Trunk Based Development](https://mrdevops.io/trunk-based-development-8376fe577c11), Jon Arild Tørresdal
 - [The Machine That Changed The World](https://en.wikipedia.org/wiki/The_Machine_That_Changed_the_World_(book)), p52, Womack, Jones and Roos
