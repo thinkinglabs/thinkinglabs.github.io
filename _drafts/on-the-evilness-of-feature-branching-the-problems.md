@@ -257,23 +257,13 @@ We are never in a situation of surprise discovering something does not work afte
 
 ### It introduces rework and therefore makes releases unpredictable
 
-As long as we have not merged back into mainline we cannot know how much work is still left to do. Potential merge conflicts could arise at merge time caused by incompatibilities introduced by different branches. Introducing potential additional rework usually requiring attention in a rush. The review and approval process usually varies wildly in lead time and is often too slow. Lastly, we are never sure how the different new features will influence each other at merge time and how they might require additional unplanned retesting.
+As long as we have not merged back into mainline we simply do not know how much work is still left to do. Merging a single branch into mainline is often not that difficult. However, integrating multiple parallel branches is painful. It requires a significant amount of rework caused by merge conflicts, incompatibilities between features and conflicting assumptions from team members that need to be resolved and requires multiple rounds of unplanned retesting and bug fixing.
 
-Integrating features into mainline become a time-consuming and unpredictable activity making the whole IT delivery process very unpredictable increasing the lead time, and the time to market for our product.
+Integrating features into mainline become expensive, time-consuming and a wildly unpredictable activity. Thus the whole IT delivery process becomes very unpredictable, increasing the lead time, and the time to market for new functionality.
 
-Compare this with growing a feature on mainline. The feature can be released the minute we think it is good enough. This is possible because our codebase is always in a releasable state, always working.
+Continuous Integration was exactly introduced to cope with these problems. If something is painful, we need to do it more often. Bring the pain forward. Thus with Continuous Integration in place, a feature grows on mainline. On each commit, all automated tests are executed before the push and after the push. If a test fails, the team stops and someone fixes the problem immediately. Whenever we think the feature is good enough, we release it within minutes. This is possible because our codebase is always in a releasable state and always working. Thus enabling on-demand production releases and reducing time to market.
 
 Remember, our goal is to sustainably minimise our lead time to create positive business impact!
-
->To increase developer productivity, some teams have developers work isolated from each other on their own branches, both to keep mainline stable, and to prevent them treading on each other’s toes.
-
->However, over time these branches diverge from each other. While merging a single one of these branches into mainline is not usually troublesome, the work required to integrate multiple long-lived branches into mainline is usually painful, requiring significant amounts of re-work as conflicting assumptions of developers are revealed and must be resolved.
-
->Teams using long-lived branches often require code freezes, or even integration and stabilization phases, as they work to integrate these branches prior to a release. Despite modern tooling, this process is still expensive and unpredictable. On teams larger than a few developers, the integration of multiple branches requires multiple rounds of regression testing and bug fixing to validate that the system will work as expected following these merges. This problem becomes exponentially more severe as team sizes grow, and as branches become more long-lived.
-
->The practice of continuous integration was invented to address these problems. CI (continuous integration) follows the XP (extreme programming) principle that if something is painful, we should do it more often, and bring the pain forward. Thus in CI developers integrate all their work into trunk (also known as mainline or master) on a regular basis (at least daily). A set of automated tests is run both before and after the merge to validate that no regressions are introduced. If these automated tests fail, the team stops what they are doing and someone fixes the problem immediately.
-
-=> ensure always working software, enabling on demand production releases.
 
 ### It is expensive and therefore less efficient
 
