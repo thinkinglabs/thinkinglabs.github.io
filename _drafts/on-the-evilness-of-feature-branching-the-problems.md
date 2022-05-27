@@ -121,7 +121,7 @@ changes with the rest of the team. This will again help in gaining a shared unde
 
 **Working on mainline forces communication**.
 
-### It works against refactoring
+### It discourages refactoring
 
 Because feature branches hide work for the rest of the team, it also discourages the adoption of refactoring.
 
@@ -149,6 +149,20 @@ technical debt. When not paying back technical debt, adding new functionality to
 slows down the team. To then end in this vicious circle where the team slows down over time. Eventually coming to a halt and nobody really understanding why and how this happened.
 
 In contrast, refactoring is pretty easy and down right fast when adopting [trunk-based development](https://trunkbaseddevelopment.com) together with [Baby Steps](http://www.slideshare.net/davidvoelkel/baby-steps-tdd-approaches), [Expand-Contract](https://martinfowler.com/bliki/ParallelChange.html) and [Branch by Abstraction](https://www.branchbyabstraction.com).
+
+### It works against Collective Ownership
+
+[Collective Owernership](http://www.extremeprogramming.org/rules/collective.html) is one of key practices of [Extreme Programming](https://en.wikipedia.org/wiki/Extreme_programming): *anyone who sees an opportunity to add value to any portion of the code is required to do so at any time*.
+
+It has the benefit that complex code does not live very long, because someone else will soon simplify it. Adding new functionality will as a consequence never be difficult.
+
+Also knowledge of the system is now shared between team members. Anyone is able to add functionality or apply changes to any part of the system removing bottlenecks and enabling the fast flow of work through the value stream.
+
+However, with feature branches each team member is working on its own isolated branch hidden from everyone else on the team, hence it works against collective ownership. Code is written by one individual. This introduces the strong tendency to see the code they wrote as "my code".
+
+We loose the benefit of being a team as the team now dependents on individuals and is not resilient any more. We now rely on specific team members to change specific parts of the system.  Inevitably this introduces bottlenecks for change, reducing throughput and increasing time to market.
+
+Because it goes against collective ownership, code will tend to be more complex. Adding new functionality will be more difficult and more time consuming. Again reducing IT delivery throughput and increasing time to market.
 
 ### It introduces batch work and inventory
 
@@ -214,14 +228,6 @@ This brings us back to feedback. The longer we defer feedback, the greater the r
 As opposed, earlier feedback results in smaller change sets and in better code. Increasing the commit frequency into mainline forces us to work in small incremental steps that preserve existing functionality. We take smaller steps, which generally breaks less and keeps the application always working. We are able to perform production releases at any given moment in time, as such reducing risks. When we do break something, we can find it sooner and fix it faster, instead of waiting days or weeks to discover it. Also, we have more context about how to fix broken things then when we commit infrequently into mainline and having to wait for days or weeks for feedback.
 
 Here lies **an important engineering skill: the ability to break up large changes into small increments**. A feature grows over multiple commits on mainline versus designing and implementing the feature in isolation on a branch.
-
-### It disables Collective Ownership
-
-https://www.google.com/search?q=collective+code+ownership+benefits
-
-[Collective Ownership](http://www.extremeprogramming.org/rules/collective.html)
-
-> I’ve encountered many teams where people feel this is bad form: you don’t change someone else’s work. To me this is at odds with the most fundamental reason why we construct teams: to be less dependent on individuals. If a single person owns a set of changes then you aren’t getting a lot of value out of being a team. So don’t feel bad about committing changes to amend someone else’s work.
 
 ### It impairs testing
 
@@ -357,6 +363,7 @@ As always, thank you to [Lisi Hocke](https://twitter.com/lisihocke) and [Steve S
 - [Accelerate](https://itrevolution.com/accelerate-book/), ch 4 Technical Practices, Dr. Nicole Forsgren, Jez Humbe and Gene Kim
 - [Git Branching Strategies vs. Trunk-Based Development](https://launchdarkly.com/blog/git-branching-strategies-vs-trunk-based-development/), LaunchDarkly
 - [If you still insist on feature branching, you are hurting your business and our profession](https://mrdevops.io/if-you-still-insist-on-feature-branching-you-are-hurting-your-business-and-our-profession-32e1109d4594#.cmqfxsbir), Jon Arild Tørresdal
+- [Extreme Programming Explained](https://www.goodreads.com/book/show/67833.Extreme_Programming_Explained), p59, p67, p99-100,  Kent Beck
 - [trunkbaseddevelopment.com](https://trunkbaseddevelopment.com), Paul Hammant
 - [Trunk Based Development](https://mrdevops.io/trunk-based-development-8376fe577c11), Jon Arild Tørresdal
 - [The Machine That Changed The World](https://en.wikipedia.org/wiki/The_Machine_That_Changed_the_World_(book)), p52, Womack, Jones and Roos
