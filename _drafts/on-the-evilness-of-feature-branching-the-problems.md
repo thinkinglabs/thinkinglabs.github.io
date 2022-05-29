@@ -235,25 +235,21 @@ As opposed, earlier feedback results in smaller change sets and in better code. 
 
 Here lies **an important engineering skill: the ability to break up large changes into small increments**. A feature grows over multiple commits on mainline versus designing and implementing the feature in isolation on a branch.
 
-### It impairs testing
+### It might impact testing
 
-> Oh and to be clear: I'm agreeing regarding the feedback from integration to mainline and automated tests, and at the same time I'm also thinking of any form of valuable feedback - like from testing or product or design and even code review (I know I know, yet still it's found very commonly in nature).
+In all sincerity, this topic requires more thought. The topic is actually more subtle from a test engineering perspective than I initially thought with my limited experience. When discussing this with [Lisi Hock](https://twitter.com/lisihocke), I realised there seems to be good and bad parts to branching with regard to testing. This requires a more in-depth analysis than can be done in the context of this article. Eventually this will get some more love in a later article on the consequences of branching for testing.
 
-As long as we have not merged back into mainline, we have no feedback on the quality of our work. Alright, some will say, but we can test the feature in isolation. We can even spin up a dedicated environment just for the branch within minutes. I have to say, this shows off and looks clever ... but such a waste of time, energy and money. As you should not need this.
+The good part of branching is it allows us to test the feature in isolation. In this regard, when the feature is broken, it is easier to understand why it does not work. We can check the behaviour in different conditions and simulate different situations. In contrast, this would be harder to check and understand once integrated. Does it not work because of the feature itself or because of the integration with the rest of the system? To summarise, we first try to see if the feature works as expected before exploring, still in isolation, what unknown risks and surprises might be there. All of this gives valuable feedback and information that will feed into the later testing of the integration. Testing the integrated parts becomes then more tangible and focused.
 
-If we only have one test environment to deploy the feature branch to for testing, testers cannot test other features at the same time that require specific data. Testers end up switching back and forth between deploying different branches to test different features. That takes quite some time and introduces quite some context switching. In the worst case, different features have different database schemas and require different database migrations resulting in having to rebuild the database to switch testing between features. Even more time consuming.
+But we are testing twice!? This comes with a non-negligible cost. However, here comes the counterintuitive part I should have known of. The more we can test in layers along with the incremental development work, the earlier we learn and understand the mental model, the faster we can provide feedback from testing. Not doing this comes with its own fair share of downsides. The biggest being delayed feedback about the implementation.
 
-Testing in isolation is good. It gives us some information. But it does not tell the whole story. It does not tell us anything about whether the feature integrates with all the other features being implemented in parallel on their own isolated branch.
+But, as long as we have not merged back into mainline, we still have no feedback on the quality of our work. The only definitive point is the testing happening at merge time. Does our changes work with everyone else's changes? Before that, though we collected valuable information, it is still a guess. We do not know. We can only hope nobody did something horrid that breaks our work.
 
-The only definitive point is the testing happening at merge time. Our change works with everyone else's changes. Before that, it is just a guess. We do not know. We can only hope nobody did something horrid that breaks our work.
+That is where the bad part of branching comes. When software engineers hold back their branch for way too long. When they finally merge we might discover lots of surprises. Either there is a risk they went for too long a time into the wrong direction and we only find out about this too late. Or we end up with long testing cycles finding lots of issues but yet by far not as many or not as relevant as when the branch would have been kept short with a small changeset. Fatigue is a real thing!
 
-It is only when the feature is finished and it gets integrated with all the other features that we know it works or not. That is too late!
+A better approach would be to test continuously in pair with a test engineer while the feature grows. Every day we know where we stand. Because we have fast feedback. If some new development breaks we can fix it easily because we have enough fresh context. When the feature is finished we know it works. It can be released at any given moment in time. Which again reduces lead time and time to market.
 
-Also, it requires to test twice. Once on the branch and once on mainline once the branch has been merged back. That is rework, not efficient, wasted time and spoiled money.
-
-A better approach is to test continuously while the feature grows on mainline. Every day we know where we stand. Because we have fast feedback, if some new development breaks we can fix it easily because we have enough fresh context. When the feature is finished we know it works. It can be released at any given moment in time. Which again reduces lead time and time to market.
-
-We are never in a situation of surprise discovering something does not work after days or weeks of development. We do not have horrible rework or having to throw away and start over again. Therefore it is also more cost effective.
+We are never in a situation of surprise discovering something does not work after days or weeks of development. We do not have horrible rework or have to throw away and start over again. Therefore it is also more cost effective.
 
 ### It introduces rework and therefore makes releases unpredictable
 
