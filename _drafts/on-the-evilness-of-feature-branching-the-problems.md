@@ -20,7 +20,7 @@ Before we move on, let me first again clarify two definitions.
 >
 > -- Jez Humble, [On DVCS, Continuous Integration and Feature Branches](https://continuousdelivery.com/2011/07/on-dvcs-continuous-integration-and-feature-branches/)
 
-> **Continuous Integration** is a  a software development practice where members of a team integrate their work frequently - usually each person integrates at least daily - leading to multiple integrations per day. Each integration is verified by an automated build […].
+> **Continuous Integration** is a software development practice where members of a team integrate their work frequently - usually, each person integrates at least daily - leading to multiple integrations per day. Each integration is verified by an automated build […].
 >
 > -- Martin Fowler, [Continuous Integration](https://martinfowler.com/articles/continuousIntegration.html)
 
@@ -47,7 +47,7 @@ The only tools we need for Continuous Integrations are :
 
 and team commitment to never break the build.
 
-Continuous Integration was defined this way in the late nineties by [Extreme Programming](http://www.extremeprogramming.org). The idea was to have only one branch for the whole team. They wanted to be alerted whenever code could not integrate at the earliest moment as possible. The practice could be performed by humans. No servers or daemons were required.
+Continuous Integration was defined this way in the late nineties by [Extreme Programming](http://www.extremeprogramming.org). The idea was to have only one branch for the whole team. They wanted to be alerted whenever code could not integrate at the earliest moment possible. The practice could be performed by humans. No servers or daemons were required.
 
 However, nowadays, many teams choose to work with feature branches for the various reasons mentioned in [part 2 - Why do Teams use Feature Branches?]({% post_url 2021-10-25-on-the-evilness-of-feature-branching-why-do-teams-use-feature-branches %}) - and [part 3 - But Compliance!?]({% post_url 2022-02-22-on-the-evilness-of-feature-branching-but-compliance %}). But this comes with a myriad of problems.
 
@@ -64,19 +64,19 @@ This delay in feedback increases with the duration of the branch and with the nu
 If the branch lives for a couple of hours, feedback is delayed by a couple of hours. If the branch lives for a couple of days, feedback is delayed by a couple
 of days.
 
-Often the solution to delayed feedback is to start even more work, instead of finishing the work that is already in progress. Or, worse, throw even more people to the problem to then hit [Brooks's Law](https://en.wikipedia.org/wiki/Brooks%27s_law). Hence, again increasing the work in progress together with the number of parallel branches. To then have waiting times going through the roof. All of this, of course, to optimise for utilisation. And **here we are in hell**.
+Often the solution to delayed feedback is to start even more work, instead of finishing the work that is already in progress. Or, worse, throw even more people to the problem to then hit [Brooks's Law](https://en.wikipedia.org/wiki/Brooks%27s_law). Hence, again increasing the work in progress together with the number of parallel branches. To then have waiting times going through the roof. All of this, of course, is to optimise for utilisation. And **here we are in hell**.
 
 Remember, Continuous Integration is a practice to ensure always working software on mainline and to get feedback within minutes whether a change broke the application or not.
 
-However, lot’s of teams like to redefine Continuous Integration by saying: "*We have our [preferred centralised build tool] running against all of our branches*".
+However, a lot of teams like to redefine Continuous Integration by saying: "*We have our [preferred centralised build tool] running against all of our branches*".
 
 Having an automated build running against all of our branches is actually a really, really good thing. But it is not Continuous Integration. We are not integrating. It is still a lie. The only feedback we get is whether the code that exists inside our isolated branch still compiles and whether we have not introduced any regressions against the tests that exist inside that isolated branch. We do not get any feedback whatsoever on whether our changes integrate well with the changes that exist on all the other existing parallel branches. Even when all tests pass on the branch, they still may fail when merging back into mainline. The real authoritative feedback only happens at merge time when integrating, once the feature is finished. Everything else is a guess.
 
-From this moment on **CI stands for [Continuous Isolation](https://continuousisolation.com)** and not any more for *Continuous Integration*. We are not integrating outside changes and the rest of the team do not know how our changes integrate with their work.
+From this moment on **CI stands for [Continuous Isolation](https://continuousisolation.com)** and not anymore for *Continuous Integration*. We are not integrating outside changes and the rest of the team does not know how our changes integrate with their work.
 
-The value of accelerating this feedback resides in failing fast. Problems are spotted really early, within minutes. We achieve this when committing frequently, multiple times a day, regardless of code complexity or team size. But it requires we work very hard to keep getting fast feedback. This means if the build is too slow, we need to speed up the build; if tests are too slow, we need to write better and more concise tests; if hardware is too slow, we need to buy faster hardware; if the codebase is too coupled, preventing us to write concise tests, we need to decouple the codebase.
+The value of accelerating this feedback resides in failing fast. Problems are spotted early, within minutes. We achieve this when committing frequently, multiple times a day, regardless of code complexity or team size. But it requires we work very hard to keep getting fast feedback. This means if the build is too slow, we need to speed up the build; if tests are too slow, we need to write better and more concise tests; if the hardware is too slow, we need to buy faster hardware; if the codebase is too coupled, preventing us to write concise tests, we need to decouple the codebase.
 
-### It hinders integration of features
+### It hinders the integration of features
 
 If we are implementing multiple features at the same time in parallel,
 integrating these features becomes exponentially harder with the number of
@@ -84,40 +84,39 @@ features that are being implemented in parallel, and the number of changes requi
 
 One way to avoid these integration problems is using what [Martin Fowler](https://twitter.com/martinfowler) calls
 [Promiscuous Integration](https://dzone.com/articles/promiscuous-integration-vs).
-Be aware, Martin does not advise the use of Promiscuous Integration. He just
+Be aware, that Martin does not advise the use of Promiscuous Integration. He just
 named the pattern.
 
 ![It hinders the integration of features](/images/on-the-evilness-of-feature-branching-the-problems/it-hinders-integration-of-features.png)
 
-In order to use changes from another feature that is currently being implemented, we cherry pick some commits from
+To use changes from another feature that is currently being implemented, we cherry-pick some commits from
 that feature branch into our branch. We are now actually communicating changes between branches.
 
 However, the biggest concern Martin Fowler has against Promiscuous Integration, apart
-from introducing a lot of process complexity, is that with all that cherry
-picking, **we lose track of who has what on which branch**. Also for testers it becomes a painful exercise to figure out where the risk resides, on which branch and what to focus feedback on.
+from introducing a lot of process complexity, is that with all that cherry-picking, **we lose track of who has what on which branch**. Also for test engineers, it becomes a painful exercise to figure out where the risk resides, on which branch and what to focus feedback on.
 
-Compare this complexity with the simplicity of having everyone in the team commit its changes immediately to mainline. They communicate their changes immediately with the rest of the team. Helping to create a shared understanding of the code base and a [collective ownership](http://www.extremeprogramming.org/rules/collective.html) of the code base. Inevitably, this leads into better quality and higher IT delivery throughput and reduces the lead time
+Compare this complexity with the simplicity of having everyone in the team commit its changes immediately to mainline. They communicate their changes immediately with the rest of the team. Helping to create a shared understanding of the codebase and a [collective ownership](http://www.extremeprogramming.org/rules/collective.html) of the codebase. Inevitably, this leads to better quality and higher IT delivery throughput and reduces the lead time
 and the time to market.
 
 ### It hides work for the rest of the team and therefore disables communication
 
-As long as we have not yet merged our branch back to mainline, the rest of the team simply do not know in which direction we are taking the code to implement the feature we are working on.
+As long as we have not yet merged our branch back to mainline, the rest of the team simply does not know in which direction we are taking the code to implement the feature we are working on.
 
 ![It hides work for the rest of the team](/images/on-the-evilness-of-feature-branching-the-problems/it-hides-work-for-the-rest-of-the-team.png)
 
 This is fine as long as everyone on the team works on different parts of the application. But, the minute two team members are working on the same codebase
-area they are each blind to how their work affects the other person. As a result, collaboration is sacrificed because everyone is focussed on the changes happening in their isolated branch.
+area they are each blind to how their work affects the other person. As a result, collaboration is sacrificed because everyone is focused on the changes happening in their isolated branch.
 
-On the other hand, if we are committing more frequently into mainline, we communicate to the rest of the team the direction we are taking with the code to
+On the other hand, if we are committing more frequently to mainline, we communicate to the rest of the team the direction we are taking with the code to
 implement this feature. For example, we could add a conditional indicating the start of the new code we are working on and have it disabled by default. From then on the rest of the team sees the new changes we are introducing. They can immediately spot how this affects their work and thus can instantly adapt to these changes. As a result, it eliminates the classic rework happening at merge time and enables the fast flow of work through the value stream.
 
-This is precisely the purpose of Version Control Systems together with Continuous Integration. To publish our ideas to the rest of the team and see the impact on others within minutes. The rest of the team sees the direction of our thinking. Consequently, it enables communication inside the team and the fast flow of work, higher IT delivery throughput, reduced lead time and time to market.
+This is precisely the purpose of Version Control Systems together with Continuous Integration. To publish our ideas to the rest of the team and see the impact on others within minutes. The rest of the team sees the direction of our thinking. Consequently, it enables communication inside the team and the fast flow of work, higher IT delivery throughput, and reduced lead time and time to market.
 
-We could argue that introducing this conditional, increases the complexity of the codebase. Which is true. On the other hand by using a feature branch and not
-introducing this conditional, the conditional is not eliminated. It is still there. But it is not obvious and absolutely not visible. The conditional is now the Version Control System branch. From now on, **our changes are invisible for the rest of the team**. They have no idea how those changes will impact their work.
+We could argue that introducing this conditional, increases the complexity of the codebase. This is true. On the other hand by using a feature branch and not
+introducing this conditional, the conditional is not eliminated. It is still there. But it is not obvious and utterly invisible. The conditional is now the Version Control System branch. From now on, **our changes are invisible to the rest of the team**. They have no idea how those changes will impact their work.
 
-Remember, the purpose of a Version Control System is not just to version source code. **A Version Control System is really a communication tool** to communicate
-changes with the rest of the team. This will again help in gaining a shared understanding of the system and achieve [collective ownership](http://www.extremeprogramming.org/rules/collective.html) over the code base. Again, this will inevitably lead to better quality, higher IT delivery throughput, shorter lead times and time to market.
+Remember, the purpose of a Version Control System is not just to version source code. **A Version Control System is reality a communication tool** to communicate
+changes with the rest of the team. This will again help in gaining a shared understanding of the system and achieve [collective ownership](http://www.extremeprogramming.org/rules/collective.html) over the codebase. Again, this will inevitably lead to better quality, higher IT delivery throughput, shorter lead times and time to market.
 
 **Working on mainline forces communication**.
 
@@ -125,9 +124,9 @@ changes with the rest of the team. This will again help in gaining a shared unde
 
 Because feature branches hide work for the rest of the team, it also discourages the adoption of refactoring.
 
-When we are just adding new code, integrating that code is fairly straightforward. But if we are refactoring our code, we are introducing new abstractions and new concepts. For instance we rename a method; extract code as a new method or a new class; or we reorder methods inside a class; move code between classes.
+When we are just adding new code, integrating that code is fairly straightforward. But if we are refactoring our code, we are introducing new abstractions and new concepts. For instance, we rename a method; extract code as a new method or a new class; reorder methods inside a class; or move code between classes.
 
-Unfortunately, Version Control Systems are not aware of semantic changes which makes merging very difficult. Either this introduces tons of conflicts at merge time or even worse [Semantic Bugs](https://martinfowler.com/bliki/SemanticConflict.html).
+Unfortunately, Version Control Systems are not aware of semantic changes which make merging very difficult. Either this introduces tons of conflicts at merge time or even worse [Semantic Bugs](https://martinfowler.com/bliki/SemanticConflict.html).
 
 If we have two team members, each working in parallel on their feature branch.
 
@@ -136,55 +135,50 @@ If we have two team members, each working in parallel on their feature branch.
 One team member refactors and merges back first. The other person has a
 significant amount of changes on their branch. Merging back to mainline will be
 far more painful for that second person. And probably, that will create the
-necessary tension inside the team. Even in teams that work really well together, where they understand this can happen and therefore do not necessarily get upset, yet still one has to "give in" and compromise. Which is never a good feeling.
+necessary tension inside the team. Even in teams that work surely well together, where they understand this can happen and therefore do not necessarily get upset, yet still one has to "give in" and compromise. Which is never a good feeling.
 
-The longer the branch lives, the more refactoring has occurred, the harder
+The longer the branch lives and the more refactoring has occurred, the harder
 it becomes to merge back because of all the potential merge conflicts and all
 the potential rework that will be required at merge time. Merging back becomes
-a time consuming and very unpredictable activity. This will inevitably slow down
+a time-consuming and very unpredictable activity. This will inevitably slow down
 the team.
 
-It is exactly this slow down of the team that discourages the adoption of refactoring inside the team. We all know, not enough refactoring prevents paying back
-technical debt. When not paying back technical debt, adding new functionality to the code base becomes far more time consuming and difficult. Again, this
-slows down the team. To then end in this vicious circle where the team slows down over time. Eventually coming to a halt and nobody really understanding why and how this happened.
+It is exactly this slow down of the team that discourages the adoption of refactoring inside the team. We all know, that not enough refactoring prevents paying back technical debt. When not paying back technical debt, adding new functionality to the codebase becomes far more time-consuming and difficult. Again, this slows down the team. To then end in this vicious circle where the team slows down over time. Eventually coming to a halt and nobody understood in truth why and how this happened.
 
 In contrast, refactoring is pretty easy and down right fast when adopting [trunk-based development](https://trunkbaseddevelopment.com) together with [Baby Steps](http://www.slideshare.net/davidvoelkel/baby-steps-tdd-approaches), [Expand-Contract](https://martinfowler.com/bliki/ParallelChange.html) and [Branch by Abstraction](https://www.branchbyabstraction.com).
 
 ### It works against Collective Ownership
 
-[Collective Owernership](http://www.extremeprogramming.org/rules/collective.html) is one of key practices of [Extreme Programming](https://en.wikipedia.org/wiki/Extreme_programming): *anyone who sees an opportunity to add value to any portion of the code is required to do so at any time*.
+[Collective Owernership](http://www.extremeprogramming.org/rules/collective.html) is one of the key practices of [Extreme Programming](https://en.wikipedia.org/wiki/Extreme_programming): *anyone who sees an opportunity to add value to any portion of the code is required to do so at any time*.
 
 It has the benefits:
 
 - Complex code does not live very long, because someone else will soon simplify it. As a consequence, adding new functionality will never be difficult.
 - Anyone who finds a problem, will fix it immediately, leading to higher quality.
-- Knowledge of the system is now shared between team members. Anyone is able to add functionality or apply changes to any part of the system removing bottlenecks and enabling the fast flow of work through the value stream.
+- Knowledge of the system is now shared between team members. Anyone can add functionality or apply changes to any part of the system removing bottlenecks and enabling the fast flow of work through the value stream.
 
 However, with feature branches each team member is working on its own isolated branch hidden from the rest of the team, hence it works against collective ownership. Code is written by one individual. This introduces the strong tendency to see the code they wrote as "my code".
 
-We loose the benefit of being a team as the team now dependents on individuals and is not resilient any more. We now rely on specific team members to change specific parts of the system. Inevitably this introduces bottlenecks for change, reducing throughput and increasing time to market.
+We lose the benefit of being a team as the team now depends on individuals and is not resilient anymore. We now rely on specific team members to change specific parts of the system. Inevitably this introduces bottlenecks for change, reducing throughput and increasing time to market.
 
-Because it goes against collective ownership, code will tend to be more complex. Adding new functionality will be more difficult and more time consuming. Again reducing IT delivery throughput and increasing time to market.
+Because it goes against collective ownership, code will tend to be more complex. Adding new functionality will be more difficult and more time-consuming. Again, this reduces IT delivery throughput and increases time to market.
 
-Because knowledge of certain parts of the system is concentrated in specific individuals, it increases risk.
+Because knowledge of certain parts of the system is concentrated on specific individuals, it increases risk.
 
 At last, because feature branching cancels collective ownership, nobody shares the responsibility for the quality of the IT systems.
 
 ### It introduces batch work and inventory
 
-When using branches we are in fact introducing batch work. The longer the
-branch lives, the more changes are accumulated on the branch, the bigger the
-batch size becomes. Where the batch size is the number of commits that exist
-on the branch since the creation of the branch.
+When using branches we are undoubtedly introducing batch work. The longer the branch lives and the more changes are accumulated on the branch, the bigger the batch size becomes. Where the batch size is the number of commits that exist on the branch since the creation of the branch.
 
-The drawbacks of batching were discovered by [Taiichi Ohno](https://en.wikipedia.org/wiki/Taiichi_Ohno) at Toyota back in the 1950's.
+The drawbacks of batching were discovered by [Taiichi Ohno](https://en.wikipedia.org/wiki/Taiichi_Ohno) at Toyota back in the 1950s.
 
 > ... he made an unexpected discovery -- it actually costs less per part to make small batches of stampings than to run off enormous lots.
 >
 > ... Making small batches eliminated the carrying cost of the huge inventories ...
 > Even more important, making only a few parts before assembling them [...] caused stamping mistakes to show up almost instantly.
 >
-> The consequences of this latter discovery were enormous. It made [workers] much more concerned about quality and it eliminated waste of large numbers of defective parts.
+> The consequences of this latter discovery were enormous. It made [workers] much more concerned about quality and it eliminated the waste of large numbers of defective parts.
 >
 > ... But to make this system work at all [...] Ohno needed both extremely skilled and a highly motivated workforce.
 >
@@ -196,28 +190,28 @@ The bigger the batch size, the more work we have in progress. The more work in p
 
 ![It creates batch work and inventory](/images/on-the-evilness-of-feature-branching-the-problems/it-creates-batch-work.png)
 
-It is stuck into the system because the organisation invested quite lot of money to create this inventory consisting of all the code that lies around on all those parallel branches. But this investment does not generate any revenue for the organisation. **As long as we have not merged back into mainline, deployed the code into production and released it to the end users, it does not create any value**. Only when this code gets into production in the hands of the users it will generate feedback on how it behaves in production and how it is being used by the users. Only then we can take new decisions and come with new ideas on how to find new ways to delight the user and solve their problems and needs. This will have an enormous impact on business growth and opportunities.
+It is stuck into the system because the organisation invested quite a lot of money to create this inventory consisting of all the code that lies around on all those parallel branches. But this investment does not generate any revenue for the organisation. **As long as we have not merged back into mainline, deployed the code into production and released it to the end-users, it does not create any value**. Only when this code gets into production in the hands of the users it will generate feedback on how it behaves in production and how it is being used by the users. Only then we can take new decisions and come up with new ideas on how to find new ways to delight the user and solve their problems and needs. This will have an enormous impact on business growth and opportunities.
 
 To reduce this inventory, we know from Lean Manufacturing, we have to reduce the work in progress.
 
 This means, working in smaller batches. Reducing the lifetime of the branch. Committing more frequently to mainline.
-Which means, integrating more often. As such, achieving a state of Continuous Integration and bringing us closer to a single-piece flow.
+This means, integrating more often. As such, achieving a state of Continuous Integration and bringing us closer to a single-piece flow.
 
 From Lean Manufacturing we know that a single-piece flow will increase the IT delivery throughput, increase quality and stability and reduce the lead time for changes, and the time to market for new functionality.
 
 ### It increases risks
 
-Because long-running branches create batch-work, it also create bigger
+Because long-running branches create batch-work, it also creates bigger
 changesets. Bigger changesets mean more risks.
 
 ![It increases risks](/images/on-the-evilness-of-feature-branching-the-problems/it-increases-risks.png)
 
 If we commit more frequently to mainline, the Continuous Integration process has to process a smaller changeset. If the build happens to break, finding the root cause will be fairly easy because the changeset is so small. Also because we introduced the failing change just a couple of minutes ago. We still have enough context to easily fix that build. In the end, we can fix the build within 10 minutes and still achieve a state of Continuous Integration.
 
-On the other hand, when using feature branches, merging back to mainline happens less often. As a result the Continuous Integration process has to process a bigger changeset. If the build happens to break, finding the root cause will be far more difficult because the changeset is so big. Probably, also because we
-introduced the failing change a couple of hours or, worse, a couple of days ago. This time, we do not have enough context any more to quickly fix that build. Fixing the build becomes difficult and time consuming. From now on, we run the risk of having a broken build for a very long period of time. **We just lost the monitoring of the health of the application**. We also lost the ability to perform on demand production releases at any given moment in time. Obviously, this has a negative impact on lead time and time to market.
+On the other hand, when using feature branches, merging back to mainline happens less often. As a result, the Continuous Integration process has to process a bigger changeset. If the build happens to break, finding the root cause will be far more difficult because the changeset is so big. Probably, also because we
+introduced the failing change a couple of hours or, worse, a couple of days ago. This time, we do not have enough context anymore to quickly fix that build. Fixing the build becomes difficult and time-consuming. From now on, we run the risk of having a broken build for a very long time. **We just lost the monitoring of the health of the application**. We also lost the ability to perform on-demand production releases at any given moment in time. Undeniably, this harms lead time and time to market.
 
-When having huge changesets, [Lisi Hocke](https://twitter.com/lisihocke) remarks, any kind of feedback activity will find less improvements than when you have a small change set. A small change set that fits in our head allows us to create a good mental model about it. We can think about the implications and risks. We probably will find lots of small improvements. However, huge changesets on the other hand take already long to just ... read through. Not even talking about understanding or even picture what the impact might be from a risk perspective. Regardless the effort put in by the author, the bigger the change set, the more people just want to get done with this as fast as possible. The willingness to make improvements decreases. Anything we find, we often be postponed. Finally, it is also difficult to give feedback. People have spend so much time creating this they are more reluctant to hear the bad news or to change direction. Because of the [Sunk Cost Fallacy](https://en.wikipedia.org/wiki/Sunk_cost).
+When having huge changesets, [Lisi Hocke](https://twitter.com/lisihocke) remarks, any kind of feedback activity will find fewer improvements than when you have a small changeset. A small changeset that fits in our head allows us to create a good mental model of it. We can think about the implications and risks. We probably will find lots of small improvements. However, huge changesets on the other hand take already long to just ... read through. Not even talking about understanding or even picturing what the impact might be from a risk perspective. Regardless of the effort put in by the author, the bigger the changeset, the more people just want to get done with this as fast as possible. The willingness to make improvements decreases. Anything we find, we will often postpone. Finally, it is also difficult to give feedback. People have spent so much time creating this they might be more reluctant to hear the bad news or to change direction. Because of the [Sunk Cost Fallacy](https://en.wikipedia.org/wiki/Sunk_cost).
 
 > 10 lines of code = 10 issues.
 >
@@ -229,37 +223,37 @@ When having huge changesets, [Lisi Hocke](https://twitter.com/lisihocke) remarks
 
 As we see, increasing the size of changes increases risk. It’s essentially the same as deploying our code less frequently. The amount of change is larger and the risk is greater.
 
-This brings us back to feedback. The longer we defer feedback, the greater the risk something unexpected, unusual and usually very bad will happen. We have zero-visibility on what is happening on the other parallel branches. Our work may eventually not merge. We could loose days or weeks of work. Which comes with a non-negligible cost.
+This brings us back to feedback. The longer we defer feedback, the greater the risk something unexpected, unusual and usually very bad will happen. We have zero visibility of what is happening on the other parallel branches. Our work may eventually not merge. We could lose days or weeks of work. Which comes with a non-negligible cost.
 
-As opposed, earlier feedback results in smaller change sets and in better code. Increasing the commit frequency into mainline forces us to work in small incremental steps that preserve existing functionality. We take smaller steps, which generally breaks less and keeps the application always working. We are able to perform production releases at any given moment in time, as such reducing risks. When we do break something, we can find it sooner and fix it faster, instead of waiting days or weeks to discover it. Also, we have more context about how to fix broken things then when we commit infrequently into mainline and having to wait for days or weeks for feedback.
+As opposed, earlier feedback results in smaller changesets and better code. Increasing the commit frequency into mainline forces us to work in small incremental steps that preserve existing functionality. We take smaller steps, which generally break less and keep the application always working. We can perform production releases at any given moment in time, as such reducing risks. When we do break something, we can find it sooner and fix it faster, instead of waiting days or weeks to discover it. Also, we have more context about how to fix broken things than when we commit infrequently into mainline and have to wait for days or weeks for feedback.
 
 Here lies **an important engineering skill: the ability to break up large changes into small increments**. A feature grows over multiple commits on mainline versus designing and implementing the feature in isolation on a branch.
 
 ### It might impact testing
 
-In all sincerity, this topic requires more thought. The topic is actually more subtle from a test engineering perspective than I initially thought with my limited experience. When discussing this with [Lisi Hocke](https://twitter.com/lisihocke), I realised there seems to be good and bad parts to branching with regard to testing. This requires a more in-depth analysis than can be done in the context of this article. Eventually this will get some more love in a later article on the consequences of branching for testing.
+In all sincerity, this topic requires more thought. The topic is if truth be told more subtle from a test engineering perspective than I initially thought with my limited experience. When discussing this with [Lisi Hocke](https://twitter.com/lisihocke), I realised there seem to be good and bad parts to branching about testing. This requires a more in-depth analysis than can be done in the context of this article. Eventually, this will get some more love in a later article on the consequences of branching for testing.
 
 The good part of branching is it allows us to test the feature in isolation. In this regard, when the feature is broken, it is easier to understand why it does not work. We can check the behaviour in different conditions and simulate different situations. In contrast, this would be harder to check and understand once integrated. Does it not work because of the feature itself or because of the integration with the rest of the system? To summarise, we first try to see if the feature works as expected before exploring, still in isolation, what unknown risks and surprises might be there. All of this gives valuable feedback and information that will feed into the later testing of the integration. Testing the integrated parts becomes then more tangible and focused.
 
-But we are testing twice!? This comes with a non-negligible cost. However, here comes the counterintuitive part. The more we can test in layers along with the incremental development work, the earlier we learn and understand the mental model, the faster we can provide feedback from testing. Not doing this comes with its own fair share of downsides. The biggest being delayed feedback about the implementation.
+But we are testing twice!? This comes with a non-negligible cost. However, here comes the counterintuitive part. The more we can test in layers along with the incremental development work and the earlier we learn and understand the mental model, the faster we can provide feedback from testing. Not doing this comes with its fair share of downsides. The biggest is delayed feedback about the implementation.
 
-But, as long as we have not merged back into mainline, we still have no feedback on the quality of our work. The only definitive point is the testing happening at merge time. Does our changes work with everyone else's changes? Before that, though we collected valuable information, it is still a guess. We do not know. We can only hope nobody did something horrid that breaks our work.
+But, as long as we have not merged back into mainline, we still have no feedback on the quality of our work. The only definitive point is the testing happening at merge time. Do our changes work with everyone else's changes? Before that, though we collected valuable information, it is still a guess. We do not know. We can only hope nobody did something horrid that breaks our work.
 
-That is where the bad part of branching comes. When software engineers hold back their branch for way too long. When they finally merge we might discover lots of surprises. Either there is a risk they went for too long a time into the wrong direction and we only find out about this too late. Or we end up with long testing cycles finding lots of issues but yet by far not as many or not as relevant as when the branch would have been kept short with a small changeset. Fatigue is a real thing!
+That is where the bad part of branching comes. When software engineers hold back their branch for way too long. When they finally merge we might discover lots of surprises. Either there is a risk they went for too long a time in the wrong direction and we only find out about this too late. Or we end up with long testing cycles finding lots of issues but yet by far not as many or not as relevant as when the branch would have been kept short with a small changeset. Fatigue is a real thing!
 
-A better approach would be to test continuously in pair with a test engineer while the feature grows. Every day we know where we stand. Because we have fast feedback. If some new development breaks we can fix it easily because we have enough fresh context. When the feature is finished we know it works. It can be released at any given moment in time. Which again reduces lead time and time to market.
+A better approach would be to test continuously in pair with a test engineer while the feature grows. Every day we know where we stand. Because we have fast feedback. If some new development breaks, we can fix it easily because we have enough fresh context. When the feature is finished we know it works. It can be released at any given moment in time. Which again reduces lead time and time to market.
 
-We are never in a situation of surprise discovering something does not work after days or weeks of development. We do not have horrible rework or have to throw away and start over again. Therefore it is also more cost effective.
+We are never in a situation of surprise discovering something does not work after days or weeks of development. We do not have horrible rework or have to throw away and start over again. Therefore it is also more cost-effective.
 
 ### It introduces rework and therefore makes releases unpredictable
 
 As long as we have not merged back into mainline we simply do not know how much work is still left to do. Merging a single branch into mainline is often not that difficult. However, integrating multiple parallel branches is painful. It requires a significant amount of rework caused by merge conflicts, incompatibilities between features and conflicting assumptions from team members that need to be resolved and requires multiple rounds of unplanned retesting and bug fixing.
 
-Integrating features into mainline become expensive, time-consuming and a wildly unpredictable activity. Thus the whole IT delivery process becomes very unpredictable, increasing the lead time, and the time to market for new functionality.
+Integrating features into mainline becomes an expensive, time-consuming and wildly unpredictable activity. Thus the whole IT delivery process becomes very unpredictable, increasing the lead time, and the time to market for new functionality.
 
 Continuous Integration was exactly introduced to cope with these problems. If something is painful, we need to do it more often. Bring the pain forward. Thus with Continuous Integration in place, a feature grows on mainline. On each commit, all automated tests are executed before the push and after the push. If a test fails, the team stops and someone fixes the problem immediately. Whenever we think the feature is good enough, we release it within minutes. This is possible because our codebase is always in a releasable state and always working. Thus enabling on-demand production releases and reducing time to market.
 
-Remember, our goal is to sustainably minimise our lead time to create positive business impact!
+Remember, our goal is to sustainably minimise our lead time to create a positive business impact!
 
 ### It is expensive and therefore less efficient
 
@@ -267,9 +261,9 @@ Branch creation is cheap and easy. But keeping the branch up-to-date and integra
 
 The longer we keep our code changes in isolation and do not integrate them with the code changes from other team members the higher the risk the changes will conflict leading to the well known *Merge Hell*.
 
-This is totally unrelated to the quality of merge tools. Current distributed version control systems have actually very decent merge tools. Most of the time merges are quite simple and automatic, except when they are not. No merge tool can predict if two features being implemented in parallel, each on their isolated branch, will work together. This can only be discovered at merge time. Again, we have delayed feedback.
+This is completely unrelated to the quality of merge tools. Current distributed version control systems have indeed very decent merge tools. Most of the time merges are quite simple and automatic, except when they are not. No merge tool can predict if two features being implemented in parallel, each on their isolated branch, will work together. This can only be discovered at merge time. Again, we have delayed feedback.
 
-The minute we need to manually intervene in a merge conflict, there is a cost. How big that cost will be is totally unknown until merge time. This results in building up **Merge Debt**, i.e. the increasing cost from working in isolation on a branch without integrating outside changes.
+The minute we need to manually intervene in a merge conflict, there is a cost. How big that cost will be is entirely unknown until merge time. This results in building up **Merge Debt**, i.e. the increasing cost of working in isolation on a branch without integrating outside changes.
 
 - Rework due to merge conflicts or regressions introduced by [Semantic Bugs](https://martinfowler.com/bliki/SemanticConflict.html), i.e. syntactically correct changes that are functionally incorrect usually happening as the result of a successful, automatic, silent merge,
 - Wasted time due to fixing merge conflicts and rework efforts,
@@ -286,9 +280,9 @@ This is precisely why Continuous Integration was introduced. When we merge our c
 
 Apart from Merge Debt, there are other non-negligible costs introduced by feature branching.
 
-- Automated tests need to be executed twice: once the branch and one more time on mainline at merge time after integrating the branch.
+- Automated tests need to be executed twice: once on the branch and one more time on mainline at merge time after integrating the branch.
 - Also manual exploratory testing happens twice.
-- Branches introduce batch-work, which in turn introduce inventory and as we have seen before inventory is money stuck into the system.
+- Branches introduce batch-work, which in turn introduces inventory and as we have seen before inventory is money stuck into the system.
 - Branches introduce higher risks due to deferred feedback and bigger changesets. The longer we defer, the greater the risk that something bad will happen.
 
 ### It creates cognitive overload
@@ -297,26 +291,21 @@ Lastly, it creates cognitive overhead for the team members.
 
 - To start a feature development, we have to create a branch and push the branch to the remote repository.
 - To reduce merge complexity, we have to rebase mainline onto our branch frequently.
-- To communicate changes between features that are being designed in parallel, we have to cherry pick changes between branches.
+- To communicate changes between features that are being designed in parallel, we have to cherry-pick changes between branches.
 - To switch work between features - which is never a good idea, but it happens - we have to switch between branches.
-- When the feature is dev-complete and merged back into mainline, we may not forget to delete the branch. Otherwise we end up with a repository having a truck load of branches no-one dares to delete. Which in turn introduces another kind of technical debt.
+- When the feature is dev-complete and merged back into mainline, we may not forget to delete the branch. Otherwise, we end up with a repository having a truckload of branches no one dares to delete. Which in turn introduces another kind of technical debt.
 
-Now imagine the insane context and branch switching for a tester inside a team using feature branches. It is not just the three branches a software engineer switches back and forth between. It is three branches per software engineer. In a team of 5 engineers, it means a tester juggles between 15 branches. Each branch is a different topic. Each branch has different dependencies requiring to reinstall these on each branch switch. If you were wondering why your tester is exhausted at the end of the day, here is the story.
+Now imagine the insane context and branch switching for a test engineer inside a team using feature branches. It is not just the three branches a software engineer switches back and forth between. It is three branches per software engineer. In a team of 5 engineers, it means a test engineer juggles between 15 branches. Each branch is a different topic. Each branch has different dependencies requiring reinstalling dependencies with each branch switch. If you were wondering why your test engineer is exhausted at the end of the day, here is the story.
 
-To summarise, to implement a feature, team members have to perform lots of version control operations on a day-to-day basis. Therefore, they need to remember a large set of version control commands. This creates cognitive overhead that could slow down the team. Again, this will inevitably have a negative impact on IT delivery throughput, lead time and time to market.
+To summarise, to implement a feature, team members have to perform lots of version control operations on a day-to-day basis. Therefore, they need to remember a large set of version control commands. This creates cognitive overhead that could slow down the team. Again, this will inevitably hurt IT delivery throughput, lead time and time to market.
 
-Compare this complexity with the simplicity of having everyone on the team
-commit frequently into mainline, reducing redundant effort and simplifying
-the workflow. We pull the latest changes from the remote repository, we add our local
-changes, to then commit and push. This is fairly easy, fairly simple. In the end team
-members only have to remember a small set of version control commands to perform their
-day-to-day work.
+Compare this complexity with the simplicity of having everyone on the team commit frequently to mainline, reducing redundant effort and simplifying the workflow. We pull the latest changes from the remote repository, add our local changes, to then commit and push. This is fairly easy, fairly simple. In the end team members only have to remember a small set of version control commands to perform their day-to-day work.
 
 ## Conclusion
 
 Continuous Integration is really about exposing changes as quickly as possible to increase feedback.
 
-Any form of branches is about isolating changes. By design it hides changes for the rest of the team. Although, branches with a very short lifetime (less than a day) can achieve Continuous Integration.
+Any form of branch is about isolating changes. By design, it hides changes for the rest of the team. Although, branches with a very short lifetime (less than a day) can achieve Continuous Integration.
 
 > Teams that did well had fewer than three active branches at any time, their branches had very short lifetimes (less than a day) before being merged into trunk and never had "code freeze" or stabilization periods. It is worth re-emphasising that these results are independent of team size, organisation size or industry.
 >
@@ -328,11 +317,11 @@ But ... if less than a day, why bother with the overhead of branches?
 >
 > -- Dave Farley, [Continuous Integration and Feature Branching](http://www.davefarley.net/?p=247)
 
-Continuous Integration was exactly introduced to obtain faster feedback to have better, greater insights into the effects of changes. Faster feedback requires more frequent commits into mainline. Forcing us to work in smaller increments, resulting in better, more maintainable code. More frequent commits means smaller changesets and less risks. In the end, achieving a single-piece flow which in turn increases quality and IT delivery throughput together with reducing lead time for change and time to market. Inevitable, this all comes with reduced costs.
+Continuous Integration was exactly introduced to obtain faster feedback to have better, greater insights into the effects of changes. Faster feedback requires more frequent commits into mainline. Forcing us to work in smaller increments, resulting in better, more maintainable code. More frequent commits mean smaller changesets and fewer risks. In the end, achieving a single-piece flow which in turn increases quality and IT delivery throughput together with reducing lead time for change and time to market. Inevitable, this all comes with reduced costs.
 
 This means: **Don't use branches!**
 
-Over the past decade, branching became a standard for most teams. But it does not bring any benefits to the bottom line: deliver quality software in production at speed. In fact, they essentially slow us down and impact quality! When they can be avoided, a team's productivity and confidence will drastically increase.
+Over the past decade, branching became a standard for most teams. But it does not bring any benefits to the bottom line: deliver quality software in production at speed. To tell the truth, they essentially slow us down and impact quality! When they can be avoided, a team's productivity and confidence will drastically increase.
 
 ## Acknowledgments
 
