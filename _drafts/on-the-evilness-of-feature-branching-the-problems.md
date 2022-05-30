@@ -72,7 +72,7 @@ Or teams like to redefine Continuous Integration by saying: "*We have our [prefe
 
 Having an automated build running against all of our branches is certainly a good thing. But it is not Continuous Integration. We are not integrating. The only feedback we get is whether the code that exists inside our isolated branch still compiles and whether we have not introduced any regressions against the tests that exist inside that isolated branch. We do not get any feedback whatsoever on whether our changes integrate well with the changes that exist on all the other existing parallel branches. Even when all tests pass on the branch, they still may fail when merging back into mainline. The real authoritative feedback only happens at merge time when integrating, once the feature is finished. Everything else is a guess.
 
-So, from this moment on **CI stands for [Continuous Isolation](https://continuousisolation.com)** and not anymore for *Continuous Integration*. We are not integrating outside changes and the rest of the team does not know how our changes integrate with their work.
+So, from this moment on **CI stands for [Continuous Isolation](https://continuousisolation.com)** and not any more for *Continuous Integration*. We are not integrating outside changes and the rest of the team does not know how our changes integrate with their work.
 
 The value of accelerating feedback resides in failing fast. Problems are spotted early, within minutes. We achieve this when committing frequently, multiple times a day, regardless of code complexity or team size. But it requires we work very hard to keep getting fast feedback. This means if the build is too slow, we need to speed up the build; if tests are too slow, we need to write better and more concise tests; if the hardware is too slow, we need to buy faster hardware; if the codebase is too coupled, preventing us to write concise tests, we need to decouple the codebase.
 
@@ -124,21 +124,21 @@ It is exactly this slow down of the team that discourages the adoption of refact
 
 [Collective Owernership](http://www.extremeprogramming.org/rules/collective.html) is one of the key practices from [Extreme Programming](https://en.wikipedia.org/wiki/Extreme_programming): *anyone who sees an opportunity to add value to any portion of the code is required to do so at any time*.
 
-This introduces the following benefits:
+This instigates the following benefits:
 
-- Complex code does not live very long, because someone else will soon simplify it. For that reason, adding new functionality will never be difficult, or time-consuming.
+- Complex code does not live very long, because someone else will soon simplify it. For that reason, adding new functionality will never be laborious, or time-consuming.
 - Anyone who finds a problem, will fix it immediately, resulting in higher quality.
 - Knowledge of the system is now shared between team members. Anyone can add functionality or apply changes to any part of the system removing bottlenecks and enabling the fast flow of work through the value stream.
 
-However, with feature branches, each team member works on its own isolated branch hidden from the rest of the team. As a consequence, feature branching works against collective ownership. Code is written by one individual. This introduces the strong tendency to see the code they wrote as "my code".
+However, with feature branches, each team member works on its own isolated branch hidden from the rest of the team. As a consequence, feature branching works against collective ownership. Code is written by one individual introducing the strong tendency to see the code they wrote as "my code".
 
-We, therefore, lose the benefit of being a team as the team now depends on individuals and is not resilient anymore. Now, we rely on specific team members to change specific parts of the system. Naturally, this introduces bottlenecks for change, reducing throughput and increasing time to market.
+As a consequence, we lose the benefit of being a team. The team now depends on individuals. It is not resilient any more. We now rely on specific team members to change specific parts of the system. Needless to say, this introduces bottlenecks for change, reducing throughput and increasing time to market.
 
-Because feature branching goes against collective ownership, code will tend to be more complex. Adding new functionality becomes more difficult and more time-consuming. Again, this reduces IT delivery throughput and increases time to market.
+Because feature branching goes against collective ownership, code will tend to be more complex. Adding new functionality becomes burdensome and labour-intensive. Again, this reduces IT delivery throughput and increases time to market.
 
 Because now knowledge of certain parts of the system gets concentrated on specific individuals, it also increases risk.
 
-At last, because feature branching cancels collective ownership, nobody shares the responsibility anymore for the quality of the IT systems resulting in reduced stability.
+At last, because feature branching cancels collective ownership, nobody shares the responsibility any more for the quality of the IT systems resulting in reduced stability.
 
 ### It introduces batch work and inventory
 
@@ -183,7 +183,7 @@ Because long-running branches create batch-work, they also create bigger changes
 If we commit more frequently to mainline, the Continuous Integration process will process a smaller changeset. If the build happens to break, finding the root cause will be fairly easy because the changeset is so small. Probably we introduced the failing change just a couple of minutes ago. As a consequence, we still have enough context to easily fix that failing build. In the end, we can fix the build within 10 minutes and hence still achieve a state of Continuous Integration.
 
 On the other hand, when using feature branches, merging back to mainline happens less often. As a result, the Continuous Integration process has to process a bigger changeset. If the build happens to break, finding the root cause will be far more difficult because the changeset is so big. Also, probably we
-introduced the failing change a couple of hours or, worse, a couple of days ago. This time, we do not have enough context anymore to quickly fix that build. Fixing the build becomes time-consuming. From now on, we run the risk of having a broken build for a very long time. **We just lost the monitoring of the health of the application**. Accordingly, we also lost the ability to perform on-demand production releases at any given moment in time. Undeniably, this harms lead time and time to market.
+introduced the failing change a couple of hours or, worse, a couple of days ago. This time, we do not have enough context any more to quickly fix that build. Fixing the build becomes time-consuming. From now on, we run the risk of having a broken build for a very long time. **We just lost the monitoring of the health of the application**. Accordingly, we also lost the ability to perform on-demand production releases at any given moment in time. Undeniably, this harms lead time and time to market.
 
 When having huge changesets, [Lisi Hocke](https://twitter.com/lisihocke) remarks, any kind of feedback activity will find fewer improvements than when you have a small changeset. A small changeset that fits in our head allows us to create a good mental model of it. We can think about the implications and risks. We probably will find lots of small improvements. But, huge changesets on the other hand take already long to just ... read through. Not even talking about understanding or even picturing what the impact might be from a risk perspective. Regardless of the effort put in by the author, the bigger the changeset, the more people just want to get done with this as fast as possible. Consequently, the willingness to make improvements decreases. Anything we find, we will often postpone. Finally, it becomes difficult to give feedback. People have spent so much time creating this changeset they might be more reluctant to hear the bad news or to change direction. Because of the [Sunk Cost Fallacy](https://en.wikipedia.org/wiki/Sunk_cost).
 
