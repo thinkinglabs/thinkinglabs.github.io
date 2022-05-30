@@ -96,17 +96,9 @@ As long as we have not yet merged our branch back to mainline, the rest of the t
 
 ![It hides work for the rest of the team](/images/on-the-evilness-of-feature-branching-the-problems/it-hides-work-for-the-rest-of-the-team.png)
 
-This is fine as long as everyone on the team works on different parts of the application. But, the minute two team members are working on the same codebase
-area they are each blind to how their work affects the other person. As a result, collaboration is sacrificed because everyone is focused on the changes happening on their isolated branch.
+This is fine as long as everyone on the team works on different parts of the application. But, the minute two team members are working on the same codebase area they are each blind to how their work affects the other person. As a result, collaboration is sacrificed because everyone is focused on the changes happening on their isolated branch.
 
-On the other hand, if we are committing more frequently to mainline, we communicate to the rest of the team the direction we are taking with the code to
-implement this feature. For example, we could add a conditional indicating the start of the new code we are working on and have it disabled by default. From then on the rest of the team sees the newly introduced changes. They can immediately spot how this affects their work and thus can instantly adapt to these changes. Therefore, it eliminates the classic rework happening at merge time and enables the fast flow of work through the value stream.
-
-We could argue that introducing this conditional, increases the complexity of the codebase. This is true. On the other hand by using a feature branch and not
-introducing this conditional, the conditional is not eliminated. It is still there. But it is not obvious and entirely invisible. The conditional is now the Version Control System branch. From now on, **our changes are invisible to the rest of the team**. They have no idea how those changes will impact their work.
-
-Remember, the purpose of a Version Control System is not just to version source code. **A Version Control System is in reality a communication tool** to communicate
-changes with the rest of the team and together with Continuous Integration to see the impact on others within minutes. Again, this helps in gaining a shared understanding of the system and achieving [collective ownership](http://www.extremeprogramming.org/rules/collective.html) over the codebase. Consequently, this enables communication and collaboration inside the team which in turn enables the fast flow of work through the value stream. Undoubtedly, this results in better quality, higher IT delivery throughput, and reduced lead time and time to market.
+On the other hand, if we are committing more frequently to mainline, we communicate to the rest of the team the direction we are taking with the code to implement this feature. For example, we could add a conditional indicating the start of the new code we are working on and have it disabled by default. From then on the rest of the team sees the newly introduced changes. They can immediately spot how this affects their work and thus can instantly adapt to these changes. Naturally, collaboration and communication starts inside the team. Therefore, it eliminates the classic rework happening at merge time and enables the fast flow of work through the value stream.
 
 To summarise: **Working on mainline forces communication!**
 
