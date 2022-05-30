@@ -269,15 +269,17 @@ But ... if less than a day, why bother with the overhead of branches?
 >
 > -- Dave Farley, [Continuous Integration and Feature Branching](http://www.davefarley.net/?p=247)
 
-Continuous Integration was exactly introduced to obtain faster feedback to have better, greater insights into the effects of changes. Faster feedback requires more frequent commits into mainline. Forcing us to work in smaller increments, resulting in better, more maintainable code. More frequent commits mean smaller changesets and fewer risks. In the end, achieving a single-piece flow which in turn increases quality and IT delivery throughput together with reducing lead time for change and time to market. Inevitable, this also comes with reduced costs.
+Continuous Integration was exactly introduced to obtain faster feedback, to have better, greater insights into the effects of changes. Faster feedback requires more frequent commits into mainline. Forcing us to work in smaller increments, resulting in better, more maintainable code. More frequent commits mean smaller changesets and fewer risks. In the end, achieving a single-piece flow which in turn increases quality and IT delivery throughput together with reducing lead time for change and time to market. Inevitable, this also comes with vastly reduced costs.
 
-This means: **Do not use branches!**
+Continuous Integration together with Version Control Systems, enable the fast communication of changes inside the team. Surely, this instigates a shared understanding of the system and [collective ownership](http://www.extremeprogramming.org/rules/collective.html) over the codebase. As a consequence, this fosters communication and collaboration inside the team which in turn enables, once more, the fast flow of work through the value stream. Thus, emphasising even more the increase of quality and IT delivery throughput.
 
-Over the past decade, branching became a standard for most teams. But it does not bring any benefits to the bottom line: deliver quality software in production at speed. To tell the truth, they essentially slow us down and impact quality! When they can be avoided, a team's productivity and confidence will drastically increase.
+To conclude: **Do not use branches!**
+
+Over the past decade, branching became a standard for most teams. But it does not bring any benefits to the bottom line: deliver quality software in production at speed. To tell the truth, branches essentially slow us down and impact quality! When they can be avoided, a team's productivity and confidence will drastically increase.
 
 ## Acknowledgments
 
-As always, thank you to [Lisi Hocke](https://twitter.com/lisihocke) and [Steve Smith](https://twitter.com/SteveSmith_Tech) for taking the time and energy to review this article.
+As always, thank you to [Lisi Hocke](https://twitter.com/lisihocke) and [Steve Smith](https://twitter.com/SteveSmith_Tech) for taking the time and energy to review this quite long article.
 
 ## Bibliography
 
