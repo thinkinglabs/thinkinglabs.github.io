@@ -279,7 +279,9 @@ Over the past decade, branching became a standard for most teams. But it does no
 
 ## Acknowledgments
 
-As always, thank you to [Lisi Hocke](https://twitter.com/lisihocke) and [Steve Smith](https://twitter.com/SteveSmith_Tech) for taking the time and energy to review this quite long article.
+As always, thank you to [Lisi Hocke](https://twitter.com/lisihocke) and [Steve Smith](https://twitter.com/SteveSmith_Tech) for taking the time and energy to review this quite long article. This would not have been possible without there support.
+
+Glenfarclas, Jura, Bowmore and Black Bottle for keeping me company late at night.
 
 ## Bibliography
 

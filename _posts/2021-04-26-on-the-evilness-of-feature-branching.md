@@ -24,7 +24,7 @@ rather, the real reasons why teams are using them.
 1. [A Tale of Two Teams]({% post_url 2021-07-14-on-the-evilness-of-feature-branching-a-tale-of-two-teams %})
 2. [Why Do Teams Use Feature Branches?]({% post_url 2021-10-25-on-the-evilness-of-feature-branching-why-do-teams-use-feature-branches %})
 3. [But Compliance!?]({% post_url 2022-02-22-on-the-evilness-of-feature-branching-but-compliance %})
-4. The Problems
+4. [The Problems]({% post_url 2022-05-31-on-the-evilness-of-feature-branching-the-problems %})
 5. How Can We Avoid Feature Branching Problems?
 6. Questions I Regularly Get Asked about Trunk-Based Development
 7. What Are The Benefits of Trunk-Based Development?
