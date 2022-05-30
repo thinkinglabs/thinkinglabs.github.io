@@ -157,7 +157,7 @@ When using branches we introduce batch work. The longer the branch lives and the
 >
 > -- Womack, Jones and Roos, [The Machine That Changed The World](https://en.wikipedia.org/wiki/The_Machine_That_Changed_the_World_(book)), p52
 
-Womack, Jones and Roos called this [*Lean Manufacturing*](https://en.wikipedia.org/wiki/Lean_manufacturing). Later, [Mary and Tom Poppendieck](http://www.poppendieck.com) proved [it also applies to software development](https://en.wikipedia.org/wiki/Lean_software_development). Donald Reinertsen discussed at great length the harm caused by batch work in chapter 5 "*Reducing Batch Size*" of his book [The Principles of Product Development Flow](https://www.goodreads.com/book/show/6278270-the-principles-of-product-development-flow).
+Womack, Jones and Roos called this [*Lean Manufacturing*](https://en.wikipedia.org/wiki/Lean_manufacturing). Later, [Mary and Tom Poppendieck](http://www.poppendieck.com) proved [it also applies to software development](https://en.wikipedia.org/wiki/Lean_software_development). Donald Reinertsen discussed at great length the harm caused by batch work in his book [The Principles of Product Development Flow](https://www.goodreads.com/book/show/6278270-the-principles-of-product-development-flow), chapter 5 "*Reducing Batch Size*".
 
 The bigger the batch size, the more work we have in progress. The more work in progress the more inventory we have. **Inventory is just money stuck into the system**.
 
@@ -169,7 +169,7 @@ Remember, the goal of any organisation is to create a positive business impact.
 
 To reduce this inventory, we know from Lean Manufacturing, we have to reduce the work in progress.
 
-This means, working in smaller batches. Reducing the lifetime of the branch. Committing more frequently to mainline.
+This means, working in smaller batches and reducing the lifetime of the branch. Hence, committing more frequently to mainline.
 This means, integrating more often. As such, achieving a state of Continuous Integration and bringing us closer to a single-piece flow.
 
 Also from Lean Manufacturing, we know that a single-piece flow will increase the IT delivery throughput, increase quality and stability and reduce the lead time for changes, and the time to market for new functionality.
