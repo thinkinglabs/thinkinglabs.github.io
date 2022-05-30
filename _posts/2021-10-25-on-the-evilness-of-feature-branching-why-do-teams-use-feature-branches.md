@@ -399,7 +399,7 @@ The [On the Evilness of Feature Branching]({% post_url 2021-04-26-on-the-evilnes
 1. [A Tale of Two Teams]({% post_url 2021-07-14-on-the-evilness-of-feature-branching-a-tale-of-two-teams %})
 2. Why Do Teams Use Feature Branches?
 3. [But Compliance!?]({% post_url 2022-02-22-on-the-evilness-of-feature-branching-but-compliance %})
-4. [The Problems]({% post_url 2022-05-31-on-the-evilness-of-feature-branching-the-problems %})
+4. [The Problems]({% post_url 2022-05-30-on-the-evilness-of-feature-branching-the-problems %})
 5. How Can We Avoid Feature Branching Problems?
 6. Questions I Regularly Get Asked about Trunk-Based Development
 7. What Are The Benefits of Trunk-Based Development?
