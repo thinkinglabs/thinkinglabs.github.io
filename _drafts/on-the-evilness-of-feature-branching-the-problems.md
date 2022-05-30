@@ -178,30 +178,18 @@ Also from Lean Manufacturing, we know that a single-piece flow will increase the
 
 Because long-running branches create batch-work, they also create bigger changesets. Bigger changesets mean more risks.
 
-![It increases risks](/images/on-the-evilness-of-feature-branching-the-problems/it-increases-risks.png)
-
 If we commit more frequently to mainline, the Continuous Integration process will process a smaller changeset. If the build happens to break, finding the root cause will be fairly easy because the changeset is so small. Probably we introduced the failing change just a couple of minutes ago. As a consequence, we still have enough context to easily fix that failing build. In the end, we can fix the build within 10 minutes and hence still achieve a state of Continuous Integration.
 
+![It increases risks](/images/on-the-evilness-of-feature-branching-the-problems/it-increases-risks.png)
+
 On the other hand, when using feature branches, merging back to mainline happens less often. As a result, the Continuous Integration process has to process a bigger changeset. If the build happens to break, finding the root cause will be far more difficult because the changeset is so big. Also, probably we
-introduced the failing change a couple of hours or, worse, a couple of days ago. This time, we do not have enough context any more to quickly fix that build. Fixing the build becomes time-consuming. From now on, we run the risk of having a broken build for a very long time. **We just lost the monitoring of the health of the application**. Accordingly, we also lost the ability to perform on-demand production releases at any given moment in time. Undeniably, this harms lead time and time to market.
+introduced the failing change a couple of hours or, worse, a couple of days ago. This time, we do not have enough context any more to quickly fix that build. Fixing the build becomes time-consuming. From then on, we run the risk of having a broken build for a long period of time. **We just lost the monitoring of the health of the application**. Accordingly, we also lost the ability to perform on-demand production releases at any given moment in time. Undeniably, this harms lead time and time to market.
 
 When having huge changesets, [Lisi Hocke](https://twitter.com/lisihocke) remarks, any kind of feedback activity will find fewer improvements than when you have a small changeset. A small changeset that fits in our head allows us to create a good mental model of it. We can think about the implications and risks. We probably will find lots of small improvements. But, huge changesets on the other hand take already long to just ... read through. Not even talking about understanding or even picturing what the impact might be from a risk perspective. Regardless of the effort put in by the author, the bigger the changeset, the more people just want to get done with this as fast as possible. Consequently, the willingness to make improvements decreases. Anything we find, we will often postpone. Finally, it becomes difficult to give feedback. People have spent so much time creating this changeset they might be more reluctant to hear the bad news or to change direction. Because of the [Sunk Cost Fallacy](https://en.wikipedia.org/wiki/Sunk_cost).
-
-> 10 lines of code = 10 issues.
->
-> 500 lines of code = "looks fine."
->
-> Code reviews.
->
-> -- I Am Devloper ([@iamdevloper](https://twitter.com/iamdevloper)), [Nov 5, 2013](https://twitter.com/iamdevloper/status/397664295875805184)
 
 As we see, increasing the size of changes increases risk. It is essentially the same as deploying our code less frequently. The amount of change is larger and the risk is greater.
 
 This brings us back to feedback. The longer we defer feedback, the greater the risk something unexpected, unusual and usually very bad will happen. We have zero visibility of what is happening on the other parallel branches. Our work may eventually not merge. We could lose days or weeks of work. Which comes with a remarkable cost.
-
-As opposed, earlier feedback results in smaller changesets and better code. Increasing the commit frequency into mainline forces us to work in small incremental steps that preserve existing functionality. We take smaller steps, which generally break less and keep the application always working. We can perform production releases at any given moment in time, as such reducing risks. When we do break something, we can find it sooner and fix it faster, instead of waiting days or weeks to discover it. Also, we have more context about how to fix broken things than when we commit infrequently into mainline and have to wait for days or weeks for feedback.
-
-Here lies **an important engineering skill: the ability to break up large changes into small increments**. A feature grows over multiple commits on mainline versus designing and implementing the feature in isolation on a branch.
 
 ### It might impact testing
 
