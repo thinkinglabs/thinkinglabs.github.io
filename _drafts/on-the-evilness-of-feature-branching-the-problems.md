@@ -219,26 +219,22 @@ The longer we keep our code changes in isolation and do not integrate them with 
 
 This is completely unrelated to the quality of merge tools. Current distributed version control systems have indeed very decent merge tools. Most of the time merges are quite simple and automatic, except when they are not. No merge tool can predict if two features being implemented in parallel, each on their isolated branch, will work together. This can only be discovered at merge time. Again, we have delayed feedback.
 
-The minute we need to manually intervene in a merge conflict, there is a cost. How big that cost will be is entirely unknown until merge time. This results in building up **Merge Debt**, i.e. the increasing cost of working in isolation on a branch without integrating outside changes caused by:
+The minute we need to manually intervene in a merge conflict, there is a cost. How big that cost will be is entirely unknown until merge time. This results in building up **Merge Debt**, i.e. the increasing cost of working in isolation on a branch without integrating outside changes.
 
-- Rework due to merge conflicts or regressions introduced by [Semantic Bugs](https://martinfowler.com/bliki/SemanticConflict.html), i.e. syntactically correct changes that are functionally incorrect usually happening as the result of a successful, automatic, silent merge.
-- Wasted time due to fixing merge conflicts and rework efforts.
-- A high risk for lost changes that vanish entirely either during automatic, silent merges or when manually resolving merge conflicts.
-- Or worse finding out the differences are so big we are unable to integrate the changes. We now have to throw away days or weeks of work and start over again.
+Merge Debt is commonly caused by:
 
-> If it hurts, do it more often. Bring the pain forward.
->
-> -- Dave Farley, [Continuous Delivery: Reliable Software Releases Through Build, Test and Deployment Automation](https://www.goodreads.com/book/show/8686650-continuous-delivery)
+- Rework at merge-time;
+- Wasted time due to rework efforts;
+- Risk for lost changes during automatic, silent merges or when manually resolving merge conflicts;
+- Or having to throw away days or weeks of work and start over again because differences are so big we are unable to integrate the changes.
 
-The longer we wait to integrate changes into mainline, the more likely the merge pain will get worse rather than better. It is better to take the pain of a merge now so we know where we are.
+The longer we wait to integrate changes into mainline, the more likely the merge pain will get worse rather than better. We are better to take the pain of a merge now so we know where we are.
 
-This is precisely why Continuous Integration was introduced. When we merge our code more frequently to mainline, the pain of integrating new changes happens at the beginning instead of at the end of our work. We can now find issues faster. Fixing those issues is easier and happens at the earliest possible moment, saving us a lot of pain and time, and avoiding Merge Debt.
+Apart from Merge Debt, feature branching introduces other significant costs:
 
-Apart from Merge Debt, there are other significant costs introduced by feature branching.
-
-- Automated tests need to be executed twice: once on the branch and one more time on mainline at merge time after integrating the branch.
-- Also manual exploratory testing happens twice.
-- Branches introduce batch-work, which in turn introduces inventory. As we have seen before inventory is money stuck into the system.
+- Automated tests need to be executed twice: once on the branch and one more time on mainline after the merge.
+- Manual exploratory testing happens also twice.
+- Branches introduce batch-work, which in turn introduces inventory which, as we have seen, also comes with a cost.
 - Branches introduce higher risks due to deferred feedback and bigger changesets. The longer we defer, the greater the risk that something bad will happen.
 
 ### It creates cognitive overload
