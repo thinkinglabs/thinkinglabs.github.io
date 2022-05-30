@@ -78,23 +78,17 @@ The value of accelerating feedback resides in failing fast. Problems are spotted
 
 ### It hinders the integration of features
 
-If we are implementing multiple features at the same time in parallel,
-integrating these features becomes exponentially harder with the number of
-features that are being implemented in parallel, and the number of changes required to implement these features.
+If we are implementing multiple features at the same time in parallel, integrating these features becomes exponentially harder with the number of features that are being implemented in parallel, and the number of changes required to implement these features.
 
-One way to avoid these integration problems is using what [Martin Fowler](https://twitter.com/martinfowler) calls
-[Promiscuous Integration](https://dzone.com/articles/promiscuous-integration-vs).
-Be aware, that Martin does not advise the use of Promiscuous Integration. He just
-named the pattern.
+One way to avoid these integration problems is using what [Martin Fowler](https://twitter.com/martinfowler) calls [Promiscuous Integration](https://dzone.com/articles/promiscuous-integration-vs). Be aware, Martin does not advise the use of Promiscuous Integration. He just named the pattern.
 
 ![It hinders the integration of features](/images/on-the-evilness-of-feature-branching-the-problems/it-hinders-integration-of-features.png)
 
-To use changes from another feature that is currently being implemented, we cherry-pick some commits from
-that feature branch into our branch. Now, we are in fact communicating changes between branches.
+To use changes from another feature that is currently being implemented, we cherry-pick some commits from that feature branch into our branch. Now, we are in fact communicating changes between branches.
 
-However, the biggest concern Martin Fowler has against Promiscuous Integration, apart from introducing a lot of process complexity, is that with all that cherry-picking, **we lose track of who has what on which branch**. Also for test engineers, it becomes a painful exercise to figure out where the risk resides, on which branch and what to focus feedback on.
+However, the biggest concern I have against Promiscuous Integration, apart from introducing a lot of process complexity, is that with all that cherry-picking, **we lose track of who has what on which branch**. Also for test engineers, it becomes a painful exercise to figure out where the risk resides, on which branch and what to focus feedback on. This creates cognitive load that unmistakably harms IT delivery throughput and time to market for new features.
 
-Compare this complexity with the simplicity of having everyone in the team commit its changes immediately to mainline. They communicate their changes immediately with the rest of the team. Helping to create a shared understanding of the codebase and a [collective ownership](http://www.extremeprogramming.org/rules/collective.html) of the codebase. Inevitably, this leads to better quality and higher IT delivery throughput and reduces the lead time and the time to market.
+Compare this complexity with the simplicity of having everyone in the team commit its changes immediately to mainline. They communicate their changes straight away with the rest of the team. Helping to create a shared understanding of the codebase and a [collective ownership](http://www.extremeprogramming.org/rules/collective.html) of the codebase. Inevitably, this leads to better quality and higher IT delivery throughput and reduces the lead time and the time to market.
 
 ### It hides work for the rest of the team and therefore disables communication
 
