@@ -209,11 +209,7 @@ That said, having to retest the integrated solution after having tested the feat
 
 As long as we have not merged back into mainline we simply do not know how much work is still left to do. Merging a single branch into mainline is often not that difficult. Yet, integrating multiple parallel branches is painful. It requires a significant amount of rework caused by merge conflicts, incompatibilities between features and/or conflicting assumptions from team members that need to be resolved and requires multiple rounds of unplanned retesting and bug fixing.
 
-Integrating features into mainline becomes an expensive, time-consuming and wildly unpredictable activity. Thus the whole IT delivery process becomes very unpredictable, increasing the lead time, and the time to market for new functionality.
-
-Continuous Integration was exactly introduced to cope with these problems. If something is painful, we need to do it more often. Bring the pain forward. Accordingly, with Continuous Integration in place, a feature grows on mainline. On each commit, all automated tests are executed before the push and after the push. If a test fails, the team stops and someone fixes the problem immediately. Whenever we think the feature is good enough, we release it within minutes. This is possible because our codebase is always in a releasable state and always working. As a result, enabling on-demand production releases and therefore reducing time to market.
-
-Remember, our goal is to sustainably minimise our lead time to create a positive business impact!
+Integrating features into mainline becomes an expensive, time-consuming and wildly unpredictable activity. In consequence, the whole IT delivery process becomes very unpredictable, increasing the lead time, and the time to market for new functionality.
 
 ### It is expensive and therefore less efficient
 
