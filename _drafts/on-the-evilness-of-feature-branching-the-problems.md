@@ -108,7 +108,7 @@ Because feature branches hide work for the rest of the team, it also discourages
 
 When we are just adding new code, integrating that code is fairly straightforward. But if we are refactoring our code, we are introducing new abstractions and new concepts. For instance, we rename a method; extract code as a new method or a new class; reorder methods inside a class; or move code between classes.
 
-Unfortunately, Version Control Systems are not aware of semantic changes which make merging very difficult. Either this introduces tons of conflicts at merge time or even worse [Semantic Bugs](https://martinfowler.com/bliki/SemanticConflict.html).
+Unfortunately, Version Control Systems are not aware of semantic changes which make merging arduous. Either this introduces tons of conflicts at merge time or even worse [Semantic Bugs](https://martinfowler.com/bliki/SemanticConflict.html).
 
 If we have two team members, each working in parallel on their feature branch.
 
@@ -118,9 +118,7 @@ One team member refactors and merges back first. The other person has a signific
 
 The longer the branch lives and the more refactoring has occurred, the harder it becomes to merge back because of all the potential merge conflicts and all the potential rework that might be required at merge time. Merging back becomes a time-consuming and very unpredictable activity. Inevitably this slows down the team.
 
-It is exactly this slow down of the team that discourages the adoption of refactoring inside the team. We all know, that not enough refactoring prevents paying back technical debt. When not paying back technical debt, adding new functionality to the codebase becomes far more time-consuming and difficult. Again, this slows down the team. To then end in this vicious circle where the team slows down over time. Eventually, the team comes to a halt and nobody truly understanding why and how this happened.
-
-In contrast, refactoring is pretty easy and down right fast when adopting [trunk-based development](https://trunkbaseddevelopment.com) together with [Baby Steps](http://www.slideshare.net/davidvoelkel/baby-steps-tdd-approaches), [Expand-Contract](https://martinfowler.com/bliki/ParallelChange.html) and [Branch by Abstraction](https://www.branchbyabstraction.com).
+It is exactly this slow down of the team that discourages the adoption of refactoring inside the team. We all know, that not enough refactoring prevents paying back technical debt. When not paying back technical debt, adding new functionality to the codebase becomes considerably more tedious and complicated. Again, this slows down the team. To then end in this vicious circle where the team slows down over time. Eventually, they come to a halt and nobody truly understanding why and how this happened.
 
 ### It works against Collective Ownership
 
