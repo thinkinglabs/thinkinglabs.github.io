@@ -55,7 +55,9 @@ Still, nowadays, many teams choose to work with feature branches for the various
 
 ### It delays feedback
 
-As long as we have not merged our branch back to mainline, we simply do not know if our changes broke the application or not. Continuous Integration is only triggered the minute we are merging back to mainline.
+Remember, Continuous Integration is a practice to ensure always working software on mainline and to get feedback within minutes whether a change broke the application or not.
+
+With feature branching this feedback is delayed. As long as we have not merged our branch back to mainline, we simply do not know if our changes broke the application or not. Continuous Integration is only triggered the minute we are merging back to mainline. Only then starts the integration of what is on the branch into the codebase.
 
 ![It delays feedback](/images/on-the-evilness-of-feature-branching-the-problems/it-delays-feedback.png)
 
@@ -64,17 +66,15 @@ This delay in feedback increases with the duration of the branch and with the nu
 If the branch lives for a couple of hours, feedback is delayed by a couple of hours. If the branch lives for a couple of days, feedback is delayed by a couple
 of days.
 
-Often the solution to delayed feedback is to start even more work, instead of finishing the work that is already in progress. Or, worse, throw even more people to the problem to then hit [Brooks's Law](https://en.wikipedia.org/wiki/Brooks%27s_law). Hence, again increasing the work in progress together with the number of parallel branches. To result with waiting times going through the roof. All of this, of course, to optimise for utilisation. And **here we are in hell**.
+Often the solution to delayed feedback is to start even more work, instead of finishing the work that is already in progress. Or, worse, throw even more people to the problem to then hit [Brooks's Law](https://en.wikipedia.org/wiki/Brooks%27s_law). Hence, again increasing the work in progress together with the number of parallel branches. To result with waiting times going through the roof and delaying feedback even more. All of this, of course, to optimise for utilisation. And **here we are in hell**.
 
-Remember, Continuous Integration is a practice to ensure always working software on mainline and to get feedback within minutes whether a change broke the application or not.
+Or teams like to redefine Continuous Integration by saying: "*We have our [preferred centralised build tool] running against all of our branches*".
 
-Yet, a lot of teams like to redefine Continuous Integration by saying: "*We have our [preferred centralised build tool] running against all of our branches*".
+Having an automated build running against all of our branches is certainly a good thing. But it is not Continuous Integration. We are not integrating. The only feedback we get is whether the code that exists inside our isolated branch still compiles and whether we have not introduced any regressions against the tests that exist inside that isolated branch. We do not get any feedback whatsoever on whether our changes integrate well with the changes that exist on all the other existing parallel branches. Even when all tests pass on the branch, they still may fail when merging back into mainline. The real authoritative feedback only happens at merge time when integrating, once the feature is finished. Everything else is a guess.
 
-Having an automated build running against all of our branches is certainly a good thing. But it is not Continuous Integration. We are not integrating. It is still a lie. The only feedback we get is whether the code that exists inside our isolated branch still compiles and whether we have not introduced any regressions against the tests that exist inside that isolated branch. We do not get any feedback whatsoever on whether our changes integrate well with the changes that exist on all the other existing parallel branches. Even when all tests pass on the branch, they still may fail when merging back into mainline. The real authoritative feedback only happens at merge time when integrating, once the feature is finished. Everything else is a guess.
+So, from this moment on **CI stands for [Continuous Isolation](https://continuousisolation.com)** and not anymore for *Continuous Integration*. We are not integrating outside changes and the rest of the team does not know how our changes integrate with their work.
 
-From this moment on **CI stands for [Continuous Isolation](https://continuousisolation.com)** and not anymore for *Continuous Integration*. We are not integrating outside changes and the rest of the team does not know how our changes integrate with their work.
-
-The value of accelerating this feedback resides in failing fast. Problems are spotted early, within minutes. We achieve this when committing frequently, multiple times a day, regardless of code complexity or team size. But it requires we work very hard to keep getting fast feedback. This means if the build is too slow, we need to speed up the build; if tests are too slow, we need to write better and more concise tests; if the hardware is too slow, we need to buy faster hardware; if the codebase is too coupled, preventing us to write concise tests, we need to decouple the codebase.
+The value of accelerating feedback resides in failing fast. Problems are spotted early, within minutes. We achieve this when committing frequently, multiple times a day, regardless of code complexity or team size. But it requires we work very hard to keep getting fast feedback. This means if the build is too slow, we need to speed up the build; if tests are too slow, we need to write better and more concise tests; if the hardware is too slow, we need to buy faster hardware; if the codebase is too coupled, preventing us to write concise tests, we need to decouple the codebase.
 
 ### It hinders the integration of features
 
