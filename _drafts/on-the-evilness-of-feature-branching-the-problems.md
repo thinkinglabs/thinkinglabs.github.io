@@ -203,6 +203,8 @@ But, as long as we have not merged back into mainline, we still have no feedback
 
 That is where the bad part of branching comes. When software engineers hold back their branch for way too long. When they finally merge we might discover lots of surprises. Either there is a risk they went for too long a time in the wrong direction and we only find out about this too late. Or we end up with long testing cycles finding lots of issues but yet by far not as many or not as relevant as when the branch would have been kept short with a small changeset. Fatigue is a real thing!
 
+That said, having to retest the integrated solution after having tested the feature in isolation has a risk for Testing Theatre. That is exactly where feature branching impacts testing. The test engineer might think "I have already done this" to then not test as thoroughly on mainline. Thereby, defects can creep in. And here we are, damaging the stability and quality of the product.
+
 ### It introduces rework and therefore makes releases unpredictable
 
 As long as we have not merged back into mainline we simply do not know how much work is still left to do. Merging a single branch into mainline is often not that difficult. Yet, integrating multiple parallel branches is painful. It requires a significant amount of rework caused by merge conflicts, incompatibilities between features and/or conflicting assumptions from team members that need to be resolved and requires multiple rounds of unplanned retesting and bug fixing.
