@@ -1,6 +1,6 @@
 ---
 layout: article
-title: On the Evilness of Feature Branching - How To Avoid The Problems?
+title: On the Evilness of Feature Branching - How Can We Avoid The Problems?
 author: Thierry de Pauw
 category: articles
 tags: [Version Control, Continuous Integration]
@@ -19,15 +19,16 @@ From [Lean Manufacturing](https://en.wikipedia.org/wiki/Lean_manufacturing), we 
 
 Continuous Integration implies the adoption of **trunk-based development**.
 
+
 > Trunk Based Development is what individuals practice to achieve Continuous Integration as a team.
 >
 > -- Steve Smith
 
-![Trunk-based development](/images/on-the-evilness-of-feature-branching-how-to-avoid-the-problems/trunk-based-development.png)
+![Trunk-based development](/images/on-the-evilness-of-feature-branching-how-can-we-avoid-the-problems/trunk-based-development.png)
 
 It is a version control strategy in which everyone commits multiple times a day into mainline. As a result changes are small. Merge conflicts are very unlikely. The codebase is always in a releasable state. Testing happens on mainline. Production releases ideally happen from mainline. If a release needs to be stabilised we can create a short lived release branch and release from that release branch. In that case, fixes happen on mainline and are cherry picked into the release branch. This has the advantage we can just delete the release branch after the release without having to merge it back to mainline.
 
-Note, when I say commit, I really mean "*commit-and-push*". This to debunk the unproductive discussion "*technically, when cloning a remote repository you are already creating a branch*". That is why it is so important to regularly pull the latest remote changes, execute a local build and test execution, and push our local changes to reduce the timespan of un-integrated code.
+Note, to debunk the unproductive discussion "*technically, the local copy of the remote repository is a branch*" that only serve to diminish my knowledge of Distributed Version Control Systems (DVCS). When I say "commit", it really means "commit-and-push". That is why it is so important 
 
 Either directly into mainline, or using very short lived branches.
 Different styles of trunk-based development, see Paul Hammant.
@@ -54,7 +55,7 @@ The [On the Evilness of Feature Branching]({% post_url 2021-04-26-on-the-evilnes
 2. [Why Do Teams Use Feature Branches?]({% post_url 2021-10-25-on-the-evilness-of-feature-branching-why-do-teams-use-feature-branches %})
 3. [But Compliance!?]({% post_url 2022-02-22-on-the-evilness-of-feature-branching-but-compliance %})
 4. [The Problems]({% post_url 2022-05-30-on-the-evilness-of-feature-branching-the-problems %})
-5. How To Avoid The Problems?
+5. How Can We Avoid The Problems?
 6. Questions I Regularly Get Asked about Trunk-Based Development
 7. What Are The Benefits of Trunk-Based Development?
 8. Where is the Evilness of Feature Branching?
