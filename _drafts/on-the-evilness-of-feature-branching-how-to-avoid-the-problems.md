@@ -1,6 +1,6 @@
 ---
 layout: article
-title: On the Evilness of Feature Branching - How Can We Avoid The Problems?
+title: On the Evilness of Feature Branching - How To Avoid The Problems?
 author: Thierry de Pauw
 category: articles
 tags: [Version Control, Continuous Integration]
@@ -24,15 +24,17 @@ Continuous Integration implies the adoption of **trunk-based development**.
 >
 > -- Steve Smith
 
-![Trunk-based development](/images/on-the-evilness-of-feature-branching-how-can-we-avoid-the-problems/trunk-based-development.png)
+![Trunk-based development](/images/on-the-evilness-of-feature-branching-how-to-avoid-the-problems/trunk-based-development.png)
 
 It is a version control strategy in which everyone commits multiple times a day into mainline. As a result changes are small. Merge conflicts are very unlikely. The codebase is always in a releasable state. Testing happens on mainline. Production releases ideally happen from mainline. If a release needs to be stabilised we can create a short lived release branch and release from that release branch. In that case, fixes happen on mainline and are cherry picked into the release branch. This has the advantage we can just delete the release branch after the release without having to merge it back to mainline.
 
-Note, to debunk the unproductive discussion "*technically, the local copy of the remote repository is a branch*" that only serve to diminish my knowledge of Distributed Version Control Systems (DVCS). When I say "commit", it really means "commit-and-push". That is why it is so important 
+To debunk the unproductive discussion "*technically, when cloning a remote repository you are already creating a branch*", when I say commit, I really mean "*commit-and-push*". It is therefore important to regularly pull the latest remote changes, execute a local build and automated test execution, and when it is green push our local changes. All of this to reduce the timespan for un-integrated code.
 
-Either directly into mainline, or using very short lived branches.
-Different styles of trunk-based development, see Paul Hammant.
-The book Accelerate suggests that committing to mainline can mean either committing straight into mainline or using short-lived branches. Where short means shorter than a day. ... Never seen the latter work.
+[Paul Hammant](https://twitter.com/paul_hammant) identified [three different styles of trunk-based development](https://trunkbaseddevelopment.com/styles/):
+
+- *Commit straight to mainline*. This is the traditional way of practising trunk-based development. Also my favourite style and popular amongst Extreme Programmers. It is the high throughput way of working. Still, the biggest challenge here is how long the local build takes to execute.
+- *Short-lived branches that are merged back to mainline within a couple of hours*. According to the book Accelerate it is compatible with Continuous Integration. Also according to Accelerate, it can be seen as trunk-based development when branches live shorter than a day. Yet, I have never seen this work in my humble career. The challenge here is the risk for batching up more commits than if we could push directly; the risk for taking more time and the risk for the slow-review and slow-build reality that might push us into a multi-day branch.
+- *Coupled "Patch-Review" system*. This is Google's way of working. All engineers work from head, i.e. a single copy of the most recent version of the code base. When engineers commit, their changes are immediately visible and useable by other engineers. However, changes are reviewed before being committed. That said, Google engineers have their workspace in the cloud and can enable auto-commit. When the review is marked complete and tests pass successfully, changes are committed without further human intervention.
 
 Trunk-based development is not a recent new hype as I sometimes read on Twitter. In fact, it exists since the early 1980s when [RCS](https://en.wikipedia.org/wiki/Revision_Control_System) was introduced as one of the very first version control systems. It supported branches, but teams were very cautious and stuck to trunk. Before, there was another VCS from the 1970s (see CD book).
 
@@ -40,12 +42,16 @@ Remember, the purpose of a Version Control System is not just to version source 
 
 But, how do we achieve Continuous Integration? How do we prevent it becomes a mess when everyone in the team commits multiple times a day to mainline? Something many teams are most afraid of.
 
-Recently, I identified [14 Practices That Make Continuous Integration]() that each on their own help teams achieve a state of Continuous Integration.
+Recently, I identified [14 Practices That Make Continuous Integration](). Each practice on its own is an enabler for achieving a state of Continuous Integration.
 
 ## Bibliography
 
+- [Accelerate](https://itrevolution.com/accelerate-book/), ch 4 Technical Practices, Dr. Nicole Forsgren, Jez Humbe and Gene Kim
 - [Continuous Delivery](https://www.goodreads.com/book/show/8686650-continuous-delivery), p. 382 Chapter 14: Advanced Version Control, Dave Farley and Jez Humble
 - [trunkbaseddevelopment.com - Continuous Integration](https://trunkbaseddevelopment.com/continuous-integration/), Paul Hammant
+- [trunkbaseddevelopment.com - Styles and Trade-offs](https://trunkbaseddevelopment.com/styles/), Paul Hammant
+- [Why Google Stores Billions of Lines of Code in a Single Repository](https://cacm.acm.org/magazines/2016/7/204032-why-google-stores-billions-of-lines-of-code-in-a-single-repository/fulltext), the paper, Rachel Potvin, Josh Levenberg
+- [Why Google Stores Billions of Lines of Code in a Single Repository](https://www.youtube.com/watch?v=W71BTkUbdqE), the keynote @Scale, Rachel Potvin
 
 ## The Series
 
@@ -55,7 +61,7 @@ The [On the Evilness of Feature Branching]({% post_url 2021-04-26-on-the-evilnes
 2. [Why Do Teams Use Feature Branches?]({% post_url 2021-10-25-on-the-evilness-of-feature-branching-why-do-teams-use-feature-branches %})
 3. [But Compliance!?]({% post_url 2022-02-22-on-the-evilness-of-feature-branching-but-compliance %})
 4. [The Problems]({% post_url 2022-05-30-on-the-evilness-of-feature-branching-the-problems %})
-5. How Can We Avoid The Problems?
+5. How To Avoid The Problems?
 6. Questions I Regularly Get Asked about Trunk-Based Development
 7. What Are The Benefits of Trunk-Based Development?
 8. Where is the Evilness of Feature Branching?
