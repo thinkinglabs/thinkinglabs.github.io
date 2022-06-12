@@ -20,7 +20,7 @@ From [Lean Manufacturing](https://en.wikipedia.org/wiki/Lean_manufacturing), we 
 Continuous Integration implies the adoption of **trunk-based development**.
 
 
-> Trunk Based Development is what individuals practice to achieve Continuous Integration as a team.
+> Trunk-Based Development is what individuals practice to achieve Continuous Integration as a team.
 >
 > -- Steve Smith
 
@@ -36,7 +36,7 @@ To debunk the unproductive discussion "*technically, when cloning a remote repos
 - *Short-lived branches that are merged back to mainline within a couple of hours*. According to the book Accelerate it is compatible with Continuous Integration. Also according to Accelerate, it can be seen as trunk-based development when branches live shorter than a day. Yet, I have never seen this work in my humble career. The challenge here is the risk for batching up more commits than if we could push directly; the risk for taking more time and the risk for the slow-review and slow-build reality that might push us into a multi-day branch.
 - *Coupled "Patch-Review" system*. This is Google's way of working. All engineers work from head, i.e. a single copy of the most recent version of the code base. When engineers commit, their changes are immediately visible and useable by other engineers. However, changes are reviewed before being committed. That said, Google engineers have their workspace in the cloud and can enable auto-commit. When the review is marked complete and tests pass successfully, changes are committed without further human intervention.
 
-Trunk-based development is not a recent new hype as I sometimes read on Twitter. In fact, it exists since the early 1980s when [RCS](https://en.wikipedia.org/wiki/Revision_Control_System) was introduced as one of the very first version control systems. It supported branches, but teams were very cautious and stuck to trunk. Before, there was another VCS from the 1970s (see CD book).
+Trunk-based development is not a recent new hype as I sometimes read on Twitter. In fact, it exists since 1982 when [RCS](https://en.wikipedia.org/wiki/Revision_Control_System) was introduced to replace the first version control system [SCCS](https://en.wikipedia.org/wiki/Source_Code_Control_System) written in 1972. It supported branches, but teams were very cautious and stuck to mainline.
 
 Remember, the purpose of a Version Control System is not just to version source code. **A Version Control System is in reality a communication tool** to communicate changes with the rest of the team and together with Continuous Integration to see the impact on others within minutes. This helps in gaining a shared understanding of the system and achieving [collective ownership](http://www.extremeprogramming.org/rules/collective.html) over the codebase. Consequently, this enables communication and collaboration inside the team which in turn enables the fast flow of work through the value stream. Undoubtedly, this results in better quality, higher IT delivery throughput, and reduced lead time and time to market.
 
