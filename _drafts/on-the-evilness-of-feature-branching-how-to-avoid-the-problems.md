@@ -21,7 +21,7 @@ This means:
 
 Continuous Integration is one of the most critical practices to adopt to enable the fast flow of work through the value stream and to get us close to a single-piece flow. From [Lean Manufacturing](https://en.wikipedia.org/wiki/Lean_manufacturing), we know that a single-piece flow increases the stability and throughput of our IT delivery. It delivers higher quality products. And finally, it reduces the lead time for changes and the time to market for new functionality.
 
-The purpose of Continuous Integration together with a Version Control System is to publish our ideas to the rest of the team and see the impact on others within minutes. The rest of the team sees the direction of our thinking. Consequently, it accelerates feedback and enables communication and collaboration inside the team. In turn, it helps in gaining a shared understanding of the system and achieving [collective ownership](http://www.extremeprogramming.org/rules/collective.html) over the codebase. Undoubtedly, this again results in better quality, higher IT delivery throughput and unlocks the fast flow of work.
+The purpose of Continuous Integration together with a Version Control System is to publish our ideas to the rest of the team and see the impact on others within minutes. The rest of the team sees the direction of our thinking. As a consequence, it accelerates feedback and enables communication and collaboration inside the team. In turn, it helps in gaining a shared understanding of the system and achieving [collective ownership](http://www.extremeprogramming.org/rules/collective.html) over the codebase. Undoubtedly, this again results in better quality, higher IT delivery throughput and unlocks the fast flow of work.
 
 Also, the value of accelerating feedback resides in failing fast. Problems are spotted early, within minutes. We achieve this when committing frequently, multiple times a day, regardless of code complexity or team size. But it requires we work very hard to keep getting fast feedback. This means if the build is too slow, we need to speed up the build; if tests are too slow, we need to write better and more concise tests; if the hardware is too slow, we need to buy faster hardware; if the codebase is too coupled, preventing us to write concise tests, we need to decouple the codebase.
 
@@ -51,7 +51,7 @@ To be frank, trunk-based development is not a recent new hype as I sometimes rea
 
 But, how do we achieve Continuous Integration? How do we prevent it becomes a mess when everyone in the team commits multiple times a day to mainline? Something many teams are most afraid of.
 
-Recently, I identified [14 Practices That Make Continuous Integration](). Each of these practices will help us avoid it becoming a mess. Each of these practices is on its own an enabler for achieving a state of Continuous Integration.
+Recently, I identified [14 Practices That Make Continuous Integration]({% post_url 2022-06-14-the-practices-that-make-continuous-integration %}). Each of these practices will help us avoid it becoming a mess. Each of these practices is on its own an enabler for achieving a state of Continuous Integration.
 
 ## Bibliography
 
