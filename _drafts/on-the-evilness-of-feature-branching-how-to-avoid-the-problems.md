@@ -13,7 +13,13 @@ dived deep into the problems introduced by feature branching. But, what can we d
 
 By adopting Continuous Integration as it was meant when introduced by the Extreme Programming community in the late 1990s. Ensuring always working software on mainline. Allowing us to perform on-demand production releases from mainline at any given moment in time.
 
-It is one of the most critical practices to adopt to enable the fast flow of work through the value stream and to get us close to a single-piece flow. From [Lean Manufacturing](https://en.wikipedia.org/wiki/Lean_manufacturing), we know that a single-piece flow increases the stability and throughput of our IT delivery. It delivers higher quality products. And finally, it reduces the lead time for changes and the time to market for new functionality.
+This means:
+
+- Everyone in the team commits to mainline at least once a day.
+- Every commit triggers an automated build and execution of all the automated tests.
+- If the build fails it is back to green within 10 minutes.
+
+Continuous Integration is one of the most critical practices to adopt to enable the fast flow of work through the value stream and to get us close to a single-piece flow. From [Lean Manufacturing](https://en.wikipedia.org/wiki/Lean_manufacturing), we know that a single-piece flow increases the stability and throughput of our IT delivery. It delivers higher quality products. And finally, it reduces the lead time for changes and the time to market for new functionality.
 
 The purpose of Continuous Integration together with a Version Control System is to publish our ideas to the rest of the team and see the impact on others within minutes. The rest of the team sees the direction of our thinking. Consequently, it accelerates feedback and enables communication and collaboration inside the team. In turn, it helps in gaining a shared understanding of the system and achieving [collective ownership](http://www.extremeprogramming.org/rules/collective.html) over the codebase. Undoubtedly, this again results in better quality, higher IT delivery throughput and unlocks the fast flow of work.
 
