@@ -10,7 +10,7 @@ author:
 created_at: 2021-10-13
 date: 2021-10-13
 category: notes
-tags: [ Theory of Constraints ]
+tags: [ Keynote, Theory of Constraints ]
 ---
 
 [Clarke Ching](https://www.linkedin.com/in/clarkeching/) organised the online

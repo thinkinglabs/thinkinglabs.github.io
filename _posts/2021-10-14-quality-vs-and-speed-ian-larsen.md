@@ -10,7 +10,7 @@ author:
 created_at: 2021-10-14
 date: 2021-10-14
 category: notes
-tags: [ Theory of Constraints, Quality ]
+tags: [ Keynote, Theory of Constraints, Quality ]
 ---
 
 [Clarke Ching](https://www.linkedin.com/in/clarkeching/) organised the online
