@@ -10,7 +10,7 @@ author:
 created_at: 2021-10-14
 date: 2021-10-14
 category: notes
-tags: [ Keynote, Theory of Constraints, Quality, TOC Down-Under Summit ]
+tags: [ Theory of Constraints, Quality, Keynote, TOC Down-Under Summit ]
 redirect_from:
   - /notes/2021-10-14-quality-vs-and-speed-ian-larsen
 ---

@@ -9,7 +9,7 @@ author:
   twitter: ThatGirlVim
 created_at: 2022-07-08
 category: notes
-tags: [ Keynote, Culture, Diversity, Agile on the Beach ]
+tags: [ Culture, Diversity, Keynote, Agile on the Beach ]
 image: /images/aotb-keynote-one-for-all-and-all-for-one-what-does-culture-really-mean-vimla-appadoo/im-an-introvert.jpeg
 ---
 

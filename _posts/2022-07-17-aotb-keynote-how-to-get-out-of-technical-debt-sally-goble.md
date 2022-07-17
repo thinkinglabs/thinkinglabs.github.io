@@ -9,7 +9,7 @@ author:
   twitter: sallygoble
 created_at: 2022-07-08
 category: notes
-tags: [ Keynote, Technical Debt, Agile on the Beach ]
+tags: [ Technical Debt, Keynote, Agile on the Beach ]
 image: /images/aotb-keynote-how-to-get-out-of-technical-debt-sally-goble/business-problem.jpeg
 ---
 

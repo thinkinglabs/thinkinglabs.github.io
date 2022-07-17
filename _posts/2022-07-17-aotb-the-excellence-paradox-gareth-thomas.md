@@ -9,7 +9,7 @@ author:
   twitter: TheStub
 created_at: 2022-07-08
 category: notes
-tags: [ Technical Debt, Excellence, Agile on the Beach ]
+tags: [ Excellence, Technical Debt, Agile on the Beach ]
 image: /images/aotb-the-excellence-paradox-gareth-thomas/accelerate-to-technical-excellence.jpeg
 ---
 
