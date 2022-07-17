@@ -10,7 +10,9 @@ author:
 created_at: 2021-10-14
 date: 2021-10-14
 category: notes
-tags: [ Keynote, Theory of Constraints, Quality ]
+tags: [ Keynote, Theory of Constraints, Quality, TOC Down-Under Summit ]
+redirect_from:
+  - /notes/2021-10-14-quality-vs-and-speed-ian-larsen
 ---
 
 [Clarke Ching](https://www.linkedin.com/in/clarkeching/) organised the online

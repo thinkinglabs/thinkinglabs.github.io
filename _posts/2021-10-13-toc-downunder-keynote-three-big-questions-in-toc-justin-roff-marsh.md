@@ -10,7 +10,9 @@ author:
 created_at: 2021-10-13
 date: 2021-10-13
 category: notes
-tags: [ Keynote, Theory of Constraints ]
+tags: [ Keynote, Theory of Constraints, TOC Down-Under Summit ]
+redirect-from:
+  - /notes/2021-10-13-three-big-questions-in-toc-justin-roff-marsh
 ---
 
 [Clarke Ching](https://www.linkedin.com/in/clarkeching/) organised the online
