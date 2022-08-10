@@ -4,10 +4,11 @@
 <!doctype html>
 <html lang="en">
   <head>
+    {% include google_analytics.html %}
+
     <title>{{site.data.company.name}}:: {{site.data.myself.name}} - {{page.title}}</title>
     <meta name="description" content="{{site.data.myself.name}}: {{site.data.myself.title}} - {{page.title}}">
 
-    {% include google_analytics.html %}
     {% include html_head.html %}
 
     <link rel="stylesheet" href="/css/article.css" />
