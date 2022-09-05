@@ -55,12 +55,12 @@ practices.
 | Practices                            |                                       |
 |--------------------------------------|---------------------------------------|
 | [Version Control Everything](#version-control-everything)                     | [Have a Vast Amount of Automated Tests](#have-a-vast-amount-of-automated-tests)       |
-| [Automate Your Build](#automate-your-build)                                   | [Have a Fast Build](#have-a-fast-build)                                               |
+| [Automate the Build](#automate-your-build)                                   | [Have a Fast Build](#have-a-fast-build)                                               |
 | [Make All Changes In Small Increments](#make-all-changes-in-small-increments) | [Agree As a Team To Never Break The Build](#agree-as-a-team-to-never-break-the-build) |
-| [Run a Local Build](#run-a-local-build)                                       | [Don't Commit on a Broken Build](#dont-commit-on-a-broken-build)|
+| [Run a Local Offline Build](#run-a-local-build)                                       | [Don't Commit on a Broken Build](#dont-commit-on-a-broken-build)|
 | [Commit Frequently](#commit-frequently)                                       | [When Broken Revert](#when-broken-revert)                      |
 | [Commit Only on Green](#commit-only-on-green)                                 | [Adopt Expand-Contract](#adopt-expand-contract)                 |
-| [Decouple Your Codebase](#decouple-your-code-base)                            | [Hide Unfinished Functionality](#hide-unfinished-functionality) |
+| [Decouple the Codebase](#decouple-your-code-base)                            | [Hide Unfinished Functionality](#hide-unfinished-functionality) |
 
 ## Definitions
 
@@ -128,7 +128,7 @@ leads to better quality and a higher throughput of the IT-delivery process.
 This is the first of only two tools you really need to achieve
 Continuous Integration.
 
-## Automate Your Build
+## Automate the Build
 
 It should be possible for every new team member to check out the code from
 Version Control, build the application and run all automated tests using a
@@ -193,7 +193,12 @@ Break the Build* are **the most important and most valuable practices** to
 adopt. But, from my humble experience, it seems to also be the hardest practice
 to adopt.
 
-## Run a Local Build
+## Run a Local Offline Build
+
+---
+Comment: developer should be able to run the build when offline.
+
+---
 
 To perform on-demand production releases at any given moment in time, it
 requires to have an always working software application. This
@@ -282,7 +287,7 @@ the test is red, we revert. If the test is green, we commit again into mainline.
 TDD creates the commit cadence required to achieve a state of Continuous
 Integration.
 
-## Decouple Your codebase
+## Decouple the Codebase
 
 To work in small increments, you absolutely need a decoupled codebase.
 
@@ -332,7 +337,7 @@ In that case, the only way of knowing if the application still works is by
 relying on time-consuming, repetitive, boring manual regression testing. This is
 a waste of time, energy and the value of test engineers.
 
-Because of we now depend on time-consuming manual testing, we cannot *Commit
+Because we now depend on time-consuming manual testing, we cannot *Commit
 Frequently* any more into mainline. As a consequence, we are starting to batch up
 work. From lean manufacturing, we know that big batches drive down throughput
 and time to market.
