@@ -14,7 +14,7 @@ Over the past six years, I had many discussions when [talking about the myriad o
 
 Surprisingly, very little literature is available summing up all the practices that make Continuous Integration. Most information is scattered over many books and articles. It led me to write this article series to at last summarise all the practices that make Continuous Integration in one place.
 
-I identified 14 practices that make Continuous Integration and organised them into the following categories:
+I identified 14 practices that make Continuous Integration. We can distinguish the practices in three categories:
 
 1. *Team working for Continuous Integration*: all the practices that enable the fast flow of work for the team, ensuring they are never blocked.
 2. *Coding for Continuous Integration*: all the coding practices that enable working in small increments.

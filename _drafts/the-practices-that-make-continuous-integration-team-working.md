@@ -22,7 +22,7 @@ Whereas a practice is *the actual application or use of an idea, belief, or meth
 
 ## Definitions
 
-Throughout this series I am using some concepts that are commonly used in the Continuous Delivery community but might not be known in the broader communities. Therefore, I am going to repeat these definitions in each of the different parts of this series.
+What follows are some definitions for concepts I will be using through this series. These are commonly used in the Continuous Delivery community but might not be known in the broader communities.
 
 - **Commit**: In the context of a distributed version control systems, when I say commit I really mean *commit-and-push*.
 
@@ -80,21 +80,19 @@ I am putting this in bold because, without any doubt, this is absolutely key to 
 
 Disclaimer: Of course, this is only based on automated tests. As such it only gives a limited biased amount of information. It only reveals the known knowns. At this point, we do not know if the system is valuable for users and how it behaves in front of the users. This is where manual exploratory testing will add more information. However, not breaking the build ensures that manual exploratory testing can actually happen and that we can deliver a working system to users so we can, in effect, learn how it behaves in front of the user.
 
-That said, it requires everyone in the team to first fetch the latest changes from the remote mainline and **Run a Local Build** before committing into mainline.
-
-This practice is non-negotiable. There is no single acceptable reason that would allow breaking this agreement. Even if production is burning. Nonetheless, it requires to **Have a Vast Amount of Automated Tests** and **Have a Fast Build**.
+That said, this practice is non-negotiable. There is no single acceptable reason that would allow breaking this agreement. Even if production is burning. Nonetheless, it requires to **Have a Vast Amount of Automated Tests** and **Have a Fast Build**.
 
 If we do not get everyone in the team to agree to this, Continuous Integration will simply not work for our team. That is a fact!
 
-<!-- check The Art of Agile Development -->
+To be honest, the reason for integrating code is to gain confidence about the quality of the code in the version control system. When the build breaks, the scope of possible root causes is wide. We are not so sure where to look. Therefore, reducing the scope of potential root causes is essential to developing quickly and as such increase IT delivery throughput. If we know our code worked five minutes ago, we only need to take our actions from the past five minutes into account when investigating a broken build. This reduces the scope of finding the root causes. Often, we just need to look at the error message to understand what is wrong. No debugging is required.
 
-> Continuous Integration is a practice where members of a team integrate their work frequently - usually each person integrates at least daily - leading to multiple integrations per day. Each integration is verified by an automated build […].
->
-> -- Martin Fowler, [Continuous Integration](https://martinfowler.com/articles/continuousIntegration.html)
+Therefore, agree as a team to never break the build.
+
+To guarantee this, it requires everyone in the team to first fetch the latest changes from the remote mainline and **Run a Local Build** before committing into mainline. When the local build was successful, push to the remote mainline and wait till the Commit Build passes to green before starting new work.
 
 ## Do not Commit on a Broken Build
 
-<!-- check Poppendieck Lean Software Development and Implementing ... -->
+--> *comment: check Stopping the Line in Lean Software Development and Implementing Lean Software Development*
 
 If the build happens to break, we [Stop The Line](https://en.wikipedia.org/wiki/Andon_(manufacturing)) and fix the build immediately.
 
@@ -108,14 +106,17 @@ The easiest and fastest way to fix a broken build within 10 mins is to revert th
 
 > If you do revert a broken deployment, why would you not revert a broken build?
 >
-> -- [Steve Smiths](https://twitter.com/stevesmith_tech) during a phone call
+> -- [Steve Smith](https://twitter.com/stevesmith_tech) during a phone call
 
 ## Conclusion
 
+Investing in these practices is very valuable. Each on their own enable the fast flow of work for the team. Fast flow work results in more integrations. More integrations gets the team closer to a state of Continuous Integration.
+
+However, be aware, these are difficult practices to adopt as it involves people. But implementing these practices is a good investment not a bad cost as it unlocks faster IT delivery throughput and higher quality.
 
 ## Acknowledgments
 
-[Lisi Hocke](https://twitter.com/lisihocke) for reviewing, questioning and providing helpful feedback and all the cheering.
+[Lisi Hocke](https://twitter.com/lisihocke) for reviewing, genuinely questioning from a tester's perspective what I write and providing helpful feedback. And also for all the cheering.
 
 ## Bibliography
 
