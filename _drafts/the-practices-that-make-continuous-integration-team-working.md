@@ -10,19 +10,17 @@ In this first part of this series, I would first like to investigate what are th
 
 ---
 
-Before we start, we need to make a distinction between what is a practice and what is a tool.
-
 > The difference between a tool and a practice is that a practice only exists when you are doing it.
 >
 > -- Steve Chapman, [Tools versus Practices - Lessons learned from DIY](https://www.canscorpionssmoke.com/2017/11/08/tools-versus-practices-lessons-diy/)
 
-Tools are very appealing to many engineers because often it is thought that by adopting a tool a practice gets implemented. Though, that is often not true.
+Tools are very appealing to many engineers because often it is thought that by adopting a tool they get the practice for free. Though, that is often not true.
 
-Whereas a practice is *the actual application or use of an idea, belief, or method*. It is a codified way of working that might involve some tooling to achieve the practice, but often, it does not.
+Whereas a practice is *the actual application or use of an idea, belief, or method*. It is a codified way of working that might involve some tooling to achieve the practice, but most often, no tooling is required at all.
 
 ## Definitions
 
-What follows are some definitions for concepts I will be using through this series. These are commonly used in the Continuous Delivery community but might not be known in the broader communities.
+What follows are some definitions about concepts I will be using through this series. These are commonly used in the Continuous Delivery community but might not be known in the broader communities.
 
 - **Commit**: In the context of a distributed version control systems, when I say commit I really mean *commit-and-push*.
 
@@ -62,11 +60,11 @@ If we do not version every single artefact required to create the software appli
 Be aware, a Version Control System is not only about versioning source code. It is first and for most a communication tool to communicate changes amongst all team
 members. Together with Continuous Integration, it reveals the impact on others within minutes. This helps in gaining a [Shared Understanding](https://en.wikipedia.org/wiki/Extreme_programming_practices#Shared_understanding) of the system and building a [Collective Ownership](http://www.extremeprogramming.org/rules/collective.html) over the codebase. In turn this will allow for increased integration frequency. Consequently, this enables communication and collaboration inside the team. In turn, it enables the fast flow of work through the value stream. Inevitably, this results in better quality and a higher throughput for the IT-delivery process and thus for a shorter time to market.
 
-This is the first of two practices that actually need a tool to implement the practice, i.e. you need a Version Control System. The other practice is **Automate the Build**. All other 12 practices to not need any tooling. In the end, to achieve Continuous Integration, you only need two tools. But you will need to implement 14 practices.
-
 > In the past I have gone to extraordinary lengths to version intractable software, I recall our team reverse-engineering the RDBMS storage that backed an ESB system, and inventing a DSL that we could script the ESB config with so that we could store it in VCS 🙄
 >
 > -- Dave Farley ([@davefarley77](https://twitter.com/davefarley77)), [Nov 8, 2020](https://twitter.com/davefarley77/status/1325501341758877697)
+
+This is the first of two practices that actually need a tool to implement the practice, i.e. you need a Version Control System. The other practice is **Automate the Build**. All other 12 practices to not need any tooling at all. In the end, to achieve Continuous Integration, you only need two tools. But you will need to implement 14 practices.
 
 ## Agree As a Team To Never Break The Build
 
@@ -76,15 +74,15 @@ Get everyone of the team to agree to the following:
 >
 > -- James Shore, [Continuous Integration on a Dollar a Day](http://www.jamesshore.com/v2/blog/2006/continuous-integration-on-a-dollar-a-day)
 
-I am putting this in bold because, without any doubt, this is absolutely key to the success of achieving Continuous Integration as a team. It will ensure we will have always working software. It will guarantee the code we get out of version control will just work at any given moment in time.
+I am putting this in bold because, without any doubt, this is absolutely key to the success of achieving Continuous Integration as a team. It ensures we have always working software. It guarantees the code we get out of version control just works at any given moment in time assuming we have a sufficiently comprehensive set of automated tests.
 
-Disclaimer: Of course, this is only based on automated tests. As such it only gives a limited biased amount of information. It only reveals the known knowns. At this point, we do not know if the system is valuable for users and how it behaves in front of the users. This is where manual exploratory testing will add more information. However, not breaking the build ensures that manual exploratory testing can actually happen and that we can deliver a working system to users so we can, in effect, learn how it behaves in front of the user.
+But, to be honest, it only reveals the known knowns. At this point, we do not know if the system is valuable for users and how it behaves in front of the users. This is where manual exploratory testing will add more information. However, not breaking the build ensures that manual exploratory testing can actually happen and that we can deliver a working system to users so we can, in effect, learn how it behaves in front of the user.
 
 That said, this practice is non-negotiable. There is no single acceptable reason that would allow breaking this agreement. Even if production is burning. Nonetheless, it requires to **Have a Vast Amount of Automated Tests** and **Have a Fast Build**.
 
-If we do not get everyone in the team to agree to this, Continuous Integration will simply not work for our team. That is a fact!
+If we do not get everyone in the team to agree to this, Continuous Integration will simply not work for our team. That is a fact! When the build is broken we do not have Continuous Integration. Without Continuous Integration our software is broken until someone else proves it works.
 
-To be honest, the reason for integrating code is to gain confidence about the quality of the code in the version control system. When the build breaks, the scope of possible root causes is wide. We are not so sure where to look. Therefore, reducing the scope of potential root causes is essential to developing quickly and as such increase IT delivery throughput. If we know our code worked five minutes ago, we only need to take our actions from the past five minutes into account when investigating a broken build. This reduces the scope of finding the root causes. Often, we just need to look at the error message to understand what is wrong. No debugging is required.
+After all, the reason for integrating code is to gain confidence about the quality of the code in the version control system. When the build breaks, the scope of possible root causes is wide. We are not so sure where to look for. Therefore, reducing the scope of potential root causes is essential to developing quickly and as such increase IT delivery throughput. If we know our code worked five minutes ago, we only need to take our actions from the past five minutes into account when investigating a broken build. This reduces the scope for finding the root causes. Often, we just need to look at the error message to understand what is wrong. No debugging is required.
 
 Therefore, agree as a team to never break the build.
 
@@ -92,17 +90,17 @@ To guarantee this, it requires everyone in the team to first fetch the latest ch
 
 ## Do not Commit on a Broken Build
 
---> *comment: check Stopping the Line in Lean Software Development and Implementing Lean Software Development*
-
 If the build happens to break, we [Stop The Line](https://en.wikipedia.org/wiki/Andon_(manufacturing)) and fix the build immediately.
 
-During the time the build is broken, no new code is added. Adding new code will only aggravate the situation by adding more problems. Fixing the broken build will become harder and harder. Resulting in a situation where the build stays broken a long time. From then on we have just lost the health monitoring for our application which will inevitably impact the quality of our IT systems. Accordingly, we also lost the ability to perform on-demand production releases at any given moment in time which in turn reduces IT delivery throughput and increases our time to market.
+During the time the build is broken, no new code is added. Adding new code only aggravates the situation by adding more problems and triggering new broken builds making the failure even worse. Fixing the broken build then becomes harder and harder. People get used to seeing a broken build and quickly this results in a situation where the build stays broken all the time. From then on we have lost the health monitoring for our application which inevitably impacts the quality of the software. Accordingly, we also lost the ability to perform on-demand production releases at any given moment in time which in turn reduces IT delivery throughput and increases our time to market.
+
+The most important step in achieving Continuous Integration as a team is to accept as a team that each time code is committed, it builds successfully and passes each and every test. If the build fails, the whole team owns the failure. Hence, **Agree As a Team To Never Break The Build**. Therefore, when the build fails, the whole team stops and fixes the build before moving on with anything else.
 
 ## When Broken Revert
 
-One of the preconditions of being in a state of Continuous Integration is to fix a broken build within 10 mins.
+One of the preconditions of being in a state of Continuous Integration is to fix a broken build within 10 mins. The longer it takes to fix the build, the longer we block a whole team. Given the salaries for IT engineers, that is quite a lot of money hold in standstill. What is more, it disables on-demand production releases. Consequently, it reduces IT delivery throughput and increases time to market.
 
-The easiest and fastest way to fix a broken build within 10 mins is to revert the commit that caused the broken build. Allowing us to go back to the last known good state of our application codebase.
+The easiest and fastest way to fix a broken build within 10 mins, and ensure time-to-market is not impacted, is to revert the commit that caused the broken build. Allowing us to go back to the last known good state of our application codebase.
 
 > If you do revert a broken deployment, why would you not revert a broken build?
 >
@@ -110,13 +108,15 @@ The easiest and fastest way to fix a broken build within 10 mins is to revert th
 
 ## Conclusion
 
-Investing in these practices is very valuable. Each on their own enable the fast flow of work for the team. Fast flow work results in more integrations. More integrations gets the team closer to a state of Continuous Integration.
-
-However, be aware, these are difficult practices to adopt as it involves people. But implementing these practices is a good investment not a bad cost as it unlocks faster IT delivery throughput and higher quality.
+Investing in these practices is very valuable. Each on their own enable the fast flow of work for the team and enables more integrations. The more integrations happen, the closer the team gets to a state of Continuous Integration. However, these are difficult practices to adopt as it involves people. But implementing these practices is a good investment not a bad cost as it unlocks faster IT delivery throughput and higher quality.
 
 ## Acknowledgments
 
-[Lisi Hocke](https://twitter.com/lisihocke) for reviewing, genuinely questioning from a tester's perspective what I write and providing helpful feedback. And also for all the cheering.
+[Lisi Hocke](https://twitter.com/lisihocke) for reviewing, genuinely questioning what I wrote from a tester's perspective and all the cheering.
+
+As always, my dear friend [Steve Smith](https://twitter.com/SteveSmith_Tech) for his discerning, to the point feedback.
+
+[Seb Rose](https://twitter.com/sebrose) who was so extremely kind to offer at SoCraTes his precious time to review this article.
 
 ## Bibliography
 
