@@ -6,7 +6,7 @@ category: articles
 tags: [ Continuous Integration, Extreme Programming ]
 ---
 
-In this first part of this series, I would first like to investigate what are the practices that enable team work that in turn enable Continuous Integration. Continuous Integration is a practice one achieve as a team and not as a set of individuals.
+In this first part of this series, I would first like to investigate what are the practices that enable team work that in turn enable Continuous Integration. **Continuous Integration is really a Team Practice**. We achieve it as a team and not as a set of individuals. Most of the time, practices are defined for individuals. When most team members apply them, the team does well. However, with Continuous Integration, most team members have to apply other practices before the team can say they practice Continuous integration.
 
 ---
 
