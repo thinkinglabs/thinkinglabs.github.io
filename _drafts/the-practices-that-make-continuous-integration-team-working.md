@@ -64,7 +64,7 @@ I am putting this in bold because, without any doubt, this is absolutely key to 
 
 But, to be honest, it only reveals the known knowns. At this point, we do not know if the system is valuable for users and how it behaves in front of the users. This is where manual exploratory testing will add more information. However, not breaking the build ensures that manual exploratory testing can actually happen and that we can deliver a working system to users so we can, in effect, learn how it behaves in front of the user.
 
-That said, this practice is non-negotiable. There is no single acceptable reason that would allow breaking this agreement. Even if production is burning. Nonetheless, it requires to Have a *Vast Amount of Automated Tests* and *Have a Fast Build*.
+That said, this practice is non-negotiable. There is no single acceptable reason that would allow breaking this agreement. Even if production is burning. Nonetheless, it requires to Have a *Vast Amount of Automated Tests* and *Have a Fast Build*. But how many tests is vast? If you have lots of tests, does that automatically mean you have the right tests? And when is a build fast? That too, will be discussed in more detail in part 3 - *Building for Continuous Integration*.
 
 If we do not get everyone in the team to agree to this, Continuous Integration will simply not work for our team. That is a fact! When the build is broken we do not have Continuous Integration. Without Continuous Integration our software is broken until someone else proves it works.
 

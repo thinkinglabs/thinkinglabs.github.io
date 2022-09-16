@@ -328,6 +328,8 @@ we reduce Operational Expense. More money is generated for the organisation.
 
 ## Have A Vast Amount of Automated Tests
 
+--> comment from Seb Rose: How many is vast? If you have lots of tests, does that automatically mean you have the right tests? I would rephrase this.
+
 If we don't have an automated test suite, the only information we get from
 running the build is whether the code compiles and whether a binary artefact for
 deployment was created. We do not receive any feedback on whether a change
