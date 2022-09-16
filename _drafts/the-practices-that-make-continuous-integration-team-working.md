@@ -18,20 +18,6 @@ Tools are very appealing to many engineers because often it is thought that by a
 
 Whereas a practice is *the actual application or use of an idea, belief, or method*. It is a codified way of working that might involve some tooling to achieve the practice, but most often, no tooling is required at all.
 
-## Definitions
-
-What follows are some definitions about concepts I will be using through this series. These are commonly used in the Continuous Delivery community but might not be known in the broader communities.
-
-- **Commit**: In the context of a distributed version control systems, when I say commit I really mean *commit-and-push*.
-
-- **Mainline**: The line of development in Version Control which is the reference from which the builds of the system are created that feed into a deployment pipeline.
-  
-  For CVS and SubVersion this is *trunk*. For Git this is the remote *main* branch. For Mercurial this is the remote *default* branch.
-
-- **Commit Build**: The build performed during the first stage of the [Deployment Pipeline](https://continuousdelivery.com/implementing/patterns/#the-deployment-pipeline) or the central build server. It involves checking out the latest sources from mainline and at a minimum compiling the sources, running a set of commit tests, and building a binary artefact for deployment.
-
-- **Commit Tests**: All of the Unit Tests together with a small simple smoke test suite. This smoke test suite includes a few simple Integration and Acceptance Tests deemed important enough to get early feedback on.
-
 ## Version Control Everything
 
 We would think by 2022 this would be obvious. It seems the inverse is still true (rolling eyes).
@@ -86,7 +72,7 @@ After all, the reason for integrating code is to gain confidence about the quali
 
 Therefore, agree as a team to never break the build.
 
-To guarantee this, it requires everyone in the team to first fetch the latest changes from the remote mainline and **Run a Local Build** before committing into mainline. When the local build was successful, push to the remote mainline and wait till the Commit Build passes to green before starting new work.
+To guarantee this, it requires everyone in the team to first fetch the latest changes from the remote mainline and **Run a Local Build** before [committing](#commit) into [Mainline](#mainline). When the local build was successful, push to the remote mainline and wait till the [Commit Build](#commit-build) passes to green before starting new work.
 
 ## Do not Commit on a Broken Build
 
@@ -134,3 +120,23 @@ As always, my dear friend [Steve Smith](https://twitter.com/SteveSmith_Tech) for
 1. Team working for Continuous Integration
 2. Coding for Continuous Integration
 3. Building for Continuous Integration
+
+## Definitions
+
+### Commit
+
+In the context of a distributed version control systems, when I say commit I really mean *commit-and-push*.
+
+### Mainline
+
+The line of development in Version Control which is the reference from which the builds of the system are created that feed into a deployment pipeline.
+
+For CVS and SubVersion this is *trunk*. For Git this is the remote *main* branch. For Mercurial this is the remote *default* branch.
+
+### Commit Build
+
+The build performed during the first stage of the [Deployment Pipeline](https://continuousdelivery.com/implementing/patterns/#the-deployment-pipeline) or the central build server. It involves checking out the latest sources from mainline and at a minimum compiling the sources, running a set of commit tests, and building a binary artefact for deployment.
+
+### Commit Tests
+
+All of the Unit Tests together with a small simple smoke test suite. This smoke test suite includes a few simple Integration and Acceptance Tests deemed important enough to get early feedback on.
