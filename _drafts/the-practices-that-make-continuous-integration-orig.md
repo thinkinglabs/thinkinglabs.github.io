@@ -375,6 +375,8 @@ build stages of the Deployment Pipeline or the central build server.
 
 ## Have a Fast Build
 
+--> comment: impacts how fast you can fix a broken build, should be fixed within 10 mins
+
 If everyone in the team wants to commit multiple times per day into mainline,
 the *Local Build* has to be very fast. Because to prevent breaking the build,
 we need to execute this local build before committing into mainline.

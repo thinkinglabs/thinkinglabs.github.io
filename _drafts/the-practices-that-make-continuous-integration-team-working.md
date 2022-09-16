@@ -84,9 +84,11 @@ The most important step in achieving Continuous Integration as a team is to acce
 
 ## Practice 4: When Broken Revert
 
-One of the preconditions of being in a state of Continuous Integration is to fix a broken build within 10 mins. The longer it takes to fix the build, the longer we block a whole team. Given the salaries for IT engineers, that is quite a lot of money hold in standstill. What is more, it disables on-demand production releases. Consequently, it reduces IT delivery throughput and increases time to market.
+One of the preconditions of being in a state of Continuous Integration is to [fix a broken build within ten minutes](https://martinfowler.com/bliki/ContinuousIntegrationCertification.html). The longer it takes to fix the build, the longer we block a whole team. Given the salaries for IT engineers, that is quite a lot of money hold in standstill. What is more, it disables on-demand production releases. Consequently, it reduces IT delivery throughput and increases time to market.
 
-The easiest and fastest way to fix a broken build within 10 mins, and ensure time-to-market is not impacted, is to revert the commit that caused the broken build. Allowing us to go back to the last known good state of our application codebase.
+But, why within ten minutes and not within five or 15 minutes? Because this is related to *Have a Fast Build*. If the build is under ten minutes, quickly fixing the problem and re-running the build will work if the fix is easy.
+
+However, if we cannot fix the problem right away, then the easiest and fastest way to fix a broken build within ten minutes, and ensure time-to-market is not impacted, is to revert the commit that caused the broken build. Allowing us to go back to the last known good state of our application codebase.
 
 > If you do revert a broken deployment, why would you not revert a broken build?
 >
@@ -112,6 +114,7 @@ As always, my dear friend [Steve Smith](https://twitter.com/SteveSmith_Tech) for
 - [Continuous Integration on a Dollar a Day](http://www.jamesshore.com/v2/blog/2006/continuous-integration-on-a-dollar-a-day), James Shore
 - [Continuous Delivery](https://www.goodreads.com/book/show/8686650-continuous-delivery), Dave Farley and Jez Humble
 - [The Art of Agile Development](https://www.goodreads.com/book/show/1654215.The_Art_of_Agile_Development), James Shore
+- [Continuous Integration Certification](https://martinfowler.com/bliki/ContinuousIntegrationCertification.html), Martin Fowler
 
 ## The Series
 
