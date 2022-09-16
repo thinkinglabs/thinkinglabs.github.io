@@ -50,7 +50,7 @@ members. Together with Continuous Integration, it reveals the impact on others w
 >
 > -- Dave Farley ([@davefarley77](https://twitter.com/davefarley77)), [Nov 8, 2020](https://twitter.com/davefarley77/status/1325501341758877697)
 
-This is the first of two practices that actually need a tool to implement the practice, i.e. you need a Version Control System. The other practice is *Automate the Build*. All other 12 practices to not need any tooling at all. In the end, to achieve Continuous Integration, you only need two tools. But you will need to implement 14 practices.
+This is the first of two practices that actually need a tool to implement the practice, i.e. you need a Version Control System. The other practice is *Automate the Build*. To be clear, *Automate the Build* is *not* about having a "CI-tool". It is about a build script. We will get to that into more detail in part 3 - *Building for Continuous Integration*. All other 12 practices do not need any tooling at all. In the end, to achieve Continuous Integration, you only need two tools. But you will need to implement 14 practices.
 
 ## Practice 2: Agree As a Team To Never Break The Build
 
