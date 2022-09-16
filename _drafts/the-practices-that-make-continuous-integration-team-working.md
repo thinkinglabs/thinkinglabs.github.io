@@ -50,7 +50,7 @@ members. Together with Continuous Integration, it reveals the impact on others w
 >
 > -- Dave Farley ([@davefarley77](https://twitter.com/davefarley77)), [Nov 8, 2020](https://twitter.com/davefarley77/status/1325501341758877697)
 
-This is the first of two practices that actually need a tool to implement the practice, i.e. you need a Version Control System. The other practice is **Automate the Build**. All other 12 practices to not need any tooling at all. In the end, to achieve Continuous Integration, you only need two tools. But you will need to implement 14 practices.
+This is the first of two practices that actually need a tool to implement the practice, i.e. you need a Version Control System. The other practice is *Automate the Build*. All other 12 practices to not need any tooling at all. In the end, to achieve Continuous Integration, you only need two tools. But you will need to implement 14 practices.
 
 ## Practice 2: Agree As a Team To Never Break The Build
 
@@ -64,7 +64,7 @@ I am putting this in bold because, without any doubt, this is absolutely key to 
 
 But, to be honest, it only reveals the known knowns. At this point, we do not know if the system is valuable for users and how it behaves in front of the users. This is where manual exploratory testing will add more information. However, not breaking the build ensures that manual exploratory testing can actually happen and that we can deliver a working system to users so we can, in effect, learn how it behaves in front of the user.
 
-That said, this practice is non-negotiable. There is no single acceptable reason that would allow breaking this agreement. Even if production is burning. Nonetheless, it requires to **Have a Vast Amount of Automated Tests** and **Have a Fast Build**.
+That said, this practice is non-negotiable. There is no single acceptable reason that would allow breaking this agreement. Even if production is burning. Nonetheless, it requires to Have a *Vast Amount of Automated Tests* and *Have a Fast Build*.
 
 If we do not get everyone in the team to agree to this, Continuous Integration will simply not work for our team. That is a fact! When the build is broken we do not have Continuous Integration. Without Continuous Integration our software is broken until someone else proves it works.
 
@@ -72,7 +72,7 @@ After all, the reason for integrating code is to gain confidence about the quali
 
 Therefore, agree as a team to never break the build.
 
-To guarantee this, it requires everyone in the team to first fetch the latest changes from the remote mainline and **Run a Local Build** before [committing](#commit) into [Mainline](#mainline). When the local build was successful, push to the remote mainline and wait till the [Commit Build](#commit-build) passes to green before starting new work.
+To guarantee this, it requires everyone in the team to first fetch the latest changes from the remote mainline and *Run a Local Build* before [committing](#commit) into [Mainline](#mainline). When the *Local Build* was successful, push to the remote mainline and wait till the [*Commit Build*](#commit-build) passes to green before starting new work.
 
 ## Practice 3: Do not Commit on a Broken Build
 
@@ -80,7 +80,7 @@ If the build happens to break, we [Stop The Line](https://en.wikipedia.org/wiki/
 
 During the time the build is broken, no new code is added. Adding new code only aggravates the situation by adding more problems and triggering new broken builds making the failure even worse. Fixing the broken build then becomes harder and harder. People get used to seeing a broken build and quickly this results in a situation where the build stays broken all the time. From then on we have lost the health monitoring for our application which inevitably impacts the quality of the software. Accordingly, we also lost the ability to perform on-demand production releases at any given moment in time which in turn reduces IT delivery throughput and increases our time to market.
 
-The most important step in achieving Continuous Integration as a team is to accept as a team that each time code is committed, it builds successfully and passes each and every test. If the build fails, the whole team owns the failure. Hence, **Agree As a Team To Never Break The Build**. Therefore, when the build fails, the whole team stops and fixes the build before moving on with anything else.
+The most important step in achieving Continuous Integration as a team is to accept as a team that each time code is committed, it builds successfully and passes each and every test. If the build fails, the whole team owns the failure. Hence, [*Agree As a Team To Never Break The Build*](#practice-2-agree-as-a-team-to-never-break-the-build). Therefore, when the build fails, the whole team stops and fixes the build before moving on with anything else.
 
 ## Practice 4: When Broken Revert
 
