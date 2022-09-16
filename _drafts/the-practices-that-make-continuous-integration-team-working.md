@@ -18,7 +18,7 @@ Tools are very appealing to many engineers because often it is thought that by a
 
 Whereas a practice is *the actual application or use of an idea, belief, or method*. It is a codified way of working that might involve some tooling to achieve the practice, but most often, no tooling is required at all.
 
-## Version Control Everything
+## Practice 1: Version Control Everything
 
 We would think by 2022 this would be obvious. It seems the inverse is still true (rolling eyes).
 
@@ -52,7 +52,7 @@ members. Together with Continuous Integration, it reveals the impact on others w
 
 This is the first of two practices that actually need a tool to implement the practice, i.e. you need a Version Control System. The other practice is **Automate the Build**. All other 12 practices to not need any tooling at all. In the end, to achieve Continuous Integration, you only need two tools. But you will need to implement 14 practices.
 
-## Agree As a Team To Never Break The Build
+## Practice 2: Agree As a Team To Never Break The Build
 
 Get everyone of the team to agree to the following:
 
@@ -74,7 +74,7 @@ Therefore, agree as a team to never break the build.
 
 To guarantee this, it requires everyone in the team to first fetch the latest changes from the remote mainline and **Run a Local Build** before [committing](#commit) into [Mainline](#mainline). When the local build was successful, push to the remote mainline and wait till the [Commit Build](#commit-build) passes to green before starting new work.
 
-## Do not Commit on a Broken Build
+## Practice 3: Do not Commit on a Broken Build
 
 If the build happens to break, we [Stop The Line](https://en.wikipedia.org/wiki/Andon_(manufacturing)) and fix the build immediately.
 
@@ -82,7 +82,7 @@ During the time the build is broken, no new code is added. Adding new code only 
 
 The most important step in achieving Continuous Integration as a team is to accept as a team that each time code is committed, it builds successfully and passes each and every test. If the build fails, the whole team owns the failure. Hence, **Agree As a Team To Never Break The Build**. Therefore, when the build fails, the whole team stops and fixes the build before moving on with anything else.
 
-## When Broken Revert
+## Practice 4: When Broken Revert
 
 One of the preconditions of being in a state of Continuous Integration is to fix a broken build within 10 mins. The longer it takes to fix the build, the longer we block a whole team. Given the salaries for IT engineers, that is quite a lot of money hold in standstill. What is more, it disables on-demand production releases. Consequently, it reduces IT delivery throughput and increases time to market.
 
