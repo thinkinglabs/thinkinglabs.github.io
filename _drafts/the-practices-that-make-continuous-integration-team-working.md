@@ -100,9 +100,9 @@ Investing in these practices is very valuable. Each on their own enable the fast
 
 [Lisi Hocke](https://twitter.com/lisihocke) for reviewing, genuinely questioning what I wrote from a tester's perspective and all the cheering.
 
-As always, my dear friend [Steve Smith](https://twitter.com/SteveSmith_Tech) for his discerning, to the point feedback.
+[Seb Rose](https://twitter.com/sebrose) for his extreme kindness to offer at SoCraTes his precious time to review this article and for finding the bugs in my reasoning.
 
-[Seb Rose](https://twitter.com/sebrose) who was so extremely kind to offer at SoCraTes his precious time to review this article.
+As always, my dear friend [Steve Smith](https://twitter.com/SteveSmith_Tech) for his discerning and to the point feedback.
 
 ## Bibliography
 
