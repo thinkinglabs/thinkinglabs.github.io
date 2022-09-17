@@ -28,7 +28,7 @@ We say a team is in a state of Continuous Integration when:
 >
 >-- [Jez Humble](https://twitter.com/jezhumble)
 
-To reach that state of Continuous Integration, a team has to adopt a certain set of practices.
+[Continuous Integration is not a tooling problem]({% post_url 2020-03-23-continuous-integration-is-not-a-tooling-problem %}). It is a state a team can attain by adopting a series of practices.
 
 Over the past six years, I had many discussions when [talking about the myriad of problems introduced by the practice of feature branching]({% post_url 2016-10-29-feature-branching-considered-evil %}). Many questions were asked on how to achieve trunk-based development, which is nothing else than true Continuous Integration. During those discussions, I was baffled by how little the practices that enable Continuous Integration are known. Most teams do not get beyond having a centralised build, to then say they practice Continuous Integration.
 
