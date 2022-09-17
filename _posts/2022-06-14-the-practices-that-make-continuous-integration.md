@@ -36,7 +36,7 @@ Surprisingly, very little literature is available summing up all the practices t
 
 To reach Continuous Integration a team has to adopt 14 practices that can be split into three categories:
 
-1. *Team working for Continuous Integration*: all the practices that enable the fast flow of work for the team, ensuring they are never blocked.
+1. [*Team working for Continuous Integration*]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}): all the practices that enable the fast flow of work for the team, ensuring they are never blocked.
 2. *Coding for Continuous Integration*: all the coding practices that enable working in small increments.
 3. *Building for Continuous Integration*: all the practices required to effortlessly and efficiently integrate changes continuously into the codebase.
 
