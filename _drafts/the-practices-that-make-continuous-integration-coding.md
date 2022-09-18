@@ -171,6 +171,7 @@ them are good. [Pete Hodgson](https://twitter.com/ph1) suggests in his article F
 
 ## Conclusion
 
+To gain Continuous Integration, a team has to adopt six software engineering practices where [Make All Changes In Small Increments](#practice-5-make-all-changes-in-small-increments) has a central place. It instils the five other practices. Each and every one of those five practices are in place to enable incremental software development skills which are vital to get to Continuous Integration.
 
 ## Acknowledgments
 
