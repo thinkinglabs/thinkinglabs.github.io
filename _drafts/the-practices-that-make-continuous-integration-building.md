@@ -183,6 +183,13 @@ fastest tests during the *Commit Build*. Longer running tests are ran later.
 
 ## Conclusion
 
+As we can see, Continuous Integration is really not a tooling problem. Many practices are involved to achieve Continuous Integration as a team.
+
+Each practice is valuable. Each practice is an enabler of Continuous Integration. But no single practice exists on its own. They are all tangled.
+Each practice amplifies the benefits of the others. Which makes it very hard select which practice to adopt first, which practice to adopt next. This depends on the unique context and circumstances of our team. Therefore, use the [Improvement Kata](http://www-personal.umich.edu/~mrother/The_Improvement_Kata.html) to kick-start a Continuous Integration program.
+
+Because of all the benefits put forward on each and every practice, Continuous Integration will improve quality and throughput of IT changes.
+
 ## Acknowledgments
 
 ## Bibliography
