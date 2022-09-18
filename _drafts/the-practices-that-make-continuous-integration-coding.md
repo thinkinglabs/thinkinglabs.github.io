@@ -48,29 +48,22 @@ Because we commit more frequently, we will feel a gentle pressure to speed up th
 
 ## Practice 7: Commit Only on Green
 
-To keep our application always working at any given time, we may only [commit](#commit) on green. This means, we only commit when the *Local Build* says SUCCESS which also means all tests are green.
+To keep our application always working at any given time, we may only [commit](#commit) on green. This means, we only commit when the *Local Build* says SUCCESS which also involves all tests are green.
 
----
-Comment:
+When committing on red, we violate one of the two most crucial practices [Agree As a Team To Never Break The Build]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}#practice-2-agree-as-a-team-to-never-break-the-build). Once we violate this practice, we lose the ability to realise Continuous Integration as a team.
 
-When committing on Red ...
+This is where [Test Driven Development](https://en.wikipedia.org/wiki/Test-driven_development) (TDD) supports Continuous Integration. We start by writing a failing test. We implement as little production code as required to get the test passing to green. When the tests are green, we commit into [*Mainline*](#mainline). Then we refactor. If the test is red, we revert. If the test is green, we commit again into [*Mainline*](#mainline).
 
-With TDD we get Commit Only on Green for free. This is where TDD supports CI.
-
----
-
-This is where [Test Driven Development](https://en.wikipedia.org/wiki/Test-driven_development) (TDD) supports Continuous Integration. We start by writing a failing test. Then we implement as little production code as required to get the test passing to green. When the tests are green, we commit into [*Mainline*](#mainline). Then we refactor. If the test is red, we revert. If the test is green, we commit again into [*Mainline*](#mainline).
-
-TDD creates this commit cadence that is required to reach a state of Continuous Integration.
+TDD creates this commit cadence required for accomplishing a state of Continuous Integration.
 
 ## Practice 8: Decouple the Codebase
 
 To work in small increments, we absolutely need a decoupled codebase.
 
-When a codebase is too coupled, it is very difficult to adopt incremental software engineering skills. Any change will ripple through the whole codebase, ripping apart the application, preventing the application from working all the time. Again we incur a sunk cost because we cannot release what we already have implemented during a long period of time.
+When a codebase is too coupled, it is very difficult to adopt incremental software engineering skills. Any change will ripple through the whole codebase. Ripping apart the application. Preventing the application from working all the time. Again we incur a sunk cost because we cannot release what we already have implemented for a long period of time.
 
-That is why it is so important to adopt [Ports and Adapters](https://alistair.cockburn.us/hexagonal-architecture/)
-(aka Hexagonal Architecture), [Simple Design](https://wiki.c2.com/?SimpleDesign) together with some of the [SOLID-principles](https://en.wikipedia.org/wiki/SOLID). These design principles will help us in getting a decoupled codebase. In turn this leads to a more maintainable codebase and even more crucial [simple code that fits in our head](https://speakerdeck.com/tastapod/why-every-element-of-solid-is-wrong).
+That is why adopting [Ports and Adapters](https://alistair.cockburn.us/hexagonal-architecture/)
+(aka Hexagonal Architecture), [Simple Design](https://wiki.c2.com/?SimpleDesign) together with some of the [SOLID-principles](https://en.wikipedia.org/wiki/SOLID) is so important. These design principles help us in getting a decoupled codebase. In turn this leads to a more maintainable codebase and even more crucial [simple code that fits in our head](https://speakerdeck.com/tastapod/why-every-element-of-solid-is-wrong).
 
 From my humble experience, having small classes, small methods, and applying the [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single-responsibility_principle) together with [Dependency Injection Principle](https://en.wikipedia.org/wiki/Dependency_inversion_principle) (i.e. using the `new` keyword, and not a Dependency Injection-framework) will already bring us a long way forward.
 
@@ -143,8 +136,6 @@ To summarise, *Expand-Contract* and *Branch by Abstraction* allow us to perform 
 
 ## Practice 10: Hide Unfinished Functionality
 
-<!-- different kinds of toggles according to longevity and dynamism -->
-
 What if a feature takes too long to implement?
 
 Often features take a long time to implement. Most of the time it makes no sense to release a feature incrementally. Therefore, many teams use *Branch by Version Control* to hide the unfinished functionality. The downside of this approach is we never integrate the feature with the rest of the code during its implementation. The feature only gets integrated with the rest of the codebase once we finish the feature and we merge the branch back into [*Mainline*](#mainline). During the time the feature is being implemented, we are blind on whether the feature causes any integration problems or not.
@@ -164,7 +155,9 @@ Feature Toggles give great flexibility. Toggles are an enabler for Operability a
 
 Be careful! With great power comes great responsibility. Feature Toggles can be extremely dangerous when done badly. It is tremendously easy to shoot oneself in the foot and introduce lots of technical debt with toggles.
 
-We need to manage toggles. Like with Work in Progress, we do not like to have too many active toggles. Whenever we do not need a toggle any more, we delete it, immediately. Otherwise, we run the risk of having a codebase with lots and lots of toggles and no-one knowing wherefore they are used. And no-one daring to remove them.
+Badly managed toggles can go horribly wrong! Like we learned from the [Knight Capital Group](https://www.henricodolfing.com/2019/06/project-failure-case-study-knight-capital.html) case. Knight Capital Group was a financial services firm. In 2012 Knight was the largest trader in U.S. equities with a market share of around 17 percent on the New York Stock Exchange (NYSE) as well as on the Nasdaq Stock Market. They managed to lose 440 million USD in 45 minutes. Because they reused a feature toggle between two releases with a different meaning together with manual deployments on eight servers. They forget to deploy the new release on one of the eight servers. One server still ran the old application version with a different meaning for the repurposed feature toggle. This resulted in one server sending child orders like crazy for each incoming parent order. Ouch!
+
+Therefore, we need to manage toggles. Like with Work in Progress, we do not like to have too many active toggles. Whenever we do not need a toggle any more, we delete it, immediately. Otherwise, we run the risk of having a codebase with lots and lots of toggles and no-one knowing wherefore they are used. And no-one daring to remove them.
 
 Toggles should not depend on each other. Avoid the situation where to turn on a feature we have to turn toggle X on, toggle Y off and toggle Z on again.
 It is extremely difficult to reason about such a situation. It introduces testing headaches (or should I say hangovers). Therefore, always one feature, one toggle.
@@ -200,8 +193,9 @@ Continuous Integration will improve quality and throughput of IT changes.
 - [Continuous Delivery](https://www.goodreads.com/book/show/8686650-continuous-delivery) book, Jez Humble and Dave Farley
 - [Make Large Scale Changes Incrementally with Branch by Abstraction](https://continuousdelivery.com/2011/05/make-large-scale-changes-incrementally-with-branch-by-abstraction/), Jez Humble
 - [Parallel Change](https://martinfowler.com/bliki/ParallelChange.html), Danilo Sato
-- [Feature Toggles](https://martinfowler.com/articles/feature-toggles.html), Pete Hodgson
 - [Branch by Abstraction](https://www.branchbyabstraction.com/), Paul Hammant
+- [Feature Toggles](https://martinfowler.com/articles/feature-toggles.html), Pete Hodgson
+- [The $440 Million Software Error at Knight Capital](https://www.henricodolfing.com/2019/06/project-failure-case-study-knight-capital.html), Henrico Dolfing
 - [Feature Branching is Evil]({% post_url 2016-10-29-feature-branching-considered-evil %}), Thierry de Pauw
 
 ## The Series
