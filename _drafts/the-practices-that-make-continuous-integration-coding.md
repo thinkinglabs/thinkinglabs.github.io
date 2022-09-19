@@ -104,7 +104,7 @@ Next, we will gradually move consumers to use the new method signature. On each 
 
 Once all consumers call the new method signature and the old method with the old signature is nowhere called anymore, we can remove the old method. This is called the Contract phase. We contracted the codebase by removing the old method. Again, we did not break the codebase because there were no consumers left using the old method signature. Again, we can release it into production at any given moment.
 
-Evolutionary database changes use Expand-Contract excessively to rename columns, rename tables, split columns into two columns, and move columns, ...
+Evolutionary database changes use Expand-Contract extensively to rename columns, rename tables, split columns into two columns, and move columns, ...
 
 When introducing a v2 API alongside a v1 with different URLs we also make use of Expand-Contract.
 
