@@ -18,19 +18,17 @@ In [Growing Object-Oriented Software Guided by Tests](https://www.goodreads.com/
 
 > Surgeons prefer keyhole surgery over opening a patient's body because it is less invasive and cheaper.
 >
-> -- [Steve Freeman](https://twitter.com/sf105) and
-> [Nat Pryce](https://twitter.com/natpryce),
-> Growing Object-Oriented Software Guided by Tests
+> -- [Steve Freeman](https://twitter.com/sf105) and [Nat Pryce](https://twitter.com/natpryce), Growing Object-Oriented Software Guided by Tests
 
-For the same reasons, we prefer to work in small, incremental steps because it is less invasive. We are not ripping apart the application. Therefore it is cheaper, because we keep the application always working.  We can perform on-demand production releases of the application at any given moment in time, because the application is always releasable.
+For the same reasons, we prefer to work in small, incremental steps because it is less invasive. We are not ripping apart the application. Therefore it is cheaper because we keep the application always working.  We can perform on-demand production releases of the application at any given moment in time because the application is always releasable.
 
-When releases are only happening every month, or every three, six months or once a year, features are pilling up until they finally get deployed into production and released to the users. This pile of features is, as a matter of fact, nothing more than Inventory, similar to manufacturing inventories. With this exception that in manufacturing it is quite easy to see Inventory. Just look around on the work floor for stuff piling up. However, in the software industry, Inventory is far less visible. But it does not mean Inventory is costless for the software industry. To the contrary, it is still money stuck into the system. It is stuck, because that money was invested in creating software that we intend to sell. As long as it is not released, that investment does not generate revenue for the organisation.
+When releases are only happening every month, or every three, six months or once a year, features are pilling up until they finally get deployed into production and released to the users. This pile of features is, as a matter of fact, nothing more than Inventory, similar to manufacturing inventories. With this exception that in manufacturing it is quite easy to see Inventory. Just look around on the work floor for stuff piling up. However, in the software industry, Inventory is far less visible. But it does not mean Inventory is costless for the software industry. On the contrary, it is still money stuck in the system. It is stuck because that money was invested in creating software that we intend to sell. As long as it is not released, that investment does not generate revenue for the organisation.
 
-Accordingly, when we can release at any time, we are not pilling up features waiting to be released and thus we do not create Inventory. As a consequence, delivery is cheaper.
+Accordingly, if we can release any time, we are not pilling up features waiting to be released. Thus, we do not create Inventory. As a consequence, delivery is cheaper.
 
-Because we can release more frequently, we also drive down the cost of delay. In turn, that makes the delivery again cheaper.
+Because we can release more frequently, we are not holding up changes until a feature is deemed complete. No, we deploy bits of features piecemeal into production. Hence, we receive early feedback on how these changes behave and adapt accordingly. For this reason, we also drive down the cost of delay. Again, that makes the delivery cheaper.
 
-That is hard work. We are continuously solving the hard problem of keeping the application working as we go, instead of having to solve this at the end when it is time to release. But it pays off. We can stop at any time. We prevent the sunk cost involved in getting halfway through a big change and then having to abandon it.
+Though, that is hard work. We are continuously solving the hard problem of keeping the application working as we go instead of having to solve this at the end when it is time to release. But it pays off. We can stop at any time. We prevent the sunk cost involved in getting halfway through a big change and then having to abandon it.
 
 This practice applies to all code required for releasing a software system. It applies to production code, as well as to test code, database schema evolutions, application and system configuration and along with infrastructure code.
 
