@@ -112,7 +112,7 @@ Blue-Green Deployments is Expand-Contract for deployments. We expand by adding a
 
 Many breaking infrastructure changes are implemented with zero downtime using Expand-Contract.
 
-In [Make large scale changes incrementally](https://continuousdelivery.com/2011/05/make-large-scale-changes-incrementally-with-branch-by-abstraction/) Jez Humble reported how ThoughtWork's [GoCD](https://www.gocd.org/) moved incrementally from using Velocity and JsTemplate as User Interface technology to using Ruby on Rails on the JVM. Jez calls this
+In [Make large scale changes incrementally](https://continuousdelivery.com/2011/05/make-large-scale-changes-incrementally-with-branch-by-abstraction/) [Jez Humble](https://twitter.com/jezhumble) reported how ThoughtWork's [GoCD](https://www.gocd.org/) moved incrementally from using Velocity and JsTemplate as User Interface technology to using Ruby on Rails on the JVM. Jez calls this
 [*Branch by Abstraction*](https://www.branchbyabstraction.com/), a technique introduced by [Paul Hammant](https://twitter.com/paul_hammant) in [his original article on the technique](https://paulhammant.com/blog/branch_by_abstraction.html). In my humble opinion, what GoCD did was Expand-Contract.
 
 I would say *Branch by Abstraction* is a special kind of *Expand-Contract*. The difference lies in the use of an abstraction layer to cut away the time-consuming refactoring.
