@@ -22,7 +22,7 @@ In [Growing Object-Oriented Software Guided by Tests](https://www.goodreads.com/
 
 For the same reasons, we prefer to work in small, incremental steps because it is less invasive. We are not ripping apart the application. Therefore it is cheaper because we keep the application always working.  We can perform on-demand production releases of the application at any given moment in time because the application is always releasable.
 
-When releases are only happening every month, or every three, six months or once a year, features are pilling up until they finally get deployed into production and released to the users. This pile of features is, as a matter of fact, nothing more than Inventory, similar to manufacturing inventories. With this exception that in manufacturing it is quite easy to see Inventory. Just look around on the work floor for stuff piling up. However, in the software industry, Inventory is far less visible. But it does not mean Inventory is costless for the software industry. On the contrary, it is still money stuck in the system. It is stuck because that money was invested in creating software that we intend to sell. As long as it is not released, that investment does not generate revenue for the organisation.
+When releases are only happening every month, or every three, six months or once a year, features are pilling up until they finally get deployed into production and released to the users. This pile of features is, as a matter of fact, nothing more than [Inventory](#inventory), similar to manufacturing inventories. With this exception that in manufacturing it is quite easy to see Inventory. Just look around on the work floor for stuff piling up. However, in the software industry, Inventory is far less visible. But it does not mean Inventory is costless for the software industry. On the contrary, it is still money stuck in the system. It is stuck because that money was invested in creating software that we intend to sell. As long as it is not released, that investment does not generate revenue for the organisation.
 
 Accordingly, if we can release any time, we are not pilling up features waiting to be released. Thus, we do not create Inventory. As a consequence, delivery is cheaper.
 
@@ -38,7 +38,7 @@ This practice applies to all code required for releasing a software system. It a
 
 The central premise of Continuous Integration is *integrating early and often on* [*Mainline*](#mainline). This requires **frequent commits into Mainline**.
 
-When not committing frequently, integrating code becomes time-consuming, vastly non-deterministic and vary wildly in duration. As a consequence, this will slow down the IT-delivery throughput and time to market.
+When not committing frequently, integrating code becomes time-consuming, vastly non-deterministic and vary wildly in duration. As a consequence, this will slow down the IT-delivery [Throughput](#throughput) and time to market.
 
 When not committing frequently, it also prevents the communication of changes inside the team. This results in blocking team members to use the latest changes. Again, this will inevitably hurt quality and IT-delivery throughput.
 
@@ -71,11 +71,11 @@ That is why adopting [Ports and Adapters](https://alistair.cockburn.us/hexagonal
 
 From my humble experience, having small classes, small methods, and applying the [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single-responsibility_principle) together with [Dependency Injection Principle](https://en.wikipedia.org/wiki/Dependency_inversion_principle) (i.e. using the `new` keyword, and not a Dependency Injection-framework) already bring us a long way forward.
 
-It is generally accepted that adopting these software design principles are beneficial for quality. Interestingly, it also optimises the required engineering time to introduce new changes, hence reducing the time and effort spent. As such, it also reduces Operational Expenses.
+It is generally accepted that adopting these software design principles are beneficial for quality. Interestingly, it also optimises the required engineering time to introduce new changes, hence reducing the time and effort spent. As such, it also reduces [Operational Expenses](#operational-expenses).
 
-As a result, it drives down the lead time for changes, reducing the time to market and increasing the throughput of the IT-delivery process.
+As a result, it drives down the lead time for changes, reducing the time to market and increasing the [Throughput](#throughput) of the IT-delivery process.
 
-Because we spent less time on changes, we have a smaller Inventory of unfinished functionality. Together with the reduced Operational Expenses, it reduces the money spent on changes.
+Because we spent less time on changes, we have a smaller [Inventory](#inventory) of unfinished functionality. Together with the reduced Operational Expenses, it reduces the money spent on changes.
 
 *Having a Decoupled codebase* not only improves quality, but it also improves all three [Theory of Constraints](https://en.wikipedia.org/wiki/Theory_of_constraints) metrics: we increase Throughput, while simultaneously reducing Inventory and reducing Operational Expenses. This leads to more money generated for the organisation.
 
@@ -89,7 +89,7 @@ releases.
 For instance, let us say we want to change the signature of a method. But, that method is used at 42 places in our codebase. Changing that
 signature together with all consumers in one go can take fairly long. During that time our application is broken. It is ripped apart. It does not work anymore. We cannot release the application into production at any time anymore.
 
-To avoid breaking the build, many teams tend to use the classic approach with *Branch by Version Control*, i.e. create a branch in version control. However, this approach introduces the problem of hiding the change from the rest of the team. The change only becomes visible the minute the branch gets merged back into [*Mainline*](#mainline) when the refactoring is finished. During that time, team members may have continued to add additional consumers for the old method signature. At merge time, this may create the necessary merge conflicts and rework. Performing that refactoring then becomes an especially time-consuming and hugely unpredictable activity. In addition, at merge time, it may also halt the delivery of all ongoing new functionality. Because everyone in the team needs to integrate that change that was not known before into all ongoing work. All of this will again increase the lead time for the refactoring, reduce the throughput and slow down the time to market.
+To avoid breaking the build, many teams tend to use the classic approach with *Branch by Version Control*, i.e. create a branch in version control. However, this approach introduces the problem of hiding the change from the rest of the team. The change only becomes visible the minute the branch gets merged back into [*Mainline*](#mainline) when the refactoring is finished. During that time, team members may have continued to add additional consumers for the old method signature. At merge time, this may create the necessary merge conflicts and rework. Performing that refactoring then becomes an especially time-consuming and hugely unpredictable activity. In addition, at merge time, it may also halt the delivery of all ongoing new functionality. Because everyone in the team needs to integrate that change that was not known before into all ongoing work. All of this will again increase the lead time for the refactoring, reduce the [Throughput](#throughput) and slow down the time to market.
 
 Instead of using Branch by Version Control, we should adopt [*Expand-Contract*](https://martinfowler.com/bliki/ParallelChange.html).
 
@@ -187,6 +187,7 @@ To gain Continuous Integration, a team has to adopt six software engineering pra
 - [Feature Toggles](https://martinfowler.com/articles/feature-toggles.html), Pete Hodgson
 - [The $440 Million Software Error at Knight Capital](https://www.henricodolfing.com/2019/06/project-failure-case-study-knight-capital.html), Henrico Dolfing
 - [Feature Branching is Evil]({% post_url 2016-10-29-feature-branching-considered-evil %}), Thierry de Pauw
+- [The Goal](https://www.goodreads.com/book/show/113934.The_Goal), Eliyahu Goldratt
 
 ## The Series
 
@@ -215,3 +216,15 @@ The build performed during the first stage of the [Deployment Pipeline](https://
 ### Commit Tests
 
 All of the Unit Tests together with a small simple smoke test suite executed during the *Commit Build*. This smoke test suite includes a few simple Integration and Acceptance Tests deemed important enough to get early feedback on.
+
+### Throughput
+
+From [Theory of Constraints](https://en.wikipedia.org/wiki/Theory_of_constraints): the rate at which the system generates money - through sales. The sales part is quite important. If an organisation only produces stuff without selling, it will just go bankrupt.
+
+### Inventory
+
+From [Theory of Constraints](https://en.wikipedia.org/wiki/Theory_of_constraints): all the money that the system has invested into purchasing or creating the things it intends to sell.
+
+### Operational Expenses
+
+From [Theory of Constraints](https://en.wikipedia.org/wiki/Theory_of_constraints): all the money the system spends in order to turn inventory into throughput.
