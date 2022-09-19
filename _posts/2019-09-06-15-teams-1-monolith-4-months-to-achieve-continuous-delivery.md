@@ -14,11 +14,14 @@ conferences:
     video_link: https://www.youtube.com/watch?v=KQSLXgp-aP0&list=PLHxNOhe276_4fELp-u0TPjRNs9s9Dzqm2
   - name: Lean Agile Exchange 2020
     date: 2020-09-10
+  - name: Agile on the Beach 2022
+    date: 2022-07-07
+    video_link: https://www.youtube.com/watch?v=OUIOYIQ1yTA
 speakerdeck:
   data_id: a3cf8b65407147fc9d8875ce9c1a2dab
   download_link: https://files.speakerdeck.com/presentations/a3cf8b65407147fc9d8875ce9c1a2dab/Continuous_Delivery_in_4_months_for_15_teams_and_their_1_monolith.pdf
 youtube:
-  data_id: KQSLXgp-aP0
+  data_id: OUIOYIQ1yTA
 redirect_from:
   - /talks/15-teams-1-monolith-4-months-to-achieve-continuous-delivery
 ---
