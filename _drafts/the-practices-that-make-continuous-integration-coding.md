@@ -69,7 +69,7 @@ When a codebase is too coupled, it is arduous to adopt incremental software engi
 That is why adopting [Ports and Adapters](https://alistair.cockburn.us/hexagonal-architecture/)
 (aka Hexagonal Architecture), [Simple Design](https://wiki.c2.com/?SimpleDesign) together with some of the [SOLID-principles](https://en.wikipedia.org/wiki/SOLID) is so important. These design principles help us in getting a decoupled codebase. Consequently, this leads to a more maintainable codebase and even more crucial: [simple code that fits in our head](https://speakerdeck.com/tastapod/why-every-element-of-solid-is-wrong).
 
-From my humble experience, having small classes, small methods, and applying the [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single-responsibility_principle) together with [Dependency Injection Principle](https://en.wikipedia.org/wiki/Dependency_inversion_principle) (i.e. using the `new` keyword, and not a Dependency Injection-framework) already bring us a long way forward.
+From my humble experience, having small classes, small methods, and applying the [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single-responsibility_principle) together with [Dependency Injection Principle](https://en.wikipedia.org/wiki/Dependency_injection) (i.e. using the `new` keyword, and not a Dependency Injection-framework) already bring us a long way forward.
 
 It is generally accepted that adopting these software design principles are beneficial for quality. Interestingly, it also optimises the required engineering time to introduce new changes, hence reducing the time and effort spent. As such, it also reduces [Operational Expenses](#operational-expenses).
 
