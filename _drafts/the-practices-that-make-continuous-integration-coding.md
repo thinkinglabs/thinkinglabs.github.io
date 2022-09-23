@@ -24,7 +24,7 @@ For the same reasons, we prefer to work in small, incremental steps because it i
 
 When releases are only happening every month, or every three, six months or once a year, features are pilling up until they finally get deployed into production and released to the users. This pile of features is, as a matter of fact, nothing more than [Inventory](#inventory), similar to manufacturing inventories. With this exception that in manufacturing it is quite easy to see Inventory. Just look around on the work floor for stuff piling up. However, in the software industry, Inventory is far less visible. But it does not mean Inventory is costless for the software industry. On the contrary, it is still money stuck in the system. It is stuck because that money was invested in creating software that we intend to sell. As long as it is not released, that investment does not generate revenue for the organisation.
 
-Accordingly, if we can release any time, we are not pilling up features waiting to be released. Thus, we do not create Inventory. As a consequence, delivery is cheaper.
+Accordingly, if we can release any time, we are not pilling up features waiting to be released. Thus, we do not create Inventory. As a consequence, delivery is cheaper and far less risky.
 
 Because we can release more frequently, we are not holding up changes until a feature is deemed complete. No, we deploy bits of features piecemeal into production. Hence, we receive early feedback on how these changes behave and adapt accordingly. For this reason, we also drive down the cost of delay. Again, that makes the delivery cheaper.
 
@@ -32,7 +32,7 @@ Though, that is hard work. We are continuously solving the hard problem of keepi
 
 This practice applies to all code required for releasing a software system. It applies to production code, as well as to test code, database schema evolutions, application and system configuration and along with infrastructure code.
 
-*Make All Changes in Small Increments* together with [*Agree As a Team To Never Break the Build*]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}#practice-2-agree-as-a-team-to-never-break-the-build) are **the two most crucial but also the two most valuable practices** to adopt. Yet, from my humble experience, it seems this is also the toughest practice to adopt.
+*Make All Changes in Small Increments* together with [*Agree As a Team To Never Break the Build*]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}#practice-2-agree-as-a-team-to-never-break-the-build) are **the two most crucial but also the two most valuable practices** to adopt. Yet, from my humble experience, it seems *Make All Changes in Small Increments* is also the toughest practice to adopt.
 
 ## Practice 6: Commit Frequently
 
@@ -58,7 +58,7 @@ On the other hand, when committing on red, we violate one of the two paramount p
 
 This is where [Test Driven Development](https://en.wikipedia.org/wiki/Test-driven_development) (TDD) supports Continuous Integration. We start by writing a failing test. We implement as little production code as required to get the test passing to green. When the tests are green, we commit into [*Mainline*](#mainline). Then we refactor. If the test is red, we revert. When the test is green again, we commit again into [*Mainline*](#mainline).
 
-Thus, TDD creates this commit cadence required to accomplish a state of Continuous Integration.
+Thus, TDD creates this commit cadence that satisfies [*Commit Frequently*](#practice-6-commit-frequently) and is required to accomplish a state of Continuous Integration.
 
 ## Practice 8: Decouple the Codebase
 
@@ -73,6 +73,8 @@ From my humble experience, having small classes, small methods, and applying the
 
 It is generally accepted that adopting these software design principles are beneficial for quality. Interestingly, it also optimises the required engineering time to introduce new changes, hence reducing the time and effort spent. As such, it also reduces [Operational Expenses](#operational-expenses).
 
+A decoupled code base also allows for teams or even pairs inside teams to move forward independently. Hence, less changes are stuck waiting for other changes to finish. Therefore, less time is spend on changes.
+
 As a result, it drives down the lead time for changes, reducing the time to market and increasing the [Throughput](#throughput) of the IT-delivery process.
 
 Because we spent less time on changes, we have a smaller [Inventory](#inventory) of unfinished functionality. Together with the reduced Operational Expenses, it reduces the money spent on changes.
@@ -86,8 +88,7 @@ Because we spent less time on changes, we have a smaller [Inventory](#inventory)
 If we have to perform a large-scale refactoring that could rip apart our application for a long time, preventing on-demand production
 releases.
 
-For instance, let us say we want to change the signature of a method. But, that method is used at 42 places in our codebase. Changing that
-signature together with all consumers in one go can take fairly long. During that time our application is broken. It is ripped apart. It does not work anymore. We cannot release the application into production at any time anymore.
+For instance, let us say we want to change the signature of a method. But, that method is used at 42 places in our codebase. Changing that signature together with all consumers in one go can take fairly long. During that time our application is broken. It is ripped apart. It does not work anymore. We cannot release the application into production at any time anymore.
 
 To avoid breaking the build, many teams tend to use the classic approach with *Branch by Version Control*, i.e. create a branch in version control. However, this approach introduces the problem of hiding the change from the rest of the team. The change only becomes visible the minute the branch gets merged back into [*Mainline*](#mainline) when the refactoring is finished. During that time, team members may have continued to add additional consumers for the old method signature. At merge time, this may create the necessary merge conflicts and rework. Performing that refactoring then becomes an especially time-consuming and hugely unpredictable activity. In addition, at merge time, it may also halt the delivery of all ongoing new functionality. Because everyone in the team needs to integrate that change that was not known before into all ongoing work. All of this will again increase the lead time for the refactoring, reduce the [Throughput](#throughput) and slow down the time to market.
 
@@ -117,7 +118,7 @@ In [Make large scale changes incrementally](https://continuousdelivery.com/2011/
 
 I would say *Branch by Abstraction* is a special kind of *Expand-Contract*. The difference lies in the use of an abstraction layer to cut away the time-consuming refactoring.
 
-We use this technique, for instance, to replace an algorithm with a more performant algorithm. Or to replace a library used everywhere in the codebase with a different library. For instance, we want to replace our Object Relational Mapping (ORM) library with another one or, let us be crazy, with plain old SQL.
+We use this technique, for instance, to replace an algorithm with a more performant algorithm. Or to replace a library used everywhere in the codebase with a different library. For instance, we want to replace our Object Relational Mapping (ORM) library with another one or, let us be wild, with plain old SQL.
 
 *Branch by Abstraction* works as follows. We begin with a situation where various parts of the software are calling some supplier code (the algorithm or
 the library we want to replace).
@@ -138,12 +139,12 @@ To summarise, *Expand-Contract* and *Branch by Abstraction* allow us to perform 
 
 What if a feature takes too long to implement?
 
-Often features take a long time to implement. Most of the time it makes no sense to release a feature incrementally. For that reason, many teams use *Branch by Version Control* to hide the unfinished functionality. That approache has the downside that we never integrate the feature with the rest of the code during its implementation. The feature only gets integrated with the rest of the codebase once we finish the feature and we merge the branch back into [*Mainline*](#mainline). During the time the feature is being implemented, we are blind to whether the feature causes any integration problems or not.
+Often features take a long time to implement. Most of the time it makes no sense to release a feature incrementally. For that reason, many teams use *Branch by Version Control* to hide the unfinished functionality. That approach has the downside that we never integrate the feature with the rest of the code during its implementation. The feature only gets integrated with the rest of the codebase once we finish the feature and we merge the branch back into [*Mainline*](#mainline). During the time the feature is being implemented, we are blind to whether the feature causes any integration problems or not.
 
 Instead of using *Branch by Version Control* to keep unfinished functionality out of a release, we should just hide the unfinished functionality from the
 user.
 
-*Hide Unfinished Functionality* is probably **the most straightforward practice to adopt**. It is perfectly acceptable to have unfinished functionality sitting in production. It may even be behind a publicly accessible URL as long as it is not discoverable by the users. Most of the time we do not need fancy feature toggling to hide unfinished functionality.
+*Hide Unfinished Functionality* is probably **the most straightforward practice to adopt**. It is perfectly acceptable to have unfinished functionality sitting in production. It may even be behind a publicly accessible URL as long as it is not discoverable by the users and cannot be misused by malicious actors (e.g. to gain access to the system or learn valuable information about the system). Most of the time we do not need fancy feature toggling to hide unfinished functionality.
 
 For instance, if we are developing a new screen for our User Interface. As long as we haven't finished that screen, we do not add a menu entry to the navigation. We only add this at the end, when the screen is completely done. We could say that adding the menu item is kind of flipping a toggle.
 
@@ -162,9 +163,7 @@ That being the case, we need to manage toggles. Like with Work in Progress, we d
 Toggles should not depend on each other. Avoid the situation where to turn a feature on, we have to turn toggle X on, toggle Y off and toggle Z on again.
 It is extremely difficult to reason about such a situation. It introduces a testing headache (or should I say hangover). As a consequence, always have one feature, one toggle.
 
-Toggles introduce branching logic. Branching logic needs to be tested. Therefore, we have to run our automated tests against our application with
-both the feature on and off. On the other hand, manual exploratory testing should only happen against the next situation that will happen in production.
-If the toggle will be on in production, exploratory testing should happen with the toggle turned on.
+Toggles introduce branching logic. Branching logic needs to be tested. Therefore, we have to run our automated tests against our application with both the feature on and off. On the other hand, in most situations, manual exploratory testing should only happen against the next situation that will happen in production. If the toggle will be on in production, exploratory testing should happen with the toggle turned on. But as [Lisi Hocke](https://twitter.com/lisihocke) rightfully commented: it depends! If we want to have information about the production situation, yes, manual exploratory testing should happen with the toggle on. However, if we want to know how things behave in the case we turn the toggle off, are there no side effects, then manual exploratory testing should happen with the toggle off.
 
 Branching logic also means introducing code complexity. Code complexity means maintenance burden. There are many ways we can implement a toggle. Not all of
 them are good. [Pete Hodgson](https://twitter.com/ph1) suggests in his article Feature Toggles different maintainable [implementation techniques](https://martinfowler.com/articles/feature-toggles.html#ImplementationTechniques).
