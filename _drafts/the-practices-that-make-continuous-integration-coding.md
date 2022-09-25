@@ -211,14 +211,6 @@ The line of development in Version Control which is the reference from which the
 
 For CVS and SubVersion, this is *trunk*. For Git, this is the remote *main* branch. For Mercurial, this is the remote *default* branch.
 
-### Commit Build
-
-The build performed during the first stage of the [Deployment Pipeline](https://continuousdelivery.com/implementing/patterns/#the-deployment-pipeline) or the central build server. It involves checking out the latest sources from *Mainline* and at a minimum compiling the sources, running a set of *Commit Tests*, and building a binary artefact for deployment.
-
-### Commit Tests
-
-All of the Unit Tests together with a small simple smoke test suite executed during the *Commit Build*. This smoke test suite includes a few simple Integration and Acceptance Tests deemed important enough to get early feedback on.
-
 ### Throughput
 
 From [Theory of Constraints](https://en.wikipedia.org/wiki/Theory_of_constraints): the rate at which the system generates money - through sales. The sales part is quite important. If an organisation only produces stuff without selling, it will just go bankrupt.
