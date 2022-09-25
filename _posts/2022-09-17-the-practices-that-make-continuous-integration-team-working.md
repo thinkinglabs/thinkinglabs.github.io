@@ -37,14 +37,14 @@ Continuous Integration is a state we accomplish as a team, not as an individual.
 
 Without version control, we do not have a single source of truth. Releasing a piece of software becomes a marathon of chasing bits and pieces of code on engineers' machines or shared network drives.
 
-Without version control, we may need a team of integrators to integrate the code before releasing it. It will lead to far fewer integrations per day, in turn impacting the quality and throughput of the IT-delivery process together with the [lead time](#lead-time) for delivery and time to market.
+Without version control, we may need a team of integrators to integrate the code before releasing it. It will lead to far fewer integrations per day, in turn impacting the quality and throughput of the IT delivery process together with the [lead time](#lead-time) for delivery and time to market.
 
 Without version control, it becomes damned hard to roll back a deployment that went awry because we do not have that single source of truth allowing us to go back to the last known good state.
 
-If we do not version every single artefact required to create the software application we will not enjoy any of the benefits of Continuous Integration. All of the practices that make Continuous Integration and that are pre-requisite to Continuous Delivery rely on having everything under Version Control. All of these practices help to reduce the IT-delivery lead time and increase quality.
+If we do not version every single artefact required to create the software application we will not enjoy any of the benefits of Continuous Integration. All of the practices that make Continuous Integration and that are pre-requisite to Continuous Delivery rely on having everything under Version Control. All of these practices help to reduce the IT delivery lead time and increase quality.
 
 Be aware that a Version Control System is not only about versioning source code. It is first and foremost, a communication tool to communicate changes amongst all team
-members. Together with Continuous Integration, it reveals the impact on others within minutes. It helps in gaining a [Shared Understanding](https://en.wikipedia.org/wiki/Extreme_programming_practices#Shared_understanding) of the system and building a [Collective Ownership](http://www.extremeprogramming.org/rules/collective.html) over the codebase. In turn, this will allow for increased integration frequency. Consequently, this enables communication and collaboration inside the team. As a result, it enables the fast flow of work through the value stream. Inevitably, this results in better quality and higher throughput for the IT-delivery process and thus for a shorter time to market.
+members. Together with Continuous Integration, it reveals the impact on others within minutes. It helps in gaining a [Shared Understanding](https://en.wikipedia.org/wiki/Extreme_programming_practices#Shared_understanding) of the system and building a [Collective Ownership](http://www.extremeprogramming.org/rules/collective.html) over the codebase. In turn, this will allow for increased integration frequency. Consequently, this enables communication and collaboration inside the team. As a result, it enables the fast flow of work through the value stream. Inevitably, this results in better quality and higher throughput for the IT delivery process and thus for a shorter time to market.
 
 > In the past I have gone to extraordinary lengths to version intractable software, I recall our team reverse-engineering the RDBMS storage that backed an ESB system, and inventing a DSL that we could script the ESB config with so that we could store it in VCS 🙄
 >
@@ -152,4 +152,4 @@ It is most often used in Manufacturing and Supply Chain. Yet, it is applicable t
 
 In IT, lead time is the time between receiving a user request, prioritising it, designing, implementing and getting it released into the hands of the users in production.
 
-With regard to IT-delivery, lead time is often limited to the time between committing code into a Version Control System and getting that code into the hands of the users in production.
+For IT delivery, lead time is often limited to the time between committing code into a Version Control System and getting that code into the hands of the users in production.

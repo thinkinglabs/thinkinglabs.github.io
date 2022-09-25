@@ -14,11 +14,7 @@ In [part 1 - Team Working for Continuous Integration]({% post_url 2022-09-17-the
 
 Break large changes into a series of small incremental changes that keep tests passing and do not break existing functionality.
 
-In [Growing Object-Oriented Software Guided by Tests](https://www.goodreads.com/book/show/4268826-growing-object-oriented-software-guided-by-tests), [Steve Freeman](https://twitter.com/sf105) and [Nat Pryce](https://twitter.com/natpryce) make this analogy with surgery:
-
-> Surgeons prefer keyhole surgery over opening a patient's body because it is less invasive and cheaper.
->
-> -- [Steve Freeman](https://twitter.com/sf105) and [Nat Pryce](https://twitter.com/natpryce), Growing Object-Oriented Software Guided by Tests
+In [Growing Object-Oriented Software Guided by Tests](https://www.goodreads.com/book/show/4268826-growing-object-oriented-software-guided-by-tests), [Steve Freeman](https://twitter.com/sf105) and [Nat Pryce](https://twitter.com/natpryce) make this analogy with surgery: *Surgeons prefer keyhole surgery over opening a patient's body because it is less invasive and cheaper.*
 
 For the same reasons, we prefer to work in small, incremental steps because it is less invasive. We are not ripping apart the application. Therefore it is cheaper because we keep the application always working.  We can perform on-demand production releases of the application at any given moment in time because the application is always releasable.
 
@@ -28,7 +24,7 @@ Accordingly, if we can release any time, we are not pilling up features waiting 
 
 Because we can release more frequently, we are not holding up changes until a feature is deemed complete. No, we deploy bits of features piecemeal into production. Hence, we receive early feedback on how these changes behave and adapt accordingly. For this reason, we also drive down the [Cost of Delay](https://blackswanfarming.com/cost-of-delay/). Again, that makes the delivery cheaper.
 
-Because we are now releasing smaller bits and pieces into the wild, it also becomes far less risky, because he changesets are smaller.
+Because we are now releasing smaller bits and pieces into the wild, it also becomes far less risky, because the changesets are smaller.
 
 Though, that is hard work. We are continuously solving the hard problem of keeping the application working as we go instead of having to solve this at the end when it is time to release. But it pays off. We can stop at any time. We prevent the sunk cost involved in getting halfway through a big change and then having to abandon it.
 
@@ -40,9 +36,9 @@ This practice applies to all code required for releasing a software system. It a
 
 The central premise of Continuous Integration is *integrating early and often on* [*Mainline*](#mainline). This requires **frequent commits into Mainline**.
 
-When not [committing](#commit) frequently, integrating code becomes time-consuming, vastly non-deterministic and vary wildly in duration. As a consequence, this will slow down the IT-delivery [Throughput](#throughput) and time to market.
+When not [committing](#commit) frequently, integrating code becomes time-consuming, vastly non-deterministic and varies wildly in duration. As a consequence, this will slow down the IT delivery [Throughput](#throughput) and time to market.
 
-When not committing frequently, it also prevents the communication of changes inside the team. This results in blocking team members to use the latest changes. Again, this will inevitably hurt quality and IT-delivery throughput.
+When not committing frequently, this also prevents the communication of changes inside the team. This results in blocking team members to use the latest changes. Again, this will inevitably hurt quality and IT delivery throughput.
 
 As a corollary, to commit frequently we absolutely need to [*Make All Changes in Small Increments*](#practice-5-make-all-changes-in-small-increments), *Have a Fast Build*, [*Have a Decoupled Codebase*](#practice-8-decouple-the-codebase) and[ *Hide Unfinished Functionality*](#practice-10-hide-unfinished-functionality). If we do not adopt all of these practices, committing frequently will be complicated, if not impossible.
 
@@ -56,30 +52,30 @@ Because we commit more frequently, we now feel a gentle pressure to speed up the
 
 To keep our application always working at any given time, we may only [commit](#commit) on green. This means, we only commit when the *Local Build* says SUCCESS which also involves all tests being green.
 
-On the other hand, when committing on red, we violate one of the two paramount practices: [Agree As a Team To Never Break The Build]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}#practice-2-agree-as-a-team-to-never-break-the-build). Once we violate this practice, we lose the ability to reach Continuous Integration as a team. On top of that, we loose the ability to release an increment. All things considered, this means the team does not come close to a single piece flow. We learned from [Lean Manufacturing](https://en.wikipedia.org/wiki/Lean_manufacturing) this comes with an increased [lead time](#lead-time) and time to market.
+On the other hand, when committing on red, we violate one of the two paramount practices: [Agree As a Team To Never Break The Build]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}#practice-2-agree-as-a-team-to-never-break-the-build). Once we violate this practice, we lose the ability to reach Continuous Integration as a team. On top of that, we lose the ability to release an increment. All things considered, this means the team does not come close to a single-piece flow. We learned from [Lean Manufacturing](https://en.wikipedia.org/wiki/Lean_manufacturing) this comes with an increased [lead time](#lead-time) and time to market.
 
 This is where [Test Driven Development](https://en.wikipedia.org/wiki/Test-driven_development) (TDD) supports Continuous Integration. We start by writing a failing test. We implement as little production code as required to get the test passing to green. When the tests are green, we commit into [*Mainline*](#mainline). Then we refactor. If the test is red, we revert. When the test is green again, we commit again into [*Mainline*](#mainline).
 
 Thus, TDD creates this commit cadence that satisfies [*Commit Frequently*](#practice-6-commit-frequently) and that is required to accomplish a state of Continuous Integration.
 
-That said, even when not following Test Driven Development, it is possible and still vital to satisfy *Commit Only on Green*. But ... we will have less confidence because we are moving forward in the dark. For sure, we will move slower. Again, this involves longer lead times and increased time to market. What is more, our design will not be as good as when we practice Test Driven Development. The importance of Test Driven Development is not the tests, it is to force the code into good design and writing testable code. Test Driven Development is a design tool, not a testing tool.
+That said, even when not following Test Driven Development, it is possible and still vital to satisfy *Commit Only on Green*. But ... we will have less confidence because we are moving forward in the dark. For sure, we will move slower. Again, this involves long lead times and increased time to market. What is more, our design will not be as good as when we practice Test Driven Development. The importance of Test Driven Development is not the tests, it is to force the code into good design and write testable code. Test Driven Development is a design tool, not a testing tool.
 
 ## Practice 8: Decouple the Codebase
 
 To work in small increments, we definitely need a decoupled codebase.
 
-When a codebase is too coupled, it is arduous to adopt incremental software engineering skills. Any change will ripple through the whole codebase, ripping apart the application, and preventing the application from working all the time. Again, we incur a sunk cost, because we cannot release what we have already implemented for a long time.
+When a codebase is too coupled, it is arduous to adopt incremental software engineering skills. Any change will ripple through the whole codebase, ripping apart the application and preventing the application from working all the time. Again, we incur a sunk cost because we cannot release what we have already implemented for a long time.
 
 That is why adopting [Ports and Adapters](https://alistair.cockburn.us/hexagonal-architecture/)
 (aka Hexagonal Architecture) together with [Simple Design](https://wiki.c2.com/?SimpleDesign) is so important. These design principles help us in getting a decoupled codebase. Consequently, this leads to a more maintainable codebase and even more crucial: [simple code that fits in our head](https://speakerdeck.com/tastapod/why-every-element-of-solid-is-wrong).
 
-From my humble experience, having small classes, small methods, and applying the [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single-responsibility_principle) together with [Dependency Injection Principle](https://en.wikipedia.org/wiki/Dependency_injection) already bring us a long way forward.
+From my humble experience, having small classes, small methods, and applying the [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single-responsibility_principle) together with [Dependency Injection Principle](https://en.wikipedia.org/wiki/Dependency_injection) already brings us a long way forward.
 
-It is generally accepted that adopting these software design principles are beneficial for quality. Interestingly, it also optimises the required engineering time to introduce new changes, hence reducing the time and effort spent. As such, it also reduces [Operational Expenses](#operational-expenses).
+It is generally accepted that adopting these software design principles is beneficial for quality. Interestingly, it also optimises the required engineering time to introduce new changes, hence reducing the time and effort spent. As such, it also reduces [Operational Expenses](#operational-expenses).
 
-A decoupled code base also allows for teams or even pairs inside teams to move forward independently. Hence, less changes are stuck waiting for other changes to finish. Therefore, less time is spend on changes.
+A decoupled code base also allows for teams or even pairs inside teams to move forward independently. Hence, fewer changes are stuck waiting for other changes to finish. Therefore, teams spent less time on changes.
 
-As a result, it drives down the [lead time](#lead-time) for changes, reducing the time to market and increasing the [Throughput](#throughput) of the IT-delivery process.
+As a result, it drives down the [lead time](#lead-time) for changes, reducing the time to market and increasing the [Throughput](#throughput) of the IT delivery process.
 
 Because we spent less time on changes, we have a smaller [Inventory](#inventory) of unfinished functionality. Together with the reduced Operational Expenses, it reduces the money spent on changes.
 
@@ -98,8 +94,7 @@ To avoid breaking the build, many teams tend to use the classic approach with [*
 
 Instead of using Branch by Version Control, we should adopt [*Expand-Contract*](https://martinfowler.com/bliki/ParallelChange.html).
 
-*Expand-Contract* works as follows. Instead of changing the method signature and breaking the codebase, we duplicate the method and apply that signature
-change on the duplicated method.
+*Expand-Contract* works as follows. Instead of changing the method signature and breaking the codebase, we duplicate the method and apply that signature change to the duplicated method.
 
 Now we have two methods: the old one with the old signature called from 42 places in the codebase and the new one with the new signature that is nowhere used in the codebase. At this point, we mark the old method as deprecated and we [commit](#commit). This is called the Expand phase. We expanded the codebase with a new method having the new method signature.
 
@@ -117,7 +112,7 @@ Blue-Green Deployments is Expand-Contract for deployments. We expand by adding a
 
 Many breaking infrastructure changes are implemented with zero downtime using Expand-Contract.
 
-In [Make large scale changes incrementally](https://continuousdelivery.com/2011/05/make-large-scale-changes-incrementally-with-branch-by-abstraction/) [Jez Humble](https://twitter.com/jezhumble) reported how ThoughtWork's [GoCD](https://www.gocd.org/) moved incrementally from using Velocity and JsTemplate as User Interface technology to using Ruby on Rails on the JVM. Jez calls this
+In [Make large scale changes incrementally](https://continuousdelivery.com/2011/05/make-large-scale-changes-incrementally-with-branch-by-abstraction/) [Jez Humble](https://twitter.com/jezhumble) reported how ThoughtWorks' [GoCD](https://www.gocd.org/) moved incrementally from using Velocity and JsTemplate as User Interface technology to using Ruby on Rails on the JVM. Jez calls this
 [*Branch by Abstraction*](https://www.branchbyabstraction.com/), a technique introduced by [Paul Hammant](https://twitter.com/paul_hammant) in [his original article on the technique](https://paulhammant.com/blog/branch_by_abstraction.html). In my humble opinion, what GoCD did was Expand-Contract.
 
 I would say *Branch by Abstraction* is a special kind of *Expand-Contract*. The difference lies in the use of an abstraction layer to cut away the time-consuming refactoring.
@@ -137,7 +132,7 @@ library).
 
 Lastly, we now gradually swap out the old supplier code until all client code uses the new supplier code.
 
-To summarise, *Expand-Contract* and *Branch by Abstraction* allow us to perform refactorings that take weeks or months to execute while keeping the application always working. Allowing us to perform on-demand production releases at any given moment in time and still be able to add new functionality while the refactoring is ongoing. We are never blocking the flow of work through the value stream. We are never blocking the delivery of new functionality. As a result, we are never creating Inventory and thus never keeping money stuck into the system.
+To summarise, *Expand-Contract* and *Branch by Abstraction* allow us to perform refactorings that take weeks or months to execute while keeping the application always working. Allowing us to perform on-demand production releases at any given moment in time and still be able to add new functionality while the refactoring is ongoing. We are never blocking the flow of work through the value stream. We are never blocking the delivery of new functionality. As a result, we are never creating Inventory and thus never keeping money stuck in the system.
 
 ## Practice 10: Hide Unfinished Functionality
 
@@ -150,9 +145,9 @@ user.
 
 *Hide Unfinished Functionality* is probably **the most straightforward practice to adopt**. It is perfectly acceptable to have unfinished functionality sitting in production. It may even be behind a publicly accessible URL as long as it is not discoverable by the users and cannot be misused by malicious actors (e.g. to gain access to the system or learn valuable information about the system). Most of the time we do not need fancy feature toggling to hide unfinished functionality.
 
-For instance, if we are developing a new screen for our User Interface. As long as we haven't finished that screen, we do not add a menu entry to the navigation. We only add this at the end, when the screen is completely done. We could say that adding the menu item is kind of flipping a toggle.
+For instance, if we are developing a new screen for our User Interface. As long as we have not finished that screen, we do not add a menu entry to the navigation. We only add this at the end, when the screen is completely done. We could say that adding the menu item is kind of flipping a toggle.
 
-The same is true for extending backends. If we are adding new backend service, we do not add consumers as long as the backend is not yet finished. Or for adding new API endpoints. Simply do not document the endpoint as long as the endpoint is not ready.
+The same is true for extending backends. If we are adding a new backend service, we do not add consumers as long as the backend is not yet finished. Or for adding new API endpoints. Simply do not document the endpoint as long as the endpoint is not ready.
 
 Of course, this is not always possible. Sometimes we have to modify a widget inside an existing screen. Or we have to change the behaviour of an existing backend service. This is when *Feature Toggles* are required.
 
@@ -217,11 +212,11 @@ For CVS and SubVersion, this is *trunk*. For Git, this is the remote *main* bran
 
 From [Monday.com](https://monday.com/blog/project-management/what-is-lead-time/) and [Wikipedia](https://en.wikipedia.org/wiki/Lead_time): the "latency" (time interval) between the start and completion of a certain task.
 
-It is most often used in Manufacturing and Supply Chain. Yet, it is applicable to all product-based businesses including the business of software.
+It is most often used in Manufacturing and Supply Chain. Yet, it applies to all product-based businesses including the business of software.
 
 In IT, lead time is the time between receiving a user request, prioritising it, designing, implementing and getting it released into the hands of the users in production.
 
-With regard to IT-delivery, lead time is often limited to the time between committing code into a Version Control System and getting that code into the hands of the users in production.
+For IT delivery, lead time is often limited to the time between committing code into a Version Control System and getting that code into the hands of the users in production.
 
 ### Throughput
 
