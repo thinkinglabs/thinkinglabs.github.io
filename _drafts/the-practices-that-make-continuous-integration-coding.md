@@ -40,11 +40,11 @@ This practice applies to all code required for releasing a software system. It a
 
 The central premise of Continuous Integration is *integrating early and often on* [*Mainline*](#mainline). This requires **frequent commits into Mainline**.
 
-When not committing frequently, integrating code becomes time-consuming, vastly non-deterministic and vary wildly in duration. As a consequence, this will slow down the IT-delivery [Throughput](#throughput) and time to market.
+When not [committing](#commit) frequently, integrating code becomes time-consuming, vastly non-deterministic and vary wildly in duration. As a consequence, this will slow down the IT-delivery [Throughput](#throughput) and time to market.
 
 When not committing frequently, it also prevents the communication of changes inside the team. This results in blocking team members to use the latest changes. Again, this will inevitably hurt quality and IT-delivery throughput.
 
-As a corollary, to [commit](#commit) frequently we absolutely need to [*Make All Changes in Small Increments*](#practice-5-make-all-changes-in-small-increments), *Have a Fast Build*, [*Have a Decoupled Codebase*](#practice-8-decouple-the-codebase) and[ *Hide Unfinished Functionality*](#practice-10-hide-unfinished-functionality). If we do not adopt all of these practices, committing frequently will be complicated, if not impossible.
+As a corollary, to commit frequently we absolutely need to [*Make All Changes in Small Increments*](#practice-5-make-all-changes-in-small-increments), *Have a Fast Build*, [*Have a Decoupled Codebase*](#practice-8-decouple-the-codebase) and[ *Hide Unfinished Functionality*](#practice-10-hide-unfinished-functionality). If we do not adopt all of these practices, committing frequently will be complicated, if not impossible.
 
 Because we commit more frequently, changes become smaller. We can now work in smaller increments. Merge conflicts and broken builds become less likely.
 
