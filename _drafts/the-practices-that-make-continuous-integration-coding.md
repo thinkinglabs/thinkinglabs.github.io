@@ -173,7 +173,9 @@ To gain Continuous Integration, a team has to adopt six software engineering pra
 
 ## Acknowledgments
 
-[Lisi Hocke](https://twitter.com/lisihocke), [Seb Rose](https://twitter.com/sebrose) and [Steve Smith](https://twitter.com/SteveSmith_Tech) for their valuable insights and feedback.
+[Lisi Hocke](https://twitter.com/lisihocke), [Seb Rose](https://twitter.com/sebrose) and [Steve Smith](https://twitter.com/SteveSmith_Tech) for their thorough review of the article and their many feedbacks.
+
+Lagavulin for helping me finalising the damned article.
 
 ## Bibliography
 
