@@ -26,7 +26,7 @@ When releases are only happening every month, or every three, six months or once
 
 Accordingly, if we can release any time, we are not pilling up features waiting to be released. Thus, we do not create Inventory. As a consequence, delivery is cheaper.
 
-Because we can release more frequently, we are not holding up changes until a feature is deemed complete. No, we deploy bits of features piecemeal into production. Hence, we receive early feedback on how these changes behave and adapt accordingly. For this reason, we also drive down the cost of delay. Again, that makes the delivery cheaper.
+Because we can release more frequently, we are not holding up changes until a feature is deemed complete. No, we deploy bits of features piecemeal into production. Hence, we receive early feedback on how these changes behave and adapt accordingly. For this reason, we also drive down the [Cost of Delay](https://blackswanfarming.com/cost-of-delay/). Again, that makes the delivery cheaper.
 
 Because we are now releasing smaller bits and pieces into the wild, it also becomes far less risky, because he changesets are smaller.
 
