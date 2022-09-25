@@ -149,7 +149,7 @@ For instance, if we are developing a new screen for our User Interface. As long 
 
 The same is true for extending backends. If we are adding a new backend service, we do not add consumers as long as the backend is not yet finished. Or for adding new API endpoints. Simply do not document the endpoint as long as the endpoint is not ready.
 
-Of course, this is not always possible. Sometimes we have to modify a widget inside an existing screen. Or we have to change the behaviour of an existing backend service. This is when *Feature Toggles* are required.
+Of course, this is not always possible. Sometimes we have to modify a widget inside an existing screen. Or we have to change the behaviour of an existing backend service. This is when [*Feature Toggles*](https://martinfowler.com/articles/feature-toggles.html) are required.
 
 Feature Toggles give great flexibility. Toggles are an enabler for Operability and Resilience. But ...
 
@@ -165,7 +165,7 @@ It is extremely difficult to reason about such a situation. It introduces a test
 Toggles introduce branching logic. Branching logic needs to be tested. Therefore, we have to run our automated tests against our application with both the feature on and off. On the other hand, in most situations, manual exploratory testing should only happen against the next situation that will happen in production. If the toggle will be on in production, exploratory testing should happen with the toggle turned on. But as [Lisi Hocke](https://twitter.com/lisihocke) rightfully commented: it depends! If we want to have information about the production situation, yes, manual exploratory testing should happen with the toggle on. However, if we want to know how things behave in the case we turn the toggle off, are there no side effects, then manual exploratory testing should happen with the toggle off.
 
 Branching logic also means introducing code complexity. Code complexity means maintenance burden. There are many ways we can implement a toggle. Not all of
-them are good. [Pete Hodgson](https://twitter.com/ph1) suggests in his article Feature Toggles different maintainable [implementation techniques](https://martinfowler.com/articles/feature-toggles.html#ImplementationTechniques).
+them are good. [Pete Hodgson](https://twitter.com/ph1) suggests in his article [*Feature Toggles*](https://martinfowler.com/articles/feature-toggles.html) different maintainable [implementation techniques](https://martinfowler.com/articles/feature-toggles.html#ImplementationTechniques).
 
 ## Conclusion
 
