@@ -24,9 +24,11 @@ For the same reasons, we prefer to work in small, incremental steps because it i
 
 When releases are only happening every month, or every three, six months or once a year, features are pilling up until they finally get deployed into production and released to the users. This pile of features is, as a matter of fact, nothing more than [Inventory](#inventory), similar to manufacturing inventories. With this exception that in manufacturing it is quite easy to see Inventory. Just look around on the work floor for stuff piling up. However, in the software industry, Inventory is far less visible. But it does not mean Inventory is costless for the software industry. On the contrary, it is still money stuck in the system. It is stuck because that money was invested in creating software that we intend to sell. As long as it is not released, that investment does not generate revenue for the organisation.
 
-Accordingly, if we can release any time, we are not pilling up features waiting to be released. Thus, we do not create Inventory. As a consequence, delivery is cheaper and far less risky.
+Accordingly, if we can release any time, we are not pilling up features waiting to be released. Thus, we do not create Inventory. As a consequence, delivery is cheaper.
 
 Because we can release more frequently, we are not holding up changes until a feature is deemed complete. No, we deploy bits of features piecemeal into production. Hence, we receive early feedback on how these changes behave and adapt accordingly. For this reason, we also drive down the cost of delay. Again, that makes the delivery cheaper.
+
+Because we are now releasing smaller bits and pieces into the wild, it also becomes far less risky, because he changesets are smaller.
 
 Though, that is hard work. We are continuously solving the hard problem of keeping the application working as we go instead of having to solve this at the end when it is time to release. But it pays off. We can stop at any time. We prevent the sunk cost involved in getting halfway through a big change and then having to abandon it.
 
