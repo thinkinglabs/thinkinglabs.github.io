@@ -37,7 +37,7 @@ Continuous Integration is a state we accomplish as a team, not as an individual.
 
 Without version control, we do not have a single source of truth. Releasing a piece of software becomes a marathon of chasing bits and pieces of code on engineers' machines or shared network drives.
 
-Without version control, we may need a team of integrators to integrate the code before releasing it. It will lead to far fewer integrations per day, in turn impacting the quality and throughput of the IT-delivery process together with the lead time for delivery and time to market.
+Without version control, we may need a team of integrators to integrate the code before releasing it. It will lead to far fewer integrations per day, in turn impacting the quality and throughput of the IT-delivery process together with the [lead time](#lead-time) for delivery and time to market.
 
 Without version control, it becomes damned hard to roll back a deployment that went awry because we do not have that single source of truth allowing us to go back to the last known good state.
 
@@ -143,3 +143,13 @@ The build performed during the first stage of the [Deployment Pipeline](https://
 ### Commit Tests
 
 All of the Unit Tests together with a small simple smoke test suite executed during the *Commit Build*. This smoke test suite includes a few simple Integration and Acceptance Tests deemed important enough to get early feedback on.
+
+### Lead Time
+
+From [Monday.com](https://monday.com/blog/project-management/what-is-lead-time/) and [Wikipedia](https://en.wikipedia.org/wiki/Lead_time): the "latency" (time interval) between the start and completion of a certain task.
+
+It is most often used in Manufacturing and Supply Chain. Yet, it is applicable to all product-based businesses including the business of software.
+
+In IT, lead time is the time between receiving a user request, prioritising it, designing, implementing and getting it released into the hands of the users in production.
+
+With regard to IT-delivery, lead time is often limited to the time between committing code into a Version Control System and getting that code into the hands of the users in production.

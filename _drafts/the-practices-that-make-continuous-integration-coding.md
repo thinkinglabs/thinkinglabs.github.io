@@ -56,7 +56,7 @@ Because we commit more frequently, we now feel a gentle pressure to speed up the
 
 To keep our application always working at any given time, we may only [commit](#commit) on green. This means, we only commit when the *Local Build* says SUCCESS which also involves all tests being green.
 
-On the other hand, when committing on red, we violate one of the two paramount practices: [Agree As a Team To Never Break The Build]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}#practice-2-agree-as-a-team-to-never-break-the-build). Once we violate this practice, we lose the ability to reach Continuous Integration as a team. On top of that, we loose the ability to release an increment. All things considered, this means the team does not come close to a single piece flow. We learned from [Lean Manufacturing](https://en.wikipedia.org/wiki/Lean_manufacturing) this comes with an increased lead time and time to market.
+On the other hand, when committing on red, we violate one of the two paramount practices: [Agree As a Team To Never Break The Build]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}#practice-2-agree-as-a-team-to-never-break-the-build). Once we violate this practice, we lose the ability to reach Continuous Integration as a team. On top of that, we loose the ability to release an increment. All things considered, this means the team does not come close to a single piece flow. We learned from [Lean Manufacturing](https://en.wikipedia.org/wiki/Lean_manufacturing) this comes with an increased [lead time](#lead-time) and time to market.
 
 This is where [Test Driven Development](https://en.wikipedia.org/wiki/Test-driven_development) (TDD) supports Continuous Integration. We start by writing a failing test. We implement as little production code as required to get the test passing to green. When the tests are green, we commit into [*Mainline*](#mainline). Then we refactor. If the test is red, we revert. When the test is green again, we commit again into [*Mainline*](#mainline).
 
@@ -79,7 +79,7 @@ It is generally accepted that adopting these software design principles are bene
 
 A decoupled code base also allows for teams or even pairs inside teams to move forward independently. Hence, less changes are stuck waiting for other changes to finish. Therefore, less time is spend on changes.
 
-As a result, it drives down the lead time for changes, reducing the time to market and increasing the [Throughput](#throughput) of the IT-delivery process.
+As a result, it drives down the [lead time](#lead-time) for changes, reducing the time to market and increasing the [Throughput](#throughput) of the IT-delivery process.
 
 Because we spent less time on changes, we have a smaller [Inventory](#inventory) of unfinished functionality. Together with the reduced Operational Expenses, it reduces the money spent on changes.
 
@@ -94,7 +94,7 @@ releases.
 
 For instance, let us say we want to change the signature of a method. But, that method is used at 42 places in our codebase. Changing that signature together with all consumers in one go can take fairly long. During that time our application is broken. It is ripped apart. It does not work anymore. We cannot release the application into production at any time anymore.
 
-To avoid breaking the build, many teams tend to use the classic approach with [*Branch by Version Control*](https://continuousdelivery.com/2011/05/make-large-scale-changes-incrementally-with-branch-by-abstraction/#branch-by-abstraction-compared-with-branching-in-version-control), i.e. create a branch in version control. However, this approach introduces the problem of hiding the change from the rest of the team. The change only becomes visible the minute the branch gets merged back into [*Mainline*](#mainline) when the refactoring is finished. During that time, team members may have continued to add additional consumers for the old method signature. At merge time, this may create the necessary merge conflicts and rework. Performing that refactoring then becomes an especially time-consuming and hugely unpredictable activity. In addition, at merge time, it may also halt the delivery of all ongoing new functionality. Because everyone in the team needs to integrate that change that was not known before into all ongoing work. All of this will again increase the lead time for the refactoring, reduce the [Throughput](#throughput) and slow down the time to market.
+To avoid breaking the build, many teams tend to use the classic approach with [*Branch by Version Control*](https://continuousdelivery.com/2011/05/make-large-scale-changes-incrementally-with-branch-by-abstraction/#branch-by-abstraction-compared-with-branching-in-version-control), i.e. create a branch in version control. However, this approach introduces the problem of hiding the change from the rest of the team. The change only becomes visible the minute the branch gets merged back into [*Mainline*](#mainline) when the refactoring is finished. During that time, team members may have continued to add additional consumers for the old method signature. At merge time, this may create the necessary merge conflicts and rework. Performing that refactoring then becomes an especially time-consuming and hugely unpredictable activity. In addition, at merge time, it may also halt the delivery of all ongoing new functionality. Because everyone in the team needs to integrate that change that was not known before into all ongoing work. All of this will again increase the [lead time](#lead-time) for the refactoring, reduce the [Throughput](#throughput) and slow down the time to market.
 
 Instead of using Branch by Version Control, we should adopt [*Expand-Contract*](https://martinfowler.com/bliki/ParallelChange.html).
 
@@ -212,6 +212,16 @@ In the context of Distributed Version Control Systems (DVCS), when I say commit 
 The line of development in Version Control which is the reference from which the builds of the system are created that feed into a deployment pipeline.
 
 For CVS and SubVersion, this is *trunk*. For Git, this is the remote *main* branch. For Mercurial, this is the remote *default* branch.
+
+### Lead Time
+
+From [Monday.com](https://monday.com/blog/project-management/what-is-lead-time/) and [Wikipedia](https://en.wikipedia.org/wiki/Lead_time): the "latency" (time interval) between the start and completion of a certain task.
+
+It is most often used in Manufacturing and Supply Chain. Yet, it is applicable to all product-based businesses including the business of software.
+
+In IT, lead time is the time between receiving a user request, prioritising it, designing, implementing and getting it released into the hands of the users in production.
+
+With regard to IT-delivery, lead time is often limited to the time between committing code into a Version Control System and getting that code into the hands of the users in production.
 
 ### Throughput
 
