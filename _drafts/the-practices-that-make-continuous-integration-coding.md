@@ -56,11 +56,13 @@ Because we commit more frequently, we now feel a gentle pressure to speed up the
 
 To keep our application always working at any given time, we may only [commit](#commit) on green. This means, we only commit when the *Local Build* says SUCCESS which also involves all tests being green.
 
-On the other hand, when committing on red, we violate one of the two paramount practices: [Agree As a Team To Never Break The Build]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}#practice-2-agree-as-a-team-to-never-break-the-build). Once we violate this practice, we lose the ability to realise Continuous Integration as a team.
+On the other hand, when committing on red, we violate one of the two paramount practices: [Agree As a Team To Never Break The Build]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}#practice-2-agree-as-a-team-to-never-break-the-build). Once we violate this practice, we lose the ability to reach Continuous Integration as a team. On top of that, we loose the ability to release an increment. All things considered, this means the team does not come close to a single piece flow. We learned from [Lean Manufacturing](https://en.wikipedia.org/wiki/Lean_manufacturing) this comes with an increased lead time and time to market.
 
 This is where [Test Driven Development](https://en.wikipedia.org/wiki/Test-driven_development) (TDD) supports Continuous Integration. We start by writing a failing test. We implement as little production code as required to get the test passing to green. When the tests are green, we commit into [*Mainline*](#mainline). Then we refactor. If the test is red, we revert. When the test is green again, we commit again into [*Mainline*](#mainline).
 
-Thus, TDD creates this commit cadence that satisfies [*Commit Frequently*](#practice-6-commit-frequently) and is required to accomplish a state of Continuous Integration.
+Thus, TDD creates this commit cadence that satisfies [*Commit Frequently*](#practice-6-commit-frequently) and that is required to accomplish a state of Continuous Integration.
+
+That said, even when not following Test Driven Development, it is possible and still vital to satisfy *Commit Only on Green*. But ... we will have less confidence because we are moving forward in the dark. For sure, we will move slower. Again, this involves longer lead times and increased time to market. What is more, our design will not be as good as when we practice Test Driven Development. The importance of Test Driven Development is not the tests, it is to force the code into good design and writing testable code. Test Driven Development is a design tool, not a testing tool.
 
 ## Practice 8: Decouple the Codebase
 
