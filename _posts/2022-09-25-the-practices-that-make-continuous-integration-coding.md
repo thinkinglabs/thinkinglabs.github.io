@@ -181,6 +181,7 @@ Lagavulin for helping me finalising the damned article.
 
 - [Growing Object-Oriented Software Guided by Tests](https://www.goodreads.com/book/show/4268826-growing-object-oriented-software-guided-by-tests), Steve Freeman and Nat Pryce
 - [Continuous Delivery](https://www.goodreads.com/book/show/8686650-continuous-delivery) book, Jez Humble and Dave Farley
+- [The Goal](https://www.goodreads.com/book/show/113934.The_Goal), Eliyahu Goldratt
 - [Make Large Scale Changes Incrementally with Branch by Abstraction](https://continuousdelivery.com/2011/05/make-large-scale-changes-incrementally-with-branch-by-abstraction/), Jez Humble
 - [Parallel Change](https://martinfowler.com/bliki/ParallelChange.html), Danilo Sato
 - [Introducing Branch By Abstraction](https://paulhammant.com/blog/branch_by_abstraction.html), Paul Hammant
@@ -188,7 +189,6 @@ Lagavulin for helping me finalising the damned article.
 - [Feature Toggles](https://martinfowler.com/articles/feature-toggles.html), Pete Hodgson
 - [The $440 Million Software Error at Knight Capital](https://www.henricodolfing.com/2019/06/project-failure-case-study-knight-capital.html), Henrico Dolfing
 - [Feature Branching is Evil]({% post_url 2016-10-29-feature-branching-considered-evil %}), Thierry de Pauw
-- [The Goal](https://www.goodreads.com/book/show/113934.The_Goal), Eliyahu Goldratt
 
 ## The Series
 

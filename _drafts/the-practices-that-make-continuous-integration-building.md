@@ -6,7 +6,7 @@ category: articles
 tags: [ Continuous Integration, Extreme Programming ]
 ---
 
-In [part 1 - Team Working for Continuous Integration]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}) we looked into the team practices that make Continuous Integration. In part 2 - Coding for Continuous Integration we explored the engineering practices that make Continuous Integration. Now, in this last part, we are going to investigate what are the practices a team needs to implement to improve their builds so that they can, in effect, reach a state of Continuous Integration.
+In [part 1 - Team Working for Continuous Integration]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}) we looked into the team practices that make Continuous Integration. In [part 2 - Coding for Continuous Integration]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %}) we explored the engineering practices that make Continuous Integration. In this last part, we investigate the required practices for a team to succeed with Continuous Integration, i.e. which are the building practices and how to improve builds to support all the coding practices and in particular [Make Changes in Small Increments]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %}#practice-5-make-changes-in-small-increments) and [Commit Frequently]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %}#practice-6-commit-frequently).
 
 ---
 
@@ -204,7 +204,7 @@ Because of all the benefits put forward on each and every practice, Continuous I
 [The Practices That Make Continuous Integration]({% post_url 2022-06-14-the-practices-that-make-continuous-integration %}) series:
 
 1. [Team working for Continuous Integration]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %})
-2. Coding for Continuous Integration
+2. [Coding for Continuous Integration]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %})
 3. Building for Continuous Integration
 
 ## Definitions
