@@ -6,15 +6,17 @@ category: articles
 tags: [ Continuous Integration, Extreme Programming ]
 ---
 
-In [part 1 - Team Working for Continuous Integration]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}) we looked into the team practices that make Continuous Integration. In [part 2 - Coding for Continuous Integration]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %}) we explored the engineering practices that make Continuous Integration. In this last part, we investigate the required practices for a team to succeed with Continuous Integration, i.e. which are the building practices and how to improve builds to support all the coding practices and in particular [Make Changes in Small Increments]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %}#practice-5-make-changes-in-small-increments) and [Commit Frequently]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %}#practice-6-commit-frequently).
+In [part 1 - Team Working for Continuous Integration]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}) we looked into the team practices that make Continuous Integration. In [part 2 - Coding for Continuous Integration]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %}) we explored the engineering practices for Continuous Integration. In this last part, we investigate the required practices for a team to succeed with Continuous Integration, i.e. which are the building practices and how to improve builds to support all the coding practices - in particular [Make Changes in Small Increments]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %}#practice-5-make-changes-in-small-increments) and [Commit Frequently]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %}#practice-6-commit-frequently) - and the team practices - especially [Agree as a Team to Never Break the Build]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}#practice-2-agree-as-a-team-to-never-break-the-build).
 
 ---
 
 ## Practice 11: Automate the Build
 
-It should be possible for every new team member to check out the code from Version Control, build the application and run all automated tests using a single command, the build script, from the command-line.
+To make things clear, right from the start, this is ***not* about having a centralised build server**. Though, a centralised build server is helpful, it is not essential to attaining Continuous Integration. Unfortunately, it is common for teams to think that because they have a centralised build server, they practice Continuous Integration. The opposite is true.
 
-The [*Commit Build*](#commit-build) on the centralised build server will use the exact same build script.
+That said, it should be possible for every new team member to check out the code out of Version Control, build the application and run all automated tests using a single command from the command-line, **the build script**.
+
+The [*Commit Build*](#commit-build) on the centralised build server will use that exact same build script.
 
 The build script is treated the same way as the production code. It is versioned, tested and constantly refactored. The same design principles (e.g. [Simple Design](https://wiki.c2.com/?SimpleDesign), [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single-responsibility_principle), abstractions, small files, small methods, ...) apply to the build script to keep it simple and easy to understand.
 
@@ -22,9 +24,9 @@ The build script ensures a deterministic, repeatable, consistent and reliable bu
 
 This build script needs to produce a single unambiguous result: it is either SUCCESS or FAILURE.
 
-Finally, the build script is a prerequisite to [*Run a Local Build*](#practice-12-run-a-local-build), a required practice to prevent broken builds and keeping the software always working. In the end, it increases productivity and thus throughput of the IT delivery process and time to market. It also increases team morale and drives down burnout.
+Finally, the build script is a prerequisite to [*Run a Local Build*](#practice-12-run-a-local-build), a required practice to prevent broken builds and keeping the software always working. In the end, it increases productivity and thus throughput of the IT delivery process and time to market. It also improves team morale and drives down burnout.
 
-This is the second of two practices that verily need a tool to implement the practice. The other practice being [Version Control Everything]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}#practice-1-version-control-everything) that introduces the Version Control System.
+This is the second of two practices that verily need a tool, the build script, to implement the practice. The other practice is [Version Control Everything]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}#practice-1-version-control-everything) that requires a Version Control System.
 
 ## Practice 12: Run a Local Build
 
