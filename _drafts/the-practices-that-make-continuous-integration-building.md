@@ -30,26 +30,23 @@ This is the second of two practices that verily need a tool, the build script, t
 
 ## Practice 12: Run a Local Build
 
----
-Comment: developer should be able to run the build when offline.
-
----
-
-To perform on-demand production releases at any given moment in time, it requires to have an always working software application. This means [*Agree As a Team To Never Break The Build*]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}#practice-2-agree-as-a-team-to-never-break-the-build). Meaning everyone in the team has to run a local private build before [committing](#commit) into [*Mainline*](#mainline).
+To perform on-demand production releases at any given moment in time, it requires to have an always working software application. This means, [*Agree As a Team To Never Break The Build*]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}#practice-2-agree-as-a-team-to-never-break-the-build). As a consequence, everyone in the team has to run a local private build before [committing](#commit) into [*Mainline*](#mainline).
 
 Running a *Local Build* means:
 
-- refreshing the local workspace by obtaining the latest changes from *Mainline*,
+- refreshing the local workspace by pulling the latest changes from *Mainline*,
 - executing the build script,
 - when the build script says SUCCESS, we are ready to commit into *Mainline*.
 
 The *Local Build* is exactly the same as the [*Commit Build*](#commit-build) performed by the [Deployment Pipeline](https://continuousdelivery.com/implementing/patterns/#the-deployment-pipeline) or the central build server.
 
-The *Local Build* integrates the local work with the work all other team members made available on mainline. It will detect any conflicts between local changes and remote changes. Not doing so, will defer this conflict detection to the *Commit Build*. As a result, this will introduce a broken build. Inevitably, this will hamper the team, impacting the throughput of IT delivery and time to market.
+It integrates the local work with the work all other team members made available on *Mainline*. It will detect any conflicts between local changes and remote changes. Not doing so, will defer this conflict detection to the *Commit Build*. As a result, this will introduce a broken build and violate [*Agree As a Team To Never Break The Build*]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}#practice-2-agree-as-a-team-to-never-break-the-build). Inevitably, this hampers the team, impacting the throughput of IT delivery and time to market.
 
-Upon commit the *Commit Build* gets triggered where the code will again get compiled and [*Commit Tests*](#commit-tests) get rerun.
+Ideally, we can run the *Local Build* offline without needing any Internet connection, besides some initial caching of required dependencies. Being able to run the *Local Build* offline gives engineers more flexibility. They do not necessarily need to be in the office to execute a *Local Build*.
 
-The team member that triggers the *Commit Build*, should monitor the build's progress and not start any new task until the commit tests pass successfully.
+Upon commit the *Commit Build* gets triggered where the code will again get compiled and [*Commit Tests*](#commit-tests) get re-executed.
+
+The team member that triggers the *Commit Build*, should monitor the build's progress and not start any new task until the commit tests pass successfully. Only when the *Commit Build* passes successfully can the team member pick up a new task.
 
 *Run a Local Build* and monitor the *Commit Build* before moving on, are a strong argument for [*Have a Fast Build*](#practice-14-have-a-fast-build) to optimise engineering time.
 
@@ -125,9 +122,9 @@ This closes this series. As we can see, [Continuous Integration is really not a 
 
 Many practices are involved to realise Continuous Integration. Each practice is valuable. Each practice is on its own an enabler of Continuous Integration. But no single practice exists on its own. They are all tangled.
 
-Each practice amplifies the benefits of the others. Which makes it very hard to select which practice to adopt first, which practice to adopt next. This depends on the unique context and circumstances of our team. Therefore, we should use a Continuous Improvement framework that takes context into account. use the [Improvement Kata](http://www-personal.umich.edu/~mrother/The_Improvement_Kata.html) to kick-start a Continuous Integration program.
+Each practice amplifies the benefits of the others. Which makes it very hard to select which practice to adopt first, which practice to adopt next. This depends on the unique context and circumstances of our team. Hence, we should use a Continuous Improvement framework that takes context into account, like the [Improvement Kata](http://www-personal.umich.edu/~mrother/The_Improvement_Kata.html), to kick-start a Continuous Integration program.
 
-Because of all the benefits put forward on each and every practice, Continuous Integration will improve quality and throughput of IT changes. Dr. [Nicole Forsgren](https://twitter.com/nicolefv) and [Jez Humble](https://twitter.com/jezhumble) proved in their 2016 academic reviewed paper [The Role of Continuous Delivery in IT and Organizational Performance](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2681909) that Continuous Integration together with Trunk-Based Development are statistically significant predictors for adopting Continuous Delivery. In turn, Continuous Delivery predicts higher IT delivery performance. Together with the adoption of Lean Product Management and a [Generative Organisational Culture](https://cloud.google.com/architecture/devops/devops-culture-westrum-organizational-culture), they predict higher organisational performance.
+Because of all the benefits put forward on each and every practice, Continuous Integration will improve quality and throughput of IT changes. [Dr Nicole Forsgren](https://twitter.com/nicolefv) and [Jez Humble](https://twitter.com/jezhumble) proved in their 2016 academic reviewed paper [The Role of Continuous Delivery in IT and Organizational Performance](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2681909) that Continuous Integration together with Trunk-Based Development are statistically significant predictors for adopting Continuous Delivery. In turn, Continuous Delivery predicts higher IT delivery performance. Together with the adoption of Lean Product Management and a [Generative Organisational Culture](https://cloud.google.com/architecture/devops/devops-culture-westrum-organizational-culture), they predict higher organisational performance.
 
 To conclude, if you want to be ahead of your competition, not adopting these practices is just not an option.
 
