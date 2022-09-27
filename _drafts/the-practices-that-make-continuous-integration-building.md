@@ -116,19 +116,23 @@ Lastly, the faster our build is, the easier we can fix a broken build. If a buil
 
 ## Conclusion
 
-These building practices do not look like, but they are quite important. They support both the [Team Working]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}) and [Coding]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %}) practices that enable Continuous Integration. Failing to implement these building practices will surely fail to implement the other practices and therefore fail to reach Continuous Integration.
+At first, these building practices do not seem important. In the end, this is just about building, this is just machine time. But, in thruth, they are considerably important. 
 
-This closes this series. As we can see, [Continuous Integration is really not a tooling problem]({% post_url 2020-03-23-continuous-integration-is-not-a-tooling-problem %}).
+The building practices support both the [Team Working]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}) and [Coding]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %}) practices that enable Continuous Integration. Failing to implement these building practices will surely fail to implement the other practices and therefore fail to reach Continuous Integration.
+
+This article closes this series on the Practices that Make Continuous Integration. As we can see, [Continuous Integration is really not a tooling problem]({% post_url 2020-03-23-continuous-integration-is-not-a-tooling-problem %}).
 
 Many practices are involved to realise Continuous Integration. Each practice is valuable. Each practice is on its own an enabler of Continuous Integration. But no single practice exists on its own. They are all tangled.
 
-Each practice amplifies the benefits of the others. Which makes it very hard to select which practice to adopt first and which practice to adopt next. This depends on the unique context and circumstances of our team. Hence, we should use a Continuous Improvement framework that takes context into account, like the [Improvement Kata](http://www-personal.umich.edu/~mrother/The_Improvement_Kata.html), to kick-start a Continuous Integration program.
+Because each practice amplifies the benefits of the others it makes it very hard to select which practice to adopt first and which practice to adopt next. This selection of practices depends on the unique context and circumstances of our team. Hence, we should use a Continuous Improvement framework, like the [Improvement Kata](http://www-personal.umich.edu/~mrother/The_Improvement_Kata.html), that takes this context into account to kick-start a Continuous Integration program.
 
-Because of all the benefits put forward in each and every practice, Continuous Integration will improve quality and throughput of IT changes. [Dr Nicole Forsgren](https://twitter.com/nicolefv) and [Jez Humble](https://twitter.com/jezhumble) proved this in their 2016 academic reviewed paper [The Role of Continuous Delivery in IT and Organizational Performance](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2681909) that Continuous Integration together with Trunk-Based Development is statistically significant predictors for adopting Continuous Delivery. In turn, Continuous Delivery predicts higher IT delivery performance. Together with the adoption of Lean Product Management and a [Generative Organisational Culture](https://cloud.google.com/architecture/devops/devops-culture-westrum-organizational-culture), they predict higher organisational performance.
+Because of all the benefits put forward in each and every practice, adopting Continuous Integration will improve quality and throughput of IT changes. [Dr Nicole Forsgren](https://twitter.com/nicolefv) and [Jez Humble](https://twitter.com/jezhumble) confirmed this in their 2016 academic reviewed paper [The Role of Continuous Delivery in IT and Organizational Performance](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2681909) that Continuous Integration together with Trunk-Based Development is statistically significant predictors for adopting Continuous Delivery. In turn, Continuous Delivery predicts higher IT delivery performance. Together with the adoption of Lean Product Management and a [Generative Organisational Culture](https://cloud.google.com/architecture/devops/devops-culture-westrum-organizational-culture), they predict higher organisational performance.
 
-To conclude, if you want to be ahead of your competition, not adopting these practices is just not an option.
+To conclude, if we want to be ahead of our competition, not adopting to these practices is just not an option.
 
 ## Acknowledgments
+
+Again, a big thank you goes to [Lisi Hocke](https://twitter.com/lisihocke), [Seb Rose](https://twitter.com/sebrose) and [Steve Smith](https://twitter.com/SteveSmith_Tech) for their rigorous review.
 
 ## Bibliography
 
