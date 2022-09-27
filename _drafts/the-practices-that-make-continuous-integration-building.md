@@ -52,32 +52,31 @@ The team member that triggers the *Commit Build*, should monitor the build's pro
 
 ## Practice 13: Have A Vast Amount of Automated Tests
 
----
-Comment from Seb Rose: How many is vast? If we have lots of tests, does that automatically mean we have the right tests? I would rephrase this.
-
----
-
 If we do not have an automated test suite, the only information we get from running the build is whether the code compiles and whether a binary artefact for deployment was created. We do not receive any feedback on whether a change broke the application or not.
 
 Remember, the purpose of Continuous Integration is to ensure always working software and **receiving feedback within minutes on whether a change broke the application or not**.
 
 In that case, the only way of knowing if the application still works is by relying on time-consuming, repetitive, boring manual regression testing. This is a waste of time and energy. More over, it is a waste of the value of test engineers and might introduce burn-out due to either boring work or being pressured to execute manual testing within an impossible time frame.
 
-Because we now depend on time-consuming manual testing, we cannot [Commit Frequently]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %}#practice-6-commit-frequently) any more into [*Mainline*](#mainline). As a consequence, we are starting to batch up work. From [Lean Manufacturing](https://en.wikipedia.org/wiki/Lean_manufacturing), we know that big batches drive down throughput and time to market.
+Because we now depend on time-consuming manual testing, we cannot [Commit Frequently]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %}#practice-6-commit-frequently) any more into [*Mainline*](#mainline). As a consequence, we are starting to batch up work. From [Lean Manufacturing](https://en.wikipedia.org/wiki/Lean_manufacturing), we know that big batches drive down throughput and increases time to market. Also, on-demand production releases are not possible any more, reducing even more throughput.
 
-To gain confidence we are not breaking any existing functionality while committing overly frequent into *Mainline*, we thus need a vast amount of automated tests. Test engineers will be of great value here. They can help design the acceptance criteria for the automated tests.
+To gain confidence we are not breaking any existing functionality while committing extremely frequently into *Mainline*, we need a vast amount of automated tests. I want to be very clear here. These vast amounts of automated tests are not here to eliminate Test engineers. To the contrary, they will be of great value in designing these tests and defining the required acceptance criteria.
 
 In implementing automated tests, we should consider 3 types of tests:
 
-- *Unit Tests*: These should be the largest part of the automated test suite. We are speaking 100s or 1000s of them. They should run in less than 30 seconds.
+- *Unit Tests*: These should be the largest part of the automated test suite. We are speaking 100s or 1000s of them. They should run in less than 30 seconds. Each test should take milliseconds. A test taking seconds is a red flag and requires immediate attention.
 - *Integration Tests*: They should test the *Adapters* (from [Ports and Adapters](https://alistair.cockburn.us/hexagonal-architecture/)). These may hit the database, file systems and other systems. They will take longer to run, so we want to limit these.
 - *Automated Acceptance Tests*: They test the application in isolation with a database and a front-end as if it was a user using the application. Often these are implemented using [Behaviour-Driven Development](https://cucumber.io/docs/bdd/) techniques. We should have 100s of them. Their total execution time is less than 10 minutes.
 
-Going the extra mile towards Continuous Delivery, we would also have *Smoke Tests*. These are a restricted set, usually 1-5, of end-to-end tests that execute your most important transactions to check everything works as expected right after the deployment of a new release. They take less than 5 minutes.
+Going the extra mile towards Continuous Delivery, we would also have *Smoke Tests*. These are a restricted set, usually 1-5, of end-to-end tests that execute your most important transactions to check everything works as expected right after a deployment of a new release. They take less than 5 minutes.
 
-During the *Local Build* and [*Commit Build*](#commit-build) only Unit Tests are executed together with a small simple smoke test suite. This smoke test suite performs a few simple Integration and Acceptance Tests to make sure the most commonly used features are not broken.
+The above is mostly influenced by the [Testing Pyramid](https://martinfowler.com/bliki/TestPyramid.html). However, [not everyone is happy with the metaphor](https://cucumber.io/blog/bdd/eviscerating-the-test-automation-pyramid), especially in the Testing Community. In my humble opinion, the Testing Pyramid finds its usefulness in giving an indication in which order tests should be executed. At the bottom we have the fast *Unit Tests*. We execute these first in an attempt to receive fast feedback. The feedback is nevertheless not perfect. Numerous issues are still missed. As we go up the pyramid, tests are taking longer but giving us more precise feedback. In order to improve the feedback of our fast *Unit Tests*, each time a longer running *Acceptance Test* fails, we try to reproduce the problem with a new *Unit Test*. This ensures next time this problem is covered by a fast *Unit Test* that is executed first. Consequently, the feedback of these *Unit Tests* become more precise and more valuable. At the top of the pyramid, we have the *Manual Exploratory Tests*. They usually take longer to execute. However, we absolutely do not want to eliminate them because they generate a lot of feedback value. Automated tests only check for what we know about the system. *Manual Exploratory Testing* searches for everything we do not know about the system. These newly discovered unknowns, that now became knowns, can now feed into new automated tests. Hence, we are improving the quality of our tests.
 
-To commit frequently into *Mainline*, we need to run these tests repeatedly. Therefore, they should be expeditious. The rest of the Integration Tests and the Automated Acceptance Tests will run in later build stages of the *Deployment Pipeline* or the central build server.
+During the *Local Build* and [*Commit Build*](#commit-build) only *Unit Tests* are executed together with a small simple smoke test suite. This smoke test suite performs a few simple *Integration Tests* and *Acceptance Tests* to make sure the most commonly used features are not broken. This set of tests are what we call the [*Commit Tests*](#commit-tests).
+
+To commit frequently into *Mainline*, we need to run these tests repeatedly. Therefore, the *Commit Tests* should be expeditious. The rest of the Integration Tests and the Automated Acceptance Tests will run in later build stages of the *Deployment Pipeline* or the central build server.
+
+One more thing. As [Seb Rose](https://twitter.com/sebrose) appropriately remarked, if we have lots of tests, does that automatically mean we have the right tests? Obviously, no. Many tests does not mean qualitative tests. It could be we have lots of tests but little feedback because they test the wrong things. Or we have few tests but excellent feedback because they test the precise right things. A good mix of roles (Product Manager, Test Engineers, Software Engineers, Operations Engineers, UX Designers) ensures the correct things get tested.
 
 ## Practice 14: Have a Fast Build
 
