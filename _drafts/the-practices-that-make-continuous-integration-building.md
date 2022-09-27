@@ -80,11 +80,6 @@ One more thing. As [Seb Rose](https://twitter.com/sebrose) appropriately remarke
 
 ## Practice 14: Have a Fast Build
 
----
-Comment: impacts how fast we can fix a broken build, should be fixed within 10 mins
-
----
-
 If everyone in the team wants to commit multiple times per day into [*Mainline*](#mainline), the *Local Build* has to be prompt. To prevent breaking the build, we need to execute this *Local Build* before [committing](#commit) into *Mainline*.
 
 When the build is slow, two things may happen:
@@ -95,11 +90,11 @@ When the build is slow, two things may happen:
 
 - Or people tend to execute the build less often.
 
-  From then on, batch work is introduced. When we build less often, we will commit less frequently into *Mainline* as we are supposed to only commit after running a successful Local Build and having all tests green.
+  From that time, batch work is introduced. When we build less often, we will commit less frequently into *Mainline* as we are supposed to only commit after running a successful Local Build and having all tests green.
   
-  This batch work initiates larger changesets. Larger changesets introduce higher risks. Our build will have to process a large changeset. If the build happens to break, finding the root cause will take a far longer time. Therefore, we run the risk of having a broken build for long period of time. From then on, we have lost the monitoring of the health of our application impacting the quality of the software. From then on, we have again lost the ability to perform on-demand production releases, which again impacts throughput and time to market.
+  This batch work initiates larger changesets. Larger changesets introduce higher risks because our build will have to process a large changeset. If the build happens to break, finding the root cause will take a far longer time. That being the case, we run the risk of having a broken build for a prolonged time. As such, we have lost the monitoring of the health of our application impacting the quality of the software. Inevitably, we we lose the ability to perform on-demand production releases, which again lowers the throughput and extends the time to market.
 
-  Batch work also delays feedback. Delaying feedback drives quality down. Bad quality will impact the use of software engineering time to introduce new changes. Again this impacts throughput and time to market.
+  Batch work also delays feedback. Delaying feedback drives quality down. Bad quality will impact the use of software engineering time to introduce new changes. Again this downscales throughput and prolongs time to market.
 
 But what is a fast build?
 
@@ -107,11 +102,17 @@ Twenty years ago [Extreme Programming](http://www.extremeprogramming.org/) sugge
 
 Dave Farley advises in [Optimising Continuous Delivery](https://www.youtube.com/watch?v=gDgAVqkFYWs) we keep the [*Commit Build*](#commit-build) under 5 minutes.
 
-To conclude, 10 minutes is the limit, everything under 5 minutes is better, 90 seconds is nirvana.
+To conclude, 10 minutes is the limit, everything under 5 minutes is better, 30 seconds is ... mind blowing.
 
-Take into account that every integration takes two builds: one local and one central commit stage build. We should wait for the central *Commit Build* to be successful before moving on because we can never let the build break. One more reason to keep the build short.
+> One of the FogBugz developers complained that compiling was pretty slow (about 30 seconds), which was leading to a lot of [sword fights in the hallway](https://xkcd.com/303/).
+>
+> -- Joel Spolsky, [Solid State Disks](https://www.joelonsoftware.com/2009/03/27/solid-state-disks/), 2009
 
-*Have a Fast Build* seem to contradict with [*Have a Vast Amount of Automated Tests*](#practice-13-have-a-vast-amount-of-automated-tests). The first thing to consider is to make tests run faster. Second, at some point we will need to split the tests in several stages. We first run the fastest tests during the *Commit Build*. Longer running tests are ran later.
+Take into account that every integration takes two builds: one local and one central commit stage build. We should wait for the central *Commit Build* to be successful before moving on because we can never let the build break because of [Agree as a Team to Never Break the Build]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}#practice-2-agree-as-a-team-to-never-break-the-build). One more reason to keep that build short.
+
+*Have a Fast Build* seem to contradict with [*Have a Vast Amount of Automated Tests*](#practice-13-have-a-vast-amount-of-automated-tests). The first thing to consider is to make tests run faster. Second, at some point we will need to split the tests in several stages. We first run the fastest tests during the *Commit Build*. Longer running tests executed ran later.
+
+Lastly, the faster our build is, the easier we can fix a broken build. If a build takes more than ten minutes, we are unable to satisfy one of the preconditions for Continuous Integration: [fix a broken build within ten minutes](https://martinfowler.com/bliki/ContinuousIntegrationCertification.html).
 
 ## Conclusion
 
