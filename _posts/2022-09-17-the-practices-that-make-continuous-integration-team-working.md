@@ -72,7 +72,7 @@ After all, the reason for integrating code is to gain confidence about the quali
 
 Therefore, agree as a team to never break the build.
 
-To attain this, it requires everyone in the team to fetch the latest changes first from the remote mainline and *Run a Local Build* before [committing](#commit) into [Mainline](#mainline). When the *Local Build* was successful, push to the remote mainline and wait till the [*Commit Build*](#commit-build) passes to green before starting new work. In all honesty, that is not yet a guarantee for the *Commit Build* not to break. As [Seb Rose](https://twitter.com/sebrose) rightfully observed, it is still possible to have a broken *Commit Build* when two engineers *Run a Local Build* simultaneously. That is why waiting until the *Commit Build* passes is so essential.
+To attain this, it requires everyone in the team to fetch the latest changes first from the remote [*Mainline*](#mainline) and *Run a Local Build* before [committing](#commit) into *Mainline*. When the *Local Build* was successful, push to the remote *Mainline* and wait till the [*Commit Build*](#commit-build) passes to green before starting new work. In all honesty, that is not yet a guarantee for the *Commit Build* not to break. As [Seb Rose](https://twitter.com/sebrose) rightfully observed, it is still possible to have a broken *Commit Build* when two engineers *Run a Local Build* simultaneously. That is why waiting until the *Commit Build* passes is so essential.
 
 ## Practice 3: Do not Push to a Broken Build
 
