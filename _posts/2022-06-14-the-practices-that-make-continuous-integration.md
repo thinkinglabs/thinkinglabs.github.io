@@ -43,3 +43,5 @@ To reach Continuous Integration a team has to adopt 14 practices that can be spl
 ## Acknowledgments
 
 [Steve Smith](https://twitter.com/SteveSmith_Tech) for reviewing the very first draft of this article one year and a half ago to then suggest to splitting the article up into a series. Steve was the one who came up with the 3 categories: Team Work, Coding and Building.
+
+[Lisi Hocke](https://twitter.com/lisihocke), [Seb Rose](https://twitter.com/sebrose) and [Steve Smith](https://twitter.com/SteveSmith_Tech) for having put a lot of effort in reviewing each individual article from the series.
