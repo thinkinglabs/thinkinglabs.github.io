@@ -40,7 +40,7 @@ When not [committing](#commit) frequently, integrating code becomes time-consumi
 
 When not committing frequently, this also prevents the communication of changes inside the team. This results in blocking team members to use the latest changes. Again, this will inevitably hurt quality and IT delivery throughput.
 
-As a corollary, to commit frequently we absolutely need to [*Make All Changes in Small Increments*](#practice-5-make-all-changes-in-small-increments), *Have a Fast Build*, [*Have a Decoupled Codebase*](#practice-8-decouple-the-codebase) and[ *Hide Unfinished Functionality*](#practice-10-hide-unfinished-functionality). If we do not adopt all of these practices, committing frequently will be complicated, if not impossible.
+As a corollary, to commit frequently we absolutely need to [*Make All Changes in Small Increments*](#practice-5-make-all-changes-in-small-increments), [*Have a Fast Build*]({% post_url 2022-09-28-the-practices-that-make-continuous-integration-building %}#practice-14-have-a-fast-build), [*Have a Decoupled Codebase*](#practice-8-decouple-the-codebase) and[*Hide Unfinished Functionality*](#practice-10-hide-unfinished-functionality). If we do not adopt all of these practices, committing frequently will be complicated, if not impossible.
 
 Because we commit more frequently, changes become smaller. We can now work in smaller increments. Merge conflicts and broken builds become less likely.
 
@@ -196,7 +196,7 @@ Lagavulin for helping me finalising the damned article.
 
 1. [Team working for Continuous Integration]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %})
 2. Coding for Continuous Integration
-3. Building for Continuous Integration
+3. [Building for Continuous Integration]({% post_url 2022-09-28-the-practices-that-make-continuous-integration-building %})
 
 ## Definitions
 

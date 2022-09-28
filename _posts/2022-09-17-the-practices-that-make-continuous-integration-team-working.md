@@ -64,7 +64,7 @@ I am putting this in bold because, without any doubt, this is unquestionably key
 
 But, to be honest, it only reveals the known knowns. At this point, we do not know if the system is valuable for users. We do not understand how it behaves in front of the users. That is where manual exploratory testing will add more information. However, not breaking the build ensures manual exploratory testing can actually happen and that we can deliver a working system to users so we can, in effect, learn how it behaves in front of the user.
 
-That said, this practice is non-negotiable. There is no single acceptable reason that would allow breaking this agreement. Even if production is burning. Nevertheless, it requires to [*Commit Only on Green*]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %}#practice-7-commit-only-on-green), *Have a Vast Amount of High Quality Automated Tests* and *Have a Fast Build*. But how many tests is vast? If we have a considerable amount of tests, does that automatically mean we have the right tests? And when is a build fast? That too will be discussed in more detail in part 3 - *Building for Continuous Integration*.
+That said, this practice is non-negotiable. There is no single acceptable reason that would allow breaking this agreement. Even if production is burning. Nevertheless, it requires to [*Commit Only on Green*]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %}#practice-7-commit-only-on-green), [*Have a Vast Amount of High Quality Automated Tests*]({% post_url 2022-09-28-the-practices-that-make-continuous-integration-building %}#practice-13-have-a-vast-amount-of-high-quality-automated-tests) and [*Have a Fast Build*]({% post_url 2022-09-28-the-practices-that-make-continuous-integration-building %}#practice-14-have-a-fast-build). But how many tests is vast? If we have a considerable amount of tests, does that automatically mean we have the right tests? And when is a build fast? That too will be discussed in more detail in [part 3 - *Building for Continuous Integration*]({% post_url 2022-09-28-the-practices-that-make-continuous-integration-building %}).
 
 If we do not get everyone in the team to agree to this, Continuous Integration will clearly not work for our team. That is a fact! When the build is broken we do not have Continuous Integration. Without Continuous Integration, our software is broken until someone else proves it works.
 
@@ -72,7 +72,7 @@ After all, the reason for integrating code is to gain confidence about the quali
 
 Therefore, agree as a team to never break the build.
 
-To attain this, it requires everyone in the team to fetch the latest changes first from the remote [*Mainline*](#mainline) and *Run a Local Build* before [committing](#commit) into *Mainline*. When the *Local Build* was successful, push to the remote *Mainline* and wait till the [*Commit Build*](#commit-build) passes to green before starting new work. In all honesty, that is not yet a guarantee for the *Commit Build* not to break. As [Seb Rose](https://twitter.com/sebrose) rightfully observed, it is still possible to have a broken *Commit Build* when two engineers *Run a Local Build* simultaneously. That is why waiting until the *Commit Build* passes is so essential.
+To attain this, it requires everyone in the team to fetch the latest changes first from the remote [*Mainline*](#mainline) and [*Run a Local Build*]({% post_url 2022-09-28-the-practices-that-make-continuous-integration-building %}#practice-12-run-a-local-build) before [committing](#commit) into *Mainline*. When the *Local Build* was successful, push to the remote *Mainline* and wait till the [*Commit Build*](#commit-build) passes to green before starting new work. In all honesty, that is not yet a guarantee for the *Commit Build* not to break. As [Seb Rose](https://twitter.com/sebrose) rightfully observed, it is still possible to have a broken *Commit Build* when two engineers *Run a Local Build* simultaneously. That is why waiting until the *Commit Build* passes is so essential.
 
 ## Practice 3: Do not Push to a Broken Build
 
@@ -86,7 +86,7 @@ The most crucial step in reaching Continuous Integration as a team is to accept 
 
 One of the preconditions of being in a state of Continuous Integration is to [fix a broken build within ten minutes](https://martinfowler.com/bliki/ContinuousIntegrationCertification.html). The longer it takes to fix the build, the longer we block a whole team. Given the salaries for IT engineers, that is quite a lot of money held in standstill. What is more, it disables on-demand production releases. Consequently, it reduces IT delivery throughput and increases time to market.
 
-But why within ten minutes and not within five or 15 minutes? Because this is related to *Have a Fast Build*. If the build is under ten minutes, quickly fixing the problem and re-running the build will work if the fix is easy.
+But why within ten minutes and not within five or 15 minutes? Because this is related to [*Have a Fast Build*]({% post_url 2022-09-28-the-practices-that-make-continuous-integration-building %}#practice-14-have-a-fast-build). If the build is under ten minutes, quickly fixing the problem and re-running the build will work if the fix is easy.
 
 However, if we cannot fix the problem right away, then the easiest and fastest way to fix a broken build within ten minutes, and ensuring not to impact the time-to-market, is to revert the commit that caused the broken build. It allows us to go back to the last known good state of our application codebase. Obviously, this requires [Version Control Everything](#practice-1-version-control-everything), otherwise reverting will become a battlefield.
 
@@ -122,7 +122,7 @@ As always, my dear friend [Steve Smith](https://twitter.com/SteveSmith_Tech) for
 
 1. Team working for Continuous Integration
 2. [Coding for Continuous Integration]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %})
-3. Building for Continuous Integration
+3. [Building for Continuous Integration]({% post_url 2022-09-28-the-practices-that-make-continuous-integration-building %})
 
 ## Definitions
 
