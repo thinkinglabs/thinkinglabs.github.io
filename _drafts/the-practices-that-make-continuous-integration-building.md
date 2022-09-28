@@ -12,11 +12,11 @@ In [part 1 - Team Working for Continuous Integration]({% post_url 2022-09-17-the
 
 ## Practice 11: Automate the Build
 
-To make things clear, right from the start, this is ***not* about having a centralised build server**. Though a centralised build server is helpful, it is not essential to attaining Continuous Integration. Unfortunately, it is common for teams to think that because they have a centralised build server, they practice Continuous Integration. The opposite is true.
+To make things clear, right from the start, this is ***not* about having a centralised build server**. Though a centralised build server is helpful, it is not essential to attaining Continuous Integration. Unfortunately, it is common for teams to think that because they have a centralised build server, they practice Continuous Integration. It might be they do. However, from what I have seen (which is still a quite limited dataset), often they do not.
 
 That said, it should be possible for every new team member to check the code out of Version Control, build the application and run all automated tests using a single command from the command-line, **the build script**.
 
-The [*Commit Build*](#commit-build) on the centralised build server will use that same build script.
+The [*Commit Build*](#commit-build) on the centralised build server will use that same build script. Conceivably, the commit build will perform some extra actions not included in the build script like uploading the build artefact to an artefact repository.
 
 The build script is treated the same way as the production code. It is versioned, tested and constantly refactored. The same design principles (e.g. [Simple Design](https://wiki.c2.com/?SimpleDesign), [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single-responsibility_principle), abstractions, small files, small methods, ...) apply to the build script to keep it simple and easy to understand.
 
@@ -24,9 +24,9 @@ The build script ensures a deterministic, repeatable, consistent and reliable bu
 
 This build script needs to produce a single unambiguous result: it is either SUCCESS or FAILURE.
 
-Finally, the build script is a prerequisite to [*Run a Local Build*](#practice-12-run-a-local-build), a required practice to prevent broken builds and keep the software always working. In the end, it increases productivity and thus throughput of the IT delivery process and time to market. It also improves team morale and drives down burnout.
+Finally, the build script is a prerequisite to [*Run a Local Build*](#practice-12-run-a-local-build), a required practice to prevent broken builds and keep the software always working. In the end, it increases productivity. Correspondingly, it increases throughput of the IT delivery process and expands time to market. Incidentally, it also improves team morale and drives down burnout.
 
-This is the second of two practices that verily need a tool, the build script, to implement the practice. The other practice is [Version Control Everything]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}#practice-1-version-control-everything) that requires a Version Control System.
+This is the second of two practices that genuinely requires a tool, the build script, to implement the practice. We can argue whether a build script is a tool. At least, to implement the build script we need a tool like a shell, [Make](https://www.gnu.org/software/make/), [CMake](https://cmake.org/), [Rake](https://ruby.github.io/rake/), [Gradle](https://gradle.org/), [NPM](https://docs.npmjs.com/about-npm), [Leiningen](https://leiningen.org/), [SBT](https://www.scala-sbt.org/), ... The other practice that expect tooling is [Version Control Everything]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}#practice-1-version-control-everything) which introduces the Version Control System.
 
 ## Practice 12: Run a Local Build
 
@@ -38,45 +38,50 @@ Running a *Local Build* means:
 - executing the build script,
 - when the build script says SUCCESS, we are ready to commit into *Mainline*.
 
-The *Local Build* is identical to the [*Commit Build*](#commit-build) performed by the [Deployment Pipeline](https://continuousdelivery.com/implementing/patterns/#the-deployment-pipeline) or the central build server.
+The *Local Build* is mostly identical to the [*Commit Build*](#commit-build) performed by the [Deployment Pipeline](https://continuousdelivery.com/implementing/patterns/#the-deployment-pipeline) or the central build server, except for some additional actions only performed by the *Commit Build* like uploading build artefacts.
 
-It integrates the local work with the work all other team members made available on *Mainline*. It will detect any conflicts between local changes and remote changes. Not doing so, will defer this conflict detection to the *Commit Build*. As a result, this will introduce a broken build and violate [*Agree As a Team To Never Break The Build*]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}#practice-2-agree-as-a-team-to-never-break-the-build). Inevitably, this hampers the team, impacting the throughput of IT delivery and time to market.
+It integrates the local work with the work all other team members made available on *Mainline*. It will detect any conflicts between local changes and remote changes. Not doing so, will defer this conflict detection to the *Commit Build*. Which might introduce a broken build and violate [*Agree As a Team To Never Break The Build*]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}#practice-2-agree-as-a-team-to-never-break-the-build). Inevitably, this hampers the team, impacting the throughput of IT delivery and expanding the time to market.
 
 Ideally, we can run the *Local Build* offline without needing any Internet connection, besides some initial caching of required dependencies. Being able to run the *Local Build* offline gives engineers more flexibility. They do not necessarily need to be in the office to execute a *Local Build*.
 
-Upon commit the *Commit Build* gets triggered where the code will again get compiled and [*Commit Tests*](#commit-tests) get re-executed.
+Upon commit the *Commit Build* gets triggered. The code will again get compiled and [*Commit Tests*](#commit-tests) get re-executed.
 
-The team member that triggers the *Commit Build*, should monitor the build's progress and not start any new task until the commit tests pass successfully. Only when the *Commit Build* passes successfully can the team member pick up a new task.
+The team member that triggers the *Commit Build*, should monitor the build's progress and not start any new task until the *Commit Tests* pass successfully. Only when the *Commit Build* passes successfully can the team member pick up a new task.
 
 *Run a Local Build* and monitor the *Commit Build* before moving on, are strong arguments for [*Have a Fast Build*](#practice-14-have-a-fast-build) to optimise engineering time.
 
-## Practice 13: Have A Vast Amount of Automated Tests
+## Practice 13: Have A Vast Amount of High Quality Automated Tests
 
 If we do not have an automated test suite, the only information we get from running the build is whether the code compiles and whether a binary artefact for deployment was created. We do not receive any feedback on whether a change broke the application or not.
 
 Remember, the purpose of Continuous Integration is to ensure always working software and **receiving feedback within minutes on whether a change broke the application or not**.
 
-In that case, the only way of knowing if the application still works is by relying on time-consuming, repetitive, boring manual regression testing. This is a waste of time and energy. Moreover, it is a waste of the value of test engineers and might introduce burn-out due to either boring work or being pressured to execute manual testing within an impossible time frame.
+In that case, the only way of knowing if the application still works is by relying on time-consuming, repetitive, boring manual regression testing. This is a waste of time and energy. Moreover, it is a waste of the value of Test Engineers and might introduce burn-out due to either boring work or being pressured to execute manual testing within an impossible time frame.
 
 Because we now depend on time-consuming manual testing, we cannot [Commit Frequently]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %}#practice-6-commit-frequently) any more into [*Mainline*](#mainline). As a consequence, we are starting to batch up work. From [Lean Manufacturing](https://en.wikipedia.org/wiki/Lean_manufacturing), we know that big batches drive down throughput and increase time to market. Also, on-demand production releases are not possible anymore, reducing even more throughput.
 
-To gain confidence we are not breaking any existing functionality while committing extremely frequently into *Mainline*, we need a vast amount of automated tests. I want to be very clear here. These vast amounts of automated tests are not here to eliminate Test engineers. On the contrary, they will be of great value in designing these tests and defining the required acceptance criteria.
+To gain confidence we are not breaking any existing functionality while committing extremely frequently into *Mainline*, we want:
 
-In implementing automated tests, we should consider 3 types of tests:
+- to have enough automated tests to gain confidence for that reason we want many of them;
+- and when automated tests pass, they give us enough confidence that we have not introduced a breaking change on that account they need to be of high quality,
+
+I want to be very clear here. These vast amounts of automated tests are not here to eliminate Test Engineers. On the contrary, they will be of great value in designing these tests and defining the required acceptance criteria.
+
+As [Seb Rose](https://twitter.com/sebrose) appropriately remarked, if we have lots of tests, does that automatically mean we have the right tests? Obviously, no. Many tests do not mean high quality tests. It could be we have lots of tests but little feedback because they test the wrong things. Or we have few tests but excellent feedback because they test the precise right things. A good mix of roles (Product Manager, Test Engineers, Software Engineers, Operations Engineers, UX Designers) should ensure the correct things get tested.
+
+When implementing automated tests, we should consider 3 types of tests:
 
 - *Unit Tests*: These should be the largest part of the automated test suite. We are speaking 100s or 1000s of them. They should run in less than 30 seconds. Each test should take milliseconds. A test that takes seconds is a red flag and requires immediate attention.
 - *Integration Tests*: They should test the *Adapters* (from [Ports and Adapters](https://alistair.cockburn.us/hexagonal-architecture/)). These may hit the database, file systems and other systems. They will take longer to run, so we want to limit these.
 - *Automated Acceptance Tests*: They test the application in isolation with a database and a front-end as if it was a user using the application. Often these are implemented using [Behaviour-Driven Development](https://cucumber.io/docs/bdd/) techniques. We should have 100s of them. Their total execution time is less than 10 minutes.
 
-Going the extra mile towards Continuous Delivery, we would also have *Smoke Tests*. These are a restricted set, usually 1-5, of end-to-end tests that execute your most important transactions to check everything works as expected right after deploying a new release. They take less than 5 minutes.
+Going the extra mile towards Continuous Delivery, we would also have *Smoke Tests*. These are a restricted set, usually 1-5, of end-to-end tests that execute our most important transactions to check everything works as expected right after deploying a new release. They take less than 5 minutes.
 
-The above is mostly influenced by the [Testing Pyramid](https://martinfowler.com/bliki/TestPyramid.html). However, [not everyone is happy with the metaphor](https://cucumber.io/blog/bdd/eviscerating-the-test-automation-pyramid), especially in the Testing Community. In my humble opinion, the Testing Pyramid finds its usefulness in giving an indication in which order tests should be executed. At the bottom, we have the fast *Unit Tests*. We execute these first in an attempt to receive fast feedback. The feedback is nevertheless not perfect. Numerous issues are still missed. As we go up the pyramid, tests are taking longer but giving us more precise feedback. To improve the feedback of our fast *Unit Tests*, each time a longer-running *Acceptance Test* fails, we try to reproduce the problem with a new *Unit Test*. This ensures next time this problem is covered by a fast *Unit Test* that is executed first. Consequently, the feedback from these *Unit Tests* become more precise and more valuable. At the top of the pyramid, we have the *Manual Exploratory Tests*. They usually take longer to execute. However, we surely do not want to eliminate them because they generate a lot of feedback value. Automated tests only check what we know about the system. *Manual Exploratory Testing* searches for everything we do not know about the system. These newly discovered unknowns, which now became knowns, can now feed into new automated tests. Hence, we are improving the quality of our tests.
+The above is mostly influenced by the [Testing Pyramid](https://martinfowler.com/bliki/TestPyramid.html). [Not everyone is happy with the metaphor](https://cucumber.io/blog/bdd/eviscerating-the-test-automation-pyramid), especially in the Testing Community. But, in my humble opinion, the Testing Pyramid finds its usefulness in giving an indication in which order tests should be executed. At the bottom, we have the fast *Unit Tests*. We execute these first in an attempt to receive fast feedback. The feedback is nevertheless not perfect. Numerous issues are still missed. As we go up the pyramid, tests are taking longer and executing more code and more of the application but giving us more precise feedback. To improve the feedback of our fast *Unit Tests*, each time a longer-running *Acceptance Test* fails, we try to reproduce the problem with a new *Unit Test*. This ensures next time that problem is covered by a fast *Unit Test* that is executed first. As such, the feedback from these *Unit Tests* become more precise and more valuable. At the top of the pyramid, we have the *Manual Exploratory Tests*. They usually take longer to execute. However, we surely do not want to eliminate them because they generate a lot of feedback value. Automated tests only check what we know about the system. *Manual Exploratory Testing* searches for everything we do not know about the system. These newly discovered unknowns, which now became knowns, can now feed into new automated tests. Hence, we are improving the quality of our tests.
 
 During the *Local Build* and [*Commit Build*](#commit-build) only *Unit Tests* are executed together with a small simple smoke test suite. This smoke test suite performs a few simple *Integration Tests* and *Acceptance Tests* to make sure the most commonly used features are not broken. This set of tests is what we call the [*Commit Tests*](#commit-tests).
 
 To commit frequently into *Mainline*, we need to run these tests repeatedly. Therefore, the *Commit Tests* should be expeditious. The rest of the Integration Tests and the Automated Acceptance Tests will run in later build stages of the *Deployment Pipeline* or the central build server.
-
-One more thing. As [Seb Rose](https://twitter.com/sebrose) appropriately remarked, if we have lots of tests, does that automatically mean we have the right tests? Obviously, no. Many tests do not mean qualitative tests. It could be we have lots of tests but little feedback because they test the wrong things. Or we have few tests but excellent feedback because they test the precise right things. A good mix of roles (Product Manager, Test Engineers, Software Engineers, Operations Engineers, UX Designers) ensures the correct things get tested.
 
 ## Practice 14: Have a Fast Build
 
@@ -110,7 +115,7 @@ To conclude, 10 minutes is the limit, everything under 5 minutes is better and 3
 
 Take into account that every integration takes two builds: one local and one central commit stage build. We should wait for the central *Commit Build* to be successful before moving on because we can never let the build break because of [Agree as a Team to Never Break the Build]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}#practice-2-agree-as-a-team-to-never-break-the-build). One more reason to keep that build short.
 
-*Have a Fast Build* seems to contradict with [*Have a Vast Amount of Automated Tests*](#practice-13-have-a-vast-amount-of-automated-tests). The first thing to consider is to make tests run faster. Second, at some point, we will need to split the tests into several stages. We first run the fastest tests during the *Commit Build*. Longer running tests executed ran later.
+*Have a Fast Build* seems to contradict with [*Have a Vast Amount of High Quality Automated Tests*](#practice-13-have-a-vast-amount-of-high-quality-automated-tests). The first thing to consider is to make tests run faster. Second, at some point, we will need to split the tests into several stages. We first run the fastest tests during the *Commit Build*. Longer running tests executed ran later.
 
 Lastly, the faster our build is, the easier we can fix a broken build. If a build takes more than ten minutes, we are unable to satisfy one of the preconditions for Continuous Integration: [fix a broken build within ten minutes](https://martinfowler.com/bliki/ContinuousIntegrationCertification.html).
 
