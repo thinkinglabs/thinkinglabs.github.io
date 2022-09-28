@@ -139,6 +139,7 @@ Again, a big thank you goes to [Lisi Hocke](https://twitter.com/lisihocke), [Seb
 - [Software Configuration Management Patterns](https://www.goodreads.com/book/show/367720.Software_Configuration_Management_Patterns), Steve Berczuk with Brad Appleton
 - [Continuous Delivery](https://www.goodreads.com/book/show/8686650-continuous-delivery) book, Jez Humble and Dave Farley
 - [Continuous Integration](https://www.goodreads.com/book/show/1311542.Continuous_Integration) book, Paul Duval
+- [Eviscerating the Test Automation Pyramid](https://cucumber.io/blog/bdd/eviscerating-the-test-automation-pyramid/), Seb Rose
 - [The Role of Continuous Delivery in IT and Organizational Performance](<https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2681909>), Dr Nicole Forsgren and Jez Humble
 - [Feature Branching is Evil]({% post_url 2016-10-29-feature-branching-considered-evil %}), Thierry de Pauw
 
