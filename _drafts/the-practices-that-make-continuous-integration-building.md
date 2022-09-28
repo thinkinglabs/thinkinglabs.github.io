@@ -107,7 +107,7 @@ Twenty years ago [Extreme Programming](http://www.extremeprogramming.org/) sugge
 
 Dave Farley advises in [Optimising Continuous Delivery](https://www.youtube.com/watch?v=gDgAVqkFYWs) we keep the [*Commit Build*](#commit-build) under 5 minutes.
 
-To conclude, 10 minutes is the limit, everything under 5 minutes is better and 30 seconds is ... mind-blowing.
+To conclude, 10 minutes is the limit, everything under 5 minutes is better and 30 seconds is ... plain bonus for engineers, though some engineers have an even higher standard …
 
 > One of the FogBugz developers complained that compiling was pretty slow (about 30 seconds), which was leading to a lot of [sword fights in the hallway](https://xkcd.com/303/).
 >
