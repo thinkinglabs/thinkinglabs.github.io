@@ -4,6 +4,7 @@ title: The Practices That Make Continuous Integration
 author: Thierry de Pauw
 category: articles
 tags: [ Continuous Integration ]
+image: /images/the-practices-that-make-continuous-integration/the-practices-that-make-continuous-integration-socrates-2022-lisi-hocke.png
 ---
 
 Honestly, it feels a bit awkward to still write about Continuous Integration. It has been over 20 years since [Kent Beck](https://twitter.com/KentBeck) introduced Continuous Integration in his book [Extreme Programming Explained](https://www.goodreads.com/book/show/67833.Extreme_Programming_Explained). But, when looking around me, I realise teams and organisations still struggle with adopting Continuous Integration.
@@ -39,6 +40,9 @@ To reach Continuous Integration a team has to adopt 14 practices that can be spl
 1. [*Team working for Continuous Integration*]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}): all the practices that enable the fast flow of work for the team, ensuring they are never blocked.
 2. [*Coding for Continuous Integration*]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %}): all the coding practices that enable working in small increments.
 3. [*Building for Continuous Integration*]({% post_url 2022-09-28-the-practices-that-make-continuous-integration-building %}): all the practices required to effortlessly and efficiently integrate changes continuously into the codebase.
+
+![SketchNote from Lisi Hocke at SoCraTes 2022](/images/the-practices-that-make-continuous-integration/the-practices-that-make-continuous-integration-socrates-2022-lisi-hocke.png)
+*SketchNote from [Lisi Hocke](https://twitter.com/lisihocke) at SoCraTes 2022, published with consent*
 
 ## Acknowledgments
 
