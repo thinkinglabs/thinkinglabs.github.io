@@ -5,6 +5,10 @@ author: Thierry de Pauw
 category: articles
 tags: [ Continuous Integration ]
 image: /images/the-practices-that-make-continuous-integration/the-practices-that-make-continuous-integration-socrates-2022-lisi-hocke.png
+redirect_from:
+  - /the-practices-that-make-continuous-integration
+  - /the-practices-that-make-ci
+
 ---
 
 Honestly, it feels a bit awkward to still write about Continuous Integration. It has been over 20 years since [Kent Beck](https://twitter.com/KentBeck) introduced Continuous Integration in his book [Extreme Programming Explained](https://www.goodreads.com/book/show/67833.Extreme_Programming_Explained). But, when looking around me, I realise teams and organisations still struggle with adopting Continuous Integration.

@@ -6,7 +6,8 @@ meta: 1 min read
 category: articles
 tags: [Version Control, Continuous Integration]
 redirect_from:
-  - /2021/04/26/on-the-evilness-of-feature-branching.html
+  - /on-the-evilness-of-feature-branching
+
 ---
 
 Branch creation became very easy with the advent of Distributed Version Control
