@@ -66,8 +66,8 @@ To work in small increments, we definitely need a decoupled codebase.
 
 When a codebase is too coupled, it is arduous to adopt incremental software engineering skills. Any change will ripple through the whole codebase, ripping apart the application and preventing the application from working all the time. Again, we incur a sunk cost because we cannot release what we have already implemented for a long time.
 
-That is why adopting [Ports and Adapters](https://alistair.cockburn.us/hexagonal-architecture/)
-(aka Hexagonal Architecture) together with [Simple Design](https://wiki.c2.com/?SimpleDesign) is so important. These design principles help us in getting a decoupled codebase. Consequently, this leads to a more maintainable codebase and even more crucial: [simple code that fits in our head](https://speakerdeck.com/tastapod/why-every-element-of-solid-is-wrong).
+That is why adopting patterns like [Ports and Adapters](https://alistair.cockburn.us/hexagonal-architecture/)
+(aka Hexagonal Architecture) together with [Simple Design](https://wiki.c2.com/?SimpleDesign) and intentional code duplication (code, not concept duplication) are so important. These design principles help us in getting a decoupled codebase. Consequently, this leads to a more maintainable codebase and even more crucial: [simple code that fits in our head](https://speakerdeck.com/tastapod/why-every-element-of-solid-is-wrong).
 
 From my humble experience, having small classes, small methods, and applying the [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single-responsibility_principle) together with [Dependency Injection Principle](https://en.wikipedia.org/wiki/Dependency_injection) already brings us a long way forward.
 
