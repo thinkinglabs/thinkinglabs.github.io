@@ -39,6 +39,8 @@ How do you know you need You Build It, You Run It? and when do you not need it?
 
 => decision table: financial exposure on failure vs product feature demand (see playbook)
 
+![What does You Build It You Run It](/images/aotb-you-build-it-you-run-it-sounds-great-but-wont-work-here-steve-smith/what-is-you-build-it-you-run-it.jpg)
+
 How does You Build It, You Run It look like for digital services?
 
 - product teams: who do delivery and monitoring + level 1 on-call
