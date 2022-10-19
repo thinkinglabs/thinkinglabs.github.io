@@ -11,7 +11,7 @@ slides: https://www2.slideshare.net/matthewskelton/accidental-architects-how-hr-
 video: https://www.youtube.com/watch?v=ctEGTBOR1JY
 created_at: 2020-11-12
 category: notes
-tags: [ HR, Conway's Law, Dunbar's Number ]
+tags: [ HR, Conway's Law, Dunbar's Number, FlowCon ]
 ---
 
 Who designs the architecture of your software systems? Conway's Law suggests that HR may be strongly shaping software architecture by deciding how teams are composed and interrelate. Do you want HR designing your software architecture?

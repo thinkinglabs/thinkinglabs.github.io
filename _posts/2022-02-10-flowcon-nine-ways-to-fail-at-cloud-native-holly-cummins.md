@@ -11,7 +11,7 @@ slides: https://www.ibm.com/blogs/think/uk-en/nine-ways-to-fail-at-cloud-native/
 video: https://www.youtube.com/watch?v=LJ6YpzR8c4A
 created_at: 2020-11-20
 category: notes
-tags: [ Cloud Native, Continuous Delivery ]
+tags: [ Cloud Native, Continuous Delivery, FlowCon ]
 ---
 
 Cloud native is the perfect recipe for innovation, adaptability and engineering excellence – when it goes right. When it’s not right, it can be a monster spaghetti, a quality headache, and frustratingly inflexible. Why so negative?

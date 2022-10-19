@@ -10,7 +10,7 @@ author:
 video: https://www.youtube.com/watch?v=NMr8wDAAH2E
 created_at: 2020-11-02
 category: notes
-tags: [ Flow, Socio Technical System, Systems Thinking, Flow ]
+tags: [ Flow, Socio Technical System, Systems Thinking, Flow, FlowCon ]
 ---
 
 Thinking about flow from some new perspectives. Find opportunities to think about flow. Talk about turbulence: how flow is both good and bad.
