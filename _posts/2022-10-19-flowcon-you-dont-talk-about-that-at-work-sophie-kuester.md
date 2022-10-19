@@ -1,6 +1,6 @@
 ---
 layout: note
-title: We don't talk about that at work
+title: You don't talk about that at work!
 event:
   name: FlowCon 2022
   date: 2022-10-19
