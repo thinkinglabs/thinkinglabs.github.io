@@ -14,6 +14,8 @@ A breath of kindness to remind me of the lovely people who appreciate me.
 
 *Update Mar 9, 2022: Add more tributes from the time around XP2017.*
 
+*Update Oct 21, 2022: Add tributes from [FlowCon France](https://t.co/1fZRVYksRP)*
+
 ---
 
 > [@tdpauw](https://twitter.com/tdpauw) demolishing the reasons for feature branching one by one [#XP2017](https://twitter.com/hashtag/XP2017?src=hashtag_click)
@@ -240,3 +242,51 @@ Reactions on publishing this:
 > [https://twitter.com/tdpauw/status/1495682477930815490](https://twitter.com/tdpauw/status/1495682477930815490)
 >
 > -- Marc Burgauer ([@somesheep](https://twitter.com/somesheep)), [Feb 23, 2022](https://twitter.com/somesheep/status/1496586942162640905)
+
+Some more kindness from [FlowCon France](https://flowcon.io/) ...
+
+> More [#FlowConFR](https://twitter.com/hashtag/FlowConFR?src=hashtag_click) behind the scenes: [@tdpauw](https://twitter.com/tdpauw)’s supporters taking place before everybody in the amphitheater for his talk on Continuous Delivery cc [@SteveSmith_Tech](https://twitter.com/SteveSmith_Tech) [@YellowBrickC](https://twitter.com/YellowBrickC) [@malk_zameth](https://twitter.com/malk_zameth)
+>
+> ![Supporters](/images/a-tribute-to-self/flowcon-supporters.jpg)
+>
+> -- Quê Minh VO ([@anna_qm](https://twitter.com/anna_qm)), [Oct 19](https://twitter.com/anna_qm/status/1582656729933787143)
+
+> « I’m being vulnerable because the alternative is to be an impostor » — [@tdpauw](https://twitter.com/tdpauw) [#FlowConFR](https://twitter.com/hashtag/FlowConFR?src=hashtag_click)
+>
+> ![Being vulnerable](/images/a-tribute-to-self/flowcon-being-vulnerable.jpg)
+>
+> -- Romeu Moura ([@malk_zameth](https://twitter.com/malk_zameth)), [Oct 19, 2022](https://twitter.com/malk_zameth/status/1582654712179924995)
+>
+> [editor note : daaaamn I love that phrase 😍🥰]
+>
+> -- Romeu Moura ([@malk_zameth](https://twitter.com/malk_zameth)), [Oct 19, 2022](https://twitter.com/malk_zameth/status/1582654712179924995)
+>
+> I do love it a lot too, thanks for sharing
+>
+> -- Radwane Hassen ([@radwane_h](https://twitter.com/@radwane_h)), [Oct 19, 2022](https://twitter.com/radwane_h/status/1582714265147883521)
+>
+> Same here! 🥰 So powerful! ❤️ Thank you so much for being a role model [@tdpauw](https://twitter.com/tdpauw) and for sharing it here [@malk_zameth](https://twitter.com/malk_zameth) 🙇‍♀️
+>
+> -- Cosima Laube ([@CosimaLaube](https://twitter.com/CosimaLaube)), [Oct 19, 2022](https://twitter.com/CosimaLaube/status/1583006077255577600)
+>
+> Heuh … role model … me … ??? 😳
+>
+> you’re too kind, Cosima! 😊
+>
+> -- Thierry de Pauw ([@tdpauw](https://twitter.com/tdpauw)), [Oct 19, 2022](https://twitter.com/tdpauw/status/1583020016227999744)
+>
+> Yes, for me you are one. 😊
+>
+> (and I'd bet for a couple of others, too :-))
+>
+> -- Cosima Laube ([@CosimaLaube](https://twitter.com/CosimaLaube)), [Oct 19, 2022](https://twitter.com/CosimaLaube/status/1583036319558606848)
+
+> The #1 speaker on #ContinuousDelivery in 2022 🏅. Go see [@tdpauw](https://twitter.com/tdpauw) at a conference when you can [#FlowConFR](https://twitter.com/hashtag/FlowConFR?src=hashtag_click)
+>
+> ![The #1 speaker on Continuous Delivery](/images/a-tribute-to-self/flowcon-number-1-speaker.jpg)
+>
+> -- Steve Smith ([@SteveSmith_Tech](https://twitter.com/SteveSmith_Tech)), [Oct 19, 2022](https://twitter.com/SteveSmith_Tech/status/1582660270479986689)
+
+> [@tdpauw](https://twitter.com/tdpauw) enlightening talk about how to move from yearly releases to nightly releases at @FlowConFR !! Crisp & insightful 🤩⭐️🙏 [#FlowConFR](https://twitter.com/hashtag/FlowConFR?src=hashtag_click)
+>
+> -- Rachel Jolin Dubois ([@duboisrachel](https://twitter.com/duboisrachel)), [Oct 19, 2022](https://twitter.com/duboisrachel/status/1582656792072708101)
