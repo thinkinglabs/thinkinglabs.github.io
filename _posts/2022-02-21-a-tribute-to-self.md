@@ -243,6 +243,20 @@ Reactions on publishing this:
 >
 > -- Marc Burgauer ([@somesheep](https://twitter.com/somesheep)), [Feb 23, 2022](https://twitter.com/somesheep/status/1496586942162640905)
 
+I haven't seen these two coming ...
+
+> Thierry is the 2022 authority on trunk-based development that we all need, in these dark times 🙇
+>
+> <https://twitter.com/tdpauw/status/1564280482824691713>
+>
+> -- Steve Smith ([@SteveSmith_Tech](https://twitter.com/SteveSmith_Tech)), [Aug 31, 2022](https://twitter.com/SteveSmith_Tech/status/1564950243917135874)
+
+> As usual interesting ideas from [@tdpauw](https://twitter.com/tdpauw), this time on TBD & Code reviews. I really like the sound of the non-block approach, at least for teams that won't do pairing or mobbing. I have never tried that! Thanks Thierry.
+>
+> <https://twitter.com/tdpauw/status/1564280482824691713>
+>
+> -- Dave Farley ([@davefarley77](https://twitter.com/davefarley77)), [Oct 3, 2022](https://twitter.com/davefarley77/status/1576885497808695297)
+
 Some more kindness from [FlowCon France](https://flowcon.io/) ...
 
 > More [#FlowConFR](https://twitter.com/hashtag/FlowConFR?src=hashtag_click) behind the scenes: [@tdpauw](https://twitter.com/tdpauw)’s supporters taking place before everybody in the amphitheater for his talk on Continuous Delivery cc [@SteveSmith_Tech](https://twitter.com/SteveSmith_Tech) [@YellowBrickC](https://twitter.com/YellowBrickC) [@malk_zameth](https://twitter.com/malk_zameth)
