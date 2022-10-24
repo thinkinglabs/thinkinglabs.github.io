@@ -306,4 +306,5 @@ Some more kindness from [FlowCon France](https://flowcon.io/) ...
 > -- Rachel Jolin Dubois ([@duboisrachel](https://twitter.com/duboisrachel)), [Oct 19, 2022](https://twitter.com/duboisrachel/status/1582656792072708101)
 
 > Thank YOU for coming on stage and sharing your experience! 🙌
+>
 > -- Sara Dufour ([@ComSaraDufour](https://twitter.com/ComSaraDufour)), [Oct 24, 2022](https://twitter.com/ComSaraDufour/status/1584441558728073216)
