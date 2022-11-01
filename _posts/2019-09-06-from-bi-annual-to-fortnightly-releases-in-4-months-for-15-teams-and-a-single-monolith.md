@@ -1,6 +1,6 @@
 ---
 layout: talk
-title: Continuous Delivery in 4 months for 15 teams and their 1 monolith
+title: From bi-annual to fortnightly releases in 4 months for 15 teams and a single monolith
 date: 2019-09-06
 category: talks
 tags: [ Continuous Delivery, Improvement Kata, Theory of Constraints ]
@@ -24,6 +24,7 @@ youtube:
   data_id: OUIOYIQ1yTA
 redirect_from:
   - /talks/15-teams-1-monolith-4-months-to-achieve-continuous-delivery
+  - /talks/2019/09/06/15-teams-1-monolith-4-months-to-achieve-continuous-delivery.html
 ---
 
 15 teams, 1 shared monolith, 1 release every 6 months, and product demand for 1 release every 2 weeks. How do you know where to start with Continuous Delivery, when you’re surrounded by technology and organisational challenges?

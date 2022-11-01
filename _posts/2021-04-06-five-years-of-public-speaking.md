@@ -414,7 +414,7 @@ He interviewed me. This became the "*fear conversation*" case in
 [Jeffrey Fredrick](https://twitter.com/Jtf).
 
 That helped to bring order in my thoughts and to craft this new presentation
-[*Continuous Delivery for 15 teams and their single monolith*]({% post_url 2019-09-06-15-teams-1-monolith-4-months-to-achieve-continuous-delivery %})
+[*From bi-annual to fortnightly releases in 4 months for 15 teams and a single monolith*]({% post_url 2019-09-06-from-bi-annual-to-fortnightly-releases-in-4-months-for-15-teams-and-a-single-monolith %})
 for [Expand Conf](https://www.expand-conf.io/) 2019.
 
 ## Final Thoughts
