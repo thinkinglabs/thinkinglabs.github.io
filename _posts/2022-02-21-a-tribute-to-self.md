@@ -16,6 +16,8 @@ A breath of kindness to remind me of the lovely people who appreciate me.
 
 *Update Oct 21, 2022: Add tributes from [FlowCon France](https://t.co/1fZRVYksRP)*
 
+*Update Nov 2, 2022: Add tributes from [KanDDDinsky](https://kandddinsky.de)*
+
 ---
 
 > [@tdpauw](https://twitter.com/tdpauw) demolishing the reasons for feature branching one by one [#XP2017](https://twitter.com/hashtag/XP2017?src=hashtag_click)
@@ -257,7 +259,7 @@ I haven't seen these two coming ...
 >
 > -- Dave Farley ([@davefarley77](https://twitter.com/davefarley77)), [Oct 3, 2022](https://twitter.com/davefarley77/status/1576885497808695297)
 
-Some more kindness from [FlowCon France](https://flowcon.io/) ...
+Some more kindness received during [FlowCon France](https://flowcon.io/) ...
 
 > More [#FlowConFR](https://twitter.com/hashtag/FlowConFR?src=hashtag_click) behind the scenes: [@tdpauw](https://twitter.com/tdpauw)’s supporters taking place before everybody in the amphitheater for his talk on Continuous Delivery cc [@SteveSmith_Tech](https://twitter.com/SteveSmith_Tech) [@YellowBrickC](https://twitter.com/YellowBrickC) [@malk_zameth](https://twitter.com/malk_zameth)
 >
@@ -308,3 +310,21 @@ Some more kindness from [FlowCon France](https://flowcon.io/) ...
 > Thank YOU for coming on stage and sharing your experience! 🙌
 >
 > -- Sara Dufour ([@ComSaraDufour](https://twitter.com/ComSaraDufour)), [Oct 24, 2022](https://twitter.com/ComSaraDufour/status/1584441558728073216)
+
+Kindness received during [KanDDDinsky](https://kandddinsky.de) ...
+
+> Great talk by [@tdpauw](https://twitter.com/tdpauw) at [@KanDDDinsky](https://twitter.com/KanDDDinsky)! An amazing example of the great systemic results of applying the theory of constraints! Impressive!
+>
+> -- Marco Consolaro ([@consolondon](https://twitter.com/consolondon)), [Nov 1, 2022](https://twitter.com/consolondon/status/1587472454703792130)
+
+> "I'll start by being vulnerable, because the alternative is a being an imposter"
+>
+> [@tdpauw](https://twitter.com/tdpauw) opening strong!
+>
+> -- Marijn Huizendveld ([@huizendveld](https://twitter.com/huizendveld)), [Nov 1, 2022](https://twitter.com/huizendveld/status/1587459950950989825)
+
+> 💜 Love the fine humour and storytelling from [@tdpauw](https://twitter.com/tdpauw) with 'From bi-annual to fortnightly releases in 4 months for 15 teams and a single monolith' at [#KanDDDinsky](https://twitter.com/hashtag/KanDDDinsky?src=hashtag_click) 🐙
+>
+> No 5mins in the session and I already had to smile a couple of times! 😊😁🙇‍♀️
+>
+> -- Cosima Laube (she/her) ([@CosimaLaube](https://twitter.com/CosimaLaube)), [Nov 1, 2022]()
