@@ -313,9 +313,11 @@ Some more kindness received during [FlowCon France](https://flowcon.io/) ...
 
 Kindness received during [KanDDDinsky](https://kandddinsky.de) ...
 
-> Great talk by [@tdpauw](https://twitter.com/tdpauw) at [@KanDDDinsky](https://twitter.com/KanDDDinsky)! An amazing example of the great systemic results of applying the theory of constraints! Impressive!
+> 💜 Love the fine humour and storytelling from [@tdpauw](https://twitter.com/tdpauw) with 'From bi-annual to fortnightly releases in 4 months for 15 teams and a single monolith' at [#KanDDDinsky](https://twitter.com/hashtag/KanDDDinsky?src=hashtag_click) 🐙
 >
-> -- Marco Consolaro ([@consolondon](https://twitter.com/consolondon)), [Nov 1, 2022](https://twitter.com/consolondon/status/1587472454703792130)
+> No 5mins in the session and I already had to smile a couple of times! 😊😁🙇‍♀️
+>
+> -- Cosima Laube (she/her) ([@CosimaLaube](https://twitter.com/CosimaLaube)), [Nov 1, 2022]()
 
 > "I'll start by being vulnerable, because the alternative is a being an imposter"
 >
@@ -323,8 +325,10 @@ Kindness received during [KanDDDinsky](https://kandddinsky.de) ...
 >
 > -- Marijn Huizendveld ([@huizendveld](https://twitter.com/huizendveld)), [Nov 1, 2022](https://twitter.com/huizendveld/status/1587459950950989825)
 
-> 💜 Love the fine humour and storytelling from [@tdpauw](https://twitter.com/tdpauw) with 'From bi-annual to fortnightly releases in 4 months for 15 teams and a single monolith' at [#KanDDDinsky](https://twitter.com/hashtag/KanDDDinsky?src=hashtag_click) 🐙
+> Great talk by [@tdpauw](https://twitter.com/tdpauw) at [@KanDDDinsky](https://twitter.com/KanDDDinsky)! An amazing example of the great systemic results of applying the theory of constraints! Impressive!
 >
-> No 5mins in the session and I already had to smile a couple of times! 😊😁🙇‍♀️
+> -- Marco Consolaro ([@consolondon](https://twitter.com/consolondon)), [Nov 1, 2022](https://twitter.com/consolondon/status/1587472454703792130)
+
+> I was so happy when you joined us for dinner! Glad to have met you in real life finally!!! 🙌 See you soon hopefully!
 >
-> -- Cosima Laube (she/her) ([@CosimaLaube](https://twitter.com/CosimaLaube)), [Nov 1, 2022]()
+> -- Marco Consolaro ([@consolondon](https://twitter.com/consolondon)), [Nov 2, 2022](https://twitter.com/consolondon/status/1587858788295524355)
