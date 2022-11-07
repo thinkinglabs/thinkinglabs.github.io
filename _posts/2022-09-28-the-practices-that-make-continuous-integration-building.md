@@ -44,11 +44,15 @@ It integrates the local work with the work all other team members made available
 
 Ideally, we can run the *Local Build* offline without needing any Internet connection, besides some initial caching of required dependencies. Being able to run the *Local Build* offline gives engineers more flexibility. Engineers can build on the go while being on a train, a plane or in the park for instance. That enables engineers to work from anywhere while still being able to commit (assuming a Distributed Version Control System is used) and still receiving build feedback. But more importantly, if the build can be performed without Internet connection, there will be no network latency during the build. Unavoidably, this results in a faster build which in turn enables [Have a Fast Build](#practice-14-have-a-fast-build).
 
+All too often, team members do not want to run a *Local Build* because it is a waste of time (read the build is too slow). Therefore they prefer to commit, push, forget and switch to a new task hoping that in the meantime the central build will pass. Using this strategy, teams heavily rely on a central build server to detect integration problems. This way of working comes with many drawbacks. Integration problems are only detected late in the process, delaying feedback. If the build fails due to integration problems it creates context switching. The team member that triggered the build has to pause the new task they started. This also comes with increased work in progress which is inventory and money stuck in the system.
+
 Upon committing, the *Commit Build* gets triggered. The code will again get compiled and [*Commit Tests*](#commit-tests) get re-executed.
 
-The team member that triggers the *Commit Build*, should monitor the build's progress and not start any new task until the *Commit Tests* pass successfully. Only when the *Commit Build* is successful can the team member pick up a new task.
+This might sound like a waste of time and waste of compute time. We are, in the end, building twice: once local and once remote. However, we gain essential early feedback on whether our changes integrate well with the changes of team members. This is economically more valuable as it reduces late rework and enables the fast flow of work. As such, it reduces time to market.
 
-*Run a Local Build* and monitor the *Commit Build* before moving on are strong arguments for [*Have a Fast Build*](#practice-14-have-a-fast-build) to optimise engineering time.
+The team member that triggers the *Commit Build*, should monitor the build's progress and not start any new task until the *Commit Tests* pass successfully. Only when the *Commit Build* is successful can the team member pick up a new task. Monitoring the *Commit Build* is a critical practice to fulfil the *Stop starting, Start finishing*-principle to keep work in progress and context switching at minimal levels. Both will ensure higher levels of delivery throughput.
+
+*Run a Local Build* and monitor the *Commit Build* before moving on are strong arguments for [*Have a Fast Build*](#practice-14-have-a-fast-build) to optimise engineering time, avoid increased work in progress and context switching.
 
 ## Practice 13: Have A Vast Amount of High-Quality Automated Tests
 
