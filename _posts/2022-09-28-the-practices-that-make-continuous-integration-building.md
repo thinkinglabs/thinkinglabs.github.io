@@ -71,7 +71,7 @@ To gain confidence we are not breaking any existing functionality while committi
 
 Note, it is perfectly fine to delete automated tests when they do not serve anymore as adequate change detectors or never did in the first place.
 
-That said, I want to be very clear here. These vast amounts of automated tests are not here to eliminate Test Engineers. On the contrary, Test Engineers will be of immense value in designing these tests and defining the required acceptance criteria.
+That said, I want to be very clear here. These vast amounts of automated tests are not here to eliminate Test Engineers. On the contrary, Test Engineers will be of enormous value in improving the team's testing skills and as such enabling the team to build quality in right from the start as well as thinking of risks. Test Engineers can contribute in all sorts of ways: in defining the required acceptance criteria but also in designing and architecting tests, along with programming tests and generating test data. Ultimately, they will allow the team to explore the system's behaviour in so many ways.
 
 As [Seb Rose](https://twitter.com/sebrose) appropriately remarked, if we have lots of tests, does that automatically mean we have the right tests? Obviously, no. Many tests do not mean high-quality tests. It could be we have lots of tests but little feedback because they test the wrong things. Or we have few tests but excellent feedback because they test the precise right things. A good mix of roles (Product Manager, Test Engineers, Software Engineers, Operations Engineers, UX Designers) together with [Example Mapping](https://cucumber.io/blog/bdd/example-mapping-introduction/) should ensure the correct things get tested.
 
