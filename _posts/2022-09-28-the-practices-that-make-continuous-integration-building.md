@@ -105,7 +105,7 @@ When the build is slow, two things may happen:
 
   From that time, we introduce batch work. When we build less often, we will commit less frequently into *Mainline* as we are supposed to only commit after running a successful Local Build and having all tests green.
   
-  This batch work initiates larger changesets. Larger changesets introduce higher risks because our build will have to process a large change. If the build happens to break, finding the root cause will take a far longer time. That being the case, we run the risk of having a broken build for a prolonged time. As such, we have lost the monitoring of the health of our application. This unavoidably impacts the quality of the software. From now on, we lost the ability to perform on-demand production releases, which again lowers the throughput and extends the time to market.
+  This batch work initiates larger changesets. Larger changesets introduce higher risks because our build will have to process a large change. If the build happens to break, finding the root cause will take a far longer time. That being the case, we run the risk of having a broken build for a prolonged time. As such, we have lost the monitoring of the health of our application code. This unavoidably impacts the quality of the software. From now on, we lost the ability to perform on-demand production releases, which again lowers the throughput and extends the time to market.
 
   Batch work also delays feedback. Delaying feedback drives quality down. Bad quality will impact the use of software engineering time to introduce new changes. Again this downscales throughput and prolongs time to market.
 
