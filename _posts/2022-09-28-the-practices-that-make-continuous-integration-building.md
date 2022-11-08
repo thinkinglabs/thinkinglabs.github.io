@@ -60,7 +60,7 @@ If we do not have an automated test suite, the only information we get from runn
 
 Remember, the purpose of Continuous Integration is to ensure always working software and **receiving feedback within minutes on whether a change broke the application or not**.
 
-In that case, the only way of knowing if the application still works is by relying on time-consuming, repetitive, dull manual regression testing. It is a waste of time and energy. Moreover, it is a waste of the Test Engineers' value. It might even introduce burnout due to either boring work or being pressured to execute manual testing within an impossible time frame.
+In that case, the only way of knowing if the application still works is by relying on time-consuming, repetitive, dull manual regression testing. Note, I am assuming here a modern team where testing happens by everyone in the team, not only by Test Engineers. So, it is a waste of time, energy and the value of every one in the team. It might even introduce burnout due to either boring work or being pressured to execute manual testing within an impossible time frame.
 
 Because we now depend on time-consuming manual testing, we cannot [Commit Frequently]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %}#practice-6-commit-frequently) anymore into [*Mainline*](#mainline). As a consequence, we are starting to batch up work. From [Lean Manufacturing](https://en.wikipedia.org/wiki/Lean_manufacturing), we know that big batches drive down throughput and increase time to market. Also, on-demand production releases are not possible anymore, reducing even more throughput.
 
