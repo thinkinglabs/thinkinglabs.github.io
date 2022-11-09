@@ -79,7 +79,7 @@ When implementing automated tests, we should consider 3 types of tests:
 
 - *Unit Tests*: These should be the largest part of the automated test suite. We are speaking 100s or 1000s of them. They should run in less than 30 seconds. Each test should take milliseconds. They should not talk to the database, filesystem or over the network. A test that takes seconds is a red flag and requires immediate attention. Note, this applies to frontend code as well!
 - *Integration Tests*: They should test the *Adapters* (from [Ports and Adapters](https://alistair.cockburn.us/hexagonal-architecture/)). These may hit the database, file systems and other systems. They will take longer to run, so we want to limit these.
-- *Automated Acceptance Tests*: They test the application in isolation with a database and a front-end as if it was a user using the application. Often these are implemented using [Behaviour-Driven Development](https://cucumber.io/docs/bdd/) techniques. We should have 100s of them. Their total execution time is less than ten minutes.
+- *Automated Acceptance Tests*: They test the application in isolation, without third party integrations, but with a database and a front-end as if it was a user using the application. Often these are implemented using [Behaviour-Driven Development](https://cucumber.io/docs/bdd/) techniques. We should have 100s of them. Their total execution time is less than ten minutes.
 
 Going the extra mile towards Continuous Delivery, we would also have *Smoke Tests*. These are a restricted set, usually one to five, of end-to-end tests that execute our most important transactions to check everything works as expected right after deploying a new release. They take less than five minutes.
 
@@ -152,6 +152,7 @@ Again, a big thank you goes to [Lisi Hocke](https://twitter.com/lisihocke), [Seb
 - [Software Configuration Management Patterns](https://www.goodreads.com/book/show/367720.Software_Configuration_Management_Patterns), Steve Berczuk with Brad Appleton
 - [Continuous Delivery](https://www.goodreads.com/book/show/8686650-continuous-delivery) book, Jez Humble and Dave Farley
 - [Continuous Integration](https://www.goodreads.com/book/show/1311542.Continuous_Integration) book, Paul Duval
+- [Acceptance Testing for Continuous Delivery]({% post_url 2021-07-22-acceptance-testing-for-continuous-delivery-dave-farley %}), Dave Farley
 - [Eviscerating the Test Automation Pyramid](https://cucumber.io/blog/bdd/eviscerating-the-test-automation-pyramid/), Seb Rose
 - [The Role of Continuous Delivery in IT and Organizational Performance](<https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2681909>), Dr Nicole Forsgren and Jez Humble
 - [Feature Branching is Evil]({% post_url 2016-10-29-feature-branching-considered-evil %}), Thierry de Pauw
