@@ -14,7 +14,7 @@ In [part 1 - Team Working for Continuous Integration]({% post_url 2022-09-17-the
 
 To make things clear, right from the start, this is ***not* about having a centralised build server**. Though a centralised build server is helpful, it is not essential to attaining Continuous Integration. Unfortunately, it is common for teams to think that because they have a centralised build server, they practice Continuous Integration. It might be they do. However, from what I have seen (which is still a quite limited dataset), often they do not.
 
-That said, it should be possible for every new team member to check out the code out from Version Control, build the application and run all automated tests using a single command from the command-line, i.e. **the build script**.
+That said, it should be possible for every new team member to check out the code from Version Control, build the application and run all automated tests using a single command from the command-line, i.e. **the build script**.
 
 The [*Commit Build*](#commit-build) on the centralised build server will use that same build script. Conceivably, the commit build might perform a few extra actions not included in the build script such as uploading the build artefact to an artefact repository.
 
