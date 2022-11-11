@@ -108,7 +108,7 @@ How can we perform Code Reviews in compliance with regulations? We have several 
 
    When pairs or ensemble teams, in addition, also tag each commit with a ticket number from the ticketing system, we now have full traceability on who has seen/authored which commit in the context of which feature or bug.
 
-2. Asynchronous code reviews, i.e reviewing each commit on mainline after the fact when the change is already committed into mainline. It has the advantage of never blocking the flow of work through the value stream. Code reviews can be traced on a Kanban board with code review work-in-progress limits to ensure they will be done. Reviews are run by a different person from the one authoring the change, enabling segregation.
+2. Non-Blocking code reviews, i.e reviewing each commit on mainline after the fact when the change is already committed into mainline. It has the advantage of never blocking the flow of work through the value stream. Code reviews can be traced on a Kanban board with code review work-in-progress limits to ensure they will be done. Reviews are run by a different person from the one authoring the change, enabling segregation.
 
    Again, what about traceability? How do we prove the changes have been reviewed?
 
