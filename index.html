@@ -4,52 +4,52 @@
 
 <!doctype html>
 <html lang="en">
-    <head>
-      {% include google_analytics.html %}
 
-      <title>{{site.data.company.name}}:: {{site.data.myself.name}}</title>
-      <meta name="description" content="{{site.data.myself.name}}: {{site.data.myself.title}}">
-      <!-- Mastodon verify website ownership -->
-      <a rel="me" href="https://infosec.exchange/@tdpauw">Mastodon</a>
+<head>
+  {% include google_analytics.html %}
 
-      {% include html_head.html %}
-    </head>
-    <body>
+  <title>{{site.data.company.name}}:: {{site.data.myself.name}}</title>
+  <meta name="description" content="{{site.data.myself.name}}: {{site.data.myself.title}}">
 
-{% include navigation.html %}
+  {% include html_head.html %}
+</head>
 
-{% include home.html %}
+<body>
 
-{% include about.html %}
+  {% include navigation.html %}
 
-{% include services.html %}
+  {% include home.html %}
 
-{% assign talks = site.posts | where:"category","talks" %}
-{% if talks.size > 0 %}
-{% include talks.html %}
-{% endif %}
+  {% include about.html %}
 
-{% include experience.html %}
+  {% include services.html %}
 
-{% assign articles = site.posts | where:"category","articles" %}
-{% if articles.size > 0 %}
-{% include articles.html %}
-{% endif %}
+  {% assign talks = site.posts | where:"category","talks" %}
+  {% if talks.size > 0 %}
+  {% include talks.html %}
+  {% endif %}
 
-{% assign notes = site.posts | where:"category","notes" %}
-{% if site.data.features.notes_enabled and notes.size > 0 %}
-{% include notes.html %}
-{% endif %}
+  {% include experience.html %}
 
-{% include contact.html %}
+  {% assign articles = site.posts | where:"category","articles" %}
+  {% if articles.size > 0 %}
+  {% include articles.html %}
+  {% endif %}
 
-{% include footer.html %}
+  {% assign notes = site.posts | where:"category","notes" %}
+  {% if site.data.features.notes_enabled and notes.size > 0 %}
+  {% include notes.html %}
+  {% endif %}
 
-<!-- scroll to top -->
-<a href="javascript:;" class="scrollToTop"><i class="fa fa-angle-up"></i></a>
-<!-- scroll to top End... -->
+  {% include contact.html %}
 
-{% include html_scripts.html %}
+  {% include footer.html %}
+
+  <!-- scroll to top -->
+  <a href="javascript:;" class="scrollToTop"><i class="fa fa-angle-up"></i></a>
+  <!-- scroll to top End... -->
+
+  {% include html_scripts.html %}
   <script type="text/javascript" src="js/jquery.viewport.mini.js"></script>
   <script type="text/javascript" src="js/jquery.smooth-scroll.min.js"></script>
   <!-- one page navigation-->
@@ -57,4 +57,5 @@
   <!-- settings -->
   <script type="text/javascript" src="js/main.js"></script>
 </body>
+
 </html>
