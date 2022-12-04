@@ -17,6 +17,9 @@ conferences:
   - name: Agile on the Beach 2022
     date: 2022-07-07
     video_link: https://www.youtube.com/watch?v=OUIOYIQ1yTA
+  - name: FlowCon 2022
+    date: 2022-10-19
+    video_link: https://www.youtube.com/watch?v=RNlA3lpNV8E
 speakerdeck:
   data_id: a3cf8b65407147fc9d8875ce9c1a2dab
   download_link: https://files.speakerdeck.com/presentations/a3cf8b65407147fc9d8875ce9c1a2dab/Continuous_Delivery_in_4_months_for_15_teams_and_their_1_monolith.pdf
