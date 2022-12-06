@@ -114,12 +114,67 @@ the other teams define their own OKRs
 company OKR will either focus on:
 
 - something valuable for the customer
-- company revenue: that is more problematic for teams to know how to have an impact
+- company revenue: that is more problematic for teams to know how to have an impact, they usually do not have access to that information
+- internally focussed: ex. during Covid one company OKR was keep their ship afloat
 - something valuable for the investors: plan an IPO
 
 ### Team OKR
 
-...
+How can you influence the Company OKR?
+
+First, focus on the customer and the teams closest to the customer
+
+- Customer Services
+- User Researches
+- Sales
+- Marketing
+- -> the teams providing services to the customer
+
+these are the first teams to set up their Team OKRs, because they impact the Company OKRs directly
+
+Next, the teams that support those teams
+
+- Security
+- Ops
+- IT
+- other teams ...
+- -> they support the teams that support the customer
+
+How can the supporting teams support the customer facing teams in achieving their OKRs
+
+=> Shared OKRs
+
+The next level of teams:
+
+- Business Services teams: not focussed on the customer, but focussed on running the business
+  - Finance
+  - Legal
+  - HR
+
+Those teams typically don't impact customer oriented OKRs.
+
+More capacity to define their own OKRs.
+
+Lastly, the governance layer
+
+- Portfolio
+- the Board
+
+generally, no OKRs set at that level
+
+If we focus on the customer and the teams closes to them, then we iteratively further work out.
+
+Every team has their OKR capacity, and then we start to reduce, reduce and reduce and whatever is left is what is used to set their own OKRs.
+
+=> reduces confusion, because it prevents teams to set OKRs in all directions
+
+=> have as many teams as possible focussed at achieving that single Company OKR
+
+Shared OKRs create greater alignment, impact and focus ...
+
+... which is hte purpose of OKRs
+
+When introducing different OKRs for different teams smells like work management, can we track what the different teams are doing.
 
 ### Experiment, learn, adapt
 
