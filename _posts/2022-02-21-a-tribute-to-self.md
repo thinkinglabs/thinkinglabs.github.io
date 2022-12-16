@@ -332,3 +332,8 @@ Kindness received during [KanDDDinsky](https://kandddinsky.de) ...
 > I was so happy when you joined us for dinner! Glad to have met you in real life finally!!! 🙌 See you soon hopefully!
 >
 > -- Marco Consolaro ([@consolondon](https://twitter.com/consolondon)), [Nov 2, 2022](https://twitter.com/consolondon/status/1587858788295524355)
+
+
+> I have been to one of your meetup. Watched several of your conferences on YouTube. Not only you are good, you are very good.
+>
+> -- Arnaud ([@arnz72](https://twitter.com/arnz72)), [Dec 11, 2022](https://twitter.com/arnz72/status/1601959268537831426)
