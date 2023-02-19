@@ -24,7 +24,7 @@ conferences:
     date: 2022-11-01
 speakerdeck:
   data_id: a3cf8b65407147fc9d8875ce9c1a2dab
-  download_link: https://files.speakerdeck.com/presentations/a3cf8b65407147fc9d8875ce9c1a2dab/Continuous_Delivery_in_4_months_for_15_teams_and_their_1_monolith.pdf
+  download_link: https://files.speakerdeck.com/presentations/a3cf8b65407147fc9d8875ce9c1a2dab/From_bi-annual_to_fortnightly_releases_in_4_months_for_15_teams_and_a_single_monolith.pdf
 youtube:
   data_id: OUIOYIQ1yTA
 redirect_from:
