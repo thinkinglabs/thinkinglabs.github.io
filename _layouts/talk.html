@@ -31,7 +31,7 @@
         </div>
       </div>
       <div class="row no-margin-lr">
-        <div class="col-md-4 col-md-offset-2">
+        <div class="col-md-8 col-md-offset-2">
           <header>
             <h2 class="talk-title no-padding-bottom"><br/>{{page.title}}</h2>
             <hr />
@@ -50,19 +50,23 @@
             </div>
           </article>
         </div>
-        <div class="col-md-4 padding-three">
+      </div>
+      <div class="row no-margin-lr">
+        <div class="col-md-8 col-md-offset-2">
           {% if page.speakerdeck %}
           <script async class="speakerdeck-embed" data-id="{{page.speakerdeck.data_id}}" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+          <p>
+            <a href="{{page.speakerdeck.download_link}}"><span><i class="fa fa-download" aria-hidden="true"></i>Download PDF</span></a>
+          </p>
           {% endif %}
+        </div>
+      </div>
+      <div class="row no-margin-lr">
+        <div class="col-md-8 col-md-offset-2">
           {% if page.youtube %}
           <div class="youtube-embed-wrapper">
             <iframe src="https://www.youtube-nocookie.com/embed/{{page.youtube.data_id}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
-          {% endif %}
-          {% if page.speakerdeck %}
-          <p>
-            <a href="{{page.speakerdeck.download_link}}"><span><i class="fa fa-download" aria-hidden="true"></i>Download PDF</span></a>
-          </p>
           {% endif %}
         </div>
       </div>
