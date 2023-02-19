@@ -41,6 +41,9 @@ conferences:
   - name: DevTernity 2019
     date: 2019-12-06
     video_link: https://www.youtube.com/watch?v=h7LeD7VevyI
+  - name: CfgMgmtCamp 2023
+    date: 2023-02-06
+    video_link: https://www.youtube.com/watch?v=cHgDdRW3WO0
 speakerdeck:
   data_id: 6e5c22252bbc42b09caedba221567c27
   download_link: https://speakerd.s3.amazonaws.com/presentations/6e5c22252bbc42b09caedba221567c27/Feature_Branching_considered_Evil.pdf
