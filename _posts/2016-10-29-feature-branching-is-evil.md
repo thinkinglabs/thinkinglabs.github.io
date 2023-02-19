@@ -1,6 +1,6 @@
 ---
 layout: talk
-title: Feature Branching considered Evil
+title: Feature Branching is Evil
 date: 2016-10-29
 category: talks
 tags: [ Version Control, Branching, Continuous Integration ]
@@ -65,6 +65,7 @@ redirect_from:
   - /talks/aadays-2018-feature-branching-considered-evil
   - /talks/atbru-2018-feature-branching-considered-evil
   - /talks/feature-branching-considered-evil
+  - /talks/2016/10/29/feature-branching-considered-evil
 ---
 Feature branching is again gaining in popularity due to the rise of distributed version control systems. Although branch creation has become very easy, it comes with a certain cost. Long living branches break the flow of the software delivery process, impacting throughput and stability.
 

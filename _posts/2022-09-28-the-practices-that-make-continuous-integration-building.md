@@ -155,7 +155,7 @@ Again, a big thank you goes to [Lisi Hocke](https://twitter.com/lisihocke), [Seb
 - [Acceptance Testing for Continuous Delivery]({% post_url 2021-07-22-acceptance-testing-for-continuous-delivery-dave-farley %}), Dave Farley
 - [Eviscerating the Test Automation Pyramid](https://cucumber.io/blog/bdd/eviscerating-the-test-automation-pyramid/), Seb Rose
 - [The Role of Continuous Delivery in IT and Organizational Performance](<https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2681909>), Dr Nicole Forsgren and Jez Humble
-- [Feature Branching is Evil]({% post_url 2016-10-29-feature-branching-considered-evil %}), Thierry de Pauw
+- [Feature Branching is Evil]({% post_url 2016-10-29-feature-branching-is-evil %}), Thierry de Pauw
 
 ## The Series
 

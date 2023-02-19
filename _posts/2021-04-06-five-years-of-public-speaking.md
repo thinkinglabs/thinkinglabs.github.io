@@ -223,7 +223,7 @@ Conference NL.
 I submitted two topics:
 
 - [*Continuous Delivery is more than just Tooling, It's a Mindset*]({% post_url 2016-05-03-continuous-delivery-is-more-than-just-tooling-its-a-mindset %})
-- [*Feature Branching is Evil*]({% post_url 2016-10-29-feature-branching-considered-evil %})
+- [*Feature Branching is Evil*]({% post_url 2016-10-29-feature-branching-is-evil %})
 
 Continuous Delivery Conference NL reflected a rather "enterprisey" character. I
 was expecting, if I got selected, they would pick *Continuous Delivery is more

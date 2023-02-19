@@ -188,7 +188,7 @@ Lagavulin for helping me finalising the damned article.
 - [Branch by Abstraction](https://www.branchbyabstraction.com/), Paul Hammant
 - [Feature Toggles](https://martinfowler.com/articles/feature-toggles.html), Pete Hodgson
 - [The $440 Million Software Error at Knight Capital](https://www.henricodolfing.com/2019/06/project-failure-case-study-knight-capital.html), Henrico Dolfing
-- [Feature Branching is Evil]({% post_url 2016-10-29-feature-branching-considered-evil %}), Thierry de Pauw
+- [Feature Branching is Evil]({% post_url 2016-10-29-feature-branching-is-evil %}), Thierry de Pauw
 
 ## The Series
 

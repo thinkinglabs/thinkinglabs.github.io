@@ -113,7 +113,7 @@ matter and decided to let go of the use of feature branches. We went back to
 what worked for us, i.e. trunk-based development. We never looked back.
 
 In January 2021, 8 years later, I was invited by the team's organisation to
-present [Feature Branching is Evil]({% post_url 2016-10-29-feature-branching-considered-evil %})
+present [Feature Branching is Evil]({% post_url 2016-10-29-feature-branching-is-evil %})
 as part of training. During the question and answer, I discovered the team is
 still practising trunk-based development. **They can still not imagine a
 different way of working**. For them, it is the most natural thing to do.
@@ -174,7 +174,7 @@ to the problems they introduce.
 
 That mission was an opportunity to observe what happens when a team adopts a
 branching strategy like GitFlow, which resulted in my seminal presentation
-[Feature Branching is Evil]({% post_url 2016-10-29-feature-branching-considered-evil %}).
+[Feature Branching is Evil]({% post_url 2016-10-29-feature-branching-is-evil %}).
 
 In closing, from the narrow set of data I have, we can conclude that you do not
 have to be a rock-star team to practice trunk-based development. Novice teams
