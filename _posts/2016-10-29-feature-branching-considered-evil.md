@@ -46,7 +46,7 @@ conferences:
     video_link: https://www.youtube.com/watch?v=cHgDdRW3WO0
 speakerdeck:
   data_id: 6e5c22252bbc42b09caedba221567c27
-  download_link: https://speakerd.s3.amazonaws.com/presentations/6e5c22252bbc42b09caedba221567c27/Feature_Branching_considered_Evil.pdf
+  download_link: https://speakerd.s3.amazonaws.com/presentations/6e5c22252bbc42b09caedba221567c27/Feature_Branching_is_Evil.pdf
 youtube:
   data_id: h4DM-Wa0aDQ
 redirect_from:
