@@ -32,10 +32,25 @@ Efficiency and Effectiveness are two different things and they cannot have the s
 
 When only focusing on going fast, we prioritise efficiency. With the risk of producing the wrong thing. Which comes at a non-negligible cost. If on the other hand we focus on innovation, creativity and making sure we produce the right thing, we need to focus on effectiveness at the cost of efficiency. That said, when taking the opportunity cost and cost of delay into consideration, being effective will straight outperform being efficient in cost performance.
 
+We don’t want to produce output but outcomes
+
 Let's start with the economics ;)
 The idea that because 2 devs work on one task they should be twice as fast in order to be acceptable is simplistic and reductionistic. It ignores the benefits that surpass the initial cost or better the initial investment.
 
-Experiments have shown that a pair spend in an initial adjustment period 60% more person-hours, afterwards on average only 15% more time than a single dev. Which is statistically insignificant. (
+> If I may suggest it, if you divide up work for individuals and then put two people on it, then you would have two people doing the work of (specifically) one of them.
+> It would be inefficient.
+> Give a pair a less-pre-digested 2-person task.
+> Save up-front costs.
+> -- "Agile Otter" Tim Ottinger, [Feb 14, 2022](https://twitter.com/tottinge/status/1493352052289941515)
+
+The two people doing a well known pre-digested one-person task is inefficient in a Taylorist way of working.
+The efficiency gain is in the two people designing/discovering an unknown/not-well formulated problem.
+
+> Absolutely agree. This whole hire drivers not passengers BS stems from optimising for time to PR and not time to deliver value to customer. The flow interruptions caused due to this thinking have given rise to the monstrosity now known as ‘stacked PRs’.
+>
+> -- Swarup Karavadi, [Feb 14, 2022](https://twitter.com/swazza85/status/1493296352838705155)
+
+Experiments have shown that a pair spend in an initial adjustment period 60% more person-hours, afterwards on average only 15% more time than a single dev. Which is statistically insignificant.
 
 Why would you invest an additional 15% on implementing a feature or fixing a bug?
 Higher quality!
@@ -51,11 +66,20 @@ Therefore, Pair Programming accelerates production feedback, allowing us to take
 Not only does Pair Programming produce higher quality, but it also produces code that is 20% more concise than code produced by a single dev. It shows more encapsulation and more cohesiveness.
 Means less code to maintain that is easier to maintain. Again a cost reduction.
 
+> The argument for reduced Time-to-market may trigger the fallacy that pairing is only worth it in a product context, where TTM is important. Not true! The higher quality and streamlined code style will quickly pay off, despite hitting the market years later.
+> -- Gregor Riegler, [Feb 14, 2022](https://twitter.com/gregor_riegler/status/1493329386250121222)
+
 Code Reviews on the other hand is a bloody flow-blocking activity that increases time-to-market and adds very little to quality. In addition, it comes too late and introduces rework that easily exceeds the assumed 100% increase of workload introduced by Pair Programming.
+
+Handovers are a blocker for flow.
 
 Not to mention the high cost introduced by constant context switching introduced by code reviews for both reviewee and reviewer.
 
 Code Reviews are also a source of communication overhead. Brooks (yes Brooks Law) believes communication costs are the major driver leading to Brooks Law "Adding manpower to a late project makes it later".
+
+> Code reviews are great to compare and/or learn about patterns, common pitfalls and challenges among a larger group. They’re a learning tool. That’s just not what they’re typically used for.
+>
+> -- Tobias Goeschel, [Feb 14, 2022](https://twitter.com/w3ltraumpirat/status/1493329453879017473)
 
 Pretending the feedback given by pairs limits to style and bikeshedding is reductionistic and an expression of a lack of Pair Programming experience.
 
@@ -92,3 +116,6 @@ They only see the obvious costs of the new thing and do not see the hidden costs
 - [Each day ~~his~~ its fair share of bullshit](https://twitter.com/tdpauw/status/1493234376217354242?s=20), Thierry de Pauw on Twitter
 - [Effectiveness or Efficiency: Agile Shouldn't Feel Like a Fight](https://www.infoq.com/news/2019/09/agile-effectiveness-efficiency/), Ben Linders interviewing Tony O’Halloran
 - [The effectiveness of pair programming: A meta-analysis](https://www.sciencedirect.com/science/article/abs/pii/S0950584909000123)
+- [Pro Pair Programming](https://medium.com/@TonyBologni/pro-pair-programming-763622b2bb7), Anton Stöckl
+
+
