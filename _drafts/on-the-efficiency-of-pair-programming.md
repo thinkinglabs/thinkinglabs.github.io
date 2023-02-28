@@ -32,7 +32,7 @@ Efficiency and Effectiveness are two different things and they cannot have the s
 
 When only focusing on going fast, we prioritise efficiency. With the risk of producing the wrong thing. Which comes at a non-negligible cost. If on the other hand we focus on innovation, creativity and making sure we produce the right thing, we need to focus on effectiveness at the cost of efficiency. That said, when taking the opportunity cost and cost of delay into consideration, being effective will straight outperform being efficient in cost performance.
 
-We don’t want to produce output but outcomes
+We don’t want to produce output but outcomes. Effectiveness is about outcome.
 
 Let's start with the economics ;)
 The idea that because 2 devs work on one task they should be twice as fast in order to be acceptable is simplistic and reductionistic. It ignores the benefits that surpass the initial cost or better the initial investment.
