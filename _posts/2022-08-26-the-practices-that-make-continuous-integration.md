@@ -10,8 +10,11 @@ conferences:
 speakerdeck:
   data_id: 3559f334909045f2bfabe5b0220c595f
   download_link: https://files.speakerdeck.com/presentations/3559f334909045f2bfabe5b0220c595f/The_Practices_That_Make_Continuous_Integration.pdf
+conferences:
+  - name: Lean Agile Scotland 2022
+    date: 2022-10-05
+    video_link: https://vimeo.com/780287932
 ---
-
 
 Continuous Integration is by itself already a practice. It is one of the most critical to adopt to enable the fast flow of work through the value stream. However, many teams believe Continuous Integration is just a tooling problem, to then say they practice Continuous Integration.
 
