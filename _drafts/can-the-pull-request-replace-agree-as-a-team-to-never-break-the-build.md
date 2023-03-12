@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Can the Pull Request Replace Do Not Break the Build
+title: Can the Pull Request Replace Agree As a Team to Never Break the Build
 author: Thierry de Pauw
 category: articles
 tags: [ Continuous Integration, Extreme Programming ]
