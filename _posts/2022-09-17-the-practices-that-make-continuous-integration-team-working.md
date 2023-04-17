@@ -82,11 +82,11 @@ During the time the build is broken, no new code is added. Adding new code only 
 
 The most crucial step in reaching Continuous Integration as a team is to accept as a team that each time code is committed, it builds successfully and passes every test without exception. If the build fails, the whole team owns the failure. Hence, [*Agree As a Team To Never Break The Build*](#practice-2-agree-as-a-team-to-never-break-the-build). Therefore, when the build fails, the whole team stops and fixes the build before moving on with anything else. To realise Continuous Integration it is imperative to adhere to the rule of not adding new code while the build is broken. Again, when the build is broken we do not have Continuous Integration. Adding new code on top of a broken build will keep the build broken for a more prolonged time, keeping the team farther away from Continuous Integration.
 
-## Practice 4: When Broken Revert
+## Practice 4: Revert When Broken
 
 One of the preconditions of being in a state of Continuous Integration is to [fix a broken build within ten minutes](https://martinfowler.com/bliki/ContinuousIntegrationCertification.html). The longer it takes to fix the build, the longer we block a whole team. Given the salaries for IT engineers, that is quite a lot of money held in standstill. What is more, it disables on-demand production releases. Consequently, it reduces IT delivery throughput and increases time to market.
 
-But why within ten minutes and not within five or 15 minutes? Because this is related to [*Have a Fast Build*]({% post_url 2022-09-28-the-practices-that-make-continuous-integration-building %}#practice-14-have-a-fast-build). If the build is under ten minutes, quickly fixing the problem and re-running the build will work if the fix is easy.
+But why within ten minutes? Why not within five or 15 minutes? Because this is related to [*Have a Fast Build*]({% post_url 2022-09-28-the-practices-that-make-continuous-integration-building %}#practice-14-have-a-fast-build). If the build is under ten minutes, quickly fixing the problem and re-running the build will work if the fix is easy.
 
 However, if we cannot fix the problem right away, then the easiest and fastest way to fix a broken build within ten minutes, and ensuring not to impact the time-to-market, is to revert the commit that caused the broken build. It allows us to go back to the last known good state of our application codebase. Obviously, this requires [Version Control Everything](#practice-1-version-control-everything), otherwise reverting will become a battlefield.
 

@@ -46,7 +46,7 @@ Because we commit more frequently, changes become smaller. We can now work in sm
 
 If a broken build happens, reverting a small change becomes easier than having to revert a big chunk of changes. Reverting now also takes less time, therefore reducing the timespan for a broken build.
 
-Because we commit more frequently, we now feel a gentle pressure to speed up the build, keep the codebase decoupled and look for ways to hide unfinished functionality which in turn will again allow us to work in smaller increments. Leading to a virtuous circle of improvements.
+Because we commit more frequently, we now feel a gentle pressure to speed up the build even more, keep the codebase even more decoupled, work in even smaller steps and look for ways to hide unfinished functionality which in turn will again allow us to work in smaller increments. Leading to a virtuous circle of improvements.
 
 ## Practice 7: Commit Only on Green
 
