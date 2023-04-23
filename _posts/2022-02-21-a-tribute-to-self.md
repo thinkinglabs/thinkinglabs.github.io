@@ -18,6 +18,8 @@ A breath of kindness to remind me of the lovely people who appreciate me.
 
 *Update Nov 2, 2022: Add tributes from [KanDDDinsky](https://kandddinsky.de)*
 
+*Update Apr 23, 2023: Re-called to add the kind words from [Cat Swetel](https://twitter.com/CatSwetel)*
+
 ---
 
 > [@tdpauw](https://twitter.com/tdpauw) demolishing the reasons for feature branching one by one [#XP2017](https://twitter.com/hashtag/XP2017?src=hashtag_click)
@@ -148,6 +150,10 @@ A breath of kindness to remind me of the lovely people who appreciate me.
 > Prochaine étape (et je rigole pas) - tu penses pas à écrire un bouquin (lean mode, en construisant une audience via mailing list, etc)
 >
 > -- Martin Van Aken ([@martinvanaken](https://twitter.com/martinvanaken)), Aug 30 2021
+
+> EWC: when this personality type speaks (or writes), everyone better shut up and listen bc Every Word Counts. 💖
+>
+> -- Cat Swetel ([@CatSwetel](https://twitter.com/CatSwetel)), [Sep 5, 2021](https://twitter.com/CatSwetel/status/1434283592155230209)
 
 > Ik ga morgen je artikel lezen! Ben erg benieuwd, en ik steek van jouw schrijfwerk altijd mooie nieuwe manieren op om het over dingen te hebben...
 >
