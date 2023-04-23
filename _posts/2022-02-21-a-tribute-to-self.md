@@ -223,6 +223,8 @@ A breath of kindness to remind me of the lovely people who appreciate me.
 >
 > -- Anton Stöckl ([@TonyBologni](https://twitter.com/TonyBologni)), [Feb 19, 2022](https://twitter.com/TonyBologni/status/1494956641850204162)
 
+---
+
 Reactions on publishing this:
 
 > Seeing your journey from being embarassed at any positive feedback to listing your accomplishments is so, so cool.
@@ -251,6 +253,8 @@ Reactions on publishing this:
 >
 > -- Marc Burgauer ([@somesheep](https://twitter.com/somesheep)), [Feb 23, 2022](https://twitter.com/somesheep/status/1496586942162640905)
 
+---
+
 I haven't seen these two coming ...
 
 > Thierry is the 2022 authority on trunk-based development that we all need, in these dark times 🙇
@@ -264,6 +268,8 @@ I haven't seen these two coming ...
 > <https://twitter.com/tdpauw/status/1564280482824691713>
 >
 > -- Dave Farley ([@davefarley77](https://twitter.com/davefarley77)), [Oct 3, 2022](https://twitter.com/davefarley77/status/1576885497808695297)
+
+---
 
 Some more kindness received during [FlowCon France](https://flowcon.io/) ...
 
@@ -295,7 +301,7 @@ Some more kindness received during [FlowCon France](https://flowcon.io/) ...
 >
 > you’re too kind, Cosima! 😊
 >
-> -- Thierry de Pauw ([@tdpauw](https://twitter.com/tdpauw)), [Oct 19, 2022](https://twitter.com/tdpauw/status/1583020016227999744)
+> -- Me
 >
 > Yes, for me you are one. 😊
 >
@@ -316,6 +322,8 @@ Some more kindness received during [FlowCon France](https://flowcon.io/) ...
 > Thank YOU for coming on stage and sharing your experience! 🙌
 >
 > -- Sara Dufour ([@ComSaraDufour](https://twitter.com/ComSaraDufour)), [Oct 24, 2022](https://twitter.com/ComSaraDufour/status/1584441558728073216)
+
+---
 
 Kindness received during [KanDDDinsky](https://kandddinsky.de) ...
 
@@ -343,3 +351,9 @@ Kindness received during [KanDDDinsky](https://kandddinsky.de) ...
 > I have been to one of your meetup. Watched several of your conferences on YouTube. Not only you are good, you are very good.
 >
 > -- Arnaud ([@arnz72](https://twitter.com/arnz72)), [Dec 11, 2022](https://twitter.com/arnz72/status/1601959268537831426)
+
+---
+
+> Lovely to see [@tdpauw](https://mastodon.social/@tdpauw) speaking at [#cfgmgmtcamp](https://mastodon.social/tags/cfgmgmtcamp) - such a considered speaker
+>
+> -- simonmcc ([@simonmcc](https://mastodon.social/@simonmcc)), [Feb 6, 2023](https://mastodon.social/@simonmcc/109817355232634028)
