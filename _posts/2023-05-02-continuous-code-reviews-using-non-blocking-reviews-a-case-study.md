@@ -44,6 +44,8 @@ For this to work, we need team agreement every commit will be reviewed. Any issu
 
 The fact that non-reviewed code can be tested or deployed in production is surprisingly the most significant benefit. We do not ever block the flow of work through the value stream. We can already obtain valuable feedback from testing, and production. We do not have to wait for a reviewer, or worse the ping-pong between reviewer and reviewee, for the feature to be available for testing or deploying into production.
 
+Now the testing part is not totally true as we also had a *To Test* column. The feature first had to be reviewed before it could be tested. I now realise this was sub-optimal. We could have improved this by making sure the testing did not depend on the. It would have delivered more gains as made clear in the previous paragraph.
+
 But there is more. Often, it happened a dreadful design came along during a review. That were moments when I wished we practised pair programming to catch these situations earlier. But then again, this was not a real problem. Testing found the feature good enough. In the meantime, it was even already delivered in production. We had all the time to redo the design. Our users already had the benefits of the feature. We could even incorporate the feedback from the user into the new design.
 
 Whereas with blocking reviews, like Pull Requests, a redesign means a delay in delivery. With Non-Blocking Reviews we do not have that. Yet, to be honest, when I have to work with Pull Requests I frequently find myself accepting non-optimal designs to ensure the feature is delivered. But I suggest improving the design. Nevertheless, I always leave that decision to the person requesting the review to create empowerment.
