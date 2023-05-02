@@ -22,7 +22,7 @@ There are different ways teams can run code reviews.
 
 The one with the minimal impact on flow of delivery is [Pair Programming](http://www.extremeprogramming.org/rules/pair.html) or [Ensemble Programming](https://en.wikipedia.org/wiki/Mob_programming). The code is being reviewed while it is being written before being committed into [mainline](#mainline). Multiple pairs of eyes read the code. We have [Continuous Code Review](https://trunkbaseddevelopment.com/continuous-review/) for free.
 
-However, we never got that novice team to pair program. Not everyone feels comfortable with pairing. There are also [social implications that are all too often forgotten in the agile community](https://medium.com/@Romeu/agility-should-pay-attention-to-sociology-b671fd056933).
+However, we never got that novice team to pair program. Not everyone feels comfortable with pairing. I respect that. This is something that should not be imposed. Also, because there are [unconscious power dynamics in place that are all too often forgotten in the agile community](https://medium.com/@Romeu/agility-should-pay-attention-to-sociology-b671fd056933).
 
 We did some pair programming as a learning opportunity. My fellow coach and I sat next to a team member showing how a practice worked or how to achieve something more efficiently. But nothing more. There was, unfortunately, no continuous writing of production code in pair.
 
