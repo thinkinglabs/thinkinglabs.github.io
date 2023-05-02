@@ -88,4 +88,4 @@ For CVS and SubVersion, this is *trunk*. For Git, this is the remote *main* bran
 
 ## Acknowledgment
 
-[Dave Farley](https://twitter.com/davefarley77) for asking me about Non-Blocking Reviews which nudged me to write this article.
+[Dave Farley](https://twitter.com/davefarley77) for nudging me to write this article.
