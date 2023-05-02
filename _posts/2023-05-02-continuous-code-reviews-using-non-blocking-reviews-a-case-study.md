@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Continuous Code Reviews using Non-Blocking Reviews
+title: Continuous Code Reviews using Non-Blocking Reviews - a case study
 author: Thierry de Pauw
 category: articles
 tags: [ Code Review, Continuous Integration, Continuous Delivery, Case Study]
