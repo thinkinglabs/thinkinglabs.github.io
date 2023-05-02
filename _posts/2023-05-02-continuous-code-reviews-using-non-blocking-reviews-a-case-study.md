@@ -3,7 +3,7 @@ layout: article
 title: Continuous Code Reviews using Non-Blocking Reviews
 author: Thierry de Pauw
 category: articles
-tags: [ Code Review, Continuous Integration, Continuous Delivery ]
+tags: [ Code Review, Continuous Integration, Continuous Delivery, Case Study]
 ---
 
 The usual way to achieve fast Continuous Code Reviews is through Pair Programming or Ensemble Programming. In this article, I will share a less common approach to Continuous Code Reviews using Non-Blocking Reviews.

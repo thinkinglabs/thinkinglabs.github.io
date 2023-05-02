@@ -4,7 +4,7 @@ title: On the Evilness of Feature Branching - A Tale of Two Teams
 author: Thierry de Pauw
 meta: 6 min read
 category: articles
-tags: [Version Control, Continuous Integration]
+tags: [Version Control, Continuous Integration, Case Study]
 ---
 
 On the experience of working with two totally different teams: one novice
