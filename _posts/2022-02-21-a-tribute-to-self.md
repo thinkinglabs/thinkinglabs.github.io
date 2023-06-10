@@ -357,3 +357,15 @@ Kindness received during [KanDDDinsky](https://kandddinsky.de) ...
 > Lovely to see [@tdpauw](https://mastodon.social/@tdpauw) speaking at [#cfgmgmtcamp](https://mastodon.social/tags/cfgmgmtcamp) - such a considered speaker
 >
 > -- simonmcc ([@simonmcc](https://mastodon.social/@simonmcc)), [Feb 6, 2023](https://mastodon.social/@simonmcc/109817355232634028)
+
+---
+
+> You turning something that you dislike into a new goal.
+>
+> So you, so pretty much you 😍
+>
+> ...
+>
+> Oh yeah, doing stuff that is hard for you while charmingly telling the world to inspire people to do the same.
+>
+> -- Christina E., Jun 10, 2023
