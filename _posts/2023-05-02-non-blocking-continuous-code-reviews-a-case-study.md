@@ -1,9 +1,11 @@
 ---
 layout: article
-title: Continuous Code Reviews using Non-Blocking Reviews - a case study
+title: Non-Blocking, Continuous Code Reviews - a case study
 author: Thierry de Pauw
 category: articles
 tags: [ Code Review, Continuous Integration, Continuous Delivery, Case Study]
+redirect_from:
+- /articles/2023/05/02/continuous-code-reviews-using-non-blocking-reviews-a-case-study
 ---
 
 The usual way to achieve fast Continuous Code Reviews is through Pair Programming or Ensemble Programming. In this article, I will share a less common approach to Continuous Code Reviews using Non-Blocking Reviews.
@@ -16,7 +18,7 @@ A question I often get asked when talking about trunk-based development is: But 
 
 > With PRs we created a world where the amount of time we spend reviewing code has become disproportionate to the time spent creating value.
 >
-> Seb Rose ([@sebrose](https://twitter.com/sebrose)), [Aug 29, 2022](https://twitter.com/tdpauw/status/1564280563195953152)
+> -- Seb Rose ([@sebrose](https://twitter.com/sebrose)), [Aug 29, 2022](https://twitter.com/tdpauw/status/1564280563195953152)
 
 There are different ways teams can run code reviews.
 

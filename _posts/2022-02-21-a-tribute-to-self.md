@@ -360,6 +360,31 @@ Kindness received during [KanDDDinsky](https://kandddinsky.de) ...
 
 ---
 
+> Il faut vraiment que je le fasse, ce brag doc.
+>
+> J'ai fini le module de Management et Gestion de projet pour des Licence 3 à @IUT_Sceaux.
+>
+>
+> Je suis plutôt contente !
+>
+> Un peu plus d'infos sur les contenus ici (pour les curieux·ses) : <https://t.co/ije8WdKwHx>
+>
+> -- Sara Dufour ([@ComSaraDufour](https://twitter.com/ComSaraDufour)), [May 31 2023](https://twitter.com/ComSaraDufour/status/1663814373414952960)
+>
+> Bravo Sara! Très important le brag doc! Quand tu as un coup de mou ou que tu t’interroge sur ta contribution ou impact, le relire permet de se re-étalonner. Moi, c’est un témoignage de @b0rk qui m’a encouragé à démarrer 😉
+>
+> -- Philippe Ensarguet (@P_Ensarguet), May 31 2023
+>
+> Merci Philippe ! Oui c’est ce que je me dis… C’est @tdpauw qui m’a fait connaître 🤓
+>
+> -- Sara Dufour ([@ComSaraDufour](https://twitter.com/ComSaraDufour)), [May 31 2023](https://twitter.com/ComSaraDufour/status/1663871066576416771?s=20)
+
+---
+
+Kindness after my expression of failure at #AlpesCraft ...
+
+---
+
 > You turning something that you dislike into a new goal.
 >
 > So you, so pretty much you 😍
