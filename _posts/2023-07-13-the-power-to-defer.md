@@ -10,7 +10,9 @@ This article describes a personal case study on how my wife and I used a lean pr
 
 ---
 
-In March of this year, [Yves Hanoulle](https://agilealliance.social/@YvesHanoulle) interviewed me for his [Who is Agile](https://www.hanoulle.be/book/who-is-agile/) [video series](https://www.youtube.com/watch?v=JSNP9LGA1WA&list=PL5eAvwhjCQFcrkDJT5A-pQ6Qd1E18qZ9C). Yves has this favourite question he fancies asking.
+In March of this year, [Yves Hanoulle](https://agilealliance.social/@YvesHanoulle) interviewed me for his [Who is Agile](https://www.hanoulle.be/book/who-is-agile/) [video series](https://www.youtube.com/watch?v=JSNP9LGA1WA&list=PL5eAvwhjCQFcrkDJT5A-pQ6Qd1E18qZ9C). On my request, the video is not yet published. I first wanted to publish this article. It will come soon.
+
+Yves has this favourite question he fancies asking.
 
 > Do you have a personal agility tip to share?
 
