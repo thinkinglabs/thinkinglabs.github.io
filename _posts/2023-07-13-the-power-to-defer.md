@@ -16,11 +16,23 @@ Yves has this favourite question he fancies asking.
 
 > Do you have a personal agility tip to share?
 
-Without hesitation, I shared "Defer Decision to the Last Responsible Moment". It is one of the [seven lean principles](https://en.wikipedia.org/wiki/Lean_software_development#Lean_principles).
+Without hesitation, I shared "**Defer Decision to the Last Responsible Moment**". It is one of the [seven lean principles](https://en.wikipedia.org/wiki/Lean_software_development#Lean_principles).
 
-Professionally, I live by this principle. I have repeatedly been battling with people: "*No, we are not going to implement this right now*". "*But, but … it is part of the requirements. We know we have to provide this flexibility*". "*Yes, that can be, but we do not need it right now. We will do that when it is needed. Right now, we are just going to implement the simplest thing.*". I have implemented early flexibility far too often to know now it is a pure waste of time, energy and a money drainer.
+Professionally, I live by this principle. I have repeatedly been battling with people:
 
-But not only professionally, but also in my personal life it is fairly present. Even so that my wife follows the same principle. She actively searches together with me for ways to defer decisions in our private life. "*We do not have enough information. Can we not take this decision right now? How can we gain time? How can we postpone that decision?*"
+> Me: No, we are not going to implement this right now.
+>
+> X: But, but … it is part of the requirements. We know we have to provide this flexibility.
+>
+> Me: Yes, that can be, but we do not need it right now. We will do that when it is actually needed. Right now, we are just going to implement the simplest thing that works.
+>
+> X: But, then we will have to rewrite this later.
+>
+> Me: Sure, but then we will have enough knowledge to do the right thing. That will be far less expensive instead of trying to assume things now, probably being wrong and having to redo it anyway.
+
+Far too often I have implemented flexibility at a too early stage to know now it is a pure waste of time, energy and a money drainer.
+
+But not only professionally, also in my personal life it is fairly present. Even so that my wife follows the same principle. She actively searches together with me for ways to defer decisions in our private life. "*We do not have enough information. Can we not take this decision right now? How can we gain time? How can we postpone that decision?*"
 
 We also try to pass this on to our children. It is quite a game changer for life. I have not learned this as a kid or young adult. Schools do not teach this. On the contrary. Only when reading the books from [Mary and Tom Poppendieck](http://www.poppendieck.com/), [Lean Software Development: An Agile Toolkit](https://www.goodreads.com/en/book/show/194338), that I discovered this. I loved it. It is unimaginable how it simplifies life. But few people follow me in this.
 
