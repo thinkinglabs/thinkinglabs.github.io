@@ -91,3 +91,5 @@ For CVS and SubVersion, this is *trunk*. For Git, this is the remote *main* bran
 ## Acknowledgment
 
 [Dave Farley](https://twitter.com/davefarley77) for nudging me to write this article.
+
+> Update Jul 13, 2023: In the mean time, Dave published an excellent YouTube video on the subject: [I Found Something Better Than Pull Requests...](https://www.youtube.com/watch?v=WmVe1QrWxYU)
