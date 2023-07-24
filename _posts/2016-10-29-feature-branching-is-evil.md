@@ -67,17 +67,15 @@ redirect_from:
   - /talks/feature-branching-considered-evil
   - /talks/2016/10/29/feature-branching-considered-evil
 ---
-Feature branching is again gaining in popularity due to the rise of distributed version control systems. Although branch creation has become very easy, it comes with a certain cost. Long living branches break the flow of the software delivery process, impacting throughput and stability.
+Feature branching is one of the most commonly accepted practices in the IT industry. It is mainly used to control quality and to control feature delivery. However, many times the inverse is true. Branches break the flow of the IT delivery process, reducing both stability and throughput. Unfortunately, oftentimes teams are not aware of this. They truly think they are doing the right thing.
 
-This session explores why teams are using feature branches, what problems are introduced by using them and what techniques exist to avoid them altogether. It explores exactly what's evil about feature branches, which is not necessarily the problems they introduce - but rather, the real reasons why teams are using them.
+The session explores why teams are using feature branches, what problems are introduced by using them and what techniques exist to avoid them altogether. It explores exactly what's evil about feature branches, which is not necessarily the problems they introduce - but rather, the real reasons why teams are using them.
 
-After this session, you'll understand a different branching strategy and how it relates to continuous integration.
+After the session, you'll understand a different branching strategy, how it relates to Continuous Integration and how it will predict better quality and higher delivery throughput.
 
 Learning outcomes - you will be able to:
 
 - understand why teams are using feature branching
 - explain why feature branching is problematic
 - describe alternatives to feature branching
-- run an experiment with trunk-based development
 - understand if all teams can adopt trunk-based development
-
