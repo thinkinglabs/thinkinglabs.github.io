@@ -69,3 +69,5 @@ Deferring the decision allowed us to gain time to see clearer. It avoided having
 ## Acknowledgements
 
 Published with consent from my wife, the one I love and still the most important person in my life.
+
+![My wife running a session at an open space](/images/the-power-to-defer/the-power-to-defer.jpg)
