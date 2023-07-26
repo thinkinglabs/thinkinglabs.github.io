@@ -24,6 +24,7 @@
 .talk-content ul {
   list-style-position: inside;
   list-style-type: disc;
+  margin-bottom: 20px;
 }
 
 .talk-content li {
