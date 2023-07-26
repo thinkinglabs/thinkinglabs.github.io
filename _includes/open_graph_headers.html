@@ -20,12 +20,12 @@ website
 <meta property="og:url" content="{{site.url}}{{page.url}}">
 <meta property="og:site_name" content="{{site.data.company.name}}:: {{site.data.myself.name}}">
 <meta property="og:title" content="{{page.title}}">
-<meta property="og:description" content="{{ include.description }}">
+<meta property="og:description" content="{{ include.excerpt }}">
 <meta property="og:type" content="{{type | strip}}">
 <meta property="og:image" content="{%if page.image %}{{site.url}}{{page.image}}{%else%}{{include.image}}{%endif%}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@tdpauw">
 <meta name="twitter:creator" content="@tdpauw">
 <meta name="twitter:title" content="{{page.title}}">
-<meta name="twitter:description" content="{{ include.description }}">
+<meta name="twitter:description" content="{{ include.excerpt }}">
 <meta name="twitter:image:src" content="{%if page.image %}{{site.url}}{{page.image}}{%else%}{{include.image}}{%endif%}">
