@@ -94,15 +94,17 @@ To avoid breaking the build, many teams tend to use the classic approach with [*
 
 Instead of using Branch by Version Control, we should adopt [*Expand-Contract*](https://martinfowler.com/bliki/ParallelChange.html).
 
-*Expand-Contract* works as follows. Instead of changing the method signature and breaking the codebase, we duplicate the method and apply that signature change to the duplicated method.
+*Expand-Contract* works as follows. (1) We start from a situation where a method is called at various places in the code base. Instead of changing the method signature and breaking the codebase, we duplicate the method and apply that signature change to the duplicated method.
 
-Now we have two methods: the old one with the old signature called from 42 places in the codebase and the new one with the new signature that is nowhere used in the codebase. At this point, we mark the old method as deprecated and we [commit](#commit). This is called the Expand phase. We expanded the codebase with a new method having the new method signature.
+![Expand-Contract](/images/the-practices-that-make-continuous-integration/expand-contract.jpg)
+
+(2) Now we have two methods: the old one with the old signature called from 42 places in the codebase and the new one with the new signature that is nowhere used in the codebase. At this point, we mark the old method as deprecated and we [commit](#commit). This is called the Expand phase. We expanded the codebase with a new method having the new method signature.
 
 It is a good practice to also verbally communicate to the rest of the team that a new method exists and that everyone should start using that new method. Now, the rest of the team is aware they should use that new method. Moreover, the team can, in effect, start using that new method immediately. At this point, we can still release the software into production.
 
-Next, we will gradually move consumers to use the new method signature. On each consumer move, we can commit and we can again still release the software into production.
+(3) Next, we will gradually move consumers to use the new method signature. On each consumer move, we can commit and we can again still release the software into production.
 
-Once all consumers call the new method signature and the old method with the old signature is nowhere called anymore, we can remove the old method. This is called the Contract phase. We contracted the codebase by removing the old method. Again, we did not break the codebase because there were no consumers left using the old method signature. Again, we can release it into production at any given moment.
+(4) Once all consumers call the new method signature and the old method with the old signature is nowhere called anymore, we can remove the old method. This is called the Contract phase. We contracted the codebase by removing the old method. Again, we did not break the codebase because there were no consumers left using the old method signature. Again, we can release it into production at any given moment.
 
 Evolutionary database changes use Expand-Contract extensively to rename columns, rename tables, split columns into two columns, and move columns, ...
 
