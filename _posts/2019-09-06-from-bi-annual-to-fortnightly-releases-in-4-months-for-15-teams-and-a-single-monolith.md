@@ -41,3 +41,15 @@ The cost and time for testing quality into the software product, stabilising and
 I’ll cover how we used the Improvement Kata, Value Stream Mapping, and the Theory Of Constraints to choose which changes to apply first, and kickstart the organisational changes we needed to improve quality and drive down lead times.
 
 If you thought Continuous Delivery was just for the happy few having trendy microservices, think again!
+
+References:
+
+- [Lean Enterprise](https://www.goodreads.com/book/show/18167218-lean-enterprise) (ch 6 Deploy Continuous Improvement), Jez Humble, Joanne Molesky, Barry O'Reilly
+- [Accelerate - Extra chapter: How to transform](https://twitter.com/jezhumble/status/976858653142732800?s=20), Jez Humble
+- [The Improvement Kata](http://www-personal.umich.edu/~mrother/The_Improvement_Kata.html), Mike Rother
+- [Measuring Continuous Delivery](https://leanpub.com/measuringcontinuousdelivery), Steve Smith
+- [The Goal](https://www.goodreads.com/book/show/113934.The_Goal), Eliyahu Goldratt
+- [A Practical Approach to Large-Scale Agile Development: How HP Transformed LaserJet FutureSmart Firmware](https://www.goodreads.com/book/show/13705477-a-practical-approach-to-large-scale-agile-development),  Gary Gruver, Mike Young, Pat Fulghum
+- [Dual Value Streams](https://www.continuousdeliveryconsulting.com/blog/organisation-antipattern-dual-value-streams/), Steve Smith
+- [Got a wicked problem? First, tell me how you make toast](https://www.ted.com/talks/tom_wujec_got_a_wicked_problem_first_tell_me_how_you_make_toast?language=en), Tom Wujec, TEDGlobal 2013
+- [Agile Conversations](https://www.conversationaltransformation.com/agile-conversation-book/), Jeffrey Fredericks and Douglas Squirrel
