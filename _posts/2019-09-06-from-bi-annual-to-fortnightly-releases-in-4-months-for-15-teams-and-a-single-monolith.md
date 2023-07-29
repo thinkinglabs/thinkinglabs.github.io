@@ -42,6 +42,14 @@ I’ll cover how we used the Improvement Kata, Value Stream Mapping, and the The
 
 If you thought Continuous Delivery was just for the happy few having trendy microservices, think again!
 
+Learning outcomes - you will be able to:
+
+- Understand how the Improvement Kata is a better approach to introduce change at scale.
+- Apply the Improvement Kata to introduce change.
+- Analyse the organisation's current situation using a Value Stream Mapping workshop.
+- Identify the bottlenecks requiring first attention using the Theory of Constraints.
+- Apply Fear Conversations to surface stakeholders' fears and mitigate them.
+
 References:
 
 - [Lean Enterprise](https://www.goodreads.com/book/show/18167218-lean-enterprise) (ch 6 Deploy Continuous Improvement), Jez Humble, Joanne Molesky, Barry O'Reilly
