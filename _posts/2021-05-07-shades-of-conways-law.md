@@ -54,7 +54,9 @@ Adding *Tom Cheatham's Amendment to Conway's Law*.
 
 James Coplien and Neil Harrison expressed it as follows.
 
-> If the parts of an organization (e.g., teams, departments, or subdivisions) do not closely reflect the essential parts of the product, or if the relationships between organizations do not reflect the relationships between product parts, then the project will be in trouble ... Therefore: Make sure the organization is compatible with the product architecture.
+> If the parts of an organization (e.g., teams, departments, or subdivisions) do not closely reflect the essential parts of the product, or if the relationships between organizations do not reflect the relationships between product parts, then the project will be in trouble ...
+>
+> Therefore: Make sure the organization is compatible with the product architecture.
 >
 > -— James Coplien & Neil Harrison Organisation patterns of agile software development, 2004
 
@@ -292,8 +294,11 @@ I also would like to thank [Ruth Malan](https://twitter.com/ruthmalan) for writi
 - [*How Do Committees Invent?*](https://www.melconway.com/Home/Committees_Paper.html), Melvin Conway, 1968
 - [*What do I think about Conway's Law now?*](https://www.allankellyassociates.co.uk/static/presentations/EuroPLoP2005/ConwaysLawFocusGroup.pdf), Lise Hvatum and Allan Kelly's at EuroPLoP 2005
 - [*Return to Conway's Law*](https://www.allankellyassociates.co.uk/archives/1169/return-to-conways-law/), Allan Kelly, 2006
+- [*Conway's Law*](https://web.archive.org/web/20181022001505/http://traceinthesand.com:80/blog/2008/02/13/conways-law/), Ruth Malan, 2008
+- [*Conway's Law-ish*](https://web.archive.org/web/20200621234405/http://www.ruthmalan.com:80/Journal/2013/2013JournalMay.htm#Conways_Law_ish), 2013
 - [*Conway's Law Reverb*](https://www.ruthmalan.com/Journal/2014/2014JournalMay.htm#Conways_Law), Ruth Malan, 2014
 - [*Continuous Delivery and Conway’s Law*]({% post_url 2021-05-13-continuous-delivery-and-conways-law-allan-kelly %}), Allan Kelly, 2014
 - [*Toward Simplifying Application Development in a Dozen Lessons*](http://melconway.com/Home/pdf/simplify.pdf), Mel Conway, 2016
+- [*Twitter, Reddit and Conway's Law*](https://michaelfeathers.silvrback.com/social-media-architecture-and-conway-s-law), Micheal Feathers, 2017
 - [*Team Topologies*](https://teamtopologies.com), Matthew Skelton and Manuel Pais, 2019
 - [*Conway's Law*](https://en.wikipedia.org/wiki/Conway%27s_law) on Wikipedia
