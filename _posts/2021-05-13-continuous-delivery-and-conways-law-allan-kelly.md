@@ -38,21 +38,21 @@ The laws that govern your life as a software engineer:
 
 Eric Raymond provisional:
 
-> The rule that organization of the so8ware and the organization of the so8ware team will be congruent.
+> The rule that organization of the software and the organization of the software team will be congruent.
 >
 > -— The New Hacker's Dictionary, 1996
 
 Originally stated by Eric Raymond as:
 
-> The rule that organization of the so8ware and the organiza1on of the so8ware team will be congruent;
-
+> The rule that organization of the software and the organization of the software team will be congruent;
+>
 > If you have 4 groups working on a compiler, you’ll get a 4-pass compiler.
 >
 > -— The New Hacker's Dictionary, 1996
 
 Coplien and Harrison:
 
-> If the parts of an organiza1on (e.g. teams, departments, or subdivisions) do not closely reflect the essen1al parts of the product, or if the rela1onship between organiza1ons do not reflect the rela1onships between product parts, then the project will be in trouble. ...
+> If the parts of an organization (e.g. teams, departments, or subdivisions) do not closely reflect the essen1al parts of the product, or if the relationship between organizations do not reflect the rela1onships between product parts, then the project will be in trouble. ...
 >
 > Therefore: **Make sure the organisation is compatible with the product architecture**.
 >

@@ -26,7 +26,7 @@ Who designs the architecture of software systems?
 
 - is it software engineers?
 - is it software architects?
-- or could it actually the HR department?
+- or could it actually be the HR department?
 
 HR can act as accidental architects of software systems
 
