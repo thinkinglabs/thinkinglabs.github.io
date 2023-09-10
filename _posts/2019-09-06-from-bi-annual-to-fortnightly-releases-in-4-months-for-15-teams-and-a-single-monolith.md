@@ -30,6 +30,7 @@ youtube:
 redirect_from:
   - /talks/15-teams-1-monolith-4-months-to-achieve-continuous-delivery
   - /talks/2019/09/06/15-teams-1-monolith-4-months-to-achieve-continuous-delivery.html
+  - /talks/from-bi-annual-to-fortnightly-releases
 ---
 
 15 teams, 1 shared monolith, 1 release every 6 months, and product demand for 1 release every 2 weeks. How do you know where to start with Continuous Delivery, when you’re surrounded by technology and organisational challenges?
