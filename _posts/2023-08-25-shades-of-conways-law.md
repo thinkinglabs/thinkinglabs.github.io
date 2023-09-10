@@ -17,9 +17,13 @@ Over the years, Conway's Law has been articulated in many different ways, bringi
 References:
 
 - [*How Do Committees Invent?*](https://www.melconway.com/Home/Committees_Paper.html), Melvin Conway, 1968
-- [*What do I think about Conway's Law now?*](https://www.allankellyassociates.co.uk/static/presentations/EuroPLoP2005/ConwaysLawFocusGroup.pdf), Lise Hvatum and Allan Kelly's at EuroPLoP 2005
+- [*Structured Design*](https://www.goodreads.com/book/show/946145.Structured_Design), Edward Yourdon and Larry L. Constantine, 1979
+- [*The New Hacker's Dictionary (3rd ed.)*](https://www.gutenberg.org/files/3008/3008-h/3008-h.htm), Eric Raymond, 1996
+- [*Organisational patterns of agile software development*](https://www.goodreads.com/book/show/756250.Organizational_Patterns_of_Agile_Software_Development), James Coplien & Neil Harrison, 2004
 - [*Return to Conway's Law*](https://www.allankellyassociates.co.uk/archives/1169/return-to-conways-law/), Allan Kelly, 2006
 - [*Conway's Law*](https://web.archive.org/web/20181022001505/http://traceinthesand.com:80/blog/2008/02/13/conways-law/), Ruth Malan, 2008
 - [*Continuous Delivery and Conway’s Law*]({% post_url 2021-05-13-continuous-delivery-and-conways-law-allan-kelly %}), Allan Kelly, 2014
 - [*Toward Simplifying Application Development in a Dozen Lessons*](http://melconway.com/Home/pdf/simplify.pdf), Mel Conway, 2016
 - [*Twitter, Reddit and Conway's Law*](https://michaelfeathers.silvrback.com/social-media-architecture-and-conway-s-law), Micheal Feathers, 2017
+- [*Accelerate*](https://www.goodreads.com/pl/book/show/35747076), Nicole Forsgren, PhD and friends, 2018
+- [*Conway's Law Doesn't Apply to Rigid Designs*](https://verraes.net/2022/05/conways-law-vs-rigid-designs/), Mathias Verraes, 2022
