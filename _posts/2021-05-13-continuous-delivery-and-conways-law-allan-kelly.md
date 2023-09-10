@@ -52,7 +52,7 @@ Originally stated by Eric Raymond as:
 
 Coplien and Harrison:
 
-> If the parts of an organization (e.g. teams, departments, or subdivisions) do not closely reflect the essen1al parts of the product, or if the relationship between organizations do not reflect the rela1onships between product parts, then the project will be in trouble. ...
+> If the parts of an organization (e.g. teams, departments, or subdivisions) do not closely reflect the essen1al parts of the product, or if the relationship between organizations do not reflect the relationships between product parts, then the project will be in trouble. ...
 >
 > Therefore: **Make sure the organisation is compatible with the product architecture**.
 >
