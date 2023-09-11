@@ -24,6 +24,5 @@ References:
 - [*Conway's Law*](https://web.archive.org/web/20181022001505/http://traceinthesand.com:80/blog/2008/02/13/conways-law/), Ruth Malan, 2008
 - [*Continuous Delivery and Conway’s Law*]({% post_url 2021-05-13-continuous-delivery-and-conways-law-allan-kelly %}), Allan Kelly, 2014
 - [*Toward Simplifying Application Development in a Dozen Lessons*](http://melconway.com/Home/pdf/simplify.pdf), Mel Conway, 2016
-- [*Twitter, Reddit and Conway's Law*](https://michaelfeathers.silvrback.com/social-media-architecture-and-conway-s-law), Micheal Feathers, 2017
 - [*Accelerate*](https://www.goodreads.com/pl/book/show/35747076), Nicole Forsgren, PhD and friends, 2018
 - [*Conway's Law Doesn't Apply to Rigid Designs*](https://verraes.net/2022/05/conways-law-vs-rigid-designs/), Mathias Verraes, 2022
