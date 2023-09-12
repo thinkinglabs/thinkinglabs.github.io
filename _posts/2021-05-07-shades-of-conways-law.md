@@ -292,8 +292,12 @@ I also would like to thank [Ruth Malan](https://twitter.com/ruthmalan) for writi
 ## Bibliography
 
 - [*How Do Committees Invent?*](https://www.melconway.com/Home/Committees_Paper.html), Melvin Conway, 1968
+- [*Structured Design*](https://www.goodreads.com/book/show/946145.Structured_Design), Edward Yourdon and Larry L. Constantine, 1979
+- [*The New Hacker's Dictionary (3rd ed.)*](https://www.gutenberg.org/files/3008/3008-h/3008-h.htm), Eric Raymond, 1996
+- [*Organisational patterns of agile software development*](https://www.goodreads.com/book/show/756250.Organizational_Patterns_of_Agile_Software_Development), James Coplien & Neil Harrison, 2004
 - [*What do I think about Conway's Law now?*](https://www.allankellyassociates.co.uk/static/presentations/EuroPLoP2005/ConwaysLawFocusGroup.pdf), Lise Hvatum and Allan Kelly's at EuroPLoP 2005
 - [*Return to Conway's Law*](https://www.allankellyassociates.co.uk/archives/1169/return-to-conways-law/), Allan Kelly, 2006
+- [Release It!](), Michael Nygard, 2007
 - [*Conway's Law*](https://web.archive.org/web/20181022001505/http://traceinthesand.com:80/blog/2008/02/13/conways-law/), Ruth Malan, 2008
 - [*Conway's Law-ish*](https://web.archive.org/web/20200621234405/http://www.ruthmalan.com:80/Journal/2013/2013JournalMay.htm#Conways_Law_ish), 2013
 - [*Conway's Law Reverb*](https://www.ruthmalan.com/Journal/2014/2014JournalMay.htm#Conways_Law), Ruth Malan, 2014
