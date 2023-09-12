@@ -16,6 +16,7 @@ Over the years, Conway's Law has been articulated in many different ways, bringi
 
 References:
 
+- [The Article: Shades of Conway's Law]({% post_url 2021-05-07-shades-of-conways-law %})
 - [*How Do Committees Invent?*](https://www.melconway.com/Home/Committees_Paper.html), Melvin Conway, 1968
 - [*Structured Design*](https://www.goodreads.com/book/show/946145.Structured_Design), Edward Yourdon and Larry L. Constantine, 1979
 - [*The New Hacker's Dictionary (3rd ed.)*](https://www.gutenberg.org/files/3008/3008-h/3008-h.htm), Eric Raymond, 1996
