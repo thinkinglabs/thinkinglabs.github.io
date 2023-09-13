@@ -26,5 +26,6 @@ References:
 - [*Conway's Law*](https://web.archive.org/web/20181022001505/http://traceinthesand.com:80/blog/2008/02/13/conways-law/), Ruth Malan, 2008
 - [*Continuous Delivery and Conway’s Law*]({% post_url 2021-05-13-continuous-delivery-and-conways-law-allan-kelly %}), Allan Kelly, 2014
 - [*Toward Simplifying Application Development in a Dozen Lessons*](http://melconway.com/Home/pdf/simplify.pdf), Mel Conway, 2016
+- [*The Mirroring Hypothesis: theory, evidence, and exceptions*](https://www.hbs.edu/ris/Publication%20Files/Colfer%20Baldwin%20Mirroring%20Hypothesis%20Ind%20Corp%20Change-2016_8aa320ff-6aa6-42ef-b259-d139012faaf6.pdf), Colfer and Baldwin, 2016
 - [*Accelerate*](https://www.goodreads.com/pl/book/show/35747076), Nicole Forsgren, PhD and friends, 2018
 - [*Conway's Law Doesn't Apply to Rigid Designs*](https://verraes.net/2022/05/conways-law-vs-rigid-designs/), Mathias Verraes, 2022
