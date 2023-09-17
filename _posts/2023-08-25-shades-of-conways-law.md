@@ -12,7 +12,13 @@ conferences:
     date: 2023-08-25
 ---
 
-Over the years, Conway's Law has been articulated in many different ways, bringing new insights and consequences.
+In short, Conway's Law says any organisation that designs a system will come up with a system design that copies the organisational communication structures.
+
+Over the years, many many people paraphrased Conway's Law in many different ways.
+
+Every paraphrase brings new insights and non-negligible consequences. Sometimes giving the impression they contradict each other. However, in the end, they all come to the same conclusion. The organisation and the system keep each other in balance.
+
+To be competitive, we'd better understand and take advantage of this.
 
 References:
 
