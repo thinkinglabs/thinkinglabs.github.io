@@ -16,6 +16,8 @@ conferences:
   - name: Lean Agile Scotland 2022
     date: 2022-10-05
     video_link: https://vimeo.com/780287932
+  - name: ScanAgile 2023
+    date: 2023-03-29
   - name: ACCU Conf 2023
     date: 2023-04-19
     video_link: https://www.youtube.com/watch?v=G3PZo70KcSA
