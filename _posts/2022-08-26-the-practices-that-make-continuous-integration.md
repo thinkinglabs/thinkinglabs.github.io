@@ -32,3 +32,23 @@ Key takeaways:
 - Be able to define what a state of Continuous Integration is
 - Be able to enumerate the practices required to achieve Continuous Integration
 - Be able to understand the practices
+
+References:
+
+- [The Article Series: The Practices That Make Continuous Integration]({% post_url 2022-06-14-the-practices-that-make-continuous-integration %})
+- [Continuous Integration Certification](https://martinfowler.com/bliki/ContinuousIntegrationCertification.html), Martin Fowler
+- [Software Configuration Management Patterns](https://www.goodreads.com/book/show/367720.Software_Configuration_Management_Patterns), Steve Berczuk with Brad Appleton
+- [Continuous Integration](https://www.goodreads.com/book/show/1311542.Continuous_Integration), Paul Duval, Steve Matyas, Andrew Glover
+- [The Art of Agile Development](https://www.goodreads.com/book/show/1654215.The_Art_of_Agile_Development), James Shore, Shane Warden
+- [On DVCS, Continuous Integration and Feature Branches](https://continuousdelivery.com/2011/07/on-dvcs-continuous-integration-and-feature-branches/), Jez Humble
+- [Make Large Scale Changes using Branch-by-Abstraction](https://continuousdelivery.com/2011/05/make-large-scale-changes-incrementally-with-branch-by-abstraction/), Jez Humble
+- [Parallel Change](https://martinfowler.com/bliki/ParallelChange.html), Danilo Sato
+- [Introducing Branch By Abstraction](https://paulhammant.com/blog/branch_by_abstraction.html), Paul Hammant
+- [Branch by Abstraction](https://www.branchbyabstraction.com/), Paul Hammant
+- [Feature Toggles](https://martinfowler.com/articles/feature-toggles.html), Pete Hodgson
+- [The $440 Million Software Error at Knight Capital](https://www.henricodolfing.com/2019/06/project-failure-case-study-knight-capital.html), Henrico Dolfing
+- [Acceptance Testing for Continuous Delivery]({% post_url 2021-07-22-acceptance-testing-for-continuous-delivery-dave-farley %}), Dave Farley
+- [Continuous Integration on a Dollar a Day](http://www.jamesshore.com/v2/blog/2006/continuous-integration-on-a-dollar-a-day), James Shore
+- [Tools versus Practices – lessons from DIY](https://www.canscorpionssmoke.com/2017/11/08/tools-versus-practices-lessons-diy/)
+- [Toyota Kata](https://www.goodreads.com/es/book/show/6736366-toyota-kata), Mike Rother
+- [The Role of Continuous Delivery in IT and Organisational Performance](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2681909), Dr. Nicole Forsgren, Jez Humble

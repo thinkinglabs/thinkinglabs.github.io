@@ -50,6 +50,10 @@ To reach Continuous Integration a team has to adopt 14 practices that can be spl
 ![SketchNote from Lisi Hocke at SoCraTes 2022](/images/the-practices-that-make-continuous-integration/the-practices-that-make-continuous-integration-socrates-2022-lisi-hocke.png)
 *SketchNote from [Lisi Hocke](https://twitter.com/lisihocke) at [SoCraTes](https://www.socrates-conference.de) 2022, published with consent*
 
+## References
+
+- [The Talk: The Practices That Make Continuous Integration]({% post_url 2022-08-26-the-practices-that-make-continuous-integration %})
+
 ## Acknowledgments
 
 [Steve Smith](https://twitter.com/SteveSmith_Tech) for reviewing the very first draft of this article one year and a half ago to then suggest to splitting the article up into a series. Steve was the one who came up with the 3 categories: Team Work, Coding and Building.
