@@ -457,6 +457,30 @@ Lean Agile Scotland 2023
 >
 > -- [TingTing Li](https://www.linkedin.com/in/ACoAAAC5YnUBCozNR9aDGyoK4gM2d49L-LwodTo), [Sept 18, 2023](https://www.linkedin.com/feed/update/urn:li:activity:7108446092697980929)
 
+---
+
+My decision to step back from volunteering work in the community.
+
+---
+
+> Hugs 🤗 Thierry de Pauw the community is better because of your contributions.
+>
+> -- [Hibri Marzook](https://www.linkedin.com/in/ACoAAAC2Nr4B-4p9io6A7lFcH9ka8KtcEIZippI), [Sept 25, 2023](https://www.linkedin.com/feed/update/urn:li:activity:7112431911641194496)
+
+> I'm always impressed by your thoughtfulness, self awareness, and courage to make a tough decision (or delay it!). Please let me know if I can support from afar!
+>
+> -- [Olivia Vick](https://www.linkedin.com/in/ACoAABKJjBUBCmeobXc889oTTg3TBGG_8cfeA3M), [Sept 25, 2023](https://www.linkedin.com/feed/update/urn:li:activity:7112431911641194496)
+
+> Safe journey Thierry. The community is right behind you in this decision. Do what is right for you.
+>
+> -- [Mark Dalgarno](https://www.linkedin.com/in/ACoAAAA-KcwBKu40x3cOLgNLp7zkPDPF9bg1jz8), [Sept 25, 2023](https://www.linkedin.com/feed/update/urn:li:activity:7112431911641194496)
+
+---
+
+Agile Cambridge 2023
+
+---
+
 > Cat Swetel at Agile Cambridge??!! So jelly!  
 >
 > And @tdpauw does such a great job live-posting conferences!
