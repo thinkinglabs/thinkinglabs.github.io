@@ -394,3 +394,73 @@ Kindness after my expression of failure at #AlpesCraft ...
 > Oh yeah, doing stuff that is hard for you while charmingly telling the world to inspire people to do the same.
 >
 > -- Christina E., Jun 10, 2023
+
+---
+
+Lean Agile Scotland 2023
+
+---
+
+> Epic talk by Thierry de Pauw about Conways Law or rather the relationship between system and organisations architecture
+>
+> #systemdesign #Transformation #changemangement
+>
+> -- [Marcel Britsch](https://www.linkedin.com/in/marcelbritsch), [Sept 12, 2023](https://www.linkedin.com/posts/marcelbritsch_systemdesign-transformation-changemangement-activity-7107473403770478592-XB9F)
+
+> How often do we restructure our organisation without redesigning our product architecture?
+>
+> ALWAYS
+>
+> and yet we wonder why reorgs don’t result in fundamental changes in delivery - throughput, outcomes, all the things
+>
+> Org structures and ops models need to co-evolve with product architecture
+>
+> And yet we don’t bring architects into org design discussions
+>
+> We also don’t tend to start small, we design orgs and architecture big, upfront
+>
+> So much to think about with this fantastic talk by Thierry de Pauw #lascot
+>
+> -- [Neha Datt](https://www.linkedin.com/in/nehadatt), [Sept 12, 2023](https://www.linkedin.com/posts/nehadatt_lascot-activity-7107443951581712386-zMme)
+
+> It was a great talk, Thierry. Thanks for sharing it with us!
+>
+> -- [Lean Agile Scotland](https://www.linkedin.com/company/lean-agile-scotland/), [Sept 12, 2023](https://www.linkedin.com/feed/update/urn:li:activity:7107481348100997120)
+
+> Both Woody's and Thierry's talks were brilliant
+>
+> Sept 13, 2023
+>
+> ![Lean Agile Scotland 2023 feedback wall](/images/a-tribute-to-self/lascot-feedback-wall.jpg)
+
+> Follow the #lascot hashtag this week -- and @tdpauw  in particular. Lean Agile Scotland is one of our field's wonders!
+>
+> -- Ruth Malan ([@RuthMalan@mastodon.social](https://mastodon.social/@RuthMalan)), [Sept 13, 2023](https://mastodon.social/@RuthMalan/111058059088627509)
+
+> The live posting of @tdpauw makes me want to go to #lascot very hard
+>
+> -- Claudius Link ([@realn2s@infosec.exchange](https://mastodon.social/@realn2s@infosec.exchange)), [Sept 15, 2023](https://mastodon.social/@realn2s@infosec.exchange/111068863079991253)
+
+> Thanks a lot for the wonderful summary of my talk, Thierry.
+>
+> -- Susanne Kaiser ([@suksr@mastodon.social](https://mastodon.social/@suksr)), [Sept 14, 2023](https://mastodon.social/@suksr/111065722810649967)
+
+> Thank you for great talks!
+>
+> -- [Esther Stringer](https://www.linkedin.com/in/ACoAAAN7bJ4BQsxsSKe-UvzWBk8SiizuVusBSTA), [Sept 16, 2023](https://www.linkedin.com/feed/update/urn:li:activity:7108446092697980929)
+
+> Thanks for your talk on Tuesday night - it was great, and very practically useful to get language around systems vs organisations.
+>
+> -- [Nicholas Shearer](https://www.linkedin.com/in/ACoAAADdeesB2tB1nUjl7yf2r8Fl1PhqbWi31yA), [Sept 16, 2023](https://www.linkedin.com/feed/update/urn:li:activity:7108446092697980929)
+
+> Thank you for bringing “Shades of Conway’s Law” to the pre-conference, Thierry. It was an intriguing topic! I would love to hear more. 🙂
+>
+> -- [TingTing Li](https://www.linkedin.com/in/ACoAAAC5YnUBCozNR9aDGyoK4gM2d49L-LwodTo), [Sept 18, 2023](https://www.linkedin.com/feed/update/urn:li:activity:7108446092697980929)
+
+> Cat Swetel at Agile Cambridge??!! So jelly!  
+>
+> And @tdpauw does such a great job live-posting conferences!
+>
+> It’s Friday. Good day to follow @tdpauw!
+>
+> -- Ruth Malan ([@RuthMalan@mastodon.social](https://mastodon.social/@RuthMalan)), [Sept 29, 2023](https://mastodon.social/@RuthMalan/111148741013528063)
