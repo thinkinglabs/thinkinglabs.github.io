@@ -10,7 +10,7 @@ In [part 2 of this series - Why do Teams use Feature Branches?]({% post_url 2021
 
 ---
 
-Before we move on, let me first again clarify two definitions.
+Before we move on, let me first clarify two definitions.
 
 - What is *mainline*?
 - What is *Continuous Integration*?
