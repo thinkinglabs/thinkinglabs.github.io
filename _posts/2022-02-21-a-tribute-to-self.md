@@ -488,3 +488,9 @@ Agile Cambridge 2023
 > It’s Friday. Good day to follow @tdpauw!
 >
 > -- Ruth Malan ([@RuthMalan@mastodon.social](https://mastodon.social/@RuthMalan)), [Sept 29, 2023](https://mastodon.social/@RuthMalan/111148741013528063)
+
+---
+
+> I wanted to say that you’re a very kind and interesting person, and I’m glad we “met”.
+>
+> -- Neomeris, Oct 20, 2023
