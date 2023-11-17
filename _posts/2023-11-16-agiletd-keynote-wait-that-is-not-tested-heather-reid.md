@@ -1,7 +1,6 @@
 ---
-
 layout: note
-title: Wait! That's Not Tested
+title: "Keynote: Wait! That's Not Tested"
 event:
   name: Agile Testing Days
   date: 2023-11-16
