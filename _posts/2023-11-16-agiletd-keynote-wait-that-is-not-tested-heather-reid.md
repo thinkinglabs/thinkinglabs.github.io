@@ -6,7 +6,7 @@ event:
   date: 2023-11-16
 author:
   name: Heather Reid
-  twitter: heather_reiduff
+  linkedin: heather-reid-21198a69
 created_at: 2023-11-16
 category: notes
 tags: [ Testing, Agile Testing Days ]
