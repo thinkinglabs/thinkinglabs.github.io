@@ -10,7 +10,7 @@ author:
 created_at: 2021-12-04
 video: https://www.youtube.com/watch?v=IvWr29afDF8
 category: notes
-tags: [ Continuous Delivery ]
+tags: [ Continuous Delivery, Agile Testing Days ]
 ---
 
 Over the last 7 years I have heard lots of reasons on why people can't do Continuous Delivery. This is my summary of these reasons and why they are wrong.
