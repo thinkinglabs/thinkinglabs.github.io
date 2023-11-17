@@ -26,11 +26,12 @@
     {% include navigation.html shrink=true %}
 
     {% capture author %}
-    {% if page.author.name %}
-    {% if page.author.twitter %}<a href="https://twitter.com/{{ page.author.twitter }}">{% endif %}{{ page.author.name
-      }}{% if page.author.twitter %}</a>{% endif %}
+    {% if page.author.name and page.author.twitter %}
+      <a href="https://twitter.com/{{ page.author.twitter }}">{{ page.author.name}}</a>
+    {% elsif page.author.name and page.author.linkedin %}
+      <a href="https://linkedin.com/in/{{ page.author.linkedin }}">{{ page.author.name}}</a>
     {% elsif page.author %}
-    {{ page.author }}
+      {{ page.author }}
     {% endif %}
     {% endcapture %}
 
