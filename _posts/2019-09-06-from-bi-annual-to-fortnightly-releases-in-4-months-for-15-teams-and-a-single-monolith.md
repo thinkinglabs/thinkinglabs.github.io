@@ -22,6 +22,9 @@ conferences:
     video_link: https://www.youtube.com/watch?v=RNlA3lpNV8E
   - name: KanDDDinsky 2022
     date: 2022-11-01
+  - name: Lean Agile Scotland 2023
+    date: 2023-09-23
+    video_link: https://vimeo.com/879295599
 speakerdeck:
   data_id: a3cf8b65407147fc9d8875ce9c1a2dab
   download_link: https://files.speakerdeck.com/presentations/a3cf8b65407147fc9d8875ce9c1a2dab/From_bi-annual_to_fortnightly_releases_in_4_months_for_15_teams_and_a_single_monolith.pdf
