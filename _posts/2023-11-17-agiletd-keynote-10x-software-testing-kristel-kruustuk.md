@@ -7,7 +7,7 @@ event:
 author:
   name: Kristil Kruustuk
   linkedin: kristelviidik
-created_at: 2023-11-17
+created_at: 2023-11-14
 category: notes
 tags: [ Testing, Agile Testing Days ]
 ---

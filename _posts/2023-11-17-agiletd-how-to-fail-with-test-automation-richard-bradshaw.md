@@ -7,7 +7,7 @@ event:
 author:
   name: Richard Bradshaw
   linkedin: friendlytester
-created_at: 2023-11-17
+created_at: 2023-11-14
 category: notes
 tags: [ Testing, Agile Testing Days ]
 image: /images/agiletd-how-to-fail-with-test-automation-richard-bradshaw/how-to-fail-at-test-automation.jpg
