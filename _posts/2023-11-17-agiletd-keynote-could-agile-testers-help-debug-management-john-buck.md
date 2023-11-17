@@ -10,7 +10,7 @@ author:
 created_at: 2023-11-14
 category: notes
 tags: [ Testing, Agile Testing Days ]
-image: /images/agiletd-could-agile-testers-help-debug-management/sociocracy-how-to-add-feedback-loops.jpg
+image: /images/agiletd-keynote-could-agile-testers-help-debug-management-john-buck/sociocracy-how-to-add-feedback-loops.jpg
 ---
 
 Everyone at the Agile Testing Days Conference has heard the term “debugging.” You may also know the story of the first computer bug. In 1947, early in her career with the US Navy, Dr. Grace Hopper was helping prepare a Mark I computer to show to a visiting Navy Admiral. Something was wrong. As a good Software Tester she finally isolated the problem to mechanical relay #70. (Back then, mechanical relays opening and shutting served as 1s and 0s.) The arms of Relay #70 had smashed a moth. Dr. Hopper scraped off the moth and taped it in her lab journal: the world’s first computer bug!
@@ -63,7 +63,7 @@ Managers might feel threatened. They feel they are in charge. That’s the bug.
 
 Add feedback loops: introduce circles all the way up the hierarchy
 
-![Sociocracy: How to add feedback loops](/images/agiletd-could-agile-testers-help-debug-management/sociocracy-how-to-add-feedback-loops.jpg)
+![Sociocracy: How to add feedback loops](/images/agiletd-keynote-could-agile-testers-help-debug-management-john-buck/sociocracy-how-to-add-feedback-loops.jpg)
 
 This system can bring leadership from the bottom.
 
@@ -82,7 +82,7 @@ Circle Meetings: are feedback (testing) loops similar to retrospectives?
 
 once the first part has been tested, identify another part and start over again
 
-![Initiate experiments](/images/agiletd-could-agile-testers-help-debug-management/initiate-experiments.jpg)
+![Initiate experiments](/images/agiletd-keynote-could-agile-testers-help-debug-management-john-buck/initiate-experiments.jpg)
 
 ## Question: Can this work for government?
 
