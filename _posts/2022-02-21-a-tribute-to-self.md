@@ -20,6 +20,8 @@ A breath of kindness to remind me of the lovely people who appreciate me.
 
 *Update Apr 23, 2023: Re-called to add the kind words from [Cat Swetel](https://twitter.com/CatSwetel)*
 
+*Update Nov 18, 2023: Added [Agile Testing Days 2023](https://agiletestingdays.com/)*
+
 ---
 
 > [@tdpauw](https://twitter.com/tdpauw) demolishing the reasons for feature branching one by one [#XP2017](https://twitter.com/hashtag/XP2017?src=hashtag_click)
@@ -494,3 +496,17 @@ Agile Cambridge 2023
 > I wanted to say that you’re a very kind and interesting person, and I’m glad we “met”.
 >
 > -- Neomeris, Oct 20, 2023
+
+---
+
+Agile Testing Days 2023
+
+> I am so glad we got to meet again @tdpauw.bsky.social :)
+>
+> We must bump into each other more often :)
+>
+> -- Gitte Klitgaard ([@nativewired.bsky.social](https://bsky.app/profile/nativewired.bsky.social)), [Nov 17, 2023](https://bsky.app/profile/nativewired.bsky.social/post/3kefm2wejd72s)
+
+> I'm in awe of how you handled the terrible technical difficulties with the conference A/V and delivered such a positive and inspiring story! One of my hashtag#AgileTD highlights!
+>
+> -- [Lisa Crispin](https://www.linkedin.com/in/lisacrispin/), [Nov 17, 2023](https://www.linkedin.com/feed/update/urn:li:activity:7130828823759089669?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7130828823759089669%2C7131368863262240768%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287131368863262240768%2Curn%3Ali%3Aactivity%3A7130828823759089669%29)
