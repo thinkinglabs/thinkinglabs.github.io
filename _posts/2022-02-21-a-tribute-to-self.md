@@ -151,7 +151,7 @@ A breath of kindness to remind me of the lovely people who appreciate me.
 >
 > Prochaine étape (et je rigole pas) - tu penses pas à écrire un bouquin (lean mode, en construisant une audience via mailing list, etc)
 >
-> -- Martin Van Aken ([@martinvanaken](https://twitter.com/martinvanaken)), Aug 30 2021
+> -- Martin V., Aug 30 2021
 
 > EWC: when this personality type speaks (or writes), everyone better shut up and listen bc Every Word Counts. 💖
 >
@@ -183,7 +183,7 @@ A breath of kindness to remind me of the lovely people who appreciate me.
 
 > Thierry de laatste dagen/ weken ben je echt in een flow. Wat je schrijft de laatste weken, is close to geniaal. Elke keer er boink op.
 >
-> -- Yves Hanoulle ([@YvesHanoulle](https://twitter.com/YvesHanoulle)), Feb 14, 2022
+> -- Yves H., Feb 14, 2022
 
 > you ve been extremely caring and a breath of fresh air in this sea of unkind macho type latin men.
 >
@@ -199,7 +199,7 @@ A breath of kindness to remind me of the lovely people who appreciate me.
 
 > Tu pense refaire du speaking à un moment ? Ou écrire un livre (je rigole pas tu as le matos)
 >
-> -- [Martin Van Aken]([@martinvanaken](https://twitter.com/martinvanaken)), Feb 15, 2022
+> -- Martin V., Feb 15, 2022
 
 > Ah Twitter vient seulement de me montrer ta réponse. Congrats on being... "blunt".
 >
@@ -207,7 +207,7 @@ A breath of kindness to remind me of the lovely people who appreciate me.
 >
 > 1/le sujet est hot 2/le initial take est contreversial 3/Tu as réussi à être brutal dans l'accroche ("bullshit") mais après à fournir une réponse argumentée et documentée. Sans le brutal, tu n'auras pas suscité l'intérêt (désolé c'est pas moi qui fait les règles), mais tu as pu articuler aussi une réponse détaillée et pas en rester là. Nice job
 >
-> -- [Martin Van Aken]([@martinvanaken](https://twitter.com/martinvanaken)), Feb 15, 2022
+> -- Martin V., Feb 15, 2022
 
 > Thx Thierry! 💛
 >
@@ -385,8 +385,6 @@ Kindness received during [KanDDDinsky](https://kandddinsky.de) ...
 
 Kindness after my expression of failure at #AlpesCraft ...
 
----
-
 > You turning something that you dislike into a new goal.
 >
 > So you, so pretty much you 😍
@@ -400,8 +398,6 @@ Kindness after my expression of failure at #AlpesCraft ...
 ---
 
 Lean Agile Scotland 2023
-
----
 
 > Epic talk by Thierry de Pauw about Conways Law or rather the relationship between system and organisations architecture
 >
@@ -463,8 +459,6 @@ Lean Agile Scotland 2023
 
 My decision to step back from volunteering work in the community.
 
----
-
 > Hugs 🤗 Thierry de Pauw the community is better because of your contributions.
 >
 > -- [Hibri Marzook](https://www.linkedin.com/in/ACoAAAC2Nr4B-4p9io6A7lFcH9ka8KtcEIZippI), [Sept 25, 2023](https://www.linkedin.com/feed/update/urn:li:activity:7112431911641194496)
@@ -480,8 +474,6 @@ My decision to step back from volunteering work in the community.
 ---
 
 Agile Cambridge 2023
-
----
 
 > Cat Swetel at Agile Cambridge??!! So jelly!  
 >
@@ -507,6 +499,10 @@ Agile Testing Days 2023
 >
 > -- Gitte Klitgaard ([@nativewired.bsky.social](https://bsky.app/profile/nativewired.bsky.social)), [Nov 17, 2023](https://bsky.app/profile/nativewired.bsky.social/post/3kefm2wejd72s)
 
-> I'm in awe of how you handled the terrible technical difficulties with the conference A/V and delivered such a positive and inspiring story! One of my hashtag#AgileTD highlights!
+> I'm in awe of how you handled the terrible technical difficulties with the conference A/V and delivered such a positive and inspiring story! One of my #AgileTD highlights!
 >
 > -- [Lisa Crispin](https://www.linkedin.com/in/lisacrispin/), [Nov 17, 2023](https://www.linkedin.com/feed/update/urn:li:activity:7130828823759089669?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7130828823759089669%2C7131368863262240768%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287131368863262240768%2Curn%3Ali%3Aactivity%3A7130828823759089669%29)
+
+> I absolutely agree with Lisa. I took a lot of inspiration from your talk and it was so easy and fun to listen to you!
+>
+> -- [Kaiken Jung](https://www.linkedin.com/in/kaiken-junge-b64449239/), [Nov 20, 2023](https://www.linkedin.com/feed/update/urn:li:activity:7130828823759089669?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7130828823759089669%2C7131368863262240768%29&replyUrn=urn%3Ali%3Acomment%3A%28activity%3A7130828823759089669%2C7132351333533118464%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287131368863262240768%2Curn%3Ali%3Aactivity%3A7130828823759089669%29&dashReplyUrn=urn%3Ali%3Afsd_comment%3A%287132351333533118464%2Curn%3Ali%3Aactivity%3A7130828823759089669%29)
