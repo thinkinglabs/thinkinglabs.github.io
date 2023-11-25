@@ -59,7 +59,7 @@ Learning outcomes - you will be able to:
 References:
 
 - [Lean Enterprise](https://www.goodreads.com/book/show/18167218-lean-enterprise) (ch 6 Deploy Continuous Improvement), Jez Humble, Joanne Molesky, Barry O'Reilly
-- [Accelerate - Extra chapter: How to transform](https://twitter.com/jezhumble/status/976858653142732800?s=20), Jez Humble
+- [Supplemental chapter to Accelerate: How to transform](https://itrevolution.com/product/how-to-transform/), Jez Humble
 - [The Improvement Kata](http://www-personal.umich.edu/~mrother/The_Improvement_Kata.html), Mike Rother
 - [Measuring Continuous Delivery](https://leanpub.com/measuringcontinuousdelivery), Steve Smith
 - [The Goal](https://www.goodreads.com/book/show/113934.The_Goal), Eliyahu Goldratt
