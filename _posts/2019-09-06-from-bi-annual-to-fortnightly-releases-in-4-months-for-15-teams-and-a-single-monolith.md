@@ -22,6 +22,7 @@ conferences:
     video_link: https://www.youtube.com/watch?v=RNlA3lpNV8E
   - name: KanDDDinsky 2022
     date: 2022-11-01
+    video_link: https://www.youtube.com/watch?v=1IWxb4UufgE
   - name: Agile Manchester 2023
     date: 2023-05-12
   - name: Lean Agile Scotland 2023
