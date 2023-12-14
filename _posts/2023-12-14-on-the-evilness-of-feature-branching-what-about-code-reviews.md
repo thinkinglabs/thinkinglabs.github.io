@@ -15,7 +15,7 @@ Many teams think they are mature when they practice code reviews. Often, the inv
 
 > With PRs we created a world where the amount of time we spend reviewing code has become disproportionate to the time spent creating value.
 >
-> -- Seb Rose ([@sebrose](https://twitter.com/sebrose)), [Aug 29, 2022](https://twitter.com/tdpauw/status/1564280563195953152)
+> -- Seb Rose ([@sebrose@mastodon.scot](https://mastodon.scot/@sebrose)), Aug 29, 2022
 
 Code reviews are optional. This is a choice a team makes. Nowadays, teams spend more time in pull requests to gate merges to mainline instead of delivering value. It inhibits Continuous Integration, reduces feedback, consequentially impacts quality, increases time to market and therefore incurs an opportunity cost. If the team is mature enough, we might think they will do the right thing. Instead of thinking they are stupid and we need a process to fix for that. Our processes should follow [Theory Y over Theory X](https://en.wikipedia.org/wiki/Theory_X_and_Theory_Y).
 

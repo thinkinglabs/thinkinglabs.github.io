@@ -27,7 +27,7 @@ rather, the real reasons why teams are using them.
 3. [But Compliance!?]({% post_url 2022-02-22-on-the-evilness-of-feature-branching-but-compliance %})
 4. [The Problems]({% post_url 2022-05-30-on-the-evilness-of-feature-branching-the-problems %})
 5. [How To Avoid The Problems?]({% post_url 2022-06-14-on-the-evilness-of-feature-branching-how-to-avoid-the-problems %})
-6. What about Code Reviews?
+6. [What about Code Reviews?]({% post_url 2023-12-14-on-the-evilness-of-feature-branching-what-about-code-reviews%})
 7. What Are The Benefits of Trunk-Based Development?
 8. Where is the Evilness of Feature Branching?
 
