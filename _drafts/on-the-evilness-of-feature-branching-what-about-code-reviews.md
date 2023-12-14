@@ -7,7 +7,7 @@ category: articles
 tags: [Version Control, Continuous Integration, Code Review]
 ---
 
-Every time I suggest the adoption of trunk-based development, I always get that same question asked: What about Code Reviews? How do we do Code Reviews when we do not have branches anymore. This off course assumes code reviews can only be performed using Pull Requests.
+Every time I suggest the adoption of trunk-based development, I always get that one same question asked: What about Code Reviews? How do we do Code Reviews when we do not have branches anymore. Off course, this assumes code reviews can only happen with Pull Requests.
 
 ---
 
@@ -31,18 +31,27 @@ If, for some truly valuable reasons, the team cannot work in pairs or as an ense
 
 The first option is the most commonly practised one, i.e. the Pull Request model. But this time branches have a short lifetime, i.e. we merge back into mainline within a day, not longer. Many people I respect reported they had good experiences working this way. However, I have never seen this work. Most of the time the branch lives longer than anticipated. Because of the classic ping-pong happening between the reviewer and the reviewee. The reviewer is not immediately available. This causes the pull request to wait. Meanwhile, the reviewee starts new work to keep themselves busy. Once the reviewer has finally reviewed the pull request, it is now the reviewee who is not available. Obviously, they started new work while waiting for the review. All of this adds to the team's work in progress. From Lean Manufacturing we know that high levels of work in progress induces lower quality. How keeping people busy impacts quality.
 
-But my biggest concern regarding pull requests is they block the flow of work. It is a gating process that blocks the delivery of functionality. The code review becomes definitive to merge and to release. This again increases the time to market and introduces a non negligible opportunity cost. Finally, it disables timely feedback from production. It might happen we realise, once the feature finally arrives in production after a lengthy review, it is in fact not aligned any more with the user's needs.
+But my biggest concern regarding pull requests is they block the flow of work. It is a gating process that blocks the delivery of functionality. The code review becomes definitive to merging and to releasing. This again increases the time to market and introduces a non negligible opportunity cost. Finally, it disables timely feedback from production. It might happen we realise, once the feature finally arrives in production after a lengthy review, it is in fact no longer aligned with the user's needs.
 
-The second option is a not so well-known technique we had a very good experience with while coaching that novice team from [A Tale of Two Teams]({% post_url 2021-07-14-on-the-evilness-of-feature-branching-a-tale-of-two-teams %}).
+The second option is a not so well-known technique. But we had a very good experience with that one while coaching that novice team from [A Tale of Two Teams]({% post_url 2021-07-14-on-the-evilness-of-feature-branching-a-tale-of-two-teams %}). It is now commonly known as [Non-Blocking, Continuous Code Review]({% post_url 2023-05-02-non-blocking-continuous-code-reviews-a-case-study %}). The team reviews the code on mainline, after it was committed.
+
+We only had two rules in place. There was no hierarchy on who reviews who. Seniors review from seniors and juniors. Juniors review from seniors and juniors. This avoided to create any bottlenecks. Whenever someone finished work, or at the start of the day, before starting any new work, any team member would first look if code needed to be reviewed.
+
+Code reviews were not definitive to releasing anymore. It happened that unreviewed code landed in production. We might argue we run the risk of having bad quality code in production. Yes, that is true. And that has happened. But that was certainly not a problem. Bad quality is not a bug. Code reviews are not there to catch bugs. For that we have our automated tests. If the code passed all stages of the deployment pipeline and has been thoroughly tested, the code is in that case releasable. In our case, the purpose of the code review was to convey knowledge, a learning tool and increase code quality.
+
+Non-blocking, code reviews have as main benefit to never block the delivery of functionality. Like with pair and team programming it enables the fast flow of work through the value stream. To be honest, this only works when there is team commitment that any change is covered by an automated test, every commit will be reviewed and whenever a code issue is raised, it is handled with the highest priority to allow us to remove the bad quality code out of production as soon as possible.
+
+Having said all that, I still belief pair and team programming are a superior way of working. If for some reason, that is not possible, non-blocking code reviews is a valid alternative. But, in all sincerity, it might be difficult for regulated industries. In that event, pair and team programming are the only efficient option.
 
 ## Acknowledgments
 
-Glenkinchie and Redbreast for keeping me company while writing.
+Redbreast and Glenkinchie for the creative support.
 
 ## Bibliography
 
 - [Continuous Delivery and Code Reviews](https://groups.google.com/g/continuousdelivery/c/LIJ1nva9Oas/m/jv5Tt01IfZYJ) on Continuous Delivery Google Groups
 - [Accelerate](https://www.goodreads.com/book/show/35747076-accelerate), Dr. Nicole Forsgren, Jez Humble and Gene Kim
+- [Non-Blocking, Continuous Code Reviews - a case study]({% post_url 2023-05-02-non-blocking-continuous-code-reviews-a-case-study %})
 
 ## The Series
 
