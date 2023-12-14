@@ -41,6 +41,8 @@ Code reviews were not definitive to releasing anymore. It happened that unreview
 
 Non-blocking, code reviews have as main benefit to never block the delivery of functionality. Like with pair and team programming it enables the fast flow of work through the value stream. To be honest, this only works when there is team commitment that any change is covered by an automated test, every commit will be reviewed and whenever a code issue is raised, it is handled with the highest priority to allow us to remove the bad quality code out of production as soon as possible.
 
+As a side note, one day, that team had the internal auditors on the line. They were asking questions about our process because we did not follow the "standard" process which involved lots of checkbox ticking. We were a bit observed by the rest of the organisation as unprofessional. One team member genuinely explained our process. The auditors literally fell of their chair by the amount of automated checks and audit trails we had in our process.
+
 Having said all that, I still belief pair and team programming are a superior way of working. If for some reason, that is not possible, non-blocking code reviews is a valid alternative. But, in all sincerity, it might be difficult for regulated industries. In that event, pair and team programming are the only efficient option.
 
 ## Acknowledgments
