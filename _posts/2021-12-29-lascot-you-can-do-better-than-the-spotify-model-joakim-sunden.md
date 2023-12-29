@@ -10,7 +10,7 @@ author:
 created_at: 2021-12-28
 video: https://vimeo.com/240125835
 category: notes
-tags: [ Agile ]
+tags: [ Agile, Lean Agile Scotland ]
 ---
 
 Let's put aside the 'bubblegum and unicorns' of the Spotify Engineering Culture videos and talk about what doesn't quite work at Spotify, and how we're trying to solve it. This is a failure/learning report intended for coaches and other change agents who need encouragement that it's always hard AND it's always possible to improve.

@@ -40,7 +40,7 @@ Automated tests only cover what we know. They do not cover the many different un
 
 Code reviews, even with many eyes, are still limited in spotting errors. Research has found that the amount of additional bugs found does not scale linearly with the number of reviewer. There is a small maximum of useful reviewers, between two and four. Any additional reviewers above this number uncover bugs at a much lower rate. The [Heartbleed SSL security bug](https://en.wikipedia.org/wiki/Heartbleed) invalidated [Linus's Law](https://en.wikipedia.org/wiki/Linus%27s_law) - given enough eyeballs, bugs are shallow, as the bug went unnoticed for two years. It allowed hackers to view affected website's traffic unencrypted for two years.
 
-Of course we can try to predict user behaviour. But there are limitations in how much effort we put into trying to predict. And for sure, we will still miss ways of how our systems can be used. Exploratory testing will surely help in uncovering the unknowns. But still, production is the real test. So, for complex systems as IT systems are, our response can only be [probe-sense-respond](https://en.wikipedia.org/wiki/Cynefin_framework). We conduct safe to fail experiments. We do not do fail-safe design. If an experiment succeeds, we amplify it. If the experiment starts to fail we dampen it. We get emergent order.
+Of course we can try to predict user behaviour. But there are limitations in how much effort we put into trying to predict. And for sure, we will still miss ways of how our systems can be used. Exploratory testing will surely help in uncovering the unknowns. But still, production is the real test. So, for complex systems as IT systems are, our response can only be [probe-sense-respond]({% post_url 2023-12-29-cynefin-framework-dave-snowden %}#complex). We conduct safe to fail experiments. We do not do fail-safe design. If an experiment succeeds, we amplify it. If the experiment starts to fail we dampen it. We get emergent order.
 
 ## Conclusion
 
@@ -55,4 +55,4 @@ The real reason teams turn to pull requests is lack of skills and practices and 
 - [Linus's Law](https://en.wikipedia.org/wiki/Linus%27s_law), Wikipedia
 - [Facts and Fallacies about Software Engineering](https://www.goodreads.com/book/show/83792.Facts_and_Fallacies_of_Software_Engineering), Robert Glass
 - [Given Enough Money, All Bugs Are Shallow](https://blog.codinghorror.com/given-enough-money-all-bugs-are-shallow/), Coding Horror
-- [Cynefin framework](https://en.wikipedia.org/wiki/Cynefin_framework)
+- [Notes on the Cynefin framework]({% post_url 2023-12-29-cynefin-framework-dave-snowden %})
