@@ -32,7 +32,7 @@ I would add to this list, the fire-and-forget mode of building that involves pus
 
 Often, this reality is painful for teams to admit. To avoid this harsh confrontation, they adopt feature branches and pull requests to treat the symptoms, but not the cause. As a result, teams are mostly not aware of the symptoms, do not even see they could go faster and as such do not improve anymore. The hardest part of change is accepting the reality, letting go of the habitual beliefs and the commonly accepted practices and being open to other, oftentimes uncommon but so much more effective practices.
 
-> If it is hard, do it more often. Bring the pain forward.
+> If it hurts, do it more often. Bring the pain forward.
 >
 > -- Dave Farley, Continuous Delivery book
 
