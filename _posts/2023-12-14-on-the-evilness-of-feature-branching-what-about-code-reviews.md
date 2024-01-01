@@ -2,7 +2,6 @@
 layout: article
 title: On the Evilness of Feature Branching - What about Code Reviews
 author: Thierry de Pauw
-meta: 11 min read
 category: articles
 tags: [Version Control, Continuous Integration, Code Review]
 ---
