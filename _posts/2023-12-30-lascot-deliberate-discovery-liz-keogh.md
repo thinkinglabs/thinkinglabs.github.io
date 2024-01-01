@@ -3,7 +3,7 @@ layout: note
 title: Deliberate Discovery
 author:
   name: Liz Keogh
-  website: <https://lizkeogh.com/>
+  website: https://lizkeogh.com/
 event:
   name: Lean Agile Scotland
   date: 2018-10-04
