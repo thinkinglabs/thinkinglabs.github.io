@@ -159,5 +159,4 @@ The [On the Evilness of Feature Branching]({% post_url 2021-04-26-on-the-evilnes
 4. [The Problems]({% post_url 2022-05-30-on-the-evilness-of-feature-branching-the-problems %})
 5. [How To Avoid The Problems?]({% post_url 2022-06-14-on-the-evilness-of-feature-branching-how-to-avoid-the-problems %})
 6. [What about Code Reviews?]({% post_url 2023-12-14-on-the-evilness-of-feature-branching-what-about-code-reviews%})
-7. What Are The Benefits of Trunk-Based Development?
-8. Where is the Evilness of Feature Branching?
+7. [Where is the Evilness?]({% post_url 2024-01-06-on-the-evilness-of-feature-branching-where-is-the-evilness %})
