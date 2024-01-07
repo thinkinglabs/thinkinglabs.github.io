@@ -506,3 +506,50 @@ Agile Testing Days 2023
 > I absolutely agree with Lisa. I took a lot of inspiration from your talk and it was so easy and fun to listen to you!
 >
 > -- [Kaiken Jung](https://www.linkedin.com/in/kaiken-junge-b64449239/), [Nov 20, 2023](https://www.linkedin.com/feed/update/urn:li:activity:7130828823759089669?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7130828823759089669%2C7131368863262240768%29&replyUrn=urn%3Ali%3Acomment%3A%28activity%3A7130828823759089669%2C7132351333533118464%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287131368863262240768%2Curn%3Ali%3Aactivity%3A7130828823759089669%29&dashReplyUrn=urn%3Ali%3Afsd_comment%3A%287132351333533118464%2Curn%3Ali%3Aactivity%3A7130828823759089669%29)
+
+---
+
+I'm a nobody ...
+
+> That’s kind of the same for all pioneers in a less known field… it’s only years later people recognise the importance of the contributions of some individuals that were ahead of their times… keep on focussing and deepening on quality… adoption is largely out of your control… ;-)
+>
+> of course you should…
+>
+> Example… what about your non-blocking continuous code reviews concept…
+>
+> -- [Stefan De Moerloose](https://www.linkedin.com/in/stefandemoerloose), [Dec 22, 2023](https://www.linkedin.com/feed/update/urn:li:activity:7142462151943680000?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7142462151943680000%2C7142490232397996032%29&replyUrn=urn%3Ali%3Acomment%3A%28activity%3A7142462151943680000%2C7142582925027397632%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287142490232397996032%2Curn%3Ali%3Aactivity%3A7142462151943680000%29&dashReplyUrn=urn%3Ali%3Afsd_comment%3A%287142582925027397632%2Curn%3Ali%3Aactivity%3A7142462151943680000%29)
+
+> You're a somebody to me Thierry ! And many others in the industry who know you and your contributions. Your work is invaluable, your humility admirable. I have mentioned you and sent your work to several colleagues. Most importantly you're the nicest person I know! Happy New Year with your loved ones 🤗 🎉 🎊
+>
+> -- [Çiğdem Saka Jackson](https://www.linkedin.com/in/%C3%A7i%C4%9Fdem-saka-jackson-7885a111/), [Dec 22, 2023](https://www.linkedin.com/feed/update/urn:li:activity:7142462151943680000?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7142462151943680000%2C7142871414478405635%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287142871414478405635%2Curn%3Ali%3Aactivity%3A7142462151943680000%29)
+
+> ...
+>
+> And FWIW you are a name that comes to mind when I think of who I need to engage as I start some follow up work on. the SCM patterns.
+> 
+> -- [Steve Berczuk](https://www.linkedin.com/in/steveberczuk/), [Dec 22, 2023](https://www.linkedin.com/feed/update/urn:li:activity:7142462151943680000?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7142462151943680000%2C7142567507214700545%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287142567507214700545%2Curn%3Ali%3Aactivity%3A7142462151943680000%29)
+
+> It seems shallow (understanding of) concepts spreads faster than the hard-core engineering work.
+>
+> You're talking about concepts that are hard to grasp for people who don't do the work (but like to play around with fantasies about agility) or don't want to do the work (being comfortable with the fore-mentioned fantasies).
+>
+> Among the knowledgeable, you're very well known. It's alas a small crew of pioneers and pirates 😁
+>
+> When I mention a Nicole Forsgren for example, with all her research and books: nobody knows her... I don't get it either, but I consider you at that level !
+>
+> -- [Olivier Costa](https://www.linkedin.com/in/oliviercosta/), [Dec 22, 2023](https://www.linkedin.com/feed/update/urn:li:activity:7142462151943680000?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7142462151943680000%2C7142611470424428544%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287142611470424428544%2Curn%3Ali%3Aactivity%3A7142462151943680000%29)
+
+> ...
+>
+> I read and listen to what you say, and forward the stuff I find relevant to my followers and collegues.
+>
+> What I say and talk about is a summary of all my inputs, and you are one that gives me input.
+>
+> Keep it up ❤️
+>
+> -- [Terje Heen](https://www.linkedin.com/in/terje-heen-82663b2/), [Dec 22, 2023](https://www.linkedin.com/feed/update/urn:li:activity:7142462151943680000?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7142462151943680000%2C7142562494924988417%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287142562494924988417%2Curn%3Ali%3Aactivity%3A7142462151943680000%29)
+
+> At BREWT everyone knows and respects you. It might not feel like much but to us your presence is always valued. You're always welcome at our meetups ... it's a community that sees you and values you.
+>
+> -- [Geert van de Lisdonk](https://www.linkedin.com/in/vdlgeert/), [Dec 22, 2023](https://www.linkedin.com/feed/update/urn:li:activity:7142462151943680000?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7142462151943680000%2C7143560084285976577%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287143560084285976577%2Curn%3Ali%3Aactivity%3A7142462151943680000%29)
+
