@@ -24,6 +24,8 @@ A breath of kindness to remind me of the lovely people who appreciate me.
 
 *Update Jan 7, 2024: Added I'm a nobody*
 
+*Update Jan 21, 2024: Added the rant about intro-video's*
+
 ---
 
 > [@tdpauw](https://twitter.com/tdpauw) demolishing the reasons for feature branching one by one [#XP2017](https://twitter.com/hashtag/XP2017?src=hashtag_click)
@@ -555,3 +557,11 @@ I'm a nobody ...
 >
 > -- [Geert van de Lisdonk](https://www.linkedin.com/in/vdlgeert/), [Dec 22, 2023](https://www.linkedin.com/feed/update/urn:li:activity:7142462151943680000?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7142462151943680000%2C7143560084285976577%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287143560084285976577%2Curn%3Ali%3Aactivity%3A7142462151943680000%29)
 
+---
+
+Rant about conferences requiring submitters to submit an intro-video
+
+> Conference organizers that insist on this, clearly haven't seen you in action, Thierry 😉. 
+> It would be really unfortunate to miss out on inspirational speakers like yourself due to hurdles like that. Thanks for sharing!
+>
+> -- Tom De Raedt, [Jan 16, 2024](https://www.linkedin.com/feed/update/urn:li:activity:7152939162894028800?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7152939162894028800%2C7152967176742715393%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287152967176742715393%2Curn%3Ali%3Aactivity%3A7152939162894028800%29)
