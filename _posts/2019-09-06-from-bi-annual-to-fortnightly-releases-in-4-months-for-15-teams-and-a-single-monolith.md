@@ -32,7 +32,7 @@ speakerdeck:
   data_id: a3cf8b65407147fc9d8875ce9c1a2dab
   download_link: https://files.speakerdeck.com/presentations/a3cf8b65407147fc9d8875ce9c1a2dab/From_bi-annual_to_fortnightly_releases_in_4_months_for_15_teams_and_a_single_monolith.pdf
 youtube:
-  data_id: OUIOYIQ1yTA
+  data_id: 1IWxb4UufgE
 redirect_from:
   - /talks/15-teams-1-monolith-4-months-to-achieve-continuous-delivery
   - /talks/2019/09/06/15-teams-1-monolith-4-months-to-achieve-continuous-delivery.html
