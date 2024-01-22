@@ -10,7 +10,7 @@ During this whole article series - [On the Evilness of Feature Branching]({% pos
 
 ---
 
-*Update Jan 22nd, 2024: Mention the need for refactoring skills.*
+*Update Jan 22nd, 2024: Mention the need for refactoring skills as [mentioned by Jay Bazuzi](https://mastodon.online/@JayBazuzi/111720839177070384).*
 
 ---
 
@@ -62,6 +62,8 @@ Clearly, success is optional. It is easier for teams to stay in the comfort of f
 In my humble opinion, feature branching is for the risk-averse, fixed mindset. If teams are aware of that, it is a perfectly acceptable choice. But do not expect delivery performance. Do not push quality and delivery performance expectations on teams. Under those circumstances, teams can only slowly burn out ... And this impacts organisational performance.
 
 ## Acknowledgments
+
+[Jay Bazuzi](https://mastodon.online/@JayBazuzi) for suggesting to add the need for refactoring skills.
 
 Black Bottle and Tomatin for the creative support.
 
