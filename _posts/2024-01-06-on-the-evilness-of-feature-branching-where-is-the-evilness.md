@@ -45,13 +45,13 @@ From my humble experience helping organisations to reach a better IT delivery ex
 
    Alright, 30 seconds might be out of reach, though. But [5 minutes should be the target]({% post_url 2022-09-28-the-practices-that-make-continuous-integration-building %}#practice-14-have-a-fast-build). Ten minutes should be the maximum.
 
-Because of all the above, we can conclude that feature branching is a treatment for symptoms teams experience because they lack the proper skills and practices. It is not a solution to a root cause. As a consequence, feature branches tend to hide the real problems. They hinder teams from improving. Finally yet importantly, feature branches keep teams in a sub-optimal state.
+Because of all the above, we can conclude that feature branching is a treatment for symptoms teams experience because they lack the proper skills and practices. It is not a solution to a root cause. It is a symptom of a set of beliefs that work against agility. As a consequence, feature branches tend to hide the real problems. They hinder teams from improving. Finally yet importantly, feature branches keep teams in a sub-optimal state.
 
 As opposed, trunk-based development will uncover all these problems immediately. It allows the team to truly do something about this. Inevitably, they can improve!
 
 ## Final Thoughts
 
-Clearly, success is optional. It is easier for teams to stay in the comfort of feature branches. They do not have to go through the demanding thinking ahead that goes with trunk-based development. It happened to me many times I had to revert changes because I made them in the wrong order or I made too big changes at once. This requires practice, many times. However, trunk-based development drives down stress, fatigue and burnout, together with an unseen reduction of risks. As a side effect, it unleashes incredible quality and delivery performance. Look at that! Why then stay in that comfort zone when it does not provide any benefits other than being comfortable and avoiding hard thinking?
+Clearly, success is optional. It is easier for teams to stay in the comfort of feature branches. They do not have to go through the demanding thinking ahead that goes with trunk-based development. It happened to me many times I had to revert changes because I made them in the wrong order or I made too big changes at once. This requires practice, many times. However, trunk-based development drives down stress, fatigue and burnout, together with an unseen reduction of risks. As a side effect, it unleashes incredible quality and delivery performance. Look at that! Why then stay in that comfort zone when it does not provide any benefits other than being comfortable and avoiding the hard thinking?
 
 In my humble opinion, feature branching is for the risk-averse, fixed mindset. If teams are aware of that, it is a perfectly acceptable choice. But do not expect delivery performance. Do not push quality and delivery performance expectations on teams. Under those circumstances, teams can only slowly burn out ... And this, impacts organisational performance.
 
