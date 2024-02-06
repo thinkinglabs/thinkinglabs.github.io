@@ -22,7 +22,7 @@ This team went from a bunch of rag-tags to becoming a reference team in the orga
 References:
 
 - [Optimizing the Software development process for continuous integration and flow of work](https://itnext.io/optimizing-the-software-development-process-for-continuous-integration-and-flow-of-work-56cf614b3f59), Martin Mortensen
-- The Article: [Non-Blocking Continuous Code Reviews, a Case Study](https://thinkinglabs.io/articles/2023/05/02/non-blocking-continuous-code-reviews-a-case-study.html), Thierry de Pauw
+- The Article: [Non-Blocking Continuous Code Reviews, a Case Study]({% post_url 2023-05-02-non-blocking-continuous-code-reviews-a-case-study %}), Thierry de Pauw
 - [Code Complete](https://www.goodreads.com/book/show/4845.Code_Complete), Steve McConnell
 - [Facts and Fallacies of Software Engineering](https://www.goodreads.com/book/show/83792.Facts_and_Fallacies_of_Software_Engineering), Robert Glass
 - [Joel on Software](https://www.joelonsoftware.com/), Joel Spolsky
@@ -31,5 +31,5 @@ References:
 - [From Async Code Reviews to Co-Creation Patterns](https://www.infoq.com/articles/co-creation-patterns-software-development/), Dragan Stepanović
 - [I Hate Pull Requests](https://medium.com/@pia.fak.sunnanbo/i-hate-pull-requests-17836dd3cc38), Pia Fåk Sunnanbo
 - [Problems with Pull Requests and How to Fix Them](https://gregoryszorc.com/blog/2020/01/07/problems-with-pull-requests-and-how-to-fix-them/), Gregory Szorc
-- [On the Evilness of Feature Branching - But Compliance](https://thinkinglabs.io/articles/2022/02/22/on-the-evilness-of-feature-branching-but-compliance.html), Thierry de Pauw
+- [On the Evilness of Feature Branching - But Compliance]({% post_url 2022-02-22-on-the-evilness-of-feature-branching-but-compliance %}), Thierry de Pauw
 - [How to make sure tests are of quality](https://www.linkedin.com/posts/tdpauw_in-all-my-debunking-of-version-control-branches-activity-7142800577901592576-zhqS), Thierry de Pauw, a discussion on LinkedIn

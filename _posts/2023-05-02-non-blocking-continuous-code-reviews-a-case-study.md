@@ -87,6 +87,7 @@ For CVS and SubVersion, this is *trunk*. For Git, this is the remote *main* bran
 ## Bibliography
 
 - [Optimizing the Software development process for continuous integration and flow of work](https://itnext.io/optimizing-the-software-development-process-for-continuous-integration-and-flow-of-work-56cf614b3f59), Martin Mortensen
+- The Talk: [Non-Blocking Continuous Code Reviews - a Case Study]({% post_url 2024-02-06-non-blocking-continuous-code-reviews-a-case-study %})
 
 ## Acknowledgment
 
