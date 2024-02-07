@@ -26,6 +26,8 @@ A breath of kindness to remind me of the lovely people who appreciate me.
 
 *Update Jan 21, 2024: Added the rant about intro-video's*
 
+*Update Feb 6, 2024: Added [CfgMgmtCamp](https://cfgmgmtcamp.eu/)*
+
 ---
 
 > [@tdpauw](https://twitter.com/tdpauw) demolishing the reasons for feature branching one by one [#XP2017](https://twitter.com/hashtag/XP2017?src=hashtag_click)
@@ -570,6 +572,14 @@ Rant about conferences requiring submitters to submit an intro-video
 
 Speaking at the CfgMgmtCamp 2024 single track.
 
+> Good Luck! I've not heard you speak, but you clearly know your stuff.
+>
+> ...
+>
 > you raise the key issues and ask the right questions. Which is hard to do out of ignorance. And you are humble.
-> 
+>
 > -- Steve Berczuk, [Feb 5, 2024](https://www.linkedin.com/feed/update/urn:li:activity:7160363455080775680?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7160363455080775680%2C7160381079554547712%29&replyUrn=urn%3Ali%3Acomment%3A%28activity%3A7160363455080775680%2C7160394953171324928%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287160381079554547712%2Curn%3Ali%3Aactivity%3A7160363455080775680%29&dashReplyUrn=urn%3Ali%3Afsd_comment%3A%287160394953171324928%2Curn%3Ali%3Aactivity%3A7160363455080775680%29)
+>
+> I've heard Thierry de Pauw speak and I can confirm he is a great speaker who knows his stuff.
+>
+> -- [Giovanni Asproni](https://www.linkedin.com/in/gasproni/), [Feb 7, 2024](https://www.linkedin.com/feed/update/urn:li:activity:7160363455080775680?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7160363455080775680%2C7160381079554547712%29&replyUrn=urn%3Ali%3Acomment%3A%28activity%3A7160363455080775680%2C7160986213640757249%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287160381079554547712%2Curn%3Ali%3Aactivity%3A7160363455080775680%29&dashReplyUrn=urn%3Ali%3Afsd_comment%3A%287160986213640757249%2Curn%3Ali%3Aactivity%3A7160363455080775680%29)
