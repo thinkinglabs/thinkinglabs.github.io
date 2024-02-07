@@ -565,3 +565,11 @@ Rant about conferences requiring submitters to submit an intro-video
 > It would be really unfortunate to miss out on inspirational speakers like yourself due to hurdles like that. Thanks for sharing!
 >
 > -- Tom De Raedt, [Jan 16, 2024](https://www.linkedin.com/feed/update/urn:li:activity:7152939162894028800?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7152939162894028800%2C7152967176742715393%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287152967176742715393%2Curn%3Ali%3Aactivity%3A7152939162894028800%29)
+
+---
+
+Speaking at the CfgMgmtCamp 2024 single track.
+
+> you raise the key issues and ask the right questions. Which is hard to do out of ignorance. And you are humble.
+> 
+> -- Steve Berczuk, [Feb 5, 2024](https://www.linkedin.com/feed/update/urn:li:activity:7160363455080775680?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7160363455080775680%2C7160381079554547712%29&replyUrn=urn%3Ali%3Acomment%3A%28activity%3A7160363455080775680%2C7160394953171324928%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287160381079554547712%2Curn%3Ali%3Aactivity%3A7160363455080775680%29&dashReplyUrn=urn%3Ali%3Afsd_comment%3A%287160394953171324928%2Curn%3Ali%3Aactivity%3A7160363455080775680%29)
