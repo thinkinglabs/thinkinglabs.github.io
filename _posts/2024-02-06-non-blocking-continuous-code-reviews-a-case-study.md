@@ -19,6 +19,8 @@ The usual way to achieve fast efficient and effective Continuous Code Reviews wi
 In 2012, a novice team practising trunk-based development put in place a fairly uncommon but efficient alternative to implementing continuous code reviews on mainline without ever blocking the flow of delivery.
 This team went from a bunch of rag-tags to becoming a reference team in the organisation, with auditors falling on the floor because of the amount of quality the team delivered.
 
+[TLDR;](https://www.linkedin.com/feed/update/urn%3Ali%3Aactivity%3A7160681409039228928/) by [Michael Lihs](https://www.linkedin.com/in/michael-lihs/) on LinkedIn
+
 References:
 
 - [Optimizing the Software development process for continuous integration and flow of work](https://itnext.io/optimizing-the-software-development-process-for-continuous-integration-and-flow-of-work-56cf614b3f59), Martin Mortensen
