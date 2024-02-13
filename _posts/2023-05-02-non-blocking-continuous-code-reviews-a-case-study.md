@@ -68,13 +68,21 @@ Once, the team was contacted by internal auditors because we did not follow the 
 
 Back then, there was tooling available to support Non-Blocking Reviews:
 
-- With the team, we used [Atlassian Crucible](https://www.atlassian.com/software/crucible). We added in every commit a ticket number. The tool allows grouping all commits based on a ticket number to create a code review. The state of that tool is unclear at the moment.
+- With the team, we used [Atlassian Crucible](https://www.atlassian.com/software/crucible). We tagged every commit with the feature ticket number. The tool allows to group all commits based on a ticket number to create a code review. The state of that tool is unclear at the moment.
 - JetBrains had a similar tool called [UpSource](https://www.jetbrains.com/upsource/). It has been discontinued.
-- There was [Phabricator](https://www.phacility.com/phabricator/) from Facebook. That has also been discontinued.
+- There was [Phabricator](https://www.phacility.com/phabricator/) from Facebook. That has also been discontinued. Though, there seem to exist a fork, [Phorge](https://phorge.it).
 
 Although these tools help reach the fast flow of work, vendors are discontinuing these tools in favour of Pull Request-based tooling.
 
 At the 2022 SoCraTes Germany unconference, I met [Tomas Skogberg](https://twitter.com/tskogberg). He works for [Auctionet](https://twitter.com/auctionetdev). Tomas shared they practice trunk-based development for ten years. Being confronted with the same situation, Auctionet decided to implement their own code review tool, [ex-remit](https://github.com/barsoom/ex-remit), for Non-Blocking Reviews which is open sourced.
+
+There is also [Gerrit](), implemented by Guido van Rossum, the creator of Python, for the Android teams at Google.
+
+Recently, I discovered [ReviewBoard]() which seems to work in a similar way as Atlassian Crucible.
+
+## No Tooling
+
+But, in all truth, we do not necessarily need any tooling for running code reviews. An engineer can as well guide the team through the code and have a discussion. Though, if we need an audit-trail of reviews, tooling will help.
 
 ## Definitions
 

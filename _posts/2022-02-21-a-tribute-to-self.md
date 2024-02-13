@@ -583,3 +583,7 @@ Speaking at the CfgMgmtCamp 2024 single track.
 > I've heard Thierry de Pauw speak and I can confirm he is a great speaker who knows his stuff.
 >
 > -- [Giovanni Asproni](https://www.linkedin.com/in/gasproni/), [Feb 7, 2024](https://www.linkedin.com/feed/update/urn:li:activity:7160363455080775680?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7160363455080775680%2C7160381079554547712%29&replyUrn=urn%3Ali%3Acomment%3A%28activity%3A7160363455080775680%2C7160986213640757249%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287160381079554547712%2Curn%3Ali%3Aactivity%3A7160363455080775680%29&dashReplyUrn=urn%3Ali%3Afsd_comment%3A%287160986213640757249%2Curn%3Ali%3Aactivity%3A7160363455080775680%29)
+
+> Well, as someone who’s met you and seen you talk: you’ll do fantastic, I like your presentation style and am a super fan of your blog posts, so extrapolating from that: you’ll rock it.
+>
+> -- [Gerald Benischke](https://www.linkedin.com/in/gerald-benischke-9811b663/), [Feb 11, 2024](https://www.linkedin.com/feed/update/urn:li:activity:7160363455080775680?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7160363455080775680%2C7162049457893658625%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287162049457893658625%2Curn%3Ali%3Aactivity%3A7160363455080775680%29)
