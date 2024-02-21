@@ -7,7 +7,7 @@ tags: [Code Review]
 image: /images/the-good-and-the-dysfunctional-of-pull-requests/patch-file.png
 ---
 
-Now and then, I rant about Pull Requests on social media. The rants are on the inefficiencies and the fairly little value of Pull Requests compared to their cost. The friends who understand lean principles appreciate my rants with applause and cheering. On the other hand, there are a fair share of somehow offended people who feel the need to belittle and call unprofessionalism. I guess it is time to provide some deeper argumentation than social media allows.
+Now and then, I rant about Pull Requests on social media. The rants are on the inefficiencies and the fairly low value of Pull Requests compared to their cost. The friends who understand lean principles appreciate my rants with applause and cheering. On the other hand, there is a fair share of somehow offended people who feel the need to belittle and call unprofessionalism. I guess it is time to provide some deeper argumentation than social media allows.
 
 ---
 
@@ -41,7 +41,7 @@ Then in 2008, [GitHub popularised the Pull Request](https://github.blog/2008-02-
 
 Pull Requests are designed to make it easier to accept contributions from the outside world, from untrusted people we do not know about.
 
-For the Open Source Software (OSS) world, the Pull Request makes absolute sense. That was a game-changer. It suddenly made it easy for people outside the core team to commit. In spite of that, the core team can vet that change, suggest improvements and eventually integrate the change. That is the good part about Pull Requests. It improved collaboration and co-creation for Open Source Software.
+For the Open Source Software (OSS) world, the Pull Request makes absolute sense. That was a game-changer. It suddenly made it easy for people outside the core team to commit. Despite that, the core team can vet that change, suggest improvements and eventually integrate the change. That is the good part about Pull Requests. It improved collaboration and co-creation for Open Source Software.
 
 ## The Dysfunctional
 
@@ -69,7 +69,7 @@ If there is no mechanism in place to curate and train effective code reviews, it
 
 That too, I have seen and experienced as a senior. One day, a team lead comes to me: "*You have approved this and it broke something in production. You should have asked them to add so and so to prevent the problem.*". If a team lead wants team members to take responsibility, to unblock features, they do not act like that. That will have the opposite effect. Team members will not take any initiative anymore. If they do, there is blame when failures happen. Guess what? Failures happen, all the time. That is a fact of life. That is human. That is also how complex systems function. The better answer would be, how can we design the system to avoid this or how can we make sure this is not a big deal so we can easily cope with that?
 
-Fifth, code reviews should not be gatekeeping, which Pull Requests definitively are. The change is accepted or not. As long as it is not accepted, it simply does not arrive into production in the hands of the user. This means functionality, or worse bug fixes are not delivered as long as the review is not finished, and the Pull Request is not accepted and merged. As a result, there is no value delivery. Remember, the goal of any organisation is to make money. At this point, as long as we do not deliver, no money is generated. On the contrary, we incur a cost of delay and an opportunity cost. That is, we loose money.
+Fifth, code reviews should not be gatekeeping, which Pull Requests definitively are. The change is accepted or not. As long as it is not accepted, it simply does not arrive in production in the hands of the user. This means functionality, or worse bug fixes are not delivered as long as the review is not finished, and the Pull Request is not accepted and merged. As a result, there is no value delivery. Remember, the goal of any organisation is to make money. At this point, as long as we do not deliver, no money is generated. On the contrary, we incur a cost of delay and an opportunity cost. That is, we lose money.
 
 > Would somebody explain to me how a PR that triggers a code review isn’t just a waterfall-phased gate? I see a lot of ppl defending the practice, but I see very little agility in it. Personally, I don’t see reverting to waterfall as necessary or desirable when alternatives exist.
 >
@@ -83,7 +83,7 @@ But there is more. Pull Requests come with a non-negligible transaction cost.
 >
 > The cost of sending a batch to the next stage.
 
-Let us say we want to buy some goods online. To deliver the goods, that cost us 3 EUR. That is the transaction cost. In that case, it is not opportune to buy only one good of 1 EUR. This will not compensate for the transaction cost. Therefore, we will batch up goods to obtain a buying price that is a multiple of the transaction cost so that the transaction cost is enough offset.
+Let us say we want to buy some goods online. To deliver the goods, that cost us 3 EUR. That is the transaction cost. In that case, it is not opportune to buy only one good of 1 EUR. This will not compensate for the transaction cost. Therefore, we will batch up goods to obtain a buying price that is a multiple of the transaction cost so that the transaction cost is offset enough.
 
 Keep in mind, when talking about transaction costs, delays are also one type of transaction cost. This is what precisely happens with Pull Requests.
 
@@ -103,7 +103,7 @@ Because of the high cost, team members are incentivised to package more changes 
 
 It is uncomfortable for people to just wait for a Pull Request to be approved. After all, anyone wants to feel productive. Which is why, they will start new work. This incentivises the creation of more work in progress and loads of context-switching. Work in progress is inventory. Inventory is money, money stuck into the system. It is money the organisation has invested but that does not generate any return unless the changes are put into the hands of the users in production. And context-switching is multitasking. Multitasking is a productivity killer. That is not pretty.
 
-Because of [Little's Law](https://en.wikipedia.org/wiki/Little%27s_law), work in progress has a significant negative effect on total lead time. Higher work in progress means more delays, longer times to market and higher costs of delay. As a consequence, we end with delayed delivery and delayed feedback. Learning decelerates. We become more risk averse. Hence, innovation falls flat. Eventually we go back to conservative solutions.
+Because of [Little's Law](https://en.wikipedia.org/wiki/Little%27s_law), work in progress has a significant negative effect on total lead time. Higher work in progress means more delays, longer times to market and higher costs of delay. As a consequence, we end with delayed delivery and delayed feedback. Learning decelerates. We become more risk averse. Hence, innovation falls flat. Eventually, we go back to conservative solutions.
 
 To get things out sooner, we need to reduce the transaction cost. We need to minimise the cost of code reviews to reduce the work in progress, accelerate feedback and vastly reduce the time to market.
 
@@ -117,7 +117,7 @@ Yes, but letting go of unreviewed code into production is dangerous. Well, not m
 
 But we should avoid writing bugs. Anyone coming with that argument believes in fairy tails and has not seen a production system closely. IT systems are complex adaptive systems. They fail randomly in the most unforeseen, unpredictable ways. Of course, we should have automated tests in place. That being said, they will only catch the things we know about the system. We are oblivious to all the unknowns. Because of that, it is impossible to have automated tests that will cover those unexpected situations.
 
-But, there is more to quality than functional quality, meaning there is such a thing as code quality. True! The automated tests will only catch functional quality. And yes, code quality is important. It optimises engineering time to introduce code changes and add new functionality. Nevertheless, we can check code quality up to a certain level using tooling as part of the build. Still, this will not catch design problems or naming issues. But then again, if the code passes all automated tests and all checks as part of the build, this is code that works, but that could be better. At some level that is always the case. A code review may only reduce the chances of releasing lower-quality code. That depends on the quality of the review. It does not eliminate bad quality altogether. Having said that, releasing bad code quality is not the end of the world. We can improve it any time, whenever we see it. [FFS Fix the small things](https://docs.google.com/document/d/e/2PACX-1vRS232prL-Bq44hmmdzJTHkCz-nYBlQVPAtemOmVfDP1rbiD777jQAaUpIeF2KCdSSEJMEwHTeo9QdE/pub). No need to block delivery in a Pull Request to fix code quality. When doing so, we miss production feedback that could help us improve the code. Or we might realise, users do not use that feature. So, we should not invest more time in that code.
+But, there is more to quality than functional quality, meaning there is such a thing as code quality. True! The automated tests will only catch functional quality. And yes, code quality is important. It optimises engineering time to introduce code changes and add new functionality. Nevertheless, we can check code quality up to a certain level using tooling as part of the build. Still, this will not catch design problems or naming issues. But then again, if the code passes all automated tests and all checks as part of the build, this is code that works, but that could be better. At some level that is always the case. A code review may only reduce the chances of releasing lower-quality code. That depends on the quality of the review. It does not eliminate bad quality altogether. Having said that, releasing bad code quality is not the end of the world. We can improve it any time, whenever we see it. [FFS Fix the small things](https://docs.google.com/document/d/e/2PACX-1vRS232prL-Bq44hmmdzJTHkCz-nYBlQVPAtemOmVfDP1rbiD777jQAaUpIeF2KCdSSEJMEwHTeo9QdE/pub). No need to block delivery in a Pull Request to fix code quality. When doing so, we miss production feedback that could help us improve the code. Or we might realise, that users do not use that feature. So, we should not invest more time in that code.
 
 But, I do not trust my code. Oftentimes, this is an expression of a deeper problem. It happens in environments with legacy code where engineers do not understand the code. They do not have any faith in whether their changes broke the system or not. This also happens in dysfunctional teams with a blaming culture. In those cases, engineers want to protect themselves against that. Therefore, they lean on others to get a sense of faith in their code. To obtain a sense of security, but not true security. It gives an illusion of control. In the end, it is about diluting responsibility. However, I do not think any process can fix that, certainly not a Pull Request process. That being the case, the organisation has a serious cultural problem requiring profound attention.
 
@@ -125,11 +125,11 @@ But, I do not trust my code. Oftentimes, this is an expression of a deeper probl
 
 Pull Requests are code reviews. Though, not necessarily. I can see value in the idea of the automated Pull Request that is automatically merged after a successful run of a build. Yet, [I have my reservations on the consequences]({% post_url 2023-03-12-can-the-pull-request-replace-agree-as-a-team-to-never-break-the-build %}).
 
-On the other hand, code reviews do not equate to Pull Requests. Being against Pull Requests, does not mean eliminating code reviews.
+On the other hand, code reviews do not equate to Pull Requests. Being against Pull Requests does not mean eliminating code reviews.
 
 There are many ways teams can run code reviews without Pull Requests that are more efficient.
 
-Pair and team programming are the most effective way to run code reviews while keeping the flow of delivery. We have continuous pre-commit reviews. Multiple eyes are looking at the code while it is being written. Additionally, multiple people are thinking about design. It prevents us to detect a design that is off at the time of a review when it is too late.
+Pair and team programming are the most effective way to run code reviews while keeping the flow of delivery. We have continuous pre-commit reviews. Multiple eyes are looking at the code while it is being written. Additionally, multiple people are thinking about design. It prevents us from detecting a design that is off at the time of a review when it is too late.
 
 [Non-blocking continuous code reviews]({% post_url 2023-05-02-non-blocking-continuous-code-reviews-a-case-study %}) is another option to run code reviews while not blocking the flow of delivery. Still, it does not protect us from observing bad design at a late stage. But then again, we have all the time to fix the bad design as the feature is already delivering value in production.
 
