@@ -6,7 +6,7 @@ category: articles
 tags: [Code Review]
 ---
 
-Now and then, I rant about Pull Requests on social media. The rants are on the inefficiencies and the fairly little value of Pull Request compared to the cost they come with. The friends that understand lean principles receive these rants with applause and cheering. But it also comes with a fair share of somehow offended people that feel the need to belittle and instigate unprofesionalism. I guess it is time to provide some more argumentation than social media allows.
+Now and then, I rant about Pull Requests on social media. The rants are on the inefficiencies and the fairly little value of Pull Request compared to the cost they come with. The friends that understand lean principles receive these rants with applause and cheering. But it also comes with a fair share of somehow offended people that feel the need to belittle and call unprofesionalism. I guess it is time to provide some more argumentation than social media allows.
 
 ---
 
@@ -60,21 +60,96 @@ Second, if reviews are done by seniors, are they trained to have the appropriate
 
 Third, because this might be an exercise of power, there might be a risk reviews vary in content based on who wrote the code. Whose change is accepted and whose change not? There is a bias problem that may disproportionately harm.
 
+Fourth, code reviews should not be blaming or harming.
+
 If there is no mechanism in place to curate and train effective code reviews, it is unlikely that the process will be free from any abuse and/or bias. As a reviewer we should listen, reflect on the code without judgement, without harming. We provide a willing ear so that others can do a better job at solving a problem. Anyone who can’t do that should not do any code reviews.
 
-Fourth, code reviews should not be gatekeeping, which Pull Requests are clearly. The change is accepted or not. As long as it is not accepted, it will simply not get into production.
+That too, I have seen and experienced as a senior. One day, a teamlead comes to me: "*You have approved this and it broke something in production. You should have asked they add this.*". If as a teamlead, we want people to take responsibility, to unblock features, we do not act like that. This will have the opposite effect. Team members will not take up any responsibilities anymore. Because if they do, there is blame when failures happen. Failures happen, all the time. That is a fact of life. That is human. That is also complex systems. The better answer would be, how can we design the system to avoid this or how can we make sure this is not a big deal.
 
-Lastly, code reviews are not a must. They are optional. It is a choice of the team whether to run code reviews or not. The team is not more mature because it practices code reviews. The team is also not a bunch of rag-tags if they do not practice code reviews.
+Fifth, code reviews should not be gatekeeping, which Pull Requests are clearly. The change is accepted or not. As long as it is not accepted, it will simply not get into production. Therefore functionality, or worse bug fixes are not delivered as long as the review is not finished, the Pull Request accepted and merged. That means no value delivery. Remember, the goal of any organisation is to make money. Here, as long as we do not deliver, no money is made. On the contrary, we incur a cost of delay and an opportunity cost.
 
-Yes, but letting go unreviewed code into production is dangerous. Well, not more dangerous than letting go reviewed code into production. The number of times obvious errors not covered by automated tests have not been spotted during a review is unimaginable. Yet, they still fail in production. The only response teams have to this is: "*We have to be better at reviewing code*". No! The answer should be: "*We need to be better at fixing production problems quickly*". Anything that gets in the way of that, needs to be removed. Only then we will improve over the whole line. If code passes all automated tests, we might be pretty confident it will be ok in production. If it is not, that is not a big deal if we have a process that can cope with that. Pull Request are certainly the solution to this as they slow the team down to quickly fix production problems. [DORA](https://dora.dev/) identified the mean time to recover as one of the four core metrics that define high performing teams.
+> Would somebody explain to me how a PR that triggers a code review isn’t just a waterfall phased gate? I see a lot of ppl defending the practice, but I see very little agility in it. Personally, I don’t see reverting to waterfall as necessary or desirable when alternatives exist.
+>
+> -- [Allen Holub]([@allenholub](https://twitter.com/allenholub)), [Feb 11, 2022](https://x.com/allenholub/status/1492009142671720450?s=20)
 
-But, I do not trust my code. Oftentimes, this is an expression of a deeper problem. This happens in environments with legacy code where engineers do not understand the code. They do not have any faith on whether their changes broke the system or not. Or this happens in dysfunctional teams with a blaming culture. Engineers want to protect themselves against that. Therefore, they lean to others to get a sense of faith in their code. To obtain a sense of security, but not true security. It gives an illusion of control. In the end, it is about diluting responsibility. Despite that, I do not think any process can fix that, certainly not a Pull Request process. That being the case, the organisation has a cultural problem  requiring profound attention.
+Going slow for safety is a mistake. Research is clear about that. Gates drive down quality. The exact thing we put in place that supposedly should improve quality results in the exact opposite. Think about that!
 
-## Do not confuse Pull Requests with Code Reviews
+But there is more. Pull Requests come with a non-negligible transaction cost.
 
+> **Transaction Cost**
+>
+> The cost of sending a batch to the next stage.
+
+Let us say we want to buy some goods online. To deliver the goods, that cost us 3 EUR. That is the transaction cost. In that case, it is not opportune to buy only one good of 1 EUR. This will not compensate the transaction cost. Therefore, we will batch up goods in order to end with a buy price that is a multiple of the transaction cost so that transaction cost is offset enough. When talking about transaction costs, delays are also one type of transaction cost. This is what exactly happens with Pull Requests.
+
+If it only takes us 10 minutes to make a change, but the change is blocked until a positive review and it takes an hour to receive a review ... that means that the change is waiting for 86% of its total lead time. That is pretty inefficient and darn costly. Now, I guess for most teams, one hour is already reasonably fast. I am afraid two hours, four hours or even a day are more usual. That means the change waits for respectively 92%, 96%, 99% of its total lead team. Heuh!!!
+
+What will happen now? Two things can happen.
+
+Because of the high cost, team members are incentivised to package more changes into a Pull Request before asking a review. If we have to wait that long, we might as well add more stuff to compensate the transaction cost. This, inevitably, leads to bigger Pull Requests. Research shows the bigger the Pull Request the more it suffers from the LGTM-syndrome. How is that improving quality? Tell me.
+
+> 10 lines of code = 10 issues.
+>
+> 500 lines of code = "looks fine."
+>
+> Code reviews.
+>
+> -- I Am Devloper ([@iamdeveloper](https://twitter.com/iamdevloper)), [Nov 5, 2013](https://twitter.com/iamdevloper/status/397664295875805184)
+
+Because it is discomfortable for people to just wait for a Pull Request to be approved, after all anyone wants to feel productive, they will start new work. This incentivises more work in progress and loads of context-switching. Work in progress is inventory. Inventory is money, money stuck into the system. It is money the organisation has invested but that does not generate any return unless the changes are put into the hands of the users. And context-switching is multitasking. Multitasking is a productivity killer. It is not pretty.
+
+Because of Little's Law, work in progress has a significant negative effect on total lead time. Higher work in progress means more delays, longer times to market and higher costs of delay. We end up with delayed delivery, and delayed feedback. Learning will decelerate. We will become more risk averse. Hence, innovation falls flat. We will go back to conservative solutions.
+
+To get things out sooner, we need to reduce the transaction cost. We need to minimise the cost of code reviews to reduce work in progress, accelerate feedback and considerably reduce the time to market.
+
+Lastly, code reviews are not a must. They are optional. It is a choice of the team whether to run code reviews or not. The team is not more mature because it practices code reviews. The team is also not a bunch of rag-tags if they do not practice code reviews. *If* the team is genuinely mature, we might think they will do the right thing. Instead of thinking they are stupid and we need a process to fix for that. This is about applying [Theory Y over Theory X](https://en.wikipedia.org/wiki/Theory_X_and_Theory_Y). Clearly, this is a matter of having trust in the team. Pull Requests are generally an expression of lack of trust.
+
+Well, that is a jolly set of dysfunctions, isn't it? Now, where is the value? To ask the question is to answer it.
+
+## The buts ...
+
+Yes, but letting go unreviewed code into production is dangerous. Well, not more dangerous than letting go reviewed code into production. The number of times obvious errors not covered by automated tests have not been spotted during a review is unimaginable. Yet, they still fail in production. The only response teams have to this is: "*We have to be better at reviewing code*". No! The answer should be: "*We need to be better at fixing production problems quickly*". Anything that gets in the way of that, needs to be removed. Only then we will improve over the whole line. If code passes all automated tests, we might be pretty confident it will be ok in production. If it is not, that is not a big deal if we have a process that can cope with that. Pull Request are certainly not the answer to this. They slow the team down to quickly fix production problems. [DORA](https://dora.dev/) identified the mean time to recover as one of the four core metrics that define high performing teams. Teams should focus on reducing that time, not adding additional barriers in the false belief it will prevent production problems. It will not!
+
+But we should avoid writing bugs. Anyone coming with that argument beliefs in fairy tails and has not seen a production system closely. IT systems are complex adaptive systems. They fail randomly in the most unforeseen, unpredictable ways. Of course, we should have automated tests in place. However, they will only catch the things we know about the system. We are oblivious of all the unknowns. For that reason, there will be no automated tests to cover that.
+
+But, there is more to quality than functional quality, meaning there is such a thing as code quality. True! The automated tests will only catch functional quality. Nevertheless, we can check code quality up to a certain level using tooling as part of the build. Still, this will not catch design problems or naming issues. But then again, if code passes all automated tests and all checks as part of the build, this is code that works, but that could be better. At some level that is always the case. Code review may only reduce the chances of releasing lower-quality code and that depends on the quality of the review. It doesn’t eliminate bad quality altogether. Releasing bad code quality, is not the end of the world. We can improve it any time, whenever we see it. [FFS Fix the small things](https://docs.google.com/document/d/e/2PACX-1vRS232prL-Bq44hmmdzJTHkCz-nYBlQVPAtemOmVfDP1rbiD777jQAaUpIeF2KCdSSEJMEwHTeo9QdE/pub). No need to block delivery in a Pull Request to fix code quality. When doing so, we miss production feedback that could help us improving the code. Or we might realise, the feature is not used and thus we shouldn't invest more time in that code.
+
+But, I do not trust my code. Oftentimes, this is an expression of a deeper problem. It happens in environments with legacy code where engineers do not understand the code. They do not have any faith on whether their changes broke the system or not. Or this happens in dysfunctional teams with a blaming culture. Engineers want to protect themselves against that. Therefore, they lean to others to get a sense of faith in their code. To obtain a sense of security, but not true security. It gives an illusion of control. In the end, it is about diluting responsibility. Despite that, I do not think any process can fix that, certainly not a Pull Request process. That being the case, the organisation has a cultural problem  requiring profound attention.
+
+## Code Reviews are not Pull Requests
+
+Pull Requests are code reviews. Though, not necessarily. I can see value in the idea of the automated Pull Request that is automatically merged after a successful run of a build. Yet, [I have my reservations on the consequences]({% post_url 2023-03-12-can-the-pull-request-replace-agree-as-a-team-to-never-break-the-build %}).
+
+On the other hand, code reviews do not equate Pull Requests. There are many ways teams can run code reviews without Pull Requests that are more efficient.
+
+Pair and team programming are the most effective way for running code reviews while keeping the flow of delivery. We have continuous pre-commit reviews. Multiple eyes are looking at the code while it is being written. Additionally, multiple people are thinking about design. It prevents detecting a design that is off at the time of a review when it is too late.
+
+[Non-blocking continuous code reviews]({% post_url 2023-05-02-non-blocking-continuous-code-reviews-a-case-study %}) are another option to run code reviews while not blocking the flow of delivery. Still, it does not protect us from observing bad design at a late stage.
+
+Team members can project code and guide the team through the code. Other teams have team members in the morning going over all the commits from the previous day.
+
+## Conclusion
+
+For anyone still thinking Pull Requests will safe them, I want to finish with this observation ...
+
+> Information security, auditors, and regulators often put **too much reliance on code reviews to detect fraud**. Instead, they should be relying on production monitoring controls in addition to using automated testing, code reviews, and approvals, to effectively mitigate the risks associated with errors and fraud.
+>
+> [...] we had a developer who planted a backdoor in the code that we deploy to our ATM cash machines. They were able to put the ATMs in maintenance mode at certain times, allowing them to take cash out of the machines. We were able to detect the fraude quite quickly, and it wasn't through code reviews. These types of backdoors are difficult, or even impossible, to detect when the perpetrators have sufficient means, motive, and opportunity.
+>
+> -- someone leading the DevOps initiative at a large US financial services organisation, The DevOps Handbook, Chapter 23. Protecting the Deployment Pipeline, p344
+
+*The fraud was quickly detected employing detective controls using proactive production monitoring, not with code reviews.*
+
+Pull Requests have utmost value for the Open Source world. There is no questioning about that.
+
+Outside that world, inside the closed-source corporate world where teams are supposed to collaborate and have high trust to achieve deep innovation there is no single reason that can justify the cost in comparison to the somewhat limited to downright absence of value other than defusing the responsibility of engineers and their engineering managers. Or ticking compliance boxes because engineering did not do its home-work in having the necessary conversation with auditors.
+
+But, what is the alternative? Clearly, with pair or team programming we will achieve better quality and higher delivery performance. But, for many organisations, that can be a cultural stretch. That being the case, [non-blocking, continuous code reviews]({% post_url 2023-05-02-non-blocking-continuous-code-reviews-a-case-study %}) are a significantly better approach. However, in all honesty, difficult to implement in regulated industries. Consequently, pair and team programming are superior.
 
 ## Bibliography
 
 - [1 Dev, 3 Teams, 3 git pull request review experiences](https://linearb.io/blog/three-git-pull-request-review-strategies)
 - [A pull request is not really a part of GIT version control. Is it just like a cultural artifact?](https://www.quora.com/A-pull-request-is-not-really-a-part-of-GIT-version-control-Is-it-just-like-a-cultural-artifact)
 - The Talk: [Non-Blocking Continuous Code Reviews, a Case Study]({% post_url 2024-02-06-non-blocking-continuous-code-reviews-a-case-study %})
+- [From Async Code Reviews to Co-Creation Patterns](https://www.infoq.com/articles/co-creation-patterns-software-development/), Dragan Stepanović
+- [The DevOps Handbook](https://www.goodreads.com/book/show/26083308-the-devops-handbook), Gene Kim, Jez Humble, Patrick Debois, John Willis
