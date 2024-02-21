@@ -1,6 +1,6 @@
 ---
 layout: article
-title: The Good and the Dysfunctional about Pull Requests
+title: The Good and the Dysfunctional of Pull Requests
 author: Thierry de Pauw
 category: articles
 tags: [Code Review]
