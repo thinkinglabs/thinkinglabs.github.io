@@ -11,6 +11,10 @@ Now and then, I rant about Pull Requests on social media. The rants are on the i
 
 ---
 
+*Update Feb 22, 2024: Add references to research to support the claim "Going slow for safety is a mistake."*
+
+---
+
 > Fucking PRs! 🙄
 >
 > When the PR is finally approved and merged, damn a bug.
@@ -76,6 +80,23 @@ Fifth, code reviews should not be gatekeeping, which Pull Requests definitively 
 > -- [Allen Holub]([@allenholub](https://twitter.com/allenholub)), [Feb 11, 2022](https://x.com/allenholub/status/1492009142671720450?s=20)
 
 Going slow for safety is a mistake. Research is clear about that. Gates drive down quality. The exact thing we put in place that supposedly should improve quality results in the exact opposite. Think about that!
+
+> We found that formal change management processes ... have a negative impact on software delivery performance.
+>
+> ...
+>
+> The motivation behind [...] change management processes [...] is reducing risk of releases. [...] We examined whether introducing more approvals results in a slower process and the release of larger batches less frequently, with an accompanying higher impact on the production system that is likely to be associated with higher level of risks and thus higher change fail rates. Our hypothesis was supported in the data.
+>
+> -- The State of DevOps Report 2019, p49-51
+
+> Longer durations between code completion and review have been shown to negatively impact the effectiveness of the developer and the quality of software delivered.
+>
+> ...
+>
+> Improving code review speed can contribute to improving several technical capabilities, including code maintainability, learning culture (knowledge transfer), and building a generative culture.
+>
+> -- The State of DevOps Report 2023, p22
+
 
 But there is more. Pull Requests come with a non-negligible transaction cost.
 
@@ -158,3 +179,5 @@ But, what is the alternative? Clearly, with pair or team programming we will ach
 - The Talk: [Non-Blocking Continuous Code Reviews, a Case Study]({% post_url 2024-02-06-non-blocking-continuous-code-reviews-a-case-study %})
 - [From Async Code Reviews to Co-Creation Patterns](https://www.infoq.com/articles/co-creation-patterns-software-development/), Dragan Stepanović
 - [The DevOps Handbook](https://www.goodreads.com/book/show/26083308-the-devops-handbook), Gene Kim, Jez Humble, Patrick Debois, John Willis
+- [The State of DevOps Report 2019](https://services.google.com/fh/files/misc/state-of-devops-2019.pdf)
+- [The State of DevOps Report 2023](https://services.google.com/fh/files/misc/2023_final_report_sodr.pdf)
