@@ -176,6 +176,10 @@ Outside that world, inside the closed-source corporate world where teams are sup
 
 But, what is the alternative? Clearly, with pair or team programming we will achieve better quality and higher delivery performance. But, for many organisations, that can be a cultural stretch. That being the case, [non-blocking, continuous code reviews]({% post_url 2023-05-02-non-blocking-continuous-code-reviews-a-case-study %}) are a significantly better approach. However, in all honesty, difficult to implement in regulated industries. Consequently, pair and team programming are superior.
 
+> Inspection does not improve the quality, nor guarantee quality. Inspection is too late. The quality, good or bad, is already in the product. As Harold F. Dodge said, “You can not inspect quality into a product.”
+>
+> -- Edwards Deming, Out of the Crisis
+
 ## Bibliography
 
 - [1 Dev, 3 Teams, 3 git pull request review experiences](https://linearb.io/blog/three-git-pull-request-review-strategies)
