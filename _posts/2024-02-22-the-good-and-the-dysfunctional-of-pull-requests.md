@@ -187,6 +187,10 @@ But, what is the alternative? Clearly, with pair or team programming we will ach
 >
 > -- Edwards Deming, Out of the Crisis
 
+## Acknowledgment
+
+[Lanette Creamer](https://www.linkedin.com/in/lanettec/) who reviewed my talk "*Non-Blocking Continuous Code Reviews, a Case Study*" during which she provided me with many insights on the various possible dysfunctions of code reviews.
+
 ## Bibliography
 
 - [1 Dev, 3 Teams, 3 git pull request review experiences](https://linearb.io/blog/three-git-pull-request-review-strategies)
