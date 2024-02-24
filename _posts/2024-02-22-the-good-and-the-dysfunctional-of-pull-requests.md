@@ -109,6 +109,8 @@ But there is more. Pull Requests come with a non-negligible transaction cost.
 >
 > The cost of sending a batch to the next stage.
 
+This is important because the higher the transaction cost, the more inventory we will create in front of the next stage to compensate that cost.
+
 Let us say we want to buy some goods online. To deliver the goods, that cost us 3 EUR. That is the transaction cost. In that case, it is not opportune to buy only one good of 1 EUR. This will not compensate for the transaction cost. Therefore, we will batch up goods to obtain a buying price that is a multiple of the transaction cost so that the transaction cost is offset enough.
 
 Keep in mind, when talking about transaction costs, delays are also one type of transaction cost. This is what precisely happens with Pull Requests.
