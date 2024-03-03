@@ -10,6 +10,8 @@ speakerdeck:
 conferences:
   - name: SoCraTes 2023
     date: 2023-08-25
+  - name: Lean Agile Scotland pre-conference meetup
+    date: 2023-09-12
 ---
 
 In short, Conway's Law says any organisation that designs a system will come up with a system design that copies the organisational communication structures.
@@ -47,4 +49,3 @@ References:
 - [Accidental Architects: How HR Designs Software Systems]({% post_url 2022-02-11-flowcon-accidental-architects-how-hr-designs-software-systems-matthew-skelton %}), Matthew Skelton
 - [*Conway's Law Doesn't Apply to Rigid Designs*](https://verraes.net/2022/05/conways-law-vs-rigid-designs/), Mathias Verraes, 2022
 - [Isomorphism vs Homomorphism](https://hachyderm.io/@cornazano/111241418996567374), Michael McCliment
-
