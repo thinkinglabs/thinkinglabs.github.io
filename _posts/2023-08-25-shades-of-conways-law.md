@@ -44,7 +44,7 @@ References:
 - [*Toward Simplifying Application Development in a Dozen Lessons*](http://melconway.com/Home/pdf/simplify.pdf), Mel Conway, 2016
 - [*The Mirroring Hypothesis: theory, evidence, and exceptions*](https://www.hbs.edu/ris/Publication%20Files/Colfer%20Baldwin%20Mirroring%20Hypothesis%20Ind%20Corp%20Change-2016_8aa320ff-6aa6-42ef-b259-d139012faaf6.pdf), Colfer and Baldwin, 2016
 - [*Accelerate*](https://www.goodreads.com/pl/book/show/35747076), Nicole Forsgren, PhD and friends, 2018
-- [Accidental Architects: How HR Designs Software Systems](https://thinkinglabs.io/notes/2022/02/11/flowcon-accidental-architects-how-hr-designs-software-systems-matthew-skelton.html), Matthew Skelton
+- [Accidental Architects: How HR Designs Software Systems]({% post_url 2022-02-11-flowcon-accidental-architects-how-hr-designs-software-systems-matthew-skelton %}), Matthew Skelton
 - [*Conway's Law Doesn't Apply to Rigid Designs*](https://verraes.net/2022/05/conways-law-vs-rigid-designs/), Mathias Verraes, 2022
 - [Isomorphism vs Homomorphism](https://hachyderm.io/@cornazano/111241418996567374), Michael McCliment
 
