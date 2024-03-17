@@ -28,10 +28,10 @@
     {% capture author %}
     {% if page.author.name and page.author.website %}
       <a href="https://twitter.com/{{ page.author.website }}">{{ page.author.name}}</a>
-    {% elsif page.author.name and page.author.twitter %}
-      <a href="https://twitter.com/{{ page.author.twitter }}">{{ page.author.name}}</a>
     {% elsif page.author.name and page.author.linkedin %}
       <a href="https://linkedin.com/in/{{ page.author.linkedin }}">{{ page.author.name}}</a>
+    {% elsif page.author.name and page.author.twitter %}
+      <a href="https://twitter.com/{{ page.author.twitter }}">{{ page.author.name}}</a>
     {% elsif page.author.name %}
       {{ page.author.name }}
     {% endif %}
