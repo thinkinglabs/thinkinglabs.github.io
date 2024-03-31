@@ -18,7 +18,7 @@ Well, as it happens, it all starts with an idea. Often people think they have no
 
 Once we have the idea, then comes the proposal. It all begins with the title. It needs to draw attention and gain the interest of the reviewer. In all honesty, as a reviewer, the title makes the difference on whether I am interested in the topic or not. It sounds stupid, I give you that. The thing is, we do this in our limited spare time. I have heard, indirectly, that for some reviewers the title and the first sentences of the proposal are defining. Some stop there if they were not convinced. Personally, I have never done that. I have always given every proposal the benefit of the doubt. But, I admit, if the title did not convince me, I did read the remainder of the proposal. But, that was through coloured glasses. Which is not fair. I agree. So, that's that.
 
-As a side note, what I share here as a reviewer is what I pay attention too. I do not know what other reviewers look for. I have never had a reviewer training whatsoever. If that even exists.
+As a side note, what I share here as a reviewer is what I pay attention too. I do not know what other reviewers look for. I have never had any reviewer training whatsoever. If that even exists. When reviewing proposals I am looking for two things. Either I look for novelty, being surprised. Or someone brings a success-story of a practice that is most often badly implemented. Think OKRs. Or a reconfirmation of old technical practices because they still lack adoption.
 
 For the abstract, it is important to start from the problem definition. That is the secret sauce [Johanna Rothman](https://www.linkedin.com/in/johannarothman/) learned me. Then provide a glimpse of the solution without revealing too much of the solution. One other advise I have often received from people reviewing my abstract is to provide a closing sentence that invites people to attend the session. Something that inspires attendees for their own situation. It avoids the abstract ends too abruptly.
 
@@ -73,3 +73,7 @@ In closing, to increase your chances to be selected, I advise to submit to confe
 - [Agile Testing Days](https://agiletestingdays.com/)
 - [ScanAgile](https://www.scan-agile.org/)
 - [EuroSTAR](https://conference.eurostarsoftwaretesting.com/)
+
+## Acknowledgements
+
+Bunnahabhain and Tamdhu for the creative support.
