@@ -7,7 +7,7 @@ author:
 created_at: 2021-05-07
 meta: 11 min read
 category: articles
-tags: [ Conway's Law ]
+tags: [ Conway's Law, Team Topologies ]
 ---
 
 Over time, different people have articulated **Conway's Law** in various different ways.
