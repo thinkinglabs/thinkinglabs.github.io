@@ -49,5 +49,5 @@ References:
 - [Accelerate](https://www.goodreads.com/pl/book/show/35747076), Nicole Forsgren, PhD and friends, 2018
 - [Accidental Architects: How HR Designs Software Systems]({% post_url 2022-02-11-flowcon-accidental-architects-how-hr-designs-software-systems-matthew-skelton %}), Matthew Skelton
 - [Conway's Law Doesn't Apply to Rigid Designs](https://verraes.net/2022/05/conways-law-vs-rigid-designs/), Mathias Verraes, 2022
-- [Conversation on Conway’s Law with Ruth Malan on Mastodon](https://mastodon.social/@tdpauw/111003294054784503)
+- [Mastodon conversation with Ruth Malan about Conway’s Law](https://mastodon.social/@tdpauw/111003294054784503)
 - [Isomorphism vs Homomorphism](https://hachyderm.io/@cornazano/111241418996567374), Michael McCliment
