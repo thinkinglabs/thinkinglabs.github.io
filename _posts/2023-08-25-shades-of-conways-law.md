@@ -43,6 +43,7 @@ References:
 - [Dealing with creaky legacy platforms](http://jonnyleroy.com/2011/02/03/dealing-with-creaky-legacy-platforms/), Jonny LeRoy and Matt Simons, 2010
 - [Exploring the Duality between Product and Organizational Architecture: A Test of the “Mirroring” Hypothesis](https://www.hbs.edu/ris/Publication%20Files/08-039_1861e507-1dc1-4602-85b8-90d71559d85b.pdf), MacCormack, Rusnak, Baldwin, 2012
 - [Architecture without an end state](https://www.oreilly.com/content/michael-nygard-on-architecture-without-an-end-state/), Michael Nygard, 2012
+- [Sex in Title, and Other Stories](http://hintjens.com/blog:73), Pieter Hintjes, 2013
 - [Continuous Delivery and Conway’s Law]({% post_url 2021-05-13-continuous-delivery-and-conways-law-allan-kelly %}), Allan Kelly, 2014
 - [Good with Computers](https://sixty-north.com/blog/predictive-models-of-development-teams-and-the-systems-they-build), Rob Smallshire, 2014
 - [Toward Simplifying Application Development in a Dozen Lessons](http://melconway.com/Home/pdf/simplify.pdf), Mel Conway, 2016
