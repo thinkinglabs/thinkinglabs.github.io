@@ -12,6 +12,8 @@ conferences:
     date: 2023-08-25
   - name: Lean Agile Scotland pre-conference meetup
     date: 2023-09-12
+  - name: ScanAgile
+    date: 2024-03-06
 ---
 
 In short, Conway's Law says any organisation that designs a system will come up with a system design that copies the organisational communication structures.
