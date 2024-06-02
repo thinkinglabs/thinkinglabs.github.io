@@ -17,6 +17,8 @@ conferences:
   - name: NewCrafts
     date: 2024-05-17
     video_link: https://vimeopro.com/newcrafts/newcrafts/video/949431048
+  - name: Domain Driven Design Europe
+    date: 2024-05-30
 ---
 
 In short, Conway's Law says any organisation that designs a system will come up with a system design that copies the organisational communication structures.
