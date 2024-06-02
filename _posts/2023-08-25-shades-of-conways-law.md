@@ -14,6 +14,9 @@ conferences:
     date: 2023-09-12
   - name: ScanAgile
     date: 2024-03-06
+  - name: NewCrafts
+    date: 2024-05-17
+    video_link: https://vimeopro.com/newcrafts/newcrafts/video/949431048
 ---
 
 In short, Conway's Law says any organisation that designs a system will come up with a system design that copies the organisational communication structures.
