@@ -4,15 +4,14 @@ title: The Practices That Make Continuous Integration
 date: 2022-08-26
 category: talks
 tags: [ Version Control, Branching, Continuous Integration ]
-conferences:
-  - name: SoCraTes 2022
-    date: 2022-08-26
 speakerdeck:
   data_id: 3559f334909045f2bfabe5b0220c595f
   download_link: https://files.speakerdeck.com/presentations/3559f334909045f2bfabe5b0220c595f/The_Practices_That_Make_Continuous_Integration.pdf
 youtube:
   data_id: G3PZo70KcSA
 conferences:
+  - name: SoCraTes 2022
+    date: 2022-08-26
   - name: Lean Agile Scotland 2022
     date: 2022-10-05
     video_link: https://vimeo.com/780287932
