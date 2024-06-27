@@ -5,13 +5,13 @@ date: 2020-10-29
 category: talks
 tags: [ Theory of Constraints ]
 conferences:
-  - name: Agile Tour Vilnius
+  - name: Agile Tour Vilnius 2020
     date: 2020-10-29
     video_link: https://www.youtube.com/watch?v=fcMVt17gyQs
-  - name: FlowCon Paris
+  - name: FlowCon Paris 2020
     date: 2020-11-26
     video_link: https://www.youtube.com/watch?v=1Zls2sWAw3g
-  - name: OOP Konferenz
+  - name: OOP Konferenz 2021
     date: 2021-02-09
 youtube:
   data_id: fcMVt17gyQs
