@@ -13,6 +13,8 @@ conferences:
   - name: CfgMgmtCamp
     date: 2024-01-06
     video_link: https://www.youtube.com/watch?v=uzUPdQVdwp0
+  - name: Regional Scrum Gathering Ghent
+    date: 2024-06-07
 ---
 
 The problem with the current most commonly accepted way of running code reviews using Pull Requests is that they have the nasty habit of blocking the flow of delivery. They introduce a cost of delay. Any delay reduces feedback. Consequently, it drives down quality.
