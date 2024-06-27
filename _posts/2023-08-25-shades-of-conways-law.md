@@ -10,14 +10,14 @@ speakerdeck:
 conferences:
   - name: SoCraTes 2023
     date: 2023-08-25
-  - name: Lean Agile Scotland pre-conference meetup
+  - name: Lean Agile Scotland 2023 pre-conference meetup
     date: 2023-09-12
-  - name: ScanAgile
+  - name: ScanAgile 2024
     date: 2024-03-06
-  - name: NewCrafts
+  - name: NewCrafts 2024
     date: 2024-05-17
     video_link: https://vimeopro.com/newcrafts/newcrafts/video/949431048
-  - name: Domain Driven Design Europe
+  - name: Domain Driven Design Europe 2024
     date: 2024-05-30
 ---
 
