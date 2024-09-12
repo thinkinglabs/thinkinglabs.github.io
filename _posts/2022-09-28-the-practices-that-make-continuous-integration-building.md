@@ -4,11 +4,14 @@ title: The Practices That Make Continuous Integration - Building for Continuous 
 author: Thierry de Pauw
 category: articles
 tags: [ Continuous Integration, Extreme Programming ]
+image: /images/the-practices-that-make-continuous-integration/the-practices-that-make-continuous-integration-building.jpg
 ---
 
 In [part 1 - Team Working for Continuous Integration]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}) we looked into the team practices that make Continuous Integration. In [part 2 - Coding for Continuous Integration]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %}) we explored the engineering practices for Continuous Integration. In this last part, we investigate the required practices for a team to succeed with Continuous Integration, i.e. which are the building practices and how to improve builds to support the team practices - especially [Agree as a Team to Never Break the Build]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}#practice-2-agree-as-a-team-to-never-break-the-build) - and the coding practices - in particular [Make Changes in Small Increments]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %}#practice-5-make-changes-in-small-increments) and [Commit Frequently]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %}#practice-6-commit-frequently).
 
 ---
+
+![The Continuous Integration practices that support Building](/images/the-practices-that-make-continuous-integration/the-practices-that-make-continuous-integration-building.jpg)
 
 ## Practice 11: Automate the Build
 
