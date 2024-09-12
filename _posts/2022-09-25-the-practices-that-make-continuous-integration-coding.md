@@ -4,11 +4,14 @@ title: The Practices That Make Continuous Integration - Coding for Continuous In
 author: Thierry de Pauw
 category: articles
 tags: [ Continuous Integration, Extreme Programming ]
+image: /images/the-practices-that-make-continuous-integration/the-practices-that-make-continuous-integration-coding.jpg
 ---
 
 In [part 1 - Team Working for Continuous Integration]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}) we looked at all the necessary practices to achieve team work around Continuous Integration. Now, we investigate the critical engineering practices individuals, pairs or ensembles should adopt to attain Continuous Integration as a team.
 
 ---
+
+![The Continuous Integration practices that support Coding](/images/the-practices-that-make-continuous-integration/the-practices-that-make-continuous-integration-coding.jpg)
 
 ## Practice 5: Make All Changes In Small Increments
 
