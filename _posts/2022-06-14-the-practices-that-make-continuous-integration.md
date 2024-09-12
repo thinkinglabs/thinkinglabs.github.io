@@ -4,7 +4,7 @@ title: The Practices That Make Continuous Integration
 author: Thierry de Pauw
 category: articles
 tags: [ Continuous Integration ]
-image: /images/the-practices-that-make-continuous-integration/the-practices-that-make-continuous-integration-socrates-2022-lisi-hocke.png
+image: /images/the-practices-that-make-continuous-integration/the-practices-that-make-continuous-integration.jpg
 redirect_from:
   - /the-practices-that-make-continuous-integration
   - /the-practices-that-make-ci
@@ -16,6 +16,8 @@ Honestly, it feels a bit awkward to still write about Continuous Integration. It
 *Update Sep 29, 2022: Add [Lisi Hocke](https://twitter.com/lisihocke)'s sketchnote and update acknowledgments.*
 
 ---
+
+![The 14 practices that make continuous integration](/images/the-practices-that-make-continuous-integration/the-practices-that-make-continuous-integration.jpg)
 
 > Continuous Integration is a practice to ensure always working software and to
 > get feedback within a few minutes to whether any given change broke the
