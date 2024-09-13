@@ -9,6 +9,8 @@ image: /images/the-practices-that-make-continuous-integration/the-practices-that
 
 This first part of this series investigates the practices that enable teamwork that in turn enable Continuous Integration. **Continuous Integration is a Team Practice**. We achieve it as a team and not as a set of individuals. Most of the time, practices are defined for individuals. When most team members apply them, the team does well. However, with Continuous Integration, most team members have to implement other practices before the team can say they practice Continuous Integration.
 
+*Update Sept 12, 2024: Add the infographic.*
+
 ---
 
 > The difference between a tool and a practice is that a practice only exists when you are doing it.

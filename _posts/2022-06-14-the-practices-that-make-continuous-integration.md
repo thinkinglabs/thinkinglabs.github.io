@@ -13,7 +13,9 @@ redirect_from:
 
 Honestly, it feels a bit awkward to still write about Continuous Integration. It has been over 20 years since [Kent Beck](https://twitter.com/KentBeck) introduced Continuous Integration in his book [Extreme Programming Explained](https://www.goodreads.com/book/show/67833.Extreme_Programming_Explained). But, when looking around me, I realise teams and organisations still struggle with adopting Continuous Integration.
 
-*Update Sep 29, 2022: Add [Lisi Hocke](https://twitter.com/lisihocke)'s sketchnote and update acknowledgments.*
+*Update Sept 29, 2022: Add [Lisi Hocke](https://twitter.com/lisihocke)'s sketchnote and update acknowledgments.*
+
+*Update Sept 12, 2024: Add the infographic.*
 
 ---
 
