@@ -94,7 +94,7 @@ The above is mostly influenced by the [Testing Pyramid](https://martinfowler.com
 
 During the *Local Build* and [*Commit Build*](#commit-build) only *Unit Tests* are executed together with a small straightforward smoke test suite. This smoke test suite performs a few simple *Integration Tests* and *Acceptance Tests* to make sure the most commonly used features are not broken. This set of tests is what we call the [*Commit Tests*](#commit-tests).
 
-To commit frequently into *Mainline*, we need to run these tests repeatedly. Therefore, the *Commit Tests* should be expeditious. The rest of the Integration Tests and the Automated Acceptance Tests will run in later build stages of the *Deployment Pipeline* or the central build server.
+To commit frequently into *Mainline*, we need to run these tests repeatedly. Therefore, the *Commit Tests* should be expeditious. The rest of the Integration Tests and the Automated Acceptance Tests will run in later build stages of the *Deployment Pipeline* on the central build server.
 
 ## Practice 14: Have a Fast Build
 
