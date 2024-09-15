@@ -45,11 +45,12 @@ Over the past six years, I had many discussions when [talking about the myriad o
 
 Surprisingly, very little literature is available summing up all the practices that make Continuous Integration. Most information is scattered over many books and articles. It led me to write this article series to summarise all the practices that make Continuous Integration in one place.
 
-To reach Continuous Integration a team has to adopt 14 practices that can be split into three categories:
+To reach Continuous Integration a team has to adopt 15 practices that can be split into three categories:
 
 1. [*Team working for Continuous Integration*]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}): all the practices that enable the fast flow of work for the team, ensuring they are never blocked.
 2. [*Coding for Continuous Integration*]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %}): all the coding practices that enable working in small increments.
 3. [*Building for Continuous Integration*]({% post_url 2022-09-28-the-practices-that-make-continuous-integration-building %}): all the practices required to effortlessly and efficiently integrate changes continuously into the codebase.
+4. [Make the Build Self-Testing]({% post_url 2024-09-15-the-practices-that-make-continuous-integration-make-the-build-self-testing %})
 
 ![SketchNote from Lisi Hocke at SoCraTes 2022](/images/the-practices-that-make-continuous-integration/the-practices-that-make-continuous-integration-socrates-2022-lisi-hocke.png)
 *SketchNote from [Lisi Hocke](https://twitter.com/lisihocke) at [SoCraTes](https://www.socrates-conference.de) 2022, published with consent*

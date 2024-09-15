@@ -43,7 +43,7 @@ Ideally, all of that is executed during the *Local Build* and the [*Commit Build
 
 A first optimisation would be to keep the License and Vulnerability Checks out of the *Commit Build*. Here we have two options. Either run them in parallel with the *Commit Build* or run them in a subsequent stage after the *Commit Build*.
 
-A second possible optimisation would be to limit the *Commit Build* to compilation and unit test execution. Then have a subsequent *Build* stage that re-executes the unit tests to generate code coverage reports, runs the various static code analyses and builds the binary build artefact. In that case, the *Build* stage might include in addition the License and Vulnerability Checks.
+A second possible optimisation would be to limit the *Commit Build* to compilation and unit test execution to provide immediate initial feedback. Then have a subsequent *Build* stage that re-executes the unit tests to generate code coverage reports, runs the various static code analyses and builds the binary build artefact. In that case, the *Build* stage might include in addition the License and Vulnerability Checks.
 
 Assuredly, *Make the Build Self-Testing* is essential to *Run a Local Build* so as to fulfil *Agree as a Team to Never Break the Build* and thus align with the goal of Continuous Integration to have always working software.
 
