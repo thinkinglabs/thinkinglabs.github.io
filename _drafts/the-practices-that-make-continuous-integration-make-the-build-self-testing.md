@@ -4,12 +4,14 @@ title: The Practices That Make Continuous Integration - Make the Build Self-Test
 author: Thierry de Pauw
 category: articles
 tags: [ Continuous Integration, Extreme Programming ]
-image: /images/the-practices-that-make-continuous-integration/the-practices-that-make-continuous-integration-building.jpg
+image: /images/the-practices-that-make-continuous-integration/the-practices-that-make-continuous-integration-make-the-build-self-testing.jpg
 ---
 
 To accomplish [Agree as a Team to Never Break the Build]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}#practice-2-agree-as-a-team-to-never-break-the-build) we have to [Run a Local Build]({% post_url 2022-09-28-the-practices-that-make-continuous-integration-building %}#practice-12-run-a-local-build) and [Commit Only on Green]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %}#practice-7-commit-only-on-green). To know we can *[Commit](#commit) on Green* after *Running the Local Build*, we must *Make the Build Self-Testing*. *Agree as a Team to Never Break the Build* is a cornerstone of Continuous Integration. As a consequence, *Making the Build Self-Testing* is a necessary condition to realise Continuous Integration.
 
 ---
+
+![Make the Build Self-Testing](/images/the-practices-that-make-continuous-integration/the-practices-that-make-continuous-integration-make-the-build-self-testing.jpg)
 
 At a minimum a *Build* means compiling the code, eventually [linking](https://www.cprogramming.com/compilingandlinking.html) and producing a binary build artefact. That binary artefact is then promoted from stage to stage inside the Deployment Pipeline. If we only compile and build a binary artefact, that will not be enough. Functional regressions will slip through. If we want to [Commit Frequently]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %}#practice-6-commit-frequently) to integrate more often, as is required by Continuous Integration, we cannot rely on manual regression testing any more on a rapidly changing code base. Manual regression testing will slow us down. Therefore, it is imperative to have a Self-Testing  Build.
 
