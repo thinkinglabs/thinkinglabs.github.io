@@ -41,6 +41,8 @@ Optionally, but required for regulated industries, we can complement the build w
 
 Ideally, all of that is executed during the *Local Build* and the [*Commit Build*](#commit-build) together with building a binary build artefact. It could be challenging to run all of that and yet match up with [Have a Fast Build]({% post_url 2022-09-28-the-practices-that-make-continuous-integration-building %}#practice-14-have-a-fast-build) that recommends that builds take no longer than five to ten minutes.
 
+Before going into any build optimisations, first have a look at execution times of unit tests. Unit tests taking one second to execute is a red flag and demand immediate attention. Anything above 500 milliseconds should be looked at. When all our unit tests are at hundreds of milliseconds and we still do not meet the five to ten build time, then we can look at optimisations.
+
 A first optimisation would be to keep the License and Vulnerability Checks out of the *Commit Build*. Here we have two options. Either run them in parallel with the *Commit Build* or run them in a subsequent stage after the *Commit Build*.
 
 ![Optimisation 1](/images/the-practices-that-make-continuous-integration/the-practices-that-make-continuous-integration-make-the-build-self-testing-optimisation-1.jpg)
