@@ -68,6 +68,7 @@ Assuredly, *Make the Build Self-Testing* is essential to *Run a Local Build* so 
 2. [Coding for Continuous Integration]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %})
 3. [Building for Continuous Integration]({% post_url 2022-09-28-the-practices-that-make-continuous-integration-building %})
 4. Make the Build Self-Testing
+5. [Push Every Day]({% post_url 2024-09-16-the-practices-that-make-continuous-integration-push-every-day %})
 
 ## Definitions
 

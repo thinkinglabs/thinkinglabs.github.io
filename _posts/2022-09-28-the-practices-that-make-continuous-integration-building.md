@@ -170,6 +170,7 @@ Again, a big thank you goes to [Lisi Hocke](https://twitter.com/lisihocke), [Seb
 2. [Coding for Continuous Integration]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %})
 3. Building for Continuous Integration
 4. [Make the Build Self-Testing]({% post_url 2024-09-15-the-practices-that-make-continuous-integration-make-the-build-self-testing %})
+5. [Push Every Day]({% post_url 2024-09-16-the-practices-that-make-continuous-integration-push-every-day %})
 
 ## Definitions
 
