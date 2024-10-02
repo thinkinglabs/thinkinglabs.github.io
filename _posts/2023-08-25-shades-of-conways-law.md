@@ -33,6 +33,7 @@ References:
 
 - [The Article: Shades of Conway's Law]({% post_url 2021-05-07-shades-of-conways-law %})
 - [The Architecture of Complexity](https://www2.econ.iastate.edu/tesfatsi/ArchitectureOfComplexity.HSimon1962.pdf), Simon, 1962
+- [The Causal Texture of Organizational Environments](http://www.moderntimesworkplace.com/archives/ericsess/sessvol3/GEMTRCAUp53.pdf), Emery and Trist, 1965
 - [Notes on the Synthesis of Form](https://monoskop.org/images/f/ff/Alexander_Christopher_Notes_on_the_Synthesis_of_Form.pdf), Alexander, 1964
 - [Organizations in Action: Social Science Bases of Administrative Theory](https://www.goodreads.com/book/show/2284827), Thompson, 1967
 - [How Do Committees Invent?](https://www.melconway.com/Home/Committees_Paper.html), Melvin Conway, 1968
