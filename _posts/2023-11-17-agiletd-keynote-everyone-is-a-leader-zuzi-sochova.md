@@ -10,7 +10,6 @@ author:
 created_at: 2023-11-15
 category: notes
 tags: [ Testing, Agile Testing Days ]
-image: 
 ---
 
 Leadership is one the most significant challenges to business agility adoption faced by organizations. It’s is a key factor―individuals who welcome complexity and know how to leverage influence, culture, and organizational design to align widely distributed teams are integral to the success
