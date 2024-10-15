@@ -11,7 +11,7 @@ As long as we have not pushed our local commits to the remote [*Mainline*](#main
 
 ---
 
-![Push Every Day](/images/the-practices-that-make-continuous-integration/the-practices-that-make-continuous-integration-make-the-build-push-every-day.jpg)
+![Push Every Day](/images/the-practices-that-make-continuous-integration/the-practices-that-make-continuous-integration-push-every-day.jpg)
 
 If we push our local commits to a remote branch, we effectively hide work from the rest of the team. The team does not know in which direction we are taking the code to implement the feature we are working on. This is fine as long as everyone in the team works on different parts of the system. But, the minute two team members work on the same codebase area, they are each blind to how their work affects the other.
 
