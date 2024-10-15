@@ -216,7 +216,7 @@ In the context of Distributed Version Control Systems (DVCS), when I say commit 
 
 ### Mainline
 
-The line of development in Version Control which is the reference from which the builds of the system are created that feed into a deployment pipeline.
+The Mainline is the line of development in Version Control which is the reference from which the builds of the system are created that feed into a deployment pipeline.
 
 For CVS and SubVersion, this is *trunk*. For Git, this is the remote *main* branch. For Mercurial, this is the remote *default* branch.
 
