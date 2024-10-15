@@ -44,7 +44,7 @@ Hence, it enables communication and collaboration within the team which in turn 
 We say a team is in a state of Continuous Integration when:
 
 >- **Everyone in the team (or every pair) commits at least once a day to mainline, leading to multiple integrations per day for the whole team.**
->- Every commit to mainline triggers an automated build and execution of all automated tests.
+>- [Every commit to mainline triggers an automated build and execution of all automated tests.]({% post_url 2024-10-15-the-practices-that-make-continuous-integration-trigger-the-build-on-every-push %})
 >- Whenever the build fails, the team can fix it within 10 mins.
 >
 >-- [Jez Humble](https://bsky.app/profile/jezhumble.net)
