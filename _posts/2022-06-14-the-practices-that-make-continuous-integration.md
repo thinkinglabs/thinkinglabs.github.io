@@ -52,6 +52,7 @@ To reach Continuous Integration a team has to adopt 16 practices that can be spl
 3. [*Building for Continuous Integration*]({% post_url 2022-09-28-the-practices-that-make-continuous-integration-building %}): all the practices required to effortlessly and efficiently integrate changes continuously into the codebase.
 4. [Make the Build Self-Testing]({% post_url 2024-09-15-the-practices-that-make-continuous-integration-make-the-build-self-testing %})
 5. [Push Every Day]({% post_url 2024-09-16-the-practices-that-make-continuous-integration-push-every-day %})
+6. [Trigger the Build on Every Push]({% post_url 2024-10-15-the-practices-that-make-continuous-integration-trigger-the-build-on-every-push %})
 
 ![SketchNote from Lisi Hocke at SoCraTes 2022](/images/the-practices-that-make-continuous-integration/the-practices-that-make-continuous-integration-socrates-2022-lisi-hocke.png)
 *SketchNote from [Lisi Hocke](https://twitter.com/lisihocke) at [SoCraTes](https://www.socrates-conference.de) 2022, published with consent*
