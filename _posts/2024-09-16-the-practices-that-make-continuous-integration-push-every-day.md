@@ -45,7 +45,7 @@ We say a team is in a state of Continuous Integration when:
 
 >- **Everyone in the team (or every pair) commits at least once a day to mainline, leading to multiple integrations per day for the whole team.**
 >- [Every commit to mainline triggers an automated build and execution of all automated tests.]({% post_url 2024-10-15-the-practices-that-make-continuous-integration-trigger-the-build-on-every-push %})
->- Whenever the build fails, the team can fix it within 10 mins.
+>- [Whenever the build fails, the team can fix it within 10 mins.]({% post_url 2024-10-17-the-practices-that-make-continuous-integration-fix-a-broken-build-within-10-minutes %})
 >
 >-- [Jez Humble](https://bsky.app/profile/jezhumble.net)
 
@@ -69,6 +69,7 @@ Pushing at least once a day is, at best, a starting point. Experienced teams wil
 4. [Make the Build Self-Testing]({% post_url 2024-09-15-the-practices-that-make-continuous-integration-make-the-build-self-testing %})
 5. Push Every Day
 6. [Trigger the Build on Every Push]({% post_url 2024-10-15-the-practices-that-make-continuous-integration-trigger-the-build-on-every-push %})
+7. [Fix a Broken Build within 10 Minutes]({% post_url 2024-10-17-the-practices-that-make-continuous-integration-fix-a-broken-build-within-10-minutes %})
 
 ## Definitions
 

@@ -7,7 +7,7 @@ tags: [ Continuous Integration, Extreme Programming ]
 image: /images/the-practices-that-make-continuous-integration/the-practices-that-make-continuous-integration-fix-a-broken-build-within-10-minutes.jpg
 ---
 
-One precondition of being in a state of Continuous Integration is to fix a broken build within ten minutes.
+One precondition of being in a state of Continuous Integration is to fix a broken build within ten minutes. As long as the build is broken, the team cannot perform on-demand production releases. This irrevocably incapacitates the organisation to make money.
 
 ---
 
@@ -33,7 +33,7 @@ Some teams prefer to use Pull Requests with auto-merges once the build passes to
 
 (*or something along this line ... I don't remember the exact words, right away*)
 
-However, we must have a process that allows us to quickly repair the build and swiftly return to a green situation. As long as the build is broken, it disables the team's ability to perform on-demand production releases. The longer the build is broken, the vaster the cost of delay and opportunity costs, and the greater the time to market. Together with blocking a whole team with non-negligible salaries, these are fairly impressive incurred costs.
+However, we must have a process that allows us to quickly repair the build and swiftly return to a green situation. As long as the build is broken, it disables the team's ability to perform on-demand production releases. The longer the build is broken, the vaster the cost of delay and opportunity costs, and the greater the time to market. Together with blocking a whole team with non-negligible salaries, these are fairly impressive incurred costs. All things considered, this stops the organisation to make money.
 
 Hence, whenever the build fails the team [stops the line](https://en.wikipedia.org/wiki/Andon_(manufacturing)), [*Does not Push to a Broken Build*]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working%}#practice-3-do-not-push-to-a-broken-build), stops all work, owns the failure and fixes the build with the highest priority. Only once the build is fixed, the team can pick up on-going work again and move on.
 
@@ -45,10 +45,13 @@ Therefore, it is imperative to *Agree As a Team To Never Break The Build* while 
 
 But why fixing in 10 minutes? Why not five minutes or 15 minutes? This relates to [*Have a Fast Build*]({% post_url 2022-09-28-the-practices-that-make-continuous-integration-building%}#practice-14-have-a-fast-build). If the build is under ten minutes, quickly fixing the problem and re-running the build will work if the fix is easy. On the other hand, if the fix is difficult and time-consuming, the easiest and fastest way to fix the build is to [*Revert When Broken*]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}#practice-4-revert-when-broken). Revert the failing commit and go back to the last known good state. Surely, this necessitates to [*Version Control Everything*]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}#practice-1-version-control-everything).
 
+[Research](https://www.goodreads.com/book/show/35747076-accelerate) indicates that trunk-based development together with Continuous Integration are statistically significant predictors of the adoption of Continuous Delivery. In turn, Continuous Delivery predicts higher IT delivery performance. Together with the adoption of Lean Product Management and a generative organisation culture, they predict higher organisation performance. As a result, to keep the organisation financially healthy, we should fix broken builds as soon as possible, preferably within 10 minutes.
+
 ## Bibliography
 
 - [Continuous Integration](https://martinfowler.com/articles/continuousIntegration.html), Martin Fowler
 - [Continuous Integration Certification](https://martinfowler.com/bliki/ContinuousIntegrationCertification.html), Martin Fowler
+- [Accelerate](https://www.goodreads.com/book/show/35747076-accelerate), Dr. Nicole Forsgren, Jez Humble and Gene Kim
 
 ## The Series
 
