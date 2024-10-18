@@ -31,6 +31,8 @@ Some will argue: *But, we have our CI tool running against our remote branches*.
 
 Continuous Integration requires full mainline integration. No code sits longer than a day on a remote branch without being merged into *Mainline*.
 
+***Full Integration* requires to push work back into *Mainline***.
+
 If we push frequently to a remote *Mainline*, we communicate to the rest of the team the direction we take with the code to implement the feature we are working on. For example, we could add a conditional indicating where the new code starts and have it disabled by default. From then on, the rest of the team can see our changes, how this affects their work and how they can promptly adapt.
 
 Accordingly, everyone in the team pushes its local commits at least once a day to the remote *Mainline*.
