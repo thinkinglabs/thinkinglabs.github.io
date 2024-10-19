@@ -1,7 +1,7 @@
 ---
 layout: talk
 title: Non-Blocking Continuous Code Reviews - a Case Study
-date: 2024-01-06
+date: 2024-02-06
 category: talks
 tags: [ Code Review, Continuous Integration, Continuous Delivery, Case Study ]
 speakerdeck:
@@ -11,7 +11,7 @@ youtube:
   data_id: uzUPdQVdwp0
 conferences:
   - name: CfgMgmtCamp
-    date: 2024-01-06
+    date: 2024-02-06
     video_link: https://www.youtube.com/watch?v=uzUPdQVdwp0
   - name: Regional Scrum Gathering Ghent
     date: 2024-06-07
