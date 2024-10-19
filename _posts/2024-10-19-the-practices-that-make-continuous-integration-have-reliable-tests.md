@@ -27,39 +27,39 @@ When tests are not reliable, we cannot trust them.
 >
 > -- Dictionary.com
 
-When tests are not deterministic, we will obtain wildly varying results when continually executing them. Once more, we cannot trust them.
+When tests are not deterministic, we will obtain wildly varying results when continually executing them. Once more, we cannot trust the tests.
 
 > **consistent**: always acting or behaving in the same way.
 >
 > -- Britannica
 
-When tests are inconsistent, they will not behave the same way when executed many more times. Again, we cannot trust them.
+When tests are inconsistent, they will not behave the same way when executed many more times. Again, we cannot trust the tests.
 
 > **repeatable**: something can be done again.
 >
 > -- Cambridge Dictionary
 
-When executing tests repeatedly, we want them to be deterministic and consistent. The result should always be the same. When running tests 1000 times without any code changes, they should be green 1000 times. Not once red, and 999 times green. If they fail once in 10.000 runs without code changes, they are unreliable. One more last time, we cannot trust the tests!
+When executing tests repeatedly, we want them to be deterministic and consistent. The result should always be the same. When running tests 1000 times without any code changes, they should be green 1000 times. Not once red, and 999 times green. If they fail once in 10.000 runs without code changes, they are unreliable. Once again, we cannot trust the tests!
 
-Even if we [*Have a Vast Amount of High-Quality Automated Tests*]({% post_url 2022-09-28-the-practices-that-make-continuous-integration-building%}#practice-13-have-a-vast-amount-of-high-quality-automated-tests), as soon as we cannot trust the tests, they have little value. Our vast amount of automated tests becomes useless. Right now, we will not mind any failing tests. After all, re-executing the tests might pass them to green. On that occasion, we can still perform an on-demand production release anyway. Nothing is blocking us. We only live once, don't we?
+Even if we [*Have a Vast Amount of High-Quality Automated Tests*]({% post_url 2022-09-28-the-practices-that-make-continuous-integration-building%}#practice-13-have-a-vast-amount-of-high-quality-automated-tests), as soon as we cannot trust the tests, they have little value. Our vast amount of automated tests become useless. Right now, we will not mind any failing tests. After all, re-executing the tests might pass them to green. On that occasion, we can still perform an on-demand production release anyway. Nothing is blocking us. We only live once, don't we?
 
 This conveys that unreliable tests disable *Have a Vast Amount of High-Quality Automated Tests*. Thus, it removes our ability to satisfy [*Agree as a Team to Never Break the Build*]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}#practice-2-agree-as-a-team-to-never-break-the-build), the most crucial practice to adopt to implement Continuous Integration successfully.
 
 But there is more. Once we have one flaky test, we are at the start of much more flakiness. We will soon have two, three, five and more unreliable tests. It now becomes damn hard to satisfy *Agree as a Team to Never Break the Build*. Because the build now became non-deterministic, we will, time and time again, never know upfront whether the build will be green.
 
-Because we cannot trust the automated tests, we lose confidence in the release process. If tests are green, are they truly passing? When they are red, are they indeed failing? In theory, our build is broken. When the build is broken we do not have Continuous Integration. 
+Because we have no faith in the automated tests, we lose confidence in the release process. If tests are green, are they truly passing? When they are red, are they indeed failing? In theory, our build is broken. When the build is broken we do not have Continuous Integration. 
 
 **Without Continuous Integration, our software is broken until someone else proves it works.**
 
 Hence, we find ourselves adding another layer of expensive, time-consuming manual regression testing as an additional quality gate to gain assurance that our release candidate is genuinely good.
 
-Be aware, this is not to say that manual testing is a bad thing. We do need Exploratory Testing, preferably in production, on top of automated tests to find all the unknowns. The automated tests can only check the knowns. Despite that, manual regression testing as a process gate is a bad idea. [Research](https://www.goodreads.com/book/show/35747076-accelerate) shows that process gates drive down quality and introduce delays.
+Be aware, this is not to say that manual testing is a bad thing. We do need Exploratory Testing, preferably in production, on top of automated tests to find all the unknowns. The automated tests can only check the knowns. Despite that, manual regression testing as a process gate is a bad idea. [Research](https://www.goodreads.com/book/show/35747076-accelerate) indicates that process gates drive down quality and introduce delays.
 
-Ultimately, we find ourselves with a quality gate hoping to increase our confidence, but with a significant chance to obtain lower quality. Additionally, time to market is delayed and we incur an opportunity cost.
+Ultimately, we find ourselves with a quality gate hoping to increase our confidence, but with a significant chance to obtain lower quality. Additionally, time to market is delayed and we incur an opportunity cost. Not particularly an economically healthy situation.
 
 We might as well delete the unreliable automated tests. The outcome will be the same. In both cases, we still need manual regression tests to instil a quality illusion.
 
-Even though this sounds attractive, do not delete unreliable tests. After all, they do not provide any confidence. But they do give information and somehow valuable feedback. Yet, this requires a more in-depth analysis. It will take time to figure out what is happening. Again, we pay a lead time tax.
+Even though this sounds attractive, do not delete unreliable tests. After all, they do not provide any assurance. But they do give information and somehow valuable feedback. Yet, this requires a more in-depth analysis. It will take time to figure out what is happening. Again, we pay a lead time tax.
 
 But, once we have flaky tests, how do we get out of this? How do we solve this? How do we get to a better, more manageable situation empowering us to perform on-demand production releases at any time?
 
@@ -70,7 +70,7 @@ To build our self-assurance, we should place the unreliable tests in quarantine.
 - A set of stable tests. They are executed all the time. If any of these fail, they drop the release candidate.
 - A set of unstable, quarantined tests. These are only executed overnight. If they fail, it never blocks a release. But it still provides us with precious information.
 
-Note that this is only a solution to a symptom, not being able to count anymore on our automated tests to make a release decision. This is again possible. Now, we need to tackle the root cause. We need to bring the number of flaky tests back to zero by gradually fixing them. Turning them again into reliable tests. This is hard work!
+Note that this is only a solution to a symptom, not being able to count anymore on our automated tests to make a release decision. This is now again possible. We now need to tackle the root cause. We must bring the number of flaky tests back to zero by gradually fixing them. Turning them again into reliable tests. This is hard work!
 
 As with many practices that make Continuous Integration, if we want to keep our organisation financially healthy, our tests must be reliable, deterministic, consistent, and repeatable. If they are not, we must quarantine unreliable tests and progressively fix them.
 

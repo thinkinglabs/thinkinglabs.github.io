@@ -64,6 +64,7 @@ But why fixing in 10 minutes? Why not five minutes or 15 minutes? This relates t
 5. [Push Every Day]({% post_url 2024-09-16-the-practices-that-make-continuous-integration-push-every-day %})
 6. [Trigger the Build on Every Push]({% post_url 2024-10-15-the-practices-that-make-continuous-integration-trigger-the-build-on-every-push %})
 7. Fix a Broken Build within 10 Minutes
+8. [Have Reliable Tests]({% post_url 2024-10-19-the-practices-that-make-continuous-integration-have-reliable-tests %})
 
 ## Definitions
 
