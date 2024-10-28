@@ -25,7 +25,7 @@ Without any doubt [*Agree as a Team to Never Break the Build*]({% post_url 2022-
 
 Nevertheless, that does not mean the build cannot break on any occasion. Some say this practice puts too much pressure on teams, especially on juniors. As a senior, we have to be conscious of our privileges. It is, therefore, crucial to reassure more junior engineers that builds will break. Because life happens, for reasons out of our control, and that is absolutely fine.
 
-Some teams prefer to use Pull Requests with auto-merges once the build passes to prevent a broken [*Mainline*](#mainline) at all times. Even so, successful teams rarely have a red *Mainline*. When they do, they learn and improve.
+Some teams prefer to use Pull Requests with auto-merges once the build passes to [*Mainline*](#mainline) pristine at all times. Even so, successful teams rarely have a red *Mainline*. When they do, they learn and improve.
 
 > If a team only has green builds, it is a sign the team does not improve any more.
 >
