@@ -7,6 +7,8 @@ tags: [ Conway's Law ]
 speakerdeck:
   data_id: 6036872648904932830c197ae2a95e1c
   download_link: https://files.speakerdeck.com/presentations/6036872648904932830c197ae2a95e1c/shades_of_conways_law.pdf
+youtube: 
+  data_id: 8Bl48wcC77k
 conferences:
   - name: SoCraTes 2023
     date: 2023-08-25
