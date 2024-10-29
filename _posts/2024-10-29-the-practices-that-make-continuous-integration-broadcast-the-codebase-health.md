@@ -23,7 +23,7 @@ There is, however, a second objective for Continuous Integration: to receive fee
 
 At one customer, I had a difficult discussion with a team lead about precisely that. We were a small team of six managing the whole eco-system. At the time, we had some issues with one system. I configured the monitoring to send alerts to the channel where the team had its habitual communications. That system was sending alerts every so often. Soon, the team lead complained the alerts blurred the communication in the channel. They suggested sending the alerts to a dedicated alerting channel. Sending alerts to a channel nobody is bothered with is like sending a signal to a black hole. That is just an alerting trash bin. Nobody will care about it. Whereas, if it is vexing, annoying, or exasperating maybe the team should do something about it and stop the line instead of expecting it to magically disappear or hoping one person in the team will fix it. That is not a team. That will assuredly impact performance.
 
-Dashboards about the state of our builds are, however, not sufficient. Advisably, we also have dashboards showing trends. How do our builds evolve? Does our build lead time shrink or increase? How often does the build break? Are the number of unreliable tests going down? Preferably yes! If not, we have a problem, and we should act upon that.
+Dashboards about the state of our builds are, however, not sufficient. Advisably, we also have dashboards showing trends. How do our builds evolve? Does our [*Build Lead Time*](#build-lead-time) shrink or increase? How often does the build break? Are the number of unreliable tests going down? Preferably yes! If not, we have a problem, and we should act upon that.
 
 ![Build trend dashboards](/images/the-practices-that-make-continuous-integration/the-practices-that-make-continuous-integration-broadcast-the-codebase-health-dashboard.png)
 
@@ -60,3 +60,27 @@ Accordingly, *Broadcasting the Codebase's Health* has a financial reason to exis
 The Mainline is the line of development in Version Control which is the reference from which system builds are created that feed into a deployment pipeline.
 
 For CVS and SubVersion, this is *trunk*. For Git, this is the remote *main* branch. For Mercurial, this is the remote *default* branch.
+
+### Build Lead Time
+
+Build Lead Time is the [*Lead Time*](#lead-time) between committing code into a Version Control System and producing a binary build artefact.
+
+It is only a fraction of the total Lead Time, which encompasses all the testing and deploying to production. Yet, an important fraction, as it is the time engineers wait for essential feedback produced by the [*Local Build*]({% post_url 2022-09-28-the-practices-that-make-continuous-integration-building %}#practice-12-run-a-local-build) and the [*Commit Build*](#commit-build) before moving on with work.
+
+### Lead Time
+
+From [Monday.com](https://monday.com/blog/project-management/what-is-lead-time/) and [Wikipedia](https://en.wikipedia.org/wiki/Lead_time): the "latency" (time interval) between the start and completion of a certain task.
+
+It is most often used in Manufacturing and Supply Chain. Yet, it is applicable to all product-based businesses including the business of software.
+
+In IT, lead time is the time between receiving a user request, prioritising it, designing, implementing and getting it released into the hands of the users in production.
+
+For IT delivery, lead time is often limited to the time between committing code into a Version Control System and getting that code into the hands of the users in production.
+
+### Commit Build
+
+The Commit Build is a build performed during the first stage of the [Deployment Pipeline](https://continuousdelivery.com/implementing/patterns/#the-deployment-pipeline) or the central build server. It involves checking out the latest sources from *Mainline* and at a minimum compiling the sources, running a set of [*Commit Tests*](#commit-tests), and building a binary artefact for deployment.
+
+### Commit Tests
+
+The Commit Tests comprise all of the Unit Tests along with a small simple smoke test suite executed during the *Commit Build*. This smoke test suite includes a few simple Integration and Acceptance Tests deemed important enough to get early feedback.
