@@ -55,6 +55,7 @@ To reach Continuous Integration a team has to adopt 16 practices that can be spl
 6. [Trigger the Build on Every Push]({% post_url 2024-10-15-the-practices-that-make-continuous-integration-trigger-the-build-on-every-push %})
 7. [Fix a Broken Build within 10 Minutes]({% post_url 2024-10-17-the-practices-that-make-continuous-integration-fix-a-broken-build-within-10-minutes %})
 8. [Have Reliable Tests]({% post_url 2024-10-19-the-practices-that-make-continuous-integration-have-reliable-tests %})
+9. [Broadcast the Codebase's Health]({% post_url 2024-10-29-the-practices-that-make-continuous-integration-broadcast-the-codebase-health %})
 
 ![SketchNote from Lisi Hocke at SoCraTes 2022](/images/the-practices-that-make-continuous-integration/the-practices-that-make-continuous-integration-socrates-2022-lisi-hocke.png)
 *SketchNote from [Lisi Hocke](https://twitter.com/lisihocke) at [SoCraTes](https://www.socrates-conference.de) 2022, published with consent*
@@ -67,4 +68,4 @@ To reach Continuous Integration a team has to adopt 16 practices that can be spl
 
 [Steve Smith](https://twitter.com/SteveSmith_Tech) for reviewing the very first draft of this article one year and a half ago to then suggest to splitting the article up into a series. Steve was the one who came up with the 3 categories: Team Work, Coding and Building.
 
-[Lisi Hocke](https://twitter.com/lisihocke), [Seb Rose](https://twitter.com/sebrose) and [Steve Smith](https://twitter.com/SteveSmith_Tech) for having put a lot of effort in reviewing each individual article from the series.
+[Lisi Hocke](https://twitter.com/lisihocke), [Seb Rose](https://twitter.com/sebrose) and [Steve Smith](https://twitter.com/SteveSmith_Tech) for having put a lot of effort in reviewing each of the first three individual articles from the series.

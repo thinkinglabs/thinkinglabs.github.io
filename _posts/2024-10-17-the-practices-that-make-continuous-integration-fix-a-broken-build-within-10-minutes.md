@@ -65,11 +65,12 @@ But why fixing in 10 minutes? Why not five minutes or 15 minutes? This relates t
 6. [Trigger the Build on Every Push]({% post_url 2024-10-15-the-practices-that-make-continuous-integration-trigger-the-build-on-every-push %})
 7. Fix a Broken Build within 10 Minutes
 8. [Have Reliable Tests]({% post_url 2024-10-19-the-practices-that-make-continuous-integration-have-reliable-tests %})
+9. [Broadcast the Codebase's Health]({% post_url 2024-10-29-the-practices-that-make-continuous-integration-broadcast-the-codebase-health %})
 
 ## Definitions
 
 ### Mainline
 
-The Mainline is the line of development in Version Control which is the reference from which the builds of the system are created that feed into a deployment pipeline.
+The Mainline is the line of development in Version Control which is the reference from which system builds are created that feed into a deployment pipeline.
 
 For CVS and SubVersion, this is *trunk*. For Git, this is the remote *main* branch. For Mercurial, this is the remote *default* branch.
