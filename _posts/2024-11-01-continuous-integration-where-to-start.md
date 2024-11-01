@@ -9,7 +9,7 @@ redirect_from:
 - /articles/2024/11/01/beginning-with-continuous-integration.html
 ---
 
-We read about Continuous Integration. The practice appeals to us. We see the value, especially as it unlocks our ability to release anytime with high confidence. But, where to start? Many teams believe Continuous Integration is just a tooling problem, to then say they practice Continuous Integration. Although, they often do not. Hence, they miss out on the benefits that come along with it. So, again, where should we start? After all, there are still [20 practices]({% post_url 2022-06-14-the-practices-that-make-continuous-integration %}) to implement. Which ones to pick first?
+We read about Continuous Integration. The practice appeals to us. We see its value, especially as it unlocks our ability to release anytime with high confidence. But, where to start? Many teams believe Continuous Integration is just a tooling problem, to then say they practice Continuous Integration. Although, they often do not. Hence, they miss out on the benefits that come along with it. So, again, where should we start? After all, there are still [20 practices]({% post_url 2022-06-14-the-practices-that-make-continuous-integration %}) to implement. Which ones to pick first?
 
 ---
 
