@@ -9,7 +9,7 @@ redirect_from:
 - /articles/2024/11/01/beginning-with-continuous-integration.html
 ---
 
-We read about Continuous Integration. The practice appeals to us. We see its value, especially as it unlocks our ability to release anytime with high confidence. But, where to start? Many teams believe Continuous Integration is just a tooling problem, to then say they practice Continuous Integration. Although, they often do not. Hence, they miss out on the benefits that come along with it. So, again, where should we start? After all, there are still [20 practices]({% post_url 2022-06-14-the-practices-that-make-continuous-integration %}) to implement. Which ones to pick first?
+We read about Continuous Integration. The practice appeals to us. We see its value, especially as it unlocks our ability to release anytime with high confidence. But, where to start? Many teams believe Continuous Integration is just a tooling problem, to then say they practice Continuous Integration. Although, they often do not. Hence, they miss out on the benefits that come along with it. It takes more than only tooling. So, again, where should we start? After all, there are still [20 practices]({% post_url 2022-06-14-the-practices-that-make-continuous-integration %}) to implement. Which ones to pick first?
 
 ---
 
@@ -54,6 +54,8 @@ For the same reasons, we prefer to work in small, incremental steps because it i
 But, this is hard work! We possibly will have to think harder. We might move a bit slower. But with the immense advantage of never breaking the application and being able to perform on-demand production releases when it suits.
 
 Those five practices, *Version Control Everything*, *Agree as a Team to Never Break the Build*, *Run a Local Build*, *Automate the Build* and *Make all Changes in Small Increments*, provide the necessary foundations to experience the benefits of Continuous Integration, i.e. enabling the fast flow of work through the value stream and increased stability. From there, teams can start experimenting with [the remaining 15 practices that make Continuous Integration]({% post_url 2022-06-14-the-practices-that-make-continuous-integration %}).
+
+Notice, it only takes two tools to implement Continuous Integration: a version control system and an automated build. That is all. Continuous Integration is undeniably about practices. That is the hard work.
 
 ## Definitions
 
