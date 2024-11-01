@@ -9,7 +9,11 @@ redirect_from:
 - /articles/2024/11/01/beginning-with-continuous-integration.html
 ---
 
-We read about Continuous Integration. The practice appeals to us. We understand its value and benefits, especially as it unlocks our ability to release anytime with high confidence. But, where to start? Many teams believe Continuous Integration is just a tooling problem, to then say they practice Continuous Integration. Although, they often do not. Hence, they miss out on the benefits that come along with it. It takes more than only tooling. So, again, where should we start? After all, there are still [20 practices]({% post_url 2022-06-14-the-practices-that-make-continuous-integration %}) to implement. Which ones to pick first?
+We read about Continuous Integration. The practice appeals to us. We understand its value and benefits, especially as it unlocks our ability to release confidently anytime. But, where to start? Many teams believe Continuous Integration is just a tooling problem, declaring they practice Continuous Integration. Although, they often do not. Hence, they miss out on the benefits that come along with it. It takes more than only tooling. So, again, where should we start? After all, there are still [20 practices]({% post_url 2022-06-14-the-practices-that-make-continuous-integration %}) to implement. Which ones to pick first?
+
+---
+
+*Update Nov 1, 2024: Include a sixth practice, Push Every Day.*
 
 ---
 
@@ -17,7 +21,9 @@ We read about Continuous Integration. The practice appeals to us. We understand 
 
 It all starts with [*Agree as a Team to Never Break the Build*]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}#practice-2-agree-as-a-team-to-never-break-the-build). This is unquestionably key to the success of Continuous Integration as a team. That is the number one practice to implement before anything else.
 
-This practice is non-negotiable! No single acceptable reason allows us to break with this agreement. Failing to follow this settlement Continuous Integration will not work for the team. Once we do not have Continuous Integration, our application breaks down until someone else validates it works through manual regression testing. This costs a massive amount of money, requires an unseen length of time to complete, and as a result, uncommonly delays delivery. On top of that, because it is a process gate, research indicates it does not add at all to the quality. Lastly, of utmost importance, it is a waste of the qualities of Test Engineers and anyone else. It is dumb, boring work better handled by machines. People should be used for value-adding activities like Exploratory Testing.
+This practice is non-negotiable! No single acceptable reason allows us to break with this agreement. Failing to follow this settlement Continuous Integration will not work for the team. Once we do not have Continuous Integration, our application breaks down until someone else validates it works through manual regression testing. This costs a massive amount of money, requires an unseen length of time to complete, and as a result, uncommonly delays delivery.
+
+Besides, because it is a process gate, research indicates it does not add at all to the quality. Lastly, of utmost importance, it is a waste of the qualities of Test Engineers and anyone else. It is dumb, boring work that is better handled by machines. People should be used for value-adding activities like Exploratory Testing.
 
 But, this practice assumes we have a [sufficiently comprehensive set of automated tests]({% post_url 2022-09-28-the-practices-that-make-continuous-integration-building %}#practice-13-have-a-vast-amount-of-high-quality-automated-tests) that provides us feedback on whether a change broke the application or not within minutes. Despite that, at this point, we are only testing everything we know about the application. We have no idea whether the application is valuable for users or how it behaves in front of users. That is where the value lies in Test Engineers and Exploratory Testing. That will complete our knowledge with all the unknowns and the missing information.
 
@@ -31,13 +37,15 @@ Without version control, we do not have a single source of truth. Releasing a po
 
 On top of that, a Version Control System is not merely about versioning source code. It is a communication tool for communicating code amongst team members. It helps in reaching a [Shared Understanding](https://en.wikipedia.org/wiki/Extreme_programming_practices#Shared_understanding) and achieving a [Collective Ownership](http://www.extremeprogramming.org/rules/collective.html) about the codebase. Two key [eXtreme Programming](http://www.extremeprogramming.org/) principles that enable communication and collaboration inside the team. Inevitably, this instils superior quality and higher delivery throughput as well as better team morale.
 
-Lastly, by everything, we verily mean everything, i.e. without doubt production code, but also test code, as well as application and system configuration, together with database schema migrations, infrastructure code, but also [architectural decision records](https://www.cognitect.com/blog/2011/11/15/documenting-architecture-decisions) and [runbooks](https://www.pagerduty.com/resources/learn/what-is-a-runbook/). When an engineer clones a version control repository they should find everything to build, test, deploy, release, run and operate the IT system.
+Lastly, by everything, we admittedly mean everything, i.e. without doubt production code, but also test code, as well as application and system configuration, together with database schema migrations, infrastructure code, but also [architectural decision records](https://www.cognitect.com/blog/2011/11/15/documenting-architecture-decisions) and [runbooks](https://www.pagerduty.com/resources/learn/what-is-a-runbook/). When an engineer clones a version control repository they should find everything to build, test, deploy, release, run and operate the IT system.
 
 To perform on-demand production releases anytime we have to have always-working software. This means we have to *Agree as a Team to Never Break the Build*. Therefore, every team member must [*Run a Local Build*]({% post_url 2022-09-28-the-practices-that-make-continuous-integration-building %}#practice-12-run-a-local-build) and only commit and push to a remote [*Mainline*](#mainline) [on green]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %}#practice-7-commit-only-on-green).
 
 We effectively integrate remote changes produced by the rest of the team with our local changes. We try to detect possible integration conflicts early. Not doing so defers this detection to the [*Commit Build*](#commit-build) which might introduce a broken build and violate *Agree As a Team to Never Break The Build*.
 
-To *Run a Local build*, we ought to [*Automate the Build*]({% post_url 2022-09-28-the-practices-that-make-continuous-integration-building %}#practice-11-automate-the-build). This is *not* about having a centralised build server. Having a centralised build server is helpful, but not essential to reach Continuous Integration. Too often teams claim they apply Continuous Integration because they have GitHub Actions, GitLab CI or Jenkins in place. Oftentimes, they do not.
+Integrating locally is one-half of the integration. Rebasing *Mainline* onto a branch when practising [Feature Branches](https://martinfowler.com/bliki/FeatureBranch.html) is equally one-half of the integration. That is appropriate, but not enough. We only have a *Semi-Integration*. To complete the other half, we must push our local changes to the remote *Mainline*. We integrate our changes with all the other existing changes on *Mainline*. As such, we realise a *Full Integration*. This way, we communicate our changes with the rest of the team to allow the team to adapt to our changes. To keep this communication fluid, each team member has to [*Push Every Day*]({% post_url 2024-09-16-the-practices-that-make-continuous-integration-push-every-day %}), leading to multiple integrations per day for the whole team.
+
+To *Run a Local build*, we ought to [*Automate the Build*]({% post_url 2022-09-28-the-practices-that-make-continuous-integration-building %}#practice-11-automate-the-build). This is *not* about having a centralised build server. Having a centralised build server is helpful, but not essential to reach Continuous Integration. Too often teams claim they apply Continuous Integration because they have GitHub Actions, GitLab CI or Jenkins in place. Regularly, they do not.
 
 Lastly, [*Make all Changes in Small Increments*]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding%}#practice-5-make-all-changes-in-small-increments). From my humble experience, that seems to be the toughest practice to adopt. But together with *Agree as a Team to Never Break the Build* it is the most crucial practice to embrace.
 
@@ -53,14 +61,15 @@ For the same reasons, we prefer to work in small, incremental steps because it i
 
 But, this is hard work! We possibly will have to think harder. We might move a bit slower. But with the immense advantage of never breaking the application and being able to perform on-demand production releases when it suits.
 
-Those five practices, *Version Control Everything*, *Agree as a Team to Never Break the Build*, *Run a Local Build*, *Automate the Build* and *Make all Changes in Small Increments*, provide the necessary foundations to experience the benefits of Continuous Integration, i.e. enabling the fast flow of work through the value stream and increased stability. From there, teams can start experimenting with [the remaining 15 practices that make Continuous Integration]({% post_url 2022-06-14-the-practices-that-make-continuous-integration %}).
+These six practices, *Version Control Everything*, *Agree as a Team to Never Break the Build*, *Run a Local Build*, *Push Every Day*, *Automate the Build* and *Make all Changes in Small Increments*, provide the necessary foundations to experience the benefits of Continuous Integration, i.e. enabling the fast flow of work through the value stream and increased stability. From there, teams can start experimenting with [the remaining 15 practices that make Continuous Integration]({% post_url 2022-06-14-the-practices-that-make-continuous-integration %}).
 
-Notice, it only takes two tools to implement Continuous Integration: a version control system and an automated build. That is all. Continuous Integration is undeniably about practices. That is the hard work.
+Notice, that it only takes two tools to implement Continuous Integration: a version control system and an automated build. That is all. Continuous Integration is undeniably about practices. That is hard work.
 
 ## Related Articles
 
 - [Can the Pull Request Replace Agree as a Team to Never Break the Build]({% post_url 2023-03-12-can-the-pull-request-replace-agree-as-a-team-to-never-break-the-build %})
 - [But Agree as a Team to Never Break the Build is like Agreeing to Never Produce a Bug]({% post_url 2023-12-30-but-agree-as-a-team-to-never-break-the-build-is-like-agreeing-to-never-produce-a-bug %})
+- [Continuous Integration is Not a Tooling Problem]({% post_url 2020-03-23-continuous-integration-is-not-a-tooling-problem %})
 - [The Practices that Make Continuous Integration]({% post_url 2022-06-14-the-practices-that-make-continuous-integration %})
 
 ## Definitions
