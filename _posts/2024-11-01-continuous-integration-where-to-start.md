@@ -57,6 +57,12 @@ Those five practices, *Version Control Everything*, *Agree as a Team to Never Br
 
 Notice, it only takes two tools to implement Continuous Integration: a version control system and an automated build. That is all. Continuous Integration is undeniably about practices. That is the hard work.
 
+## Related Articles
+
+- [Can the Pull Request Replace Agree as a Team to Never Break the Build]({% post_url 2023-03-12-can-the-pull-request-replace-agree-as-a-team-to-never-break-the-build %})
+- [But Agree as a Team to Never Break the Build is like Agreeing to Never Produce a Bug]({% post_url 2023-12-30-but-agree-as-a-team-to-never-break-the-build-is-like-agreeing-to-never-produce-a-bug %})
+- [The Practices that Make Continuous Integration]({% post_url 2022-06-14-the-practices-that-make-continuous-integration %})
+
 ## Definitions
 
 ### Mainline
