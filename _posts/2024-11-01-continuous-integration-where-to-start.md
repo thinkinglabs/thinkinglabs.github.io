@@ -1,17 +1,19 @@
 ---
 layout: article
-title: Beginning with Continuous Integrations
+title: Continuous Integrations! Where to start?
 author: Thierry de Pauw
 category: articles
 tags: [ Continuous Integration, Extreme Programming ]
-image: /images/continuous-integration-for-beginner/continuous-integration-for-beginners.jpg
+image: /images/continuous-integration-where-to-start/continuous-integration-where-to-start.jpg
+redirect_from:
+- /articles/2024/11/01/beginning-with-continuous-integration.html
 ---
 
 We read about Continuous Integration. The practice appeals to us. We see the value, especially as it unlocks our ability to release anytime with high confidence. But where to start? In the end, there are still [20 practices]({% post_url 2022-06-14-the-practices-that-make-continuous-integration %}) to implement. Which ones to pick first?
 
 ---
 
-![Continuous Integration for Beginners](/images/continuous-integration-for-beginners/continuous-integration-for-beginners.jpg)
+![Continuous Integration! Where to start?](/images/continuous-integration-where-to-start/continuous-integration-where-to-start.jpg)
 
 It all starts with [*Agree as a Team to Never Break the Build*]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}#practice-2-agree-as-a-team-to-never-break-the-build). This is unquestionably key to the success of Continuous Integration as a team. That is the number one practice to implement before anything else.
 
