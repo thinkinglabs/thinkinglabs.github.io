@@ -1,0 +1,79 @@
+---
+layout: article
+title: Raising the Continuous Integration Bar
+author: Thierry de Pauw
+category: articles
+tags: [ Continuous Integration, Extreme Programming ]
+image: /images/advanced-continuous-integration/advanced-continuous-integration.jpg
+---
+
+So we [implemented Continuous Integration]({% post_url 2024-11-01-continuous-integration-where-to-start %}). It gives us the confidence to deliver -- great! Though, we are in a suboptimal situation. We do not reap all the benefits, yet, that Continuous Integration should deliver. How can we get the most out of it? Which additional practices are we missing and should we acquire? How can we raise the bar?
+
+---
+
+![Raising the Continuous Integration Bar](/images/raising-the-continuous-integration-bar/raising-the-continuous-integration-bar.jpg)
+
+[*Push Every Day*]({% post_url 2024-09-16-the-practices-that-make-continuous-integration-push-every-day %}) is one of [the six foundational practices to get started with Continuous Integration]({% post_url 2024-11-01-continuous-integration-where-to-start %}). No matter how, if we want to leverage the benefits of Continuous Integration at the fullest, integrating once per day will not make it. That is opportune, but inadequate. To raise the bar to the next level, we have to [Commit Frequently]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %}#practice-6-commit-frequently). After all, the central premise of Continuous Integration is *integrating early and often on* [*Mainline*](#mainline).
+
+When committing frequently we are reducing the size of our changes. Merge conflicts become most unlikely and broken builds infrequent.
+
+They also reduce risks. If the build happens to break, it is fairly easy to find the root cause because the changeset is so small. Probably also, because we only introduced the failing change a couple of minutes ago. We still have enough context to easily fix the build. [Getting the build back to green within ten minutes]({% post_url 2024-10-17-the-practices-that-make-continuous-integration-fix-a-broken-build-within-10-minutes %}) becomes attainable.
+
+If we have to revert a failing commit, that too will be effortless. Because the change is so small, we are not in the grip of the [sunk cost fallacy](https://thedecisionlab.com/biases/the-sunk-cost-fallacy). Thus, deciding to revert will be straightforward.
+
+Consequently, we should commit at least once an hour, preferably multiple times per hour. Exceptional engineers commit and push after every tiny refactoring. It has the benefit to communicate the refactoring in real time with the team, avoiding surprises for the team when releasing a series of refactorings developing into a complete redesign.
+
+Once we commit and push every so often into the remote *Mainline*, multiple times per hour, it becomes apparent that version control branches, and specifically [Feature Branches](https://martinfowler.com/bliki/FeatureBranch.html) with Pull Requests, becomes untenable. The cognitive overhead is way out of balance compared to the illusive benefits. Additionally, Pull Requests will bring all the benefits we built up with the practices that make Continuous Integration to a blatant halt.
+
+Naturally, *Commit Frequently* creates a gentle design pressure to work in [much more, many smaller steps]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding%}#practice-5-make-all-changes-in-small-increments), to [keep the code base even more decoupled]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %}#practice-8-decouple-the-codebase), to further [speed up the build]({% post_url 2022-09-28-the-practices-that-make-continuous-integration-building %}#practice-14-have-a-fast-build), and lastly to increasingly [hide unfinished functionality]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %}#practice-10-hide-unfinished-functionality). This creates a virtuous circle ensuing to commit all the more frequently.
+
+To [*Make all Changes in Small Increments*]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding%}#practice-5-make-all-changes-in-small-increments) it is vital to [*Decouple the Code Base*]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %}#practice-8-decouple-the-codebase). When a codebase is too coupled, it is burdensome to adopt incremental software engineering skills. Any change will rip apart the application, and prevents the application to work all the time. We find ourselves not to release anytime, incurring delays in delivery and an increased opportunity cost.
+
+Adopting [Ports and Adapters](https://alistair.cockburn.us/hexagonal-architecture/) together with [Simple Design](https://wiki.c2.com/?SimpleDesign) and intentional code duplication (through *Expand-Contract*) help in decoupling the code base. Interestingly, these patterns not only amplify quality and improve maintainability, they also optimise the required engineering time for new functionality. It becomes cheaper to introduce changes.
+
+Inherently, when a code base is decoupled, we can *Commit More Frequently*.
+
+Most often, the implementation of a feature will take a fair amount of time. It will involve a series of commits. We grow the feature small step by small step, commit by commit. How can we make sure the unfinished functionality is not released to the end user?
+
+The classic approach is to use Feature Branches. As long as the feature is not done, the branch is not merged into *Mainline*. Intrinsically, the feature is hidden by using the version control system as a manual toggling mechanism. The downside to this is that the feature is not integrated with all the other ongoing changes while the feature is being implemented. We are blind to whether the feature will cause any integration problems until the feature is finished and merged into *Mainline*. This delays feedback. Inevitably, it negatively impacts quality and increases the lead time to market.
+
+Instead, we could just [*Hide Unfinished Functionality*]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %}#practice-10-hide-unfinished-functionality). This is likely the most uncomplicated practice to adopt. It is perfectly acceptable to have unfinished functionality sitting in production as long as it is not discoverable and it does not introduce any security risks. In many cases, we do not need elaborate [Feature Toggles](https://martinfowler.com/articles/feature-toggles.html) for that. For instance, when adding a new screen to an existing user interface we just do not wire the screen into the navigation. We only do that at the end, once the screen is ready. The same is true for new API end points or backend services. As long as they are not ready, we do not document them or we do not use the backend service.
+
+But, in all honesty, Feature Toggles will be necessary when changing existing screens or modifying the behaviour of existing backends. Managing toggles requires mindfulness and conciousness if we do not want to self-sabotage ourselves.
+
+In some cases, we will have to perform a large refactoring that can rip apart the application for an extended period. We want to replace a library or a framework by another or we need to break backwards compatibility on a certain service. Here also, the classic approach is to use Feature Branches. Again, the problem is we are not integrating. In the meantime, while the large refactoring is happening, new functionality is added. When the refactoring is finally ready, integrating that will be tedious and time consuming. Accordingly, delivery comes to a halt and delivery lead times go through the roof. On top of that, we have created a massive amount of inventory that we do not dare to integrate as we know how complicated that will be.
+
+How can we do this more smoothly, in a more effective way, without impacting the flow of delivery? [*Adopt Expand-Contract*]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %}#practice-9-adopt-expand-contract). Once we understand Expand-Contract, it is gold! This is the intentional code duplication we mentioned earlier.
+
+To tell the truth, Expand-Contract will introduce a certain level of complexity. We will have to think harder. We might move slower. But, it brings the tremendous advantage to keep delivering new functionality while a large scale refactoring is happening during days, weeks or even months. The application keeps working at all times, allowing us to perform on-demand releases at all times. At no single moment we are blocked. The flow of delivery steadily continues.
+
+To *Commit Frequently* into *Mainline*, we must to [*Run the Local Build*]({% post_url 2022-09-28-the-practices-that-make-continuous-integration-building %}#practice-12-run-a-local-build) repeatedly before each commit to satisfy [*Agree as a Team to Never Break the Build*]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}#practice-2-agree-as-a-team-to-never-break-the-build). That means we ought to [*Have a Fast Build*]({% post_url 2022-09-28-the-practices-that-make-continuous-integration-building %}#practice-14-have-a-fast-build). This is primordial! But also hard work. Lots of teams struggle with that. Often teams hide slow builds behind version control branches and remote Pull Request builds that in turn introduce a decent amount of context switching and fatigue.
+
+When the build is too slow, two things can happen. Either teams tend to not run the *Local Build* before committing. We then run the risk of introducing regressions and thus impacting delivery throughput. Or teams tend to execute the build less often. In that case, batch work is introduced. We know from Lean Manufactoring it drives down quality and consequentially inflate time to market.
+
+But, what is fast? We focus on a *Local Build* (and thus also a [*Commit Build*](#commit-build)) of five minutes but no longer than ten minutes. If we can bring it to 30 seconds, it will avoid any hallway sword fighting sessions.
+
+![xkcd: Compiling](https://imgs.xkcd.com/comics/compiling.png)
+
+To conclude, if we want to raise the bar, it is fundamental to *Have a Fast Build*, as this allows us to commit all the more frequently, enabling us to work in increasingly smaller steps. But to *Commit Frequently*, it also requires to *Have a Decoupled Code Base* and to understand we have to *Hide Unfinished Functionality*. Lastly, *Adopt Expand-Contract* helps us to refactor in small increments and to commit frequently when refactoring and delivering new functionality at the same time.
+
+## Related Articles
+
+- [Continuous Integration! Where to Start?]({% post_url 2024-11-01-continuous-integration-where-to-start %})
+- [The Practices that Make Continuous Integration]({% post_url 2022-06-14-the-practices-that-make-continuous-integration %})
+
+## Definitions
+
+### Mainline
+
+The Mainline is the line of development in Version Control which is the reference from which system builds are created that feed into a deployment pipeline.
+
+For CVS and SubVersion, this is *trunk*. For Git, this is the remote *main* branch. For Mercurial, this is the remote *default* branch.
+
+### Commit Build
+
+The Commit Build is a build performed during the first stage of the [Deployment Pipeline](https://continuousdelivery.com/implementing/patterns/#the-deployment-pipeline) or the central build server. It involves checking out the latest sources from *Mainline* and at minimum compiling the sources, running a set of [*Commit Tests*](#commit-tests), and building a binary artefact for deployment.
+
+### Commit Tests
+
+The Commit Tests comprise all of the Unit Tests along with a small simple smoke test suite executed during the *Commit Build*. This smoke test suite includes a few simple Integration and Acceptance Tests deemed important enough to get early feedback.
