@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Continuous Integrations! Where to start?
+title: Continuous Integrations! Where to Start?
 author: Thierry de Pauw
 category: articles
 tags: [ Continuous Integration, Extreme Programming ]
@@ -71,6 +71,7 @@ Notice, that it only takes two tools to implement Continuous Integration: a vers
 - [But Agree as a Team to Never Break the Build is like Agreeing to Never Produce a Bug]({% post_url 2023-12-30-but-agree-as-a-team-to-never-break-the-build-is-like-agreeing-to-never-produce-a-bug %})
 - [Continuous Integration is Not a Tooling Problem]({% post_url 2020-03-23-continuous-integration-is-not-a-tooling-problem %})
 - [The Practices that Make Continuous Integration]({% post_url 2022-06-14-the-practices-that-make-continuous-integration %})
+- [Raising the Continuous Integration Bar]({% post_url 2024-11-03-raising-the-continuous-integration-bar%})
 
 ## Definitions
 
