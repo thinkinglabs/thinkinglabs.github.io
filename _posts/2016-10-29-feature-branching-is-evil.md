@@ -48,7 +48,7 @@ conferences:
     date: 2023-07-24
 speakerdeck:
   data_id: 6e5c22252bbc42b09caedba221567c27
-  download_link: https://speakerd.s3.amazonaws.com/presentations/6e5c22252bbc42b09caedba221567c27/Feature_Branching_is_Evil.pdf
+  download_link: https://speakerd.s3.amazonaws.com/presentations/6e5c22252bbc42b09caedba221567c27/feature_branching_is_evil.pdf
 youtube:
   data_id: cHgDdRW3WO0
 redirect_from:
