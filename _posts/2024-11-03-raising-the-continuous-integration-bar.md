@@ -5,6 +5,8 @@ author: Thierry de Pauw
 category: articles
 tags: [ Continuous Integration, Extreme Programming ]
 image: /images/advanced-continuous-integration/advanced-continuous-integration.jpg
+redirect_from:
+  - /raising-the-continuous-integration-bar
 ---
 
 So we [implemented Continuous Integration]({% post_url 2024-11-01-continuous-integration-where-to-start %}). It gives us the confidence to deliver -- great! Though, we are in a suboptimal situation. We do not yet have all the benefits that Continuous Integration should provide. How can we get the most out of it? Which additional practices are we missing and should we acquire? How can we raise the bar?
