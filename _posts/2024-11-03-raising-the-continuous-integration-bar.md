@@ -66,6 +66,10 @@ To conclude, if we want to raise the bar, it is fundamental to *Have a Fast Buil
 - [Continuous Integration! Where to Start?]({% post_url 2024-11-01-continuous-integration-where-to-start %})
 - [The Practices that Make Continuous Integration]({% post_url 2022-06-14-the-practices-that-make-continuous-integration %})
 
+## References
+
+- [The Talk: Continuous Integration! Raising the Bar]({% post_url 2024-11-20-continuous-integration-raising-the-bar %})
+
 ## Definitions
 
 ### Mainline
