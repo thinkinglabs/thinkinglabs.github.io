@@ -13,19 +13,29 @@ So we [implemented Continuous Integration]({% post_url 2024-11-01-continuous-int
 
 ---
 
+Update Dec 17, 2024: Reference TDD as enabler for Commit Frequently.
+
+---
+
 ![Raising the Continuous Integration Bar](/images/raising-the-continuous-integration-bar/raising-the-continuous-integration-bar.jpg)
 
 [*Push Every Day*]({% post_url 2024-09-16-the-practices-that-make-continuous-integration-push-every-day %}) is one of [the six foundational practices to get started with Continuous Integration]({% post_url 2024-11-01-continuous-integration-where-to-start %}). No matter how, if we want to leverage the benefits of Continuous Integration to the fullest, integrating once per day will not make it. That is pertinent but inadequate. To raise the bar to the next level, we have to [Commit Frequently]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %}#practice-6-commit-frequently). After all, the central premise of Continuous Integration is *integrating early and often on* [*Mainline*](#mainline). It enables speed of delivery. As a result, it accelerates feedback, amplifies quality, and allows us to recover quicker from production instabilities.
 
 I regularly get pointed out that this focus on speed of delivery puts pressure on teams. I can see that. But we are missing the point. We want teams to be at ease and comfortable, without stress and fear. Because of that, they will deliver at speed. However, to enable this, it requires teams to adopt *Decouple the Codebase*, *Hide Unfinished Functionality* and *Expand-Contract*.
 
+To satisfy *Commit Frequently*, we have to commit at least once per hour, preferably multiple times per hour. It enables the real time communication of changes with the rest of the team. This is especially important when refactoring. Thoughtful engineers will commit and push after every little refactor. This avoids surprises for the rest of the team when one team member releases a series of refactorings in one big batch that results in a significant redesign. We want to avoid that. We should communicate early and often to allow the rest of the team to adapt to our changes.
+
+![TDD cycle](/images/raising-the-continuous-integration-bar/tdd-cycle.jpg)
+
+This is when [Test Driven Development](https://en.wikipedia.org/wiki/Test-driven_development) (TDD) comes in. We write a small failing test. We add just enough production code to get the test passing to green. When the tests are green, we commit and push into *Mainline*. Then we refactor. If the test fails, we revert. When the test is back to green, we commit and push again into *Mainline*.
+
+Test Driven Development creates this commit cadence to enable *Commit Frequently* and that is required to attain a state of Continuous Integration.
+
 When we *Commit Frequently* we reduce the size of our changes. Merge conflicts are unlikely and broken builds are infrequent.
 
 It also reduces risks. If the build happens to break, it is fairly easy to find the root cause because the changeset is so small. Probably also, because we only introduced the failing change just minutes ago. We still have enough context to fix the build readily. [Getting the build back to green within ten minutes]({% post_url 2024-10-17-the-practices-that-make-continuous-integration-fix-a-broken-build-within-10-minutes %}) becomes attainable.
 
 If we have to revert a failing commit, that too, will be effortless. Because the change is so small, we are not plagued by the [sunk cost fallacy](https://thedecisionlab.com/biases/the-sunk-cost-fallacy). Thus, deciding to revert will be straightforward.
-
-Consequently, we should commit at least once an hour, preferably multiple times per hour. Thoughtful engineers commit and push after every tiny refactoring. This has the benefit of communicating the refactoring in real-time with the team, avoiding surprises for the team when releasing a series of refactorings that evolve into a complete redesign.
 
 Once we commit and push every so often into the remote *Mainline*, multiple times per hour, it becomes apparent that version control branches, and specifically [Feature Branches](https://martinfowler.com/bliki/FeatureBranch.html) with Pull Requests, becomes untenable. The cognitive overhead is way out of balance compared to the illusive benefits. Additionally, Pull Requests will bring all the benefits we built up with the practices that bring Continuous Integration to a blatant halt.
 
