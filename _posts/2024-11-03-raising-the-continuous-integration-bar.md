@@ -13,7 +13,9 @@ So we [implemented Continuous Integration]({% post_url 2024-11-01-continuous-int
 
 ---
 
-Update Dec 17, 2024: Reference TDD as enabler for Commit Frequently.
+*Update Dec 17, 2024: Reference TDD as enabler for Commit Frequently.*
+
+*Update Dec 18, 2024: Reference the Unix philosophy and the Dependency Inversion principle as enabler of Decouple the Codebase.*
 
 ---
 
@@ -43,7 +45,7 @@ Naturally, *Commit Frequently* creates a gentle design pressure to work in [much
 
 To [*Make all Changes in Small Increments*]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding%}#practice-5-make-all-changes-in-small-increments) it is vital to [*Decouple the Codebase*]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %}#practice-8-decouple-the-codebase). When a codebase is too coupled, it becomes tough to adopt incremental software engineering skills. Any change will rip apart the application and prevent the application from working all the time. We find ourselves not releasing anymore at any time, incurring delays in delivery and an increased opportunity cost.
 
-Adopting [Ports and Adapters](https://alistair.cockburn.us/hexagonal-architecture/) together with [Simple Design](https://wiki.c2.com/?SimpleDesign) and intentional code duplication (through *Expand-Contract*) helps to decouple the codebase. Interestingly, these patterns not only amplify quality and improve maintainability, they also optimise the required engineering time for new functionality. It becomes cheaper to introduce changes.
+Adopting [Ports and Adapters](https://alistair.cockburn.us/hexagonal-architecture/) together with [Simple Design](https://wiki.c2.com/?SimpleDesign), intentional code duplication (with *Expand-Contract*), the [Unix philosophy](https://dannorth.net/cupid-for-joyful-coding/#unix-philosophy) and [Dependency Inversion Principle](https://en.wikipedia.org/wiki/Dependency_inversion_principle) helps to decouple the codebase. Interestingly, these patterns not only amplify quality and improve maintainability, they also optimise the required engineering time for new functionality. It becomes cheaper to introduce changes.
 
 Inherently, when a code base is decoupled, we can *Commit More Frequently*.
 
