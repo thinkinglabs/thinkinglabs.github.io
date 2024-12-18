@@ -17,6 +17,8 @@ So we [implemented Continuous Integration]({% post_url 2024-11-01-continuous-int
 
 *Update Dec 18, 2024: Reference the Unix philosophy and the Dependency Inversion principle as enabler of Decouple the Codebase.*
 
+*Update Dec 18, 2024: Include the Expand-Contract infographic.*
+
 ---
 
 ![Raising the Continuous Integration Bar](/images/raising-the-continuous-integration-bar/raising-the-continuous-integration-bar.jpg)
@@ -62,6 +64,8 @@ Sometimes, we have to modify a widget from an existing screen or the behaviour o
 In some cases, we will have to perform a large refactoring that can rip apart the application for an extended period. Let us say, we want to replace a library or a framework with another or we need to break backwards compatibility on a certain service. Here too, the classic approach is to use Feature Branches. Again, the problem is we are not integrating. In the meantime, while the large refactoring is happening, new functionality is added. When the refactoring is finally ready, the integration will be tedious and time-consuming. Accordingly, delivery comes to a halt and delivery lead times go through the roof. On top of that, we have created a massive amount of inventory that we do not dare to integrate as we fear how complicated that will be.
 
 How can we do this more smoothly, in a more effective way, without impacting the flow of delivery? [*Adopt Expand-Contract*]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %}#practice-9-adopt-expand-contract). This is the intentional code duplication we mentioned earlier. Once we understand Expand-Contract, it is gold!
+
+![Expand-Contract](/images/raising-the-continuous-integration-bar/expand-contract.jpg)
 
 Truthfully, Expand-Contract will introduce a certain level of complexity. We will have to think harder. We might move slower. But, it brings the tremendous advantage of delivering new functionality while a large-scale refactoring is happening that takes days, weeks or even months to complete. The application keeps working at all times, allowing us to perform on-demand releases anytime. At no single moment, we are blocked. The flow of delivery steadily continues.
 
