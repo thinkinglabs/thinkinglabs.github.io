@@ -13,11 +13,13 @@ So we [implemented Continuous Integration]({% post_url 2024-11-01-continuous-int
 
 ---
 
-*Update Dec 17, 2024: Reference TDD as enabler for Commit Frequently.*
+*Update Dec 17, 2024: Reference TDD as an enabler for Commit Frequently.*
 
-*Update Dec 18, 2024: Reference the Unix philosophy and the Dependency Inversion principle as enabler of Decouple the Codebase.*
+*Update Dec 18, 2024: Reference the Unix philosophy and the Dependency Inversion principle as an enabler of Decouple the Codebase.*
 
 *Update Dec 18, 2024: Include the Expand-Contract infographic.*
+
+*Update Dec 19, 2024: Include some questions from Agile Testing Days 2024.*
 
 ---
 
@@ -41,7 +43,7 @@ It also reduces risks. If the build happens to break, it is fairly easy to find 
 
 If we have to revert a failing commit, that too, will be effortless. Because the change is so small, we are not plagued by the [sunk cost fallacy](https://thedecisionlab.com/biases/the-sunk-cost-fallacy). Thus, deciding to revert will be straightforward.
 
-Once we commit and push every so often into the remote *Mainline*, multiple times per hour, it becomes apparent that version control branches, and specifically [Feature Branches](https://martinfowler.com/bliki/FeatureBranch.html) with Pull Requests, becomes untenable. The cognitive overhead is way out of balance compared to the illusive benefits. Additionally, Pull Requests will bring all the benefits we built up with the practices that bring Continuous Integration to a blatant halt.
+Once we commit and push every so often into the remote *Mainline*, multiple times per hour, it becomes apparent that version control branches, and specifically [Feature Branches](https://martinfowler.com/bliki/FeatureBranch.html) with Pull Requests, becomes untenable. The cognitive overhead is way out of balance compared to the illusive benefits. Additionally, Pull Requests will bring to a blatant halt all the benefits we built up with the practices that bring Continuous Integration.
 
 Naturally, *Commit Frequently* creates a gentle design pressure to work in [much more, many smaller steps]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding%}#practice-5-make-all-changes-in-small-increments), to [keep the code base even more decoupled]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %}#practice-8-decouple-the-codebase), to further [speed up the build]({% post_url 2022-09-28-the-practices-that-make-continuous-integration-building %}#practice-14-have-a-fast-build), and lastly to increasingly [hide unfinished functionality]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %}#practice-10-hide-unfinished-functionality). This creates a virtuous circle resulting in committing all the more frequently.
 
@@ -69,6 +71,8 @@ How can we do this more smoothly, in a more effective way, without impacting the
 
 Truthfully, Expand-Contract will introduce a certain level of complexity. We will have to think harder. We might move slower. But, it brings the tremendous advantage of delivering new functionality while a large-scale refactoring is happening that takes days, weeks or even months to complete. The application keeps working at all times, allowing us to perform on-demand releases anytime. At no single moment, we are blocked. The flow of delivery steadily continues.
 
+Yet, *Expand-Contract* is critical in avoiding breaking changes that impact the team. It necessitates *Commit Frequently* to communicate changes steadily with the team. That will especially help, but that is still insufficient. Verbal communication is indispensable. "*We intend to perform this change. That might have this and that impact or not.*"
+
 To *Commit Frequently* into *Mainline*, we must [*Run the Local Build*]({% post_url 2022-09-28-the-practices-that-make-continuous-integration-building %}#practice-12-run-a-local-build) repeatedly before each commit to satisfy [*Agree as a Team to Never Break the Build*]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}#practice-2-agree-as-a-team-to-never-break-the-build). Additionally, when engineers commit multiple times per hour, they execute the *Local Build* multiple times per hour. That means we ought to [*Have a Fast Build*]({% post_url 2022-09-28-the-practices-that-make-continuous-integration-building %}#practice-14-have-a-fast-build). This is primordial! But also hard work. Lots of teams struggle with that. Often teams hide slow builds behind version control branches and remote Pull Request builds that in turn introduce a decent amount of context switching and fatigue.
 
 When the build is too slow, two things can happen. Either teams do not tend to run the *Local Build* before committing. We then run the risk of introducing regressions, thus impacting delivery throughput. Or teams tend to execute the build less often. In that case, batch work is introduced. We know from [*Lean Manufacturing*](https://en.wikipedia.org/wiki/Lean_manufacturing) that it drives down quality and consequently inflates time to market.
@@ -79,10 +83,19 @@ But, what is fast? We focus on a *Local Build* (and thus also a [*Commit Build*]
 
 To conclude, if we want to raise the bar, it is fundamental to *Have a Fast Build*. This is crucial as it allows us to commit all the more frequently, enabling us to work in increasingly smaller steps. But to *Commit Frequently*, also requires to *Have a Decoupled Code Base* and understanding we have to *Hide Unfinished Functionality*. Lastly, *Adopt Expand-Contract* helps us to refactor in small increments and to commit frequently when refactoring and delivering new functionality at the same time.
 
+Looking at some of the practices, one might think this presupposes a mature team. Sure, maturity helps. But, do not be fooled. Do not assume that a mature team will naturally flourish and conversely, this cannot possibly work for a novice team. We have had [outstanding experiences with novice teams and have seen first-hand accomplished teams with skilled engineers unable to pull this off]({% post_url 2021-07-14-on-the-evilness-of-feature-branching-a-tale-of-two-teams %}). To progress, we must have a growth mindset and openness to novelty. Then miracles happen ...
+
+> Showing my age: Before we had version control, we only did trunk-based
+> development. Even with several people. I was certainly a novice then. It
+> worked. (We talked to each other when things didn't work.)
+>
+> -- Johanna Rothman ([@johannarothman](https://twitter.com/johannarothman)), [Jul 15, 2021](https://twitter.com/johannarothman/status/1415658424956772354)
+
 ## Related Articles
 
 - [Continuous Integration! Where to Start?]({% post_url 2024-11-01-continuous-integration-where-to-start %})
 - [The Practices that Make Continuous Integration]({% post_url 2022-06-14-the-practices-that-make-continuous-integration %})
+- [On the Evilness of Feature Branching - A Tale of Two Teams]({% post_url 2021-07-14-on-the-evilness-of-feature-branching-a-tale-of-two-teams %})
 
 ## References
 
