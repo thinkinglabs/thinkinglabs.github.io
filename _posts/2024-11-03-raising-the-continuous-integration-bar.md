@@ -19,7 +19,7 @@ So we [implemented Continuous Integration]({% post_url 2024-11-01-continuous-int
 
 *Update Dec 18, 2024: Include the Expand-Contract infographic.*
 
-*Update Dec 19, 2024: Include some questions from Agile Testing Days 2024.*
+*Update Dec 21, 2024: Include some questions from Agile Testing Days 2024.*
 
 ---
 
@@ -81,9 +81,13 @@ But, what is fast? We focus on a *Local Build* (and thus also a [*Commit Build*]
 
 ![xkcd: Compiling](https://imgs.xkcd.com/comics/compiling.png)
 
+We could argue that *Have a Fast Build* contradicts with [*Have a Vast Amount of High-Quality Automated Tests*]({% post_url 2022-09-28-the-practices-that-make-continuous-integration-building %}#practice-13-have-a-vast-amount-of-high-quality-automated-tests). When adding more tests over time, the build naturally expands in execution time. How can we keep the build fast? First, we should consider incorporating a [fitness function](https://en.wikipedia.org/wiki/Fitness_function) as part of the build to monitor the build lead team. Whenever it exceeds five minutes, it fails the build. At that point, we need to inspect individual unit test execution times. Any unit test that takes 500ms to one second to execute is a red flag and requires immediate attention. Second, at some point, we cannot run all tests inside the *Commit Build* anymore. Now, we have to evolve the build towards *Progressive Testing*. We split test execution into several stages. The fast unit tests execute during the first stage, the *Commit Build*. The slower, broader automated tests are delayed to later stages. Lastly, later on, we might need to optimise more by adopting parallelising test execution and looking at the software system performance. Also, we should consider deleting obsolete tests that have no value anymore.
+
+With all this automation in place, we may well think there is no room for manual actions. The opposite is true. All this test automation ensures regressions are covered, removing the need for time-consuming manual regression tests. Ultimately, it gives the team time and space for valuable [*Exploratory Testing*](https://en.wikipedia.org/wiki/Exploratory_testing) that can uncover potentially serious system-level bugs or usages we have not pondered.
+
 To conclude, if we want to raise the bar, it is fundamental to *Have a Fast Build*. This is crucial as it allows us to commit all the more frequently, enabling us to work in increasingly smaller steps. But to *Commit Frequently*, also requires to *Have a Decoupled Code Base* and understanding we have to *Hide Unfinished Functionality*. Lastly, *Adopt Expand-Contract* helps us to refactor in small increments and to commit frequently when refactoring and delivering new functionality at the same time.
 
-Can this scale? Absolutely! We saw an [organisation of 150 engineers spread over 15 teams working on a single monolith]({% post_url 2019-09-06-from-bi-annual-to-fortnightly-releases-in-4-months-for-15-teams-and-a-single-monolith %}). All teams committing into a single repository, triggering a single build and releasing every fortnight. [Google being the utmost example this can scale](https://research.google/pubs/why-google-stores-billions-of-lines-of-code-in-a-single-repository/).
+Can this scale? Absolutely! We saw an [organisation of 150 engineers spread over 15 teams working on a single monolith]({% post_url 2019-09-06-from-bi-annual-to-fortnightly-releases-in-4-months-for-15-teams-and-a-single-monolith %}). All teams commit to a single repository, triggering a single build and releasing every fortnight. [Google being the utmost example this can scale](https://research.google/pubs/why-google-stores-billions-of-lines-of-code-in-a-single-repository/).
 
 Looking at some of the practices, one might think this presupposes a mature team. Sure, maturity helps. But, do not be fooled. Do not assume that a mature team will naturally flourish and conversely, this cannot possibly work for a novice team. We have had [outstanding experiences with novice teams and have seen first-hand accomplished teams with skilled engineers unable to pull this off]({% post_url 2021-07-14-on-the-evilness-of-feature-branching-a-tale-of-two-teams %}). To progress, we must have a growth mindset and openness to novelty. Then miracles happen ...
 
