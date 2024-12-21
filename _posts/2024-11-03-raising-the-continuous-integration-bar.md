@@ -95,7 +95,7 @@ Looking at some of the practices, one might think this presupposes a mature team
 > development. Even with several people. I was certainly a novice then. It
 > worked. (We talked to each other when things didn't work.)
 >
-> -- Johanna Rothman ([@johannarothman](https://twitter.com/johannarothman)), [Jul 15, 2021](https://twitter.com/johannarothman/status/1415658424956772354)
+> -- Johanna Rothman ([@johannarothman](https://bsky.app/profile/johannarothman.bsky.social), Jul 15, 2021
 
 ## Related Articles
 
