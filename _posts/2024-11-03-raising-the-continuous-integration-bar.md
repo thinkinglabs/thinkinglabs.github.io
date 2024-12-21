@@ -83,6 +83,8 @@ But, what is fast? We focus on a *Local Build* (and thus also a [*Commit Build*]
 
 To conclude, if we want to raise the bar, it is fundamental to *Have a Fast Build*. This is crucial as it allows us to commit all the more frequently, enabling us to work in increasingly smaller steps. But to *Commit Frequently*, also requires to *Have a Decoupled Code Base* and understanding we have to *Hide Unfinished Functionality*. Lastly, *Adopt Expand-Contract* helps us to refactor in small increments and to commit frequently when refactoring and delivering new functionality at the same time.
 
+Can this scale? Absolutely! We saw an [organisation of 150 engineers spread over 15 teams working on a single monolith]({% post_url 2019-09-06-from-bi-annual-to-fortnightly-releases-in-4-months-for-15-teams-and-a-single-monolith %}). All teams committing into a single repository, triggering a single build and releasing every fortnight. [Google being the utmost example this can scale](https://research.google/pubs/why-google-stores-billions-of-lines-of-code-in-a-single-repository/).
+
 Looking at some of the practices, one might think this presupposes a mature team. Sure, maturity helps. But, do not be fooled. Do not assume that a mature team will naturally flourish and conversely, this cannot possibly work for a novice team. We have had [outstanding experiences with novice teams and have seen first-hand accomplished teams with skilled engineers unable to pull this off]({% post_url 2021-07-14-on-the-evilness-of-feature-branching-a-tale-of-two-teams %}). To progress, we must have a growth mindset and openness to novelty. Then miracles happen ...
 
 > Showing my age: Before we had version control, we only did trunk-based
