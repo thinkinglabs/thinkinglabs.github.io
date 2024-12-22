@@ -9,7 +9,7 @@ redirect_from:
   - /raising-the-continuous-integration-bar
 ---
 
-So we [implemented Continuous Integration]({% post_url 2024-11-01-continuous-integration-where-to-start %}). It gives us the confidence to deliver -- great! Though, we are in a suboptimal situation. We do not yet have all the benefits that Continuous Integration should provide. How can we get the most out of it? Which additional practices are we missing and should we acquire? How can we raise the bar?
+So we [implemented Continuous Integration]({% post_url 2024-11-01-continuous-integration-where-to-start %}). It gives us the confidence to deliver -- great! Though, we feel we are stuck in a suboptimal situation. We have not yet gained all the benefits that should come with Continuous Integration. We are not able to deliver fast enough without causing stress on the team. How can we get the most out of it while keeping the team untroubled? Which additional practices are we missing and should we acquire? How can we raise the bar?
 
 ---
 
