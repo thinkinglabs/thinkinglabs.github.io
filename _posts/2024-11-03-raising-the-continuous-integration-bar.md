@@ -21,6 +21,8 @@ So we [implemented Continuous Integration]({% post_url 2024-11-01-continuous-int
 
 *Update Dec 21, 2024: Include some questions from Agile Testing Days 2024.*
 
+*Update Jan 24, 2025: Add the HP LaserJet FutureSmart case as a scaling example.*
+
 ---
 
 ![Raising the Continuous Integration Bar](/images/raising-the-continuous-integration-bar/raising-the-continuous-integration-bar.jpg)
@@ -87,7 +89,7 @@ With all this automation in place, we may well think there is no room for manual
 
 To conclude, if we want to raise the bar, it is fundamental to *Have a Fast Build*. This is crucial as it allows us to commit all the more frequently, enabling us to work in increasingly smaller steps. But to *Commit Frequently*, also requires to *Have a Decoupled Code Base* and understanding we have to *Hide Unfinished Functionality*. Lastly, *Adopt Expand-Contract* helps us to refactor in small increments and to commit frequently when refactoring and delivering new functionality at the same time.
 
-Can this scale? Absolutely! We saw an [organisation of 150 engineers distributed over 15 teams working on a single monolith]({% post_url 2019-09-06-from-bi-annual-to-fortnightly-releases-in-4-months-for-15-teams-and-a-single-monolith %}). All teams commit to a single repository, triggering a single build and releasing every fortnight. [Google being the utmost example this can scale](https://research.google/pubs/why-google-stores-billions-of-lines-of-code-in-a-single-repository/).
+Can this scale? Absolutely! We saw an [organisation of 150 engineers distributed over 15 teams working on a single monolith]({% post_url 2019-09-06-from-bi-annual-to-fortnightly-releases-in-4-months-for-15-teams-and-a-single-monolith %}). All teams commit to a single repository, triggering a single build and releasing every fortnight. The embedded [HP LaserJet FutureSmart Firmware](https://app.thestorygraph.com/books/c6e126e5-1ffe-4736-9bcb-f1b80cb412c9) scaled to 400-person distributed across three continents, integrating 100-150 changes per day into *Mainline* and producing every day 10-15 good builds of the firmware. [Google being the ultimate example that this can scale](https://research.google/pubs/why-google-stores-billions-of-lines-of-code-in-a-single-repository/). In 2016, Google had 25.000 engineers working from a single *Mainline* with 16.000 changes per day. Continuous Integration is the only process known to scale effectively without the nasty and unpredictable integration, stabilisation and hardening phases associated with other approaches like release trains or feature branches.
 
 Looking at some of the practices, one might think this presupposes a mature team. Sure, maturity helps. But, do not be fooled. Do not assume that a mature team will naturally flourish and conversely, that this cannot possibly work for a novice team. We have had [outstanding experiences with novice teams and have seen first-hand accomplished teams with skilled engineers unable to pull this off]({% post_url 2021-07-14-on-the-evilness-of-feature-branching-a-tale-of-two-teams %}). To progress, we must have a growth mindset and openness to novelty. Then miracles happen ...
 
