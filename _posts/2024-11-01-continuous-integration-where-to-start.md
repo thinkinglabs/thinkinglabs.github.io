@@ -13,10 +13,6 @@ We read about Continuous Integration. The practice appeals to us. We understand 
 
 ---
 
-*Update Nov 1, 2024: Include a sixth practice, Push Every Day.*
-
----
-
 ![Continuous Integration! Where to start?](/images/continuous-integration-where-to-start/continuous-integration-where-to-start.jpg)
 
 It all starts with [*Agree as a Team to Never Break the Build*]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}#practice-2-agree-as-a-team-to-never-break-the-build). This is unquestionably key to the success of Continuous Integration as a team. That is the number one practice to implement before anything else.

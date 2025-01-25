@@ -64,6 +64,11 @@ To reach Continuous Integration a team has to adopt 16 practices that can be spl
 
 - [The Talk: The Practices That Make Continuous Integration]({% post_url 2022-08-26-the-practices-that-make-continuous-integration %})
 
+## Related Articles
+
+- [Continuous Integrations! Where to Start?]({% post_url 2024-11-01-continuous-integration-where-to-start %})
+- [Raising the Continuous Integration Bar]({% post_url 2024-11-03-raising-the-continuous-integration-bar %})
+
 ## Acknowledgments
 
 [Steve Smith](https://twitter.com/SteveSmith_Tech) for reviewing the very first draft of this article one year and a half ago to then suggest to splitting the article up into a series. Steve was the one who came up with the 3 categories: Team Work, Coding and Building.
