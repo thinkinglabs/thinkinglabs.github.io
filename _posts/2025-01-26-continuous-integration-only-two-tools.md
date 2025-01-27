@@ -4,6 +4,7 @@ title: Continuous Integration, Only Two Tools!
 author: Thierry de Pauw
 category: articles
 tags: [ Continuous Integration, Extreme Programming ]
+image: /images/continuous-integration-only-two-tools/continuous-integration-only-two-tools.jpg
 ---
 
 Despite what everyone believes, Continuous Integration requires only two tools. That is right. To achieve Continuous Integration, we only have to implement two tools. All the rest are practices. The predominant reason teams struggle to adopt true Continuous Integration. Tooling is easy. Practices require deliberate practice.
