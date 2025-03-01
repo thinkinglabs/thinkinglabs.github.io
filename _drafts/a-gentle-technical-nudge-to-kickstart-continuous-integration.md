@@ -1,5 +1,0 @@
-
-
-
-https://baseline.openssf.org/
-
