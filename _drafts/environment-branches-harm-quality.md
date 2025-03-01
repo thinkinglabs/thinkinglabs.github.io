@@ -62,6 +62,10 @@ The team realised that the fact they could bypass environments was problematic. 
 
 Many times, quality problems are caused by the system. Here the use of environment branches. It is distressing to see leadership putting pressure on teams to deliver while still expecting quality. When teams are under tension, they will cut corners. Leadership is responsible for the system teams are working in. If management allows teams to improve, they will naturally evolve towards a *Deployment Pipeline* with all the benefits that comes with it.
 
+## Acknowledgements
+
+[Martin Dürrmeier](https://www.linkedin.com/in/martinduerrmeier/) for reviewing the article and providing his insights.
+
 ## References
 
 - [Organisation antipattern: Release Feature Branching](https://www.stevesmith.tech/blog/organisation-antipattern-release-feature-branching/), Steve Smith
