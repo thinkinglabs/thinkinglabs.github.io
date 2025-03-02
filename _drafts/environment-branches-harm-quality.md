@@ -29,9 +29,11 @@ Because we can deploy straight to production with failing tests nothing prevents
 
 At any time, anyone can introduce changes in any environment branch resulting in the long running branches to diverge. Meaning that binary artefacts will diverge even more between environments. Many times it happened that an environment branch had to be recreated from main. That is a fourth risk.
 
-Lastly, as one can see, the delivery process becomes quickly fairly complex. The build pipeline supporting this contained loads of exceptions and special cases to cope with the differences and vagaries of the various environments. Such build systems make unnecessarily complex what should be trivial. This forces us into fragile, expensive release processes of which the qualitative outcome is questionable.
+As one can see, the delivery process becomes quickly fairly complex. The build pipeline supporting this contained loads of exceptions and special cases to cope with the differences and vagaries of the various environments. Such build systems make unnecessarily complex what should be trivial. This forces us into fragile, expensive release processes of which the qualitative outcome is questionable.
 
-Naturally, the question raises **Is quality important for our organisation?**. According to me, **undeniably no**. If it was, different practices would have been set in place.
+Lastly, this practice of environment branches brings an unquestionable fair share of [stress and cognitive load]({% post_url 2022-05-30-on-the-evilness-of-feature-branching-the-problems %}) for the team.
+
+Naturally, the question raises **Is quality important to this organisation?**. According to me, **undeniably no**. If it was, different practices would have been put in place.
 
 The crucial practice to adopt to build quality into the product is the **Deployment Pipeline**. It is a linear process, fairly simple to reason about. The commit build produces a binary artefact that gets promoted from one environment to another until it finally arrives into production.
 
@@ -60,7 +62,7 @@ The team realised that the fact they could bypass environments was problematic. 
 > 
 > -- W. Edwards Deming, [Out of the Crisis](https://app.thestorygraph.com/books/b79ebdec-b267-4585-9af4-b5b68b30f5e5), p270
 
-Many times, quality problems are caused by the system. Here the use of environment branches. It is distressing to see leadership putting pressure on teams to deliver while still expecting quality. When teams are under tension, they will cut corners. Leadership is responsible for the system teams are working in. If management allows teams to improve, they will naturally evolve towards a *Deployment Pipeline* with all the benefits that comes with it.
+Many times, quality problems are caused by the system. In this case, the use of environment branches. It is then distressing to see leadership putting pressure on teams to deliver while still expecting quality. When teams are under tension, they will cut corners. Leadership is responsible for the system teams are working in. It is up to leadership to allow teams to improve. Undoubtedly, they will naturally evolve towards a *Deployment Pipeline* with all the benefits that comes with it.
 
 ## Acknowledgements
 
