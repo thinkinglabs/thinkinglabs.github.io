@@ -7,7 +7,7 @@ tags: [ Continuous Integration, Extreme Programming ]
 image: /images/environment-branches-harm-quality/environment-branches.jpg
 ---
 
-Environment feature branches were popularised in the 1990s and 2000s by centralised Version Control Systems like [ClearCase](https://en.wikipedia.org/wiki/IBM_DevOps_Code_ClearCase). Since the 2000s, this practice has become increasingly rare because of the awareness of its costs and more importantly its risks. Nevertheless, I recently was confronted with an organisation still relying on Environment Branches to promote changes in production resulting in shaggy quality.
+Environment feature branches were popularised in the 1990s and 2000s by centralised Version Control Systems like [ClearCase](https://en.wikipedia.org/wiki/IBM_DevOps_Code_ClearCase). Since the 2000s, this practice has become increasingly rare because of the awareness of its costs and more importantly its risks. Yet, some organisations still rely on them resulting in shaggy quality outcomes.
 
 ---
 
