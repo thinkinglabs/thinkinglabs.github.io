@@ -28,6 +28,8 @@ A breath of kindness to remind me of the lovely people who appreciate me.
 
 *Update Feb 6, 2024: Added [CfgMgmtCamp](https://cfgmgmtcamp.eu/)*
 
+*Update Mar 5, 2025: Picked it up again after a shit-show year triggered by [Sara Dufour's lovely comment on LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7302640206212485120?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7302640206212485120%2C7302645830090444803%29&replyUrn=urn%3Ali%3Acomment%3A%28activity%3A7302640206212485120%2C7302680942039486464%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287302645830090444803%2Curn%3Ali%3Aactivity%3A7302640206212485120%29&dashReplyUrn=urn%3Ali%3Afsd_comment%3A%287302680942039486464%2Curn%3Ali%3Aactivity%3A7302640206212485120%29)*
+
 ---
 
 > [@tdpauw](https://twitter.com/tdpauw) demolishing the reasons for feature branching one by one [#XP2017](https://twitter.com/hashtag/XP2017?src=hashtag_click)
@@ -368,6 +370,8 @@ Kindness received during [KanDDDinsky](https://kandddinsky.de) ...
 
 ---
 
+On the kudos box (kind of this article):
+
 > Il faut vraiment que je le fasse, ce brag doc.
 >
 > J'ai fini le module de Management et Gestion de projet pour des Licence 3 à @IUT_Sceaux.
@@ -587,3 +591,47 @@ Speaking at the CfgMgmtCamp 2024 single track.
 > Well, as someone who’s met you and seen you talk: you’ll do fantastic, I like your presentation style and am a super fan of your blog posts, so extrapolating from that: you’ll rock it.
 >
 > -- [Gerald Benischke](https://www.linkedin.com/in/gerald-benischke-9811b663/), [Feb 11, 2024](https://www.linkedin.com/feed/update/urn:li:activity:7160363455080775680?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7160363455080775680%2C7162049457893658625%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287162049457893658625%2Curn%3Ali%3Aactivity%3A7160363455080775680%29)
+
+---
+
+> I don't like putting people on a throne and calling them heroes. But undeniable, there are people that influence how we see, think, and talk about software, and its development. Although many are very well known, some are more hidden “gems”.
+> 
+> One of these, for me, is Trunk-Based Thierry de Pauw. Anytime I bump into him, mostly at [SoCraTes Conference](https://www.linkedin.com/company/socrates-conference/), or stumble over his content, e.g. https://lnkd.in/ewGjVJtt or https://lnkd.in/eR4qRSSC, it makes me think and adds to my view on software development. Thank you for that.
+>
+> -- [Michael Vitz](https://www.linkedin.com/in/michaelvitz), [Oct 5, 2024](https://www.linkedin.com/posts/michaelvitz_the-practices-that-make-continuous-integration-activity-7242918290224812033-FAET)
+>
+> I would like to second that... Thierry blew my mind several times, this year at the DDD Europe Conference!
+>
+> -- [Michael Plöds](https://www.linkedin.com/in/michael-ploed), [Oct 5, 2024](https://www.linkedin.com/feed/update/urn:li:activity:7242918290224812033?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7242918290224812033%2C7246027944282718208%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287246027944282718208%2Curn%3Ali%3Aactivity%3A7242918290224812033%29)
+
+> Hi Thierry, I’m a big fan of reading your LinkedIn posts from time to time you have a real talent for it.
+>
+> -- Manuel S., Oct 18, 2024
+
+---
+
+On Shades of Conway's Law:
+
+> I attended quite a few talks and my absolute highlight was Thierry de Pauw talking about Conway's Law: I have never attended a talk with so much substance to this topic. Congrats Thierry!
+>
+> -- [Michael Plöds](https://www.linkedin.com/in/michael-ploed), [June 5, 2024](https://www.linkedin.com/posts/michael-ploed_once-again-domain-driven-design-europe-proved-activity-7202618526153510913-QnKl)
+
+> I was just listening to "Shades of Conway's Law". It was absolutely brilliant Thierry!
+>
+> -- Pat S., Oct 27, 2024
+
+> Really in depth talk by Thoughtful Thierry on Conway's Law. Most of the talks you find are pretty superficial , but this one goes deep and surfaces a lot of history with it. Well done indeed 👏
+>
+> -- Patrick Debois, [Nov 5, 2024](https://www.linkedin.com/posts/patrickdebois_shades-of-conways-law-thierry-de-pauw-activity-7251936489519869952--zlr)
+
+> Hey, I just watched a replay of your talk from the ATD about Conway's law. I knew about it, but the way you connected the dots was brilliant! Loved the talk and also all the references to the math ;)
+>
+> -- Gabrijela H., Mar 4, 2025
+
+---
+
+On the kudos box (kind of this article):
+
+> Encore une fois : c'est Trunk-Based Thierry de Pauw qui m'a appris l'existence de ce formidable outil, je ne l'ai pas inventé je n'ai que retransmis ! 😊🙏 
+>
+> -- [Sara Dufour](https://www.linkedin.com/in/saradufourintlmarcom), [Mar 4, 2025](https://www.linkedin.com/feed/update/urn:li:activity:7302640206212485120?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7302640206212485120%2C7302645830090444803%29&replyUrn=urn%3Ali%3Acomment%3A%28activity%3A7302640206212485120%2C7302680942039486464%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287302645830090444803%2Curn%3Ali%3Aactivity%3A7302640206212485120%29&dashReplyUrn=urn%3Ali%3Afsd_comment%3A%287302680942039486464%2Curn%3Ali%3Aactivity%3A7302640206212485120%29)
