@@ -20,6 +20,6 @@ This session goes deeper into the advanced practices to raise Continuous Integra
 
 References:
 
-- [The Article: Raising the Continuous Integration Bar]({% post_url 2024-11-03-raising-the-continuous-integration-bar %})
+- The Article: [Raising the Continuous Integration Bar]({% post_url 2024-11-03-raising-the-continuous-integration-bar %})
 - [The Practices That Make Continuous Integration]({% post_url 2022-06-14-the-practices-that-make-continuous-integration %})
 - [Continuous Integration! Where to Start?]({% post_url 2024-11-01-continuous-integration-where-to-start %})

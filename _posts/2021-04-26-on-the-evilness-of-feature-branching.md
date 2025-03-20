@@ -35,3 +35,7 @@ rather, the real reasons why teams are using them.
 [Steve Smith](https://twitter.com/SteveSmith_Tech) for nudging me to write this
 down, reviewing the result and suggesting to break the article up into an
 article series.
+
+## References
+
+- The Talk: [Feature Branching is Evil]({% post_url 2016-10-29-feature-branching-is-evil %})

@@ -84,6 +84,7 @@ Learning outcomes - you will be able to:
 
 References:
 
+- The Article series: [On the Evilness of Feature Branching]({% post_url 2021-04-26-on-the-evilness-of-feature-branching %})
 - [SCM Patterns](http://www.scmpatterns.com/) (ch 4 Mainline; ch 5 Active Development Line), Stephen Berczuk and Brad Appleton
 - [Growing Object Oriented Software guided by Tests](http://www.growing-object-oriented-software.com/), p172 Keyhole Surgery for Software, Steve Freeman and Nat Pryce
 - [Continuous Delivery](https://www.amazon.com/Continuous-Delivery-Deployment-Automation-Addison-Wesley/dp/0321601912) (ch 14 Advanced Version Control), Jez Humble and Dave Farley
