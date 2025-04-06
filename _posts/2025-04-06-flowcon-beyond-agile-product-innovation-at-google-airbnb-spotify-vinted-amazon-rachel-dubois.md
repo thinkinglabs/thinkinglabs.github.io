@@ -1,6 +1,6 @@
 ---
 layout: note
-title: Product innovation at Google, Airbnb, Spotify, Vinted & Amazon
+title: "Beyond Agile: Product innovation at Google, Airbnb, Spotify, Vinted & Amazon"
 event:
   name: FlowCon
   date: 2025-04-02
