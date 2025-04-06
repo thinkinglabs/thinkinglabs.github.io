@@ -6,7 +6,7 @@ event:
   date: 2025-04-02
 author:
   name: Rachel Dubois
-  linkedin: 
+  linkedin: duboisrachel
 created_at: 2025-04-02
 category: notes
 tags: [ Agile, FlowCon ]
