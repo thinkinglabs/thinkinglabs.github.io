@@ -10,6 +10,8 @@ redirect_from:
 
 The usual way to achieve fast Continuous Code Reviews is through Pair Programming or Ensemble Programming. In this article, I will share a less common approach to Continuous Code Reviews using Non-Blocking Reviews.
 
+*Update Apr 7th, 2025: add missing links for Gerrit and ReviewBoard.*
+
 ---
 
 Somewhere around 2012, I had the opportunity to tech coach a somewhat novice team inside a somehow conservative renowned financial player. The purpose of the coaching was to upscale the team's software engineering skills. I have already mentioned this team before in [On the Evilness of Feature Branching - A Tale of Two Teams]({% post_url 2021-07-14-on-the-evilness-of-feature-branching-a-tale-of-two-teams %}). Yes, the one where we practised [trunk-based development](https://trunkbaseddevelopment.com) with a novice team not knowing what we did was called trunk-based development.
@@ -76,9 +78,9 @@ Although these tools help reach the fast flow of work, vendors are discontinuing
 
 At the 2022 SoCraTes Germany unconference, I met [Tomas Skogberg](https://twitter.com/tskogberg). He works for [Auctionet](https://twitter.com/auctionetdev). Tomas shared they practice trunk-based development for ten years. Being confronted with the same situation, Auctionet decided to implement their own code review tool, [ex-remit](https://github.com/barsoom/ex-remit), for Non-Blocking Reviews which is open sourced.
 
-There is also [Gerrit](), implemented by Guido van Rossum, the creator of Python, for the Android teams at Google.
+People told me this way of working should be possible with [Gerrit](https://www.gerritcodereview.com/), implemented by Guido van Rossum, the creator of Python, for the Android teams at Google. Though, my understanding was that Gerrit blocks commits in the review Git repository before pushing to the main repository.
 
-Recently, I discovered [ReviewBoard]() which seems to work in a similar way as Atlassian Crucible.
+Recently, I discovered [ReviewBoard](https://www.reviewboard.org/) which seems to work in a similar way as Atlassian Crucible.
 
 ## No Tooling
 
