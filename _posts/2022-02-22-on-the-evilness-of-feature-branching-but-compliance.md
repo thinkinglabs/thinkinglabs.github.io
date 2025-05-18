@@ -10,6 +10,10 @@ In [part 2 of this series - Why do Teams use Feature Branches?]({% post_url 2021
 
 ---
 
+*Update May 18, 2025: Add "Co-authored-by" and pairing with Pull Request as alternatives.*
+
+---
+
 Compliance is an often-cited reason to introduce all sorts of wasteful non-value-adding activities.
 
 > For us we do [feature branching] because it is the least worst solution when you need to be compliant and implement segregation of duties, enforce 4 eyes principles, strict legal rules, get audited by the national bank, etc… We do strive to automate everything in our pipeline though, so we limit the damage and get the smallest possible delays in the process. I do agree with all you wrote in your post though.
@@ -100,6 +104,10 @@ How can we perform Code Reviews in compliance with regulations? We have several 
 
    But, what about traceability? How do we prove changes have been authored in pairs?
 
+   The easiest option is to use Git's [`Co-authored-by`](https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/creating-a-commit-with-multiple-authors) facility. It allows recording as many co-authors as there are collaborators in the pair or ensemble. Adding co-authors in every commit can become cumbersome. [Someone on LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7325792858500751361?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7325792858500751361%2C7326252666941005826%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287326252666941005826%2Curn%3Ali%3Aactivity%3A7325792858500751361%29) pointed me to [git-mob](https://github.com/rkotze/git-mob) to solve that.
+
+   But, for some regulations, this could not be enough as the co-authors are not verified. In that case ...
+
    > If you mean two-eyes type compliance, I've done this where Alice and Bob are pairing by e.g. Bob signs the commit from Alice's machine (where she is logged in via SSO). The company issues the PGP keys and associates them with the user's account. This was at a Big German Bank.
    >
    > -- Daniel Terhorst-North ([@tastapod](https://twitter.com/tastapod)), [Jul 15, 2021](https://twitter.com/tastapod/status/1415593667008634882)
@@ -108,13 +116,29 @@ How can we perform Code Reviews in compliance with regulations? We have several 
 
    When pairs or ensemble teams, in addition, also tag each commit with a ticket number from the ticketing system, we now have full traceability on who has seen/authored which commit in the context of which feature or bug.
 
-2. Non-Blocking code reviews, i.e reviewing each commit on mainline after the fact when the change is already committed into mainline. It has the advantage of never blocking the flow of work through the value stream. Code reviews can be traced on a Kanban board with code review work-in-progress limits to ensure they will be done. Reviews are run by a different person from the one authoring the change, enabling segregation.
+   *Update May 18, 2025: With the Twitter debacle, some sources are not available any more. Daniel Terhorst-North recently repeated this on LinkedIn.*
+
+   > Implemented this at $BigInvestmentBank. They used certificate-based SSO to login, so we generated new ‘check-in certificates’ and allocated them to each team member. That way you would be (provably) pushing changes from one dev’s machine, signed with the other’s certificate, proving four-eyes compliance.
+   >
+   > We also generated the release and change docs in the build, using Jira and commit messages (‘closes #219’, etc.). We had a precommit hook to check that the commit message had a Jira number in it. The commit refs also tied all the test cases to their respective Jira ticket so we had round trip provenance on those too.
+   >
+   > A few other procedural and automation hooks—built in conjunction with the compliance team—and we had an approved path to live for small changes that took ½ day instead of 6 weeks.
+   >
+   > -- [Daniel Terhorst-North](https://www.linkedin.com/in/tastapod/), [May 7, 2025](https://www.linkedin.com/feed/update/urn:li:activity:7325792858500751361?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7325792858500751361%2C7326147551244558336%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287326147551244558336%2Curn%3Ali%3Aactivity%3A7325792858500751361%29)
+
+2. Pair Programming with Pull Requests. We combine the convenience of pair programming with the review recording facilities from Pull Requests.
+
+   Alice and Bob are pairing on Bob's machine. Once they are finished, Bob opens a Pull Request. Alice approves the Pull Request. At this moment, we have a trace of the pair and a proof that 4-eyes happened.
+
+   But, compared to the previous option, it comes with the administrative overhead and the non-negligible delays of creating a Pull Request. Option 1 allows to just do the work, push and move on with the next thing.
+
+3. [Non-Blocking code reviews]({% post_url 2023-05-02-non-blocking-continuous-code-reviews-a-case-study %}), i.e reviewing each commit on mainline after the fact when the change is already committed into mainline. It has the advantage of never blocking the flow of work through the value stream. Code reviews can be traced on a Kanban board with code review work-in-progress limits to ensure they will be done. Reviews are run by a different person from the one authoring the change, enabling segregation.
 
    Again, what about traceability? How do we prove the changes have been reviewed?
 
    Teams tag every commit with a ticket number from the ticketing system. When the change is done and ready for review, they create a code review in a code reviewing tool like [JetBrains Upsource](https://www.jetbrains.com/upsource/) or [Atlassian Crucible](https://www.atlassian.com/software/crucible) (I only know these two and I only have experience with Crucible). These tools can group commits based on a ticket number into a code review. The code review can be linked to the ticketing system. Now we have full traceability on when a feature was reviewed by who in the context of which feature or bug and which commits were involved.
 
-3. Feature Flagging allows us to commit to mainline but not always release. We only turn on the feature and release to users when everything has been thoroughly checked, tested and approved. Before releasing, the change already sits in production days or weeks in advance, giving us valuable feedback on how it behaves in production. We can even mimic production load by having users perform invisible calls to the change. This can easily complement the first two approaches: Pair/Ensemble Programming or Asynchronous reviews where a third, other person decides to turn the feature on. Further increasing segregation without impacting the flow of work.
+4. Feature Flagging allows us to commit to mainline but not always release. We only turn on the feature and release to users when everything has been thoroughly checked, tested and approved. Before releasing, the change already sits in production days or weeks in advance, giving us valuable feedback on how it behaves in production. We can even mimic production load by having users perform invisible calls to the change. This can easily complement the first two approaches: Pair/Ensemble Programming or Asynchronous reviews where a third, other person decides to turn the feature on. Further increasing segregation without impacting the flow of work.
 
 ## Conclusion
 
