@@ -132,6 +132,10 @@ How can we perform Code Reviews in compliance with regulations? We have several 
 
 2. Pair Programming with Pull Requests. We combine the convenience of pair programming with the review recording facilities from Pull Requests.
 
+   > IMO frequent "PR"s that are approved by the other member of the pair is the easiest way to encode four eyes into most tooling. I'd prefer a direct way but this isn't so onerous.
+   >
+   > -- [Chris Ford](https://www.linkedin.com/in/ctford/), [May 7, 2025](https://www.linkedin.com/feed/update/urn:li:activity:7325792858500751361?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7325792858500751361%2C7326176195232903168%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287326176195232903168%2Curn%3Ali%3Aactivity%3A7325792858500751361%29)
+
    Alice and Bob are pairing on Bob's machine. Once they are finished, Bob opens a Pull Request. Alice approves the Pull Request. At this moment, we have a trace of the pair and a proof that 4-eyes happened.
 
    But, compared to the previous option, it comes with the administrative overhead and the non-negligible delays of creating a Pull Request. Option 1 allows to just do the work, push and move on with the next thing.
