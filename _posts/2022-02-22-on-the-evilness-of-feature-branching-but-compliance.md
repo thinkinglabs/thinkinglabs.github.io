@@ -10,11 +10,7 @@ In [part 2 of this series - Why do Teams use Feature Branches?]({% post_url 2021
 
 ---
 
-*Update May 18, 2025: Add "Co-authored-by" as alternative.*
-
-*Update May 18, 2025: Add pairing with Pull Request as alternative.*
-
-*Update May 18, 2025: Add "Wouldn't it be horrible if".*
+*Update May 18, 2025: Add "Co-authored-by" and pairing with Pull Request as alternatives.*
 
 ---
 
@@ -42,7 +38,7 @@ Compliance never comes alone. It goes together with Governance and Risk Manageme
 
 In the case of technology, governance provides the vision and the goals on how to implement technology changes to ensure the right stability and throughput to create positive business impact.
 
-**Risk** is the possibility of something bad happening. It is ubiquitous. We can never eliminate all risks. Hence, the need for **Risk Management**. But, the "*Wouldn't it be horrible if*"-approach to Risk Management is predominantly present in IT security. Regardless of the likelihood, it must be avoided at all costs, resulting in no sense of prioritisation (source: Lean Enterprise, p237). Therefore, *which risks are we willing to accept and which ones not?*. **As we are taking steps to mitigate risk in one area, we inevitably introduce more risk in another area.**
+**Risk** is the possibility of something bad happening. It is ubiquitous. We can never eliminate all risks. Therefore, the need for **Risk Management**. *Which risks are we willing to accept and which ones not?*. **As we are taking steps to mitigate risk in one area, we inevitably introduce more risk in another area.**
 
 ## Are Feature Branches and Pull Requests a necessity for Compliance?
 
