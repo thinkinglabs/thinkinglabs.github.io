@@ -16,6 +16,8 @@ In [part 2 of this series - Why do Teams use Feature Branches?]({% post_url 2021
 
 *Update May 21, 2025: Clarify we can only attempt to inspect quality in later.*
 
+*Update May 21, 2025: Clarify the pairing solution with SSH authentication and commit signing.*
+
 ---
 
 Compliance is an often-cited reason to introduce all sorts of wasteful non-value-adding activities.
@@ -116,7 +118,7 @@ How can we perform Code Reviews in compliance with regulations? We have several 
    >
    > -- Daniel Terhorst-North ([@tastapod](https://twitter.com/tastapod)), [Jul 15, 2021](https://twitter.com/tastapod/status/1415593667008634882)
 
-   Here Alice commits with her SSL certificate but the commit is signed with Bob's PGP key. The SSL certificate identifies Alice and the PGP signing identifies Bob. We now have evidence the code has been seen by two pairs of eyes and we can trace back which eyes have seen which code.
+   Here Alice pushes with her SSH key to authenticate with the remote Git repo but the commit is signed with Bob's PGP or SSH key. The SSH authentication key identifies Alice and the PGP or SSH signing key identifies Bob. We now have evidence the code has been seen by two pairs of eyes and we can trace back which eyes have seen which code.
 
    When pairs or ensemble teams, in addition, also tag each commit with a ticket number from the ticketing system, we now have full traceability on who has seen/authored which commit in the context of which feature or bug.
 
