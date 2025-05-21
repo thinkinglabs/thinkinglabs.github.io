@@ -10,7 +10,11 @@ In [part 2 of this series - Why do Teams use Feature Branches?]({% post_url 2021
 
 ---
 
-*Update May 18, 2025: Add "Co-authored-by" and pairing with Pull Request as alternatives.*
+*Update May 18, 2025: Add "Co-authored-by" as alternative.*
+
+*Update May 18, 2025: Add pairing with Pull Request as alternative.*
+
+*Update May 21, 2025: Clarify we can only attempt to inspect quality in later.*
 
 ---
 
@@ -100,7 +104,7 @@ How can we perform Code Reviews in compliance with regulations? We have several 
 
    [Dave Farley](https://twitter.com/davefarley77) repeatedly [reports Pair Programming is good enough as a code review](http://www.davefarley.net/?p=285) in highly regulated industries like finance, healthcare and gambling to demonstrate that the code has been reviewed and that there is some independent oversight/verification of changes.
 
-   It has the benefit of *building quality into* the product instead of "*inspecting quality in*" later after the fact.
+   It has the benefit of *building quality into* the product instead of "*attempting to inspect quality in*" later after the fact.
 
    But, what about traceability? How do we prove changes have been authored in pairs?
 
