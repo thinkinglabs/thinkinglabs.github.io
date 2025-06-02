@@ -632,6 +632,22 @@ On Shades of Conway's Law:
 
 On the kudos box (kind of this article):
 
-> Encore une fois : c'est Trunk-Based Thierry de Pauw qui m'a appris l'existence de ce formidable outil, je ne l'ai pas inventé je n'ai que retransmis ! 😊🙏 
+> Encore une fois : c'est Trunk-Based Thierry de Pauw qui m'a appris l'existence de ce formidable outil, je ne l'ai pas inventé je n'ai que retransmis ! 😊🙏
 >
 > -- [Sara Dufour](https://www.linkedin.com/in/saradufourintlmarcom), [Mar 4, 2025](https://www.linkedin.com/feed/update/urn:li:activity:7302640206212485120?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7302640206212485120%2C7302645830090444803%29&replyUrn=urn%3Ali%3Acomment%3A%28activity%3A7302640206212485120%2C7302680942039486464%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287302645830090444803%2Curn%3Ali%3Aactivity%3A7302640206212485120%29&dashReplyUrn=urn%3Ali%3Afsd_comment%3A%287302680942039486464%2Curn%3Ali%3Aactivity%3A7302640206212485120%29)
+
+---
+
+> Thierry I’m absolutely loving your takes on here.
+>
+> I don’t know how, but you manage to say these things without coming over as crass or a know-it-all.
+>
+> The unapologetic and candid voice you bring to our craft is one that is sorely missing in our community.
+>
+> Thank you for being you! 🙏
+>
+> -- [Tim S.](https://www.linkedin.com/in/timschraepen/), [May 31st, 2025](https://www.linkedin.com/feed/update/urn:li:activity:7334527783198502914?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7334527783198502914%2C7334552726191693824%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287334552726191693824%2Curn%3Ali%3Aactivity%3A7334527783198502914%29)
+>
+> + 1 (or better +4682) on this
+>
+> -- [Yves Hanoulle](https://www.linkedin.com/in/yveshanoulle/)
