@@ -638,6 +638,10 @@ On the kudos box (kind of this article):
 
 ---
 
+> I keep adding your articles as the "go-to" source for various discussions.
+>
+> -- [Vitaly Sharovatov](https://www.linkedin.com/in/vsharovatov/), [May 22, 2025](https://www.linkedin.com/feed/update/urn:li:activity:7330119663432970241?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7330119663432970241%2C7330127130061586432%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287330127130061586432%2Curn%3Ali%3Aactivity%3A7330119663432970241%29)
+
 > Thierry I’m absolutely loving your takes on here.
 >
 > I don’t know how, but you manage to say these things without coming over as crass or a know-it-all.
@@ -646,7 +650,7 @@ On the kudos box (kind of this article):
 >
 > Thank you for being you! 🙏
 >
-> -- [Tim S.](https://www.linkedin.com/in/timschraepen/), [May 31st, 2025](https://www.linkedin.com/feed/update/urn:li:activity:7334527783198502914?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7334527783198502914%2C7334552726191693824%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287334552726191693824%2Curn%3Ali%3Aactivity%3A7334527783198502914%29)
+> -- [Tim S.](https://www.linkedin.com/in/timschraepen/), [May 31, 2025](https://www.linkedin.com/feed/update/urn:li:activity:7334527783198502914?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7334527783198502914%2C7334552726191693824%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287334552726191693824%2Curn%3Ali%3Aactivity%3A7334527783198502914%29)
 >
 > + 1 (or better +4682) on this
 >
