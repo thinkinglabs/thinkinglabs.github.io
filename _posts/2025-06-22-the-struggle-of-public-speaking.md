@@ -16,6 +16,6 @@ Some might say the fear will go away as you do more and more talks. This is not 
 
 ---
 
-Somewhere in 2022, I was invited by the lovely people of FourScouts to share my experiences with public speaking, the challenges and the rewards.
+Sometime in 2022, the lovely people of FourScouts invited me to share my experiences with public speaking, including the challenges and rewards.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/w6mwyw_t3-g?si=Gp3bIRn9CyHneBJ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
