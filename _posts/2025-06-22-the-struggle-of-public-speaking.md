@@ -4,6 +4,7 @@ title: The Struggle of Public Speaking
 author: Thierry de Pauw
 category: articles
 tags: [Public Speaking, Podcast]
+image: /images/the-struggle-of-public-speaking/cover.jpg
 ---
 
 Does the thought of doing a presentation make your stomach churn? Are you comfortable speaking up in front of a group of people? How do you deal with being the center of attention?
