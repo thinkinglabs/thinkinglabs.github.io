@@ -1,0 +1,1 @@
+https://www.linkedin.com/posts/davidsubar_microsoft-copilot-amazon-ugcPost-7224273853823209472-sp78?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAAhhqIBIVipRWnJ_lCwJ8-zFcZbjyz9ic0
