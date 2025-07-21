@@ -25,6 +25,8 @@ Note that the Pull Requests were introduced by the Open Source Software communit
 
 With trunk-based development, we naturally commit (and push) more frequently to mainline. If we commit repeatedly to a remote mainline, we produce more frequent builds. If we produce more frequent builds, we uncover more problems sooner, allowing us to fix them when they are still small and easy to fix. This enables us to **Build Quality Into the product** instead of testing quality later, hence leading to better quality.
 
+With that many commits to mainline, we **truly continuously integrate all code contributions**. Builds are continuously running against mainline. Compiling, executing unit tests, and running static code analysis. Ensuring the code is always working and in a releasable state on mainline. **Enabling on-demand production releases at any time**. Versus Pull Requests and feature branches that only partially integrate by rebasing mainline on the branch.
+
 With more frequent commits, the team introduces more code into the codebase that gets used by the whole team immediately, even before the user sees it. They **flush out the bugs** by using the code.
 
 > There's an angle that folks don't consider.
@@ -63,10 +65,11 @@ Lastly, branch creation does not have to be mastered any more, **simplifying the
 
 ## Conclusion
 
-The 2016 peer-reviewed academic paper [The Role of CD in IT and Organisational Performance](https://www.researchgate.net/publication/302567338_THE_ROLE_OF_CONTINUOUS_DELIVERY_IN_IT_AND_ORGANIZATIONAL_PERFORMANCE) by Dr. Nicole Forsgren and Jez Humble and the book [Accelerate](https://app.thestorygraph.com/books/0baa7f2a-3f3f-4752-9d81-0434117d0648) indicated that trunk-based development together with Continuous Integration predicts better quality and higher delivery throughput. They lead to shorter times to market and reduced cost of delay. Together with lean product management and a [generative culture](https://dora.dev/capabilities/generative-organizational-culture/), they predict higher organisational performance as well as limited stress, fatigue and burnout.
+The 2016 peer-reviewed academic paper [The Role of CD in IT and Organisational Performance](https://www.researchgate.net/publication/302567338_THE_ROLE_OF_CONTINUOUS_DELIVERY_IN_IT_AND_ORGANIZATIONAL_PERFORMANCE) by Dr. Nicole Forsgren and Jez Humble, as well as the book [Accelerate](https://app.thestorygraph.com/books/0baa7f2a-3f3f-4752-9d81-0434117d0648) indicated that trunk-based development together with Continuous Integration predicts better quality and higher delivery throughput. They lead to shorter times to market and reduced cost of delay. Together with lean product management and a [generative culture](https://dora.dev/capabilities/generative-organizational-culture/), they predict higher organisational performance as well as limited stress, fatigue and burnout.
 
 According to DORA, high-performing teams practice trunk-based development because of all the mentioned benefits:
 
+* Integrates all code contributions continuously.
 * Creates high-trust environments.
 * Fosters collective responsibility to never break the build.
 * Therefore, enabling on-demand production deployments at any given moment.
