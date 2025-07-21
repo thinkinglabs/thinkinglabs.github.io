@@ -4,6 +4,7 @@ title: On the Benefits of Trunk-based Development
 author: Thierry de Pauw
 category: articles
 tags: [Continuous Integration]
+image: /images/on-the-benefits-of-trunk-based-development/the-benefits-of-trunk-based-development.jpeg
 ---
 
 Why should we adopt trunk-based development? What benefits does it bring? [On the Evilness of Feature Branching]({% post_url 2021-04-26-on-the-evilness-of-feature-branching %}) and subsequent articles articulated several times how trunk-based development is a superior delivery approach to any of its alternatives. This article attempts to summarise the value of trunk-based development.
@@ -15,6 +16,8 @@ Although the practice of Continuous Integration implies trunk-based development.
 Whenever we suggest trunk-based development, we are called unprofessional and belittled. How can we possibly deliver quality without the assumed safety of feature branches and Pull Requests?
 
 In all honesty, **for trunk-based development teams, quality is the highest concern**. That quality is reached thanks to a series of benefits promoted by trunk-based development.
+
+![The Benefits of Trunk-based Development](/images/on-the-benefits-of-trunk-based-development/the-benefits-of-trunk-based-development.jpeg)
 
 First, because everyone is working on a single mainline, it nudges, or better, it demands collaboration. As a team, we need to inform the rest of the team about upcoming changes that might impact the team. Undoubtedly, it facilitates [Collective Ownership](http://www.extremeprogramming.org/rules/collective.html), which leads to better quality.
 
