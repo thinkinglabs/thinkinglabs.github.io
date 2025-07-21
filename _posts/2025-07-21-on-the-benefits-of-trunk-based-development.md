@@ -84,11 +84,11 @@ According to DORA, high-performing teams practice trunk-based development becaus
 
 Undeniably, this brings quality to considerably higher levels.
 
+## Acknowledgement
+
+This article would not have been possible without the valuable input of the [SoCraTes 2025](https://www.socrates-conference.de/) open space participants to my session "*What are the Benefits of Trunk-based Development?*".
+
 ## Related Articles
 
 * [On the Evilness of Feature Branching]({% post_url 2021-04-26-on-the-evilness-of-feature-branching%})
 * [The Good and the Dysfunctional of Pull Requests]({% post_url 2024-02-22-the-good-and-the-dysfunctional-of-pull-requests %})
-
-## Acknowledgement
-
-This article would not have been possible without the valuable input of the [SoCraTes 2025](https://www.socrates-conference.de/) open space participants to my session "*What are the Benefits of Trunk-based Development?*".

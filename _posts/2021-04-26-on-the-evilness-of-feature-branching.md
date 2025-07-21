@@ -39,3 +39,7 @@ article series.
 ## References
 
 - The Talk: [Feature Branching is Evil]({% post_url 2016-10-29-feature-branching-is-evil %})
+
+## Related Articles
+
+- [On the Benefits of Trunk-based Development]({% post_url 2025-07-21-on-the-benefits-of-trunk-based-development%})
