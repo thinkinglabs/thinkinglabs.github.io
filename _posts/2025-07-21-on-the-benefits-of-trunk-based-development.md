@@ -11,11 +11,15 @@ Why should we adopt trunk-based development? What benefits does it bring? [On th
 
 ---
 
+*Update July 24th, 2025: *
+
+---
+
 Although the practice of Continuous Integration implies trunk-based development. Even though trunk-based development has been reported [since 2015 by the State of DevOps report](https://dora.dev/research/2015/2015-state-of-devops-report.pdf) and later by the book [Accelerate](https://app.thestorygraph.com/books/0baa7f2a-3f3f-4752-9d81-0434117d0648), to lead to higher IT delivery performance. Although organisations like Microsoft, Netflix and Google practice trunk-based development. In the case of Google, even at an exceedingly large scale. In 2016, we were discussing 16.000 engineers working from a single trunk with 25.000 changes per day. It is yet one of the most disputed practices in the IT industry.
 
 Whenever we suggest trunk-based development, we are called unprofessional and belittled. How can we possibly deliver quality without the assumed safety of feature branches and Pull Requests?
 
-In all honesty, **for trunk-based development teams, quality is the highest concern**. That quality is reached thanks to a series of benefits promoted by trunk-based development.
+In all honesty, **for trunk-based development teams, quality is the highest concern**. That quality is reached due to the adoption of a [series of practices]({% post_url 2022-06-14-the-practices-that-make-continuous-integration %}) that enable another sequence of benefits.
 
 ![The Benefits of Trunk-based Development](/images/on-the-benefits-of-trunk-based-development/the-benefits-of-trunk-based-development.jpeg)
 
@@ -25,7 +29,9 @@ Note that the Pull Requests were introduced by the Open Source Software communit
 
 With trunk-based development, we naturally commit (and push) more frequently to mainline. If we commit repeatedly to a remote mainline, we produce more frequent builds. If we produce more frequent builds, we uncover more problems sooner, allowing us to fix them when they are still small and easy to fix. This enables us to **Build Quality Into the product** instead of testing quality later, hence leading to better quality.
 
-With that many commits to mainline, we **truly continuously integrate all code contributions**. Builds are continuously running against mainline. Compiling, executing unit tests, and running static code analysis. Ensuring the code is always working and in a releasable state on mainline. **Enabling on-demand production releases at any time**. Versus Pull Requests and feature branches that only partially integrate by rebasing mainline on the branch.
+As we are committing frequently, it encourages **working in small incremental steps**. We are never ripping apart the system. Every commit is valid and workable, keeping the system in an always working and releasable state. As such, **enabling on-demand production releases at any time**. Thereby, shortening lead time and time to market, as well as reducing cost of delay.
+
+With that many commits to mainline, we **truly continuously integrate all code contributions**. Builds are continuously running against mainline. Compiling, executing unit tests, and running static code analysis. Versus Pull Requests and feature branches that only partially integrate by rebasing mainline on the branch.
 
 With more frequent commits, the team introduces more code into the codebase that gets used by the whole team immediately, even before the user sees it. They **flush out the bugs** by using the code.
 
@@ -72,6 +78,7 @@ According to DORA, high-performing teams practice trunk-based development becaus
 * Integrates all code contributions continuously.
 * Creates high-trust environments.
 * Fosters collective responsibility to never break the build.
+* And working in small incremental steps.
 * Therefore, enabling on-demand production deployments at any given moment.
 * Accelerates feedback.
 * Therefore, uncovers more unmet needs earlier.
