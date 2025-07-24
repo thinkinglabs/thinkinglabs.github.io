@@ -11,7 +11,7 @@ Why should we adopt trunk-based development? What benefits does it bring? [On th
 
 ---
 
-*Update July 24th, 2025: *
+*Update July 24th, 2025: Add working in small incremental steps.*
 
 ---
 
@@ -55,7 +55,7 @@ Since we commit and deploy more frequently, it inevitably **accelerates feedback
 
 As no branches are created, no Pull Requests, we now do not have piles of undelivered code lingering around on branches. Thus, no Work in Progress (WIP) is created. Because of [Little's Law](https://en.wikipedia.org/wiki/Little%27s_law), it once more **drives down the lead time**.
 
-Alongside increased user satisfaction comes a second economic perspective to trunk-based development. WIP is inventory. Inventory is money. It is money stuck into the system. It is stuck because the organisation invested considerably in creating all this code on parallel branches. However, as long as this code is not merged into mainline, deployed in production and released to users, it does not generate any revenue. Therefore, it is money stuck in the system. But, because we have less WIP, we create less inventory. As such, we have **less invested money stuck in the system**.
+Alongside increased user satisfaction comes a second economic perspective to trunk-based development. WIP is inventory. Inventory is money. It is money stuck into the system. It is stuck because the organisation invested considerably in creating all this code on parallel branches. However, as long as this code is not merged into mainline, deployed in production and released to users, it does not generate any revenue. We have zero feedback. We do not know if the thing we have just implemented is the right thing. Therefore, it is money stuck in the system. But, because we have less WIP, we create less inventory. As such, we have **less invested money stuck in the system**.
 
 Given we have less WIP, no branches, and no Pull Requests, we also have less context switching. In reality, there is no context switching at all as we never have to wait for someone to be available to finish work. So, we never have to start new work while waiting to feel productive. We can concentrate on one thing at a time and work on it from start to finish. As a result, we have **less cognitive load**.
 
@@ -67,7 +67,7 @@ With trunk-based development teams, managing technical debt becomes a non-issue.
 
 With no branches any more, merge conflicts become now a thing of the past.
 
-Lastly, branch creation does not have to be mastered any more, **simplifying the workflow**. We pull the latest changes, [Run a Local Build]({% post_url 2022-09-28-the-practices-that-make-continuous-integration-building %}#practice-12-run-a-local-build), add the local changes, [Commit Only on Green]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %}#practice-7-commit-only-on-green), push, and we are done. This is fairly simple. It reduces the number of version control commands engineers need to remember to perform their day-to-day work. Once more, it **limits the cognitive load**.
+Lastly, branch creation does not have to be mastered any more, **simplifying the workflow**. We pull the latest changes, [Run a Local Build]({% post_url 2022-09-28-the-practices-that-make-continuous-integration-building %}#practice-12-run-a-local-build), add the local changes, [Commit Only on Green]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %}#practice-7-commit-only-on-green), push, and we are done. This is fairly simple. It reduces the number of version control commands engineers need to remember to perform their day-to-day work. Once more, it limits the cognitive load.
 
 ## Conclusion
 
