@@ -15,6 +15,8 @@ Why should we adopt trunk-based development? What benefits does it bring? [On th
 
 *Update July 24th, 2025: Add encourages the adoption of refactoring.*
 
+*Update July 24th, 2025: Add regulated industries and large IT systems.*
+
 ---
 
 Although the practice of Continuous Integration implies trunk-based development. Even though trunk-based development has been reported [since 2015 by the State of DevOps report](https://dora.dev/research/2015/2015-state-of-devops-report.pdf) and later by the book [Accelerate](https://app.thestorygraph.com/books/0baa7f2a-3f3f-4752-9d81-0434117d0648), to lead to higher IT delivery performance. Although organisations like Microsoft, Netflix and Google practice trunk-based development. In the case of Google, even at an exceedingly large scale. In 2016, we were discussing 16.000 engineers working from a single trunk with 25.000 changes per day. It is yet one of the most disputed practices in the IT industry.
@@ -98,6 +100,8 @@ According to DORA, high-performing teams practice trunk-based development becaus
 * And, therefore, limits the cognitive load.
 
 Undeniably, this brings quality to considerably higher levels.
+
+Before anyone says "[*Useful for trivial applications but good luck selling that to some regulated industries*](https://news.ycombinator.com/item?id=44656569)" or "*this cannot possibly work for large IT systems*". Trunk-based development has been successfully adopted by highly regulated industries, such as healthcare, gambling, and the finance industry. [Commit straight to mainline scales easily to 100 engineers](https://trunkbaseddevelopment.com/styles/#committing-straight-to-the-trunk) and above.
 
 ## Acknowledgement
 
