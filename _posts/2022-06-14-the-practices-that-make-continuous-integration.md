@@ -19,7 +19,7 @@ Honestly, it feels a bit awkward to still write about Continuous Integration. It
 
 ---
 
-![The 14 practices that make continuous integration](/images/the-practices-that-make-continuous-integration/the-practices-that-make-continuous-integration.jpg)
+![The 20 practices that make continuous integration](/images/the-practices-that-make-continuous-integration/the-practices-that-make-continuous-integration.jpg)
 
 > Continuous Integration is a practice to ensure always working software and to
 > get feedback within a few minutes to whether any given change broke the
