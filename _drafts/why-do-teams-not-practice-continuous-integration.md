@@ -48,7 +48,9 @@ Even though teams like to see themselves as experienced and high-performing, wit
 
 ## Acknowledgements
 
-The participants in my [SoCraTes 2025](https://www.socrates-conference.de/) open-space session "*Why are Teams not practising Continuous Integration?*".
+The participants in my [SoCraTes 2025](https://www.socrates-conference.de/) open-space session "*Why are Teams not practising Continuous Integration?*" for their valuable input.
+
+[Martin Mortensen](https://mortensensc.dk/en/home) for his feedback.
 
 ## Related articles
 
