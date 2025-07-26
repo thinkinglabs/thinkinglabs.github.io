@@ -7,7 +7,7 @@ tags: [Continuous Integration]
 image: /images/why-do-teams-not-practice-continuous-integration/why-do-teams-not-practice-continuous-integration.jpeg
 ---
 
-Everyone in the IT industry agrees, and [research confirmed this](https://app.thestorygraph.com/books/0baa7f2a-3f3f-4752-9d81-0434117d0648), that [Continuous Integration](https://martinfowler.com/articles/originalContinuousIntegration.html) is a required practice to realise quality and stability. Yet, few teams have truly implemented Continuous Integration. Based on the limited data I have, it appears only one in ten teams genuinely practices Continuous Integration. This is surely not a hard number, but I think it is already on the high side. Why is that?
+Everyone in the IT industry agrees, and [research confirms this](https://app.thestorygraph.com/books/0baa7f2a-3f3f-4752-9d81-0434117d0648), that [Continuous Integration](https://martinfowler.com/articles/originalContinuousIntegration.html) is a required practice to realise quality and stability. Yet, few teams have truly implemented Continuous Integration. Based on the limited data I have, it appears only one in ten teams genuinely practices Continuous Integration. This is surely not a hard number, but I think it is already on the high side. Why is that?
 
 ---
 
