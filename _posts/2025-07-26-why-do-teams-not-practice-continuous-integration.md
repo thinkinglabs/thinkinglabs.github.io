@@ -11,6 +11,10 @@ Everyone in the IT industry agrees, and [research confirms this](https://app.the
 
 ---
 
+Update Jul 27th, 2025: Clarify the context of OSS and regulation.
+
+---
+
 ![Why do teams not practice Continuous Integration?](/images/why-do-teams-not-practice-continuous-integration/why-do-teams-not-practice-continuous-integration.jpeg)
 
 First, there is a massive [Semantic Diffusion](https://martinfowler.com/bliki/SemanticDiffusion.html) around Continuous Integration. It got worse over the past two decades. Mainly with the advent of [GitHub](https://github.com/) with [Pull Requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) and [GitLab](https://about.gitlab.com/) with [Merge Requests](https://docs.gitlab.com/user/project/merge_requests/). Teams like to redefine Continuous Integration by telling: "*We have our GitLab-CI running against all of our branches, you know!*". This is a reductionist view on Continuous Integration as merely a tooling problem. However, Continuous Integration is a team practice that, on its own, [requires another series of practices to be adopted]({% post_url 2022-06-14-the-practices-that-make-continuous-integration %}) to realise it. In reality, we do not even need a central build to implement Continuous Integration. We [only need two tools]({% post_url 2025-01-26-continuous-integration-only-two-tools %}).
@@ -45,6 +49,10 @@ In conclusion, teams do not practice Continuous Integration because:
 - Lastly, unawareness of economic reasons to implement Continuous Integration.
 
 Even though teams like to see themselves as experienced and high-performing, without true Continuous Integration, they will be none.
+
+Having said that, Continuous Integration, as intended in this article, is compatible with regulation and compliance. There are no valid reasons not implementing Continuous Integration because of regulations. To the contrary, it will help in satisfying compliance requirements.
+
+However, it is true that Pull Requests with status-checks are a good fit for OSS when core maintainers want to accept contributions from the outside world. This is a classic low-trust environment. Yet, the core maintainers should practice Continuous Integration.
 
 ## Acknowledgements
 
