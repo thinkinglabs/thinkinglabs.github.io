@@ -48,11 +48,11 @@ In conclusion, teams do not practice Continuous Integration because:
 - Slow builds refrain from integrating regularly.
 - Lastly, unawareness of economic reasons to implement Continuous Integration.
 
-Even though teams like to see themselves as experienced and high-performing, without true Continuous Integration, they will be none.
+To clarify, Continuous Integration, as intended in this article, is [compatible with regulation and compliance]({% post_url 2022-02-22-on-the-evilness-of-feature-branching-but-compliance %}). No single reason should prevent practicing Continuous Integration in a regulated environment. To the contrary, it will significantly help in satisfying compliance requirements. But, sure, as a team, it requires to change some habits and be curious to succeed.
 
-Having said that, Continuous Integration, as intended in this article, is [compatible with regulation and compliance]({% post_url 2022-02-22-on-the-evilness-of-feature-branching-but-compliance %}). There are no valid reasons to not implement Continuous Integration because of regulations. To the contrary, it will help in satisfying compliance requirements. But, sure, as a team, it requires to change some habits and be curious.
+However, it is true that Pull Requests with status-checks are a good fit for OSS when core maintainers want to accept contributions from the outside world. This is a classic low-trust environment. Yet, the core maintainers should practice Continuous Integration when contributing themselves. They should operate under high-trust.
 
-However, it is true that Pull Requests with status-checks are a good fit for OSS when core maintainers want to accept contributions from the outside world. This is a classic low-trust environment. Yet, the core maintainers should practice Continuous Integration.
+In conclusion, even though teams like to see themselves as experienced and high-performing, without true Continuous Integration, they will be none.
 
 ## Acknowledgements
 
