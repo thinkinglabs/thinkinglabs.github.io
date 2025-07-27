@@ -11,7 +11,7 @@ Everyone in the IT industry agrees, and [research confirms this](https://app.the
 
 ---
 
-Update Jul 27th, 2025: Clarify the context of OSS and regulation.
+*Update Jul 27th, 2025: Clarify the context of OSS and regulation.*
 
 ---
 
@@ -50,7 +50,7 @@ In conclusion, teams do not practice Continuous Integration because:
 
 Even though teams like to see themselves as experienced and high-performing, without true Continuous Integration, they will be none.
 
-Having said that, Continuous Integration, as intended in this article, is compatible with regulation and compliance. There are no valid reasons not implementing Continuous Integration because of regulations. To the contrary, it will help in satisfying compliance requirements.
+Having said that, Continuous Integration, as intended in this article, is [compatible with regulation and compliance]({% post_url 2022-02-22-on-the-evilness-of-feature-branching-but-compliance.md %}). There are no valid reasons not implementing Continuous Integration because of regulations. To the contrary, it will help in satisfying compliance requirements.
 
 However, it is true that Pull Requests with status-checks are a good fit for OSS when core maintainers want to accept contributions from the outside world. This is a classic low-trust environment. Yet, the core maintainers should practice Continuous Integration.
 
