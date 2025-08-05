@@ -1,150 +1,95 @@
 ---
 layout: article
-title: Why do Teams think Trunk-based Development does not work?
+title: Why do Teams think Single-branch Development Does not Work?
 author: Thierry de Pauw
 category: articles
 tags: [Continuous Integration]
 ---
 
-
-- They started out using git because it is the default choice now. It encourages use of branches. They never thought about whether or not this is the right thing to do.
-  - gitflow
-  - sounded like "the old way" of doing things and the whole idea got pigeonholed into that frame and went nowhere.
-
-- lack of confidence, tooling and automated tests required
-
-1. They only know how to split work to assign it to individuals, not to deliver it in slices.`
-2. Their experience is with big releases, and big releases are dangerous events that take a lot of time and effort to finish. "You can't do that 2-week hardening and manual 1-week deployment process more than once a month!"
-3. "We need a string of inspectors, testers, and approvers to keep code from being released -- you know, in case the individual who coded it made a mistake." (and of course changes are made by solo individuals, because that's how they assign tickets and keep everyone utilized)
-4. They are (perhaps rightfully) afraid of their code; it breaks in unexpected ways when they change it.
-5. They're sure that compliance takes a large, special pre-release effort.
-6. They are convinced that the TBD shops must have better developers than the ones that work in their company.
-7. They have never seen it done safely, so their BS filters tell them that it can't be done: "if it was possible and a good idea, we'd be doing it already"
-
-- we can only put finished work on mainline
-
-They do not feel comfortable with the perceived risk of having to deploy “unfinished features” to production.
-They want to be able to isolate ongoing development
-
-the push back I usually get is that it is too dangerous. Somebody might check something in that would Break Everything. My response to that is to show how we can build systems with automated test, etc that will reduce that danger. Usually the contretemps is that there isn't time to build that system, so we need to instead take extra time to do code reviews and pull requests.
-
-I think a lot of developers would be of the mindset that it would constitute releasing "unfinished work". They are conditioned to only release work that is "finished".
-
-- lack of automated testing
-
-- lack of incremental skills
-  - batch work
-
-Additionally, it is hard to convince them that the initial extra effort of learning and practicing the skills to be able to break work into smaller pieces (especially without impacting the product as it currently works) is worth it as they would say it is faster to "complete it" and then release it.
-
-Many folks don't break down their tasks in a way as to keep everything green and are suspicious of what they see as extra effort to do so.
-
-- no analysis by engineers
-
-A lot of developers are used to being given predetermined work, unfortunately - they already know what to build and how to build it before they start so convincing them of the benefit becomes harder.
-
-- slow builds
-  - reduce cycle times -> shift to TBD 
-
-- no collaboration culture
-
- - Leave me alone in my own bubble and don't bother me with your commits... Mind set
-Largely, I think the "why" is cultural. Even though you're supposed to be collaborating with your team and with the rest of the business, you're rewarded based on what you do "as an individual", and you're held accountable for the things that you do "as an individual". That type of culture discourages collaboration and encourages competition.
-
-- lack of decoupled design
-
-The effectiveness of Trunk-Based Development (TBD) is significantly influenced by the architecture of the software. Modular and well-componentized architectures facilitate the fast and frequent integration cycles from TBD. The architecture should support robust automated testing and continuous integration to ensure stability with frequent changes. 
-My experience is that this is with chunky tools (like Microsoft Dynamics) way more difficult than with a WebApp.
-
-- we need our main branch to document deployments
-- slower is safe: speed and quality are not a zero-sum game
-- we need have "project gods" that need to approve everything
-- Trust issues, can I trust you to write good code
-
-we just cannot trust the other developers, and then there's a number of reasons given:
-1) they will break the tests and the pipeline
-2) they will merge bad code that contains bugs
-3) theyll make bad design decisions
-
-in one recent case, devs needed to submit PRs which then needed to be approved by at least five (!!!) other devs, and so pull requests was the only viable way of getting that many code reviews (apart from perhaps mob programming, which would be completely out of the question in these orgs, they tend to see devs working alone as the peak of efficiency)
-
-as a result you get a lack of mentoring, upskilling and teaching within the org, and the cycle completes
-
-Many companies, especially the big ones, have organised themselves around hierarchy, pseudo-siloed departments, bureaucracy and lack of trust. When all this comes to the development teams, all the culture goes against practices like TBD 
-
-- Compliancy issue, we need it to be peer reviewed before production
-
-Four eyes-principle because security reasons, so every change needs a PR with an audit trail of a reviewer approving the changes.
-What I find intriguing about this is that it has nothing to do with code (and other) quality. It's about avoiding malevolent changes and having some process proof for it.
-
-I would list regulated / change managed environments where your not going to be able to raise feature changes every 10 minutes or even daily. So you would end up with a main branch being deployed to production with lots of random changes together which would be viewed as high risk in that type of organisation.
-
-- "Then we'd never be able to stabilize anything" is what I heard last time I asked the question...
-
-It’s counterintuitive and needs a lot of things to work to get it right. It also depends on the culture of psychological safety in the org. The need for branching is to mitigate risks elsewhere. 
-it’s also the default that is taught. It’s ingrained in our tech culture. 
-
-- Companies where management/non technical stakeholder wants/has a right to give a go/no go on a release
-- Incomplete test suite ie: when a green build (all tests passes) is not the same as a good release
-- Specific case of that one: I've found front end testing to be complicated/brittle/etck
-- Long/complex refactorings. It's not everyday and yes, we try to avoid those as much as possible/split them in pieces, but it happens
-
-
-- 800 developer team, one broken push blocks 799 devs => branches, alternative: commit on green, Gerrit, Google
-
-- feature flags do not work
-
----
-They are too used to binding the integration phase with the deployment phase and the deployment phase with the release phase. They can't see a way to integrate code more often than they distribute it. They cannot see a way to distribute more often than they release it.
-
----
-In 1 sentence: 
-It upends their entire development model. 
-
-Trunk based development: 
-Check in finished chunks of code every 5 or 10 minutes, that's semi-guaranteed to not break anything. 
-
-1. Most devs don't build small chunks. They copy large chunks from elsewhere.
-2. Most devs don't write semi-guaranteed to not break. They write what they think might work, then they try it. If it breaks, they fix.
-3. Most systems don't have enough automated tests to confirm whether a small change broke anything. 
-4. Most people don't write automated tests with their code for EVERY change, and if they do, they write 1 test for 100 lines of code.
- 
-TBD assumes that you are doing all those things as a baseline. It's not like TBD is step 1 ... it's step 40 on a journey most folks haven't started on.
----
-
----
-Having developers in any reasonably sized (and especially remote) team push from local straight to main branch is bonkers and will cause major headaches real quick. This is not scaleable. Relying on the developers to only 'push on green' is utopia and requires the developers to be able to run the entire test suite locally.
-
-Trunk based development is all about having just 1 long-lived branch. In the 'scaled' version, all other branches are short-lived feature branch. Developers do they thing on the feature branch and merge to main via pull request (Including all required testing and checks to make sure its working). This is all documented on https://trunkbaseddevelopment.com/
-
-
-- Remote adds more friction because if I push incorrect code and you 'git pull' that code before I've fixed it, you are now working with faulty code locally. If I'm working in a small, physically co-located team you might ask around casually if someone pushed recently. Or I might shout out that I just pushed faulty code. Either way, loss of productivity. Remote working is great and should be the standard but it definitely does not improve speed of spontanous communication. 
-
-- Lack of skills is actually valid point but this is unfortunately real-world reality. Unless your team is hiring only senior developers but these are, as you probably know, hard to find and expensive. Beyond that, even the most senior developer make mistakes. The scaled version allows for people making mistakes and catching it before it affects everyone.
-
-- When do code review occur? According to the link you posted, they are now optional and happen AFTER merge to main. How to guarantee code quality?
-
-- Most substantial software projects have integration tests that are technically tricky to run on local machines. 
-
-I'm huge fan of trunk-based approach but only the so-called 'scaled' version. I don't see any downsides with. 
+Despite [research showing that Continuous Integration indirectly leads to better quality and stability](https://app.thestorygraph.com/books/0baa7f2a-3f3f-4752-9d81-0434117d0648). Despite that, Continuous Integration implies the practice of trunk-based development, and hence single-branch development. And despite all the [benefits of practising trunk-based development]({% post_url 2025-07-21-on-the-benefits-of-trunk-based-development %}), most teams still think this cannot possibly work for them and are stuck with the [evilness of feature branching]({% post_url 2021-04-26-on-the-evilness-of-feature-branching %}).
 
 ---
 
-"I want to give myself the option to change my mind"
+This is a quite surprising observation given that when [RCS](https://en.wikipedia.org/wiki/Revision_Control_System) was introduced in 1982, followed by [CVS](https://en.wikipedia.org/wiki/Concurrent_Versions_System) in 1990, and then [SubVersion](https://en.wikipedia.org/wiki/Apache_Subversion) in 2000, teams stuck to [Mainline](#mainline) because branching was too complicated. Then [Git](https://en.wikipedia.org/wiki/Git) came along in 2005 with the promise of easy branch creation. However, Git was specifically designed to satisfy the Linux kernel development needs that required decent branch support to review and accept outside contributions. That is different from most commercial closed-source corporations. Context matters. Yet, teams rarely take context into account, and so they are trapped in branches, still, thinking they are acting professionally.
 
-“Show me a toy repo with this approach and guardrails”
+This brings us to the first reason teams think single-branch development cannot work, which is quite demarking. For the older generation of engineers who have known CVS or SubVersion before, single-branch sounds like the "old way" of doing. Not cool. The younger generation, however, has only known Git and the use of branches. Any alternatives are unknown to them. Branches is the default that are taught to younger generations. It is ingrained in the technology culture. Committing straight to mainline does not even cross their mind. If it did, it sounds like an aberration. Cannot. That is like a commandment given by a higher spiritual something: "*Thou shalt not commit to main.*" ( ... without merging a branch).
 
+Even if they would consider it, they hit the next problem: lack of confidence. Fear of breaking things. Where "things" could be breaking the build, breaking automated tests, thus introducing non-working code that impacts a whole team, presumably creating a loss of "productivity". To avoid this, it requires the team to [*Run a Local Build*]({% post_url 2022-09-28-the-practices-that-make-continuous-integration-building %}#practice-12-run-a-local-build) and [*Commit Only on Green*]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %}#practice-7-commit-only-on-green). "Things" could also be breaking production because something slipped through the automated tests, if any, or enough exists.
 
-> What I generally say when I move teams closer to it is to think of TBD as a forcing function, or we could say similarly Continuous Delivery is a forcing function. What I mean by that is that the objections and obstacles that come up are very useful. They point to factors in your environment that should change. Those things have other harmful effects.
+This brings us to the next obstacle: lack of or insufficient automated tests. Therefore, they introduce an illusion of control and safety through a heavy code review process using the classic Pull Request, assuming this will compensate for the absence of automated tests. Here is the deal. The code review will not make a difference, anyway. We might as well commit straight to mainline without automated tests; the outcome will probably be the same.
+
+This follows the idea that slow is safe. Slow ensures quality and stability. Thus, we need a string of inspectors, testers, and approvers in case someone makes a mistake. Yet, speed and quality are not a zero-sum game. It is not either, or. [The State of DevOps Report](https://cloud.google.com/devops/state-of-devops?hl=en) debunked this since 2015. We need speed to achieve quality. Speed gives fast feedback to improve stability. Conversely, we need quality to get to speed. Quality reduces rework. Nonetheless, mistakes and defects will happen, anyway, regardless of all the safety controls in place. Systems are used in the most unpredictable ways. In that case, slow also means slow to recover. We would better invest in fast recovery processes.
+
+How do we guarantee quality? First, there is no such thing as "guaranteeing quality". We can only strive to deliver quality. That is entirely what trunk-based development teams do. Quality is their highest concern. They are empowered to fix and improve whichever untidy code, at all times. It just happens. Next, code reviews will not "guarantee" quality.
+
+"*But, frontend automated tests are complicated, complex and brittle, so we do not have them.*". True, frontend testing is demanding, but not unachievable. Also, teams tend to overlook unit testing frontend logic. Often because frontend code is shaggy, untestable due to a lack of a decently decoupled design. The brittleness has often to do with improper test design. In the end, the [Automated Acceptance Tests]({% post_url 2021-07-22-acceptance-testing-for-continuous-delivery-dave-farley %}) advocated by the Continuous Delivery community is frontend testing.
+
+To sustainably *Run a Local Build*, it necessitates to [*Have an Exceedingly Fast Build*]({% post_url 2022-09-28-the-practices-that-make-continuous-integration-building %}#practice-14-have-a-fast-build). That is the next issue. Most teams have overly slow builds. If they have automated tests, they are especially slow. Either because they test too much, tests are too broad, or the local build executes too many tests, not the right tests, or do not practice [*Progressive Testing*]({% post_url 2024-11-03-raising-the-continuous-integration-bar %}), or the application code is simply not efficient. Keeping fast builds while automated test suites grow takes hard work. Teams invest too little in continuous improvement.
+
+The lack of confidence, although recognised by teams, comes from something considerably unknown to teams: a lack of engineering skills. Most senior engineers are not senior. They have inadequate skills to not break "things". The crucial missing skill is *incremental software engineering*, the ability to split large changes into a series of small incremental changes that do not tear apart the system and keep everything working at all times.
+
+This typically evokes the idea that single-branch development requires a "mature" team, whatever mature means. Which somehow confirms the lack of engineering skills that teams at all means do not want to face. Fairly contradicting. If mature means experienced, yes, that is certainly helpful, but not required. We have seen successful novice teams with single-branch development as well as so-called experienced teams failing due to an absence of skills. Note that in the 90s, many Extreme Programming practitioners were beginners.
+
+Furthermore, it is difficult to convince teams that the initial effort to learn incremental development skills is worth the strain. For them, it is "faster", "easier" to complete the thing in a big batch and release it. Completely oblivious of the risks. Again, fairly contradicting, as those same teams follow heavy code reviews in an attempt to mitigate risks elsewhere.
+
+Lack of incremental skills naturally devolves to batch work, large changesets, which fit well with the branch-thinking. Batch work definitely disables the adoption of single-branch development.
+
+System design also plays a role in this. Heavily coupled systems promote batch work. Any change ripples through all layers of the system, ripping apart the application, ensuring it does not work for an extended period. In that case, branches prevent that. Even so, when merging, we let go of a large changeset into the wild, which, once more, introduces substantial risks. The effectiveness of trunk-based development is significantly influenced by the system design. Modular, decoupled designs facilitate the fast and frequent integration cycles from trunk-based development. The design should ascertain stability through frequent changes inherent to single-branch development. Having said that, experienced engineers will be able to work around a too-coupled design, because they master incremental development skills. These are the true seniors.
+
+Because there is a lack of incremental skills, teams need branches to refactor code. They have not learned how to refactor in small incremental steps. Subsequently, refactoring happens in large batch sizes. On the other hand, because refactoring on branches introduces a fair amount of merge conflicts, it discourages the adoption of refactoring practices. Indisputably, technical debt rises to unmanageable levels.
+
+Incremental software engineering conveys that we grow a feature on mainline small commit by small commit, regardless of how large that feature is. That denotes we have unfinished functionality on mainline. As a consequence, we might have unfinished functionality in production. Many teams simply cannot conceive that idea. They are used to binding the integration phase with the deployment phase and the deployment phase with the release phase. They cannot see a way to integrate code more often than they distribute it. They cannot see a way to distribute more often than they release it. That brings that other widespread commandment: "*Thou shalt only push finished features to mainline.*". Engineers are conditioned to only release finished work. Whatever "finished" means. On new features, there will be, anyway, a certain back-and-forth to finalise that feature. Again, it requires skills to push, in a controlled way, unfinished features to production, which brings us again to the concept of seniority.
+
+But, this demand [Feature Flags](https://martinfowler.com/articles/feature-toggles.html). "*We tried Feature Flags. It did not work. We went back to feature branches.*". Be aware that not all incremental development requires Feature Flags. Work can be hidden by not wiring pieces before they are completed. Agreed, in certain cases, we need Feature Flags. Many times, the problem teams face with Feature Flags is a lack of [Feature Flag management](https://help.split.io/hc/en-us/articles/360006960391-Managing-technical-debt). Unmanaged flags are undeniably evil.
+
+The idea to release at any time, without a week or two hardening phase, is distressing. Teams are still used to releases as events, requiring preparation. Signals of this are shout-outs on company chat channels to not merge Pull Requests in preparation for a release. With incremental software engineering skills, there will never be a stabilisation phase. The system will be stable all the time, enabling on-demand production releases at any given moment. This is quite puzzling for teams that have never experienced this.
+
+The way work is organised in most organisations and teams works against collaboration and single-branch development. Many teams still believe more work can be achieved by parallelising work and having overly specialised profiles, think frontend and backend engineers, infrastructure engineers, etc. However, this has been refuted time and time again in literature. As a result, work is split into smaller chunks assigned to individuals who work in isolation, not to deliver features in slices. Along with it, teams held individuals accountable for their work instead of having team accountability. Consequently, there is a lack of collaboration and a lack of T-shaped profiles. Unsurprisingly, this emphasises the use of branches to isolate the individual work. If teams adopt pairing or teaming, the need for branches evaporates. Even so, if pairing or teaming is a cultural stretch, T-shaped profiles and collaboration through design workshops remove the need for branches.
+
+Then, we have the lack of trust that prevents teams from adopting a single-branch development model. We may not say this out loud. That is too confronting. But, nevertheless, it is real. Someone might break the build, the pipeline, or introduce a bug, bad design, or downright make a mistake, you name it. They set all sorts of checks and balances, bureaucracy and hierarchies in place to moderate that. They apply [Theory X over Theory Y](https://en.wikipedia.org/wiki/Theory_X_and_Theory_Y). A culture that goes against practising trunk-based development. In consequence, we get omission of mentoring, upskilling and teaching. The cycle completes.
+
+Remote adds more friction. Sure, remote demands more attention to create a team. But, oftentimes, it is just a bunch of remote engineers working in isolation. Bringing us back to lack of collaboration exacerbated with a lack of engineering skills. Remote does not prevent single-branch development when the team has a decent engineering baseline and collaborates.
+
+Finally, ["*Yes, but compliance.*"]({% post_url 2022-02-22-on-the-evilness-of-feature-branching-but-compliance %}). Everything has to be reviewed and approved; hence, we need branches. The killer argument to grind teams to a definitive halt. This is quality theatre. [Research](https://app.thestorygraph.com/books/0baa7f2a-3f3f-4752-9d81-0434117d0648) is clear about this: process gates drive down quality. The precise thing we put in place to supposedly improve quality, or prevent malevolent code, does the exact opposite. We do not question the regulatory need to have reviews. They can simply be realised in a more efficient way with pairing, teaming or [non-blocking reviews]({% post_url 2023-05-02-non-blocking-continuous-code-reviews-a-case-study %}).
+
+“*Show me a toy repo with this approach and guardrails.*”. The knockout argument as we cannot because of intellectual property and non-disclosure agreements. Moreover, a "toy repo" would not be representative. Teams need to experience this on real, complex systems. This is not a theoretical approach. We lived it on elaborate systems.
+
+Lastly, "*We already do scaled trunk-based development.*" with a six engineers team as documented in [Trunk Based Development: Styles and Trade-offs](https://trunkbaseddevelopment.com/styles/#short-lived-feature-branches), joyfully bypassing the first paragraph about [Committing Straight to the Trunk](https://trunkbaseddevelopment.com/styles/#committing-straight-to-the-trunk). Generally, "scaled trunk-based development" with a team of six is just an embellishment for plain [GitHub Flow](https://githubflow.github.io/) with too long living branches. True, trunk-based-development.com mentions the scaled version, but, with short-lived branches and starting from 100 engineers. How many teams have 100 engineers working on a single branch? Right!
+
+## Conclusion
+
+Naturally, people will say this is all very subjective. Of course, otherwise they have to confront the harsh reality they are in. Still, we have seen and experienced all this when coaching and reviewing many technology organisations.
+
+Regrettably, most engineers have never seen trunk-based development implemented in a safe way. They have only experienced the perilous way. As anticipated, their bullshit filter tells them that if this was a good idea, we would be doing it already. Therefore, that must be a bad idea.
+
+To be successful with single-branch development it requires to [adopt a sheer amount of practices]({% post_url 2022-06-14-the-practices-that-make-continuous-integration %}). Trunk-based development assumes this as a baseline. That is not a given. It is hard work. Adopting trunk-based development is not step 1. It is step 40 on a journey most teams have not even started on. But, once they start, the end result is so rewarding. However, most teams do not realise what it brings in the end. We have to go through all this to experience the benefits. Once we experience them, we cannot imagine another world with branches.
+
+> What I generally say when I move teams closer to it is to think of trunk-based development as a forcing function, or we could say similarly Continuous Delivery is a forcing function. What I mean by that is that the objections and obstacles that come up are very useful. They point to factors in your environment that should change. Those things have other harmful effects.
 >
 > What stops us all from working closer to trunk, and therefore closer to each other? Which of those factors is easiest to change, and what other benefits would there be?
 >
->It's a generally productive journey no matter if you get halfway there or all the way.
+> It's a generally productive journey no matter if you get halfway there or all the way.
 >
-> -- Ray Myers, 
+> -- [Ray Myers](https://www.linkedin.com/in/cadrlife/)
 
-## Acknowledgements
+## Acknowledgement
 
 [Luke Kanies](https://hachyderm.io/@lkanies) for [nudging me on Mastodon to write this article](https://hachyderm.io/@lkanies/111766866897656806) after publishing the complete [On the Evilness of Feature Branching]({% post_url 2021-04-26-on-the-evilness-of-feature-branching %}) series.
 
-Steve Berczuk, Jeremy Kahne, Hibri Marzook, Tim Ottinger, Tom Jans, Markus Tacker, Juup Schuurkes, Alan Mellor, Kyle Griffin Aretae, James Bowen, Alessio Coser, Steve Ropa, Andrew Milne, Ray Myers, David Sandilands, Mike Emeigh, Daniel Bartley, Juan Florez, Kenny (Baas), Schwegler, Martin Van Aken, Sven Hofstede, Angelo Moreira, Enrico Teterra, Pascal Dufour Tom Leake, John Hearn, Chris Ford
+Steve Berczuk, Jeremy Kahne, Hibri Marzook, Tim Ottinger, Tom Jans, Markus Tacker, Juup Schuurkes, Alan Mellor, Kyle Griffin Aretae, James Bowen, Alessio Coser, Steve Ropa, Andrew Milne, Ray Myers, David Sandilands, Mike Emeigh, Daniel Bartley, Juan Florez, Kenny (Baas), Schwegler, Martin Van Aken, Sven Hofstede, Angelo Moreira, Enrico Teterra, Pascal Dufour, Tom Leake, John Hearn, Chris Ford for [their contributions on LinkedIn](https://www.linkedin.com/posts/tdpauw_ive-been-asked-to-write-an-article-on-why-activity-7154112252285960195-AQVA/).
+
+## Related Articles
+
+- [Why do Teams not practice Continuous Integration?]({% post_url 2025-07-26-why-do-teams-not-practice-continuous-integration %})
+- [On the Benefits of Trunk-based Development]({% post_url 2025-07-21-on-the-benefits-of-trunk-based-development%})
+- [On the Evilness of Feature Branching]({% post_url 2021-04-26-on-the-evilness-of-feature-branching %})
+- [Continuous Integration! Where to Start?]({% post_url 2024-11-01-continuous-integration-where-to-start %})
+- [The Practices that make Continuous Integration]({% post_url 2022-06-14-the-practices-that-make-continuous-integration %})
+
+## Definitions
+
+### Mainline
+
+The Mainline is the line of development in Version Control, which is the reference from which system builds are created that feed into a deployment pipeline.
+
+For CVS and SubVersion, this is *trunk*. For Git, this is the remote *main* branch. For Mercurial, this is the remote *default* branch.
