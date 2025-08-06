@@ -20,7 +20,7 @@ Even if they may consider it, they hit the next problem: lack of confidence. Fea
 
 This brings us to the next obstacle: lack of or insufficient automated tests. Therefore, they introduce an illusion of control and safety through a heavy code review process using the classic Pull Request, assuming this will compensate for the absence of automated tests. Here is the deal. The code review will not make a difference, anyway. We might as well commit straight to mainline without automated tests; the outcome will likely be the same.
 
-This goes along with the idea that slow is safe. Slow ensures quality and stability. Thus, we need a string of inspectors, testers, and approvers in case someone makes a mistake. Yet, speed and quality are not a zero-sum game. It is not either, or. [The State of DevOps Report](https://cloud.google.com/devops/state-of-devops?hl=en) debunked this since 2015. We need speed to achieve quality. Speed gives fast feedback to improve stability. Conversely, we need quality to get to speed. Quality reduces rework. Nonetheless, mistakes and defects will happen, anyway, regardless of all the safety controls in place. Systems are used in the most unpredictable ways. In that case, slow also means slow to recover. We would be better off establishing a fast recovery process.
+This comes with the perception that slow is safe. Slow ensures quality and stability. Thus, we need a string of inspectors, testers, and approvers in case someone makes a mistake. Yet, speed and quality are not a zero-sum game. It is not either, or. [The State of DevOps Report](https://cloud.google.com/devops/state-of-devops?hl=en) debunked this since 2015. We need speed to achieve quality. Speed gives fast feedback to improve stability. Conversely, we need quality to get to speed. Quality reduces rework. Nonetheless, mistakes and defects will happen, anyway, regardless of all the safety controls in place. Systems are used in the most unpredictable ways. In that case, slow also means slow to recover. We would be better off establishing a fast recovery process.
 
 How do we guarantee quality? First, there is no such thing as "guaranteeing quality". We can only strive to deliver quality. That is entirely what trunk-based development teams do. Quality is their highest concern. They are empowered to fix and improve any untidy code at all times. It just happens. Next, code reviews will not "guarantee" anything, certainly not quality.
 
@@ -32,7 +32,7 @@ The lack of confidence, although recognised by teams, comes from something consi
 
 This typically evokes the idea that single-branch development requires a "mature" team, whatever mature means. Which somehow confirms the lack of engineering skills that teams at all means do not want to face. Fairly contradicting. If mature means experienced, yes, that is certainly helpful, but not required. We have seen successful novice teams with single-branch development as well as so-called experienced teams failing due to insufficient skills. Note that in the 90s, many Extreme Programming practitioners were beginners.
 
-Furthermore, it is challenging to convince teams that the initial effort to learn incremental development skills is rewarding. For them, it is "faster", "easier" to complete the task in a big batch and release it. Completely oblivious of the risks. Again, fairly contradicting, as those same teams implement onerous code reviews in an attempt to mitigate risks elsewhere.
+Furthermore, it is challenging to convince teams that the initial effort to learn incremental development skills is rewarding. For them, it is "faster" and "easier" to complete the task in a big batch and release it. Completely oblivious of the risks. Again, fairly contradicting, as those same teams implement onerous code reviews in an attempt to mitigate risks elsewhere.
 
 Missing incremental skills naturally devolve into batch work, large changesets, which fit well with the branch-thinking. Batch work definitely disables the adoption of single-branch development.
 
@@ -54,7 +54,7 @@ Remote adds more friction. Of course, remote demands more attention to create a 
 
 Finally, ["*Yes, but compliance.*"]({% post_url 2022-02-22-on-the-evilness-of-feature-branching-but-compliance %}). Everything has to be reviewed and approved; hence, we need branches. The killer argument to grind teams to a definitive halt. This is quality theatre. [Research](https://app.thestorygraph.com/books/0baa7f2a-3f3f-4752-9d81-0434117d0648) is clear about this: process gates drive down quality. The precise thing we put in place to supposedly improve quality, or prevent malicious code, does the exact opposite. We do not question the regulatory need to have reviews. They can simply be realised in a more efficient way with pairing, teaming or [non-blocking reviews]({% post_url 2023-05-02-non-blocking-continuous-code-reviews-a-case-study %}).
 
-“*Show me a toy repo with this approach and guardrails.*”. The knockout argument. We outright cannot because of intellectual property and non-disclosure agreements. Moreover, a "toy repo" would event not be representative. Teams need to experience this on real, complex systems. This is not a theoretical approach. We lived it on elaborate systems.
+“*Show me a toy repo with this approach and guardrails.*”. The knockout argument. We outright cannot because of intellectual property and non-disclosure agreements. Moreover, a "toy repo" would not even be representative. Teams need to experience this on real, complex systems. This is not a theoretical approach. We lived it on elaborate systems.
 
 Lastly, "*We already do scaled trunk-based development.*" ... with a six-engineer team as documented in [Trunk Based Development: Styles and Trade-offs](https://trunkbaseddevelopment.com/styles/#short-lived-feature-branches), joyfully bypassing the first paragraph about [Committing Straight to the Trunk](https://trunkbaseddevelopment.com/styles/#committing-straight-to-the-trunk). Generally, "scaled trunk-based development" with a team of six is just an embellishment for plain [GitHub Flow](https://githubflow.github.io/) with too long-living branches. True, [trunk-based-development.com](https://trunk-based-development.com) mentions the scaled version, but using short-lived branches and starting from 100 engineers. How many teams have 100 engineers working on a single branch? Right! A team of six does not need scaling. It needs skills.
 
@@ -74,7 +74,7 @@ To be successful with single-branch development requires [adopting a sheer amoun
 >
 > -- [Ray Myers](https://www.linkedin.com/in/cadrlife/)
 
-We have seen the strongest feature-branching advocates entering a trunk-based development team freaking out to eventually become the passionate trunk-based development champions.
+We have seen the strongest feature-branching advocates entering a trunk-based development team, freaking out to eventually become the passionate trunk-based development champions.
 
 ## Acknowledgement
 
