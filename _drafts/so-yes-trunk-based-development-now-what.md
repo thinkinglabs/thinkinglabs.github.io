@@ -13,9 +13,9 @@ We are sold to the idea of practising trunk-based development. But all the artic
 <!-- no toc -->
 - [How do we handle large-scale changes?](#how-do-we-handle-large-scale-changes)
 - Does the code tree end up duplicating some of the feature concepts?
-- How do you handle dev vs prod vs testing environments?
+- [How do we handle development vs production vs testing environments?](#how-do-we-handle-development-vs-production-vs-testing-environments)
 - Where do people do experiments that may or may not go into production?
-- How do you handle interim commits that are more about saving work than about committing for the long term?
+- How do we handle interim commits that are more about saving work than about committing for the long term?
 - How to deal with a codebase without any test?
 - How to handle framework upgrades?
 
@@ -28,6 +28,26 @@ This is hard work. It requires some upfront thinking on how to split the large c
 Let us say, the new feature involves a new screen in the UI that uses a new backend service. We will typically first implement the backend service. As the backend service is not used, we do not need any [*Feature Toggles*](https://martinfowler.com/articles/feature-toggles.html) to hide the backend service. It can just linger around unfinished as nobody cares. Once the backend service is ready, we can start implementing the new screen for the frontend. As long as the screen is not completed, we do not wire it into the frontend navigation. Again, we do not need any Feature Toggles to hide the screen. Only when the screen is finished, we wire it into the navigation.
 
 Of course, frontend and backend could also be implemented in parallel by two pairs. In that case, the frontend will work with a mocked backend until the real backend is ready. Here also, the frontend screen is not wired into the navigation until the screen is completed.
+
+## How do we handle development vs production vs testing environments?
+
+Environments are not handled by the version control system.
+
+In the early 2000s, [ClearCase](https://en.wikipedia.org/wiki/IBM_DevOps_Code_ClearCase) advocated for version control environment branches. To deploy in an environment, code had to be promoted into the respective environment branch which triggered a deployment in the said environment. [This way of working has severe downsides]({% post_url 2025-03-03-environment-branches-harm-quality %}) ans should not be followed any more.
+
+Deployments in the different environments should be handled by the Continuous Delivery [*Deployment Pipeline*](https://continuousdelivery.com/implementing/patterns/#the-deployment-pipeline).
+
+![Deployment Pipeline](/images/environment-branches-harm-quality/deployment-pipeline.jpg)
+
+The *Deployment Pipeline* consists of several sequential stages. Some stages could be executed in parallel. For instance load testing, and security testing could all happen in parallel with the [*Automated Acceptance Testing*]({% post_url 2021-07-22-acceptance-testing-for-continuous-delivery-dave-farley %}). 
+
+The first stage of the pipeline is always the [*Commit Build*](#commit-build) (or *Commit Stage*). It is triggered by any commit on *Mainline*. The outcome of the *Commit Build* is a binary build artefact, i.e. a Jar file, a Python PyPi package, a Docker Image, ...
+
+Once we have the build artefact, the next stage can deploy it in a testing or QA environment. The following stage can now start executing the *Automated Acceptance Tests* on the testing environment.
+
+Once all of that is successful, we can decide to deploy to production which happens in the final stage of the *Deployment Pipeline*.
+
+Essentially, the *Deployment Pipeline* builds the build artefact only once and then promotes it from one environment to the other.
 
 ## Acknowledgement
 
@@ -44,3 +64,11 @@ Of course, frontend and backend could also be implemented in parallel by two pai
 The Mainline is the line of development in Version Control, which is the reference from which system builds are created that feed into a deployment pipeline.
 
 For CVS and SubVersion, this is *trunk*. For Git, this is the remote *main* branch. For Mercurial, this is the remote *default* branch.
+
+### Commit Build
+
+The Commit Build is a build performed during the first stage of the [Deployment Pipeline](https://continuousdelivery.com/implementing/patterns/#the-deployment-pipeline) or the central build server. It involves checking out the latest sources from *Mainline* and at minimum compiling the sources, running a set of [*Commit Tests*](#commit-tests), and building a binary artefact for deployment.
+
+### Commit Tests
+
+The Commit Tests comprise all of the Unit Tests along with a small simple smoke test suite executed during the *Commit Build*. This smoke test suite includes a few simple Integration and Acceptance Tests deemed important enough to get early feedback.
