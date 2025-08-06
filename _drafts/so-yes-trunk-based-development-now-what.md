@@ -14,7 +14,7 @@ We are sold to the idea of practising trunk-based development. But all the artic
 - [How do we handle large-scale changes?](#how-do-we-handle-large-scale-changes)
 - Does the code tree end up duplicating some of the feature concepts?
 - [How do we handle development vs production vs testing environments?](#how-do-we-handle-development-vs-production-vs-testing-environments)
-- Where do people do experiments that may or may not go into production?
+- [Where do people do experiments that may or may not go into production?](#where-do-people-do-experiments-that-may-or-may-not-go-into-production)
 - How do we handle interim commits that are more about saving work than about committing for the long term?
 - How to deal with a codebase without any test?
 - How to handle framework upgrades?
@@ -48,6 +48,12 @@ Once we have the build artefact, the next stage can deploy it in a testing or QA
 Once all of that is successful, we can decide to deploy to production which happens in the final stage of the *Deployment Pipeline*.
 
 Essentially, the *Deployment Pipeline* builds the build artefact only once and then promotes it from one environment to the other.
+
+## Where do people do experiments that may or may not go into production?
+
+If experiments should go into production, in all evidence they should land on *Mainline*, likely behind a *Feature Toggle* to allow turning the experiment on and off.
+
+If the experiment should not go into production, I guess we are more speaking about a [*Spike*](http://www.extremeprogramming.org/rules/spike.html), writing throw away code to test an idea. Such experiments should be sharp and short. At all times, we avoid committing into version control. The minute code lands in version control, it becomes production code. Because of the [sunk cost fallacy](https://en.wikipedia.org/wiki/Sunk_cost#Fallacy_effect), it gets particularly hard to throw away the code. This only works for experiments under 24 hours. That is not always possible. Sometimes experiments require more investigation, more collaboration. To save us from landing spike code into production code, we should commit into a "spikes" branch that is automatically deleted after 72 hours.
 
 ## Acknowledgement
 
