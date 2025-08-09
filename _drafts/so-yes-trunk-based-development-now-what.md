@@ -76,6 +76,8 @@ Once all of that is successful, we can decide to deploy to production which happ
 
 Essentially, the *Deployment Pipeline* builds the build artefact only once and then promotes it from one environment to the other.
 
+This means that all environments receive the same version of the codebase. Variations between environments are handled by configuration, exceptionally by code branches. We say exceptionally, because environment code branches are difficult to test, so we want to avoid that.
+
 ## Where do people do experiments that may or may not go into production?
 
 If experiments should go into production, in all evidence they should land on [*Mainline*](#mainline), likely behind a *Feature Toggle* to allow turning the experiment on and off.
