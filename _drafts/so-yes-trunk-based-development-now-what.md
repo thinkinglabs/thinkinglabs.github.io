@@ -91,6 +91,8 @@ Having said that, a better approach is to have atomic commits at all times that 
 
 ## Acknowledgement
 
+[Luke Kanies](https://hachyderm.io/@lkanies) for [raising the idea for a kind of Trunk-based Development FAQ](https://hachyderm.io/@lkanies/114892939490913521).
+
 ## Related Articles
 
 - [On the Benefits of Trunk-based Development]({% post_url 2025-07-21-on-the-benefits-of-trunk-based-development%})
