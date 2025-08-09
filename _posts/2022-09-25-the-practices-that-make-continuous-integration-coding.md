@@ -126,8 +126,9 @@ I would say *Branch by Abstraction* is a special kind of *Expand-Contract*. The 
 
 We use this technique, for instance, to replace an algorithm with a more performant algorithm. Or to replace a library used everywhere in the codebase with a different library. For instance, we want to replace our Object Relational Mapping (ORM) library with another one or, let us be wild, with plain old SQL.
 
-*Branch by Abstraction* works as follows. We begin with a situation where various parts of the software are calling some supplier code (the algorithm or
-the library we want to replace).
+*Branch by Abstraction* works as follows. We begin with a situation where various parts of the software are calling some supplier code (the algorithm or the library we want to replace).
+
+![Branch-by-Abstraction](/images/the-practices-that-make-continuous-integration/branch-by-abstraction.jpg)
 
 First, we start by introducing an abstraction layer in front of the supplier code we want to replace. In most programming languages that would be an
 interface or an abstract class.
