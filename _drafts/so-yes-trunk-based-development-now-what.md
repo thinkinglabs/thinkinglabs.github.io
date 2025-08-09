@@ -1,19 +1,19 @@
 ---
 layout: article
-title: So, Yes, Trunk-based development! Now What?
+title: So, Yes, Trunk-based Development! Now What?
 author: Thierry de Pauw
 category: articles
 tags: [Continuous Integration]
 ---
 
-We are sold to the idea of practising trunk-based development. But all the articles we read on the topic leaves us with tons of questions. This is an attempt to answer these questions. I guess this will be a continual work in progress as new unanswered questions will come around. If you have an unanswered question, feel free to [open a ticket here](https://github.com/thinkinglabs/thinkinglabs.github.io/issues) and I will tackle that.
+We are sold to the idea of practising trunk-based development. But all the articles we read on the topic leaves us with tons of questions. This is an attempt to answer these questions. See it as a kind of **Trunk-based Development FAQ**. I guess this will be a continual work in progress as new unanswered questions will come around. If you have an unanswered question, feel free to [open a ticket here](https://github.com/thinkinglabs/thinkinglabs.github.io/issues).
 
 ---
 
 <!-- no toc -->
 - [How do we handle large-scale changes?](#how-do-we-handle-large-scale-changes)
 - [How do we handle large-scale refactoring?](#how-do-we-handle-large-scale-refactoring)
-- Does the code tree end up duplicating some of the feature concepts?
+- [Does the code tree end up duplicating some of the feature concepts?](#does-the-code-tree-end-up-duplicating-some-of-the-feature-concepts)
 - [How do we handle development vs production vs testing environments?](#how-do-we-handle-development-vs-production-vs-testing-environments)
 - [Where do people do experiments that may or may not go into production?](#where-do-people-do-experiments-that-may-or-may-not-go-into-production)
 - How do we handle interim commits that are more about saving work than about committing for the long term?
@@ -42,6 +42,18 @@ The classic way of solving that, is to use Branch by Version Control. The team c
 A better approach is to [*Adopt Expand-Contract*]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %}#practice-9-adopt-expand-contract), also known as Expand-Migrate-Contract or [Parallel Changes](https://martinfowler.com/bliki/ParallelChange.html).
 
 When replacing an algorithm by a better, more performant version but that still needs testing in production, or when replacing a library, [*Branch-by-Abstraction*]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %}#practice-9-adopt-expand-contract) would be the preferred option.
+
+## Does the code tree end up duplicating some of the feature concepts?
+
+> When modifying a large chunk of code, do you sometimes end up with “old version” and “new version” in the code base, so you can slowly improve the new version, and only flip it on when ready?
+>
+> The alternative would seem to be, make the single version always able to act like the old and new version, but that seems both hard and brittle. But… lots of code dupes in the tree seem not great, too. You’re basically making branches, but in-tree.
+
+Yes! We do sometimes have both "old version" and "new version" alongside each other. It is not that unusual as it is the only way to evolve a codebase incrementally without breaking. This happens even more often with infrastructure code. Just renaming a resource already requires duplication.
+
+In reality, it is a documented pattern known as "Expand-Contract" (or expand-migrate-contract) (as explained in the previous question [*How do we handle large-scale refactoring?*](#how-do-we-handle-large-scale-refactoring)).
+
+Indeed, we do introduce a code branch instead of a version control branch. But with the benefit that it is visible to the team. The team sees the impact on their code and can adapt. This is not possible with a version control branch. In that case, code is hidden for the team.
 
 ## How do we handle development vs production vs testing environments?
 
