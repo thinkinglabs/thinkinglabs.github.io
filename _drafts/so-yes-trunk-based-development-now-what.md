@@ -16,7 +16,7 @@ We are sold to the idea of practising trunk-based development. But all the artic
 - [Does the code tree end up duplicating some of the feature concepts?](#does-the-code-tree-end-up-duplicating-some-of-the-feature-concepts)
 - [How do we handle development vs production vs testing environments?](#how-do-we-handle-development-vs-production-vs-testing-environments)
 - [Where do people do experiments that may or may not go into production?](#where-do-people-do-experiments-that-may-or-may-not-go-into-production)
-- How do we handle interim commits that are more about saving work than about committing for the long term?
+- [How do we handle interim commits that are more about saving work than about committing for the long term?](#how-do-we-handle-interim-commits-that-are-more-about-saving-work-than-about-committing-for-the-long-term)
 - How to deal with a codebase without any test?
 - How to handle framework upgrades?
 
@@ -77,9 +77,17 @@ Essentially, the *Deployment Pipeline* builds the build artefact only once and t
 
 ## Where do people do experiments that may or may not go into production?
 
-If experiments should go into production, in all evidence they should land on *Mainline*, likely behind a *Feature Toggle* to allow turning the experiment on and off.
+If experiments should go into production, in all evidence they should land on [*Mainline*](#mainline), likely behind a *Feature Toggle* to allow turning the experiment on and off.
 
 If the experiment should not go into production, I guess we are more speaking about a [*Spike*](http://www.extremeprogramming.org/rules/spike.html), writing throw away code to test an idea. Such experiments should be sharp and short. At all times, we avoid committing into version control. The minute code lands in version control, it becomes production code. Because of the [sunk cost fallacy](https://en.wikipedia.org/wiki/Sunk_cost#Fallacy_effect), it gets particularly hard to throw away the code. This only works for experiments under 24 hours. That is not always possible. Sometimes experiments require more investigation, more collaboration. To save us from landing spike code into production code, we should commit into a "spikes" branch that is automatically deleted after 72 hours.
+
+## How do we handle interim commits that are more about saving work than about committing for the long term?
+
+> I never want to walk away from my desk with code that has not been committed and pushed, so I am never at risk of data loss. But I don’t have the luxury of always guaranteeing I end the day at a good stopping point, which means committing and pushing WIP code.
+
+I guess, in this case, a temporary branch would be acceptable, like for the [experiments](#where-do-people-do-experiments-that-may-or-may-not-go-into-production), just to store the end-of-day work that will be picked up the next day. To avoid that this temporary branch becomes a *Feature Branch*, the work on that branch should be integrated at the start of the next day with [*Mainline*](#mainline) and the temporary branch destroyed.
+
+Having said that, a better approach is to have atomic commits at all times that leave the codebase in a releasable state. That eliminates the need for a temporary branch as then we can just push to the remote [*Mainline*](#mainline) at the end of the day.
 
 ## Acknowledgement
 
