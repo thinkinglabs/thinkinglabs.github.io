@@ -17,6 +17,7 @@ We are sold to the idea of practising trunk-based development. But all the artic
 - [How do we handle development vs production vs testing environments?](#how-do-we-handle-development-vs-production-vs-testing-environments)
 - [Where do people do experiments that may or may not go into production?](#where-do-people-do-experiments-that-may-or-may-not-go-into-production)
 - [How do we handle interim commits that are more about saving work than about committing for the long term?](#how-do-we-handle-interim-commits-that-are-more-about-saving-work-than-about-committing-for-the-long-term)
+- [How to combine the version control system as a personal tool with the team tool?](#how-to-combine-the-version-control-system-as-a-personal-tool-with-the-team-tool)
 - How to deal with a codebase without any test?
 - How to handle framework upgrades?
 
@@ -88,6 +89,22 @@ If the experiment should not go into production, I guess we are more speaking ab
 I guess, in this case, a temporary branch would be acceptable, like for the [experiments](#where-do-people-do-experiments-that-may-or-may-not-go-into-production), just to store the end-of-day work that will be picked up the next day. To avoid that this temporary branch becomes a *Feature Branch*, the work on that branch should be integrated at the start of the next day with [*Mainline*](#mainline) and the temporary branch destroyed.
 
 Having said that, a better approach is to have atomic commits at all times that leave the codebase in a releasable state. That eliminates the need for a temporary branch as then we can just push to the remote [*Mainline*](#mainline) at the end of the day.
+
+## How to combine the version control system as a personal tool with the team tool?
+
+> I am very used to using version control as a personal tool, not just a group tool — I commit individual, incremental chunks that are easy to understand and test in isolation. I regularly look at a diff to see what I’ve changed and check myself. I can’t keep track of huge commits, so I use version control to keep the WIP manageable.
+>
+> If I’m working against main, it seems like I lose the “personal tool” bits, and only have the group tool — everything is for everyone.
+>
+> How do you replace the utility version control has for me, before I am ready to share, before work is ready to push?
+>
+>I know the high level answer is “make smaller commits that always result in green builds”, but… how?
+
+To be honest, it is the first time this aspect has been raised.
+
+But, a version control system is first and foremost a communication tool for the team to communicate changes. In the end, it is a team that delivers working software, not individuals. Hence, the reason for Continuous Integration, to have working software all the time which enables on-demand production deployments and thus shortens time to market and reduces cost of delay.
+
+Yet, by times it happens that at the end of the day we do not have working software but we still want to store [interim commits](#how-do-we-handle-interim-commits-that-are-more-about-saving-work-than-about-committing-for-the-long-term). It is not ideal, but human, as long as we are mindful to the exception.
 
 ## Acknowledgement
 
