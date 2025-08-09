@@ -6,12 +6,13 @@ category: articles
 tags: [Continuous Integration]
 ---
 
-We are sold to the idea of practising trunk-based development. But all the articles we read on the topic leaves us with tons of questions. This is an attempt to answer these questions. I guess this will be a continual work in progress as new unanswered questions will come around. Therefore, I kindly ask you that when you have an unanswered question, to please [open a ticket here](https://github.com/thinkinglabs/thinkinglabs.github.io/issues). I will try to tackle that.
+We are sold to the idea of practising trunk-based development. But all the articles we read on the topic leaves us with tons of questions. This is an attempt to answer these questions. I guess this will be a continual work in progress as new unanswered questions will come around. If you have an unanswered question, feel free to [open a ticket here](https://github.com/thinkinglabs/thinkinglabs.github.io/issues) and I will tackle that.
 
 ---
 
 <!-- no toc -->
 - [How do we handle large-scale changes?](#how-do-we-handle-large-scale-changes)
+- [How do we handle large-scale refactoring?](#how-do-we-handle-large-scale-refactoring)
 - Does the code tree end up duplicating some of the feature concepts?
 - [How do we handle development vs production vs testing environments?](#how-do-we-handle-development-vs-production-vs-testing-environments)
 - [Where do people do experiments that may or may not go into production?](#where-do-people-do-experiments-that-may-or-may-not-go-into-production)
@@ -21,13 +22,26 @@ We are sold to the idea of practising trunk-based development. But all the artic
 
 ## How do we handle large-scale changes?
 
-The point here is incremental sofware development. Breaking up large changes into a series of small incremental changes. Regardless how large a feature or a change is, it grows small commit by small commit on [*Mainline*](#mainline). Every small commit is [atomic](https://en.wikipedia.org/wiki/Atomic_commit). It keeps the codebase working.
+The point here is incremental software development. Breaking up large changes into a series of small incremental changes. Regardless how large a feature or a change is, it grows small commit by small commit on [*Mainline*](#mainline). Every small commit is [atomic](https://en.wikipedia.org/wiki/Atomic_commit). It keeps the codebase working.
 
 This is hard work. It requires some upfront thinking on how to split the large change in a series of changes that build upon each other. Somehow, this is a form of mini-planning.
 
 Let us say, the new feature involves a new screen in the UI that uses a new backend service. We will typically first implement the backend service. As the backend service is not used, we do not need any [*Feature Toggles*](https://martinfowler.com/articles/feature-toggles.html) to hide the backend service. It can just linger around unfinished as nobody cares. Once the backend service is ready, we can start implementing the new screen for the frontend. As long as the screen is not completed, we do not wire it into the frontend navigation. Again, we do not need any Feature Toggles to hide the screen. Only when the screen is finished, we wire it into the navigation.
 
 Of course, frontend and backend could also be implemented in parallel by two pairs. In that case, the frontend will work with a mocked backend until the real backend is ready. Here also, the frontend screen is not wired into the navigation until the screen is completed.
+
+## How do we handle large-scale refactoring?
+
+The large-scale changes naturally raises the question about large refactorings that can take days, or weeks or sometimes even months to complete. Months is not unlikely in infrastructure evolutions.
+
+Let us say, silly, simplistic example, we have a method that is used at 42 places in the code base. For some valid reason, we have to change the method signature.
+If we change the signature and all consumers in one go, this will take a fair amount of time during which no integrations happen and thus no feedback.
+
+The classic way of solving that, is to use Branch by Version Control. The team creates a version control branch and then performs all the required modifications. However, we run the risk that in the meantime someone else introduces a new consumer for the old signature.
+
+A better approach is to [*Adopt Expand-Contract*]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %}#practice-9-adopt-expand-contract), also known as Expand-Migrate-Contract or [Parallel Changes](https://martinfowler.com/bliki/ParallelChange.html).
+
+When replacing an algorithm by a better, more performant version but that still needs testing in production, or when replacing a library, [*Branch-by-Abstraction*]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %}#practice-9-adopt-expand-contract) would be the preferred option.
 
 ## How do we handle development vs production vs testing environments?
 
