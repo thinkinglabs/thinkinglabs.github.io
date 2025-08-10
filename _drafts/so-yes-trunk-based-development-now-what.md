@@ -19,7 +19,7 @@ We are sold to the idea of practising trunk-based development. But all the artic
 - [How do we handle interim commits that are more about saving work than about committing for the long term?](#how-do-we-handle-interim-commits-that-are-more-about-saving-work-than-about-committing-for-the-long-term)
 - [How to combine the version control system as a personal tool with the team tool?](#how-to-combine-the-version-control-system-as-a-personal-tool-with-the-team-tool)
 - [How to deal with a codebase without any test?](#how-to-deal-with-a-codebase-without-any-test)
-- How to handle framework upgrades?
+- [How to handle framework upgrades?](#how-to-handle-framework-upgrades)
 
 ## How do we handle large-scale changes?
 
@@ -119,6 +119,18 @@ In the end, the question is not whether to use branches or not when having no te
 If the team is confident enough, they might choose to go for trunk-based development. It will uncover all the problems and gently nudge the team to adopt the [necessary practices]({% post_url 2022-06-14-the-practices-that-make-continuous-integration %}) to mitigate the risks. That should encourage the team to [grow a comprehensive automated test suite]({% post_url 2022-09-28-the-practices-that-make-continuous-integration-building %}#practice-13-have-a-vast-amount-of-high-quality-automated-tests). But, [the target is not 100% code coverage]({% post_url 2022-03-19-the-fallacy-of-the-100%-code-coverage %}). 20-30% might be enough if with that the core, or high risk part of the codebase is covered.
 
 If the team is more risk averse, they might opt for branches together with growing the testsuite. However, the problem with branches is that they tend to cover up the problems. It may remove the incentive to do something about the situation. That all depends on the team's motivation and perseverance.
+
+## How to handle framework upgrades?
+
+> How would you suggest implementing this methodology when it comes to, say, framework migrations? Can't have two versions of the framework coexisting at runtime, so how do you achieve this using only incremental changes?
+
+Or upgrades of Java, Ruby, Python, ...
+
+Clearly, as we cannot have both versions coexisting in the same codebase, [techniques for large scale refactoring](#how-do-we-handle-large-scale-refactoring) like [*Expand-Contract*]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %}#practice-9-adopt-expand-contract)) will not work.
+
+One option is using a *Canary Build*. We set up a second build alongside the main build that uses the newer version of the framework or the programming language. For any failure, we try to fix it on [*Mainline*](#mainline) in such a way that it complies with both versions. We manipulate the codebase to be compatible with both versions. Is that easy? No. That will be hard work. But, it has the benefit we never block the flow of work through the value stream. We can keep delivering new functionality while we perform the upgrade in small incremental steps.
+
+The alternative is either halting all delivery while performing the upgrade on *Mainline*. Not great, business-wise. If that only takes a week, that could be conceivable. If it takes weeks, it is an outright bad idea. Or using the classic approach with a considerable long-lived branch upon which the upgrade is performed. New deliveries are still possible, but have to be cherry picked into the branch. That is a substantial additional effort and mistakes can happen.
 
 ## Acknowledgement
 
