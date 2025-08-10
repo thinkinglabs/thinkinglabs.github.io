@@ -18,7 +18,7 @@ We are sold to the idea of practising trunk-based development. But all the artic
 - [Where do people do experiments that may or may not go into production?](#where-do-people-do-experiments-that-may-or-may-not-go-into-production)
 - [How do we handle interim commits that are more about saving work than about committing for the long term?](#how-do-we-handle-interim-commits-that-are-more-about-saving-work-than-about-committing-for-the-long-term)
 - [How to combine the version control system as a personal tool with the team tool?](#how-to-combine-the-version-control-system-as-a-personal-tool-with-the-team-tool)
-- How to deal with a codebase without any test?
+- [How to deal with a codebase without any test?](#how-to-deal-with-a-codebase-without-any-test)
 - How to handle framework upgrades?
 
 ## How do we handle large-scale changes?
@@ -108,6 +108,18 @@ But, a version control system is first and foremost a communication tool for the
 
 Yet, by times it happens that at the end of the day we do not have working software but we still want to store [interim commits](#how-do-we-handle-interim-commits-that-are-more-about-saving-work-than-about-committing-for-the-long-term). It is not ideal, but human, as long as we are mindful to the exception.
 
+## How to deal with a codebase without any test?
+
+> Do you have any advice on how to deal with a codebase without any test? Is it too risky to use trunk-based development in this context?
+
+We should understand that whether to use branches or trunk-based development, in the case of a codebase without any tests or few tests, does not change much. The situation remains the same. Having a branch likely followed by a code review only gives a sense of risk mitigation and safety, but it will not improve much. A better risk mitigation would be manual testing, which is possible in both cases. With trunk-based development, a commit to [*Mainline*](#mainline) does not equal a deploy and release to production. The commit still has to go successfully through the [*Deployment Pipeline*](https://continuousdelivery.com/implementing/patterns/#the-deployment-pipeline), and thus over the different environments before landing in production.
+
+In the end, the question is not whether to use branches or not when having no tests. The question is how much risk-appetite does the team has and how much willingness to change the situation.
+
+If the team is confident enough, they might choose to go for trunk-based development. It will uncover all the problems and gently nudge the team to adopt the [necessary practices]({% post_url 2022-06-14-the-practices-that-make-continuous-integration %}) to mitigate the risks. That should encourage the team to [grow a comprehensive automated test suite]({% post_url 2022-09-28-the-practices-that-make-continuous-integration-building %}#practice-13-have-a-vast-amount-of-high-quality-automated-tests). But, [the target is not 100% code coverage]({% post_url 2022-03-19-the-fallacy-of-the-100%-code-coverage %}). 20-30% might be enough if with that the core, or high risk part of the codebase is covered.
+
+If the team is more risk averse, they might opt for branches together with growing the testsuite. However, the problem with branches is that they tend to cover up the problems. It may remove the incentive to do something about the situation. That all depends on the team's motivation and perseverance.
+
 ## Acknowledgement
 
 [Luke Kanies](https://hachyderm.io/@lkanies) for [raising the idea for a kind of Trunk-based Development FAQ](https://hachyderm.io/@lkanies/114892939490913521).
@@ -122,7 +134,7 @@ Yet, by times it happens that at the end of the day we do not have working softw
 
 ### Mainline
 
-The Mainline is the line of development in Version Control, which is the reference from which system builds are created that feed into a deployment pipeline.
+The Mainline is the line of development in Version Control, which is the reference from which system builds are created that feed into a [*Deployment Pipeline*](https://continuousdelivery.com/implementing/patterns/#the-deployment-pipeline).
 
 For CVS and SubVersion, this is *trunk*. For Git, this is the remote *main* branch. For Mercurial, this is the remote *default* branch.
 
