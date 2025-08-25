@@ -10,6 +10,10 @@ We are sold on the idea of practising trunk-based development. However, all the 
 
 ---
 
+*Update Aug 25, 2025: Add the Walking Skeleton to handling large-scale changes.*
+
+---
+
 <!-- no toc -->
 - [How do we handle large-scale changes?](#how-do-we-handle-large-scale-changes)
 - [How do we handle large-scale refactoring?](#how-do-we-handle-large-scale-refactoring)
@@ -23,13 +27,13 @@ We are sold on the idea of practising trunk-based development. However, all the 
 
 ## How do we handle large-scale changes?
 
-The point here is incremental software development. Breaking up large changes into a series of small incremental changes. Regardless of how large a feature or a change is, it grows small commit by small commit on [*Mainline*](#mainline). Every small commit is [atomic](https://en.wikipedia.org/wiki/Atomic_commit). It keeps the codebase working.
+The point here is incremental software development. Breaking up large changes into a series of small incremental changes. Regardless of how large a feature or change is, it grows small commit by small commit on [*Mainline*](#mainline). Every small commit is [atomic](https://en.wikipedia.org/wiki/Atomic_commit). It keeps the codebase working.
 
-This is hard work. It requires some upfront thinking on how to split the large change into a series of changes that build upon each other. Somehow, this is a form of mini-planning.
+This is hard work. It requires some upfront thinking on how to break down the large change into a series of changes that build upon each other. In some way, it is a form of mini-planning.
 
-Supposing the new feature involves a new screen in the UI that uses a new backend service. We will typically first implement the backend service. As the backend service is not used, we do not need any [*Feature Toggles*](https://martinfowler.com/articles/feature-toggles.html) to hide the backend service. It can just linger around unfinished, as nobody cares. Once the backend service is ready, we can start implementing the new screen for the frontend. As long as the screen is not completed, we do not wire it into the frontend navigation. Again, we do not need any Feature Toggles to hide the screen. Only when the screen is finished, do we wire it into the navigation.
+Supposing the new feature involves a new screen in the UI that uses a new backend service. We will typically first implement the backend service. As the backend service is not used, we do not need any [*Feature Toggles*](https://martinfowler.com/articles/feature-toggles.html) to hide the backend service. It can just linger around unfinished, as nobody cares. Once the backend service is ready, we can start implementing the new screen for the frontend. As long as the screen is not completed, we do not wire it into the frontend navigation. Again, we do not need any Feature Toggles to hide the screen. Only when the screen is finished, do we wire it into the navigation. Having said that, a better approach is to practice the [Walking Skeleton](https://wiki.c2.com/?WalkingSkeleton). We start by implementing just enough backend service, followed by just enough UI that consumes the minimal backend service. The screen is still not finished. So we keep it unwired from navigation. However, even in this case, it will materialise over several commits where the minimal backend is implemented first, and thus kept hidden, followed by just enough UI. Once this Walking Skeleton works, we can grow both the frontend and the backend together. Still, frontend and backend changes can occur in a single commit, but most likely over several commits. We add a little backend followed by a little frontend.
 
-Of course, frontend and backend could also be implemented in parallel by two pairs. In that case, the frontend will work with a mocked backend until the real backend is ready. Here also, the frontend screen is not wired into the navigation until the screen is completed.
+Another strategy is to have two pairs, each implementing the frontend and backend in parallel. In that case, the frontend will work with a mocked backend until the real backend is ready. In this case, also, the frontend screen is not wired into the navigation until the screen is completed. But parallelising work is never a great idea; therefore, the first strategy would be the better option.
 
 ## How do we handle large-scale refactoring?
 
@@ -112,7 +116,7 @@ Yet, by times it happens that at the end of the day we do not have working softw
 
 > Do you have any advice on how to deal with a codebase without any tests? Is it too risky to use trunk-based development in this context?
 
-We should understand that whether to use branches or trunk-based development, in the case of a codebase without any tests or few tests, does not change much. The situation remains the same. Having a branch likely followed by a code review only gives a sense of risk mitigation and safety, but it will not improve much. A better risk mitigation would be manual testing, which is possible in both cases. With trunk-based development, a commit to [*Mainline*](#mainline) does not equal a deploy and release to production. The commit still has to go successfully through the [*Deployment Pipeline*](https://continuousdelivery.com/implementing/patterns/#the-deployment-pipeline), and thus over the different environments before landing in production.
+We should understand that whether to use branches or trunk-based development, in the case of a codebase without any tests or few tests, does not change much. The situation remains the same. Having a branch likely followed by a code review only gives a sense of risk mitigation and safety, but it will not improve much. A better risk mitigation would be manual testing, which is possible in both cases. Be aware that with trunk-based development, a commit to [*Mainline*](#mainline) does not equal a deploy and release to production. The commit still has to go successfully through the [*Deployment Pipeline*](https://continuousdelivery.com/implementing/patterns/#the-deployment-pipeline), and thus be promoted over the different environments before landing in production.
 
 In the end, the question is not whether to use branches or not when having no tests. The question is how much risk-appetite the team has and how much willingness to change the situation.
 
@@ -135,6 +139,8 @@ The alternative is either halting all delivery while performing the upgrade on *
 ## Acknowledgement
 
 [Luke Kanies](https://hachyderm.io/@lkanies) for [raising the idea for a kind of Trunk-based Development FAQ](https://hachyderm.io/@lkanies/114892939490913521).
+
+[Steve Hallman](https://www.linkedin.com/in/stevehallman/) for [raising the Walking Skeleton](https://www.linkedin.com/feed/update/urn:li:activity:7360935289189539840?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7360935289189539840%2C7364005485416513536%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287364005485416513536%2Curn%3Ali%3Aactivity%3A7360935289189539840%29).
 
 ## Related Articles
 
