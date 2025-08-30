@@ -12,6 +12,8 @@ We are sold on the idea of practising trunk-based development. However, all the 
 
 *Update Aug 25, 2025: Add the Walking Skeleton to handling large-scale changes.*
 
+*Update Aug 30, 2025: Add the question "How to maintain multiple versions?".*
+
 *Update Aug 30, 2025: Add the question "Can we use branches?".*
 
 ---
@@ -26,6 +28,7 @@ We are sold on the idea of practising trunk-based development. However, all the 
 - [How to combine the version control system as a personal tool with the team tool?](#how-to-combine-the-version-control-system-as-a-personal-tool-with-the-team-tool)
 - [How to deal with a codebase without any tests?](#how-to-deal-with-a-codebase-without-any-tests)
 - [How to handle framework upgrades?](#how-to-handle-framework-upgrades)
+- [How to maintain multiple versions?](#how-to-maintain-multiple-versions)
 - [Can we use branches?](#can-we-use-branches)
 
 ## How do we handle large-scale changes?
@@ -139,6 +142,18 @@ One option is using a *Canary Build*. We set up a second build alongside the mai
 
 The alternative is either halting all delivery while performing the upgrade on *Mainline*. Not great, business-wise. If that only takes a week, that could be conceivable. If it takes weeks, it is an outright bad idea. Or using the classic approach with a considerably long-lived branch upon which the upgrade is performed. New deliveries are still possible, but have to be cherry-picked into the branch. That is a substantial additional effort, and mistakes can happen.
 
+## How to maintain multiple versions?
+
+Not all code bases are SaaS products. Some code bases are on-premise solutions released following a specific version scheme. Depending on the support model, older versions need to be maintained. How does that work with trunk-based development?
+
+When releasing a version, we tag the code base in Version Control with the version number. In that case, we do not yet create a *release* branch. We only create the *release* branch the minute we need to fix the version.
+
+Here is the hint. Fixes do not happen on the release branch. The fixes happen on [*Mainline*](#mainline) and cherry-picked into the release branch. It has the benefit that we do not need to merge the release branch back into *Mainline*.
+
+![Release Branch](/images/so-yes-trunk-based-development-now-what/release-branch.jpg)
+
+On the odd occasion we cannot apply the fix on *Mainline* because *Mainline* has diverged too much from the *release* branch, we have no choice but to perform the fix on the *release* branch and eventually replicate it on *Mainline*.
+
 ## Can we use branches?
 
 The data shows that fewer than three active parallel branches at any time, with very short branch lifetimes, i.e. less than a day, equate trunk-based development (see [Accelerate](https://app.thestorygraph.com/books/0baa7f2a-3f3f-4752-9d81-0434117d0648), p55). Essentially, this comes down to practising [GitHub Flow](https://githubflow.github.io/) but with short-lived branches.
@@ -150,7 +165,7 @@ However, we start to see in the industry, teams pretending they practice "scaled
 Having said that, some branches have their place with trunk-based development:
 
 - [*spike* branches for experimentations](#where-do-people-do-experiments-that-may-or-may-not-go-into-production).
-- *release* branches when having to maintain various versions of a single code base
+- [*release* branches when having to maintain various versions of a single code base](#how-to-maintain-multiple-versions).
 
 ## Acknowledgement
 
