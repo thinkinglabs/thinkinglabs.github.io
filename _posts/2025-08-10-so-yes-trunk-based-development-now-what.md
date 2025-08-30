@@ -12,6 +12,8 @@ We are sold on the idea of practising trunk-based development. However, all the 
 
 *Update Aug 25, 2025: Add the Walking Skeleton to handling large-scale changes.*
 
+*Update Aug 30, 2025: Add the question "Can we use branches?".*
+
 ---
 
 <!-- no toc -->
@@ -24,6 +26,7 @@ We are sold on the idea of practising trunk-based development. However, all the 
 - [How to combine the version control system as a personal tool with the team tool?](#how-to-combine-the-version-control-system-as-a-personal-tool-with-the-team-tool)
 - [How to deal with a codebase without any tests?](#how-to-deal-with-a-codebase-without-any-tests)
 - [How to handle framework upgrades?](#how-to-handle-framework-upgrades)
+- [Can we use branches?](#can-we-use-branches)
 
 ## How do we handle large-scale changes?
 
@@ -72,7 +75,7 @@ Deployments in the different environments should be handled by the Continuous De
 
 The *Deployment Pipeline* consists of several sequential stages. Some stages could be executed in parallel. For instance, load testing and security testing could all happen in parallel with the [*Automated Acceptance Testing*]({% post_url 2021-07-22-acceptance-testing-for-continuous-delivery-dave-farley %}). 
 
-The first stage of the pipeline is always the [*Commit Build*](#commit-build) (or *Commit Stage*). It is triggered by any commit on *Mainline*. The outcome of the *Commit Build* is a binary build artefact, i.e. a Jar file, a Python PyPi package, a Docker Image, ...
+The first stage of the pipeline is always the [*Commit Build*](#commit-build) (or *Commit Stage*). It is triggered by any commit on [*Mainline*](#mainline). The outcome of the *Commit Build* is a binary build artefact, i.e. a Jar file, a Python PyPi package, a Docker Image, ...
 
 Once we have the build artefact, the next stage can deploy it in a testing or QA environment. The following stage can now start executing the *Automated Acceptance Tests* on the testing environment.
 
@@ -86,7 +89,7 @@ This means that all environments receive the same version of the codebase. Varia
 
 If experiments should go into production, in all evidence they should land on [*Mainline*](#mainline), likely behind a *Feature Toggle* to allow turning the experiment on and off.
 
-If the experiment should not go into production, I guess we are more speaking about a [*Spike*](http://www.extremeprogramming.org/rules/spike.html), writing throw-away code to test an idea. Such experiments should be sharp and short. At all times, we avoid committing to version control. The minute code lands in version control, it becomes production code. Because of the [sunk cost fallacy](https://en.wikipedia.org/wiki/Sunk_cost#Fallacy_effect), it gets particularly hard to throw away the code. This only works for experiments under 24 hours. That is not always possible. Sometimes experiments require more investigation, more collaboration. To save us from landing spike code into production code, we should commit to a "spikes" branch that is automatically deleted after 72 hours.
+If the experiment should not go into production, I guess we are more speaking about a [*Spike*](http://www.extremeprogramming.org/rules/spike.html), writing throw-away code to test an idea. Such experiments should be sharp and short. At all times, we avoid committing to version control. The minute code lands in version control, it becomes production code. Because of the [sunk cost fallacy](https://en.wikipedia.org/wiki/Sunk_cost#Fallacy_effect), it gets particularly hard to throw away the code. This only works for experiments under 24 hours. That is not always possible. Sometimes experiments require more investigation, more collaboration. To save us from landing spike code into production code, we should commit to a "*spike*" branch that is automatically deleted after 72 hours.
 
 ## How do we handle interim commits that are more about saving work than about committing for the long term?
 
@@ -135,6 +138,19 @@ Clearly, as we cannot have both versions coexisting in the same codebase, [techn
 One option is using a *Canary Build*. We set up a second build alongside the main build that uses the newer version of the framework or the programming language. For any failure, we try to fix it on [*Mainline*](#mainline) in such a way that it complies with both versions. We manipulate the codebase to be compatible with both versions. Is that easy? No. That will be hard work. But it has the benefit that we never block the flow of work through the value stream. We can keep delivering new functionality while we perform the upgrade in small incremental steps. Obviously, this requires to [*Have a Vast Amount of High-Quality Automated Tests*]({% post_url 2022-09-28-the-practices-that-make-continuous-integration-building %}#practice-13-have-a-vast-amount-of-high-quality-automated-tests).
 
 The alternative is either halting all delivery while performing the upgrade on *Mainline*. Not great, business-wise. If that only takes a week, that could be conceivable. If it takes weeks, it is an outright bad idea. Or using the classic approach with a considerably long-lived branch upon which the upgrade is performed. New deliveries are still possible, but have to be cherry-picked into the branch. That is a substantial additional effort, and mistakes can happen.
+
+## Can we use branches?
+
+The data shows that fewer than three active parallel branches at any time, with very short branch lifetimes, i.e. less than a day, equate trunk-based development (see [Accelerate](https://app.thestorygraph.com/books/0baa7f2a-3f3f-4752-9d81-0434117d0648), p55). Essentially, this comes down to practising [GitHub Flow](https://githubflow.github.io/) but with short-lived branches.
+
+So, yes, according to the data, branches are compatible with trunk-based development, meaning fewer than three, shorter than 24 hours. [trunkbaseddevelopment.com](https://trunkbaseddevelopment.com/) also mentions it as one of the [three styles](https://trunkbaseddevelopment.com/styles/) of trunk-based development: committing straight to [*Mainline*](#mainline), short-lived branches, Google's "Patch Review" system.
+
+However, we start to see in the industry, teams pretending they practice "scaled" trunk-based development. Yet, most of the time, they only apply GitHub Flow while forgetting the part about short-lived branches, which essentially means merging at the end of the day. That is one reason why we are quite persistent in committing straight to *Mainline*.
+
+Having said that, some branches have their place with trunk-based development:
+
+- [*spike* branches for experimentations](#where-do-people-do-experiments-that-may-or-may-not-go-into-production).
+- *release* branches when having to maintain various versions of a single code base
 
 ## Acknowledgement
 
