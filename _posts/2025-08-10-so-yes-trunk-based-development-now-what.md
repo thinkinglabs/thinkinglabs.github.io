@@ -167,6 +167,12 @@ Having said that, some branches have their place with trunk-based development:
 - [*spike* branches for experimentations](#where-do-people-do-experiments-that-may-or-may-not-go-into-production).
 - [*release* branches when having to maintain various versions of a single code base](#how-to-maintain-multiple-versions).
 
+> [...] Trunk-based development is great for straightforward changes, mainly when these changes can be split into a sequence of little steps. Feature branches are great for experimental stuff when we don‘t know where the journey will go - or if we even will throw the whole branch away and start over.
+>
+> You might say: „Then use feature flags/toggles!“. Yes, sometimes. But feature flags also add complexity, [...]
+>
+> -- Urs Enzler, [Dec 9, 2025](https://www.linkedin.com/feed/update/urn:li:activity:7139029943270674433?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7139029943270674433%2C7139234254055464960%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287139234254055464960%2Curn%3Ali%3Aactivity%3A7139029943270674433%29)
+
 ## Acknowledgement
 
 [Luke Kanies](https://hachyderm.io/@lkanies) for [raising the idea for a kind of Trunk-based Development FAQ](https://hachyderm.io/@lkanies/114892939490913521).
