@@ -1,0 +1,83 @@
+---
+layout: article
+title: A Tester's Growth-Path to Test Automation
+author: Thierry de Pauw
+category: articles
+tags: [Testing]
+---
+
+A client started with a QA/Testing [Community of Practice](https://communitiesofpractice.work/) (CoP), which is a splendid effort. During one session, the topic of a growth path for Testers in test automation was raised. We have to understand, at that client, automated testing is at its infancy. Testers are used to perform manual regression testing as part of a QA department. So, in that case, test automation is certainly unfamiliar. As an IT delivery consultant, I have my opinions on team compositions and roles, but I wanted to hear from the test community about their thoughts on the subject. I reached out on [LinkedIn](https://www.linkedin.com/posts/tdpauw_reaching-out-to-my-testing-community-friends-activity-7335560629988040706-N04c).
+
+---
+
+> Reaching out to my Testing Community friends
+>
+> How do you see a growth plan for testers in test automation as a personal development plan? From novice to advanced.
+>
+> What would be measurable targets to achieve? What resources should they master?
+>
+> I have always questioned whether this is a good thing.
+>
+> Test automation is code. It should have production code levels of quality. If not even better. Thus, it needs decent coding skills. Is this something testers should acquire? Obviously, it helps with creating a cross-functional team and t-shaped roles.
+>
+> Thoughts?
+>
+> Thierry de Pauw, [June 3th, 2025](https://www.linkedin.com/posts/tdpauw_reaching-out-to-my-testing-community-friends-activity-7335560629988040706-N04c)
+
+As it unfortunately still happens, people have not learned from the early 2000s, certain Software Engineers like to say we do not need Testers as a specific role on the team. The Software Engineers can fulfil that with automated tests. Let me be clear, this does not work. Automated tests can only check the knowns. Automated tests are checking, not testing. Testing is about finding unknows. Software Engineers are fairly bad at this. This is where Test Engineers excel as in defining proper acceptance criteria to be implemented by automated tests.
+
+As an IT delivery consultant, I focus on flow. Anything that introduces silos in a team, is a red flag. Test Automation and Software Development in Test (SDET) roles are such red flags. Anytime I hear Test Automation I cringe. It indicates that some testing happens after the fact, when the change is already implemented. It goes against testability. Often, in these situations testing is hard as the software has not been designed with testing in mind. Additionally, it is a source of Work in Progress (WIP) and consequently inventory creation, all things that reduces feedback and thus quality. Lastly, it removes responsibility from the Software Engineers to test their feature.
+
+Having said that, I do think it is beneficial for Test Engineers to learn to code as it is favourable for Software Engineers to gain testing skills. Where do we start? Learning to code is such a vast topic as is testing. This goes beyond only learning a test framework like [Selenium](https://www.selenium.dev/), [Cypress](https://www.cypress.io/) or the more recent [Playwright](https://playwright.dev/). There is so much more skills to master such as domain knowledge, coding practices, code and test design, risk mitigation, ...
+
+Automated tests are code. It should have production-like quality if not better. Test code is the documentation of the production code. It describes what the production code should do. And we should be able to figure this out easily when reading the tests. From my experience (running technology due diligences, including reviewing many code bases), that is often not or poorly achieved. This requires skills in readable automated tests.
+
+Above all, we have to get people away from "Test Automation". It involves too much tooling. To be more hireable on the job market we have to move towards coding, not test automation.
+
+To move forward in coding skills, we have to have software engineering core skills. This list is long. It is a lengthy journey with the right team and the right people to mentor. That is not a given.
+
+First, it requires learning a programming language, and then another one and maybe more. The first will take time. The second and the third will involve less time as the concepts are similar, the syntax and the core library will defer. But, nowadays, with the prevalence of the Internet, smart IDEs nobody and lately AI code completion noone knows the core library by heart any more.
+
+I am in favour of the idea to solve a problem multiple times using different technologies. This is not limited to Test Engineers. This is for everyone in the team. It is aligned with the ideas of the [Code Retreat](https://www.coderetreat.org/?seed=1390) to learn [*Test Driven Development*](https://en.wikipedia.org/wiki/Test-driven_development) (TDD) and [*Pair Programming*](https://en.wikipedia.org/wiki/Pair_programming). In sessions of 45 minutes we solve the same problem again and again. Usually the dreaded [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life). I am not a fan as it generates too much discussions on how to attack the problem. I like the [Mars Rover Kata](https://codingdojo.org/kata/mars-rover/), simple, or [FizzBuzz](https://codingdojo.org/kata/FizzBuzz/), even simpler. I learned a couple of programming languages with FizzBuzz. Any way, at the end of the 45 minutes, we throw away the code. On every new session we change pair and generally we change programming language.
+
+Next we need to acquire design skills. This is tough but so important, also to write meaning full tests. Reading books about designs and architecture helps in gaining the vocabulary, but from my experience it does not bring the skills. Though, I learned a lot from [Test Driven Development: by Example](https://app.thestorygraph.com/books/4a300d01-8a10-4e53-a60a-35b801d31e0f) and [Growing Object-Oriented Software, Guided by Tests](https://app.thestorygraph.com/books/21f7db6e-7ac5-4c30-947a-7a8c078269be). That were real aha moments. I got my design skills from seeing a lot of code bases and refactoring legacy code bases. Refactoring is a real joy. We discover concepts and domain models in the codebase, and we come to many small classes, small methods that mean something and the right naming. It unfolds in front of us, little step by little step. It is almost poetic.
+
+The design skills will support us in creating readable and maintainable automated tests.
+
+As already referred to with the Code Retreat, the journey has to include pairing. That will definitely help and accelerate the adoption of the software engineering skills. But ... that also works in the other direction. Software Engineers learn testing skills. Unquestionably, a truly wise investment.
+
+To be good at automated tests, we have to master [*Exploratory Testing*](https://en.wikipedia.org/wiki/Exploratory_testing). That is why it is crucial for Software Engineers to pair with Test Engineers, to master those skills, because we, Software Engineers, certainly lack the skills of Exploratory Testing. It is about highlighting the flow of testing, not the tool.
+
+Other than that, we need to understand Version Control Systems, nowadays that would be [Git](https://git-scm.com/), or [Mercurial](https://www.mercurial-scm.org/), IDEs like [Visual Studio Code](https://code.visualstudio.com/) or the [JetBrains](https://www.jetbrains.com/) suite or [Vi](https://www.vim.org/) (if you dare, lovely editor [once you know how to quite](https://stackoverflow.com/questions/11828270/how-do-i-exit-vim)), the command line with [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) or [Zsh](https://en.wikipedia.org/wiki/Z_shell) or [Powershell](https://en.wikipedia.org/wiki/PowerShell) (if you have to use Windows, I feel you).
+
+Lastly, understand the economics of software delivery. To be fair, few engineers and IT leaders understand the economics. Focus on the first automated test instead of downright implementing a test framework. Nobody needs yet another framework based on thin air. Write a first test, a second, a third, at the twentieth we might consider a framework, but still. There is nothing wrong with duplicated code. Many engineers have the [Don't Repeat Yourself](https://wiki.c2.com/?DontRepeatYourself) (DRY) principle wrong. It is about concepts, not code.
+
+## Conclusion
+
+It takes many skills to be proficient in automated tests. This is valuable for every role in the team, Software Engineers as well as Test Engineers.
+
+- It starts with testing skills.
+- Followed by software engineering skills in design, readability and maintainability.
+- Solve the same problem many times using different technologies.
+- Understand the economics of software delivery.
+- We have to learn certain tools that will facilitate our lives like Version Control, IDEs, command line, ...
+
+But! Nobody is expecting a Test Engineer to be good at coding and do test automation. Test Engineers do not have to like coding, at all. They are not better Test Engineers if they can code. Testing is so much more! But the value of Test Engineers is so unknown to leaders and Software Engineers. After the need for a Product Manager it is the second most advised hiring, a Senior Test Engineer, we mention in our reports to investors in Startups and Scaleups. Not to perform the testing, but to coach the team in testing.
+
+> I once thought that I was not a good enough tester if I didn't know how to code. My mind was changed by my mentors, who gave me guidance so that I could chart my own path and speak to my strengths. I have learned some coding, but it's not a passion for me. I don't get the butterflies like I do when I'm performing a risk analysis, or looking at a data set to gain insight, or researching a product in preparation to test it, or coaching testers, or writing, or doing so many things where I am an expert because I LIKE IT. My best work was done alongside people who were expert coders and toolsmiths.
+>
+> -- Djuca Selendic, [June 3th, 2025](https://www.linkedin.com/feed/update/urn:li:activity:7335560629988040706?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7335560629988040706%2C7335647533819469824%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287335647533819469824%2Curn%3Ali%3Aactivity%3A7335560629988040706%29)
+
+## Acknowledgement
+
+[Lisi Hocke](https://mastodon.social/@lisihocke), [Kelsey M.](https://www.linkedin.com/in/kels-montzka/), [Joep Schuurkens](https://www.linkedin.com/in/joepschuurkes/), [Richard Bradshaw aka Friendly Tester](https://www.linkedin.com/in/friendlytester/) and [Vernon Richard](https://www.linkedin.com/in/vernonrichards/) for reviewing the article.
+
+## Related Articles
+
+- [The Fallacy of the 100% Code Coverage]({% post_url 2022-03-19-the-fallacy-of-the-100%-code-coverage %})
+
+## References
+
+- [My question on LinkedIn](https://www.linkedin.com/posts/tdpauw_reaching-out-to-my-testing-community-friends-activity-7335560629988040706-N04c)
+- The Vernon Richard PodCast [Growth Plans for Technical Testers: Why Playwright Isn’t Enough](https://www.youtube.com/watch?v=Gl1Yz_RjFtc) with Richard Bradshaw and Vernon Richard
+- 
