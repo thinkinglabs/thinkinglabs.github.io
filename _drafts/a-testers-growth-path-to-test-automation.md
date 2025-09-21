@@ -6,7 +6,7 @@ category: articles
 tags: [Testing]
 ---
 
-A client started with a QA/Testing [Community of Practice](https://communitiesofpractice.work/) (CoP), which is a splendid effort. During one session, they advanced the topic of a growth path for Testers in test automation. We need to understand that for that client, automated testing is in its infancy. Before, Testers performed manual regression testing as part of a QA department. So, in that case, test automation is certainly unfamiliar. As an IT delivery consultant, I have my opinions on team compositions and roles, but I wanted to hear from the test community about their thoughts on the subject. So, I reached out on [LinkedIn](https://www.linkedin.com/posts/tdpauw_reaching-out-to-my-testing-community-friends-activity-7335560629988040706-N04c).
+A client started with a QA/Testing [Community of Practice](https://communitiesofpractice.work/) (CoP), which is a splendid effort. During one session, they advanced the topic of a growth path for Testers in Test Automation. We need to understand that for that client, automated testing is in its infancy. Before, Testers performed manual regression testing as part of a QA department. So, in that case, test automation is certainly unfamiliar. As an IT delivery consultant, I have my opinions on team compositions and roles, but I wanted to hear from the test community about their thoughts on the subject. So, I reached out on [LinkedIn](https://www.linkedin.com/posts/tdpauw_reaching-out-to-my-testing-community-friends-activity-7335560629988040706-N04c).
 
 ---
 
@@ -77,7 +77,7 @@ But! Nobody expects a Test Engineer to be proficient in coding and perform test 
 
 ## Acknowledgement
 
-[Lisi Hocke](https://mastodon.social/@lisihocke), [Kelsey M.](https://www.linkedin.com/in/kels-montzka/), [Joep Schuurkens](https://www.linkedin.com/in/joepschuurkes/), [Richard Bradshaw aka Friendly Tester](https://www.linkedin.com/in/friendlytester/) and [Vernon Richards](https://www.linkedin.com/in/vernonrichards/) for reviewing and providing valuable feedback on the article.
+[Lisi Hocke](https://mastodon.social/@lisihocke), [Kelsey M.](https://www.linkedin.com/in/kels-montzka/), [Joep Schuurkes](https://smallsheds.garden/), [Richard Bradshaw aka Friendly Tester](https://www.linkedin.com/in/friendlytester/) and [Vernon Richards](https://www.linkedin.com/in/vernonrichards/) for reviewing and providing valuable feedback on the article.
 
 ## Related Articles
 
