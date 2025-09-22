@@ -79,9 +79,11 @@ But! Being skilled in coding and performing test automation is not a hard requir
 
 ## Acknowledgement
 
-[Kelsey M.](https://www.linkedin.com/in/kels-montzka/) for reviewing the first two drafts, raising important points and somehow creating a better flow in the article.
+[Kelsey M.](https://www.linkedin.com/in/kels-montzka/) for turning the article into a better flow, reviewing two drafts and raising some important topics.
 
-[Joep Schuurkes](https://smallsheds.garden/) for giving additional feedback on the second draft and pointing other critical points.
+[Joep Schuurkes](https://smallsheds.garden/) for building on top of that and raising additional critical topics.
+
+[Vernon Richards](https://www.linkedin.com/in/vernonrichards/) for proof-reading the article.
 
 ## Related Articles
 
