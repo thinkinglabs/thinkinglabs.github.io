@@ -4,7 +4,7 @@ title: Scrum Master Toolbox Interview - Continuous Delivery for Scrum teams
 author: Thierry de Pauw
 meta: 1 min read
 category: articles
-tags: [ Scrum, Continuous Delivery, Interview ]
+tags: [ Scrum, Continuous Delivery, Podcast ]
 redirect_from:
   - /2021/02/22/scrum-master-toolbox-interview-continuous-delivery-for-scrum-teams.html
 ---
