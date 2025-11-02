@@ -2,7 +2,6 @@
 layout: article
 title: QA Therapy - All about TDD
 author: Thierry de Pauw
-meta: 1 min read
 category: articles
 tags: [ Testing, Podcast ]
 ---
