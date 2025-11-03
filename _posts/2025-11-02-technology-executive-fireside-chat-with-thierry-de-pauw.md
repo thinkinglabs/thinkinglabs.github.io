@@ -20,8 +20,6 @@ Thierry de Pauw brings a rich background in electromechanical engineering and co
 
 Moreover, Thierry touches on an often-overlooked aspect of software development: the human element. He discusses the importance of senior developers mentoring newcomers, the transformative potential of practices like pairing and mob programming, and how these can be integrated into different organizational cultures. Particularly intriguing is his take on the evolving role of software engineers in the age of AI and code generation tools. How does one balance the benefits of automation with the invaluable human touch in coding?
 
-The podcast episode can be found [here](https://www.interna.com/post/the-thought-leaders-podcast-with-thierry-de-pauw-of-thinkinglabs).
-
 ## Resources
 
-- [The Podcast](https://www.interna.com/post/the-thought-leaders-podcast-with-thierry-de-pauw-of-thinkinglabs)
+- [The Podcast episode](https://www.interna.com/post/the-thought-leaders-podcast-with-thierry-de-pauw-of-thinkinglabs)
