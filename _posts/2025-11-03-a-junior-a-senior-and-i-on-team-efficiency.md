@@ -3,7 +3,7 @@ layout: article
 title: a Junior, a Senior and I - on Team Efficiency
 author: Thierry de Pauw
 category: articles
-tags: [ Excellence, Podcast ]
+tags: [ Teams, Excellence, Podcast ]
 ---
 
 [Pablo Curell Mompo](https://www.linkedin.com/in/pablocm90/) invited [Stanislas Boyet](https://www.linkedin.com/in/boyet/) and myself to his podcast [a Junior, a Senior, and I](https://open.spotify.com/show/7AMbqJv7HCdSDiTG1nvUaa) to discuss what makes a team efficient and what practices will help raise the efficiency of any team.

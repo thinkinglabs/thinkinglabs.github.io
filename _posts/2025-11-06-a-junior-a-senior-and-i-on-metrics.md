@@ -10,7 +10,7 @@ I was once more invited by [Pablo Curell Mompo](https://www.linkedin.com/in/pabl
 
 ---
 
-> A few days ago, Rachel and Trunk-Based Thierry de Pauw joined me for a discussion around software metrics.
+> A few days ago, [Rachel](https://www.linkedin.com/in/rachel-grey-b69319/) and [Trunk-Based Thierry de Pauw](https://linkedin.com/in/tdpauw) joined me for a discussion around software metrics.
 >
 > What metrics are worth having?
 >
@@ -18,7 +18,7 @@ I was once more invited by [Pablo Curell Mompo](https://www.linkedin.com/in/pabl
 >
 > Where are metrics useful?
 >
-> [Pablo Curell Mompo](https://www.linkedin.com/in/pablocm90/), [Aug 18th, 2025](https://www.linkedin.com/posts/activity-7361633137061203968-XQRi?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAAhhqIBIVipRWnJ_lCwJ8-zFcZbjyz9ic0)
+> [Pablo Curell Mompo](https://www.linkedin.com/in/pablocm90/), [Aug 18th, 2025](https://www.linkedin.com/posts/activity-7361633137061203968-XQRi)
 
 ## Resources
 
