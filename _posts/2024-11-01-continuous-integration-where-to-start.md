@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Continuous Integrations! Where to Start?
+title: Continuous Integration! Where to Start?
 author: Thierry de Pauw
 category: articles
 tags: [ Continuous Integration, Extreme Programming ]
