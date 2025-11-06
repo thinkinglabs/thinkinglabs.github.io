@@ -57,7 +57,7 @@ For the same reasons, we prefer to work in small, incremental steps because it i
 
 But, this is hard work! We possibly will have to think harder. We might move a bit slower. But with the immense advantage of never breaking the application and being able to perform on-demand production releases when it suits.
 
-These six practices, *Version Control Everything*, *Agree as a Team to Never Break the Build*, *Run a Local Build*, *Push Every Day*, *Automate the Build* and *Make all Changes in Small Increments*, provide the necessary foundations to experience the benefits of Continuous Integration, i.e. enabling the fast flow of work through the value stream and increased stability. From there, teams can start experimenting with [the remaining 15 practices that make Continuous Integration]({% post_url 2022-06-14-the-practices-that-make-continuous-integration %}).
+These six practices, *Version Control Everything*, *Agree as a Team to Never Break the Build*, *Run a Local Build*, *Push Every Day*, *Automate the Build* and *Make all Changes in Small Increments*, provide the necessary foundations to experience the benefits of Continuous Integration, i.e. enabling the fast flow of work through the value stream and increased stability. From there, teams can start experimenting with [the remaining 14 practices that make Continuous Integration]({% post_url 2022-06-14-the-practices-that-make-continuous-integration %}).
 
 Notice, that it only takes two tools to implement Continuous Integration: a version control system and an automated build. That is all. Continuous Integration is undeniably about practices. That is hard work.
 
