@@ -13,6 +13,8 @@ conferences:
   - name: CfgMgmtCamp
     date: 2024-02-06
     video_link: https://www.youtube.com/watch?v=uzUPdQVdwp0
+  - name: Agile Testing Days
+    date: 2024-11-22
   - name: Regional Scrum Gathering Ghent
     date: 2024-06-07
   - name: FlowCon
