@@ -8,13 +8,18 @@ speakerdeck:
   data_id: 11f7c8b11edc4fddb4dffde694e21400
   download_link: https://files.speakerdeck.com/presentations/11f7c8b11edc4fddb4dffde694e21400/Non-Blocking_Continuous_Code_Reviews.pdf
 youtube:
-  data_id: uzUPdQVdwp0
+  data_id: VQ5JooeO8Fs
 conferences:
   - name: CfgMgmtCamp
     date: 2024-02-06
     video_link: https://www.youtube.com/watch?v=uzUPdQVdwp0
   - name: Regional Scrum Gathering Ghent
     date: 2024-06-07
+  - name: FlowCon
+    date: 2025-04-01
+    video_link: https://www.youtube.com/watch?v=VQ5JooeO8Fs
+  - name: Agile Cambridge
+    date: 2025-10-01
 ---
 
 The problem with the current most commonly accepted way of running code reviews using Pull Requests is that they have the nasty habit of blocking the flow of delivery. They introduce a cost of delay. Any delay reduces feedback. Consequently, it drives down quality.
