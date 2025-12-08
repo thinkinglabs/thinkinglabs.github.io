@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Books any Tech Leader Should Read
+title: Books for Tech Leaders
 author: Thierry de Pauw
 category: articles
 tags: [Books, Leadership]
