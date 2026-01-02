@@ -106,6 +106,10 @@ It is perfectly possible to practice Continuous Integration without using a buil
 
 Thanks to [Steve Smith](https://twitter.com/SteveSmithCD) for reviewing this article.
 
+## Related Articles
+
+- [Continuous Integration, Only Two Tools!]({% post_url 2025-01-26-continuous-integration-only-two-tools %})
+
 ## Bibliography
 
 - [Continuous Integration](https://martinfowler.com/articles/continuousIntegration.html), Martin Fowler

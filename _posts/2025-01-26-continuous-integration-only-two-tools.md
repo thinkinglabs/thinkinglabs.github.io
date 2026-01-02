@@ -36,7 +36,8 @@ The remainder are practices. In all truth, that is the challenging part!
 
 ## Related Articles
 
-- [Continuous Integrations! Where to Start?]({% post_url 2024-11-01-continuous-integration-where-to-start %})
+- [Continuous Integration is Not a Tooling Problem]({% post_url 2020-03-23-continuous-integration-is-not-a-tooling-problem %})
+- [Continuous Integration! Where to Start?]({% post_url 2024-11-01-continuous-integration-where-to-start %})
 
 ## References
 
