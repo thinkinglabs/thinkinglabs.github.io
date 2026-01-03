@@ -5,10 +5,10 @@ author: Thierry de Pauw
 meta:
 category: articles
 tags: [ Continuous Delivery ]
-image: /images/what-is-continuous-delivery/deployment-pipeline.jpg
+image: /images/what-is-continuous-delivery/continuous-delivery.jpg
 ---
 
-Any time an organisation tells me with great confidence that they *do Continuous Delivery*, I am suspicious. The same is true with Agile. When I probe for clarification and start asking specific questions, my suspicion gets confirmed. Tooling is in place, but without the mindset or understanding of the principles behind Continuous Delivery, lacking the foundations or the central pattern.
+Any time an organisation tells me with great confidence that they *do Continuous Delivery*, I am suspicious. The same is true with Agile. When I probe for clarification and start asking specific questions, my suspicion gets confirmed. Tooling is in place, but without the mindset or understanding of the principles behind Continuous Delivery, lacking the foundations, the central pattern, and any of the practices.
 
 ---
 
@@ -17,6 +17,8 @@ With this article, we [once more go back to basics]({% post_url 2022-06-14-the-p
 Continuous Delivery is a holistic approach to IT delivery. It is a set of principles, foundations, and one pattern, backed by practices, that reduce the time between committing a change to a Version Control system - be it code for a feature, a bug fix, a configuration change, an infrastructure change or even just an experiment - and getting that change into the hands of the users in production safely, reliably, sustainably (as in lack of stress) with confidence, and quickly.
 
 Nothing here is new. This has all been described at length in the 2006 paper [The Deployment Production Line](https://dannorth.net/profile/deployment_production_line.pdf) and later in the 2011 book [Continuous Delivery: Reliable Software Releases Through Build, Test, and Deployment Automation](https://app.thestorygraph.com/books/77eb0975-4194-42e7-9db3-005d4250940f). But, it seems, [engineers do not read books](https://blog.codinghorror.com/programmers-dont-read-books-but-you-should/) (... and probably leaders do neither).
+
+![Continuous Delivery](/images/what-is-continuous-delivery/continuous-delivery.jpg)
 
 ## Nine Principles
 
@@ -30,7 +32,7 @@ It is reliable, because with every run of the [*Deployment Pipeline*](#deploymen
 
 We demand efficiency to shorten the time to market, accelerate feedback to gain more information and run more experiments, to eventually reduce the [cost of delay](https://blackswanfarming.com/cost-of-delay/). We want to know as quickly as possible if the thing we have just implemented, deployed into production and released to users is actually being used and how it is used. Based on this information, we can take new decisions and run new experiments to find new unmet needs of our users. As such, finding new ways to delight our users, which is a massive competitive advantage.
 
-The repeatability, reliability and determinism derive from two foundations: [*Everything we need to build, deploy, test and release our system should be under Version Control*](#keep-everything-under-version-control) and [*Continuous Testing*](#continuous-testing); and one other principle: [*Automate the Right Things*](#automate-the-right-things).
+The repeatability, reliability and determinism derive from two foundations: [*Everything we need to build, deploy, test and release our system should be under Version Control*](#version-control-everything) and [*Continuous Testing*](#continuous-testing); and one other principle: [*Automate the Right Things*](#automate-the-right-things).
 
 ### Build Quality In
 
@@ -46,7 +48,7 @@ Quality comes from [*relentless continuous improvement*](#pursue-continuous-impr
 
 With Continuous Delivery, we invest in a testing culture supported by people and tools where we detect any problems early and quickly, to fix them immediately when they are easy and cheap to find and resolve. Quality is the whole team's responsibility. Software Engineers implement automated tests with support and coaching from Quality Engineers. Quality Engineers coach the team into a quality mindset and use risks as a heuristic to guide the testing.
 
-Fiercely pursuing quality derives from two foundations: [*Continuous Integration*](#continuous-integration), and [*Continuous Testing*](#continuous-testing); one principle: [*Build on Foundations Known to be Sound*](#build-on-foundations-known-to-be-sound); and one pattern: the [*Deployment Pipeline*](#deployment-pipeline).
+Fiercely pursuing quality derives from two principles: [*Build on Foundations Known to be Sound*](#build-on-foundations-known-to-be-sound) and [*Build Quality In*](#build-quality-in); two foundations: [*Continuous Integration*](#continuous-integration), and [*Continuous Testing*](#continuous-testing); and one pattern: the [*Deployment Pipeline*](#deployment-pipeline).
 
 ### Build on Foundations Known to be Sound
 
@@ -62,7 +64,7 @@ Large batches inherently lower motivation and urgency. It demotivates people by 
 
 By splitting work into much smaller chunks that deliver measurable value quickly, we receive essential feedback on the work we are doing so that we can course-correct. Continuous Delivery changes the economics of the IT delivery process, making the cost of pushing out small individual changes very low, by reducing the transaction cost, allowing to make many smaller, more frequent changes. Obviously, this demands to [*Make All Changes In Small Increments*]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %}#practice-5-make-all-changes-in-small-increments).
 
-Working in small batches derives from three other principles: [*Create a Repeatable, Reliable, Deterministic, and Efficient Process for Releasing Software*](#create-a-repeatable-reliable-deterministic-and-efficient-process-for-releasing-software), [*Build Quality In*](#build-quality-in), and [*Automate the Right Things*](#automate-the-right-things).
+Working in small batches derives from two other principles: [*Create a Repeatable, Reliable, Deterministic, and Efficient Process for Releasing Software*](#create-a-repeatable-reliable-deterministic-and-efficient-process-for-releasing-software), and [*Automate the Right Things*](#automate-the-right-things).
 
 ### Do It More Often When It Hurts
 
@@ -96,9 +98,9 @@ There are cases where this is not particularly achievable. Think of mobile apps 
 
 There is no such thing as 80% done. It is either done or not. It is very binary. There is no in-between.
 
-This has an important corollary. One person from the team does not have the power to get something done. It is a team effort. It requires team members to collaborate to get it done. Therefore, we have to [*Account as a Team for the Delivery Process*](#account-as-a-team-for-the-delivery-process). It is the whole team's responsibility.
+This has an important corollary. One person from the team does not have the power to get something done. It is a team effort. It requires team members to collaborate to get it done. Therefore, we have to [*Accountable as a Team for the Delivery Process*](#accountable-as-a-team-for-the-delivery-process). It is the whole team's responsibility.
 
-### Account as a Team for the Delivery Process
+### Accountable as a Team for the Delivery Process
 
 To achieve organisational goals - such as turnover, market share, productivity, quality of delivered goods, number of delivered goods, customer satisfaction - everyone in the organisation needs to be aligned with these goals.
 
@@ -128,15 +130,17 @@ To move forward, we need something to guide us. We need a continuous improvement
 
 Ultimately, adopting Continuous Delivery is not a project with an end date. It is a continuous improvement exercise that will never be really finished.
 
-Again, it is significant that everyone from the team is involved and as such [*Account as a Team for the Delivery Process*](#account-as-a-team-for-the-delivery-process).
+Again, it is significant that everyone from the team is involved and as such [*Accountable as a Team for the Delivery Process*](#accountable-as-a-team-for-the-delivery-process).
 
 ### Trust, but Verify
 
-This is the tenth principle, but it is not mentioned in the book. However, we find it particularly imperative as it constitutes the essence for enabling safety and courage, which inevitably leads to quality and innovation.
+This is the tenth principle, but it is not mentioned in the book. However, I find it particularly imperative as it constitutes the essence for enabling safety and courage, and [Accountability as a Team](#accountable-as-a-team-for-the-delivery-process), which inevitably leads to [Build Quality In](#build-quality-in) and innovation.
 
 It is the lack of trust that has initiated all sorts of unnecessary, wasteful activities to the process of getting code from Version Control into the hands of the users, which reduce feedback, impact quality, create fatigue, burnout and disengagement, slow down delivery, and finally bring organisations to a halt without them noticing it. Only to create some sort of sense of control. Not true control, just a sense.
 
-But, but ... people will dump rubbish. If that were the case, it would be a system problem. According to Deming, system problems are created by management. It is management's responsibility to remove barriers and constantly improve the system.
+> But, but ... people will dump rubbish.
+
+If that were the case, it would be a system problem. According to Deming, system problems are created by management. It is management's responsibility to remove barriers and constantly improve the system.
 
 > So the natural thought is just clogged up, totally clogged up.
 >
@@ -156,7 +160,7 @@ Instead of thinking people are stupid and so we need a process to fix for that, 
 
 Implementing Continuous Delivery calls for indispensable foundations.
 
-### Keep Everything under Version Control
+### Version Control Everything
 
 Everything we need to build, test, deploy, release and run our application must be kept under Version Control. This means we version production code, obviously, but also all of our tests, application and system configurations, database schema migrations, all the infrastructure required to run the system, but also documentation, [decision records](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions.html) and [runbooks](https://www.pagerduty.com/resources/automation/learn/what-is-a-runbook/) to maintain and keep the application available.
 
@@ -238,7 +242,7 @@ The Deployment Pipeline has three purposes:
 
 All three purposes are important, though point one - make every part of the process visible - is especially paramount. It calls to maintain only one, single Deployment Pipeline per binary artefact.
 
-With the rise of GitOps, we now see implementations consisting of two pipelines. The so-called "CI-pipeline", usually including only one single stage, the [Commit Build](#commit-build), which produces the binary artefact. The "deploy pipeline" implemented using a different tool that promotes and deploys the binary artefact in the subsequent environments. This antipattern infringes on the visibility purpose. We advise against it as it becomes difficult to identify which commit landed in which environment. [Measuring Continuous Delivery](https://app.thestorygraph.com/books/75cc77f7-43e9-4cdc-9640-cfafdc593e51) becomes difficult. Automating the execution of the Automated Acceptance Tests might be tricky and certainly not straightforward, which generates complexity. Lastly, it enlarges the technology landscape and thus the cognitive load for the team. To summarise, with GitOps, it is decidedly challenging to attain Continuous Delivery.
+With the rise of GitOps, we now see implementations consisting of two pipelines. The so-called "CI-pipeline", usually including only one single stage, the [Commit Build](#commit-build), which produces the binary artefact. The "deploy pipeline" implemented using a different tool that promotes and deploys the binary artefact in the subsequent environments. This antipattern infringes on the visibility purpose. I advise against it as it becomes difficult to identify which commit landed in which environment. [Measuring Continuous Delivery](https://app.thestorygraph.com/books/75cc77f7-43e9-4cdc-9640-cfafdc593e51) becomes difficult. Automating the execution of the Automated Acceptance Tests might be tricky and certainly not straightforward, which generates complexity. Lastly, it enlarges the technology landscape and thus the cognitive load for the team. To summarise, with GitOps, it is decidedly challenging to attain Continuous Delivery.
 
 The Deployment Pipeline is the logical extension of [*Continuous Integration*](#continuous-integration), where every commit creates a potential Release Candidate, following the [*Build Only Once*](#build-only-once) practice, after which the Release Candidate is promoted from stage to stage to at last arrive in production.
 
@@ -260,7 +264,7 @@ This is the precise motive for [GitFlow](https://nvie.com/posts/a-successful-git
 
 It is key to use the same process to deploy to every environment, whether into testing environments or production, to ensure the build and deployment process has been tested effectively. We will deploy frequently to the test environment, but less to production. The frequency of deployment is inversely related to the risk associated with each environment. We deploy less frequently to production than to test environments. Before deploying to production, we will have tested the deployment many times in the upstream environments to discard the deployment script as a source of error.
 
-This means we must use the same script to deploy to each environment. Of course, environments differ from each other. For sure, they will have different IP addresses, but also different database connections and other external services. We keep these configurations outside of the deploy script in configuration files [under Version Control](#keep-everything-under-version-control).
+This means we must use the same script to deploy to each environment. Of course, environments differ from each other. For sure, they will have different IP addresses, but also different database connections and other external services. We keep these configurations outside of the deploy script in configuration files [under Version Control](#version-control-everything).
 
 As for build scripts to [*Automate the Build*]({% post_url 2022-09-28-the-practices-that-make-continuous-integration-building %}#practice-11-automate-the-build), the deploy script is treated the same way as code. It is versioned, tested, and evolves continuously through refactoring. We apply similar design principles as for code, such as abstractions, small files, [Cohesion and Coupling](https://wiki.c2.com/?CouplingAndCohesion), [Simple Design](https://wiki.c2.com/?SimpleDesign), and [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single-responsibility_principle).
 
