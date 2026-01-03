@@ -134,7 +134,7 @@ Again, it is significant that everyone from the team is involved and as such [*A
 
 This is the tenth principle, but it is not mentioned in the book. However, we find it particularly imperative as it constitutes the essence for enabling safety and courage, which inevitably leads to quality and innovation.
 
-It is the lack of trust that has initiated all sorts of unnecessary, wasteful activities to process of getting code from Version Control into the hands of the users, which reduce feedback, impact quality, create fatigue, burnout and disengagement, slow down delivery, and finally bring organisations to a halt without them noticing it. Only to create some sort of sense of control. Not true control, just a sense.
+It is the lack of trust that has initiated all sorts of unnecessary, wasteful activities to the process of getting code from Version Control into the hands of the users, which reduce feedback, impact quality, create fatigue, burnout and disengagement, slow down delivery, and finally bring organisations to a halt without them noticing it. Only to create some sort of sense of control. Not true control, just a sense.
 
 But, but ... people will dump rubbish. If that were the case, it would be a system problem. According to Deming, system problems are created by management. It is management's responsibility to remove barriers and constantly improve the system.
 
