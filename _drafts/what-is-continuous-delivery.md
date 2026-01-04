@@ -145,13 +145,15 @@ Again, it is significant that everyone from the team is involved and as such [*A
 
 ### Trust, but Verify
 
-This principle is not mentioned in the Continuous Delivery book. However, I find it particularly imperative as it constitutes the essence for enabling safety and courage, and [Accountability as a Team](#accountable-as-a-team-for-the-delivery-process), which inevitably leads to [Build Quality In](#build-quality-in) and innovation.
+This principle is not mentioned in the Continuous Delivery book. However, I find it particularly imperative as it constitutes the essence for enabling safety, courage, and [Accountability as a Team](#accountable-as-a-team-for-the-delivery-process), which are all required to [Pursue Continuous Improvement relentlessly](#pursue-continuous-improvement-relentlessly).
 
-It is the lack of trust that has initiated all sorts of unnecessary, wasteful activities to the process of getting code from Version Control into the hands of the users, which reduce feedback, impact quality, create fatigue, burnout and disengagement, slow down delivery, and finally bring organisations to a halt without them noticing it. Only to create some sort of sense of control. Not true control, just a sense.
+It is the lack of trust that has initiated all sorts of unnecessary, wasteful activities (such as blocking code reviews, quality gates, security reviews, change approval boards, biannual releases, etc.) to the process of getting code from Version Control into the hands of the users, which reduce feedback, impact quality, create fatigue, burnout and disengagement, slow down delivery, and finally bring organisations to a halt without them noticing it. Only to create some sort of sense of control. Not true control, just a sense.
+
+This lack of trust creates information silos, fosters hidden communication channels, gradually ceases innovation, and values the illusion of work over quality of effort (Wieczoreck 2025).
 
 > But, but ... people will dump rubbish.
 
-If that were the case, it would be a system problem. According to Deming, system problems are created by management. It is management's responsibility to remove barriers and constantly improve the system.
+If that were the case, it would be a system problem. According to Deming, system problems are created by management. This conveys that it is management's responsibility to remove barriers and constantly improve the system.
 
 > So the natural thought is just clogged up, totally clogged up.
 >
@@ -159,13 +161,23 @@ If that were the case, it would be a system problem. According to Deming, system
 >
 > -- Gorillaz, Stop the Dams
 
-Instead of thinking people are stupid and so we need a process to fix for that, we should trust that the people will do the right thing. This is applying [Management Theory Y over X](https://en.wikipedia.org/wiki/Theory_X_and_Theory_Y). Then, to verify that the trust is not abused, to ensure accountability, and to balance belief with due diligence to prevent errors or deceptions through monitoring, regular reviews, and audits.
+Instead of thinking people are stupid and so we need a process to fix for that, leadership should enable people to do the right thing and then trust they will do the right thing. This is about applying [Management Theory Y over X](https://en.wikipedia.org/wiki/Theory_X_and_Theory_Y). Then, to verify that the trust is not abused, to ensure accountability, and to balance belief with due diligence to prevent errors or deceptions through monitoring, regular reviews, and audits. But! This verify can also easily be misused to destroy the trust, especially if it comes from outside. Some teams might indeed abuse the autonomy and trust, not necessarily intentionally. Paved roads and guardrails introduced by platforms will help teams to do the right thing. In essence, it is more about following up, guiding teams, and giving them the benefit of the doubt.
 
 > Adopt and institute leadership.
 >
 > The job of management is not supervision, but leadership. Management must work on sources of improvement.
 >
 > -- Edwards Deming, Out of the Crisis, point 7 from the [14 Points for Management](https://deming.org/explore/fourteen-points/)
+
+Trust is a business's primary currency. Investors need it to ensure they are spending their money on the right companies. Clients need to know they are in safe hands to spend their budget. Staff need to hear their leadership has their backs if they are to execute on their company’s vision (Joshi, 2023).
+
+Together with accountability, it fosters a culture of openness, experimentation, learning, and, as a consequence, results in increased innovation and [Building Quality In](#build-quality-in). In conclusion, staff who feel trusted perform better, and in consequence, lead to higher organisational performance (Joshi, 2023).
+
+> ... [publicly traded] stocks of companies with a high trust work environment outperformed market indexes by a factor of three from 1997 through 2011 (Azzarello et al. 2012).
+>
+> Employee engagement is not just a feel-good metric - it drives business outcomes.
+>
+> -- Accelerate
 
 ## One Heuristic
 
@@ -291,7 +303,7 @@ This is the precise motive for [GitFlow](https://nvie.com/posts/a-successful-git
 
 It is key to use the same process to deploy to every environment, whether into testing environments or production, to ensure the build and deployment process has been tested effectively. We will deploy frequently to the test environment, but less to production. The frequency of deployment is inversely related to the risk associated with each environment. We deploy less frequently to production than to test environments. Before deploying to production, we will have tested the deployment many times in the upstream environments to discard the deployment script as a source of error.
 
-This means we must use the same script to deploy to each environment. Of course, environments differ from each other. For sure, they will have different IP addresses, but also different database connections and other external services. We keep these configurations outside of the deploy script in configuration files [under Version Control](#version-control-everything).
+This implies we must use the same script to deploy to each environment. Of course, environments differ from each other. For sure, they will have different IP addresses, but also different database connections and other external services. We keep these configurations outside of the deploy script in configuration files [under Version Control](#version-control-everything).
 
 As for build scripts to [*Automate the Build*]({% post_url 2022-09-28-the-practices-that-make-continuous-integration-building %}#practice-11-automate-the-build), the deploy script is treated the same way as code. It is versioned, tested, and evolves continuously through refactoring. We apply similar design principles as for code, such as abstractions, small files, [Cohesion and Coupling](https://wiki.c2.com/?CouplingAndCohesion), [Simple Design](https://wiki.c2.com/?SimpleDesign), and [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single-responsibility_principle).
 
@@ -323,9 +335,14 @@ Once we fathom all of that, the rest will follow, naturally. It becomes a virtuo
 
 - [The Deployment Production Line](https://dannorth.net/profile/deployment_production_line.pdf), Jez Humble, Daniel North, Chris Read
 - [Continuous Delivery: Reliable Software Releases Through Build, Test, and Deployment Automation](https://app.thestorygraph.com/books/77eb0975-4194-42e7-9db3-005d4250940f), Dave Farley, Jez Humble
+- [Accelerate: Building and Scaling High Performing Technology Organizations](https://app.thestorygraph.com/books/0baa7f2a-3f3f-4752-9d81-0434117d0648), Nicole Forsgren, PhD, Jez Humble, Gene Kim
 - [Out of the Crisis](https://app.thestorygraph.com/books/b79ebdec-b267-4585-9af4-b5b68b30f5e5), Edwards Deming
 - [The Principles of Product Development Flow](https://app.thestorygraph.com/books/63ab42fd-34e7-40e3-b86e-5be510f5c119), Donald Reinertsen
 - [Continuous Testing in DevOps](https://danashby.co.uk/2016/10/19/continuous-testing-in-devops/), Dan Ashby
+- [A typology of organisational cultures](https://pmc.ncbi.nlm.nih.gov/articles/PMC1765804/pdf/v013p0ii22.pdf), R. Westrum, 2004
+- [The effects of low trust in organisations](https://www.winningtemp.com/blog/the-effects-of-low-trust-in-organisations), Rahat Joshi, 2023
+- [5 Hidden Consequences Of Leaders Not Trusting Employees](https://www.forbes.com/sites/katewieczorek/2025/11/30/5-hidden-consequences-of-leaders-not-trusting-employees/), Kate Wieczorek, 2025
+- [The chemistry of enthousiasm](https://www.bain.com/insights/the-chemistry-of-enthusiasm/), Dominico Azzarello, Frédéric Debruyne, Ludovica Mottura, 2012
 
 ## Definitions
 
