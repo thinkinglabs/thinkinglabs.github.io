@@ -65,7 +65,7 @@ For this to work, it is crucial to implement the [*Deployment Pipeline*](#deploy
 
 A feature is only done when it delivers value to a user. Inevitably, done means deployed into production and released to users.
 
-There are cases where this is not particularly achievable. Think of mobile apps that need to go through a vetting process before landing in the app store. In these situations, we dial back to the next best option. It is done when it can be used and showcased in a production-like environment.
+There are cases where this is not particularly achievable. Think of mobile apps that need to go through a vetting process before landing in the app store. In this situation, we dial back to the next best option. Done means submitted to the store. At that moment, we have the actual release artefact, together with the release notes. If that is still a bridge too far for valid reasons, we can dial one step back. It is done when it can be used and showcased in a production-like environment.
 
 There is no such thing as 80% done. It is either done or not. It is very binary. There is no in-between.
 
