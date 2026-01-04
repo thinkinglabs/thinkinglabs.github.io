@@ -91,11 +91,11 @@ Interestingly, though repeatability, reliability and determinism derive from *Do
 
 We cannot buy quality. We can also not test quality in later. Routine 100% inspection to "improve" quality is equivalent to planning for defects. We essentially acknowledge that the process lacks the capabilities to deliver quality.
 
-Inspection to improve quality is too late. It does not improve quality, nor does it guarantee quality. The quality, good or bad, is already in the product. Mass inspection is unreliable, costly, and ineffective. Also, divided responsibility means nobody is responsible.
+Inspection to improve quality is too late. It does not improve quality, nor does it guarantee quality. The quality, good or bad, is already in the product. Mass inspection is unreliable, costly, and ineffective. Split responsibility also means nobody is responsible. If the quality is the sole responsibility of the Quality Engineer, it tends to become "throw over the wall". Quality Engineers will catch the quality issues. Oftentimes, the opposite happens. Quality decreases. A similar behaviour occurs with blocking code reviews, security gating, or when IT operations are handled by a different team.
 
 Quality comes from [*relentless continuous improvement*](#pursue-continuous-improvement-relentlessly) of the delivery process.
 
-With Continuous Delivery, we invest in a testing culture supported by people and tools where we detect any problems early and quickly, to fix them immediately when they are easy and cheap to find and resolve. Quality is the whole team's responsibility. Software Engineers implement automated tests with support and coaching from Quality Engineers. Quality Engineers coach the team into a quality mindset and use risks and heuristics to guide the testing.
+With Continuous Delivery, we invest in a testing culture supported by people and tools where we detect any problems early and quickly, to fix them immediately when they are easy and cheap to find and resolve. Quality is the entire team's responsibility. Software Engineers implement automated tests with support and coaching from Quality Engineers. Quality Engineers coach the team into a quality mindset and use risks and heuristics to guide the testing.
 
 Fiercely pursuing quality derives from two principles: [*Build on Foundations Known to be Sound*](#build-on-foundations-known-to-be-sound) and [*Build Quality In*](#build-quality-in); two foundations: [*Continuous Integration*](#continuous-integration), and [*Continuous Testing*](#continuous-testing); and one pattern: the [*Deployment Pipeline*](#deployment-pipeline).
 
