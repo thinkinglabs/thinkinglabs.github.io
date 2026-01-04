@@ -75,11 +75,13 @@ This has an important corollary. One person from the team does not have the powe
 
 Releasing software should be easy and happen with confidence, without pain. This reduces risks and, more importantly, stress for the team.
 
-It is reliable, because with every run of the [*Deployment Pipeline*](#deployment-pipeline) we test every single part of the release process, again and again. That is why we should [*Do It More Often When It Hurts*](#do-it-more-often-when-it-hurts).
+It is reliable, as with every run of the [*Deployment Pipeline*](#deployment-pipeline), we test every single part of the release process, constantly.
 
-We demand efficiency to shorten the time to market, and accelerate feedback to gain more information and run more experiments. Eventually, efficiency reduces the [Cost of Delay](https://blackswanfarming.com/cost-of-delay/). We want to know as quickly as possible if the thing we have just implemented, deployed into production and released to users is actually being used and how it is used. Based on this information, we can take new decisions and run new experiments to find new unmet needs of our users. As such, finding new ways to delight our users, which is a massive competitive advantage.
+We demand efficiency to shorten the time to market and accelerate feedback to gain more information and run more experiments. Eventually, efficiency reduces the [Cost of Delay](https://blackswanfarming.com/cost-of-delay/). We want to know as quickly as possible if the thing we have just implemented, deployed into production and released to users is actually being used and how it is used. Based on this information, we can make new decisions and run new experiments to find new unmet needs of our users. As such, finding new ways to delight our users, which is a massive competitive advantage.
 
-The repeatability, reliability and determinism derive from two foundations: [*Everything we need to build, deploy, test and release our system should be under Version Control*](#version-control-everything) and [*Continuous Testing*](#continuous-testing); and one other principle: [*Automate the Right Things*](#automate-the-right-things).
+The repeatability, reliability and determinism derive from two foundations: [*Everything we need to build, deploy, test and release our system should be under Version Control*](#version-control-everything) and [*Continuous Testing*](#continuous-testing); and two other principles: [*Do It More Often When It Hurts*](#do-it-more-often-when-it-hurts), [*Automate the Right Things*](#automate-the-right-things).
+
+Interestingly, though repeatability, reliability and determinism derive from *Do It More Often When It Hurts* because if we want to do something more often, we need that repeatability, reliability and determinism. But, it is also a prerequisite to *Do It More Often When It Hurts*. It is a bidirectional influence, such as quality and throughput.
 
 ### Build Quality In
 
