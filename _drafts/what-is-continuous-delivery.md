@@ -16,7 +16,7 @@ With this article, we [once again go back to basics]({% post_url 2022-06-14-the-
 
 Continuous Delivery is a holistic approach to IT delivery. It is a set of principles, foundations, and one pattern, backed by practices, that reduce the time between committing a change to a Version Control system - be it code for a feature, a bug fix, a configuration change, an infrastructure change or even just an experiment - and getting that change into the hands of the users in production safely, reliably, sustainably with confidence, and quickly. At the same time, all this helps to reduce stress, burnout and fatigue, and increases staff satisfaction.
 
-Nothing here is new. All this has been detailed in the 2006 paper [The Deployment Production Line](https://dannorth.net/profile/deployment_production_line.pdf) and later in the 2011 book [Continuous Delivery: Reliable Software Releases Through Build, Test, and Deployment Automation](https://app.thestorygraph.com/books/77eb0975-4194-42e7-9db3-005d4250940f). But, as it seems, [many engineers do not read books](https://blog.codinghorror.com/programmers-dont-read-books-but-you-should/) (... and maybe many leaders do neither). Or they do read books, but did not grasp the importance of the fundamentals, so they went looking for the cutting-edge. In all honesty, cutting-edge will not make it. It is mastering the boring that will make the difference.
+Nothing here is new. All this has been detailed in the 2006 paper [The Deployment Production Line](https://dannorth.net/profile/deployment_production_line.pdf) and later in the 2011 book [Continuous Delivery: Reliable Software Releases Through Build, Test, and Deployment Automation](https://app.thestorygraph.com/books/77eb0975-4194-42e7-9db3-005d4250940f). But, as it seems, [many engineers do not read books](https://blog.codinghorror.com/programmers-dont-read-books-but-you-should/) (... and maybe many leaders do neither). Or they do read books, but have gone over the importance of the fundamentals, so they went looking for the cutting-edge. In all honesty, cutting-edge will not make it. It is mastering the boring that will make the difference.
 
 However, the key to success is a mindset of excellence, both organisational and technological, of experimentation, of openness, and finally, that it will be alright, in the end, whatever we try. We also have to understand that Continuous Delivery is not an endgame. It is not a project we implement once, and we are done. It is an exercise in continuous improvement that will never be final.
 
@@ -131,21 +131,17 @@ Note that this principle is nuanced. It does not say "Automate all the things". 
 >
 > -- Edwards Deming, Out of the Crisis, point 5 from the [14 Points for Management](https://deming.org/explore/fourteen-points/)
 
-Continuous Delivery requires the adoption of a set of technological and organisational changes in addition to a [*Deployment Pipeline*](#deployment-pipeline).
+Continuous Delivery requires the adoption of a set of technological changes - [*Version Control*](#version-control-everything), trunk-based development, [*Continuous Integration*](#continuous-integration), [*Continuous Testing*](#continuous-testing), [*Deployment Pipeline*](#deployment-pipeline), automated configuration, Infrastructure as Code, evolutionary architecture, database migrations, monitoring and alerting, incremental releases - as well as organisational changes - [*Small Batch Sizes*](#work-in-small-batches), empowered product teams, cross-functional teams, shared incentives, blameless post-mortems, you build it, you run it, everyone does on-call, continuous change review, traceability of changes, upskilling and empowering staff, Conway's Law alginment, [*Continuous Improvement*](#pursue-continuous-improvement-relentlessly).
 
-![Technological Changes](/images/what-is-continuous-delivery/continuous-delivery-technological-changes.jpg)
-
-![Organisational Changes](/images/what-is-continuous-delivery/continuous-delivery-organisational-changes.jpg)
-
-Adopting Continuous Delivery is hard work. It requires applying all of these changes to the unique circumstances and constraints of the organisation. As a result, implementing Continuous Delivery will not happen overnight, as already mentioned in [*Automate the Right Things*](#automate-the-right-things). It will be the result of continuously improving the IT delivery process.
+Adopting Continuous Delivery is hard work. It requires applying all of these changes to the unique circumstances and constraints of the organisation. Implementing Continuous Delivery will, henceforth, not happen overnight, as already mentioned in [*Automate the Right Things*](#automate-the-right-things). It will be the result of continuously improving the IT delivery process.
 
 An organisation is a complex adaptive system in which behaviours emerge from unpredictable interactions. The cause and effect of an event can only be understood in retrospect. Additionally, everyone only has limited information. No one has a complete overview of the whole delivery process. Consequently, adopting Continuous Delivery means implementing changes in highly uncertain conditions.
 
 To move forward, we need something to guide us. We need a continuous improvement framework such as the [Improvement Kata](http://www-personal.umich.edu/~mrother/The_Improvement_Kata.html). It helps us to execute and measure organisational change to reach goals in uncertain conditions. Due to the uncertainty, we do not know how the results will be achieved. Progress is non-linear. Accordingly, the framework guides experimentation and problem-solving.
 
-Ultimately, adopting Continuous Delivery is not a project with an end date. It is a continuous improvement exercise that will never be really finished.
+As already mentioned in the introduction, adopting Continuous Delivery is not a project with an end date. It is the result of continuously improving. In this regard, the [*Deployment Pipeline*](#deployment-pipeline) will be built incrementally.
 
-Again, it is significant that everyone from the team is involved and as such [*Accountable as a Team for the Delivery Process*](#accountable-as-a-team-for-the-delivery-process).
+Again, to succeed, it is invaluable that everyone from the team is involved and as such [*Accountable as a Team for the Delivery Process*](#accountable-as-a-team-for-the-delivery-process).
 
 ### Trust, but Verify
 
@@ -217,7 +213,7 @@ Know that the Version Control System is more than just versioning. It is a commu
 
 ### Continuous Integration
 
-[Continuous Integration is a Team Practice]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}). We realise it as a team, not as individuals. Most of the time, practices are defined for individuals. When most team members apply them, the team does well. However, with Continuous Integration, most team members have to implement other practices before the team can declare they practice Continuous Integration.
+[Continuous Integration is a Team Practice]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}). We realise it as a team, not as individuals. Most of the time, practices are defined for individuals (or pairs when Pair Programming, or teams when Team Programming). When most team members apply them, the team does well. However, with Continuous Integration, most team members must implement other practices before the team can declare they practice Continuous Integration.
 
 Without Continuous Integration, our software is broken until somebody proves it works. With Continuous Integration, our software is proven to work with every new change - assuming we [have a decent set of comprehensive automated tests]({% post_url 2022-09-28-the-practices-that-make-continuous-integration-building %}#practice-13-have-a-vast-amount-of-high-quality-automated-tests) -, and we know the moment the software is broken.
 
