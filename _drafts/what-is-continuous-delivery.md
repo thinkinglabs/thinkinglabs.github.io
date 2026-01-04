@@ -273,7 +273,7 @@ Some stages will have automatic thresholds. For instance, when an automated test
 
 The stages at the start of the Deployment Pipeline are fast. As we progress in the Deployment Pipeline, the stages become slower. We prioritise the fast stages first to accelerate feedback. That is the reason we execute the fast Unit Tests in the first [Commit Build](#commit-build) stage and only execute the slower Acceptance Tests in a later stage.
 
-Because the first stages are fast, they are also environment-neutral. Where Automated Acceptance Tests, Exploratory Testing, and Load Testing need to happen in a production-like environment.
+Because the first stages are fast, they are also environment-neutral. Where Automated Acceptance Tests and Load Testing need to happen in a production-like environment. By contrast, Exploratory Testing should, as part of a Continuous Testing mindset, already occur in an early stage in an environment-neutral setting and can happen again in a production-like environment or even production using a different test charter.
 
 Stages at the start are also showstoppers. Meaning, if these fail, they discard the Release Candidate. Further down the Deployment Pipeline, they are not necessarily showstoppers. Some, like the Automated Acceptance Tests, will be; others not. As Exploratory Testing is not regression testing, it does not necessarily eliminate the Release Candidate. That is a reason for the Exploratory Testing not to be on the path to production. It could be limited to production.
 
