@@ -285,7 +285,7 @@ The Deployment Pipeline has three purposes:
 
 All three purposes are important, though point one - make every part of the process visible - is especially paramount. It calls to maintain only one, single Deployment Pipeline per binary artefact.
 
-With the rise of [GitOps](https://www.gitops.tech/), we now see implementations consisting of two pipelines. The so-called "CI-pipeline", usually including only one single stage, the [Commit Build](#commit-build), which produces the binary artefact. The "deploy pipeline" implemented using a different tool that promotes and deploys the binary artefact in the subsequent environments. This antipattern infringes on the visibility purpose. Identifying which commit landed in which environment takes effort. [Measuring Continuous Delivery](https://app.thestorygraph.com/books/75cc77f7-43e9-4cdc-9640-cfafdc593e51) becomes difficult. Automating the execution of the Automated Acceptance Tests might be tricky and certainly not straightforward, which generates complexity. Lastly, it enlarges the technology landscape and thus the cognitive load for the team. To summarise, with GitOps, it is decidedly challenging to attain Continuous Delivery.
+With the rise of [GitOps](https://www.gitops.tech/), we now see implementations consisting of two pipelines. The so-called "CI-pipeline", usually including only one single stage, the [Commit Build](#commit-build), which produces the binary artefact. The "deploy pipeline" implemented using a different tool that promotes and deploys the binary artefact in the subsequent environments. This antipattern infringes on the visibility purpose. Identifying which commit landed in which environment takes effort. [Measuring Continuous Delivery](https://leanpub.com/measuringcontinuousdelivery) becomes difficult. Automating the execution of the Automated Acceptance Tests might be tricky and certainly not straightforward, which generates complexity. Lastly, it enlarges the technology landscape and thus the cognitive load for the team. To summarise, with GitOps, it is decidedly challenging to attain Continuous Delivery.
 
 The Deployment Pipeline is the logical extension of [*Continuous Integration*](#continuous-integration), where every commit creates a potential Release Candidate, following the [*Build Only Once*](#build-only-once) practice, after which the Release Candidate is promoted from stage to stage to at last arrive in production.
 
@@ -321,6 +321,8 @@ To establish [rapid, repeatable, reliable](#create-a-repeatable-reliable-determi
 
 As demonstrated, Continuous Delivery is another discipline where the lack of tooling not the problem, as is [the case for Continuous Integration]({% post_url 2020-03-23-continuous-integration-is-not-a-tooling-problem %}). To be successful with Continuous Delivery, and henceforth have a performant, reliable, deterministic IT release process, calls for an understanding of the principles, the foundations, the one pattern and the practices.
 
+Despite everything that has been said, where do we start? Again, context matters. The journey that worked for one organisation will not necessarily work for another organisation. With the [Improvement Kata](http://www-personal.umich.edu/~mrother/The_Improvement_Kata.html) we consider the organisation's context. We start by defining a vision. Then we iterate towards the vision using the [PDCA-cycle](https://en.wikipedia.org/wiki/PDCA) together with [Theory of Constraints](https://www.tocinstitute.org/theory-of-constraints.html) to find the bottleneck, and thus identify the experiments most likely to succeed. This has been outlined in the case study [From bi-annual to fortnightly releases in 4 months for 15 teams and a single monolith]({% post_url 2019-09-06-from-bi-annual-to-fortnightly-releases-in-4-months-for-15-teams-and-a-single-monolith %}).
+
 Once we fathom all of that, the rest will follow, naturally. It becomes a virtuous cycle where quality leads to higher throughput, and throughput leads to even better quality.
 
 > Je n’ai fait cette lettre-ci plus longue que parce que je n’ai pas eu le loisir de la faire plus courte.
@@ -334,6 +336,7 @@ Once we fathom all of that, the rest will follow, naturally. It becomes a virtuo
 ## Related Articles
 
 - [The Practices that make Continuous Integration]({% post_url 2022-06-14-the-practices-that-make-continuous-integration %})
+- [From bi-annual to fortnightly releases in 4 months for 15 teams and a single monolith]({% post_url 2019-09-06-from-bi-annual-to-fortnightly-releases-in-4-months-for-15-teams-and-a-single-monolith %})
 
 ## References
 
@@ -343,11 +346,12 @@ Once we fathom all of that, the rest will follow, naturally. It becomes a virtuo
 - [Accelerate: Building and Scaling High Performing Technology Organizations](https://app.thestorygraph.com/books/0baa7f2a-3f3f-4752-9d81-0434117d0648), Nicole Forsgren, PhD, Jez Humble, Gene Kim
 - [Out of the Crisis](https://app.thestorygraph.com/books/b79ebdec-b267-4585-9af4-b5b68b30f5e5), Edwards Deming
 - [The Principles of Product Development Flow](https://app.thestorygraph.com/books/63ab42fd-34e7-40e3-b86e-5be510f5c119), Donald Reinertsen
+- [Measuring Continuous Delivery](https://leanpub.com/measuringcontinuousdelivery), Steve Smith
 - [Continuous Testing in DevOps](https://danashby.co.uk/2016/10/19/continuous-testing-in-devops/), Dan Ashby
-- [A typology of organisational cultures](https://pmc.ncbi.nlm.nih.gov/articles/PMC1765804/pdf/v013p0ii22.pdf), R. Westrum, 2004
 - [The effects of low trust in organisations](https://www.winningtemp.com/blog/the-effects-of-low-trust-in-organisations), Rahat Joshi, 2023
 - [5 Hidden Consequences Of Leaders Not Trusting Employees](https://www.forbes.com/sites/katewieczorek/2025/11/30/5-hidden-consequences-of-leaders-not-trusting-employees/), Kate Wieczorek, 2025
 - [The chemistry of enthousiasm](https://www.bain.com/insights/the-chemistry-of-enthusiasm/), Dominico Azzarello, Frédéric Debruyne, Ludovica Mottura, 2012
+- [Improvement Kata](http://www-personal.umich.edu/~mrother/The_Improvement_Kata.html), Mike Rother
 
 ## Definitions
 
