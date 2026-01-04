@@ -12,11 +12,15 @@ Any time an organisation tells me with great confidence that they *do Continuous
 
 ---
 
-With this article, we [once more go back to basics]({% post_url 2022-06-14-the-practices-that-make-continuous-integration %}). As it often happens in our industry, people like to redefine practices to ensure they fit their way of working.
+With this article, we [once again go back to basics]({% post_url 2022-06-14-the-practices-that-make-continuous-integration %}). As it often happens in our industry, people tend to redefine practices to ensure they fit their way of working.
 
 Continuous Delivery is a holistic approach to IT delivery. It is a set of principles, foundations, and one pattern, backed by practices, that reduce the time between committing a change to a Version Control system - be it code for a feature, a bug fix, a configuration change, an infrastructure change or even just an experiment - and getting that change into the hands of the users in production safely, reliably, sustainably with confidence, and quickly. At the same time, all this helps to reduce stress, burnout and fatigue, and increases staff satisfaction.
 
-Nothing here is new. This has all been described at length in the 2006 paper [The Deployment Production Line](https://dannorth.net/profile/deployment_production_line.pdf) and later in the 2011 book [Continuous Delivery: Reliable Software Releases Through Build, Test, and Deployment Automation](https://app.thestorygraph.com/books/77eb0975-4194-42e7-9db3-005d4250940f). But, as it seems, [many engineers do not read books](https://blog.codinghorror.com/programmers-dont-read-books-but-you-should/) (... and maybe many leaders do neither). Or they do read books, but did not grasp the importance of the fundamentals, so they went looking for the cutting edge ... In all honesty, cutting edge will not make it. It is mastering the boring that will make the difference.
+Nothing here is new. All this has been detailed in the 2006 paper [The Deployment Production Line](https://dannorth.net/profile/deployment_production_line.pdf) and later in the 2011 book [Continuous Delivery: Reliable Software Releases Through Build, Test, and Deployment Automation](https://app.thestorygraph.com/books/77eb0975-4194-42e7-9db3-005d4250940f). But, as it seems, [many engineers do not read books](https://blog.codinghorror.com/programmers-dont-read-books-but-you-should/) (... and maybe many leaders do neither). Or they do read books, but did not grasp the importance of the fundamentals, so they went looking for the cutting-edge. In all honesty, cutting-edge will not make it. It is mastering the boring that will make the difference.
+
+However, the key to success is a mindset of excellence, both organisational and technological, of experimentation, of openness, and finally, that it will be alright, in the end, whatever we try. We also have to understand that Continuous Delivery is not an endgame. It is not a project we implement once, and we are done. It is an exercise in continuous improvement that will never be final.
+
+Finally, investing in the principles, heuristics, foundations, patterns and practices that make Continuous Delivery is precious as it increases staff engagement, delivers better products, and ultimately leads to higher organisational performance (Forsgren et al. 2016, Forsgren et al. 2018).
 
 ![Continuous Delivery](/images/what-is-continuous-delivery/continuous-delivery.jpg)
 
@@ -47,7 +51,7 @@ Nothing here is new. This has all been described at length in the 2006 paper [Th
 
 ## Nine Principles
 
-An effective IT delivery builds on nine principles. Not understanding these jeopardises any chances to obtain quality and efficient delivery.
+An effective IT delivery builds on nine principles. Not understanding these compromises the ability to obtain quality and efficient delivery.
 
 ### Accountable as a Team for the Delivery Process
 
@@ -335,6 +339,7 @@ Once we fathom all of that, the rest will follow, naturally. It becomes a virtuo
 
 - [The Deployment Production Line](https://dannorth.net/profile/deployment_production_line.pdf), Jez Humble, Daniel North, Chris Read
 - [Continuous Delivery: Reliable Software Releases Through Build, Test, and Deployment Automation](https://app.thestorygraph.com/books/77eb0975-4194-42e7-9db3-005d4250940f), Dave Farley, Jez Humble
+- [The Role of Continuous Delivery in IT and Organizational Performance](https://www.researchgate.net/publication/302567338_THE_ROLE_OF_CONTINUOUS_DELIVERY_IN_IT_AND_ORGANIZATIONAL_PERFORMANCE), Nicole Forsgren, PhD, Jez Humble
 - [Accelerate: Building and Scaling High Performing Technology Organizations](https://app.thestorygraph.com/books/0baa7f2a-3f3f-4752-9d81-0434117d0648), Nicole Forsgren, PhD, Jez Humble, Gene Kim
 - [Out of the Crisis](https://app.thestorygraph.com/books/b79ebdec-b267-4585-9af4-b5b68b30f5e5), Edwards Deming
 - [The Principles of Product Development Flow](https://app.thestorygraph.com/books/63ab42fd-34e7-40e3-b86e-5be510f5c119), Donald Reinertsen
