@@ -227,7 +227,7 @@ Continuous Integration is a prerequisite to Continuous Delivery. Although [we ha
 
 ### Continuous Testing
 
-Following the principle of [*Building Quality In*](#build-quality-in), testing has to be an integral part of the delivery process. We test at all stages of the value stream. This requires a multifaceted testing strategy, automated as well as manual.
+Following the principle of [*Building Quality In*](#build-quality-in), testing has to be an integral part of the delivery process. We test at all stages of the value stream. This requires a multifaceted testing strategy that should be both automated and manual.
 
 ![Continuous Testing](/images/what-is-continuous-delivery/continuous-testing.jpg)
 
@@ -245,7 +245,9 @@ We conduct Exploratory Testing of the product in a test environment.
 
 When releasing, we can test the release and the deployment with Smoke Tests. Do more Exploratory Testing in production.
 
-Finally, there is monitoring. Monitoring is also testing and exploratory. We explore usage patterns. It tells us how the system is being used by users. But monitoring also requires testing. Does it provide the expected information?
+Finally, there is monitoring. Monitoring is the known knowns. The things we can alert upon. As such, monitoring also requires testing. Does it provide the expected information? Does it alert?
+
+On the other hand, observability is testing too, and also exploratory in nature. We explore usage patterns. It tells us how the system is being used by users, which feeds into new ideas.
 
 Continuous Testing is evidently more than only automated tests. Though when implementing Continuous Delivery, we have to [*Have A Vast Amount of High-Quality Automated Tests*]({% post_url 2022-09-28-the-practices-that-make-continuous-integration-building %}#practice-13-have-a-vast-amount-of-high-quality-automated-tests). This ensures we create multiple feedback loops to deliver high-quality software to users more frequently, reliably and sustainably. The key pattern which connects these feedback loops is the [*Deployment Pipeline*](#deployment-pipeline).
 
