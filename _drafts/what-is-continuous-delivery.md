@@ -24,6 +24,24 @@ Nothing here is new. This has all been described at length in the 2006 paper [Th
 
 An effective IT delivery builds on nine principles. Not understanding these jeopardises any chances to obtain quality and efficient delivery.
 
+### Accountable as a Team for the Delivery Process
+
+To achieve organisational goals - such as turnover, market share, productivity, quality of delivered goods, number of delivered goods, customer satisfaction - everyone in the organisation needs to be aligned with these goals.
+
+All too often, development focuses on throughput, testing on quality and operations on stability. In reality, these are all system-level outcomes that help achieve organisational goals. They can only be achieved by close collaboration between everyone involved in the IT delivery process. Ultimately, releasing IT systems is a team activity, not an individual activity. The whole team succeeds or fails as a team, together. Hence, the team is accountable for the delivery.
+
+For this to work, it is crucial to implement the [*Deployment Pipeline*](#deployment-pipeline) pattern so that everyone in the team can see, at a glance, the status of the system, its health, the various builds, the results of the tests, and the state of the environments where the system can be deployed. This creates empowerment for the team.
+
+### Done Means Released
+
+A feature is only done when it delivers value to a user. Inevitably, done means deployed into production and released to users.
+
+There are cases where this is not particularly achievable. Think of mobile apps that need to go through a vetting process before landing in the app store. In these situations, we dial back to the next best option. It is done when it can be used and showcased in a production-like environment.
+
+There is no such thing as 80% done. It is either done or not. It is very binary. There is no in-between.
+
+This has an important corollary. One person from the team does not have the power to get something done. It is a team effort. It requires team members to collaborate to get it done. Therefore, we have to be [*Accountable as a Team for the Delivery Process*](#accountable-as-a-team-for-the-delivery-process). It is the whole team's responsibility.
+
 ### Create a Repeatable, Reliable, Deterministic, and Efficient Process for Releasing Software
 
 Releasing software should be easy and happen with confidence. This reduces risks and, more importantly, stress for the team.
@@ -89,24 +107,6 @@ Note that this principle is nuanced. It does not say "Automate all the things". 
 > Spending time optimising anything other than the bottleneck is an illusion.
 >
 > Eliyahu Goldratt, The Goal
-
-### Done Means Released
-
-A feature is only done when it delivers value to a user. Inevitably, done means deployed into production and released to users.
-
-There are cases where this is not particularly achievable. Think of mobile apps that need to go through a vetting process before landing in the app store. In these situations, we dial back to the next best option. It is done when it can be used and showcased in a production-like environment.
-
-There is no such thing as 80% done. It is either done or not. It is very binary. There is no in-between.
-
-This has an important corollary. One person from the team does not have the power to get something done. It is a team effort. It requires team members to collaborate to get it done. Therefore, we have to [*Accountable as a Team for the Delivery Process*](#accountable-as-a-team-for-the-delivery-process). It is the whole team's responsibility.
-
-### Accountable as a Team for the Delivery Process
-
-To achieve organisational goals - such as turnover, market share, productivity, quality of delivered goods, number of delivered goods, customer satisfaction - everyone in the organisation needs to be aligned with these goals.
-
-All too often, development focuses on throughput, testing on quality and operations on stability. In reality, these are all system-level outcomes that help achieve organisational goals. They can only be achieved by close collaboration between everyone involved in the IT delivery process. Ultimately, releasing IT systems is a team activity, not an individual activity. The whole team succeeds or fails as a team, together. Hence, the team is accountable for the delivery.
-
-For this to work, it is crucial to implement the [*Deployment Pipeline*](#deployment-pipeline) pattern so that everyone in the team can see, at a glance, the status of the system, its health, the various builds, the results of the tests, and the state of the environments where the system can be deployed. This creates empowerment for the team.
 
 ### Pursue Continuous Improvement relentlessly
 
