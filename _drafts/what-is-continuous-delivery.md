@@ -28,10 +28,11 @@ Nothing here is new. This has all been described at length in the 2006 paper [Th
   - [Build Quality In](#build-quality-in)
   - [Build on Foundations Known to be Sound](#build-on-foundations-known-to-be-sound)
   - [Work in Small Batches](#work-in-small-batches)
-  - [Do It More Often When It Hurts](#do-it-more-often-when-it-hurts)
   - [Automate the Right Things](#automate-the-right-things)
   - [Pursue Continuous Improvement relentlessly](#pursue-continuous-improvement-relentlessly)
   - [Trust, but Verify](#trust-but-verify)
+- [One Heuristic](#one-heuristic)
+  - [Do It More Often When It Hurts](#do-it-more-often-when-it-hurts)
 - [Three Foundations](#three-foundations)
   - [Version Control Everything](#version-control-everything)
   - [Continuous Integration](#continuous-integration)
@@ -108,20 +109,6 @@ By splitting work into much smaller chunks that deliver measurable value quickly
 
 Working in small batches derives from two other principles: [*Create a Repeatable, Reliable, Deterministic, and Efficient Process for Releasing Software*](#create-a-repeatable-reliable-deterministic-and-efficient-process-for-releasing-software), and [*Automate the Right Things*](#automate-the-right-things).
 
-### Do It More Often When It Hurts
-
-This is more of a heuristic than a principle. Bring the pain forward.
-
-When integrating software is hard, do it on every commit, requiring the [*Continuous Integration*](#continuous-integration) foundation.
-
-When testing is painful, that only occurs before a release. Do not test at the end. But [*Build Quality In*](#build-quality-in) by adopting the [*Continuous Testing*](#continuous-testing) foundation, from the start.
-
-When releasing is laborious and distressing, move from releasing once a year to biannually, to quarterly, to monthly, weekly, and eventually daily or even multiple times per day. This builds on the principle to [*Automate the Right Things*](#automate-the-right-things), and the practice of [*Deploying the Same Way to Every Environment*](#deploy-the-same-way-to-every-environment).
-
-When writing documentation is tedious, do it immediately when implementing the feature or the architectural change. Make the documentation, [runbooks](https://www.pagerduty.com/resources/automation/learn/what-is-a-runbook/), and [decision records](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions.html) part of the [Definition of Done](https://www.scrum.org/resources/what-definition-done).
-
-Admittedly, depending on our situation, this may require considerable effort and investment. But it is certainly an investment. It is not a cost. It has a return. In the end, it induces a more reliable, consistent, and efficient delivery process, reducing stress and burnout. Hence, we have to [*Pursue Continuous Improvement relentlessly*](#pursue-continuous-improvement-relentlessly).
-
 ### Automate the Right Things
 
 Computers perform repetitive tasks; people solve problems. To reduce the cost of pushing out changes, we should invest in simplifying and automating repetitive work that takes time, such as manual regression testing and manual release processes. This frees up teams for higher-value problem-solving activities, innovation and value creation. Automation accelerates feedback, therefore multiplying learning and discovery. It supports faster, more reliable releases. Most importantly, it vastly reduces risks.
@@ -158,7 +145,7 @@ Again, it is significant that everyone from the team is involved and as such [*A
 
 ### Trust, but Verify
 
-This is the tenth principle, but it is not mentioned in the book. However, I find it particularly imperative as it constitutes the essence for enabling safety and courage, and [Accountability as a Team](#accountable-as-a-team-for-the-delivery-process), which inevitably leads to [Build Quality In](#build-quality-in) and innovation.
+This principle is not mentioned in the Continuous Delivery book. However, I find it particularly imperative as it constitutes the essence for enabling safety and courage, and [Accountability as a Team](#accountable-as-a-team-for-the-delivery-process), which inevitably leads to [Build Quality In](#build-quality-in) and innovation.
 
 It is the lack of trust that has initiated all sorts of unnecessary, wasteful activities to the process of getting code from Version Control into the hands of the users, which reduce feedback, impact quality, create fatigue, burnout and disengagement, slow down delivery, and finally bring organisations to a halt without them noticing it. Only to create some sort of sense of control. Not true control, just a sense.
 
@@ -179,6 +166,22 @@ Instead of thinking people are stupid and so we need a process to fix for that, 
 > The job of management is not supervision, but leadership. Management must work on sources of improvement.
 >
 > -- Edwards Deming, Out of the Crisis, point 7 from the [14 Points for Management](https://deming.org/explore/fourteen-points/)
+
+## One Heuristic
+
+### Do It More Often When It Hurts
+
+Bring the pain forward.
+
+When integrating software is hard, do it on every commit, requiring the [*Continuous Integration*](#continuous-integration) foundation.
+
+When testing is painful, that only occurs before a release. Do not test at the end. But [*Build Quality In*](#build-quality-in) by adopting the [*Continuous Testing*](#continuous-testing) foundation, from the start.
+
+When releasing is laborious and distressing, move from releasing once a year to biannually, to quarterly, to monthly, weekly, and eventually daily or even multiple times per day. This builds on the principle to [*Automate the Right Things*](#automate-the-right-things), and the practice of [*Deploying the Same Way to Every Environment*](#deploy-the-same-way-to-every-environment).
+
+When writing documentation is tedious, do it immediately when implementing the feature or the architectural change. Make the documentation, [runbooks](https://www.pagerduty.com/resources/automation/learn/what-is-a-runbook/), and [decision records](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions.html) part of the [Definition of Done](https://www.scrum.org/resources/what-definition-done).
+
+Admittedly, depending on our situation, this may require considerable effort and investment. But it is certainly an investment. It is not a cost. It has a return. In the end, it induces a more reliable, consistent, and efficient delivery process, reducing stress and burnout. Hence, we have to [*Pursue Continuous Improvement relentlessly*](#pursue-continuous-improvement-relentlessly).
 
 ## Three Foundations
 
