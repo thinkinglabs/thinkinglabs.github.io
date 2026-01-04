@@ -189,13 +189,13 @@ Bring the pain forward.
 
 When integrating software is hard, do it on every commit, requiring the [*Continuous Integration*](#continuous-integration) foundation.
 
-When testing is painful, that only occurs before a release. Do not leave testing to the end. Testing is not a phase! But [*Build Quality In*](#build-quality-in) by adopting the [*Continuous Testing*](#continuous-testing) foundation, from the start.
+When testing is painful, that only occurs before a release. Do not leave testing to the end. Testing is not a phase! But [*Build Quality In*](#build-quality-in) by adopting the [*Continuous Testing*](#continuous-testing) foundation, from the start. Having said that, even with *Continuous Testing*, testing can still be painful due to laborious setups to reach a state where testing can start, or a lack of observability to see what is happening inside the system, or bumping into permission issues. This requires [*Continuous Improvement*](#pursue-continuous-improvement-relentlessly) to remove all the blockers.
 
-When releasing is laborious and distressing, move from releasing once a year to biannually, to quarterly, to monthly, weekly, and eventually daily or even multiple times per day. This builds on the principle to [*Automate the Right Things*](#automate-the-right-things), and the practice of [*Deploying the Same Way to Every Environment*](#deploy-the-same-way-to-every-environment).
+When releasing is laborious and distressing, shift from releasing once a year to biannually, to quarterly, to monthly, weekly, and eventually daily or even multiple times per day. This builds on the principle to [*Automate the Right Things*](#automate-the-right-things), and the practice of [*Deploying the Same Way to Every Environment*](#deploy-the-same-way-to-every-environment).
 
 When writing documentation is tedious, do it immediately when implementing the feature or the architectural change. Make the documentation, [runbooks](https://www.pagerduty.com/resources/automation/learn/what-is-a-runbook/), and [decision records](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions.html) part of the [Definition of Done](https://www.scrum.org/resources/what-definition-done).
 
-Admittedly, depending on our situation, this may require considerable effort and investment. But it is certainly an investment. It is not a cost. It has a return. In the end, it induces a more reliable, consistent, and efficient delivery process, reducing stress and burnout. Hence, we have to [*Pursue Continuous Improvement relentlessly*](#pursue-continuous-improvement-relentlessly).
+Admittedly, depending on our situation, this may require considerable effort and investment. But it is certainly an investment. It is not a cost. It has a return. In the long run, it induces a more reliable, consistent, and efficient delivery process, reducing stress and burnout. It provides better business outcomes, allows for new opportunities, stabilises current customers, increases reputation, creates more turnover, and gains more market share. It is a synergy effect that is often forgotten. Hence, we have to [*Pursue Continuous Improvement relentlessly*](#pursue-continuous-improvement-relentlessly).
 
 ## Three Foundations
 
