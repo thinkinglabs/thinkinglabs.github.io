@@ -20,6 +20,30 @@ Nothing here is new. This has all been described at length in the 2006 paper [Th
 
 ![Continuous Delivery](/images/what-is-continuous-delivery/continuous-delivery.jpg)
 
+<!-- no toc -->
+- [Nine Principles](#nine-principles)
+  - [Accountable as a Team for the Delivery Process](#accountable-as-a-team-for-the-delivery-process)
+  - [Done Means Released](#done-means-released)
+  - [Create a Repeatable, Reliable, Deterministic, and Efficient Process for Releasing Software](#create-a-repeatable-reliable-deterministic-and-efficient-process-for-releasing-software)
+  - [Build Quality In](#build-quality-in)
+  - [Build on Foundations Known to be Sound](#build-on-foundations-known-to-be-sound)
+  - [Work in Small Batches](#work-in-small-batches)
+  - [Do It More Often When It Hurts](#do-it-more-often-when-it-hurts)
+  - [Automate the Right Things](#automate-the-right-things)
+  - [Pursue Continuous Improvement relentlessly](#pursue-continuous-improvement-relentlessly)
+  - [Trust, but Verify](#trust-but-verify)
+- [Three Foundations](#three-foundations)
+  - [Version Control Everything](#version-control-everything)
+  - [Continuous Integration](#continuous-integration)
+  - [Continuous Testing](#continuous-testing)
+- [One Pattern](#one-pattern)
+  - [Deployment Pipeline](#deployment-pipeline)
+- [Three Practices](#three-practices)
+  - [Build Only Once](#build-only-once)
+  - [Deploy the Same Way to Every Environment](#deploy-the-same-way-to-every-environment)
+  - [If any Part of the Deployment Pipeline Fails, Stop the Line](#if-any-part-of-the-deployment-pipeline-fails-stop-the-line)
+- [Closing](#closing)
+
 ## Nine Principles
 
 An effective IT delivery builds on nine principles. Not understanding these jeopardises any chances to obtain quality and efficient delivery.
@@ -246,7 +270,7 @@ With the rise of GitOps, we now see implementations consisting of two pipelines.
 
 The Deployment Pipeline is the logical extension of [*Continuous Integration*](#continuous-integration), where every commit creates a potential Release Candidate, following the [*Build Only Once*](#build-only-once) practice, after which the Release Candidate is promoted from stage to stage to at last arrive in production.
 
-## Practices
+## Three Practices
 
 ### Build Only Once
 
