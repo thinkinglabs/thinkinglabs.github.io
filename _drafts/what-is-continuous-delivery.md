@@ -211,9 +211,9 @@ Consequently, this is a [foundational practice to succeed with Continuous Integr
 
 [*Continuous Integration*](#continuous-integration) is a state we accomplish as a team, not as an individual. Subsequently, to work as a team, we need a way to coordinate code.
 
-Therefore, everything we need to build, test, deploy, release, run and operate our application must be kept under Version Control in one single repository. This means we version production code, obviously, but also all of our tests, application and system configurations, database schema migrations, all the infrastructure required to run the system, but also documentation, [decision records](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions.html) and [runbooks](https://www.pagerduty.com/resources/automation/learn/what-is-a-runbook/) to maintain and keep the application available.
+Therefore, everything we need to build, test, deploy, release, run and operate our application must be kept under Version Control in one single repository. This means we version production code, obviously, but also all of our tests, build and deploy scripts, deployment pipeline code, application and system configurations, database schema migrations, all the infrastructure required to run the system, but also documentation, [decision records](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions.html) and [runbooks](https://www.pagerduty.com/resources/automation/learn/what-is-a-runbook/) to maintain and keep the application available.
 
-Keeping production code, test code, infrastructure code, and configurations in different version control repositories is an antipattern. It complexifies the implementation of the Deployment Pipeline and creates cognitive load. Anyone on the team should be able to clone an application's repository and discover, at once, everything needed to build, test, release, run, and operate the application, without having to clone any other repository.
+Keeping production code, test code, infrastructure code, and configurations in different version control repositories is an antipattern. It complexifies the implementation of the Deployment Pipeline and creates cognitive load. Anyone on the team should be able to clone an application's repository and discover, at once, everything needed to build, test, release, run, and operate the application, without having to clone any more repositories.
 
 Know that the Version Control System is more than just versioning. It is a communication tool to share changes with team members. It supports gaining a [Shared Understanding](https://en.wikipedia.org/wiki/Extreme_programming_practices#Shared_understanding) of the system and building a [Collective Ownership](http://www.extremeprogramming.org/rules/collective.html) over the codebase. In turn, it allows for increased integration frequency. As a consequence, it enables communication and collaboration within the team. All the good ingredients for [*Building Quality In*](#build-quality-in) and higher delivery throughput.
 
@@ -293,6 +293,8 @@ With the rise of [GitOps](https://www.gitops.tech/), we now see implementations 
 
 The Deployment Pipeline is the logical extension of [*Continuous Integration*](#continuous-integration), where every commit creates a potential Release Candidate, following the [*Build Only Once*](#build-only-once) practice, after which the Release Candidate is promoted from stage to stage to, at last, arrive in production.
 
+Lastly, the deployment pipeline code is handled in a similar way to production code. It is versioned, evolves with refactoring, and abstraction and [Single Responsibility](https://en.wikipedia.org/wiki/Single-responsibility_principle) design principles apply.
+
 ## Three Practices
 
 ### Build Only Once
@@ -317,7 +319,7 @@ We will deploy frequently to the test environment, but less to production. The f
 
 This implies we must use the same script to deploy to each environment. Of course, environments differ from each other. Surely, they will have different IP addresses, different database connections and other external services. We keep these configurations outside of the deploy script in configuration files [under Version Control](#version-control-everything), and secrets in vaults, also under Version Control.
 
-As for build scripts to [*Automate the Build*]({% post_url 2022-09-28-the-practices-that-make-continuous-integration-building %}#practice-11-automate-the-build), the deploy script is treated the same way as production code. It is versioned, tested, and evolves continuously through refactoring. We apply similar design principles as for production code, such as abstractions, small files, [Cohesion and Coupling](https://wiki.c2.com/?CouplingAndCohesion), [Simple Design](https://wiki.c2.com/?SimpleDesign), and [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single-responsibility_principle).
+As for build scripts to [*Automate the Build*]({% post_url 2022-09-28-the-practices-that-make-continuous-integration-building %}#practice-11-automate-the-build), and the deployment pipeline code, the deploy script is treated the same way as production code. It is versioned, tested, and evolves continuously through refactoring. We apply similar design principles as for production code, such as abstractions, small files, [Cohesion and Coupling](https://wiki.c2.com/?CouplingAndCohesion), [Simple Design](https://wiki.c2.com/?SimpleDesign), and [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single-responsibility_principle).
 
 Deploying the same way to each environment guarantees [repeatability, consistency and determinism](#create-a-repeatable-reliable-deterministic-and-efficient-process-for-releasing-software). The deploy script has to be idempotent. Deploying the same version of the system over and over again in an environment results in the same outcomes without any side effects.
 
