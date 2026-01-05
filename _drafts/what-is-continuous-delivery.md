@@ -205,13 +205,15 @@ Implementing Continuous Delivery calls for indispensable foundations.
 
 ### Version Control Everything
 
-This is a [foundational practice to succeed with Continuous Integration]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}#practice-1-version-control-everything).
+Without version control, we miss a single source of truth. Releasing a piece of software becomes a marathon of chasing bits and pieces of code on engineers' machines or shared network drives. It also becomes quite challenging to roll back to a previous version known to be good, due to a lack of a single source of truth.
+
+Consequently, this is a [foundational practice to succeed with Continuous Integration]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}#practice-1-version-control-everything) and by extension with Continuous Delivery.
 
 [*Continuous Integration*](#continuous-integration) is a state we accomplish as a team, not as an individual. Subsequently, to work as a team, we need a way to coordinate code.
 
-Therefore, everything we need to build, test, deploy, release and run our application must be kept under Version Control. This means we version production code, obviously, but also all of our tests, application and system configurations, database schema migrations, all the infrastructure required to run the system, but also documentation, [decision records](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions.html) and [runbooks](https://www.pagerduty.com/resources/automation/learn/what-is-a-runbook/) to maintain and keep the application available.
+Therefore, everything we need to build, test, deploy, release, run and operate our application must be kept under Version Control in one single repository. This means we version production code, obviously, but also all of our tests, application and system configurations, database schema migrations, all the infrastructure required to run the system, but also documentation, [decision records](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions.html) and [runbooks](https://www.pagerduty.com/resources/automation/learn/what-is-a-runbook/) to maintain and keep the application available.
 
-Without version control, we miss a single source of truth. Releasing a piece of software becomes a marathon of chasing bits and pieces of code on engineers' machines or shared network drives. It also becomes quite challenging to roll back to a previous version known to be good, due to a lack of a single source of truth.
+Keeping production code, test code, infrastructure code, and configurations in different version control repositories is an antipattern. It complexifies the implementation of the Deployment Pipeline and creates cognitive load. Anyone on the team should be able to clone an application's repository and discover, at once, everything needed to build, test, release, run, and operate the application, without having to clone any other repository.
 
 Know that the Version Control System is more than just versioning. It is a communication tool to share changes with team members. It supports gaining a [Shared Understanding](https://en.wikipedia.org/wiki/Extreme_programming_practices#Shared_understanding) of the system and building a [Collective Ownership](http://www.extremeprogramming.org/rules/collective.html) over the codebase. In turn, it allows for increased integration frequency. As a consequence, it enables communication and collaboration within the team. All the good ingredients for [*Building Quality In*](#build-quality-in) and higher delivery throughput.
 
