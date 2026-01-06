@@ -84,7 +84,7 @@ But, what is good code coverage in the end?
 
 > Don’t worry about coverage, just write some good tests.
 >
-> -- Alberto Savoia, [How much test coverage do you need? - The Testivus Answer](https://getpocket.com/read/154805457)
+> -- Alberto Savoia, [How much test coverage do you need? - The Testivus Answer](https://www.artima.com/weblogs/viewpost.jsp?thread=204677)
 
 We should focus our test design on the high-risk code, i.e. the code that could cause severe damage, has many users or might have many mistakes whose costs add up. It might be we only achieve 30% coverage. In reality, this is ok if with this 30% we cover the core of our system or all high-risk code.
 
