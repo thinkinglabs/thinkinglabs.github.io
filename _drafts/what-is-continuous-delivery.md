@@ -237,17 +237,17 @@ Following the principle of [*Building Quality In*](#build-quality-in), testing h
 
 All features or improvements start from an idea. Testing the idea is critical. Does the idea make sense? Are users waiting for it? Does it solve a problem? We investigate the idea to uncover more information, enhance and crystallise it. User research and user interviews are an elementary part of testing the idea.
 
-We test the design. It is exploratory in nature and risk-based. We use risks and heuristics to focus our investigation. While asking questions, we uncover more information that helps to refactor the design, to make it better.
+We test the design. It is exploratory in nature and risk-based. We use risks and heuristics to focus our investigation. While asking questions, we uncover more information that helps to refactor the design, to make it better (Ashby, 2016).
 
-We can investigate the code. Check it against expectations discussed during planning. Code reviews are exploratory testing to scrutinise wrong assumptions. When writing Unit Tests, we can pair with a Quality Engineer who can share test ideas about different risks, interactions, and perspectives.
+We can investigate the code. Check it against expectations discussed during planning. Code reviews are exploratory testing to scrutinise wrong assumptions. When writing Unit Tests, we can pair with a Quality Engineer who can share test ideas about different risks, interactions, and perspectives (Ashby, 2016).
 
 We test the push, i.e. the merge of the local [*Mainline*](#mainline) with the remote *Mainline*, using [*Continuous Integration*](#continuous-integration).
 
-We can certainly test the build.
+We can certainly test the build (Ashby, 2016).
 
 We conduct Exploratory Testing of the product, on a local workstation, or in a test environment.
 
-When releasing, we can test the release and the deployment with Smoke Tests, and, eventually, with more Exploratory Testing in production.
+When releasing, we can test the release and the deployment with Smoke Tests (Ashby, 2016), and, eventually, with more Exploratory Testing in production.
 
 Finally, there is monitoring. Monitoring is about the known knowns. The things we can alert upon. As such, monitoring also requires testing. Does it provide the expected information? Does it alert?
 
