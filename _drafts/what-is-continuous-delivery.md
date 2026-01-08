@@ -109,9 +109,9 @@ Building on foundations known to be sound, follows one practice: [*Build Only On
 
 ### Work in Small Batches
 
-Reducing batch sizes represents a compelling opportunity. Following [Little's Law](https://en.wikipedia.org/wiki/Little%27s_law), it reduces lead time and thus time to market, and the Cost of Delay. Consequently, as lead time is shortened, feedback is accelerated. Because we now have smaller batch sizes, we are less exposed to changes, and as such, we reduce risks because the consequences of an error are much smaller. Smaller batch sizes reduce overhead. With Continuous Delivery, we can reduce the cost of repetitive transactions caused by many small batches. Finally, because feedback is accelerated, we improve efficiencies (Reinertsen, 2009).
+Reducing batch sizes represents a compelling opportunity. Following [Little's Law](https://en.wikipedia.org/wiki/Little%27s_law), it reduces lead time and thus time to market, and the Cost of Delay. Consequently, as lead time is shortened, feedback is accelerated. Because we now have smaller batch sizes, we are less exposed to changes, and as such, we reduce risks because the consequences of an error are much smaller. Smaller batch sizes reduce overhead. With Continuous Delivery, we can reduce the cost of repetitive transactions caused by many small batches. Finally, because feedback is accelerated, we improve efficiencies (Reinertsen 2009).
 
-Large batches inherently lower motivation and urgency. It demotivates people by delaying feedback. Large batches dilute responsibility. Ultimately, it leads to risk avoidance and accordingly disables innovation. Finally, large batches attract even larger batches (Reinertsen, 2009).
+Large batches inherently lower motivation and urgency. It demotivates people by delaying feedback. Large batches dilute responsibility. Ultimately, it leads to risk avoidance and accordingly disables innovation. Finally, large batches attract even larger batches (Reinertsen 2009).
 
 By splitting work into much smaller chunks that deliver measurable value quickly, we receive essential feedback on the work we are doing so that we can course-correct. Continuous Delivery changes the economics of the IT delivery process, making the cost of pushing out small individual changes very low, by reducing the transaction cost, allowing to make many smaller, more frequent changes. Obviously, this demands to [*Make All Changes In Small Increments*]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %}#practice-5-make-all-changes-in-small-increments).
 
@@ -135,7 +135,7 @@ Note that this principle is nuanced. It does not say "Automate all the things". 
 >
 > -- Edwards Deming, Out of the Crisis, point 5 from the [14 Points for Management](https://deming.org/explore/fourteen-points/)
 
-Continuous Delivery requires the adoption of a set of technological changes - [*Version Control*](#version-control-everything), trunk-based development, [*Continuous Integration*](#continuous-integration), [*Continuous Testing*](#continuous-testing), [*Deployment Pipeline*](#deployment-pipeline), automated configuration, Infrastructure as Code, evolutionary architecture, database migrations, monitoring and alerting, incremental releases (Smith, 2020) - as well as organisational changes - [*Small Batch Sizes*](#work-in-small-batches), empowered product teams, cross-functional teams, shared incentives, blameless post-mortems, you build it, you run it, everyone does on-call, continuous change review, traceability of changes, upskilling and empowering staff, Conway's Law alignment, [*Continuous Improvement*](#pursue-continuous-improvement-relentlessly) (Smith, 2020).
+Continuous Delivery requires the adoption of a set of technological changes - [*Version Control*](#version-control-everything), trunk-based development, [*Continuous Integration*](#continuous-integration), [*Continuous Testing*](#continuous-testing), [*Deployment Pipeline*](#deployment-pipeline), automated configuration, Infrastructure as Code, evolutionary architecture, database migrations, monitoring and alerting, incremental releases (Smith 2020) - as well as organisational changes - [*Small Batch Sizes*](#work-in-small-batches), empowered product teams, cross-functional teams, shared incentives, blameless post-mortems, you build it, you run it, everyone does on-call, continuous change review, traceability of changes, upskilling and empowering staff, Conway's Law alignment, [*Continuous Improvement*](#pursue-continuous-improvement-relentlessly) (Smith 2020).
 
 Adopting Continuous Delivery is hard work. It requires applying all of these changes to the unique circumstances and constraints of the organisation. Implementing Continuous Delivery will, henceforth, not happen overnight, as already mentioned in [*Automate the Right Things*](#automate-the-right-things). It will be the result of continuously improving the IT delivery process.
 
@@ -173,9 +173,9 @@ Instead of thinking people are stupid and so we need a process to fix for that, 
 >
 > -- Edwards Deming, Out of the Crisis, point 7 from the [14 Points for Management](https://deming.org/explore/fourteen-points/)
 
-Trust is a business's primary currency. Investors need it to ensure they are spending their money on the right companies. Clients need to know they are in safe hands to spend their budget. Staff need to hear their leadership has their backs if they are to execute on their company’s vision (Joshi, 2023).
+Trust is a business's primary currency. Investors need it to ensure they are spending their money on the right companies. Clients need to know they are in safe hands to spend their budget. Staff need to hear their leadership has their backs if they are to execute on their company’s vision (Joshi 2023).
 
-Together with accountability, it fosters a culture of openness, experimentation, learning, and, in consequence, brings increased innovation and [Building Quality In](#build-quality-in). In conclusion, staff who feel trusted perform better, and as a result, lead to higher organisational performance (Joshi, 2023).
+Together with accountability, it fosters a culture of openness, experimentation, learning, and, in consequence, brings increased innovation and [Building Quality In](#build-quality-in). In conclusion, staff who feel trusted perform better, and as a result, lead to higher organisational performance (Joshi 2023).
 
 > ... [publicly traded] stocks of companies with a high trust work environment outperformed market indexes by a factor of three from 1997 through 2011 (Azzarello et al. 2012).
 >
@@ -237,17 +237,17 @@ Following the principle of [*Building Quality In*](#build-quality-in), testing h
 
 All features or improvements start from an idea. Testing the idea is critical. Does the idea make sense? Are users waiting for it? Does it solve a problem? We investigate the idea to uncover more information, enhance and crystallise it. User research and user interviews are an elementary part of testing the idea.
 
-We test the design. It is exploratory in nature and risk-based. We use risks and heuristics to focus our investigation. While asking questions, we uncover more information that helps to refactor the design, to make it better (Ashby, 2016).
+We test the design. It is exploratory in nature and risk-based. We use risks and heuristics to focus our investigation. While asking questions, we uncover more information that helps to refactor the design, to make it better (Ashby 2016).
 
-We can investigate the code. Check it against expectations discussed during planning. Code reviews are exploratory testing to scrutinise wrong assumptions. When writing Unit Tests, we can pair with a Quality Engineer who can share test ideas about different risks, interactions, and perspectives (Ashby, 2016).
+We can investigate the code. Check it against expectations discussed during planning. Code reviews are exploratory testing to scrutinise wrong assumptions. When writing Unit Tests, we can pair with a Quality Engineer who can share test ideas about different risks, interactions, and perspectives (Ashby 2016).
 
 We test the push, i.e. the merge of the local [*Mainline*](#mainline) with the remote *Mainline*, using [*Continuous Integration*](#continuous-integration).
 
-We can certainly test the build (Ashby, 2016).
+We can certainly test the build (Ashby 2016).
 
 We conduct Exploratory Testing of the product, on a local workstation, or in a test environment.
 
-When releasing, we can test the release and the deployment with Smoke Tests (Ashby, 2016), and, eventually, with more Exploratory Testing in production.
+When releasing, we can test the release and the deployment with Smoke Tests (Ashby 2016), and, eventually, with more Exploratory Testing in production.
 
 Finally, there is monitoring. Monitoring is about the known knowns. The things we can alert upon. As such, monitoring also requires testing. Does it provide the expected information? Does it alert?
 
