@@ -103,7 +103,7 @@ Fiercely pursuing quality derives from one principle: [*Build on Foundations Kno
 
 ### Build on Foundations Known to be Sound
 
-Every stage of the delivery process builds on the previous stage. Every stage adds more quality information to the Release Candidate. It passes the Unit Tests. It passes the Security Tests, the Acceptance Tests, and finally the Exploratory Tests. We can now decide confidently whether to deploy the Release Candidate into production.
+Every stage of the delivery process builds on the previous stage. Every stage adds more quality information to the Release Candidate. At each stage, the confidence in the Release Candidate is enhanced (Farley 2007). It passes the Unit Tests. It passes the Security Tests, the Acceptance Tests, and finally the Exploratory Tests. The objective is to develop a level of confidence in the Release Candidate to the point that it is proven ready for production deployment and release. We can now unequivocally choose whether to release the Release Candidate.
 
 Building on foundations known to be sound, follows one practice: [*Build Only Once*](#build-only-once). The Release Candidate that gets deployed into production is the same one that went through all the previous testing stages.
 
@@ -271,13 +271,13 @@ The Deployment Pipeline is the implementation of the technology value stream tha
 
 ![Value Stream](/images/what-is-continuous-delivery/value-stream.png)
 
-The objective of the Deployment Pipeline is to eliminate bad quality Release Candidates as early as possible. Whenever a stage is red, the Release Candidate is discarded. As such, only changes that successfully went through all stages of the deployment pipeline and that have been thoroughly tested get into production.
+The objective of the Deployment Pipeline is to eliminate bad quality Release Candidates as early as possible. It acts as a sequence of gates (Farley 2007). Whenever a stage is red, it discards the Release Candidate. As such, only changes that successfully moved across all stages of the deployment pipeline and have been thoroughly tested, get into production.
 
 The Deployment Pipeline comprises several stages. Some are automated, others are manual. It is perfectly okay to have manual steps in the Deployment Pipeline. Often, the implementation of a Deployment Pipeline starts from the technology value stream map from Version Control to production. It might be that at the start, all those steps are still manual. Then, following the [*Pursue Continuous Improvement relentlessly*](#pursue-continuous-improvement-relentlessly) and [*Automate the Right Things*](#automate-the-right-things) principles, we automate the steps that form a bottleneck or are risky or repetitive.
 
 Some stages will have automatic thresholds. For instance, when an automated test fails or a vulnerability is found, the stage will turn red and reject the Release Candidate. Other stages require human intervention to evaluate the results, such as for load or performance testing, where it is difficult to define a distinct baseline.
 
-The stages at the start of the Deployment Pipeline are fast. As we progress in the Deployment Pipeline, the stages become slower. We prioritise the fast stages first to accelerate feedback. That is the reason we execute the fast Unit Tests in the first [Commit Build](#commit-build) stage and only execute the slower Acceptance Tests in a later stage.
+The stages at the start of the Deployment Pipeline are fast. As we progress in the Deployment Pipeline, the stages become slower. We prioritise the fast stages first to accelerate feedback. That is the reason we execute the fast Unit Tests in the first [*Commit Build*](#commit-build) stage and only execute the slower Acceptance Tests in a later stage. Note that the *Commit Build* serves as a *Commit Gate*, which frees engineers to move on with new tasks (Farley 2007).
 
 Because the first stages are fast, they are also environment-neutral. Where Automated Acceptance Tests and Load Testing need to happen in a production-like environment. By contrast, Exploratory Testing can, as part of a Continuous Testing mindset, already occur in an early stage in an environment-neutral setting and can also happen again in a production-like environment or even production using different test charters.
 
@@ -291,7 +291,7 @@ The Deployment Pipeline has three purposes:
 
 All three purposes are important, though point one - make every part of the process visible - is especially paramount. It calls to maintain only one, single Deployment Pipeline per binary artefact.
 
-With the rise of [GitOps](https://www.gitops.tech/), we now see implementations consisting of two pipelines. The so-called "CI-pipeline", usually including only one single stage, the [Commit Build](#commit-build), which produces the binary artefact. The "deploy pipeline" implemented using a different tool that promotes and deploys the binary artefact in the subsequent environments. This antipattern infringes on the visibility purpose. Identifying which commit landed in which environment takes effort. [Measuring Continuous Delivery](https://leanpub.com/measuringcontinuousdelivery) becomes difficult. Automating the execution of the Automated Acceptance Tests might be tricky and certainly not straightforward, which generates complexity. Lastly, it enlarges the technology landscape and thus the cognitive load for the team. To summarise, with GitOps, it is decidedly challenging to attain Continuous Delivery.
+With the rise of [GitOps](https://www.gitops.tech/), we now see implementations consisting of two pipelines. The so-called "CI-pipeline", usually including only one single stage, the [*Commit Build*](#commit-build), which produces the binary artefact. The "deploy pipeline" implemented using a different tool that promotes and deploys the binary artefact in the subsequent environments. This antipattern infringes on the visibility purpose. Identifying which commit landed in which environment takes effort. [Measuring Continuous Delivery](https://leanpub.com/measuringcontinuousdelivery) becomes difficult. Automating the execution of the Automated Acceptance Tests might be tricky and certainly not straightforward, which generates complexity. Lastly, it enlarges the technology landscape and thus the cognitive load for the team. To summarise, with GitOps, it is decidedly challenging to attain Continuous Delivery.
 
 The Deployment Pipeline is the logical extension of [*Continuous Integration*](#continuous-integration), where every commit creates a potential Release Candidate, following the [*Build Only Once*](#build-only-once) practice, after which the Release Candidate is promoted from stage to stage to, at last, arrive in production.
 
@@ -301,7 +301,7 @@ Lastly, the deployment pipeline code is handled in a similar way to production c
 
 ### Build Only Once
 
-Delivery systems based on recompiling code and rebuilding binary artefacts for each environment are flawed. Every time we rebuild, we run the risk of introducing some differences. The compiler version could be different, or its configuration. We could pick up different versions of third-party libraries.
+Delivery systems based on recompiling code and rebuilding binary artefacts for each environment are flawed. Every time we rebuild, we run the risk of introducing some differences. The compiler version could be inconsistent, or its configuration. We could pick up different versions of third-party libraries. In essence, we wish to minimise the opportunities for errors to creep into the process (Farley 2007).
 
 This rebuilding antipattern violates two principles: [*Create a Repeatable, Reliable, Deterministic, and Efficient Process for Releasing Software*](#create-a-repeatable-reliable-deterministic-and-efficient-process-for-releasing-software) and [*Build on Foundations Known to be Sound*](#build-on-foundations-known-to-be-sound).
 
@@ -309,7 +309,7 @@ Rebuilding violates *Create a Repeatable, Reliable, Deterministic, and Efficient
 
 It disregards the *Build on Foundations Known to be Sound*, as it enables the risk that some changes have been introduced between the creation and subsequent testing and the release of the binary artefact.
 
-Therefore, binary artefacts should be built once to ensure that the binary which gets deployed into production is exactly the same as the one that went through the Automated Acceptance Testing stage, the Exploratory Testing stage, and any other testing stage that might be present.
+Therefore, binary artefacts should be built only once, by the [*Commit Build*](#commit-build), to ensure that the binary which gets deployed into production is exactly the same as the one that went through the Automated Acceptance Testing stage, the Exploratory Testing stage, and any other testing stage that may well be present. Each binary artefact is tagged with the version information of the source code they were built from. The tag is a Release Candidate identifier or commonly called a version number (Farley 2007). Today, this could be a combination of commit-SHA and built timestamp (or commit timestamp). This ensures traceability between the binary and the source code version from which the binary was built.
 
 This is the precise motive for [GitFlow](https://nvie.com/posts/a-successful-git-branching-model/) to be incompatible with Continuous Delivery. It forces a rebuild to deploy in production and release. With GitFlow, it is decisively impossible to reach Continuous Delivery.
 
@@ -376,7 +376,7 @@ For CVS and SubVersion, this is *trunk*. For Git, this is the remote *main* bran
 
 ### Commit Build
 
-The Commit Build is a build performed during the first stage of the [Deployment Pipeline](https://continuousdelivery.com/implementing/patterns/#the-deployment-pipeline) or the central build server. It involves checking out the latest sources from *Mainline* and, at a minimum, compiling the sources, running a set of [*Commit Tests*](#commit-tests), and building a binary artefact for deployment.
+The Commit Build is a build performed during the first stage of the [Deployment Pipeline](https://continuousdelivery.com/implementing/patterns/#the-deployment-pipeline) or the central build server, triggered by a commit in the Version Control System. It involves checking out the latest sources from *Mainline* and, at a minimum, compiling the sources, running a set of [*Commit Tests*](#commit-tests), and building a binary artefact for deployment.
 
 ### Commit Tests
 
