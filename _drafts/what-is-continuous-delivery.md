@@ -261,7 +261,7 @@ Though when implementing Continuous Delivery, we have to [*Have A Vast Amount of
 
 ### Deployment Pipeline
 
-Some call it CICD-pipeline, some DevOps pipeline, but the true name of the pattern is manifestly the *Deployment Pipeline*.
+Some call it CICD-pipeline, some DevOps pipeline, but the true name of the pattern is manifestly the *Deployment Pipeline* (Farley 2007, Farley and Humble 2011).
 
 One of the rare occasions in IT where the factory metaphor applies is the technology value stream, because it is a homogenous process where every step is deterministic. The Deployment Pipeline is sort of an assembly line, a conveyor belt. It is the automated manifestation, consisting of several stages, to get software out of Version Control, test the software, package the software, run additional tests and ultimately bring it into the hands of the users in production.
 
@@ -352,6 +352,7 @@ Once we fathom all of that, the rest will follow, naturally. It becomes a virtuo
 ## References
 
 - [The Deployment Production Line](https://dannorth.net/profile/deployment_production_line.pdf), Jez Humble, Daniel North, Chris Read, 2006
+- [The Deployment Pipeline](https://continuousdelivery.com/wp-content/uploads/2010/01/The-Deployment-Pipeline-by-Dave-Farley-2007.pdf)
 - [Continuous Delivery: Reliable Software Releases Through Build, Test, and Deployment Automation](https://app.thestorygraph.com/books/77eb0975-4194-42e7-9db3-005d4250940f), Dave Farley, Jez Humble, 2011
 - [The Role of Continuous Delivery in IT and Organizational Performance](https://www.researchgate.net/publication/302567338_THE_ROLE_OF_CONTINUOUS_DELIVERY_IN_IT_AND_ORGANIZATIONAL_PERFORMANCE), Nicole Forsgren, PhD, Jez Humble, 2016
 - [Accelerate: Building and Scaling High Performing Technology Organizations](https://app.thestorygraph.com/books/0baa7f2a-3f3f-4752-9d81-0434117d0648), Nicole Forsgren, PhD, Jez Humble, Gene Kim, 2018
