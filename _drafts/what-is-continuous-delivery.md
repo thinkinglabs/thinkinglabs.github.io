@@ -59,13 +59,13 @@ An effective IT delivery builds on nine principles. Not understanding these comp
 
 To achieve organisational goals - such as turnover, market share, productivity, quality of delivered goods, number of delivered goods, customer satisfaction - everyone in the organisation needs to be aligned with these goals.
 
-All too often, development focuses on throughput, testing on quality and operations on stability. In reality, these are all system-level outcomes that help achieve organisational goals. They can only be achieved by close collaboration between everyone involved in the IT delivery process. Ultimately, releasing IT systems is a team activity, not an individual activity. The whole team succeeds or fails as a team, together. Hence, the team is accountable for the delivery.
+All too often, development focuses on throughput, testing on quality and operations on stability. In reality, these are all system-level outcomes that help achieve organisational goals. They can only be achieved by close collaboration between everyone involved in the IT delivery process (Farley and Humble 2011). Ultimately, releasing IT systems is a team activity, not an individual activity. The whole team succeeds or fails as a team, together. Hence, the team is accountable for the delivery.
 
 For this to work, it is crucial to implement the [*Deployment Pipeline*](#deployment-pipeline) pattern so that everyone in the team can see, at a glance, the status of the system, its health, the various builds, the results of the tests, and the state of the environments where the system can be deployed. This creates empowerment for the team.
 
 ### Done Means Released
 
-A feature is only done when it delivers value to a user. Inevitably, done means deployed into production and released to users.
+A feature is only done when it delivers value to a user (Farley and Humble 2011). Inevitably, done means deployed into production and released to users.
 
 There are cases where this is not particularly achievable. Think of mobile apps that need to go through a vetting process before landing in the app store. In this situation, we dial back to the next best option. Done means submitted to the store. At that moment, we have the actual release artefact, together with the release notes. If that is still a bridge too far for valid reasons, we can dial one step back. It is done when it can be used and showcased in a production-like environment.
 
@@ -75,7 +75,7 @@ This has an important corollary. One person from the team does not have the powe
 
 ### Create a Repeatable, Reliable, Deterministic, and Efficient Process for Releasing Software
 
-Releasing software should be easy and happen with confidence, without pain. This reduces risks and, more importantly, stress for the team.
+Releasing software should be easy and happen with confidence, without pain (Farley and Humble 2011). This reduces risks and, more importantly, stress for the team.
 
 It is reliable, as with every run of the [*Deployment Pipeline*](#deployment-pipeline), we test every single part of the release process, constantly.
 
@@ -97,13 +97,13 @@ Inspection to improve quality is too late. It does not improve quality, nor does
 
 Quality comes from [*relentless continuous improvement*](#pursue-continuous-improvement-relentlessly) of the delivery process (Deming, 1982).
 
-With Continuous Delivery, we invest in a testing culture supported by people and tools where we detect any problems early and quickly, to fix them immediately when they are easy and cheap to find and resolve. Quality is the entire team's responsibility. Software Engineers implement automated tests with support and coaching from Quality Engineers. Quality Engineers coach the team into a quality mindset and use risks and heuristics to guide the testing.
+With Continuous Delivery, we invest in a testing culture supported by people and tools where we detect any problems early and quickly, to fix them immediately when they are easy and cheap to find and resolve. Quality is the entire team's responsibility (Farley and Humble 2011). Software Engineers implement automated tests with support and coaching from Quality Engineers. Quality Engineers coach the team into a quality mindset and use risks and heuristics to guide the testing.
 
 Fiercely pursuing quality derives from one principle: [*Build on Foundations Known to be Sound*](#build-on-foundations-known-to-be-sound); two foundations: [*Continuous Integration*](#continuous-integration), and [*Continuous Testing*](#continuous-testing); and one pattern: the [*Deployment Pipeline*](#deployment-pipeline).
 
 ### Build on Foundations Known to be Sound
 
-Every stage of the delivery process builds on the previous stage. Every stage adds more quality information to the Release Candidate. At each stage, the confidence in the Release Candidate is enhanced (Farley 2007). It passes the Unit Tests. It passes the Security Tests, the Acceptance Tests, and finally the Exploratory Tests. The objective is to develop a level of confidence in the Release Candidate to the point that it is proven ready for production deployment and release. We can now unequivocally choose whether to release the Release Candidate.
+Every stage of the delivery process builds on the previous stage (Farley and Humble 2011). Every stage adds more quality information to the Release Candidate. At each stage, the confidence in the Release Candidate is enhanced (Farley 2007). It passes the Unit Tests. It passes the Security Tests, the Acceptance Tests, and finally the Exploratory Tests. The objective is to develop a level of confidence in the Release Candidate to the point that it is proven ready for production deployment and release. We can now unequivocally choose whether to release the Release Candidate.
 
 Building on foundations known to be sound, follows one practice: [*Build Only Once*](#build-only-once). The Release Candidate that gets deployed into production is the same one that went through all the previous testing stages.
 
@@ -113,13 +113,13 @@ Reducing batch sizes represents a compelling opportunity. Following [Little's La
 
 Large batches inherently lower motivation and urgency. It demotivates people by delaying feedback. Large batches dilute responsibility. Ultimately, it leads to risk avoidance and accordingly disables innovation. Finally, large batches attract even larger batches (Reinertsen 2009).
 
-By splitting work into much smaller chunks that deliver measurable value quickly, we receive essential feedback on the work we are doing so that we can course-correct. Continuous Delivery changes the economics of the IT delivery process, making the cost of pushing out small individual changes very low, by reducing the transaction cost, allowing to make many smaller, more frequent changes. Obviously, this demands to [*Make All Changes In Small Increments*]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %}#practice-5-make-all-changes-in-small-increments).
+By splitting work into much smaller chunks that deliver measurable value quickly, we receive essential feedback on the work we are doing so that we can course-correct. Continuous Delivery changes the economics of the IT delivery process, making the cost of pushing out small individual changes very low (Farley and Humble 2011), by reducing the transaction cost, allowing to make many smaller, more frequent changes. Obviously, this demands to [*Make All Changes In Small Increments*]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %}#practice-5-make-all-changes-in-small-increments).
 
 Working in small batches derives from two other principles: [*Create a Repeatable, Reliable, Deterministic, and Efficient Process for Releasing Software*](#create-a-repeatable-reliable-deterministic-and-efficient-process-for-releasing-software), and [*Automate the Right Things*](#automate-the-right-things).
 
 ### Automate the Right Things
 
-Computers perform repetitive tasks; people solve problems. To reduce the transaction cost of pushing out many more, smaller changes, we should invest in simplifying and automating repetitive work that takes time, such as manual regression testing and manual release processes. This frees up teams for higher-value problem-solving activities, innovation and value creation. Automation accelerates feedback, therefore multiplying learning and discovery. It supports faster, more reliable releases. Most importantly, it vastly reduces risks and enables to [Work in Small Batches](#work-in-small-batches).
+Computers perform repetitive tasks; people solve problems. To reduce the transaction cost of pushing out many more, smaller changes, we should invest in simplifying and automating repetitive work that takes time, such as manual regression testing and manual release processes. This frees up teams for higher-value problem-solving activities, innovation and value creation (Farley and Humble 2011). Automation accelerates feedback, therefore multiplying learning and discovery. It supports faster, more reliable releases. Most importantly, it vastly reduces risks and enables to [Work in Small Batches](#work-in-small-batches).
 
 Note that this principle is nuanced. It does not say "Automate all the things". In that case, there is a risk of overinvesting. In consequence, we only automate bottlenecks, repetitive tasks, or tasks that involve high risks. For that, we ought to map the technology value stream from Version Control to the user, and identify bottlenecks, risks and repetition. This technology value stream map is now the starting point to implement the [*Deployment Pipeline*](#deployment-pipeline). By automating the identified steps, we start building the Deployment Pipeline iteratively.
 
@@ -145,7 +145,7 @@ To move forward, we need something to guide us. We need a continuous improvement
 
 As already mentioned in the introduction, adopting Continuous Delivery is not a project with an end date. It is the result of this continuous improvement. As such, the [*Deployment Pipeline*](#deployment-pipeline) will be built incrementally, as already outlined in [Automate the Right Things](#automate-the-right-things).
 
-Again, to succeed, it is invaluable that everyone from the team is involved and as such [*Accountable as a Team for the Delivery Process*](#accountable-as-a-team-for-the-delivery-process).
+Again, to succeed, it is invaluable that everyone from the team is involved (Farley and Humble 2011) and as such [*Accountable as a Team for the Delivery Process*](#accountable-as-a-team-for-the-delivery-process).
 
 ### Trust, but Verify
 
@@ -187,7 +187,7 @@ Together with accountability, it fosters a culture of openness, experimentation,
 
 ### Do It More Often When It Hurts
 
-Bring the pain forward.
+Bring the pain forward (Farley and Humble 2011).
 
 When integrating software is hard, do it on every commit, requiring the [*Continuous Integration*](#continuous-integration) foundation.
 
@@ -211,7 +211,7 @@ Consequently, this is a [foundational practice to succeed with Continuous Integr
 
 [*Continuous Integration*](#continuous-integration) is a state we accomplish as a team, not as an individual. Subsequently, to work as a team, we need a way to coordinate code.
 
-Therefore, everything we need to build, test, deploy, release, run and operate our application must be kept under Version Control in one single repository. This means we version production code, obviously, but also all of our tests, build and deploy scripts, deployment pipeline code, application and system configurations, database schema migrations, all the infrastructure required to run the system, but also documentation, [decision records](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions.html) and [runbooks](https://www.pagerduty.com/resources/automation/learn/what-is-a-runbook/) to maintain and keep the application available.
+Therefore, everything we need to build, test, deploy, release, run and operate our application must be kept under Version Control (Farley and Humble 2011) in one single repository. This means we version production code, obviously, but also all of our tests, build and deploy scripts, deployment pipeline code, application and system configurations, database schema migrations, all the infrastructure required to run the system, but also documentation, [decision records](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions.html) and [runbooks](https://www.pagerduty.com/resources/automation/learn/what-is-a-runbook/) to maintain and keep the application available.
 
 Keeping production code, test code, infrastructure code, and configurations in different version control repositories is an antipattern. It complexifies the implementation of the Deployment Pipeline and creates cognitive load. Anyone on the team should be able to clone an application's repository and discover, at once, everything needed to build, test, release, run, and operate the application, without having to clone any more repositories.
 
@@ -301,7 +301,7 @@ Lastly, the deployment pipeline code is handled in a similar way to production c
 
 ### Build Only Once
 
-Delivery systems based on recompiling code and rebuilding binary artefacts for each environment are flawed. Every time we rebuild, we run the risk of introducing some differences. The compiler version could be inconsistent, or its configuration. We could pick up different versions of third-party libraries. In essence, we wish to minimise the opportunities for errors to creep into the process (Farley 2007).
+Delivery systems based on recompiling code and rebuilding binary artefacts for each environment are flawed. Every time we rebuild, we run the risk of introducing some differences (Farley and Humble 2011). The compiler version could be inconsistent, or its configuration. We could pick up different versions of third-party libraries. In essence, we wish to minimise the opportunities for errors to creep into the process (Farley 2007).
 
 This rebuilding antipattern violates two principles: [*Create a Repeatable, Reliable, Deterministic, and Efficient Process for Releasing Software*](#create-a-repeatable-reliable-deterministic-and-efficient-process-for-releasing-software) and [*Build on Foundations Known to be Sound*](#build-on-foundations-known-to-be-sound).
 
@@ -315,7 +315,7 @@ This is the precise motive for [GitFlow](https://nvie.com/posts/a-successful-git
 
 ### Deploy the Same Way to Every Environment
 
-It is key to use the same process to deploy to every environment, whether into testing environments or production, to ensure the build and deployment process has been tested effectively.
+It is key to use the same process to deploy to every environment, whether into testing environments or production, to ensure the build and deployment process has been tested effectively (Farley and Humble 2011).
 
 We will deploy frequently to the test environment, but less to production. The frequency of deployment is inversely related to the risk associated with each environment. We deploy less frequently to production than to test environments. Before deploying to production, we will have tested the deployment many times in the upstream environments to discard the deployment script as a source of error.
 
@@ -327,7 +327,7 @@ Deploying the same way to each environment guarantees [repeatability, consistenc
 
 ### If any Part of the Deployment Pipeline Fails, Stop the Line
 
-To establish [rapid, repeatable, reliable](#create-a-repeatable-reliable-deterministic-and-efficient-process-for-releasing-software) releases, we have to accept as a team that every change, every commit into Version Control, will successfully build, pass every test and deploy. In that case, [*Agree as a Team to Never Break the Build*]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}#practice-2-agree-as-a-team-to-never-break-the-build) extends to the whole [*Deployment Pipeline*](#deployment-pipeline). This implies that if any part of the delivery process fails, the team owns the failure, [Stops The Line](https://en.wikipedia.org/wiki/Andon_(manufacturing)), and fixes it immediately before moving on with any ongoing work. This is vital to [*Build Quality In*](#build-quality-in).
+To establish [rapid, repeatable, reliable](#create-a-repeatable-reliable-deterministic-and-efficient-process-for-releasing-software) releases, we have to accept as a team that every change, every commit into Version Control, will successfully build, pass every test and deploy (Farley and Humble 2011). In that case, [*Agree as a Team to Never Break the Build*]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}#practice-2-agree-as-a-team-to-never-break-the-build) extends to the whole [*Deployment Pipeline*](#deployment-pipeline). This implies that if any part of the delivery process fails, the team owns the failure, [Stops The Line](https://en.wikipedia.org/wiki/Andon_(manufacturing)), and fixes it immediately before moving on with any ongoing work. This is vital to [*Build Quality In*](#build-quality-in).
 
 ## Closing
 
