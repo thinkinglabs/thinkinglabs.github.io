@@ -61,29 +61,29 @@ To achieve organisational goals - such as turnover, market share, productivity, 
 
 All too often, development focuses on throughput, testing on quality and operations on stability. In reality, these are all system-level outcomes that help achieve organisational goals. They can only be achieved by close collaboration between everyone involved in the IT delivery process (Farley and Humble 2011). Ultimately, releasing IT systems is a team activity, not an individual activity. The whole team succeeds or fails as a team, together. Hence, the team is accountable for the delivery.
 
-For this to work, it is crucial to implement the [*Deployment Pipeline*](#deployment-pipeline) pattern so that everyone in the team can see, at a glance, the status of the system, its health, the various builds, the results of the tests, and the state of the environments where the system can be deployed. This creates empowerment for the team.
+For this to work, it is crucial to implement the [*Deployment Pipeline*](#deployment-pipeline) pattern so that everyone in the team can see, at a glance, the status of the system, its health, the various builds, the results of the tests, and the state of the environments where the system can be deployed. This creates empowerment for the team (Farley and Humble 2011).
 
 ### Done Means Released
 
 A feature is only done when it delivers value to a user (Farley and Humble 2011). Inevitably, done means deployed into production and released to users.
 
-There are cases where this is not particularly achievable. Think of mobile apps that need to go through a vetting process before landing in the app store. In this situation, we dial back to the next best option. Done means submitted to the store. At that moment, we have the actual release artefact, together with the release notes. If that is still a bridge too far for valid reasons, we can dial one step back. It is done when it can be used and showcased in a production-like environment.
+There are cases where this is not particularly achievable. Think of mobile apps that need to go through a vetting process before landing in the app store. In this situation, we dial back to the next best option. Done means submitted to the store. At that moment, we have the actual binary release artefact, together with the release notes. If that is still a bridge too far, for valid reasons, we can dial one step back. It is done when it can be used and showcased in a production-like environment.
 
 There is no such thing as 80% done. It is either done or not. It is very binary. There is no in-between.
 
-This has an important corollary. One person from the team does not have the power to get something done. It is a team effort. It requires team members to collaborate to get it done. Therefore, we have to be [*Accountable as a Team for the Delivery Process*](#accountable-as-a-team-for-the-delivery-process). It is the whole team's responsibility.
+This has an important corollary. One person from the team does not have the power to get something done. It is a team effort. It requires team members to collaborate to get it done (Farley and Humble 2011). Therefore, we have to be [*Accountable as a Team for the Delivery Process*](#accountable-as-a-team-for-the-delivery-process). It is the whole team's responsibility.
 
 ### Create a Repeatable, Reliable, Deterministic, and Efficient Process for Releasing Software
 
 Releasing software should be easy and happen with confidence, without pain (Farley and Humble 2011). This reduces risks and, more importantly, stress for the team.
 
-It is reliable, as with every run of the [*Deployment Pipeline*](#deployment-pipeline), we test every single part of the release process, constantly.
+It is reliable, as with every run of the [*Deployment Pipeline*](#deployment-pipeline), we test every single part of the release process, constantly (Farley and Humble 2011).
 
 We demand efficiency to shorten the time to market and accelerate feedback to gain more information and run more experiments. Eventually, efficiency reduces the [Cost of Delay](https://blackswanfarming.com/cost-of-delay/). We want to know as quickly as possible if the thing we have just implemented, deployed into production and released to users is actually being used and how it is used. Based on this information, we can make new decisions and run new experiments to find new unmet needs of our users. As such, finding new ways to delight our users, which is a massive competitive advantage.
 
-The repeatability, reliability and determinism derive from two foundations: [*Everything we need to build, deploy, test and release our system should be under Version Control*](#version-control-everything), and [*Continuous Testing*](#continuous-testing); and two other principles: [*Do It More Often When It Hurts*](#do-it-more-often-when-it-hurts), and  [*Automate the Right Things*](#automate-the-right-things).
+The repeatability, reliability and determinism derive from two foundations: [*Version Control Everything*](#version-control-everything), and [*Continuous Testing*](#continuous-testing); and two other principles: [*Do It More Often When It Hurts*](#do-it-more-often-when-it-hurts), and  [*Automate the Right Things*](#automate-the-right-things).
 
-Interestingly, though repeatability, reliability and determinism derive from *Do It More Often When It Hurts* because if we want to do something more often, we need that repeatability, reliability and determinism. But, it is also a prerequisite to *Do It More Often When It Hurts*. It is a bidirectional influence, such as quality and throughput.
+Interestingly, though repeatability, reliability and determinism derive from *Do It More Often When It Hurts* because if we want to do something more often, we need that repeatability, reliability and determinism. But, it is also a prerequisite to *Do It More Often When It Hurts*. There is that bidirectional influence, similar to quality and throughput, which amplifies each other.
 
 ### Build Quality In
 
@@ -93,17 +93,17 @@ Interestingly, though repeatability, reliability and determinism derive from *Do
 
 We cannot buy quality. We can also not test quality in later. Routine 100% inspection to "improve" quality is equivalent to planning for defects. We essentially acknowledge that the process lacks the capabilities to deliver quality (Deming, 1982).
 
-Inspection to improve quality is too late. It does not improve quality, nor does it guarantee quality. The quality, good or bad, is already in the product. Mass inspection is unreliable, costly, and ineffective. Split responsibility also means nobody is responsible (Deming, 1982). If the quality is the sole responsibility of the Quality Engineer, it tends to become "throw it over the wall". Quality Engineers are expected to catch the quality issues. Oftentimes, the opposite happens. Quality decreases. A similar behaviour occurs with blocking code reviews, security gating, or when the Ops team does the IT operations.
+Inspection to improve quality is too late. It does not improve quality, nor does it guarantee quality. The quality, good or bad, is already in the product. Mass inspection is unreliable, costly, and ineffective. Split responsibility also means nobody is responsible (Deming, 1982). If the quality is the sole responsibility of the Quality Engineer, it tends to become a "throw it over the wall". Quality Engineers are expected to catch the quality issues. Oftentimes, the opposite happens. Quality decreases. A similar behaviour occurs with blocking code reviews, security gating, or when the Ops team does the IT operations.
 
 Quality comes from [*relentless continuous improvement*](#pursue-continuous-improvement-relentlessly) of the delivery process (Deming, 1982).
 
-With Continuous Delivery, we invest in a testing culture supported by people and tools where we detect any problems early and quickly, to fix them immediately when they are easy and cheap to find and resolve. Quality is the entire team's responsibility (Farley and Humble 2011). Software Engineers implement automated tests with support and coaching from Quality Engineers. Quality Engineers coach the team into a quality mindset and use risks and heuristics to guide the testing.
+With Continuous Delivery, we invest in a testing culture supported by people and tools where we detect any problems early and quickly, to fix them immediately when they are easy and cheap to find and resolve (Farley and Humble 2011). Quality is the entire team's responsibility. Software Engineers implement automated tests with support and coaching from Quality Engineers. Quality Engineers coach the team into a quality mindset and use risks and heuristics to guide the testing.
 
 Fiercely pursuing quality derives from one principle: [*Build on Foundations Known to be Sound*](#build-on-foundations-known-to-be-sound); two foundations: [*Continuous Integration*](#continuous-integration), and [*Continuous Testing*](#continuous-testing); and one pattern: the [*Deployment Pipeline*](#deployment-pipeline).
 
 ### Build on Foundations Known to be Sound
 
-Every stage of the delivery process builds on the previous stage (Farley and Humble 2011). Every stage adds more quality information to the Release Candidate. At each stage, the confidence in the Release Candidate is enhanced (Farley 2007). It passes the Unit Tests. It passes the Security Tests, the Acceptance Tests, and finally the Exploratory Tests. The objective is to develop a level of confidence in the Release Candidate to the point that it is proven ready for production deployment and release. We can now unequivocally choose whether to release the Release Candidate.
+Every stage of the delivery process builds on the previous stage (Farley and Humble 2011). Every stage adds more quality information to the Release Candidate. With each stage, the confidence in the Release Candidate is enhanced (Farley 2007). It passes the Unit Tests. It passes the Security Tests, the Acceptance Tests, and finally the Exploratory Tests. The objective is to develop a level of confidence in the Release Candidate to the point that it is proven ready for production deployment and release. We can now unequivocally choose whether to release the Release Candidate.
 
 Building on foundations known to be sound, follows one practice: [*Build Only Once*](#build-only-once). The Release Candidate that gets deployed into production is the same one that went through all the previous testing stages.
 
@@ -207,7 +207,7 @@ Implementing Continuous Delivery calls for indispensable foundations.
 
 Without version control, we miss a single source of truth. Releasing a piece of software becomes a marathon of chasing bits and pieces of code on engineers' machines or shared network drives. It also becomes quite challenging to roll back to a previous version known to be good, due to a lack of a single source of truth.
 
-Consequently, this is a [foundational practice to succeed with Continuous Integration]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}#practice-1-version-control-everything) and by extension with Continuous Delivery.
+Consequently, it is a [foundational practice to succeed with Continuous Integration]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}#practice-1-version-control-everything) and by extension with Continuous Delivery.
 
 [*Continuous Integration*](#continuous-integration) is a state we accomplish as a team, not as an individual. Subsequently, to work as a team, we need a way to coordinate code.
 
@@ -221,7 +221,7 @@ Know that the Version Control System is more than just versioning. It is a commu
 
 [Continuous Integration is a Team Practice]({% post_url 2022-09-17-the-practices-that-make-continuous-integration-team-working %}). We realise it as a team, not as individuals. Most of the time, practices are defined for individuals. When most team members apply them, the team does well. However, with Continuous Integration, most team members must implement other practices before the team can declare they practice Continuous Integration.
 
-Without Continuous Integration, our software is broken until somebody proves it works. With Continuous Integration, our software is proven to work with every new change - assuming we [have a decent set of comprehensive automated tests]({% post_url 2022-09-28-the-practices-that-make-continuous-integration-building %}#practice-13-have-a-vast-amount-of-high-quality-automated-tests) -, and we know the moment the software is broken.
+Without Continuous Integration, our software is broken until somebody proves it works. With Continuous Integration, our software is proven to work with every new change - assuming we [have a decent set of comprehensive automated tests]({% post_url 2022-09-28-the-practices-that-make-continuous-integration-building %}#practice-13-have-a-vast-amount-of-high-quality-automated-tests) -, and thus, we know the moment the software is broken.
 
 Following the principles of [*Work in Small Batches*](#work-in-small-batches) and [*Building Quality In*](#build-quality-in), we [push at least once a day]({% post_url 2024-09-16-the-practices-that-make-continuous-integration-push-every-day %}) into [*Mainline*](#mainline) (more is better). [Every commit triggers an automated build and execution of the automated tests]({% post_url 2024-10-15-the-practices-that-make-continuous-integration-trigger-the-build-on-every-push %}). When the build fails, [it gets fixed within ten minutes]({% post_url 2024-10-17-the-practices-that-make-continuous-integration-fix-a-broken-build-within-10-minutes %}).
 
@@ -271,7 +271,7 @@ The Deployment Pipeline is the implementation of the technology value stream tha
 
 ![Value Stream](/images/what-is-continuous-delivery/value-stream.png)
 
-The objective of the Deployment Pipeline is to eliminate bad quality Release Candidates as early as possible. It acts as a sequence of gates (Farley 2007). Whenever a stage is red, it discards the Release Candidate. As such, only changes that successfully moved across all stages of the deployment pipeline and have been thoroughly tested, get into production.
+The objective of the Deployment Pipeline is to eliminate bad quality Release Candidates as early as possible. It acts as a sequence of gates (Farley 2007). Whenever a stage is red, it discards the Release Candidate. As such, only changes that successfully went across all stages of the deployment pipeline and have been thoroughly tested, get into production.
 
 The Deployment Pipeline comprises several stages. Some are automated, others are manual. It is perfectly okay to have manual steps in the Deployment Pipeline. Often, the implementation of a Deployment Pipeline starts from the technology value stream map from Version Control to production. It might be that at the start, all those steps are still manual. Then, following the [*Pursue Continuous Improvement relentlessly*](#pursue-continuous-improvement-relentlessly) and [*Automate the Right Things*](#automate-the-right-things) principles, we automate the steps that form a bottleneck or are risky or repetitive.
 
@@ -281,7 +281,7 @@ The stages at the start of the Deployment Pipeline are fast. As we progress in t
 
 Because the first stages are fast, they are also environment-neutral. Where Automated Acceptance Tests and Load Testing need to happen in a production-like environment. By contrast, Exploratory Testing can, as part of a Continuous Testing mindset, already occur in an early stage in an environment-neutral setting and can also happen again in a production-like environment or even production using different test charters.
 
-Stages at the start are also showstoppers. Meaning, if these fail, they discard the Release Candidate. Further down the Deployment Pipeline, they are not necessarily showstoppers. Some, like the Automated Acceptance Tests, will be; others not. As Exploratory Testing is not regression testing, it does not necessarily eliminate the Release Candidate. That is a reason for the Exploratory Testing not to be on the path to production. It could be limited to production.
+Stages at the start are also showstoppers. Meaning, if these fail, they discard the Release Candidate. Further down the Deployment Pipeline, they are not necessarily showstoppers. Some, like the Automated Acceptance Tests, must be; others not. As Exploratory Testing is not regression testing, it does not necessarily eliminate the Release Candidate. That is a reason for the Exploratory Testing not to be on the path to production. It could be limited to production.
 
 The Deployment Pipeline has three purposes:
 
@@ -289,7 +289,7 @@ The Deployment Pipeline has three purposes:
 2. Improve feedback to identify problems early when they are still small and easy to fix, and therefore to resolve them quickly.
 3. Empower teams to deploy any version of the system to any environment as they please, limiting the wait time and improving lead times.
 
-All three purposes are important, though point one - make every part of the process visible - is especially paramount. It calls to maintain only one, single Deployment Pipeline per binary artefact.
+All three purposes are important, though point one - make every part of the process visible - is especially paramount. It calls to maintain only one, single *Deployment Pipeline* per binary artefact.
 
 With the rise of [GitOps](https://www.gitops.tech/), we now see implementations consisting of two pipelines. The so-called "CI-pipeline", usually including only one single stage, the [*Commit Build*](#commit-build), which produces the binary artefact. The "deploy pipeline" implemented using a different tool that promotes and deploys the binary artefact in the subsequent environments. This antipattern infringes on the visibility purpose. Identifying which commit landed in which environment takes effort. [Measuring Continuous Delivery](https://leanpub.com/measuringcontinuousdelivery) becomes difficult. Automating the execution of the Automated Acceptance Tests might be tricky and certainly not straightforward, which generates complexity. Lastly, it enlarges the technology landscape and thus the cognitive load for the team. To summarise, with GitOps, it is decidedly challenging to attain Continuous Delivery.
 
@@ -317,7 +317,7 @@ This is the precise motive for [GitFlow](https://nvie.com/posts/a-successful-git
 
 It is key to use the same process to deploy to every environment, whether into testing environments or production, to ensure the build and deployment process has been tested effectively (Farley and Humble 2011).
 
-We will deploy frequently to the test environment, but less to production. The frequency of deployment is inversely related to the risk associated with each environment. We deploy less frequently to production than to test environments. Before deploying to production, we will have tested the deployment many times in the upstream environments to discard the deployment script as a source of error.
+We will deploy frequently to the test environment, but less to production. The frequency of deployment is inversely related to the risk associated with each environment. We deploy less frequently to production than to test environments. Before deploying to production, we will have tested the deployment many times in the upstream environments to discard any possible errors.
 
 This implies we must use the same script and the same binary artefact to deploy to each environment. Of course, environments differ from each other. Surely, they will have different IP addresses, different database connections and other external services. Therefore, we separate binary artefacts and deploy scripts from configuration and keep the configuration outside (Humble et al. 2006) of the deploy script in configuration files [under Version Control](#version-control-everything), and secrets in vaults, also under Version Control.
 
