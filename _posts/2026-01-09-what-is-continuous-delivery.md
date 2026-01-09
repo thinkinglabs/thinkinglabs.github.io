@@ -14,7 +14,7 @@ Any time an organisation tells me with great confidence that they *do Continuous
 
 Why still explain Continuous Delivery in 2026? Everybody does it, don't they? But, do they really do? Is that really the case?
 
-Over the years, I have interviewed a considerable number of technology organisations in the context of technology due diligence or observed technology organisations in the context of consulting. Most shared that they have Continuous Delivery in place. But, only a few really practised Continuous Delivery. There is a lot of misunderstanding about what Continuous Delivery actually is and what it entails.
+Over the years, I have interviewed a considerable number of technology organisations in the context of technology due diligence or observed technology organisations in the context of consulting. Many shared that they have Continuous Delivery in place. But, only a few really practised Continuous Delivery. There is a lot of misunderstanding about what Continuous Delivery actually is and what it entails.
 
 As it often happens in our industry, people tend to redefine practices to ensure they fit their way of working, ignoring the basics and foundations. With this article, I revisit the basics of what Continuous Delivery genuinely is, with the goal of clarifying the principles behind Continuous Delivery.
 
