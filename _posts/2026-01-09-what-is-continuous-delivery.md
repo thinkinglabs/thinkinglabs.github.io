@@ -12,15 +12,19 @@ Any time an organisation tells me with great confidence that they *do Continuous
 
 ---
 
-Why still explain Continuous Delivery in 2026? Everybody does it, don't they? But, do they really do? Is that really the case? Over the years, I have interviewed a considerable number of technology organisations in the context of technology due diligence or observed technology organisations in the context of consulting. Most shared that they have Continuous Delivery in place. But, only a few really practised Continuous Delivery. There is a lot of misunderstanding about what Continuous Delivery actually is and what it entails.
+Why still explain Continuous Delivery in 2026? Everybody does it, don't they? But, do they really do? Is that really the case?
 
-As it often happens in our industry, people tend to redefine practices to ensure they fit their way of working, ignoring the basics and foundations. With this article, I revisit the basics of what Continuous Delivery genuinely is, with the goal of being a reference and clarifying the principles behind Continuous Delivery.
+Over the years, I have interviewed a considerable number of technology organisations in the context of technology due diligence or observed technology organisations in the context of consulting. Most shared that they have Continuous Delivery in place. But, only a few really practised Continuous Delivery. There is a lot of misunderstanding about what Continuous Delivery actually is and what it entails.
 
-Continuous Delivery is a holistic approach to IT delivery. It is a set of principles, foundations, and one pattern, backed by practices, that reduce the time between committing a change to a Version Control system - be it code for a feature, a bug fix, a configuration change, an infrastructure change or even just an experiment - and getting that change into the hands of the users in production safely, reliably, sustainably with confidence, and quickly. At the same time, all this reduces stress, burnout and fatigue, and increases staff satisfaction and retention (Forsgren et al. 2016, Forsgren et al. 2018).
+As it often happens in our industry, people tend to redefine practices to ensure they fit their way of working, ignoring the basics and foundations. With this article, I revisit the basics of what Continuous Delivery genuinely is, with the goal of clarifying the principles behind Continuous Delivery.
 
-Nothing here is new. Details were already outlined in the 2006 paper [The Deployment Production Line](https://dannorth.net/profile/deployment_production_line.pdf) and later in the 2011 book [Continuous Delivery: Reliable Software Releases Through Build, Test, and Deployment Automation](https://app.thestorygraph.com/books/77eb0975-4194-42e7-9db3-005d4250940f). But, as it seems, [many engineers do not read books](https://blog.codinghorror.com/programmers-dont-read-books-but-you-should/) (... and maybe many leaders do neither). Or they do read books, but have gone over the importance of the fundamentals, so they went looking for the cutting-edge. However, in all honesty, cutting-edge will not make it without mastering the boring basics that make the difference.
+Continuous Delivery is a holistic approach to IT delivery. It is a set of principles, foundations, and one pattern, backed by practices, that reduce the time between committing a change to a Version Control system - be it code for a feature, a bug fix, a configuration change, an infrastructure change or even just an experiment - and getting that change into the hands of the users in production safely, reliably, sustainably with confidence, and quickly. At the same time, all this, together with Lean Product Management and a [Generative Organisational Culture](https://dora.dev/capabilities/generative-organizational-culture/) (Westrum 2004), reduces stress, burnout and fatigue, and increases staff satisfaction and retention, and finally brings better organisational performance (Forsgren et al. 2016, Forsgren et al. 2018).
 
-The basics, and the key to success, are about a mindset of excellence, both organisational and technological, of experimentation, of openness, and finally, that it will be alright, in the end, whatever we try. We have to understand that Continuous Delivery is not an endgame. It is not a project we implement once, and we are done. It is an exercise in continuous improvement that will never be over.
+Nothing here is new. Details were already outlined in the 2006 paper [The Deployment Production Line](https://dannorth.net/profile/deployment_production_line.pdf), the 2007 article [The Deployment Pipeline](https://continuousdelivery.com/wp-content/uploads/2010/01/The-Deployment-Pipeline-by-Dave-Farley-2007.pdf), and later in the 2011 book [Continuous Delivery: Reliable Software Releases Through Build, Test, and Deployment Automation](https://app.thestorygraph.com/books/77eb0975-4194-42e7-9db3-005d4250940f). But, as it seems, [many engineers do not read books](https://blog.codinghorror.com/programmers-dont-read-books-but-you-should/) (... and maybe many leaders do neither). Or they do read books, but have gone over the importance of the fundamentals, so they went looking for the cutting-edge. However, in all honesty, cutting-edge will not make it without mastering the boring basics that make the difference.
+
+The basics, and the key to success, are about a mindset of excellence, both organisational and technological, of experimentation, of openness, and finally, that it will be alright, in the end, whatever we try.
+
+We have to understand that Continuous Delivery is not an endgame. It is not a project we implement once, and we are done. It is an exercise in continuous improvement that will never be over.
 
 It takes nine principles, one heuristic, three foundations, one pattern and three practices to practice truly Continuous Delivery. Nevertheless, definitely worth the investment, as it increases staff engagement, delivers better products, and ultimately leads to higher organisational performance, such as more turnover, more market share (Forsgren et al. 2016, Forsgren et al. 2018).
 
@@ -93,7 +97,9 @@ Interestingly, though repeatability, reliability and determinism derive from *Do
 
 We cannot buy quality. We can also not test quality in later. Routine 100% inspection to "improve" quality is equivalent to planning for defects. We essentially acknowledge that the process lacks the capabilities to deliver quality (Deming, 1982).
 
-Inspection to improve quality is too late. It does not improve quality, nor does it guarantee quality. The quality, good or bad, is already in the product. Mass inspection is unreliable, costly, and ineffective. Split responsibility also means nobody is responsible (Deming, 1982). If the quality is the sole responsibility of the Quality Engineer, it tends to become a "throw it over the wall". Quality Engineers are expected to catch the quality issues. Oftentimes, the opposite happens. Quality decreases. A similar behaviour occurs with blocking code reviews, security gating, or when the Ops team does the IT operations.
+Inspection to improve quality is too late. It does not improve quality, nor does it guarantee quality. The quality, good or bad, is already in the product. Mass inspection is unreliable, costly, and ineffective (Deming, 1982).
+
+Split responsibility also means nobody is responsible (Deming, 1982). If the quality is the sole responsibility of the Quality Engineer, it tends to become a "throw it over the wall". Quality Engineers are expected to catch the quality issues. Oftentimes, the opposite happens. Quality decreases. A similar behaviour occurs with blocking code reviews, security gating, or when the Ops team does the IT operations.
 
 Quality comes from [*relentless continuous improvement*](#pursue-continuous-improvement-relentlessly) of the delivery process (Deming, 1982).
 
@@ -109,7 +115,7 @@ Building on foundations known to be sound, follows one practice: [*Build Only On
 
 ### Work in Small Batches
 
-Reducing batch sizes represents a compelling opportunity. Following [Little's Law](https://en.wikipedia.org/wiki/Little%27s_law), it reduces lead time and thus time to market, and the Cost of Delay. Consequently, as lead time is shortened, feedback is accelerated. Because we now have smaller batch sizes, we are less exposed to changes, and as such, we reduce risks because the consequences of an error are much smaller. Smaller batch sizes reduce overhead. With Continuous Delivery, we can reduce the cost of repetitive transactions caused by many small batches. Finally, because feedback is accelerated, we improve efficiencies (Reinertsen 2009).
+Reducing batch sizes represents a compelling opportunity. Following [Little's Law](https://en.wikipedia.org/wiki/Little%27s_law), it reduces lead time and thus time to market, and the [Cost of Delay](https://blackswanfarming.com/cost-of-delay/). Consequently, as lead time is shortened, feedback is accelerated. Because we now have smaller batch sizes, we are less exposed to changes, and as such, we reduce risks because the consequences of an error are much smaller. Smaller batch sizes reduce overhead. With Continuous Delivery, we can reduce the cost of repetitive transactions caused by many small batches. Finally, because feedback is accelerated, we improve efficiencies (Reinertsen 2009).
 
 Large batches inherently lower motivation and urgency. It demotivates people by delaying feedback. Large batches dilute responsibility. Ultimately, it leads to risk avoidance and accordingly disables innovation. Finally, large batches attract even larger batches (Reinertsen 2009).
 
@@ -149,7 +155,7 @@ Again, to succeed, it is invaluable that everyone from the team is involved (Far
 
 ### Trust, but Verify
 
-This principle is not mentioned in the Continuous Delivery book. However, I find it particularly imperative as it constitutes the essence for enabling safety, courage, and [Accountability as a Team](#accountable-as-a-team-for-the-delivery-process), which are all required to [Pursue Continuous Improvement relentlessly](#pursue-continuous-improvement-relentlessly).
+This principle is not mentioned in the Continuous Delivery book. However, I find it particularly imperative as it constitutes the essence for enabling safety, courage, and [Accountability as a Team](#accountable-as-a-team-for-the-delivery-process), which are all required to [Build Quality In](#build-quality-in) and [Pursue Continuous Improvement relentlessly](#pursue-continuous-improvement-relentlessly).
 
 It is the lack of trust that has initiated all sorts of unnecessary, wasteful activities (such as blocking code reviews, quality gates, security reviews, change approval boards, biannual releases, etc.) to the process of getting code from Version Control into the hands of the users, which reduce feedback, impact quality, create fatigue, burnout and disengagement, slow down delivery, and finally bring organisations to a halt without them noticing it. Only to create some sort of sense of control. Not true control, just a sense.
 
@@ -189,7 +195,7 @@ Together with accountability, it fosters a culture of openness, experimentation,
 
 Bring the pain forward (Farley and Humble 2011).
 
-When integrating software is hard, do it on every commit, requiring the [*Continuous Integration*](#continuous-integration) foundation.
+When integrating software is hard, do it on every commit, with the [*Continuous Integration*](#continuous-integration) foundation.
 
 When testing is painful, that only occurs before a release, do not leave testing to the end. Testing is not a phase! But [*Build Quality In*](#build-quality-in) by adopting the [*Continuous Testing*](#continuous-testing) foundation, from the start. Having said that, even with *Continuous Testing*, testing can still be painful due to arduous setups to reach a state where testing can start, or a lack of observability to see what is happening inside the system, or bumping into permission issues. This requires [*Continuous Improvement*](#pursue-continuous-improvement-relentlessly) to remove all of these blockers.
 
@@ -255,7 +261,7 @@ On the other hand, observability is testing too, and also exploratory in nature.
 
 Continuous Testing is evidently more than only automated tests. We cannot rely solely on automated tests. Teams attempted that in the 2000s, with the rise of automated testing frameworks such as xUnit, among others. It did not work out well. Quality problems still arose. Some issues [can simply not be detected with 100% coverage]({% post_url 2022-03-19-the-fallacy-of-the-100%-code-coverage %}). Automated testing is excellent for guiding design, revealing when a feature is complete, and a substitute for manual regression testing, i.e. the known knowns. It will not uncover faults of omission or unexpected user behaviour, to name a few, the unknowns. As expressed earlier, it calls for a multifaceted testing strategy that encompasses both manual and automated testing. Accordingly, manual testing is an invaluable factor. But it should never be a gate.
 
-Though when implementing Continuous Delivery, we have to [*Have A Vast Amount of High-Quality Automated Tests*]({% post_url 2022-09-28-the-practices-that-make-continuous-integration-building %}#practice-13-have-a-vast-amount-of-high-quality-automated-tests) on top of the manual testing. It ensures we create multiple feedback loops to deliver high-quality software to users more frequently, reliably and sustainably. The key pattern which connects these feedback loops is the [*Deployment Pipeline*](#deployment-pipeline).
+Though when implementing Continuous Delivery, we have to [*Have A Vast Amount of High-Quality Automated Tests*]({% post_url 2022-09-28-the-practices-that-make-continuous-integration-building %}#practice-13-have-a-vast-amount-of-high-quality-automated-tests) on top of the manual testing. It ensures we create multiple feedback loops to deliver high-quality software to users more frequently, reliably and sustainably (Farley and Humble 2011). The key pattern which connects these feedback loops is the [*Deployment Pipeline*](#deployment-pipeline).
 
 ## One Pattern
 
@@ -263,7 +269,7 @@ Though when implementing Continuous Delivery, we have to [*Have A Vast Amount of
 
 Some call it CICD-pipeline, some DevOps pipeline, but the true name of the pattern is manifestly the *Deployment Pipeline* (Farley 2007, Farley and Humble 2011).
 
-One of the rare occasions in IT where the factory metaphor applies is the technology value stream, because it is a homogenous process where every step is deterministic. The Deployment Pipeline is sort of an assembly line, a conveyor belt. It is the automated manifestation, consisting of several stages, to get software out of Version Control, test the software, package the software, run additional tests and ultimately bring it into the hands of the users in production.
+One of the rare occasions in IT where the factory metaphor applies is the technology value stream, because it is a homogenous process where every step is deterministic, much like an assembly line. The Deployment Pipeline is some sort of an assembly line, a conveyor belt. It is the automated manifestation, consisting of several stages, to get software out of Version Control, test the software, package the software, run additional tests and ultimately bring it into the hands of the users in production.
 
 ![Deployment Pipeline](/images/what-is-continuous-delivery/deployment-pipeline.jpg)
 
@@ -277,7 +283,9 @@ The Deployment Pipeline comprises several stages. Some are automated, others are
 
 Some stages will have automatic thresholds. For instance, when an automated test fails or a vulnerability is found, the stage will turn red and reject the Release Candidate. Other stages require human intervention to evaluate the results, such as for load or performance testing, where it is difficult to define a distinct baseline.
 
-The stages at the start of the Deployment Pipeline are fast. As we progress in the Deployment Pipeline, the stages become slower. We prioritise the fast stages first to accelerate feedback. That is the reason we execute the fast Unit Tests in the first [*Commit Build*](#commit-build) stage and only execute the slower Acceptance Tests in a later stage. Note that the *Commit Build* serves as a *Commit Gate*, which frees engineers to move on with new tasks (Farley 2007).
+The stages at the start of the Deployment Pipeline are fast. As we progress in the Deployment Pipeline, the stages become slower. We prioritise the fast stages first to accelerate feedback. That is the reason we execute the fast Unit Tests in the first [*Commit Build*](#commit-build) stage and only execute the slower Acceptance Tests in a later stage.
+
+Note that the *Commit Build* serves as a *Commit Gate*. Once it passes, it frees engineers to move on with new tasks (Farley 2007).
 
 Because the first stages are fast, they are also environment-neutral. Where Automated Acceptance Tests and Load Testing need to happen in a production-like environment. By contrast, Exploratory Testing can, as part of a Continuous Testing mindset, already occur in an early stage in an environment-neutral setting and can also happen again in a production-like environment or even production using different test charters.
 
@@ -305,11 +313,11 @@ Delivery systems based on recompiling code and rebuilding binary artefacts for e
 
 This rebuilding antipattern violates two principles: [*Create a Repeatable, Reliable, Deterministic, and Efficient Process for Releasing Software*](#create-a-repeatable-reliable-deterministic-and-efficient-process-for-releasing-software) and [*Build on Foundations Known to be Sound*](#build-on-foundations-known-to-be-sound).
 
-Rebuilding violates *Create a Repeatable, Reliable, Deterministic, and Efficient Process for Releasing Software*, as rebuilding takes time. Also, every rebuild requires retesting. This quickly becomes a lengthy process, with long lead times that come along with a Cost of Delay. Not retesting defies determinism and reliability.
+Rebuilding violates *Create a Repeatable, Reliable, Deterministic, and Efficient Process for Releasing Software*, as rebuilding takes time. Also, every rebuild requires retesting. This quickly becomes a lengthy process, with long lead times that come along with a [Cost of Delay](https://blackswanfarming.com/cost-of-delay/). Not retesting defies determinism and reliability.
 
 It disregards the *Build on Foundations Known to be Sound*, as it enables the risk that some changes have been introduced between the creation and subsequent testing and the release of the binary artefact.
 
-Therefore, binary artefacts should be built only once, by the [*Commit Build*](#commit-build), to ensure that the binary which gets deployed into production is exactly the same as the one that went through the Automated Acceptance Testing stage, and any other testing stage that may well be present. Each binary artefact is tagged with the version information of the source code they were built from. The tag is a Release Candidate identifier or commonly known as a version number (Farley 2007). Today, this could be a combination of commit-SHA and built timestamp (or commit timestamp). This ensures traceability between the binary and the source code version that triggered the build.
+Therefore, binary artefacts should be built only once, by the [*Commit Build*](#commit-build) stage, to ensure that the binary which gets deployed into production is exactly the same as the one that went through the Automated Acceptance Testing stage, and any other testing stage that may well be present. Each binary artefact is tagged with the version information of the source code they were built from. The tag is a Release Candidate identifier, also commonly known as a version number (Farley 2007). Today, this could be a combination of commit-SHA and built timestamp (or commit timestamp). This ensures traceability between the binary and the source code version that triggered the build.
 
 This is the precise motive for [GitFlow](https://nvie.com/posts/a-successful-git-branching-model/) to be incompatible with Continuous Delivery. It forces a rebuild to deploy in production and release. With GitFlow, it is decisively impossible to reach Continuous Delivery.
 
@@ -317,7 +325,7 @@ This is the precise motive for [GitFlow](https://nvie.com/posts/a-successful-git
 
 It is key to use the same process to deploy to every environment, whether into testing environments or production, to ensure the build and deployment process has been tested effectively (Farley and Humble 2011).
 
-We will deploy frequently to the test environment, but less to production. The frequency of deployment is inversely related to the risk associated with each environment. We deploy less frequently to production than to test environments. Before deploying to production, we will have tested the deployment many times in the upstream environments to discard any possible errors.
+The frequency of deployment is inversely related to the risk associated with each environment. We will deploy frequently to the test environment, but less to production. Before deploying to production, we will have tested the deployment many times in the upstream environments to discard any possible errors.
 
 This implies we must use the same script and the same binary artefact to deploy to each environment. Of course, environments differ from each other. Surely, they will have different IP addresses, different database connections and other external services. Therefore, we separate binary artefacts and deploy scripts from configuration and keep the configuration outside (Humble et al. 2006) of the deploy script in configuration files [under Version Control](#version-control-everything), and secrets in vaults, also under Version Control.
 
@@ -332,6 +340,8 @@ To establish [rapid, repeatable, reliable](#create-a-repeatable-reliable-determi
 ## Closing
 
 As demonstrated, Continuous Delivery is another discipline where the lack of tooling is not the problem, as is [the case for Continuous Integration]({% post_url 2020-03-23-continuous-integration-is-not-a-tooling-problem %}). To be successful with Continuous Delivery, and henceforth have a performant, reliable, deterministic IT release process, calls for an understanding of the principles, the foundations, the one pattern and the practices.
+
+Continuous Delivery is essentially about applying the ideas from Continuous Integration to the entire IT delivery and release process.
 
 Despite everything that has been said, where do we start? Again, context matters. The journey that worked for one organisation will not necessarily work for another organisation. With the [Improvement Kata](http://www-personal.umich.edu/~mrother/The_Improvement_Kata.html) we consider the organisation's context. We start by defining a vision. Then we iterate towards the vision using the [PDCA-cycle](https://en.wikipedia.org/wiki/PDCA) together with [Theory of Constraints](https://www.tocinstitute.org/theory-of-constraints.html) to find the bottleneck, and thus identify the experiments most likely to succeed. This has been outlined in the case study [From bi-annual to fortnightly releases in 4 months for 15 teams and a single monolith]({% post_url 2019-09-06-from-bi-annual-to-fortnightly-releases-in-4-months-for-15-teams-and-a-single-monolith %}).
 
@@ -351,20 +361,21 @@ Once we fathom all of that, the rest will follow, naturally. It becomes a virtuo
 
 ## References
 
+- [Out of the Crisis](https://app.thestorygraph.com/books/b79ebdec-b267-4585-9af4-b5b68b30f5e5), Edwards Deming, 1982
+- [A typology of organisational cultures](https://pmc.ncbi.nlm.nih.gov/articles/PMC1765804/pdf/v013p0ii22.pdf), Westrum, 2004
 - [The Deployment Production Line](https://dannorth.net/profile/deployment_production_line.pdf), Jez Humble, Daniel North, Chris Read, 2006
 - [The Deployment Pipeline](https://continuousdelivery.com/wp-content/uploads/2010/01/The-Deployment-Pipeline-by-Dave-Farley-2007.pdf)
-- [Continuous Delivery: Reliable Software Releases Through Build, Test, and Deployment Automation](https://app.thestorygraph.com/books/77eb0975-4194-42e7-9db3-005d4250940f), Dave Farley, Jez Humble, 2011
-- [The Role of Continuous Delivery in IT and Organizational Performance](https://www.researchgate.net/publication/302567338_THE_ROLE_OF_CONTINUOUS_DELIVERY_IN_IT_AND_ORGANIZATIONAL_PERFORMANCE), Nicole Forsgren, PhD, Jez Humble, 2016
-- [Accelerate: Building and Scaling High Performing Technology Organizations](https://app.thestorygraph.com/books/0baa7f2a-3f3f-4752-9d81-0434117d0648), Nicole Forsgren, PhD, Jez Humble, Gene Kim, 2018
-- [Out of the Crisis](https://app.thestorygraph.com/books/b79ebdec-b267-4585-9af4-b5b68b30f5e5), Edwards Deming, 1982
 - [The Principles of Product Development Flow](https://app.thestorygraph.com/books/63ab42fd-34e7-40e3-b86e-5be510f5c119), Donald Reinertsen, 2009
-- [Measuring Continuous Delivery](https://leanpub.com/measuringcontinuousdelivery), Steve Smith, 2020
+- [Improvement Kata](http://www-personal.umich.edu/~mrother/The_Improvement_Kata.html), Mike Rother, 2009
+- [Continuous Delivery: Reliable Software Releases Through Build, Test, and Deployment Automation](https://app.thestorygraph.com/books/77eb0975-4194-42e7-9db3-005d4250940f), Dave Farley, Jez Humble, 2011
+- [The chemistry of enthousiasm](https://www.bain.com/insights/the-chemistry-of-enthusiasm/), Dominico Azzarello, Frédéric Debruyne, Ludovica Mottura, 2012
+- [The Role of Continuous Delivery in IT and Organizational Performance](https://www.researchgate.net/publication/302567338_THE_ROLE_OF_CONTINUOUS_DELIVERY_IN_IT_AND_ORGANIZATIONAL_PERFORMANCE), Nicole Forsgren, PhD, Jez Humble, 2016
 - [Continuous Testing in DevOps](https://danashby.co.uk/2016/10/19/continuous-testing-in-devops/), Dan Ashby, 2016
+- [Accelerate: Building and Scaling High Performing Technology Organizations](https://app.thestorygraph.com/books/0baa7f2a-3f3f-4752-9d81-0434117d0648), Nicole Forsgren, PhD, Jez Humble, Gene Kim, 2018
+- [Measuring Continuous Delivery](https://leanpub.com/measuringcontinuousdelivery), Steve Smith, 2020
 - [The effects of low trust in organisations](https://www.winningtemp.com/blog/the-effects-of-low-trust-in-organisations), Rahat Joshi, 2023
 - [5 Hidden Consequences Of Leaders Not Trusting Employees](https://www.forbes.com/sites/katewieczorek/2025/11/30/5-hidden-consequences-of-leaders-not-trusting-employees/), Kate Wieczorek, 2025
-- [The chemistry of enthousiasm](https://www.bain.com/insights/the-chemistry-of-enthusiasm/), Dominico Azzarello, Frédéric Debruyne, Ludovica Mottura, 2012
-- [Improvement Kata](http://www-personal.umich.edu/~mrother/The_Improvement_Kata.html), Mike Rother, 2009
-- [From bi-annual to fortnightly releases in 4 months for 15 teams and a single monolith]({% post_url 2019-09-06-from-bi-annual-to-fortnightly-releases-in-4-months-for-15-teams-and-a-single-monolith %})
+- [From bi-annual to fortnightly releases in 4 months for 15 teams and a single monolith]({% post_url 2019-09-06-from-bi-annual-to-fortnightly-releases-in-4-months-for-15-teams-and-a-single-monolith %}), Thierry de Pauw
 
 ## Definitions
 
