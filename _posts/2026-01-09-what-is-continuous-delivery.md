@@ -12,6 +12,10 @@ Any time an organisation tells me with great confidence that they *do Continuous
 
 ---
 
+*Update Jan 10th, 2026: Clarify that the release cadence is defined by market demand.*
+
+---
+
 Why still explain Continuous Delivery in 2026? Everybody does it, don't they? But, do they really do? Is that really the case?
 
 Over the years, I have interviewed a considerable number of technology organisations in the context of technology due diligence or observed technology organisations in the context of consulting. Many shared that they have Continuous Delivery in place. But, only a few really practised Continuous Delivery. There is a lot of misunderstanding about what Continuous Delivery actually is and what it entails.
@@ -23,6 +27,14 @@ Continuous Delivery is a holistic approach to IT delivery. It is a set of princi
 Nothing here is new. Details were already outlined in the 2006 paper [The Deployment Production Line](https://dannorth.net/profile/deployment_production_line.pdf), the 2007 article [The Deployment Pipeline](https://continuousdelivery.com/wp-content/uploads/2010/01/The-Deployment-Pipeline-by-Dave-Farley-2007.pdf), and later in the 2011 book [Continuous Delivery: Reliable Software Releases Through Build, Test, and Deployment Automation](https://app.thestorygraph.com/books/77eb0975-4194-42e7-9db3-005d4250940f). But, as it seems, [many engineers do not read books](https://blog.codinghorror.com/programmers-dont-read-books-but-you-should/) (... and maybe many leaders do neither). Or they do read books, but have gone over the importance of the fundamentals, so they went looking for the cutting-edge. However, in all honesty, cutting-edge will not make it without mastering the boring basics that make the difference.
 
 The basics, and the key to success, are about a mindset of excellence, both organisational and technological, of experimentation, of openness, and finally, that it will be alright, in the end, whatever we try.
+
+> It's okay, it's okay, it's okay, it's okay
+>
+> If you're lost, we're all a little lost and it's alright
+>
+> It's alright, it's alright, it's alright, it's alright
+>
+> -- Nightbride, It's OK
 
 We have to understand that Continuous Delivery is not an endgame. It is not a project we implement once, and we are done. It is an exercise in continuous improvement that will never be over.
 
@@ -200,6 +212,8 @@ When integrating software is hard, do it on every commit, with the [*Continuous 
 When testing is painful, that only occurs before a release, do not leave testing to the end. Testing is not a phase! But [*Build Quality In*](#build-quality-in) by adopting the [*Continuous Testing*](#continuous-testing) foundation, from the start. Having said that, even with *Continuous Testing*, testing can still be painful due to arduous setups to reach a state where testing can start, or a lack of observability to see what is happening inside the system, or bumping into permission issues. This requires [*Continuous Improvement*](#pursue-continuous-improvement-relentlessly) to remove all of these blockers.
 
 When releasing is laborious and distressing, shift from releasing once a year to biannually, to quarterly, to monthly, weekly, and eventually daily or even multiple times per day. This builds on the principle to [*Automate the Right Things*](#automate-the-right-things), and the practice of [*Deploying the Same Way to Every Environment*](#deploy-the-same-way-to-every-environment).
+
+At the same time, the chosen release cadence must be a business decision. Continuous Delivery has a dynamic success threshold. An organisation is said to be in a state of Continuous Delivery when its IT services have the required stability and throughput to satisfy market demand. If releasing monthly satisfies demand, we are in a state of Continuous Delivery. That does not mean that, internally, we should not produce Release Candidates daily. We definitely should, for every commit!
 
 When writing documentation is tedious, do it immediately when implementing the feature or the architectural change. Make the documentation, release notes, [runbooks](https://www.pagerduty.com/resources/automation/learn/what-is-a-runbook/), and [decision records](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions.html) part of the [Definition of Done](https://www.scrum.org/resources/what-definition-done).
 
