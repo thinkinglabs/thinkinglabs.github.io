@@ -1,6 +1,6 @@
 ---
 layout: article
-title: On the Efficiency of Pair Programming
+title: On the Effectiveness of Pair Programming
 author: Thierry de Pauw
 category: articles
 tags: [ Extreme Programming, Pair Programming, Flow ]
@@ -108,8 +108,6 @@ I wouldn't say, they do not understand how development works.
 I would say, they do not understand the economics of software delivery.
 They only see the obvious costs of the new thing and do not see the hidden costs of what is common to them.
 
-
-
 ## Bibliography
 
 - [Pair Programming Illuminated](https://www.goodreads.com/en/book/show/1762375), Laurie Williams and Robert Kessler
@@ -117,5 +115,3 @@ They only see the obvious costs of the new thing and do not see the hidden costs
 - [Effectiveness or Efficiency: Agile Shouldn't Feel Like a Fight](https://www.infoq.com/news/2019/09/agile-effectiveness-efficiency/), Ben Linders interviewing Tony O’Halloran
 - [The effectiveness of pair programming: A meta-analysis](https://www.sciencedirect.com/science/article/abs/pii/S0950584909000123)
 - [Pro Pair Programming](https://medium.com/@TonyBologni/pro-pair-programming-763622b2bb7), Anton Stöckl
-
-
