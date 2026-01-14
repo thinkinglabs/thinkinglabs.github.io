@@ -6,7 +6,7 @@ category: articles
 tags: [ Extreme Programming, Pair Programming, Flow ]
 ---
 
-A while back, when Twitter was still a thing, someone tried to make a point for code reviews being a better alternative to share knowledge over [Pair Programming](http://www.extremeprogramming.org/rules/pair.html). The main arguments put forward were economics, poor feedback and least-common-denominator performance. Let me debunk that.
+A while back, when Twitter was still a thing, someone attempted to make the case for code reviews as a better alternative to sharing knowledge over Pair Programming. The main arguments put forward were economics, poor feedback and least-common-denominator performance.  Let me debunk that.
 
 ---
 
