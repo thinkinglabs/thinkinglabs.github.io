@@ -11,18 +11,22 @@ Over the years, numerous people paraphrased [Conway's Law](https://www.melconway
 
 ---
 
+This is a revised version of the original [Shades of Conway's Law article from 2021]({% post_url 2021-05-07-shades-of-conways-law %}).
+
+---
+
 Back in 1968, Melvin Conway formulated the following hypothesis:
 
 > Organisations which design systems are constrained to produce designs which are copies of the communication structures of these organisations.
 >
-> -- [How do Committees Invent?](https://www.melconway.com/Home/Committees_Paper.html), Melvin Conway, 1968
+> -- Melvin Conway, [How do Committees Invent?](https://www.melconway.com/Home/Committees_Paper.html), 1968
 
 ![Conway's Law, Credit Tomasz Tunguz — Venture Capitalist at RedPoint](/images/shades-of-conways-law/conways_law_cornet.png)
 <center><i>Source: <a href="https://empathy.guru/2018/10/14/im-not-the-only-person-interested-in-conways-law/">I’m Not the Only Person Interested in Conway’s Law</a>, Chuck Pezeshki</i></center><br/>
 
 Essentially, this means, the organisation and the system keep each other in balance. Modifying the organisation will have an impact on the system. Modifying the system will have consequences for the organisation. Not considering that will cause friction in the organisation or the system. That may have dramatic consequences from a design point of view.
 
-To be competitive as an organisation in the market, and to effectively design the right thing our customers expect us to deliver, we'd better understand and take advantage of this.
+To be competitive as an organisation in the market, and to effectively design the right thing our customers expect us to deliver, we better understand and take advantage of this.
 
 Note that when Melvin Conway mentions a system he really means this in the brought sense. This is not limited to only software or IT systems. This can be buildings, planes, machinery, vehicles, but also engines or public transportation systems, communication systems, …, anything.
 
@@ -46,7 +50,7 @@ In Organisation Design we have:
 
 > ... differences in technical functions, or technologies, cause significant differences among organisations ...
 >
-> – Organizations in Action, Thompson, 1967, p12
+> -- Thompson, Organizations in Action, 1967, p12
 
 When reading Thompson I realised that Thompson was foundational for organisation design. Before Thompson there were two lines of thoughts:
 
@@ -62,7 +66,7 @@ According to Thompson **an organisation is not either closed or open, it is both
 >
 > As the amount of uncertainty increases [...] the organisation must adopt integrating mechanisms ...
 >
-> -- Organization Design: An Information Processing View, Galbraith, 1974
+> -- Galbraith, Organization Design: An Information Processing View, 1974
 
 Galbraith introduces the following proposition:
 
@@ -90,7 +94,7 @@ In Product Design we have:
 
 > We may therefore picture the process of form-making as the action of a series of subsystems, all interlinked, yet sufficiently free of one another to adjust independently in a feasible amount of time.
 >
-> -- Notes on the Synthesis of Form, Alexander, 1964, p41
+> -- Alexander, Notes on the Synthesis of Form, 1964, p41
 
 Notes on the Synthesis of Form is all about how to optimise the process of design, i.e. the process of inventing physical things. In a way, we try to reduce the gap between the designer’s small capacity and the great size of their task.
 
@@ -106,7 +110,7 @@ Parnas comes to a similar conclusion.
 
 > ... separate groups would work on each module with little need for communication ...
 >
-> -- On the criteria to be used in Decomposing Systems into Modules, Parnas, 1972
+> -- Parnas, On the criteria to be used in Decomposing Systems into Modules, 1972
 
 Parnas is interesting as *On the criteria to be used in Decomposing Systems into Modules* is the number one paper from a list of top-10 papers everyone in the software industry should read.
 
@@ -135,7 +139,7 @@ Both communities, Organisation Design and Product Design, take their inspiration
 > ...
 > In their dynamics, hierarchies have a property, near-decomposability, … [It] simplifies the description of a complex system, and makes it easier to understand ...
 >
-> The Architecture of Complex Systems, Simon, 1962
+> Simon, The Architecture of Complex Systems, 1962
 
 Simon introduces the idea of partitioning a complex problem, complex systems in a series of linked sub-problems to contain complexity. Very much alike Thompson's organisation is both closed and open, Galbraith's organisation strategies to manage uncertainty, Alexander's decomposition of the process of form-making, i.e. designing, in sub-problems and Parnas' concept of information hiding.
 
@@ -228,13 +232,13 @@ Over the decades several people paraphrased Conway's Law in diverse ways. Every 
 
 But, sometimes they give the impression to contradict each other. Although, in the end, they all come to the same conclusion. Which be times can be particularly confusing.
 
-In 1979, Yourdon and Constantine rephrased Conway's Law more firmly.
+In 1979, Yourdon and Constantine rephrased Conway's Law more firmly ...
 
-**Systems are isomorphic to the organisation.**
+**Systems are isomorphic to the Organisation.**
 
-> The structure of any system designed by an organization is isomorphic to the structure of the organization.
+> The structure of any system designed by an organization is **isomorphic** to the structure of the organization.
 >
-> -- [Structured Design](https://www.goodreads.com/book/show/946145.Structured_Design), Edward Yourdon and Larry L. Constantine, 1979, p363
+> -- Edward Yourdon and Larry L. Constantine, [Structured Design](https://www.goodreads.com/book/show/946145.Structured_Design), 1979, p363
 
 > **isomorphic** adjective
 >
@@ -246,7 +250,7 @@ Isomorphic: being the same or similar in structure (or shape or form)
 
 It pushes the idea that any system design produced by an organisation will be shaped according to the organisation structures. This means the organisation drives the system design.
 
-![The organisation drives the system design](/images/shades-of-conways-law/org-drives-the-system.jpg)
+![The Organisation drives the System design](/images/shades-of-conways-law/org-drives-the-system.jpg)
 
 This has an interesting consequence: If two subsystems are designed by two different design teams who do not communicate with each other. By definition, the subsystems will not communicate with each other.
 
@@ -256,7 +260,7 @@ But there is also a mathematical definition for isomorphism.
 
 > 2\. MATHEMATICS
 >
-> an isomorphism is a structure-preserving mapping between two structures of the same type that can be reversed by an inverse mapping.
+> an isomorphism is a **structure-preserving mapping** between two structures of the same type that can be reversed by an inverse mapping.
 >
 > source: Wikipedia
 
@@ -264,7 +268,7 @@ It is a structure-preserving mapping between two structures.
 
 > 3\. MATHEMATICS
 >
-> an isomorphism is a one-to-one correspondence (mapping) between two sets that preserves binary relationships between elements of the sets.
+> an isomorphism is a **one-to-one** correspondence (mapping) between two sets that preserves binary relationships between elements of the sets.
 >
 > source: Britannica
 
@@ -278,7 +282,7 @@ Now, this is a forceful expression of the Law, way stronger than Conway’s own 
 
 > Speaking as a mathematician might, we would say that there is a homomorphism from the linear graph of a system to the linear graph of its design organization.
 >
-> -- [How do Committees Invent?](https://www.melconway.com/Home/Committees_Paper.html), Melvin Conway, 1968
+> -- Melvin Conway, [How do Committees Invent?](https://www.melconway.com/Home/Committees_Paper.html), 1968
 
 > **homomorphism** noun
 >
@@ -300,4 +304,118 @@ That is why COBOL organisations find it very difficult to do anything approachin
 
 Because this is not a one-to-one mapping, a homomorphism from an organisation to a system does not require that every part of the organization is mapped onto a system component.
 
-This means, **a single team can be responsible for more than one services**.
+This means, **a single team can be responsible for more than one service**.
+
+In 1996, Eric Raymond, known from his essay [The Cathedral and the Bazaar](http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/index.html), 1999. In this essay, he already argued what Baldwin confirmed: open source software is inherently more modular than commercial software.
+
+Anyway, in 1996, Raymond restated the law as follows ...
+
+**Organisation and Systems are congruent**.
+
+> The organization of the software and the organization of the software team will be congruent.
+>
+> -- Eric Raymond, [The New Hacker's Dictionary (3rd ed.)](https://www.gutenberg.org/files/3008/3008-h/3008-h.htm), 1996, p124
+
+> **congruent** adjective
+>
+> 1\.  in agreement or harmony.
+>
+> 2\. GEOMETRY
+>
+> identical in form; coinciding exactly when superimposed
+>
+> source: Oxford Languages
+
+This reinforces the idea of the Homomorphic force, the structure preserving mapping between the structure of the organisation and the structure of the system architecture.
+
+Conway exemplifies the homomorphic force in his paper using a COBOL and ALGOL compiler example.
+
+A contract research organization consisting of eight people was asked to design a COBOL and an ALGOL compiler. After some initial estimates about difficulty and time, they assigned five people to the COBOL compiler and three people to the ALGOL compiler. The resulting COBOL compiler ran in five phases, the ALG0L compiler ran in three.
+
+This example is better known as Eric Raymond's "*If you have 4 groups working on a compiler, you’ll get a 4-pass compiler*".
+
+That said, the larger an organization becomes, the less flexibility the organisation shows, therefore the more pronounced are the effects of the homomorphic force. However, these effects of the homomorphic force can also be expressed differently ... with the **Thousand Module Effect**.
+
+Yourdon and Constantine mention this story ...
+
+An engineer tasked to write an application on a small 12-bit minicomputer. They estimated the work to be six months to complete, which was deemed unacceptable by their manager. When the manager assigned another engineer to the project, in the hope of speeding things up, the original engineer responded: but two engineers will not fit in there!
+
+> an informal observation that if 1,000 programmers are assigned to develop a system before a structural design has been completed, then there will be at least 1,000 modules in the resulting system.
+>
+> -- Edward Yourdon and Larry L. Constantine, Structured Design, 1979, p363
+
+If we assign 1000 engineers to the design of a system before a formal design happened, chances are we will end up with 1000 modules in the resulting system because two engineers will not fit in one module.
+
+This is a variation of **Mealy’s Law**.
+
+> There is an incremental person who, when added to a project, consumes more energy [...] than [they] make available. Thus, beyond a certain point, adding [people] slows progress in addition to increasing the cost.
+>
+> -- Edward Yourdon and Larry L. Constantine, Structured Design, 1979, p363
+
+Now, Mealy's Law is totally new to me. I never heard about it before. When we google for it, we will not find anything.
+
+Mealy’s Law is just an example of the [Mythical Man-Month](https://app.thestorygraph.com/books/8215ee95-e164-4036-8959-764cc42caaf8) or **Brooke’s Law**: "*Adding people to a late project makes it more late*".
+
+But look, what is even more interesting, is that Melvin Conway already made the exact same observation seven years before the Mythical Man-Month. It is there, in the last paragraph of Conway’s paper.
+
+> There is need for a philosophy of system design management which is **not based on the assumption that adding manpower simply adds to productivity**.
+>
+> -- Melvin Conway, How Do Committees Invent?, 1968
+
+There is need for a philosophy of system design management which is not based on the assumption that adding manpower simply adds to productivity.
+
+But wait, there is more. Melvin Conway concludes the paragraph ... with the observation that some basic question should be answered regarding the value of people and communication before evolving our system-building techniques with confidence.
+
+> [This] promises to unearth basic questions about value of resources and techniques of communication which will need to be answered before our system-building technology can proceed with confidence.
+>
+> -- Melvin Conway, How Do Committees Invent?, 1968
+
+Look how everything is tied together. We evolved from the Homomorphic Force, over the Thousand Module Effect, which landed us with Mealy's Law, the Mythical-Man Month and Brooke's Law, back to Conway's paper.
+
+In 2004, Coplien and Harrison reformulated Conway’s Law by stating ...
+
+**The Organisation must be compatible with the System**.
+
+> If the parts of an organization (e.g., teams, departments, or subdivisions) do not closely reflect the essential parts of the product, or if the relationships between organizations do not reflect the relationships between product parts, then the project will be in trouble ...
+>
+> Therefore: Make sure the organization is **compatible** with the product architecture.
+>
+> -- James Coplien & Neil Harrison, [Organisational patterns of agile software development](https://www.goodreads.com/book/show/756250.Organizational_Patterns_of_Agile_Software_Development), 2004, p246
+
+> **compatible** adjective
+>
+> (of two things) able to exist or occur together without problems or conflict.
+>
+> source: Oxford Languages
+
+This is interesting because Yourdon and Constantine said the system is isomorphic to the organisation, so the organisation drives the system design. Where here Coplien and Harrison conclude the opposite: It is more likely that the system architecture drives the organisation. If they are not in harmony, the system will impose a structure on the organisation.
+
+![The System imposes a structure on the Organisation](/images/shades-of-conways-law/system-drives-the-org.jpg)
+
+Whereas Raymond stays in the middle: organisation and system are congruent, in agreement or in harmony, identical in form and shape and size.
+
+But wait, this whole contradiction between Yourdon and Constantine, on the one end, and Coplien and Harrisson, on the other end, can also be interpreted differently.
+
+At the start, it is the organisation that imposes its will on the system architecture, Yourdon and Constantine.
+
+> If the architecture of the system and the architecture of the organization are at odds, the architecture of the organization wins.
+>
+> -- Ruth Malan, [Conway's Law](https://web.archive.org/web/20181022001505/http://traceinthesand.com:80/blog/2008/02/13/conways-law/), Feb 13, 2008
+
+The organisation is a force that acts on the (initial) design of a system, i.e. the greenfield design. The organisation structure limits the possible system designs that are at our disposal. This is also what Conway says at the start of his paper. The very act of organising means that certain design decisions have already been made.
+
+> “the very act of organizing a design team means that certain design decisions have already been made”
+>
+> -- Melvin Conway, How Do Committees Invent?, 1968
+
+But once the system grows, the design matures and the system becomes long-lived; gained expressions in couplings that constrain,it is now the system design that is a force on the organisation, Coplien and Harrison.
+
+This closes the option space we have for designing the structure of our organisation.
+
+This brings us to the Reverse Conway’s Law
+
+## Reverse Conway's Law
+
+> Organisations with long-lived systems will adopt a structure modelled on the system.
+>
+> -- Allan Kelly, [Continuous Delivery and Conway’s Law](https://thinkinglabs.io/notes/2021/05/13/continuous-delivery-and-conways-law-allan-kelly.html), 2014
