@@ -632,3 +632,97 @@ Any time we release our product, we ship our organisation, together with its str
 > -- Michael Feathers at CraftConf 2014
 
 ## Conclusion
+
+## Managers are Architects
+
+> Another implication of Conway’s Law is that if we have managers deciding on teams, and deciding which services will be built, by which teams, we implicitly have managers deciding on the system architecture.
+>
+> -- Ruth Malan, Conway’s Law, 2008
+
+So if managers decide on teams, which services to be built by which teams, we have managers deciding on system architecture and as such become architects
+
+But the inverse is also true …
+
+## Architects are Managers
+
+> When I think of the really good technical people I know ... to solve technical problems requires them to work outside of the technical domain
+>
+> -- Allan Kelly, Return to Conway’s Law, 2006
+
+People who claim to be an *Architect* need both technical and social skills. They need to understand both the people and the work within the socio-technical framework. They need to have a say in the organisational structures. Therefore, they have to be a manager too.
+
+Anyone who makes decisions about the shape and placement of engineering teams is strongly influencing the systems architecture. This also suggests that even HR may be strongly shaping software architecture by deciding how teams are composed and interrelate ([Accidental Architects - how HR designs software systems]({% post_url 2022-02-11-flowcon-accidental-architects-how-hr-designs-software-systems-matthew-skelton %}), Matthew Skelton).
+
+By now, it should be clear, that organisation design and system design are communicating vessels. Both need to be tackled together by the same informed group of people, i.e. managers *and architects*.
+
+## How to Cope with Conway's Law
+
+> Allan Kelly’s Advice
+>
+> Grow the team with the system. Small teams, small systems, piecemeal growth.
+>
+> Start as small as you can and grow as you need too.
+>
+> Don’t start thinking big.
+
+Start small.
+
+Delay staffing for as long as possible. Once we start adding staff, we are adding more communication structures to the organisation. We are adding more nodes to the hierarchy, and more nodes to the software. It grows the software. It changes the design of the software.
+
+Instead of that. Start with the smallest team possible. Get a small system working. Small teams, small systems. Grow the team with the system, as we need. That is how we can keep control on our system architecture.
+
+The bigger the team, the more the organisational structure will dictate our software structure. The harder it becomes to contain the software architecture.
+
+Do not start to think big! Once we start thinking big, we need to staff. Once we staff, systems grow and get out of control ... because of the *Thousand Module Effect*, *Mealy’s Law* and *Brooke's Law*. In the end, we need to keep all those people ~~busy~~ working.
+
+It is a hard sell to managers not to hire. That is counter intuitive.
+
+Start small! Probably slightly smaller than we think we need.
+
+That is all interesting. But, this is only about growing an organisation. This works for startups and scale ups. What about all those existing big corporations with their current entangled teams? How to solve that?
+
+Many will advocate the [*Inverse Conway Manoeuvre*](#inverse-conways-manoeuvre). As already said, that will not work for rigid, long-lived systems inside long-lived organisations because of the [*Reverse Conway’s Law*](#reverse-conways-law).
+
+I do think we need to re-architect both the organisation and the IT systems together. Still, if we change one, we have to change the other and vice-versa. This will have to happen in many, many more smaller increments to cope with the *Homomorphic Force*, that structure preserving mapping that is at the heart of Conway’s Law and that keeps everything in balance. Thus, we need to make small changes, and adapt. This will take a decent long time to get where we want to be.
+
+To cope with time, to stay focussed, I would adopt a continuous improvement framework like the [Improvement Kata](https://public.websites.umich.edu/~jmondisa/TK/The_Improvement_Kata.html) to create vision. Vision creates alignment for the whole organisation. We do this because of that. Because we want to achieve this thing in a far, far future.
+
+## Acknowledgement
+
+Ruth Malan and Adrian Cockcroft for reviewing an early draft.
+
+## Bibliography
+
+- [The Original 2021 Article: Shades of Conway's Law]({% post_url 2021-05-07-shades-of-conways-law %})
+- [The 2023 Talk: Shades of Conway's Law]({% post_url 2023-08-25-shades-of-conways-law %})
+- [The Architecture of Complexity](https://www2.econ.iastate.edu/tesfatsi/ArchitectureOfComplexity.HSimon1962.pdf), Simon, 1962
+- [The Causal Texture of Organizational Environments](http://www.moderntimesworkplace.com/archives/ericsess/sessvol3/GEMTRCAUp53.pdf), Emery and Trist, 1965
+- [Notes on the Synthesis of Form](https://monoskop.org/images/f/ff/Alexander_Christopher_Notes_on_the_Synthesis_of_Form.pdf), Alexander, 1964
+- [Organizations in Action: Social Science Bases of Administrative Theory](https://www.goodreads.com/book/show/2284827), Thompson, 1967
+- [How Do Committees Invent?](https://www.melconway.com/Home/Committees_Paper.html), Melvin Conway, 1968
+- [On the Criteria To Be Used in Decomposing Systems into Modules](https://www.win.tue.nl/~wstomv/edu/2ip30/references/criteria_for_modularization.pdf), Parnas, 1972
+- [Organization Design: An Information Processing View](http://strategy.sjsu.edu/www.stable/pdf/Galbraith,%20J%20R,%201974,%20Interfaces.%204%20pp%2028-36.pdf), Galbraith, 1974
+- [Structured Design](https://www.goodreads.com/book/show/946145.Structured_Design), Edward Yourdon and Larry L. Constantine, 1979
+- [The New Hacker's Dictionary (3rd ed.)](https://www.gutenberg.org/files/3008/3008-h/3008-h.htm), Eric Raymond, 1996
+- [Organisational patterns of agile software development](https://www.goodreads.com/book/show/756250.Organizational_Patterns_of_Agile_Software_Development), James Coplien & Neil Harrison, 2004
+- [The Misalignment of Product Architecture and Organizational Structure in Complex Product Development](http://users.ece.utexas.edu/~perry/education/382v-s08/papers/sosa.pdf), Sosa et al, 2004
+- [Identification of Coordination Requirements: Implications for the Design of Collaboration and Awareness Tools](https://www.cs.drexel.edu/~yfcai/CS680/Readings/Week8/Identification%20of%20Coordination%20Requirements.pdf), Cataldo 2006
+- [The Impact of Misalignment of Organization Structure and Product Architecture on Quality in Complex Product Development](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=5553ae01b690837f755cd2c91fa6a4b7fdec6345), Gokpinar et al, 2007
+- [Return to Conway's Law](https://www.allankellyassociates.co.uk/archives/1169/return-to-conways-law/), Allan Kelly, 2006
+- [Release It!](https://www.goodreads.com/book/show/1069827.Release_It_), Michael Nygard, 2007
+- [Conway's Law](https://web.archive.org/web/20181022001505/http://traceinthesand.com:80/blog/2008/02/13/conways-law/), Ruth Malan, 2008
+- [Dealing with creaky legacy platforms](http://jonnyleroy.com/2011/02/03/dealing-with-creaky-legacy-platforms/), Jonny LeRoy and Matt Simons, 2010
+- [Exploring the Duality between Product and Organizational Architecture: A Test of the “Mirroring” Hypothesis](https://www.hbs.edu/ris/Publication%20Files/08-039_1861e507-1dc1-4602-85b8-90d71559d85b.pdf), Baldwin, MacCormack, Rusnak, 2012
+- [Architecture without an end state](https://www.oreilly.com/content/michael-nygard-on-architecture-without-an-end-state/), Michael Nygard, 2012
+- [Sex in Title, and Other Stories](http://hintjens.com/blog:73), Pieter Hintjes, 2013
+- [Continuous Delivery and Conway’s Law]({% post_url 2021-05-13-continuous-delivery-and-conways-law-allan-kelly %}), Allan Kelly, 2014
+- [Predictive Models of Development Teams and the Systems They Build](https://sixty-north.com/blog/predictive-models-of-development-teams-and-the-systems-they-build), Rob Smallshire, 2014
+- [Conway’s Law: The DevOps Skeleton](https://www.slideshare.net/danslimmon/conways-law-the-skeleton-of-devops), Dan Slimmon, 2014
+- [Toward Simplifying Application Development in a Dozen Lessons](http://melconway.com/Home/pdf/simplify.pdf), Mel Conway, 2016
+- [The Mirroring Hypothesis: theory, evidence, and exceptions](https://www.hbs.edu/ris/Publication%20Files/Colfer%20Baldwin%20Mirroring%20Hypothesis%20Ind%20Corp%20Change-2016_8aa320ff-6aa6-42ef-b259-d139012faaf6.pdf), Baldwin and Colfer, 2016
+- [Toward Simplifying Application Development in a Dozen Lessons](https://melconway.com/Home/pdf/simplify.pdf), Melvin Conway, 2017
+- [Accelerate](https://www.goodreads.com/pl/book/show/35747076), Nicole Forsgren, PhD and friends, 2018
+- [Accidental Architects: How HR Designs Software Systems]({% post_url 2022-02-11-flowcon-accidental-architects-how-hr-designs-software-systems-matthew-skelton %}), Matthew Skelton
+- [Conway's Law Doesn't Apply to Rigid Designs](https://verraes.net/2022/05/conways-law-vs-rigid-designs/), Mathias Verraes, 2022
+- [Mastodon conversation with Ruth Malan about Conway’s Law](https://mastodon.social/@tdpauw/111003294054784503)
+- [Isomorphism vs Homomorphism](https://hachyderm.io/@cornazano/111241418996567374), Michael McCliment
