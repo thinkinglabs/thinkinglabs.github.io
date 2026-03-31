@@ -11,7 +11,9 @@ Over the years, numerous people paraphrased [Conway's Law](https://www.melconway
 
 ---
 
-This is a revised version of the original [Shades of Conway's Law article from 2021]({% post_url 2021-05-07-shades-of-conways-law %}).
+What started as note taking about the many declinations of Conway's Law, became an article [Shades of Conway's Law article from 2021]({% post_url 2021-05-07-shades-of-conways-law %}), then became a [talk]({% post_url 2023-08-25-shades-of-conways-law %}).
+
+This is a revised version of the original [Shades of Conway's Law article from 2021]({% post_url 2021-05-07-shades-of-conways-law %}) based on the many readings and learnings from preparing the talk.
 
 ---
 
@@ -497,3 +499,66 @@ Drafting a system architecture is already designing the structure of the organis
 > Conway’s Law also kicks in if we take an initial guess at the system decomposition, allocate subsystems to teams, and sally forth–the team boundaries will tend to become boundaries within the system.
 >
 > -- Ruth Malan, [Conway’s Law](https://web.archive.org/web/20181022001505/http://traceinthesand.com:80/blog/2008/02/13/conways-law/), Feb 13, 2008
+
+## Conway's Corollary
+
+> The initial design of a system is never the best. The system may need to change. Therefore it requires flexibility of the organisation to design effectively.
+>
+> -- Melvin Conway, How Do Committees Invent?, 1968
+
+As we know, in engineering, the initial design of a system is rarely the best.
+
+As we work on the system, we often learn the relevant architecture. As we move forward, we get feedback, new information, we learn, and we adapt.
+
+But this has consequences ... for the organisation. This requires organisational flexibility to come to an effective design. This is **Conway's Corollary**.
+
+> Organizational flexibility is important to effective design
+>
+> – Conway’s Corollary, Jeff Sussna (@jeffsussna), Twitter, May 9, 2021
+
+Without organisational flexibility, we are limited to produce a system design that matches the real, on-the-ground communication structure of the organisation. Because if the system architecture and the organisation architecture are at odds, the organisation wins (Ruth Malan, earlier).
+
+Be aware that the real on-the-ground communication structures are not necessarily the ones depicted on the traditional organisation chart. People do not restrict their communications only to the lines on the organisation chart. Teams reach out to whomever they *depend on* to get their work done.
+
+This means, incremental software development has a consequences. As software grows, entropy grows. To contain entropy, we need to refactor systems. Many refactorings result in a significant redesign of the system.
+
+This means, incremental software development impacts the organisation because we are redesigning the system. It requires growing and redesigning the organisation as the system grows to fit the new system. It requires organisational flexibility.
+
+> They [system and organization] will co-evolve, because if they don't, Conway's Law warns us that the organization form will trump intended designs that go "cross-grain" to the organization warp.
+>
+> -- Ruth Malan, [Conway’s Law](https://web.archive.org/web/20181022001505/http://traceinthesand.com:80/blog/2008/02/13/conways-law/), Feb 13, 2008
+
+Organisation and system need to co-evolve!
+
+[Adrian Cockcroft](https://mastodon.social/@adrianco), the former Chief Architect of Netflix, confirmed this on a Mastodon in a [conversation with Ruth Malan](https://mastodon.social/@tdpauw/111003294054784503): "*I think I have seen this at Netflix and AWS. They annually re-aligned teams with the new domain boundaries.*"
+
+This creates two imperatives:
+
+1. To keep asking ourselves: “Is there a better design that is not available to us because of our organization?”, and
+2. Can we change the organization if a better design is found.
+
+50 years later, Melvin Conway observed the same:
+
+> The importance of the principle ... is ... that your design organization is keeping you from designing some things that perhaps you should be building.
+>
+> -- Melvin Conway, [Toward Simplifying Application Development in a Dozen Lessons](https://melconway.com/Home/pdf/simplify.pdf), 2017
+
+The importance of the Law is not that the organisation is constrained to produce system designs that copy the organisational structures.
+
+No, the importance of the Law is that the organisation is keeping us from designing the things we should be building to delight our users.
+
+If the organisation is keeping us from producing the right thing, the organisation should be flexible enough to be redesigned in order to come to a better product design that better fits the needs of our users. This requires organisational flexibility to come to a more effective design ([*Conway's Corollary*](#conways-corollary)).
+
+But that is not that simple, especially not for long-lived organisation with long-lived systems, because of the [*Reverse Conway’s Law*](#reverse-conways-law). The system architecture acts as a force on the organisation and closes the options we have to design the structure of the organisation.
+
+Because an initial design is rarely the best one, and because of incremental software engineering ... architecture is never done. It is never finished. It is continuously evolving (see [Building Evolutionary Architectures](https://app.thestorygraph.com/books/0f3cecf8-ee0b-407b-b711-a105d4ae3b3d)).
+
+As a result, system architecture is a great source for archaeological research on past enterprise decisions.
+
+> You can read the history of an enterprise's political struggles in its system architecture.”
+>
+> -- Michael Nygard (@mtnygard), Twitter, May 9, 2013
+
+Changes that we are starting now will coexist with changes that started last year and the year before. If we adopt that perspective, then we stop trying to rip apart systems and start all over again. Instead we should focus a lot more on incremental change. Here starts our history of decisions.
+
+At one conference this year, I was asked to provide an example of the code reflecting past enterprise decisions.
