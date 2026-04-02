@@ -50,17 +50,21 @@ In Organisation Design we have:
 - 1967: James D. Thompson with [Organizations in Action](https://app.thestorygraph.com/books/25918476-f7e4-40de-b00b-7566a26632c4)
 - 1974: Jay R. Galbraith with [Organization Design: An Information Processing View](http://strategy.sjsu.edu/www.stable/pdf/Galbraith,%20J%20R,%201974,%20Interfaces.%204%20pp%2028-36.pdf)
 
-> ... differences in technical functions, or technologies, cause significant differences among organisations ...
->
-> -- Thompson, Organizations in Action, 1967, p12
-
 When reading Thompson I realised that Thompson was foundational for organisation design. Before Thompson there were two lines of thoughts:
 
 *Organisations as closed systems*. Which assumes all elements and processes of interest are internal to the organisation. The idea here is to limit uncertainty as much as possible and thus to eliminate the influence of its environment. Think Taylorism, looking for the one best way to organise a task. This is standard factory production line systems.
 
 *Organisations as open systems*. We cannot think of the organisation alone without its surrounding environment. The organisation structure and behaviour are affected by environmental influences. The organisation must be an adaptive system that tries to survive its environment.
 
+> ... differences in technical functions, or technologies, cause significant differences among organisations ...
+>
+> -- Thompson, Organizations in Action, 1967, p12
+
 According to Thompson **an organisation is not either closed or open, it is both**. The internal technical core, the production component of the organisation is closed. We want to shield this off from the influence of the environment. But at the boundaries, the organisation must attend and adapt to changes in the environment. Therefore, it has to be open to environmental signals. As such, at its boundaries, it is an open system.
+
+Galbraith introduces the following proposition:
+
+The greater the uncertainty of the task, the more information decision makers need to process during the task execution, to achieve a given level of performance.
 
 > ... the greater the task uncertainty, the greater the amount of information that must be processed among decision makers during task execution ...
 >
@@ -69,10 +73,6 @@ According to Thompson **an organisation is not either closed or open, it is both
 > As the amount of uncertainty increases [...] the organisation must adopt integrating mechanisms ...
 >
 > -- Galbraith, Organization Design: An Information Processing View, 1974
-
-Galbraith introduces the following proposition:
-
-The greater the uncertainty of the task, the more information decision makers need to process during the task execution, to achieve a given level of performance.
 
 If the task is well understood prior to performing it, much of the activity can be preplanned. However, if it is not understood, then much more knowledge need to be acquired during the task execution.
 
@@ -94,17 +94,19 @@ In Product Design we have:
 - 1964: Christopher Alexander with [Notes on the Synthesis of Form](https://app.thestorygraph.com/books/3bec9938-fb40-4616-b2c6-ab2d4de650ea)
 - 1972: D.L. Parnas with [On the criteria to be used in Decomposing Systems into Modules](https://www.win.tue.nl/~wstomv/edu/2ip30/references/criteria_for_modularization.pdf)
 
-> We may therefore picture the process of form-making as the action of a series of subsystems, all interlinked, yet sufficiently free of one another to adjust independently in a feasible amount of time.
->
-> -- Alexander, Notes on the Synthesis of Form, 1964, p41
-
 Notes on the Synthesis of Form is all about how to optimise the process of design, i.e. the process of inventing physical things. In a way, we try to reduce the gap between the designer’s small capacity and the great size of their task.
 
 According to Alexandre, every design problem starts with an effort to achieve fitness between the form and its context. The *form* is the solution to the design problem. The *context* defines the design problem. Fitness means, we try to adapt the form, the solution, to its context, the problem definition.
 
 No complex adaptive system will succeed in adapting, in a reasonable amount of time, unless the adaption happens subsystem by subsystem, where each subsystem is relatively independent from each other.
 
-Therefore, we may picture the process of form-making, i.e. designing, as the action of a series of subsystems. Now, that works because the cycles of correction and recorrection, which occur during adaptation, are restricted to one subsystem at a time.
+Therefore, we may picture the process of form-making, i.e. designing, as the action of a series of subsystems.
+
+> We may therefore picture the process of form-making as the action of a series of subsystems, all interlinked, yet sufficiently free of one another to adjust independently in a feasible amount of time.
+>
+> -- Alexander, Notes on the Synthesis of Form, 1964, p41
+
+Now, that works because the cycles of correction and recorrection, which occur during adaptation, are restricted to one subsystem at a time.
 
 In the end, **it is easier to cope with complexity when it is decomposed into a series of linked sub-problems**.
 
@@ -260,21 +262,21 @@ This has an interesting consequence: If two subsystems are designed by two diffe
 
 But there is also a mathematical definition for isomorphism.
 
+It is a structure-preserving mapping between two structures.
+
 > 2\. MATHEMATICS
 >
 > an isomorphism is a **structure-preserving mapping** between two structures of the same type that can be reversed by an inverse mapping.
 >
 > source: Wikipedia
 
-It is a structure-preserving mapping between two structures.
+Or, it is a one-to-one correspondence between two structures.
 
 > 3\. MATHEMATICS
 >
 > an isomorphism is a **one-to-one** correspondence (mapping) between two sets that preserves binary relationships between elements of the sets.
 >
 > source: Britannica
-
-Or, it is a one-to-one correspondence between two structures.
 
 This indicates that we can not ever have an organization where two or more components of a system correspond to a single team in the organization, because of the one-to-one relation.
 
@@ -316,11 +318,11 @@ Anyway, in 1996, Raymond restated the law as follows ...
 
 > The organization of the software and the organization of the software team will be congruent.
 >
-> -- Eric Raymond, [The New Hacker's Dictionary (3rd ed.)](https://www.gutenberg.org/files/3008/3008-h/3008-h.htm), 1996, p124
+> -- Eric Raymond, [The New Hacker's Dictionary, 3rd ed.](https://www.gutenberg.org/files/3008/3008-h/3008-h.htm), 1996, p124
 
 > **congruent** adjective
 >
-> 1\.  in agreement or harmony.
+> 1\. in agreement or harmony.
 >
 > 2\. GEOMETRY
 >
@@ -334,7 +336,8 @@ Conway exemplifies the homomorphic force in his paper using a COBOL and ALGOL co
 
 A contract research organization consisting of eight people was asked to design a COBOL and an ALGOL compiler. After some initial estimates about difficulty and time, they assigned five people to the COBOL compiler and three people to the ALGOL compiler. The resulting COBOL compiler ran in five phases, the ALGOL compiler ran in three.
 
-This example is better known as Eric Raymond's "*If you have 4 groups working on a compiler, you’ll get a 4-pass compiler*".
+Eric Raymond summarised the example as "*If you have 4 groups working on a compiler, you’ll get a 4-pass compiler*". Or, there is also *Tom Cheatham's Amendment of Conway's Law*: "*If a group of N persons implements a COBOL compiler, there will be N-1 passes. Someone in the group has to be the manager.*" (source: The New Hacker's Dictionary, 3rd ed.)
+
 
 That said, the larger an organization becomes, the less flexibility the organisation shows, therefore the more pronounced are the effects of the homomorphic force. However, these effects of the homomorphic force can also be expressed differently ... with the **Thousand Module Effect**.
 
@@ -654,6 +657,12 @@ People who claim to be an *Architect* need both technical and social skills. The
 Anyone who makes decisions about the shape and placement of engineering teams is strongly influencing the systems architecture. This also suggests that even HR may be strongly shaping software architecture by deciding how teams are composed and interrelate ([Accidental Architects - how HR designs software systems]({% post_url 2022-02-11-flowcon-accidental-architects-how-hr-designs-software-systems-matthew-skelton %}), Matthew Skelton).
 
 By now, it should be clear, that organisation design and system design are communicating vessels. Both need to be tackled together by the same informed group of people, i.e. managers *and architects*.
+
+> Ultimately a big part of architecture isn’t about the technical or
+> solution detail. It’s about putting in the right structures, ways of
+> working, lines of communication and overall conditions
+>
+> -- @himal, Twitter, May 3, 2021
 
 ## How to Cope with Conway's Law
 
