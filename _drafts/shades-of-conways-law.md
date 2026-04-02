@@ -30,7 +30,7 @@ Essentially, this means, the organisation and the system keep each other in bala
 
 To be competitive as an organisation in the market, and to effectively design the right thing our customers expect us to deliver, we better understand and take advantage of this.
 
-Note that when Melvin Conway mentions a system he really means this in the brought sense. This is not limited to only software or IT systems. This can be buildings, planes, machinery, vehicles, but also engines or public transportation systems, communication systems, …, anything.
+Note that when Melvin Conway mentions a system he really means this in the broad sense. This is not limited to only software or IT systems. This can be buildings, planes, machinery, vehicles, but also engines or public transportation systems, communication systems, …, anything.
 
 ## The Mirroring Principle
 
@@ -332,7 +332,7 @@ This reinforces the idea of the Homomorphic force, the structure preserving mapp
 
 Conway exemplifies the homomorphic force in his paper using a COBOL and ALGOL compiler example.
 
-A contract research organization consisting of eight people was asked to design a COBOL and an ALGOL compiler. After some initial estimates about difficulty and time, they assigned five people to the COBOL compiler and three people to the ALGOL compiler. The resulting COBOL compiler ran in five phases, the ALG0L compiler ran in three.
+A contract research organization consisting of eight people was asked to design a COBOL and an ALGOL compiler. After some initial estimates about difficulty and time, they assigned five people to the COBOL compiler and three people to the ALGOL compiler. The resulting COBOL compiler ran in five phases, the ALGOL compiler ran in three.
 
 This example is better known as Eric Raymond's "*If you have 4 groups working on a compiler, you’ll get a 4-pass compiler*".
 
