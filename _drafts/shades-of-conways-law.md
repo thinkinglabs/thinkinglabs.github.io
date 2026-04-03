@@ -338,8 +338,17 @@ A contract research organization consisting of eight people was asked to design 
 
 Eric Raymond summarised the example as "*If you have 4 groups working on a compiler, you’ll get a 4-pass compiler*". Or, there is also *Tom Cheatham's Amendment of Conway's Law*: "*If a group of N persons implements a COBOL compiler, there will be N-1 passes. Someone in the group has to be the manager.*" (source: The New Hacker's Dictionary, 3rd ed.)
 
+Yet, a more recent expression of the ALGOL and COBOL compiler example:
 
-That said, the larger an organization becomes, the less flexibility the organisation shows, therefore the more pronounced are the effects of the homomorphic force. However, these effects of the homomorphic force can also be expressed differently ... with the **Thousand Module Effect**.
+> In capsule form, Conway’s Law implies that if you have, say, three teams, chances are you will end up with three subsystems whether you intend to or not.
+>
+> When the cost of communication goes up we, often unconsciously, organize our work to minimize it.
+>
+> If it’s easier for me to share a vision and communicate within my local team, we end up producing something cohesive that is a bit detached from other teams’ work.
+>
+> -— Michael Feathers, [Twitter, Reddit and Conway's Law](https://michaelfeathers.silvrback.com/social-media-architecture-and-conway-s-law), 2017
+
+Having said that, the larger an organization becomes, the less flexibility the organisation shows, therefore the more pronounced are the effects of the homomorphic force. However, these effects of the homomorphic force can also be expressed differently ... with the **Thousand Module Effect**.
 
 Yourdon and Constantine mention this story ...
 
@@ -519,13 +528,35 @@ But this has consequences ... for the organisation. This requires organisational
 >
 > – Conway’s Corollary, Jeff Sussna (@jeffsussna), Twitter, May 9, 2021
 
-Without organisational flexibility, we are limited to produce a system design that matches the real, on-the-ground communication structure of the organisation. Because if the system architecture and the organisation architecture are at odds, the organisation wins (Ruth Malan, earlier).
+Without organisational flexibility, we are limited to produce a system design that matches the real, on-the-ground communication structure of the organisation. Because "*if the system architecture and the organisation architecture are at odds, the organisation wins*" (Ruth Malan, 2008).
 
 Be aware that the real on-the-ground communication structures are not necessarily the ones depicted on the traditional organisation chart. People do not restrict their communications only to the lines on the organisation chart. Teams reach out to whomever they *depend on* to get their work done.
 
-This means, incremental software development has a consequences. As software grows, entropy grows. To contain entropy, we need to refactor systems. Many refactorings result in a significant redesign of the system.
+Incremental software development is an essential condition to growing IT systems based on feedback and learning. It is a necessary requirement to satisfy user demand, and to build the right thing.
 
-This means, incremental software development impacts the organisation because we are redesigning the system. It requires growing and redesigning the organisation as the system grows to fit the new system. It requires organisational flexibility.
+> Piecemeal growth, or incremental development, is not just desirable but a fact of life in software. Even so, we need to build more learning into our process. More learning when it is cheaper to find and fix problems with the vision (doing course corrections toward "right system") and structure (built right).
+>
+> Then, accepting that we will continue to learn and evolve our system, we need to invest in fixing the mistakes. Incrementally adding functionality yes, but repairing structural defects too. This investment is the crucial dual to piecemeal growth that we too often forget in software.
+>
+> When we keep marching to a frenetic "add value" drumbeat, we get into a situation where the system threatens to crumble under the mass of deferred structural issues.
+>
+> [...]
+>
+> Going from the messiness of our discovery-oriented process to the well-factored, tested integrity of our engineered system shouldn't be considered rework or waste! Unless we leave it until after it has sorely impacted users and our business viability. That is waste.
+>
+> As we proceed in the fog of uncertainty, entropy grows -- and produces more fog! Under uncertainty we "give things a try"; accept good enough, and try the next thing. As entropy grows, it introduces its own uncertainty...
+>
+> -- Ruth Malan, [Conway's Law Reverb](https://www.ruthmalan.com/Journal/2014/2014JournalMay.htm#Conways_Law), May 5, 2014
+
+However, incremental software development has consequences. As software grows, entropy grows. To contain entropy, we need to refactor systems. 
+
+> Refactoring is the corollary to piecemeal growth, allowing entropy containment. But we have to refactor the organization too? If it would subvert the system (re)design and evolution.
+>
+> -- Ruth Malan, [Conway's Law Reverb](https://www.ruthmalan.com/Journal/2014/2014JournalMay.htm#Conways_Law), May 5, 2014
+
+Many refactorings result in a significant redesign of the system.
+
+Henceforth, incremental software development impacts the organisation because we are redesigning the system. It requires growing and redesigning the organisation as the system grows to fit the new system. It requires organisational flexibility.
 
 > They [system and organization] will co-evolve, because if they don't, Conway's Law warns us that the organization form will trump intended designs that go "cross-grain" to the organization warp.
 >
@@ -552,22 +583,25 @@ No, the importance of the Law is that the organisation is keeping us from design
 
 If the organisation is keeping us from producing the right thing, the organisation should be flexible enough to be redesigned in order to come to a better product design that better fits the needs of our users. This requires organisational flexibility to come to a more effective design ([*Conway's Corollary*](#conways-corollary)).
 
-But that is not that simple, especially not for long-lived organisation with long-lived systems, because of the [*Reverse Conway’s Law*](#reverse-conways-law). The system architecture acts as a force on the organisation and closes the options we have to design the structure of the organisation.
+Without organisational flexibility, "*[when] architecture of the system and the architecture of the organisation are at odds, the organisation wins*" (Ruth Malan, 2008).
+
+Yet, that is not that simple, especially not for long-lived organisation with long-lived systems, because of the [*Reverse Conway’s Law*](#reverse-conways-law). The system architecture acts as a force on the organisation and closes the options we have to design the structure of the organisation.
 
 Because an initial design is rarely the best one, and because of incremental software engineering ... architecture is never done. It is never finished. It is continuously evolving (see [Building Evolutionary Architectures](https://app.thestorygraph.com/books/0f3cecf8-ee0b-407b-b711-a105d4ae3b3d)).
 
-As a result, system architecture is a great source for archaeological research on past enterprise decisions.
+Hence, system architecture is a great source for archaeological research on past enterprise decisions.
 
 > You can read the history of an enterprise's political struggles in its system architecture.”
 >
-> -- Michael Nygard (@mtnygard), Twitter, May 9, 2013
+> -- Michael Nygard (@mtnygard), Twitter, May 8, 2013
 
 Changes that we are starting now will coexist with changes that started last year and the year before. If we adopt that perspective, then we stop trying to rip apart systems and start all over again. Instead we should focus a lot more on incremental change. Here starts our history of decisions.
 
 At one conference, I was asked to provide an example of the code reflecting past enterprise decisions. Here are two examples:
 
-- One FinTech had a Document Vault feature, basically the ability to securely store legal documents. Yet, customers and the Product Manager referred the feature as Document Manager or File Manager, to eventually settle with File Manager. Eventually this got renamed over time in the code. However, during years, there was this single directory in the infrastructure code still called `document_vault`. That is for the history of that feature.
-- When another startup decided to opt for AWS as cloud provider, they created all environments in a single AWS account against AWS's advise. From my experience screening organisations for technology due diligence, this seems to be a classic mistake, even within big organisations. Obviously, to segregate environments, all infrastructure resources were named with environment prefixes (or suffixes ...). Eventually, they fixed the situation and migrated to a multi-account setup without changing the naming. Now they have in every account, infrastructure resources unnecessarily named after the environment. Another history story to tell when onboarding new colleagues. "*X: That is an odd way of naming. Y: It is. Let me tell you a story ...*.
+- One FinTech had a Document Vault feature, basically the ability to securely store legal documents. Yet, customers and the Product Manager referred the feature as Document Manager or File Manager, to eventually settle with File Manager. Ultimately, this got renamed over time in the code. However, during years, there was this single directory in the infrastructure code still called `document_vault`. That is for the history of that feature.
+
+- When another startup decided to opt for AWS as cloud provider, they created all environments in a single AWS account against AWS's advise. From my experience screening organisations for technology due diligence, this seems to be a classic mistake, even within big organisations. Obviously, to segregate environments, all infrastructure resources were named with environment prefixes (or suffixes ... consistency is an option). Eventually, they migrated to a multi-account setup, however, without changing the naming. Now they have in every account, infrastructure resources unnecessarily named after the environment. Another history story to tell when onboarding new colleagues. "*X: That is an odd way of naming. Y: It is. Let me tell you the story ...*.
 
 ## Conway's Time Component
 
@@ -664,6 +698,10 @@ By now, it should be clear, that organisation design and system design are commu
 >
 > -- @himal, Twitter, May 3, 2021
 
+> Architecture needs to happen across the interfaces, and this also means across the system/organization interfaces. It means that system architects (who we call architects) and business architects (who we call managers) should not work as if one has no impact on the other.
+>
+> -- Ruth Malan, [Conway's Law](https://web.archive.org/web/20181022001505/http://traceinthesand.com:80/blog/2008/02/13/conways-law/), Feb 13, 2008
+
 ## How to Cope with Conway's Law
 
 > Allan Kelly’s Advice
@@ -685,6 +723,8 @@ The bigger the team, the more the organisational structure will dictate our soft
 Do not start to think big! Once we start thinking big, we need to staff. Once we staff, systems grow and get out of control ... because of the *Thousand Module Effect*, *Mealy’s Law* and *Brooke's Law*. In the end, we need to keep all those people ~~busy~~ working.
 
 It is a hard sell to managers not to hire. That is counter intuitive.
+
+At one FinTech, after the second funding round, the CEO went crazy. "*We need to hire, hire!*". My reaction was: "*No! No, no, no. We are not ready to hire. The organisation and the system are not ready.*". In the end, they did not hire. Not because they listened to me, but because it is hard to hire 🤷 Ultimately, they grew with the same team size. At some point even at reduced size, because they pivoted. Grow the business, not the team!
 
 Start small! Probably slightly smaller than we think we need.
 
@@ -724,12 +764,14 @@ Ruth Malan and Adrian Cockcroft for reviewing an early draft.
 - [Exploring the Duality between Product and Organizational Architecture: A Test of the “Mirroring” Hypothesis](https://www.hbs.edu/ris/Publication%20Files/08-039_1861e507-1dc1-4602-85b8-90d71559d85b.pdf), Baldwin, MacCormack, Rusnak, 2012
 - [Architecture without an end state](https://www.oreilly.com/content/michael-nygard-on-architecture-without-an-end-state/), Michael Nygard, 2012
 - [Sex in Title, and Other Stories](http://hintjens.com/blog:73), Pieter Hintjes, 2013
+- [Conway's Law Reverb](https://www.ruthmalan.com/Journal/2014/2014JournalMay.htm#Conways_Law), Ruth Malan, 2014
 - [Continuous Delivery and Conway’s Law]({% post_url 2021-05-13-continuous-delivery-and-conways-law-allan-kelly %}), Allan Kelly, 2014
 - [Predictive Models of Development Teams and the Systems They Build](https://sixty-north.com/blog/predictive-models-of-development-teams-and-the-systems-they-build), Rob Smallshire, 2014
 - [Conway’s Law: The DevOps Skeleton](https://www.slideshare.net/danslimmon/conways-law-the-skeleton-of-devops), Dan Slimmon, 2014
 - [Toward Simplifying Application Development in a Dozen Lessons](http://melconway.com/Home/pdf/simplify.pdf), Mel Conway, 2016
 - [The Mirroring Hypothesis: theory, evidence, and exceptions](https://www.hbs.edu/ris/Publication%20Files/Colfer%20Baldwin%20Mirroring%20Hypothesis%20Ind%20Corp%20Change-2016_8aa320ff-6aa6-42ef-b259-d139012faaf6.pdf), Baldwin and Colfer, 2016
 - [Toward Simplifying Application Development in a Dozen Lessons](https://melconway.com/Home/pdf/simplify.pdf), Melvin Conway, 2017
+- [Twitter, Reddit and Conway's Law](https://michaelfeathers.silvrback.com/social-media-architecture-and-conway-s-law), Michael Feathers, 2017
 - [Accelerate](https://www.goodreads.com/pl/book/show/35747076), Nicole Forsgren, PhD and friends, 2018
 - [Accidental Architects: How HR Designs Software Systems]({% post_url 2022-02-11-flowcon-accidental-architects-how-hr-designs-software-systems-matthew-skelton %}), Matthew Skelton
 - [Conway's Law Doesn't Apply to Rigid Designs](https://verraes.net/2022/05/conways-law-vs-rigid-designs/), Mathias Verraes, 2022
