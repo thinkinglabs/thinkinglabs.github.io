@@ -55,6 +55,13 @@ As one [SoCraTes France](https://socrates-fr.github.io/) participant once said, 
 
 [Elizabeth Zagroba](https://mastodon.social/@ez@chaos.social) to help me remove the sharp edges.
 
+## References
+
+- [On the Diverse And Fantastical Shapes of Testing](https://martinfowler.com/articles/2021-test-shapes.html), Martin Fowler, 2021
+- [Unit Test](https://martinfowler.com/bliki/UnitTest.html), Martin Fowler, 2014
+- [Test Pyramid](https://martinfowler.com/bliki/TestPyramid.html), Martin Fowler, 2012
+- [The Testing Trophy and Test Classifications](https://kentcdodds.com/blog/the-testing-trophy-and-testing-classifications), Kent C. Dodds, 2021
+
 ## Definitions
 
 ### Commit Build
