@@ -1,6 +1,6 @@
 ---
 layout: article
-title: A Glorious QA Rant sprinkled with AI
+title: Don’t Let AI Invert Your Testing Pyramid
 author: Thierry de Pauw
 category: articles
 tags: [ Testing, AI ]
