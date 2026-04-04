@@ -11,6 +11,8 @@ Now and then, I rant about Pull Requests on social media. The rants are on the i
 
 ---
 
+‼️ Caution. Written in a state of utter rage.
+
 *Update Feb 22, 2024: Add references to research to support the claim "Going slow for safety is a mistake".*
 
 *Update Feb 22, 2024: Add the administrative overhead of Pull Requests.*
