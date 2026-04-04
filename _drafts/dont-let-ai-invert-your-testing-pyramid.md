@@ -4,7 +4,6 @@ title: Don’t Let AI Invert Your Testing Pyramid
 author: Thierry de Pauw
 category: articles
 tags: [ Testing, AI ]
-image: /images/shades-of-conways-law/conways_law_cornet.png
 ---
 
 Recently, on one of my clients' Slack, an article "*Quality Engineering with AI*" was shared as an example of running QA in the AI era. The client was kind of enthusiastic about the article as it somehow confirmed their subpar testing strategy. I violently disagreed with the article supported with arguments. However, the client underpinned their strategy with Martin Fowler's [On the Diverse And Fantastical Shapes of Testing](https://martinfowler.com/articles/2021-test-shapes.html). The level of ignorance and stupidity in the industry is plain disconcerting - *causing one to feel unsettled*. It got beyond all levels of any understanding.
