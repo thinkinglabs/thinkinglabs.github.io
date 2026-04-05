@@ -67,6 +67,7 @@ Remember that **writing code has never been the bottleneck**.
 - [Unit Test](https://martinfowler.com/bliki/UnitTest.html), Martin Fowler, 2014
 - [The Testing Trophy and Test Classifications](https://kentcdodds.com/blog/the-testing-trophy-and-testing-classifications), Kent C. Dodds, 2021
 - [On the Diverse And Fantastical Shapes of Testing](https://martinfowler.com/articles/2021-test-shapes.html), Martin Fowler, 2021
+- [Code Red: The business impact of low code quality](https://codescene.com/hubfs/web_docs/Business-impact-of-code-quality.pdf), CodeScene, 2022
 - [Code for Machines, Not Just Humans: Quantifying AI-Friendliness with Code Health Metrics](https://arxiv.org/pdf/2601.02200), Emma Söderberg et al., 2026
 
 ## Definitions
