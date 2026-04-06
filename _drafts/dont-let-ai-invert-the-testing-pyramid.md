@@ -59,7 +59,7 @@ When reading Martin Fowler's article, I did not immediately understand the point
 
 As one [SoCraTes France](https://socrates-fr.github.io/) participant once said, in the IT industry, people do not know their history. That was the reason for [Laurent Bossavit](https://www.linkedin.com/in/bossavit/) to publish [The Leprechauns of Software Engineering](https://leanpub.com/leprechauns). With every new technology introduced, the same mistakes repeat. Again, the real shift is not AI. It is engineering discipline. It has always been.
 
-Remember that [**writing code has never been the bottleneck**](https://andrewmurphy.io/blog/if-you-thought-the-speed-of-writing-code-was-your-problem-you-have-bigger-problems). Look at the bloody value stream. It will scream at us where the bottleneck is. What if the bottleneck is the market? That indicates that we accelerated code delivery nobody wants. So, there we are, in all embarrassment ...
+Remember that [**writing code has never been the bottleneck**](https://andrewmurphy.io/blog/if-you-thought-the-speed-of-writing-code-was-your-problem-you-have-bigger-problems). Analyse the bloody value stream. It will scream at us where the bottleneck is. What if the bottleneck is the market? That indicates that we accelerated code delivery nobody wants. So, there we are, in all embarrassment ...
 
 ## Acknowledgements
 
