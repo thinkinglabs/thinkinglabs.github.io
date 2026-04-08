@@ -57,7 +57,9 @@ When reading Martin Fowler's article, I did not immediately understand the point
 
 ## In Conclusion
 
-As one [SoCraTes France](https://socrates-fr.github.io/) participant once said, in the IT industry, people do not know their history. That was the reason for [Laurent Bossavit](https://www.linkedin.com/in/bossavit/) to publish [The Leprechauns of Software Engineering](https://leanpub.com/leprechauns). With every new technology introduced, the same mistakes repeat. Again, the real shift is not AI. It is engineering discipline. It has always been.
+As one [SoCraTes France](https://socrates-fr.github.io/) participant once said, in the IT industry, people do not know their history. That was the reason for [Laurent Bossavit](https://www.linkedin.com/in/bossavit/) to publish [The Leprechauns of Software Engineering](https://leanpub.com/leprechauns). With every new technology introduced, the same mistakes repeat.
+
+AI is not a "*get out of testing*" free card — it is, in all reality, the reason to double down on the basics. Again, the real shift is not AI. It is engineering discipline. It has always been.
 
 Remember that [**writing code has never been the bottleneck**](https://andrewmurphy.io/blog/if-you-thought-the-speed-of-writing-code-was-your-problem-you-have-bigger-problems). Analyse the bloody value stream. It will shout at us where the bottleneck is. What if the bottleneck is the market? If that is the case, we have been accelerating code delivery for something nobody wants. So, there we are, in all embarrassment ...
 
