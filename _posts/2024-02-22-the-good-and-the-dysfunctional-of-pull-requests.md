@@ -11,7 +11,9 @@ Now and then, I rant about Pull Requests on social media. The rants are on the i
 
 ---
 
-‼️ Caution. Written in a state of utter rage.
+> ‼️ Caution: This article was written in a state of high-octane frustration after a long debate about trunk-based development on social media, rooted in a deep exasperation with the inefficiencies we’ve normalised in software delivery. It’s opinionated, a bit raw, and unashamedly blunt. If you prefer polished corporate-speak, this isn't it — but if you care about Lean principles and the reality of delivery bottlenecks, read on.
+
+---
 
 *Update Feb 22, 2024: Add references to research to support the claim "Going slow for safety is a mistake".*
 
