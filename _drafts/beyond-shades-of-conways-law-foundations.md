@@ -4,7 +4,6 @@ title: "Beyond the Shades of Conway's Law - Foundations: The Origin & The Mirror
 author: Thierry de Pauw
 category: articles
 tags: [ Conway's Law ]
-image: /images/beyond-the-shades-of-conways-law/beyond-the-shades-of-conways-law-foundations.png
 ---
 
 In 1968, Melvin Conway expressed a theory on how system designs follow the design organisation's communication structures. In the same period, the communities of organisation design and product design observed the same thesis independently. This became known as the **Mirroring Principle**.
@@ -144,9 +143,6 @@ Simon introduces the idea of partitioning a complex problem, complex systems in 
 ### The Mirroring Hypothesis
 
 This means we can express the *Mirroring Principle* in terms of a structural correspondence between two networks, one technical and one organisational. There will be, therefore a mapping from technical modules to design teams.
-
-![Beyond the Shades of Conway's Law](/images/beyond-the-shades-of-conways-law/beyond-the-shades-of-conways-law-foundations.png)
-<center><i>Google Gemini generated visual</i></center><br/>
 
 All of the above was summarised in the 2016 paper [The Mirroring Hypothesis](https://www.hbs.edu/ris/Publication%20Files/Colfer%20Baldwin%20Mirroring%20Hypothesis%20Ind%20Corp%20Change-2016_8aa320ff-6aa6-42ef-b259-d139012faaf6.pdf) from Baldwin and Colfer.
 

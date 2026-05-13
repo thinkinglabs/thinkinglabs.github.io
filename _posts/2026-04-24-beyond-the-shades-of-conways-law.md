@@ -4,7 +4,6 @@ title: Beyond the Shades of Conway's Law
 author: Thierry de Pauw
 category: articles
 tags: [ Conway's Law ]
-image: /images/beyond-the-shades-of-conways-law/beyond-the-shades-of-conways-law.png
 ---
 
 Over fifty years ago, an observation about committees, design and resulting system designs changed the way we look at software - and by extension system - architecture forever. But [Conway's Law](https://www.melconway.com/Home/Committees_Paper.html) is not a single, static rule. Like a prism, it reveals different "shades" depending on how we look at it — through the lens of empirical research, mathematics, or social dynamics.
@@ -14,9 +13,6 @@ Over fifty years ago, an observation about committees, design and resulting syst
 In 2021, I began cataloguing the many expressions of Conway’s Law in an article titled [Shades of Conway's Law]({% post_url 2021-05-07-shades-of-conways-law %}). What started as a merely note-taking exercise eventually evolved into a [talk]({% post_url 2023-08-25-shades-of-conways-law %}) and a broader inquiry with more research, more reading and more connections. Since the topic has grown too large for a single post.
 
 This series, **Beyond the Shades of Conway’s Law**, represents an expansion of those ideas and a reflection on the journey. It is not a definitive 'deep dive' — the topic is far too complex for that, and I am too humble even to dare anything of a deep dive — but rather a navigation through the research, the mathematics, the strategies and the human dynamics that I have encountered along the way.
-
-![Beyond the Shades of Conway's Law](/images/beyond-the-shades-of-conways-law/beyond-the-shades-of-conways-law.png)
-<center><i>Google Gemini generated visual</i></center><br/>
 
 > Organisations which design systems are constrained to produce designs which are copies of the communication structures of these organisations.
 >
