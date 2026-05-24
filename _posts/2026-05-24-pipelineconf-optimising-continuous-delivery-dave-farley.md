@@ -9,6 +9,7 @@ author:
   linkedin: dave-farley-a67927
   mastodon: '@davefarley77@techhub.social'
 created_at: 2018-03-20
+video: https://www.youtube.com/watch?v=gDgAVqkFYWs
 category: notes
 tags: [ Continuous Delivery ]
 ---
