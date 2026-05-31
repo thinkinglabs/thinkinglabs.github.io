@@ -27,83 +27,39 @@ Note that when Melvin Conway mentions a system he really means this in the broad
 
 ## The Mirroring Principle
 
-Interestingly, around the same time various people from different communities made a similar observation as Melvin Conway did. Later, this became known as the **Mirroring Principle**.
+Interestingly, around the same time various people from different communities made a similar observation as Melvin Conway did. Later, referred to as the **Mirroring Principle**.
 
-It is, however, not clear whether all these people were aware of each other and knew they made observations alike.
+It was mainly concentrated around two communities:
 
-This was mainly concentrated around two communities:
-
-- Organisation Design: the people around organisation design and organisations as complex systems, with a focus on designing organisations for efficient task completion.
 - Product Design: the people from product design and products as complex systems, with the cornerstone on designing products to execute tasks efficiently.
 
-### Organisation Design
+  - 1964: Christopher Alexander with [Notes on the Synthesis of Form](https://app.thestorygraph.com/books/3bec9938-fb40-4616-b2c6-ab2d4de650ea)
+  - 1972: D.L. Parnas with [On the criteria to be used in Decomposing Systems into Modules](https://www.win.tue.nl/~wstomv/edu/2ip30/references/criteria_for_modularization.pdf)
 
-In Organisation Design we have:
+- Organisation Design: the people around organisation design and organisations as complex systems, with a focus on designing organisations for efficient task completion.
 
-- 1967: James D. Thompson with [Organizations in Action](https://app.thestorygraph.com/books/25918476-f7e4-40de-b00b-7566a26632c4)
-- 1974: Jay R. Galbraith with [Organization Design: An Information Processing View](http://strategy.sjsu.edu/www.stable/pdf/Galbraith,%20J%20R,%201974,%20Interfaces.%204%20pp%2028-36.pdf)
+  - 1967: James D. Thompson with [Organizations in Action](https://app.thestorygraph.com/books/25918476-f7e4-40de-b00b-7566a26632c4)
+  - 1974: Jay R. Galbraith with [Organization Design: An Information Processing View](http://strategy.sjsu.edu/www.stable/pdf/Galbraith,%20J%20R,%201974,%20Interfaces.%204%20pp%2028-36.pdf)
 
-When reading Thompson I realised that Thompson was foundational for organisation design. Before Thompson there were two lines of thoughts:
+However, it is not clear whether all these people were aware of each other and knew they made observations alike.
 
-*Organisations as closed systems*. Which assumes all elements and processes of interest are internal to the organisation. The idea here is to limit uncertainty as much as possible and thus to eliminate the influence of its environment. Think Taylorism, looking for the one best way to organise a task. This is standard factory production line systems.
+## Product Design
 
-*Organisations as open systems*. We cannot think of the organisation alone without its surrounding environment. The organisation structure and behaviour are affected by environmental influences. The organisation must be an adaptive system that tries to survive its environment.
+In 1964, Christopher Alexander expands on how to optimise the process of design, i.e. the process of inventing physical things. Every design problem starts with an effort to achieve fitness between the form and its context. The *form* is the solution to the design problem. The *context* defines the design problem. Fitness means, we try to adapt the form, the solution, to its context, the problem definition.
 
-> ... differences in technical functions, or technologies, cause significant differences among organisations ...
->
-> -- Thompson, Organizations in Action, 1967, p12
+No complex adaptive system will succeed in adapting, in a reasonable amount of time, unless the adaption happens subsystem by subsystem, where each subsystem is relatively independent from each other. In a way, we try to reduce the gap between the designer’s small capacity and the great size of their task.
 
-According to Thompson **an organisation is not either closed or open, it is both**. The internal technical core, the production component of the organisation is closed. We want to shield this off from the influence of the environment. But at the boundaries, the organisation must attend and adapt to changes in the environment. Therefore, it has to be open to environmental signals. As such, at its boundaries, it is an open system.
+Therefore ...
 
-Galbraith introduces the following proposition:
-
-The greater the uncertainty of the task, the more information decision makers need to process during the task execution, to achieve a given level of performance.
-
-> ... the greater the task uncertainty, the greater the amount of information that must be processed among decision makers during task execution ...
->
-> This is the problem of organisation design ...
->
-> As the amount of uncertainty increases [...] the organisation must adopt integrating mechanisms ...
->
-> -- Galbraith, Organization Design: An Information Processing View, 1974
-
-If the task is well understood prior to performing it, much of the activity can be preplanned. However, if it is not understood, then much more knowledge need to be acquired during the task execution.
-
-This sounds like the simple and complex domain first identified by Emery and Trist, [The Causal Texture of Organizational Environments](http://www.moderntimesworkplace.com/archives/ericsess/sessvol3/GEMTRCAUp53.pdf) in 1965, and later popularised by Dave Snowden with the [Cynefin framework](https://en.wikipedia.org/wiki/Cynefin_framework) in 1999.
-
-The effect of uncertainty is that it limits our ability to preplan. Therefore, **the variations in organisational forms are variations in the strategies to increase our ability to preplan**, and so **increase our ability to manage uncertainty**. Executing a task, thus, becomes an organisation design problem.
-
-To solve this problem, Galbraith suggests four strategies:
-
-- Creation of Slack Resources
-- Creation of Self-Contained Tasks
-- Investment in Vertical Information Systems
-- Creation of Lateral Relationships
-
-### Product Design
-
-In Product Design we have:
-
-- 1964: Christopher Alexander with [Notes on the Synthesis of Form](https://app.thestorygraph.com/books/3bec9938-fb40-4616-b2c6-ab2d4de650ea)
-- 1972: D.L. Parnas with [On the criteria to be used in Decomposing Systems into Modules](https://www.win.tue.nl/~wstomv/edu/2ip30/references/criteria_for_modularization.pdf)
-
-Notes on the Synthesis of Form is all about how to optimise the process of design, i.e. the process of inventing physical things. In a way, we try to reduce the gap between the designer’s small capacity and the great size of their task.
-
-According to Alexandre, every design problem starts with an effort to achieve fitness between the form and its context. The *form* is the solution to the design problem. The *context* defines the design problem. Fitness means, we try to adapt the form, the solution, to its context, the problem definition.
-
-No complex adaptive system will succeed in adapting, in a reasonable amount of time, unless the adaption happens subsystem by subsystem, where each subsystem is relatively independent from each other.
-
-Therefore, we may picture the process of form-making, i.e. designing, as the action of a series of subsystems.
-
-> We may therefore picture the process of form-making as the action of a series of subsystems, all interlinked, yet sufficiently free of one another to adjust independently in a feasible amount of time.
+> We may therefore picture the process of form-making [i.e. designing] as the action of a series of subsystems, all interlinked, yet sufficiently free of one another to adjust independently in a feasible amount of time.
 >
 > -- Alexander, Notes on the Synthesis of Form, 1964, p41
 
 Now, that works because the cycles of correction and recorrection, which occur during adaptation, are restricted to one subsystem at a time.
 
-In the end, **it is easier to cope with complexity when it is decomposed into a series of linked sub-problems**.
+In the end, **it is easier to cope with complexity when it is decomposed into a series of linked sub-problems**. This establishes that systems must be partitioned into boundaries to manage cognitive load and design complexity. This is the **inside-out architectural view**.
 
-Parnas comes to a similar conclusion.
+Parnas comes to a similar conclusion: hiding design decisions behind information boundaries, i.e. encapsulation.
 
 > ... separate groups would work on each module with little need for communication ...
 >
@@ -130,17 +86,81 @@ Parnas introduces the concept of information hiding as a means for controlling c
 
 **Information hiding is a fundamental principle underlying the mirroring principle**.
 
-Both communities, Organisation Design and Product Design, take their inspiration from Herbert A. Simon, [The Architecture of Complex Systems](https://www2.econ.iastate.edu/tesfatsi/ArchitectureOfComplexity.HSimon1962.pdf) in 1962.
+## Organisation Design
+
+But an organisation does not architect systems in a vacuum. An organisation cannot be understood in isolation from its environment. It operates within an external environment. In 1965, Fred Emery and Eric Trist introduced the concept of the [*Causal Texture of Organizational Environments*](http://www.moderntimesworkplace.com/archives/ericsess/sessvol3/GEMTRCAUp53.pdf) - the degree of interconnectedness and predictability of the external world. Modern environments shift from simple and predictable to what they called a '*Turbulent Field*', where rapid technological, economic, and social shifts interconnect to create constant, unpredictable chaos. The environment becomes the primary driver of internal organisational complexity. This is the **outside-in** view.
+
+How does an organisation survive this unexpected environmental change? Enter James D. Thompson. When reading Thompson I realised that Thompson was foundational for organisation design. Before Thompson there were two lines of thoughts:
+
+*Organisations as closed systems*. Historically, management theory, before Emery and Trist, treated organisations as closed systems. It assumes all elements and processes of interest are internal to the organisation. The idea here is to limit uncertainty as much as possible, to protect the factory-line - the quintessential Taylorist viewpoint, looking for the one best way to organise a task - and thus to eliminate the influence of its environment. This is typical factory production line systems.
+
+*Organisations as open systems*. We cannot think of the organisation alone without its surrounding environment. The organisation structure and behaviour are affected by environmental influences. The organisation must be an adaptive system that tries to survive its environment.
+
+> ... differences in technical functions, or technologies, cause significant differences among organisations ...
+>
+> -- Thompson, Organizations in Action, 1967, p12
+
+Thompson accepted Emery and Trist's premise of environmental turbulence but asked a pragmatic structural question: *How does an organization actually perform core work when the ground beneath it is constantly moving?* He posited that **an organisation is not either closed or open, it is both**. The organisation copes with uncertainty by protecting their 'technical core', the production component of the organisation - i.e. the factory and its workers and engineers, or software teams with engineers, etc. - to act as a closed system, to maximise efficiency. We want to shield this off from the influence of the environment. But at the boundaries, the organisation must attend and adapt to changes in the environment. Therefore, it has to be open to environmental signals. As such, at its boundaries, it is an open system. To do this, the organisation creates 'boundary-spanning units' to absorb and buffer external shock waves. Organisational design becomes an exercise in placing boundaries to minimize the cost of coordination under environmental uncertainty.
+
+```plain
+[Emery & Trist's Turbulent Environment]
+                 │ (Shockwaves)
+                 ▼
+     ┌───────────────────────┐
+     │ Thompson's Buffer     │ (Open, Boundary-Spanning Unit to absorb Environment changes)
+     │   ┌───────────────┐   │
+     │   │ Technical     │   │ (Closed for Efficiency)
+     │   │ Core          │   │
+     │   └───────────────┘   │
+     └───────────────────────┘
+```
+
+While Thompson explains *how* to build the organisation structure to survive the environmental chaos, Jay R. Galbraith articulates *what* flows through those structures, information.
+
+Galbraith introduces the following proposition:
+
+The greater the uncertainty of the task, the more information decision makers need to process during the task execution, to achieve a given level of performance.
+
+> ... the greater the task uncertainty, the greater the amount of information that must be processed among decision makers during task execution ...
+>
+> This is the problem of organisation design ...
+>
+> As the amount of uncertainty increases [...] the organisation must adopt integrating mechanisms ...
+>
+> -- Galbraith, Organization Design: An Information Processing View, 1974
+
+If the task is well understood prior to performing it, much of the activity can be preplanned. However, if it is not understood, then much more knowledge need to be acquired during the task execution.
+
+This directly maps to the environmental types (type I - Placid, Randomised, type II - Placid, Clustered, type III - Disturbed, Reactive and type IV - the Turbulent Field) identified by Emery and Trist in 1965, The Causal Texture of Organizational Environments, and later popularised by Dave Snowden with the [Cynefin framework](https://en.wikipedia.org/wiki/Cynefin_framework) in 1999.
+
+Galbraith's insight — that task uncertainty dictates organisational design — bridges the gap between macro-environmental theory and cognitive frameworks. The 'simple and complex domains' Galbraith navigates are the direct intellectual ancestors to Dave Snowden's Cynefin framework. In essence, Cynefin serves as a modern, sense-making translation of Emery and Trist's Causal Textures. It warns leaders that if they treat a complex or chaotic domain as if it were simple or complicated, their decision-making will fail. Similarly, Conway's Law warns that if we design a rigid, siloed communication structure (built for a 'clear' domain) to solve a fluid, systemic problem (inherent to a 'complex' domain), our technical architecture will fracture under the pressure.
+
+The effect of uncertainty is that it limits our ability to preplan. Therefore, **the variations in organisational forms are variations in the strategies to increase our ability to preplan**, and so **increase our ability to manage uncertainty**. Executing a task, thus, becomes an organisation design problem.
+
+To solve this problem, Galbraith suggests four strategies:
+
+- Creation of Slack Resources
+- Creation of Self-Contained Tasks
+- Investment in Vertical Information Systems
+- Creation of Lateral Relationships
+
+## The Architecture of Complex Systems: Near-Decomposability
+
+Both communities, Organisation Design and Product Design, take their inspiration from Herbert A. Simon, [The Architecture of Complexity](https://www2.econ.iastate.edu/tesfatsi/ArchitectureOfComplexity.HSimon1962.pdf) in 1962.
 
 > My thesis has been that one path to the construction of a non-trivial theory of complex systems is by way of a theory of hierarchy.
 > ...
 > In their dynamics, hierarchies have a property, near-decomposability, … [It] simplifies the description of a complex system, and makes it easier to understand ...
 >
-> Simon, The Architecture of Complex Systems, 1962
+> Simon, The Architecture of Complexity, 1962
 
 Simon introduces the idea of partitioning a complex problem, complex systems in a series of linked sub-problems to contain complexity. Very much alike Thompson's organisation is both closed and open, Galbraith's organisation strategies to manage uncertainty, Alexander's decomposition of the process of form-making, i.e. designing, in sub-problems and Parnas' concept of information hiding.
 
-### The Mirroring Hypothesis
+Parnas' "information hiding" is the exact architectural equivalent as Thompson's "boundary-spanning buffer" - both exist to keep complexity from destroying the system.
+
+Alexander's "process of form-making" and Thompson's "boundary-placing" both focus on the shared action: *partitioning*.
+
+## The Mirroring Hypothesis
 
 This means we can express the *Mirroring Principle* in terms of a structural correspondence between two networks, one technical and one organisational. There will be, therefore a mapping from technical modules to design teams.
 
@@ -177,3 +197,4 @@ There is a little story behind Melvin Conway's paper that he explains on his web
 - [How Do Committees Invent?](https://www.melconway.com/Home/Committees_Paper.html), Melvin Conway, 1968
 - [On the Criteria To Be Used in Decomposing Systems into Modules](https://www.win.tue.nl/~wstomv/edu/2ip30/references/criteria_for_modularization.pdf), Parnas, 1972
 - [Organization Design: An Information Processing View](http://strategy.sjsu.edu/www.stable/pdf/Galbraith,%20J%20R,%201974,%20Interfaces.%204%20pp%2028-36.pdf), Galbraith, 1974
+- [Cynefine framework](https://thecynefin.co/about-us/about-cynefin-framework/), Snowden, 1999
