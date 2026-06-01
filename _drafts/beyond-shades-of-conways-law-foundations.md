@@ -4,6 +4,7 @@ title: "Beyond the Shades of Conway's Law - Foundations: The Origin & The Mirror
 author: Thierry de Pauw
 category: articles
 tags: [ Conway's Law ]
+image: /images/shades-of-conways-law/conways_law_cornet.png
 ---
 
 In 1968, Melvin Conway expressed a theory on how system designs follow the design organisation's communication structures. In the same period, the communities of organisation design and product design observed the same thesis independently. This became known as the **Mirroring Principle**.
@@ -65,7 +66,7 @@ Parnas comes to a similar conclusion: hiding design decisions behind information
 >
 > -- Parnas, On the criteria to be used in Decomposing Systems into Modules, 1972
 
-Parnas is interesting as *On the criteria to be used in Decomposing Systems into Modules* is the number one paper from a list of top-10 papers everyone in the software industry should read.
+Parnas's work is notable as *On the criteria to be used in Decomposing Systems into Modules* tops the list of foundational papers software practitioner should read.
 
 ```plain
 Software Industry Top-10 papers
@@ -100,7 +101,7 @@ How does an organisation survive this unexpected environmental change? Enter Jam
 >
 > -- Thompson, Organizations in Action, 1967, p12
 
-Thompson accepted Emery and Trist's premise of environmental turbulence but asked a pragmatic structural question: *How does an organization actually perform core work when the ground beneath it is constantly moving?* He posited that **an organisation is not either closed or open, it is both**. The organisation copes with uncertainty by protecting their 'technical core', the production component of the organisation - i.e. the factory and its workers and engineers, or software teams with engineers, etc. - to act as a closed system, to maximise efficiency. We want to shield this off from the influence of the environment. But at the boundaries, the organisation must attend and adapt to changes in the environment. Therefore, it has to be open to environmental signals. As such, at its boundaries, it is an open system. To do this, the organisation creates 'boundary-spanning units' to absorb and buffer external shock waves. Organisational design becomes an exercise in placing boundaries to minimize the cost of coordination under environmental uncertainty.
+Thompson accepted Emery and Trist's premise of environmental turbulence but asked a pragmatic structural question: *How does an organization actually perform core work when the ground beneath it is constantly moving?* He posited that **an organisation is neither purely closed nor purely open, it is both**. The organisation copes with uncertainty by protecting their 'technical core', the production component of the organisation - i.e. the factory and its workers and engineers, or software teams with engineers, etc. - to act as a closed system, to maximise efficiency. We want to shield this off from the influence of the environment. But at the boundaries, the organisation must attend and adapt to changes in the environment. Therefore, it has to be open to environmental signals. As such, at its boundaries, it is an open system. To do this, the organisation creates 'boundary-spanning units' (such as product management) to absorb and buffer external shock waves. Organisational design becomes an exercise in placing boundaries to minimize the cost of coordination under environmental uncertainty.
 
 ```plain
 [Emery & Trist's Turbulent Environment]
@@ -114,6 +115,8 @@ Thompson accepted Emery and Trist's premise of environmental turbulence but aske
      │   └───────────────┘   │
      └───────────────────────┘
 ```
+
+As we can observe, in the 1960s, a shift happened: moving from organisations as "closed systems", classic Taylorism, to "open systems" that must adapt to the surrounding environment. Emery and Trist and Thompson were the twin engines of this shift.
 
 While Thompson explains *how* to build the organisation structure to survive the environmental chaos, Jay R. Galbraith articulates *what* flows through those structures, information.
 
@@ -156,17 +159,34 @@ Both communities, Organisation Design and Product Design, take their inspiration
 
 Simon introduces the idea of partitioning a complex problem, complex systems in a series of linked sub-problems to contain complexity. Very much alike Thompson's organisation is both closed and open, Galbraith's organisation strategies to manage uncertainty, Alexander's decomposition of the process of form-making, i.e. designing, in sub-problems and Parnas' concept of information hiding.
 
-Parnas' "information hiding" is the exact architectural equivalent as Thompson's "boundary-spanning buffer" - both exist to keep complexity from destroying the system.
+Parnas' "information hiding" is the exact architectural equivalent of Thompson's "boundary-spanning buffer" - both exist to keep complexity from destroying the system.
 
 Alexander's "process of form-making" and Thompson's "boundary-placing" both focus on the shared action: *partitioning*.
 
 ## The Mirroring Hypothesis
 
-This means we can express the *Mirroring Principle* in terms of a structural correspondence between two networks, one technical and one organisational. There will be, therefore a mapping from technical modules to design teams.
+When bringing these two parallel worlds together - Product Design and Organisation Design - Melvin Conway's 1968 observation becomes an inevitable law.
 
-All of the above was summarised in the 2016 paper [The Mirroring Hypothesis](https://www.hbs.edu/ris/Publication%20Files/Colfer%20Baldwin%20Mirroring%20Hypothesis%20Ind%20Corp%20Change-2016_8aa320ff-6aa6-42ef-b259-d139012faaf6.pdf) from Baldwin and Colfer.
+Thompson defines the organisational strategy to protect its core by structuring its internal teams to cope with the environment (Emery & Trist). These internal teams represent a physical partitioning of the design process (Alexander).
 
-They concluded that **the organisational ties in firms will correspond to the technical dependencies in the work being performed**.
+However, these organisational boundaries - to shield from environmental turbulence - become the communication channels of the organisation. When uncertainty rises, we have to process more information. To keep communication costs low and optimise for information flow (Galbraith), the system architecture's modular boundaries (Parnas) must reflect the internal team buffering boundaries (Thompson) to build autonomous, loosely coupled teams (Galbraith's self-contained tasks). The system architecture, therefore, mirrors the communication lines to minimise coordination overhead, and thus mirrors the organisational defence mechanism against external chaos.
+
+```plain
+Emery & Trist (Environmental Turbulence) 
+       │
+       ▼
+Thompson (Organisation designs "Technical Core" + "Buffers" to survive turbulence)
+       │
+       ▼
+Galbraith (Optimise information flow)
+       |
+       ▼
+The Mirroring Principle (Technical Architecture copies those Organisation Buffers)
+```
+
+The *Mirroring Principle* postulates a structural correspondence between two networks, one organisational and one structural. Thus, the organisation structure and technical architecture tend to align. So, there will be a mapping from technical modules to design teams.
+
+This was summarised in the 2016 paper [The Mirroring Hypothesis](https://www.hbs.edu/ris/Publication%20Files/Colfer%20Baldwin%20Mirroring%20Hypothesis%20Ind%20Corp%20Change-2016_8aa320ff-6aa6-42ef-b259-d139012faaf6.pdf) by Baldwin and Colfer. They concluded that **the organisational ties in firms will correspond to the technical dependencies in the work being performed**.
 
 > The mirroring hypothesis predicts that organizational ties within a project, firm, or group of firms (e.g., communication, collocation, employment) will correspond to the technical dependencies in the work being performed.
 >
