@@ -196,6 +196,10 @@ In recent years, this idea of the *Mirroring Principle* and *Conway’s Law* has
 
 There is a little story behind Melvin Conway's paper that he explains on his website. Conway send the paper to the Harvard Business Review. They rejected it on the grounds that there was no proof for the thesis. He then submitted it to Datamation, a major IT magazine at that time, which published it in April 1968.
 
+## Acknowledgments
+
+[Trond Hjorteland](https://www.linkedin.com/in/trondhjort/) and [João Rosa](https://www.linkedin.com/in/joaoasrosa/) for shedding a light and fixing my thinking flaws.
+
 ## The Series: Navigating the Shades
 
 [Beyond the Shades of Conway's Law series]({% post_url 2026-04-24-beyond-the-shades-of-conways-law %}):
