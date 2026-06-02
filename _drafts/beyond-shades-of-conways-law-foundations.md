@@ -80,9 +80,31 @@ How does an organisation survive this unexpected environmental change? This is w
 
 > ... differences in technical functions, or technologies, cause significant differences among organisations ...
 >
-> -- Thompson, Organizations in Action, 1967, p12
+> -- Thompson, Organizations in Action, 1967, p12, Chapter 1 (Strategies for Studying Organizations)
 
-Thompson accepted Emery and Trist's concept of environmental turbulence but asked a pragmatic structural question: *How does an organization actually perform core work when the ground beneath it is constantly moving?* Today, organisations wonder how teams can build and deliver stable, reliable software products that fit users' needs when the market conditions, and technologies change all the time. He argued that **an organisation is neither purely closed nor purely open; it is both**. The organisation copes with uncertainty by protecting their 'technical core', the organisation's production component - i.e. the factory and its workers and engineers, or software teams with engineers, etc. - to act as a closed system, to maximise efficiency. We want to shield off the core internal teams from the influence of the environment. This means the internal core must be predictable using Continuous Integration, and Continuous Delivery with rigorous testing. But at the boundaries, the organisation must attend and adapt to changes in the environment. Therefore, it has to be open to environmental signals. As such, at its boundaries, it is an open system. To do this, the organisation creates 'boundary-spanning units' to absorb and buffer external shock waves. This means having decoupled architectures, and product managers — they filter out market noise — to act as shock absorbers, with short iterations and continuous discovery. Organisational design becomes an exercise in placing boundaries to minimize the cost of coordination under environmental uncertainty.
+Thompson accepted Emery and Trist's concept of environmental turbulence but asked a pragmatic structural question: *How does an organization actually perform core work when the ground beneath it is constantly moving?* Today, organisations wonder how teams can build and deliver stable, reliable software products that fit users' needs when the market conditions, and technologies change all the time. He argued that **an organisation is neither purely closed nor purely open; it is both**. The organisation copes with uncertainty by protecting their 'technical core', the organisation's production component - i.e. the factory and its workers and engineers, or software teams with engineers, etc. - to act as a closed system, to maximise efficiency. We want to shield off the core internal teams from the influence of the environment. This means the internal core must be predictable using Continuous Integration, and Continuous Delivery with rigorous testing.
+
+> Proposition 2.2: Under norms of rationality, organizations seek to buffer environmental influences by surrounding their technical core with input and output components.
+>
+> Proposition 2.3: Under norms of rationality, organizations seek to smooth out input and output transactions.
+>
+> Proposition 2.4: Under norms of rationality, organizations seek to anticipate to environmental changes which cannot be buffered or leveled.
+>
+> If environmental fluctuations penetrate the organization and require the technical core to alter its activities [adapt], then environmental fluctuations are exogenous variables [i.e. causal variables] within the logic of technical rationality. To the extent that **environmental fluctuations** can be anticipated, however, they can **be treated as constraints** on the technical core which closed system of logic can be employed.
+>
+> -- Thompson, Organizations in Action, 1967, p20-22, Chapter 2 (Rationality in Organizations)
+
+But at the boundaries, the organisation must attend and adapt to changes in the environment. Therefore, it has to be open to environmental signals. As such, at its boundaries, it is an open system. To do this, the organisation creates "boundary-spanning units" to absorb and buffer external shock waves. This means having decoupled architectures, and product managers — they filter out market noise — to act as shock absorbers, with short iterations and continuous discovery. Organisational design becomes an exercise in placing boundaries to minimize the cost of coordination under environmental uncertainty.
+
+> The crucial problem for boundary-spanning units [...] is [...] adjustment to constraints and contingencies not controlled by the organization — [...] exogenous variables.
+>
+> ...
+>
+> ... organizations [...] seek to isolate their technical cores from environmental influences **by establishing boundary-spanning units to buffer or level environmental fluctuations**.
+>
+> -- Thompson, Organizations in Action, 1967, p67, Chapter 6 (Organizational Rationality and Structure)
+
+Accordingly, an organisation does not randomly draw boundaries. It protects its engineers (Thompson, Chapter 2) and spins up dedicated outward-facing roles, such as product managers, to absorb the fluctuations from the environment. Equally, following Conway's Law, the system architecture maps perfectly to the interfaces of these boundaries. We are not setting up random silos, but, we are building protection, which, inevitably, the software architecture is forced to copy.
 
 ```plain
 [Emery & Trist's Turbulent Environment]
@@ -146,23 +168,23 @@ Both, Alexander with its "process of form-making" and Thompson with "boundary-pl
 
 ## The Mirroring Hypothesis
 
-When bringing these two parallel worlds together - Product Design and Organisation Design - Melvin Conway's 1968 observation becomes an inevitable law — or, in all correctness, a thesis becoming a law when proofed 40 years later (more on this in Part 2 - Validation: The Research & Reality Check).
+When bringing these two parallel worlds together - Product Design and Organisation Design - Melvin Conway's 1968 observation becomes an inevitable law — or, in all correctness, a thesis becoming a law when proven 40 years later (more on this in Part 2 - Validation: The Research & Reality Check).
 
 Thompson defines the organisational strategy to protect its core by structuring its internal teams to cope with the environment (Emery & Trist). These internal teams represent a physical partitioning of the design process (Alexander).
 
 However, these organisational boundaries - to shield from environmental turbulence - become the communication channels of the organisation. But, when uncertainty rises, we have to process more information. To keep communication costs low and optimise for information flow (Galbraith), the system architecture's modular boundaries (Parnas) must reflect the internal team's buffering boundaries (Thompson) to build autonomous, loosely coupled teams (Galbraith's self-contained tasks). Accordingly, the system architecture, mirrors the communication lines to minimise coordination overhead, and thus mirrors the organisational defence mechanism against external chaos.
 
 ```plain
-Emery & Trist (Environmental Turbulence)           Alexander (Partitioning)
-       │                                               |
-       ▼                                               ▼
-Thompson (Organisation designs "Technical Core" + "Buffers" to survive turbulence)
-       │
-       ▼
-Galbraith (Optimise information flow)              Parnas (Information hiding)
-       │                                              |
-       ▼                                              ▼
-The Mirroring Principle (Technical Architecture copies those Organisation Buffers)
+                                 Emery & Trist (Environmental Turbulence)           
+                                    │
+                                    ▼
+Alexander (Partitioning)    ---▶ Thompson ("Technical Core" + "Buffers" to survive turbulence)
+                                    │
+                                    ▼
+                                 Galbraith (Optimise Information Flow)              
+                                    │
+                                    ▼
+Parnas (Information Hiding) ---▶ The Mirroring Principle (System Architecture copies Organisation Buffers)
 ```
 
 The *Mirroring Principle* asserts a structural correspondence between two networks, one organisational (the org-chart) and one structural (the system architecture). Said differently, our communication structures dictate our system boundaries. Because technical modules naturally map directly to specific design teams, organisational structure and technical architecture will always tend to align.
