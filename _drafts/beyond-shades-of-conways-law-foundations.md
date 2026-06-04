@@ -11,6 +11,10 @@ In 1968, Melvin Conway expressed a thesis on how system design follows the organ
 
 ---
 
+> 💡 **Editorial Note:** Writing this piece was a true catharsis, pushing me well out of my usual comfort zone as a software practitioner talking about Continuous Integration and Continuous Delivery. Looking up to [Ruth Malan](https://mastodon.social/@RuthMalan), I never saw myself talking about Conway's Law and organisation design. However, here I am exploring beyond the shades of Conway's Law, and looking past the surface-level definitions to dive straight into the parallel historical worlds of Product and Organisation Design.
+
+---
+
 Melvin Conway's thesis reads as follows:
 
 > Organisations which design systems are constrained to produce designs which are copies of the communication structures of these organisations.
@@ -70,19 +74,45 @@ In 1972, David Parnas reached a similar conclusion: hiding design decisions behi
 
 ## Organisation Design
 
-But an organisation does not architect systems in a vacuum. An organisation cannot be understood in isolation from its environment. It operates within an external environment. In 1965, Fred Emery and Eric Trist introduced the concept of the [*Causal Texture of Organizational Environments*](http://www.moderntimesworkplace.com/archives/ericsess/sessvol3/GEMTRCAUp53.pdf) - the degree of interconnectedness and predictability of the external world. Modern environments shift from simple and predictable to what they called a '*Turbulent Field*', where rapid technological, economic, and social shifts interconnect to create constant, unpredictable chaos. The environment becomes the primary driver of internal organisational complexity. This is the **outside-in view**.
+But an organisation does not architect systems in a vacuum. An organisation cannot be understood in isolation from its environment. It operates within an external environment. In 1965, Fred Emery and Eric Trist introduced the concept of the [*Causal Texture of Organizational Environments*](http://www.moderntimesworkplace.com/archives/ericsess/sessvol3/GEMTRCAUp53.pdf) - the degree of interconnectedness and predictability of the external world.
+
+> A main problem in the study of organizational change is that the environmental contexts in which organizations exist are themselves changing, at an increasing rate and towards increasing complexity. This point, in itself, scarcely needs laboring.
+>
+> -- Emery & Trist, [*Causal Texture of Organizational Environments*](http://www.moderntimesworkplace.com/archives/ericsess/sessvol3/GEMTRCAUp53.pdf), 1965
+
+Emery & Trist argued that early systems and management theory historically treated organisations as *closed systems*, assuming all elements and processes of interest are internal to the organisation. The idea here is to limit uncertainty as much as possible, to protect and optimise the factory-line - the classic Taylorist viewpoint, looking for the one best way to organise a task - and thus to ignore and eliminate the influence of its environment.
+
+> the importance of openness or closedness to the environment as a means of distinguishing living organisms from inanimate objects. [...] any living entity survives by importing into itself certain types of material from its environment, transforming these in accordance with its own system characteristics and exporting other types back into the environment. By this process the organism [...] becomes capable of attaining stability in a time-independent steady state — a necessary condition of adaptability to environmental variance.
+>
+> ... openness to the environment of a steady state maintains the capacity of the organism for work, without which adaptability--and hence survival--would be impossible.
+>
+> -- Emery & Trist, [*Causal Texture of Organizational Environments*](http://www.moderntimesworkplace.com/archives/ericsess/sessvol3/GEMTRCAUp53.pdf), 1965
+
+Emery & Trist questioned this closed-systems view by having an **outside-in view** and setting an *open systems* view. We cannot think of the organisation alone without its surrounding environment. The organisation structure and behaviour are affected by environmental influences. The organisation must be an adaptive system that tries to survive its environment. Modern environments shift from simple and predictable over complex up to what they called a "*Turbulent Field*", where rapid technological, economic, and social shifts interconnect to create constant, unpredictable chaos. The environment becomes the primary driver of internal organisational complexity.
+
+They identified four "ideal types" of environments, of *causal textures*, ordered by their degree of interconnectedness and complexity.
+
+> Causal Texture:
+>
+> the complex, interconnected web of relationships, events, and variables within an environment or system. It describes the degree to which different elements in a space are causally dependent on one another.
+>
+> -- David Ing, [Causal texture, contextualism, contextural](https://coevolving.com/blogs/causal-texture-contextural-contextualism/), 2020
+
+- Type I - *The Placid, Randomised Environment*. The simplest type of environmental texture. Resources and threats are randomly distributed and remain relatively unchanged. There is no distinction between *tactics* (day-to-day actions) and *strategy* (long-term plan). "*the optimal strategy is just the simple tactic of attempting to do one's best on a purely local basis*" (Schutzenberger). The best tactic can be learned from trial and error. In the IT industry, this would be a small, independent consulting firm that builds simple, custom Microsoft Access databases. Success relies on basic customer service and executing standard, repeatable, predictable routines.
+
+- Type II - *The Placid, Clustered Environment*. More complicated, but still static. However, the resources and threats are not randomly distributed but cluster together in certain ways. Strategy becomes more important. Survival results from what the organisation knows about its environment. Organisations grow, become hierarchical, with a tendency towards centralised control, such as rolling out an ERP system, adopting large enterprise software stacks like SAP or Oracle, or building out legacy internal IT systems. Because system changes are highly disruptive, IT leaders use long-term roadmaps.
+
+- Type III - *The Disturbed, Reactive Environment*. A dynamic environment containing multiple competing organisations. What one organisation knows, can also be known by the other organisations. Actions from one organisation trigger reactions from the other organisations. It is not only about tactics and strategy, but also *operations* — which of the other organisations' possible tactics do we want to take place, while ensuring the other tactics do not happen. Survival depends on operational flexibility — anticipating and reacting to the competitive countermoves much like the public cloud infrastructure (IaaS) price war. AWS, GCP and Azure monitoring each other. When one reduces prices or launches a service, the others have to react to block the other to gain market share.
+
+- Type IV - *The Turbulent Fields*. The environment is in constant motion. Change does not only come from the competition but also from the changing environment like evolving regulations, new technologies, shifting consumer behaviour. Look at the recent accelerated LLM evolutions. Tech organisations cannot just plan a five-year strategy. They need to co-evolve with the market, and adapt.
 
 How does an organisation survive this unexpected environmental change? This is where James D. Thompson comes in. Thompson was foundational for organisation design. Before Thompson there were two lines of thoughts:
-
-*Organisations as closed systems*. Historically, management theory, before Emery and Trist, treated organisations as closed systems. A closed system assumes all elements and processes of interest are internal to the organisation. The idea here is to limit uncertainty as much as possible, to protect the factory-line - the classic Taylorist viewpoint, looking for the one best way to organise a task - and thus to eliminate the influence of its environment. This is typically factory production line systems.
-
-*Organisations as open systems*. We cannot think of the organisation alone without its surrounding environment. The organisation structure and behaviour are affected by environmental influences. The organisation must be an adaptive system that tries to survive its environment.
 
 > ... differences in technical functions, or technologies, cause significant differences among organisations ...
 >
 > -- Thompson, Organizations in Action, 1967, p12, Chapter 1 (Strategies for Studying Organizations)
 
-Thompson accepted Emery and Trist's concept of environmental turbulence but asked a pragmatic structural question: *How does an organization actually perform core work when the ground beneath it is constantly moving?* Today, organisations wonder how teams can build and deliver stable, reliable software products that fit users' needs when the market conditions, and technologies change all the time. He argued that **an organisation is neither purely closed nor purely open; it is both**. The organisation copes with uncertainty by protecting their 'technical core', the organisation's production component - i.e. the factory and its workers and engineers, or software teams with engineers, etc. - to act as a closed system, to maximise efficiency. We want to shield off the core internal teams from the influence of the environment. This means the internal core must be predictable using Continuous Integration, and Continuous Delivery with rigorous testing.
+Thompson accepted Emery and Trist's concept of the Causal Textures by asking a pragmatic structural question: *How does an organisation actually perform core work when the ground beneath it is constantly moving?* Today, organisations wonder how teams can build and deliver stable, reliable software products that fit users' needs when the market conditions, and technologies change all the time. He argued that **an organisation is neither purely closed nor purely open; it is both**. The organisation copes with uncertainty by protecting their 'technical core', the organisation's production component - i.e. the factory and its workers and engineers, or software teams with engineers, etc. - to act as a closed system, to maximise efficiency. We want to shield off the core internal teams from the influence of the environment. This means the internal core must be predictable using Continuous Integration, and Continuous Delivery with rigorous testing.
 
 > Proposition 2.2: Under norms of rationality, organizations seek to buffer environmental influences by surrounding their technical core with input and output components.
 >
@@ -107,25 +137,21 @@ But at the boundaries, the organisation must attend and adapt to changes in the 
 Accordingly, an organisation does not randomly draw boundaries. It protects its engineers (Thompson, Chapter 2) and spins up dedicated outward-facing roles, such as product managers, to absorb the fluctuations from the environment. Equally, following Conway's Law, the system architecture maps perfectly to the interfaces of these boundaries. We are not setting up random silos, but, we are building protection, which, inevitably, the software architecture is forced to copy.
 
 ```plain
-[Emery & Trist's Turbulent Environment]
-                 │ (Shockwaves)
+[Emery & Trist's Causal Textures, the Environment]
+                 │ 
                  ▼
      ┌───────────────────────┐
      │ Thompson's Buffer     │ (Open, Boundary-Spanning Unit to absorb Environment changes)
      │   ┌───────────────┐   │
-     │   │ Technical     │   │ (Closed for Efficiency)
+     │   │ Technical     │   │ (Closed for internal Efficiency)
      │   │ Core          │   │
      │   └───────────────┘   │
      └───────────────────────┘
 ```
 
-As we can observe, in the 1960s, a shift happened: moving from organisations as "closed systems", traditional Taylorism, to "open systems" that must adapt to the surrounding environment. Emery and Trist and Thompson were the driving forces of this shift.
+While Emery & Trist define the external textures and Thompson explains the organisational structure to survive the environment and isolate the core work, Jay R. Galbraith articulates organisation design using a micro-level dimension: the flow of information.
 
-While Thompson explains *how* to build the organisation structure to survive the environmental chaos, Jay R. Galbraith articulates *what* flows through those structures, i.e. information.
-
-Galbraith introduces the following proposition:
-
-The greater the uncertainty of the task, the more information decision makers need to process during the task execution, to achieve a given level of performance.
+Galbraith's *Information Processing View* introduces the following proposition: **the greater the uncertainty of the task, the more information decision makers need to process during the task execution, to achieve a given level of performance**.
 
 > ... the greater the task uncertainty, the greater the amount of information that must be processed among decision makers during task execution ...
 >
@@ -135,20 +161,21 @@ The greater the uncertainty of the task, the more information decision makers ne
 >
 > -- Galbraith, Organization Design: An Information Processing View, 1974
 
-If the task is well understood before executing the task, much of the activity can be preplanned. However, if it is not understood, then much more knowledge need to be acquired during the task execution.
-
-This directly maps to Emery & Trist's environmental types (type I - Placid, Randomised, type II - Placid, Clustered, type III - Disturbed, Reactive and type IV - the Turbulent Field) in 1965, and later popularised by Dave Snowden with the [Cynefin framework](https://en.wikipedia.org/wiki/Cynefin_framework) in 1999.
-
-Galbraith's insight — task uncertainty dictates organisational design — laid the basis for Dave Snowden's Cynefin framework, mapping high-level organisational strategy to the sense-making method. In essence, Cynefin translates Emery and Trist's Causal Textures into a modern, sense-making method. Galbraith, and later Snowden, warn leaders that if we treat a complex or chaotic domain as if it were simple or complicated, we will fail. In the same way, Conway's Law highlights that designing a rigid, siloed communication structure, built for a "simple" domain, to solve a fluid, systemic problem, inherent to a "complex" domain causes our technical architecture to collapse under the pressure.
+If a task is well understood before executing the task, much of the activity can be preplanned. However, if it is not understood, then much more knowledge need to be acquired during the task execution.
 
 The effect of uncertainty is that it limits our ability to preplan. Therefore, **the variations in organisational forms are variations in the strategies to increase our ability to preplan**, and so **increase our ability to manage uncertainty**. Executing a task, consequently, becomes an organisation design problem.
 
-To solve this problem, Galbraith suggests four strategies:
+To solve this problem, Galbraith suggests four strategies to allow an organisation to increase information processing capacity:
 
-- Creation of Slack Resources
-- Creation of Self-Contained Tasks
-- Investment in Vertical Information Systems
-- Creation of Lateral Relationships
+- *Creation of Slack Resources*. As Tom Demarco denoted in [Slack](https://app.thestorygraph.com/books/276edcbf-3af8-4421-bf53-94a6518e8e85), an organisation that runs at full capacity is unable to innovate because it has zero capacity to learn, adapt, and reinvent itself. Therefore, leave 20-30% planning buffer to absorb unforeseen complexities during task execution.
+
+- *Creation of Self-Contained Tasks*. Reduce the need for information by setting up, cross-functional, autonomous, decoupled product teams with end-to-end responsibility as well as having decoupled, isolated technical services.
+  
+- *Investment in Vertical Information Systems*. Increase the organisation's capacity to process information with enterprise product portfolios, to track roadmaps, and observability, to instantly see the health of the organisation's product. All information is available to everyone. No need-to-know nonsense.
+  
+- *Creation of Lateral Relationships*. Hierarchy lines on the org-chart as only communication channels is a disaster. They are too narrowband (Demarco). Cut through the vertical. Create direct horizontal channels with peers to solve problems instantly through Communities of Practice and open shared chat channels.
+
+With information capacity as the constraint, Galbraith reveals the underlying operational mechanics of organisational boundaries: teams are configured not just to group skills, but to optimise information flow. Accordingly, Conway's Law discloses that teams optimised for information flow produce decoupled system architectures. Conversely, when an organisation keeps its rigid, vertical communication hierarchy, the system architecture mirrors it into deeply fragmented, siloed, coupled systems that choke under stress.
 
 ## The Architecture of Complex Systems: Near-Decomposability
 
@@ -168,17 +195,19 @@ Both, Alexander with its "process of form-making" and Thompson with "boundary-pl
 
 ## The Mirroring Hypothesis
 
-When bringing these two parallel worlds together - Product Design and Organisation Design - Melvin Conway's 1968 observation becomes an inevitable law — or, in all correctness, a thesis becoming a law when proven 40 years later (more on this in Part 2 - Validation: The Research & Reality Check).
+When bringing these two parallel worlds together - Product Design and Organisation Design - Melvin Conway's 1968 observation becomes an inevitable law — or, in all correctness, a thesis that only became a law 40 years later once proof was provided by new academic research (more on this in Part 2 - Validation: The Research & Reality Check).
 
-Thompson defines the organisational strategy to protect its core by structuring its internal teams to cope with the environment (Emery & Trist). These internal teams represent a physical partitioning of the design process (Alexander).
+Product Design splits technical form to manage cognitive load. Organisation Design splits teams to handle environment and information constraints.
 
-However, these organisational boundaries - to shield from environmental turbulence - become the communication channels of the organisation. But, when uncertainty rises, we have to process more information. To keep communication costs low and optimise for information flow (Galbraith), the system architecture's modular boundaries (Parnas) must reflect the internal team's buffering boundaries (Thompson) to build autonomous, loosely coupled teams (Galbraith's self-contained tasks). Accordingly, the system architecture, mirrors the communication lines to minimise coordination overhead, and thus mirrors the organisational defence mechanism against external chaos.
+Thompson defines the organisational strategy to protect its core by structuring its internal teams to cope with the environment (Emery & Trist). These internal teams then represent a physical partitioning of the design process (Alexander).
+
+However, these organisational boundaries - to shield from the environment - become the communication channels of the organisation. But, when uncertainty rises, we have to process more information. To keep communication costs low and optimise for information flow (Galbraith), the system architecture's modular boundaries (Parnas) must reflect the internal team's buffering boundaries (Thompson) to build autonomous, loosely coupled teams and Communities of Practice (Galbraith). Accordingly, the system architecture, mirrors the communication lines to minimise coordination overhead, and thus mirrors the organisational defence mechanism against external influences.
 
 ```plain
-                                 Emery & Trist (Environmental Turbulence)           
+                                 Emery & Trist (Causal Textures - Environment)           
                                     │
                                     ▼
-Alexander (Partitioning)    ---▶ Thompson ("Technical Core" + "Buffers" to survive turbulence)
+Alexander (Partitioning)    ---▶ Thompson ("Technical Core" + "Buffers" to survive the environment)
                                     │
                                     ▼
                                  Galbraith (Optimise Information Flow)              
@@ -189,7 +218,7 @@ Parnas (Information Hiding) ---▶ The Mirroring Principle (System Architecture 
 
 The *Mirroring Principle* asserts a structural correspondence between two networks, one organisational (the org-chart) and one structural (the system architecture). Said differently, our communication structures dictate our system boundaries. Because technical modules naturally map directly to specific design teams, organisational structure and technical architecture will always tend to align.
 
-Messy corporate structures produce messy software!
+Again, messy corporate structures produce messy software!
 
 This was summarised in the 2016 paper [The Mirroring Hypothesis](https://www.hbs.edu/ris/Publication%20Files/Colfer%20Baldwin%20Mirroring%20Hypothesis%20Ind%20Corp%20Change-2016_8aa320ff-6aa6-42ef-b259-d139012faaf6.pdf) by Baldwin and Colfer. They concluded that **the organisational ties in firms will correspond to the technical dependencies in the work being performed**.
 
@@ -197,7 +226,7 @@ This was summarised in the 2016 paper [The Mirroring Hypothesis](https://www.hbs
 >
 > The Mirroring Hypothesis, Baldwin and Colfer, 2016
 
-In recent years, this idea of the *Mirroring Principle* and *Conway’s Law* has resurfaced as a kind of guiding principle on how to organise teams. However, there is still a good deal of people that are fairly sceptical about this because it is just a hypothesis. In the end, Melvin Conway did not provide a proof for the law.
+In recent years, this idea of the *Mirroring Principle* and *Conway’s Law* has resurfaced as a kind of guiding principle on how to organise teams. However, many people still remain fairly sceptical because it is still just a hypothesis. In the end, Melvin Conway did not provide a proof for the law.
 
 There is a little story behind Melvin Conway's paper that he explains on his website. Conway send the paper to the Harvard Business Review. They rejected it on the grounds that there was no proof for the thesis. He then submitted it to Datamation, a major IT magazine at that time, which published it in April 1968.
 
@@ -228,4 +257,4 @@ But, in the meantime there has been some academic research done that support the
 - [How Do Committees Invent?](https://www.melconway.com/Home/Committees_Paper.html), Melvin Conway, 1968
 - [On the Criteria To Be Used in Decomposing Systems into Modules](https://www.win.tue.nl/~wstomv/edu/2ip30/references/criteria_for_modularization.pdf), Parnas, 1972
 - [Organization Design: An Information Processing View](http://strategy.sjsu.edu/www.stable/pdf/Galbraith,%20J%20R,%201974,%20Interfaces.%204%20pp%2028-36.pdf), Galbraith, 1974
-- [Cynefin framework](https://thecynefin.co/about-us/about-cynefin-framework/), Snowden, 1999
+- [Causal texture, contextualism, contextural](https://coevolving.com/blogs/causal-texture-contextural-contextualism/), David Ing, 2020
