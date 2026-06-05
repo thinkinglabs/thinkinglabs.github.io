@@ -7,7 +7,7 @@ tags: [ Conway's Law ]
 image: /images/shades-of-conways-law/conways_law_cornet.png
 ---
 
-In 1968, Melvin Conway expressed a thesis on how system design follows the organisation's communication structures. In the same period, the communities of organisation design and product design independently observed the same thesis, which later became known as the **Mirroring Principle**.
+In 1968, Melvin Conway expressed a thesis on how system design follows the organisation's communication structures. In the same period, the communities of Organisation Design and Product Design independently observed the same thesis, which later became known as the **Mirroring Principle**.
 
 ---
 
@@ -84,7 +84,7 @@ Emery & Trist argued that early systems and management theory historically treat
 
 > the importance of openness or closedness to the environment as a means of distinguishing living organisms from inanimate objects. [...] any living entity survives by importing into itself certain types of material from its environment, transforming these in accordance with its own system characteristics and exporting other types back into the environment. By this process, the organism [...] becomes capable of attaining stability in a time-independent steady state — a necessary condition of adaptability to environmental variance.
 >
-> ... openness to the environment of a steady state maintains the capacity of the organism for work, without which adaptability--and hence survival--would be impossible.
+> ... **openness to the environment of a steady state maintains the capacity of the organism for work, without which** adaptability--and hence **survival--would be impossible**.
 >
 > -- Emery & Trist, [*Causal Texture of Organizational Environments*](http://www.moderntimesworkplace.com/archives/ericsess/sessvol3/GEMTRCAUp53.pdf), 1965
 
@@ -114,7 +114,7 @@ How does an organisation survive this unexpected environmental change? This is w
 >
 > -- Thompson, Organizations in Action, 1967, p. 12, Chapter 1 (Strategies for Studying Organizations)
 
-Thompson accepted Emery and Trist's concept of the Causal Textures by asking a pragmatic structural question: *How does an organisation actually perform core work when the ground beneath it is constantly moving?* Today, organisations wonder how teams can build and deliver stable, reliable software products that fit users' needs when the market conditions and technologies change all the time. He argued that **an organisation is neither purely closed nor purely open; it is both**. The organisation copes with uncertainty by protecting its 'technical core', which involves the production component - i.e., the factory, its workers and engineers, or software teams with engineers - to act as a closed system, thereby maximising efficiency. We want to shield the core internal teams from the influence of the environment. This means the internal core must be predictable using Continuous Integration and Continuous Delivery with rigorous testing.
+Thompson accepted Emery and Trist's concept of the Causal Textures by asking a pragmatic structural question: *How does an organisation actually perform core work when the ground beneath it is constantly moving?* Today, organisations wonder how teams can build and deliver stable, reliable software products that fit users' needs when the market conditions and technologies change all the time. He argued that **an organisation is neither purely closed nor purely open; it is both**. The organisation copes with uncertainty by protecting its "technical core", which involves the production component — i.e., the factory, its workers and engineers, or software teams with engineers — to act as a closed system, thereby maximising efficiency. We want to shield the core internal teams from the influence of the environment. This means the internal core must be predictable using Continuous Integration and Continuous Delivery with rigorous testing.
 
 > Proposition 2.2: Under norms of rationality, organizations seek to buffer environmental influences by surrounding their technical core with input and output components.
 >
@@ -126,7 +126,7 @@ Thompson accepted Emery and Trist's concept of the Causal Textures by asking a p
 >
 > -- Thompson, Organizations in Action, 1967, p. 20-22, Chapter 2 (Rationality in Organizations)
 
-Yet, at the boundaries, the organisation must adapt to and respond to changes in the environment. Therefore, it has to be open to environmental signals. As such, at its boundaries, it is an open system. To do this, the organisation creates "boundary-spanning units" to absorb and buffer external shock waves. This means having decoupled architectures and product managers who filter out market noise, acting as shock absorbers through short iterations and continuous discovery. Organisational design becomes an exercise in placing boundaries to minimise the cost of coordination under environmental uncertainty.
+Yet, at the boundaries, the organisation must adapt and respond to changes in the environment. Therefore, it has to be open to environmental signals. As such, at its boundaries, it is an open system. To do this, the organisation creates "boundary-spanning units" to absorb and buffer external influences. This means having decoupled architectures and product managers who filter out market noise, acting as shock absorbers through short iterations and continuous discovery. Organisational design becomes an exercise in placing boundaries to minimise the cost of coordination under environmental uncertainty.
 
 > The crucial problem for boundary-spanning units [...] is [...] adjustment to constraints and contingencies not controlled by the organization — [...] exogenous variables.
 >
@@ -173,7 +173,7 @@ To solve this problem, Galbraith suggests four strategies to allow an organisati
 
 - *Creation of Self-Contained Tasks*. Reduce the need for information by setting up cross-functional, autonomous, decoupled product teams with end-to-end responsibility, as well as having decoupled, isolated technical services.
   
-- *Investment in Vertical Information Systems*. Enhance the organisation's capacity to process information with enterprise product portfolios, to track roadmaps, and observability, to observe the health of the organisation's products instantly. All information is available to everyone. No need-to-know nonsense.
+- *Investment in Vertical Information Systems*. Enhance the organisation's capacity to process information with enterprise product portfolios, to track roadmaps, and observability, to assess the health of the organisation's products instantly. All information is available to everyone. No need-to-know nonsense.
   
 - *Creation of Lateral Relationships*. The hierarchical lines on the org-chart as the only communication channels are a disaster. They are too narrowband (Demarco). Cut through the vertical. Create direct horizontal channels with peers to solve problems instantly through Communities of Practice and open shared chat channels.
 
@@ -218,7 +218,7 @@ Alexander (Partitioning)    ---▶ Thompson ("Technical Core" + "Buffers" to sur
 Parnas (Information Hiding) ---▶ The Mirroring Principle (System Architecture copies Organisation Buffers)
 ```
 
-The *Mirroring Principle* asserts a structural correspondence between two networks - one organisational (the org-chart) and one structural (the system architecture). Said differently, our communication structures dictate our system boundaries. Because technical modules naturally map directly to specific design teams, organisational structure and technical architecture will always tend to align.
+The *Mirroring Principle* asserts a structural correspondence between two networks — one organisational (the org-chart) and one structural (the system architecture). Said differently, our communication structures dictate our system boundaries. Because technical modules naturally map directly to specific design teams, organisational structure and technical architecture will always tend to align.
 
 Again, messy corporate structures produce messy software!
 
