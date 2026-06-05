@@ -90,7 +90,7 @@ Emery & Trist argued that early systems and management theory historically treat
 
 Emery & Trist questioned this closed-systems view by having an **outside-in view** and setting an *open systems* view. We cannot think of the organisation alone without its surrounding environment. The organisation structure and behaviour are affected by environmental influences. The organisation must be an adaptive system that tries to survive its environment. Modern environments shift from simple and predictable over complex up to what they called a "*Turbulent Field*", where rapid technological, economic, and social shifts interconnect to create constant, unpredictable chaos. The environment becomes the primary driver of internal organisational complexity.
 
-They identified four "ideal types" of environments, of *causal textures*, ordered by their degree of interconnectedness and complexity.
+They identified four "ideal types" of environments, of *causal textures*.
 
 > Causal Texture:
 >
@@ -105,6 +105,8 @@ They identified four "ideal types" of environments, of *causal textures*, ordere
 - Type III - *The Disturbed, Reactive Environment*. A dynamic environment containing multiple competing organisations. What one organisation knows, can also be known by the other organisations. Actions from one organisation trigger reactions from the other organisations. It is not only about tactics and strategy, but also *operations* — which of the other organisations' possible tactics do we want to take place, while ensuring the other tactics do not happen. Survival depends on operational flexibility — anticipating and reacting to the competitive countermoves much like the public cloud infrastructure (IaaS) price war. AWS, GCP and Azure monitoring each other. When one reduces prices or launches a service, the others have to react to block the other to gain market share.
 
 - Type IV - *The Turbulent Fields*. The environment is in constant motion. Change does not only come from the competition but also from the changing environment like evolving regulations, new technologies, shifting consumer behaviour. Look at the recent accelerated LLM evolutions. Tech organisations cannot just plan a five-year strategy. They need to co-evolve with the market, and adapt.
+
+Be aware that the different types do not lie on a scale of degree of interconnectedness or predictability. Also, it does not help to do more of what works for Type II in a Type III environment. What worked in Type III will even be counterproductive in a Type IV environment. They are distinct types, existing simultaneously in the "real world" of most organisations.
 
 How does an organisation survive this unexpected environmental change? This is where James D. Thompson comes in. Thompson was foundational for organisation design. Before Thompson there were two lines of thoughts:
 
