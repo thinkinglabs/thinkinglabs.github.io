@@ -7,7 +7,7 @@ tags: [ Conway's Law ]
 image: /images/shades-of-conways-law/sketchplanations-conways-law.jpg
 ---
 
-Over the years, Conway's Law has resurfaced as a guiding principle to organise teams. Yet, many people still hesitate to accept the idea. It is only a hypothesis. Melvin Conway did not provide any proof when publishing the thesis. However, in the meantime, a good deal of academic research was performed to turn the thesis into a law.
+Moving beyond hunch and silencing the sceptics. Over the years, Conway's Law has resurfaced as a guiding principle to organise teams. Yet, many people still hesitate to accept the idea. In the end, it is only a hypothesis. Melvin Conway did not provide any proof when publishing the thesis. However, in the meantime, decades later, a good deal of academic research supports the thesis. Ultimately, Harvard and MIT researchers provided robust empirical validation for the hypothesis across the software industry, cementing *The Mirroring Principle* as an undeniable organisational reality.
 
 ---
 
@@ -78,7 +78,7 @@ The outcome of the study was that a loosely-coupled organisation, like open sour
 
 [Beyond the Shades of Conway's Law series]({% post_url 2026-04-24-beyond-the-shades-of-conways-law %}):
 
-- **Foundations: The Origin & The Mirroring Principle** - How the worlds of organisation and product design observed the same thesis independently.
+- [Foundations: The Origin & The Mirroring Principle]({% post_url 2026-06-07-beyond-shades-of-conways-law-foundations %}) - How the worlds of organisation and product design observed the same thesis independently.
 - **Validation: The Research & Reality Check** - Moving beyond the "hunch", how researchers proved the Law in different industries, but especially in software.
 - **Mechanics: The Mathematical & Geometrical Shades** - The geometry of design: from mathematical isomorphism, homomorphism, congruence to compatibility.
 - **Strategy: Reversing the Law** - How the system ultimately forces the organisation to change versus deliberately changing the organisation.
