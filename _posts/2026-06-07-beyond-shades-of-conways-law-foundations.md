@@ -232,7 +232,7 @@ In recent years, the concepts of the *Mirroring Principle* and *Conway’s Law* 
 
 There is a little story behind Melvin Conway's paper that he explains on his website. Conway sent the paper to the Harvard Business Review. They rejected it because no evidence was provided to support the thesis. He then submitted it to Datamation, a major IT magazine at that time, which published it in April 1968.
 
-Nevertheless, in the meantime, academic research has been done that supports the thesis. Part 2 "*Validation: The Research & Reality Check*" explores this in more detail.
+Nevertheless, in the meantime, academic research has been done that supports the thesis. Part 2 - [Validation: The Research & Reality Check]({% post_url 2026-06-20-beyond-shades-of-conways-law-validation %}) explores this in more detail.
 
 ## Acknowledgments
 
@@ -243,7 +243,7 @@ Nevertheless, in the meantime, academic research has been done that supports the
 [Beyond the Shades of Conway's Law series]({% post_url 2026-04-24-beyond-the-shades-of-conways-law %}):
 
 - **Foundations: The Origin & The Mirroring Principle** - How the worlds of organisation and product design observed the same thesis independently.
-- **Validation: The Research & Reality Check** - Moving beyond the "hunch", how researchers proved the Law in different industries, but especially in software.
+- [Validation: The Research & Reality Check]({% post_url 2026-06-20-beyond-shades-of-conways-law-validation %}) - Moving beyond the "hunch", how researchers proved the Law in different industries, but especially in software.
 - **Mechanics: The Mathematical & Geometrical Shades** - The geometry of design: from mathematical isomorphism, homomorphism, congruence to compatibility.
 - **Strategy: Reversing the Law** - How the system ultimately forces the organisation to change versus deliberately changing the organisation.
 - **Scale: Conway's Corollary** - The required organisational flexibility.
