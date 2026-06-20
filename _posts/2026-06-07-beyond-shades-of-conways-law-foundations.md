@@ -236,7 +236,7 @@ Nevertheless, in the meantime, academic research has been done that supports the
 
 ## Acknowledgments
 
-[Eduardo da Silva](https://www.linkedin.com/in/emgsilva/), [João Rosa](https://www.linkedin.com/in/joaoasrosa/) and  [Trond Hjorteland](https://www.linkedin.com/in/trondhjort/) for shedding light and fixing my thinking flaws.
+[Trond Hjorteland](https://www.linkedin.com/in/trondhjort/) for shedding light and fixing my thinking flaws.
 
 ## The Series: Navigating the Shades
 
