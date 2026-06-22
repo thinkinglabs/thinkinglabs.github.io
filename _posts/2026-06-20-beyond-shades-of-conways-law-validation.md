@@ -124,7 +124,7 @@ The outcome of the study was that **loosely-coupled organisations, such as open-
 >
 > -- Cobb's Paradox, Martin Cobb, CIO for the Secretariat of Treasury Board of Canada, CHAOS University, 1995, published in [Unfinished Voyages I](https://www.inf.ufpr.br/urban/2019-1_205_e_220/205e220_Ler_ver_para_complementar/StandishGroup__UnfinishedVoyages-I.pdf), Standish Group, 1995
 
-When organisations keep treating software products as mere, rigid projects, the resulting architecture and outcomes for users will be notably poor, leading to surprising failures.
+When organisations keep treating software products as mere, rigid projects, the resulting architecture and outcomes for users will be notably poor, leading to unexpected failures.
 
 From 1994 until 2020, the Standish Group published the CHAOS Report, a study on the success, failure, and challenge rates of IT projects.
 
