@@ -378,7 +378,7 @@ Once we fathom all of that, the rest will follow, naturally. It becomes a virtuo
 - [Out of the Crisis](https://app.thestorygraph.com/books/b79ebdec-b267-4585-9af4-b5b68b30f5e5), Edwards Deming, 1982
 - [A typology of organisational cultures](https://pmc.ncbi.nlm.nih.gov/articles/PMC1765804/pdf/v013p0ii22.pdf), Westrum, 2004
 - [The Deployment Production Line](https://dannorth.net/profile/deployment_production_line.pdf), Jez Humble, Daniel North, Chris Read, 2006
-- [The Deployment Pipeline](https://continuousdelivery.com/wp-content/uploads/2010/01/The-Deployment-Pipeline-by-Dave-Farley-2007.pdf)
+- [The Deployment Pipeline](https://continuousdelivery.com/wp-content/uploads/2010/01/The-Deployment-Pipeline-by-Dave-Farley-2007.pdf), Dave Farley, 2007
 - [The Principles of Product Development Flow](https://app.thestorygraph.com/books/63ab42fd-34e7-40e3-b86e-5be510f5c119), Donald Reinertsen, 2009
 - [Improvement Kata](http://www-personal.umich.edu/~mrother/The_Improvement_Kata.html), Mike Rother, 2009
 - [Continuous Delivery: Reliable Software Releases Through Build, Test, and Deployment Automation](https://app.thestorygraph.com/books/77eb0975-4194-42e7-9db3-005d4250940f), Dave Farley, Jez Humble, 2011
