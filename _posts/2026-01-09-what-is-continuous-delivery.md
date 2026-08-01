@@ -171,11 +171,11 @@ This principle is not mentioned in the Continuous Delivery book. However, I find
 
 It is the lack of trust that has initiated all sorts of unnecessary, wasteful activities (such as blocking code reviews, quality gates, security reviews, change approval boards, biannual releases, etc.) to the process of getting code from Version Control into the hands of the users, which reduce feedback, impact quality, create fatigue, burnout and disengagement, slow down delivery, and finally bring organisations to a halt without them noticing it. Only to create some sort of sense of control. Not true control, just a sense.
 
-This lack of trust creates information silos, fosters hidden communication channels, gradually ceases innovation, and values the illusion of work over quality of effort (Wieczoreck 2025).
+This lack of trust creates information silos, fosters hidden communication channels, gradually ceases innovation, and values the illusion of work over quality of effort (Wieczoreck, 2025).
 
 > But, but ... people will dump rubbish.
 
-If that were the case, it would be a system problem. According to Deming, system problems are created by management. This conveys that it is management's responsibility to remove barriers and constantly improve the system.
+If that were the case, it would be a system problem. System problems are created by management (Deming, 1982). This conveys that it is management's responsibility to remove barriers and constantly improve the system.
 
 > So the natural thought is just clogged up, totally clogged up.
 >
