@@ -169,9 +169,9 @@ According to Galbraith (1973), the greater the uncertainty, the more information
 
 > **Uncertainty** is the difference between the amount of information required to perform a task and the amount of information already possessed by the organization. Thus the amount of task uncertainty is a result of a combination of a specific task and a specific organization.
 >
-> -- Galbraith, [Designing Complex Organizations](https://app.thestorygraph.com/books/c746ca36-a5d7-4c2a-995c-6330c4d363bd), 1973, p5 
+> -- Galbraith, [Designing Complex Organizations](https://app.thestorygraph.com/books/c746ca36-a5d7-4c2a-995c-6330c4d363bd), 1973, p5
 
-As already hinted in [Foundations: The Origin & The Mirroring Principle]({% post_url 2026-06-07-beyond-shades-of-conways-law-foundations %}), task uncertainty defines the strategies to design the organisation structure. When assigning 1.000 engineers to a task before a formal design, we are at absolute uncertainty. The simplest way to coordinate interdependent tasks is to specify the expected behaviour in advance using rules. The virtue of rules is to reduce treating each situation as new, as such cutting communication and decision making. When the organisation encounters a new situation it has not faced before, the problem is raised (as an exception) to the manager who (probably) has the information to make the decision. We rely on the hierarchy of authority, the org-chart. However, the organisation's org-chart, the hierarchical communication channels, have only a finite capacity to process information. As more exceptions are raised upwards, the hierarchy becomes overloaded. Serious delays develop.
+As already hinted in [Foundations: The Origin & The Mirroring Principle]({% post_url 2026-06-07-beyond-shades-of-conways-law-foundations %}), task uncertainty defines the strategies to design the organisation structure. When assigning 1.000 engineers to a task before a formal design, we are at absolute uncertainty. The simplest way to coordinate interdependent tasks is to specify the expected behaviour in advance using rules. The virtue of rules is to reduce treating each situation as new, as such cutting communication and decision making. When the organisation encounters a new situation it has not faced before, the problem is raised (as an exception) to the manager who (probably, maybe, hopefully) has the information to make the decision. We rely on the hierarchy of authority, the org-chart. However, the organisation's org-chart, the hierarchical communication channels, have only a finite capacity to process information. As more exceptions are raised upwards, the hierarchy becomes overloaded. Serious delays develop.
 
 The *Thousand Module Effect* happens because the information can only be discovered during the system design. Decisions have to be made and remade whenever new information is discovered. The hierarchy cannot process the massive amount of information produced by 1.000 engineers designing the system. The organisation has to adopt strategies to reduce the information and must cut the number of communication lines. Hence, engineers are assigned to individual, localised modules. Since "*two engineers cannot fit into one module*" we end up splitting the codebase into 1.000 modules. The system architecture becomes a reflection of the organisation structure.
 
@@ -187,9 +187,21 @@ To then conclude the paragraph ... with the observation that some basic question
 >
 > -- Melvin Conway, How Do Committees Invent?, 1968
 
-Look how everything is tied together. We evolved from the Homomorphic Force, over the Thousand Module Effect, which landed us with Mealy's Law, the Mythical-Man Month and Brooks' Law, back to Conway's paper.
+Everything is tied together. We evolved from the Homomorphic Force, over the Thousand Module Effect, which landed us with Mealy's Law, the Mythical-Man Month and Brooks' Law, Galbraith and back to Conway's paper.
 
 Galbraith provides the organisational logic for why adding more people to a late project makes it more late. We are adding more communication links. If the organisation does not adopt strategies to reduce the amount of information (Slack Resources, Self-Contained Task) or increase the information handling capacity (Vertical Information Systems, Lateral Relationships), the communication overhead grows faster than the ability to produce system designs. The incremental person consumes more communication and alignment energy than they produce technical energy to design systems.
+
+Alexander Skvortcov (2024) provides modern empirical validation for Galbraith's overloaded hierarchy concept. His research demonstrates that **organisation design directly impacts decision-making latency, which ensures IT project success**. He confirms Galbraith's finding that structural organisation choices — specifically self-contained tasks and lateral relation channels (i.e. horizontal communication channels such as Communities of Practice), influence information flow and therefore decision making speed.
+
+Skvortcov identifies three critical factors affecting decision-making latency:
+
+- *People and Culture*: Appointing and empowering the right people to build trust and safety, is more vital than any structured rigidity, together with leadership competence. This matches Jim Collin's findings on what makes a great organisation in [Good to Great](https://app.thestorygraph.com/books/1771dbe4-16a3-4316-83a1-ed2b21984bc9) regarding "*Level 5 Leadership*" and "*First Who ... Than What*".
+- *Correctness of Organisation*: Clear alignment with and understanding of business goals allows teams to make localised decisions. This requires the correct people are employed, again "*First Who ... Than What*". A lack of alignment creates friction and inflates decision latency.
+- *Customer Focus*: Decision-makers require a good understanding of customer needs. Therefore, the need for senior Product Managers with a clear product vision who can say "no" to random requests to prevent end-less discussions and re-evaluations of direction.
+
+Decision Latency Theory asserts "*The value of the interval is greater than the quality of the decision*" (Johnson, 2018). It is more important to take frequent bad decisions than no decision. High-frequency decision-making allows organisations to revert bad choices quickly as new information emerges. Skvortcov's expert panel agreed that placing decision-making as close as possible to the people who are doing the work minimises latency. Bringing forward the importance of autonomy to lower decision latency. However, they cautioned that autonomy without alignment or understanding of customer needs degrades overall decision quality.
+
+This aligns with the Standish Group's CHAOS Report, which attributes project success to *Good Sponsor*, *Good Team*, *Good Place*, and *Short Decision Latency* (more on this in [Validation: The Research & Reality Check]({% post_url 2026-06-20-beyond-shades-of-conways-law-validation%}#the-industry-reality-check-1995-2020)).
 
 In 2004, Coplien and Harrison reformulated Conway’s Law by stating ...
 
@@ -233,6 +245,10 @@ This closes the option space we have for designing the structure of our organisa
 
 Finally, it brings us to the greenfield and mature systems duality, ultimately leading to the **Reverse Conway’s Law** which we will cover in part 4 *Strategy: Reversing the Law*.
 
+## Acknowledgements
+
+Special thanks to [Alexander Skvortcov](https://www.linkedin.com/in/askvortcov/) for promptly sharing his master thesis the "*Impact of Organisation Design on Decision-Making Latency regarding IT projects*", and reviewing this third part of the series.
+
 ## The Series: Navigating the Shades
 
 [Beyond the Shades of Conway's Law series]({% post_url 2026-04-24-beyond-the-shades-of-conways-law %}):
@@ -252,9 +268,13 @@ Finally, it brings us to the greenfield and mature systems duality, ultimately l
 - [Structured Design](https://www.goodreads.com/book/show/946145.Structured_Design), Edward Yourdon and Larry L. Constantine, 1979
 - [Architectural Blueprints — The "4+1" View Model of Software Architecture](https://arxiv.org/pdf/2006.04975), Philippe Kruchten, 1995
 - [The New Hacker's Dictionary (3rd ed.)](https://www.gutenberg.org/files/3008/3008-h/3008-h.htm), Eric Raymond, 1996
+- [Good to Great](https://app.thestorygraph.com/books/1771dbe4-16a3-4316-83a1-ed2b21984bc9), Jim Collins, 2001
 - [Organisational patterns of agile software development](https://www.goodreads.com/book/show/756250.Organizational_Patterns_of_Agile_Software_Development), James Coplien & Neil Harrison, 2004
 - [Identification of Coordination Requirements: Implications for the Design of Collaboration and Awareness Tools](https://www.cs.drexel.edu/~yfcai/CS680/Readings/Week8/Identification%20of%20Coordination%20Requirements.pdf), Cataldo 2006
 - [Conway's Law](https://web.archive.org/web/20181022001505/http://traceinthesand.com:80/blog/2008/02/13/conways-law/), Ruth Malan, 2008
 - [Exploring the Duality between Product and Organizational Architecture: A Test of the “Mirroring” Hypothesis](https://www.hbs.edu/ris/Publication%20Files/08-039_1861e507-1dc1-4602-85b8-90d71559d85b.pdf), Baldwin, MacCormack, Rusnak, 2012
 - [Twitter, Reddit and Conway's Law](https://michaelfeathers.silvrback.com/social-media-architecture-and-conway-s-law), Michael Feathers, 2017
-- [Isomorphism vs Homomorphism](https://hachyderm.io/@cornazano/111241418996567374), Michael McCliment
+- [Decision Latency Theory: It is All About the Interval](https://www.standishgroup.com/products/project-resolution-benchmark), Jim Johnson, The Standish Group, 2018
+- [Isomorphism vs Homomorphism](https://hachyderm.io/@cornazano/111241418996567374), Michael McCliment, 2023
+- [Chaos Report — why this study about IT project management is so unique](https://thestory.is/en/journal/chaos-report/) about the CHAOS Report 2020, Radek, The Story, 2024
+- Impact of Organisation Design on Decision-Making Latency regarding IT projects, Alexander Skvortcov, 2024
