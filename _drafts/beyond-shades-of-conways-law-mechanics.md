@@ -77,7 +77,7 @@ This is what makes Conway’s Law. Underlying Conway’s Law is the **Homomorphi
 
 It is the power of one system, one structure to bring itself about in another system or structure. The force creates the same structure. The force also preserves the structure.
 
-This means if we have 4 teams maintaining a compiler, we will end up with a 4-pass compiler. Over time we find that the 4-pass compiler asserts itself back on the organisation. The organisation cannot have a single team maintaining the compiler anymore. They need four teams.
+This suggests that if we have 4 teams maintaining a compiler, we will end up with a 4-pass compiler. Over time we find that the 4-pass compiler asserts itself back on the organisation. The organisation cannot have a single team maintaining the compiler anymore. They need four teams.
 
 That is why COBOL organisations find it very difficult to do anything approaching agile because their organisation is now in harmony with the software. The organisation designed the software. Now, the software imposes a structure on the organisation. If we try to change the organisation, the software will not let it happen.
 
@@ -109,6 +109,26 @@ Which aligns with Cataldo's investigation (2006) on the consequences of congruen
 
 This reinforces the idea of the Homomorphic force, the structure preserving mapping between the structure of the organisation and the structure of the system architecture.
 
+When Raymond says that organisation and system, i.e. teams and software or IT systems, are congruent, it triggers the geometrical question: *Which specific architecture view is the organisation design with its communication channels forcing, in the end, into existence?*. Which architectural view mirrors the organisation's architecture?
+
+"System design" is not flat, not a single diagram. It is multidimensional. Philippe Kruchten (1995) established in his ["4+1" View Model](https://arxiv.org/pdf/2006.04975), that a system design covers multiple specific dimensions — different views on the system architecture:
+
+- The *Logical View* — describes the object model.
+- The *Process View* — capture the runtime behaviour, the higher level processes and tasks, non-functional requirements such as performance, concurrency, distribution.
+- The *Physical View* — maps the system onto the hardware infrastructure, the physical locations and network topology.
+- The *Development View* — organises the code into modules, packages, build artefacts and resulting team allocation.
+- The *Scenarios (The "+1")* as a fifth view — depicts the most important functional requirements tying all four views together.
+
+Consequently, the **Homomorphic Force does not hit every architectural view in the same way**.
+
+The *Development View*, and to some extent the *Logical View*, is where the Homomorphic Force manifests profoundly. These views touch on the organisation of code, repository structures, modules and packages. Module ownership drives team allocation and distribution of work. It impacts organisational design through team allocation. Therefore, it mirrors the organisation chart.
+
+By contrast, the *Process View*, seems less involved. It does not mirror the formal organisation chart, as it deals with processes, execution, concurrency, distribution and runtime communication. It documents the operational communication channels. Then again, once processes are assigned to teams, it defines how teams interact "operationally". The *Process View* then becomes the informal, true on-the-ground team organisation and therefore the informal organisation chart. In that case, it will be deeply impacted by the Homomorphic Force.
+
+Similarly, the *Physical View*, expresses organisational realities. Shared infrastructure creates team dependencies, while once hardware or cloud infrastructure is allocated to distinct processes with isolated cloud deployments, it echos autonomous teams and directly reflects the organisation chart.
+
+Kruchten provides the geometrical lens for Conway's Law: the Homomorphic Force shapes the code organisation (the *Development View*) and silently informs the operational interactions (the *Process View*).
+
 Conway exemplifies the homomorphic force in his paper using a COBOL and ALGOL compiler example.
 
 A contract research organisation consisting of eight people was asked to design a COBOL and an ALGOL compiler. After some initial estimates about difficulty and time, they assigned five people to the COBOL compiler and three people to the ALGOL compiler. The five-person team produced a COBOL compiler that ran in five phases, and the three-person team produced a 3-phase ALGOL compiler.
@@ -125,23 +145,25 @@ Yet, a more recent expression of the ALGOL and COBOL compiler example goes as fo
 >
 > -— Michael Feathers, [Twitter, Reddit and Conway's Law](https://michaelfeathers.silvrback.com/social-media-architecture-and-conway-s-law), 2017
 
-The larger an organisation becomes, the less flexibility the organisation shows. Therefore, the more pronounced are the effects of the homomorphic force because of the **Thousand Module Effect**.
+The larger an organisation becomes, the less flexibility the organisation shows. Therefore, the more pronounced are the effects of the Homomorphic Force because of the **Thousand Module Effect**.
 
 Yourdon and Constantine mention this story ...
 
-An engineer tasked to write an application on a small 12-bit minicomputer. They estimated the work to be six months to complete, which was deemed unacceptable by their manager. When the manager assigned another engineer to the project, in the hope to speed things up, the original engineer responded: "*But two engineers will not fit in there!*"
+An engineer tasked to write an application on a small 12-bit minicomputer. They estimated the work to be six months to complete, which was deemed unacceptable by their manager. When the manager assigned another engineer to the project, in the hope to speed things up, the original engineer responded: "*But, two engineers will not fit in there!*"
 
 > an informal observation that if 1,000 programmers are assigned to develop a system before a structural design has been completed, then there will be at least 1,000 modules in the resulting system.
 >
 > -- Edward Yourdon and Larry L. Constantine, Structured Design, 1979, p363
 
-Because two engineers will not fit in one module. Which is a variation on **Mealy’s Law**.
+Because two engineers will not fit in one module. Or, in Kruchten's terms, when scaling derails, the Homomorphic Force causes an explosion in the *Development View* — the Thousand Module Effect.
+
+This is a variation on **Mealy’s Law**.
 
 > There is an incremental person who, when added to a project, consumes more energy [...] than [they] make available. Thus, beyond a certain point, adding [people] slows progress in addition to increasing the cost.
 >
 > -- Edward Yourdon and Larry L. Constantine, Structured Design, 1979, p363
 
-Note: Mealy's Law is not very well known. Googling for it will return no results. However, the law expresses the [Mythical Man-Month](https://app.thestorygraph.com/books/8215ee95-e164-4036-8959-764cc42caaf8) or **Brooke’s Law**: "*Adding people to a late project makes it more late*".
+Note: Mealy's Law is not very well known. Googling for it will return no results. However, the law expresses **Brooks’ Law**: "*Adding people to a late project makes it more late*" from the [Mythical Man-Month](https://app.thestorygraph.com/books/8215ee95-e164-4036-8959-764cc42caaf8).
 
 According to Galbraith (1973), the greater the uncertainty, the more information needs to be processed during task execution.
 
@@ -159,13 +181,13 @@ Interestingly, Melvin Conway already observed the same five years before Galbrai
 >
 > -- Melvin Conway, How Do Committees Invent?, 1968
 
-Wait, there is more. Melvin Conway concludes the paragraph ... with the observation that some basic question should be answered regarding the value of people and communication before evolving our system-building techniques with confidence.
+To then conclude the paragraph ... with the observation that some basic question should be answered regarding the value of people and communication before evolving our system-building techniques with confidence.
 
 > [This] promises to unearth basic questions about value of resources and techniques of communication which will need to be answered before our system-building technology can proceed with confidence.
 >
 > -- Melvin Conway, How Do Committees Invent?, 1968
 
-Look how everything is tied together. We evolved from the Homomorphic Force, over the Thousand Module Effect, which landed us with Mealy's Law, the Mythical-Man Month and Brooks Law, back to Conway's paper.
+Look how everything is tied together. We evolved from the Homomorphic Force, over the Thousand Module Effect, which landed us with Mealy's Law, the Mythical-Man Month and Brooks' Law, back to Conway's paper.
 
 Galbraith provides the organisational logic for why adding more people to a late project makes it more late. We are adding more communication links. If the organisation does not adopt strategies to reduce the amount of information (Slack Resources, Self-Contained Task) or increase the information handling capacity (Vertical Information Systems, Lateral Relationships), the communication overhead grows faster than the ability to produce system designs. The incremental person consumes more communication and alignment energy than they produce technical energy to design systems.
 
@@ -228,6 +250,7 @@ Finally, it brings us to the greenfield and mature systems duality, ultimately l
 - [How Do Committees Invent?](https://www.melconway.com/Home/Committees_Paper.html), Melvin Conway, 1968
 - [Designing Complex Organizations](https://app.thestorygraph.com/books/c746ca36-a5d7-4c2a-995c-6330c4d363bd), Jay R. Galbraith, 1973
 - [Structured Design](https://www.goodreads.com/book/show/946145.Structured_Design), Edward Yourdon and Larry L. Constantine, 1979
+- [Architectural Blueprints — The "4+1" View Model of Software Architecture](https://arxiv.org/pdf/2006.04975), Philippe Kruchten, 1995
 - [The New Hacker's Dictionary (3rd ed.)](https://www.gutenberg.org/files/3008/3008-h/3008-h.htm), Eric Raymond, 1996
 - [Organisational patterns of agile software development](https://www.goodreads.com/book/show/756250.Organizational_Patterns_of_Agile_Software_Development), James Coplien & Neil Harrison, 2004
 - [Identification of Coordination Requirements: Implications for the Design of Collaboration and Awareness Tools](https://www.cs.drexel.edu/~yfcai/CS680/Readings/Week8/Identification%20of%20Coordination%20Requirements.pdf), Cataldo 2006
