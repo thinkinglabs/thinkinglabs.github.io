@@ -11,6 +11,8 @@ Why does our code feel like a mirror of our department meetings? Over the decade
 
 ---
 
+## Mathematics: Isomorphism vs Homomorphism
+
 In 1979, Yourdon and Constantine rephrased Conway's Law more firmly ...
 
 **Systems are isomorphic to the Organisation.**
@@ -85,6 +87,8 @@ Because this is not a one-to-one mapping, a homomorphism from an organisation to
 
 This means, **a single team can be responsible for more than one service**.
 
+## Geometry: Congruence & Architectural Views
+
 In 1996, Eric Raymond, known from his essay [The Cathedral and the Bazaar](http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/index.html) (1999). In this essay, he already argued what Baldwin (2012) confirmed: open source software is inherently more modular than commercial software.
 
 Anyway, in 1996, Raymond restated the law as follows ...
@@ -145,6 +149,8 @@ Yet, a more recent expression of the ALGOL and COBOL compiler example goes as fo
 >
 > -— Michael Feathers, [Twitter, Reddit and Conway's Law](https://michaelfeathers.silvrback.com/social-media-architecture-and-conway-s-law), 2017
 
+## Mechanics of Scale: Uncertainty, Information Overload & Decision Latency
+
 The larger an organisation becomes, the less flexibility the organisation shows. Therefore, the more pronounced are the effects of the Homomorphic Force because of the **Thousand Module Effect**.
 
 Yourdon and Constantine mention this story ...
@@ -202,6 +208,8 @@ Skvortcov identifies three critical factors affecting decision-making latency:
 Decision Latency Theory asserts "*The value of the interval is greater than the quality of the decision*" (Johnson, 2018). It is more important to take frequent bad decisions than no decision. High-frequency decision-making allows organisations to revert bad choices quickly as new information emerges. Skvortcov's expert panel agreed that placing decision-making as close as possible to the people who are doing the work minimises latency. Bringing forward the importance of autonomy to lower decision latency. However, they cautioned that autonomy without alignment or understanding of customer needs degrades overall decision quality.
 
 This aligns with the Standish Group's CHAOS Report, which attributes project success to *Good Sponsor*, *Good Team*, *Good Place*, and *Short Decision Latency* (more on this in [Validation: The Research & Reality Check]({% post_url 2026-06-20-beyond-shades-of-conways-law-validation%}#the-industry-reality-check-1995-2020)).
+
+## Mathematics: The Compatibility Duality
 
 In 2004, Coplien and Harrison reformulated Conway’s Law by stating ...
 
