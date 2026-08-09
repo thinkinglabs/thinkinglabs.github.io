@@ -81,7 +81,7 @@ Because this is not a one-to-one mapping, a homomorphism from an organisation to
 
 ## Geometry: Congruence & Architectural Views
 
-In 1996, Eric Raymond, known from his essay [The Cathedral and the Bazaar](http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/index.html) (1999), restated the low. In this essay, he argued what Baldwin (2012) confirmed: open source software is inherently more modular than commercial software.
+In 1996, Eric Raymond, known from his essay [The Cathedral and the Bazaar](http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/index.html) (1999), restated the law. In this essay, he argued what Baldwin (2012) confirmed: open source software is inherently more modular than commercial software.
 
 Anyway, in 1996, Raymond restated the law as follows ...
 
@@ -165,9 +165,13 @@ According to Jay Galbraith (1973), the greater the task uncertainty, the more in
 >
 > -- Galbraith, [Designing Complex Organizations](https://app.thestorygraph.com/books/c746ca36-a5d7-4c2a-995c-6330c4d363bd), 1973, p5
 
-As already hinted in [Foundations: The Origin & The Mirroring Principle]({% post_url 2026-06-07-beyond-shades-of-conways-law-foundations %}), task uncertainty defines the strategies to design the organisation structure. When assigning 1.000 engineers to a task before a formal design, we are at absolute uncertainty. To coordinate interdependent tasks, organisations default to rules and hierarchical authority to specify in advance the expected behaviour. The virtue of rules is to reduce treating each situation as new, as such cutting communication and decision making. When the organisation encounters a new situation it has not faced before, the problem is raised (as an exception) to the manager who (probably, maybe, hopefully) has the information to make the decision. We rely on the hierarchy of authority, the org-chart. However, the hierarchical communication channels only have finite capacity to process information. As more exceptions are raised upwards, the hierarchy becomes overloaded, and severe bottlenecks emerge resulting in serious delays.
+Task uncertainty dictates strategies for designing an organisation. When assigning 1.000 engineers to a task before a formal design, we are at absolute uncertainty.
 
-The *Thousand Module Effect* happens because the information can only be discovered during the system design. Decisions have to be made and remade whenever new information emerges. The hierarchy cannot process the massive communication volume produced by 1.000 engineers designing the system. To survive, the organisation has to adopt information reduction strategies. It cuts communication lines and isolates engineers into individual, localised modules. Since "*two engineers cannot fit into one module*" the codebase fragments into 1.000 pieces. System architecture becomes a reflection of the organisational coping mechanisms.
+To coordinate interdependent tasks, organisations default to rules and hierarchical authority to specify in advance the expected behaviour. The virtue of rules is to reduce treating each situation as new, thus cutting communication and decision making.
+
+When the organisation encounters a new situation it has not faced before, the problem is raised (as an exception) to the manager who (probably, maybe, hopefully) has the information to make the decision. We rely on the hierarchy of authority, the org-chart. However, the hierarchical communication channels only have finite capacity to process information. As more exceptions are raised upwards, the hierarchy becomes overloaded, and severe bottlenecks emerge resulting in serious delays.
+
+The *Thousand Module Effect* occurs because the information can only be discovered incrementally during task execution, i.e. designing the system. Decisions have to be made and remade whenever new information emerges. The hierarchy cannot process the massive communication volume produced by 1.000 engineers designing the system. To survive, the organisation has to adopt information reduction strategies. It cuts communication lines and isolates engineers into individual, localised modules. Since "*two engineers cannot fit into one module*" the codebase fragments into 1.000 pieces. System architecture becomes a reflection of the organisational coping mechanisms.
 
 Melvin Conway observed this exact dynamic five years before Galbraith and seven years before Brooks' The Mythical Man-Month, in the last paragraph of Conway’s paper.
 
@@ -187,15 +191,15 @@ Alexander Skvortcov (2024) provides modern empirical validation for Galbraith's 
 
 Skvortcov identifies three critical factors affecting decision-making latency:
 
-- *People and Culture* — appointing and empowering the right people to build trust and safety, is more vital than any structured rigidity, together with leadership competence. This matches Jim Collin's findings on what makes a great organisation in [Good to Great](https://app.thestorygraph.com/books/1771dbe4-16a3-4316-83a1-ed2b21984bc9) regarding "*Level 5 Leadership*" and "*First Who ... Than What*".
-- *Correctness of Organisation* — clear alignment with and understanding of business goals allows teams to make localised decisions. This requires the correct people are employed, again "*First Who ... Than What*". A lack of alignment creates friction and inflates decision latency.
+- *People and Culture* — appointing and empowering the right people to build trust and safety, is more vital than any structured rigidity, together with leadership competence. This matches Jim Collins' findings on what makes a great organisation in [Good to Great](https://app.thestorygraph.com/books/1771dbe4-16a3-4316-83a1-ed2b21984bc9) regarding "*Level 5 Leadership*" and "*First Who ... Then What*".
+- *Correctness of Organisation* — clear alignment with and understanding of business goals allows teams to make localised decisions. This requires the correct people are employed, again "*First Who ... Then What*". A lack of alignment creates friction and inflates decision latency.
 - *Customer Focus* — decision-makers require a good understanding of customer needs. Therefore, the need for senior Product Managers with a clear product vision who can say "no" to random requests to prevent end-less discussions and re-evaluations of direction.
 
 Decision Latency Theory asserts "*The value of the interval is greater than the quality of the decision*" (Johnson, 2018). It is more important to take frequent bad decisions than no decision. High-frequency decision-making allows organisations to revert bad choices quickly as new information emerges. Skvortcov's expert panel agreed that placing decision-making as close as possible to the people who are doing the work minimises latency. Bringing forward the importance of autonomy to lower decision latency. However, they cautioned that autonomy without alignment or understanding of customer needs degrades overall decision quality.
 
 This aligns with the Standish Group's CHAOS Report, which attributes project success to *Good Sponsor*, *Good Team*, *Good Place*, and *Short Decision Latency* (more on this in [Validation: The Research & Reality Check]({% post_url 2026-06-20-beyond-shades-of-conways-law-validation%}#the-industry-reality-check-1995-2020)).
 
-## Mathematics: The Compatibility Duality
+## Temporal Duality: Compatibility
 
 In 2004, Coplien and Harrison reformulated Conway’s Law around compatibility:
 
