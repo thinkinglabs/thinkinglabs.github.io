@@ -100,11 +100,31 @@ Drafting a system architecture is already designing the structure of the organis
 
 ## The Complexity Boundary: Viewing the Law Through the Lens of Cynefin
 
-Before we can even apply the [Inverse Conway's Manoeuvre](#the-inverse-conways-manoeuvre-the-greenfield-assumption), we first need to understand in which domain we are. Are we a Simple, Complicated or Complex or Chaotic domain. Strategies change according to the domain.
+Before we can even apply the [Inverse Conway's Manoeuvre](#the-inverse-conways-manoeuvre-the-greenfield-assumption), we first need to understand the domain context. Using the Cynefin framework (Dave Snowden, 1999): Are we operating in a Clear, Complicated or Complex or Chaotic domain. Strategies change depending on the domain.
 
-With greenfield systems, there is a relation between cause and effect. We are in the Simple or Complicated domain. It is somehow predictable, but not necessarily self evident. We can draft an ideal system design and organise teams accordingly around it ([Inverse Conway's Manoeuvre](#the-inverse-conways-manoeuvre-the-greenfield-assumption)). If our initial design was not right, at first, because the organisation is young, it should be somehow flexible, therefore malleable, and team organisation should easily adapt to the new system design. The decision model is *sense - analyse - respond*.
+In greenfield or flexible, highly decoupled systems, cause and effect are related. We are in the *Complicated domain*. Cause and effect are somehow predictable, but not necessarily self evident. Here, we can draft an ideal system architecture and organise teams around it using the ([Inverse Conway's Manoeuvre](#the-inverse-conways-manoeuvre-the-greenfield-assumption)). At this stage, the organisation and the system are still malleable. The emerging system architecture influences the team structures. The organisation can still easily and quickly adapt to new system designs. The decision model here is *sense - analyse - respond*. Popular organisational pattern languages, such as [Team Topologies](https://teamtopologies.com/), thrive in this domain because team boundaries and software boundaries can be cleanly aligned by design.
 
-When organisations matured, have long-lived rigid systems, we are in the Complex domain. Organisation and system have hidden couplings, and historical team baggage. We cannot simply apply an ordered top-down reorganisation and expect the system to magically redesign and decouple ("*We reorganised but the system did not get the memo*", Matthias Verraes, 2022). This is hard, time-consuming work. Cause and effect are only obvious in hindsight, with unpredictable, emergent outcomes. Here, the decision model is *probe - sense - respond* rather than executing a big-bang re-org, that will naturally fail. We conduct safe-to-fail experiments instead of fail-safe designs. This naturally fits with the [Improvement Kata](https://public.websites.umich.edu/~jmondisa/TK/The_Improvement_Kata.html), a continuous improvement framework for introducing large-scale organisational changes.
+However, when organisations mature, carry long-lived rigid systems, we enter the *Complex domain*. Here, the organisation and system are tightly coupled by decades of implicit decisions and historical baggage making the coupling mostly hidden, unnoticed for leadership. In that domain, we cannot simply execute an ordered top-down reorganisation — by moving boxes on an org-chart — and expect the system to magically redesign and decouple ("*We reorganised but the system did not get the memo*", Matthias Verraes, 2022).
+
+Treating a Complex socio-technical system as if it were merely Complicated is a critical error. Cause and effect are only obvious in hindsight, producing unpredictable, emergent outcomes. The decision model in the Complex domain is *probe – sense – respond*. Rather than executing a big-bang reorganisation, that will naturally fail, anyway. We must run safe-to-fail experiments instead of fail-safe designs. This is hard, time-consuming work, where we might loose track of the objective. The [Improvement Kata](https://public.websites.umich.edu/~jmondisa/TK/The_Improvement_Kata.html) (Mike Rother, 2009) — a continuous improvement framework for introducing large-scale organisational changes — will help to incrementally redesign and decouple the system architecture while iteratively reshaping team interactions.
+
+## Holistic Socio-Technical Alignment: Beyond Structural Tweaks
+
+The failure of naive Inverse Conway Manoeuvres exposes a broader misunderstanding in management strategy: **organisational design is not merely shifting team boxes on an org-chart**.
+
+In *Organization Design* (1977), Jay Galbraith formalised the **Star Model**, demonstrating that an organisation's effectiveness depends on the alignment of five distinct components:
+
+1. **Strategy** — defines the direction and competitive advantage.
+2. **Structure** — determines the location of decision-making power and team boundaries.
+3. **Processes** — governs the flow of information and decision latency across structural boundaries.
+4. **Rewards** — aligns individual and team incentives with organisational goals.
+5. **People** — develops the competencies and leadership behaviors required to execute the strategy.
+
+When leaders attempt an Inverse Conway Manoeuvre purely by changing team structures (moving people into "feature teams" or "stream-aligned teams"), they manipulate only one spoke of Galbraith's star. 
+
+If the underlying **Processes** (budgeting cycles, governance gates, deployment pipelines) and **Information Flows** remain tied to legacy boundaries, the organisational information-processing capacity collapses. As Galbraith established in 1973, when task uncertainty overwhelms hierarchical channels, the organisation defaults to its path of least resistance. The *Homomorphic Force* of the legacy system reasserts itself, dragging the new team boundaries right back into alignment with the old software architecture.
+
+To successfully reverse the Law, structural changes must be accompanied by changes in information channels, decision-making mandates, and technical architecture. Rearchitecting the system and rearchitecting the organisation are not two separate initiatives—they are two sides of the same socio-technical act.
 
 ## The Series: Navigating the Shades
 
@@ -123,14 +143,13 @@ When organisations matured, have long-lived rigid systems, we are in the Complex
 - [How Do Committees Invent?](https://www.melconway.com/Home/Committees_Paper.html), Melvin Conway, 1968
 - [On the Criteria To Be Used in Decomposing Systems into Modules](https://www.win.tue.nl/~wstomv/edu/2ip30/references/criteria_for_modularization.pdf), Parnas, 1972
 - [Structured Design](https://www.goodreads.com/book/show/946145.Structured_Design), Edward Yourdon and Larry L. Constantine, 1979
+- [Cynefin]({% post_url 2023-12-29-cynefin-framework-dave-snowden %}), Dave Snowden, 1999
 - [Organisational patterns of agile software development](https://www.goodreads.com/book/show/756250.Organizational_Patterns_of_Agile_Software_Development), James Coplien & Neil Harrison, 2004
 - [Release It!](https://app.thestorygraph.com/books/1bd756aa-7a60-4af1-a407-6311f9741421), Michael Nygard, 2007
 - [Conway’s Law](https://web.archive.org/web/20181022001505/http://traceinthesand.com:80/blog/2008/02/13/conways-law/), Ruth Malan, 2008
+- [The Improvement Kata](https://public.websites.umich.edu/~jmondisa/TK/The_Improvement_Kata.html), Mike Rother, 2009
 - [Dealing with creaky legacy platforms](http://jonnyleroy.com/2011/02/03/dealing-with-creaky-legacy-platforms/), Jonny LeRoy and Matt Simons, 2010
 - [Exploring the Duality between Product and Organizational Architecture: A Test of the “Mirroring” Hypothesis](https://www.hbs.edu/ris/Publication%20Files/08-039_1861e507-1dc1-4602-85b8-90d71559d85b.pdf), Baldwin, MacCormack, Rusnak, 2012
 - [Continuous Delivery and Conway’s Law]({% post_url 2021-05-13-continuous-delivery-and-conways-law-allan-kelly %}), Allan Kelly, 2014
 - [Accelerate](https://app.thestorygraph.com/books/0baa7f2a-3f3f-4752-9d81-0434117d0648), Nicole Forsgren, PhD et al., 2018
 - [Conway's Law Doesn't Apply to Rigid Designs](https://verraes.net/2022/05/conways-law-vs-rigid-designs/), Mathias Verraes, 2022
-- [Cynefin]({% post_url 2023-12-29-cynefin-framework-dave-snowden %}), Dave Snowden
-- [The Improvement Kata](https://public.websites.umich.edu/~jmondisa/TK/The_Improvement_Kata.html), Mike Rother
-
