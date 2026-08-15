@@ -14,6 +14,8 @@ Any time an organisation tells me with great confidence that they *do Continuous
 
 *Update Jan 10th, 2026: Clarify that the release cadence is defined by market demand.*
 
+*Update Aug 15th, 2026: Update the diagram and some narratives to fix some bugs in the relations.*
+
 ---
 
 Why still explain Continuous Delivery in 2026? Everybody does it, don't they? But, do they really do? Is that really the case?
@@ -97,7 +99,7 @@ It is reliable, as with every run of the [*Deployment Pipeline*](#deployment-pip
 
 We demand efficiency to shorten the time to market and accelerate feedback to gain more information and run more experiments. Eventually, efficiency reduces the [Cost of Delay](https://blackswanfarming.com/cost-of-delay/). We want to know as quickly as possible if the thing we have just implemented, deployed into production and released to users is actually being used and how it is used. Based on this information, we can make new decisions and run new experiments to find new unmet needs of our users. As such, finding new ways to delight our users, which is a massive competitive advantage.
 
-The repeatability, reliability and determinism derive from two foundations: [*Version Control Everything*](#version-control-everything), and [*Continuous Testing*](#continuous-testing); and two other principles: [*Do It More Often When It Hurts*](#do-it-more-often-when-it-hurts), and  [*Automate the Right Things*](#automate-the-right-things).
+The repeatability, reliability and determinism derive from two foundations: [*Version Control Everything*](#version-control-everything), and [*Continuous Testing*](#continuous-testing); from one principle: [*Automate the Right Things*](#automate-the-right-things); and from one heuristic: [*Do It More Often When It Hurts*](#do-it-more-often-when-it-hurts).
 
 Interestingly, though repeatability, reliability and determinism derive from *Do It More Often When It Hurts* because if we want to do something more often, we need that repeatability, reliability and determinism. But, it is also a prerequisite to *Do It More Often When It Hurts*. There is that bidirectional influence, similar to quality and throughput, which amplifies each other.
 
@@ -133,13 +135,13 @@ Large batches inherently lower motivation and urgency. It demotivates people by 
 
 By splitting work into much smaller chunks that deliver measurable value quickly, we receive essential feedback on the work we are doing so that we can course-correct. Continuous Delivery changes the economics of the IT delivery process, making the cost of pushing out small individual changes very low (Farley and Humble 2011), by reducing the transaction cost, allowing to make many smaller, more frequent changes. Obviously, this demands to [*Make All Changes In Small Increments*]({% post_url 2022-09-25-the-practices-that-make-continuous-integration-coding %}#practice-5-make-all-changes-in-small-increments).
 
-Working in small batches derives from two other principles: [*Create a Repeatable, Reliable, Deterministic, and Efficient Process for Releasing Software*](#create-a-repeatable-reliable-deterministic-and-efficient-process-for-releasing-software), and [*Automate the Right Things*](#automate-the-right-things).
+Working in small batches derives from one other principle: [*Automate the Right Things*](#automate-the-right-things) and enables [*Create a Repeatable, Reliable, Deterministic, and Efficient Process for Releasing Software*](#create-a-repeatable-reliable-deterministic-and-efficient-process-for-releasing-software).
 
 ### Automate the Right Things
 
 Computers perform repetitive tasks; people solve problems. To reduce the transaction cost of pushing out many more, smaller changes, we should invest in simplifying and automating repetitive work that takes time, such as manual regression testing and manual release processes. This frees up teams for higher-value problem-solving activities, innovation and value creation (Farley and Humble 2011). Automation accelerates feedback, therefore multiplying learning and discovery. It supports faster, more reliable releases. Most importantly, it vastly reduces risks and enables to [Work in Small Batches](#work-in-small-batches).
 
-Note that this principle is nuanced. It does not say "Automate all the things". In that case, there is a risk of overinvesting. In consequence, we only automate bottlenecks, repetitive tasks, or tasks that involve high risks. For that, we ought to map the technology value stream from Version Control to the user, and identify bottlenecks, risks and repetition. This technology value stream map is now the starting point to implement the [*Deployment Pipeline*](#deployment-pipeline). By automating the identified steps, we start building the Deployment Pipeline iteratively.
+Note that this principle is nuanced. It does not say "*Automate all the things*". In that case, there is a risk of overinvesting. In consequence, we only automate bottlenecks, repetitive tasks, or tasks that involve high risks. For that, we ought to map the technology value stream from Version Control to the user, and identify bottlenecks, risks and repetition. This technology value stream map is now the starting point to implement the [*Deployment Pipeline*](#deployment-pipeline). By automating the identified steps, we start building the Deployment Pipeline iteratively.
 
 > Spending time optimising anything other than the bottleneck is an illusion.
 >
@@ -213,7 +215,7 @@ When testing is painful, that only occurs before a release, do not leave testing
 
 When releasing is laborious and distressing, shift from releasing once a year to biannually, to quarterly, to monthly, weekly, and eventually daily or even multiple times per day. This builds on the principle to [*Automate the Right Things*](#automate-the-right-things), and the practice of [*Deploying the Same Way to Every Environment*](#deploy-the-same-way-to-every-environment).
 
-At the same time, the chosen release cadence must be a business decision. Continuous Delivery has a dynamic success threshold. An organisation is said to be in a state of Continuous Delivery when its IT services have the required stability and throughput to satisfy market demand. If releasing monthly satisfies demand, we are in a state of Continuous Delivery. That does not mean that, internally, we should not produce Release Candidates daily. We definitely should, for every commit!
+At the same time, the decision for adopting a certain release cadence must be a business decision. Continuous Delivery has a dynamic success threshold. An organisation is said to be in a state of Continuous Delivery when its IT services have the required stability and throughput to satisfy market demand. If releasing monthly satisfies demand, we are in a state of Continuous Delivery. That does not mean that, internally, we should not produce Release Candidates daily. We definitely should, for every commit!
 
 When writing documentation is tedious, do it immediately when implementing the feature or the architectural change. Make the documentation, release notes, [runbooks](https://www.pagerduty.com/resources/automation/learn/what-is-a-runbook/), and [decision records](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions.html) part of the [Definition of Done](https://www.scrum.org/resources/what-definition-done).
 
