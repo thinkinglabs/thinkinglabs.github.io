@@ -104,27 +104,48 @@ Before we can even apply the [Inverse Conway's Manoeuvre](#the-inverse-conways-m
 
 In greenfield or flexible, highly decoupled systems, cause and effect are related. We are in the *Complicated domain*. Cause and effect are somehow predictable, but not necessarily self evident. Here, we can draft an ideal system architecture and organise teams around it using the ([Inverse Conway's Manoeuvre](#the-inverse-conways-manoeuvre-the-greenfield-assumption)). At this stage, the organisation and the system are still malleable. The emerging system architecture influences the team structures. The organisation can still easily and quickly adapt to new system designs. The decision model here is *sense - analyse - respond*. Popular organisational pattern languages, such as [Team Topologies](https://teamtopologies.com/), thrive in this domain because team boundaries and software boundaries can be cleanly aligned by design.
 
-However, when organisations mature, carry long-lived rigid systems, we enter the *Complex domain*. Here, the organisation and system are tightly coupled by decades of implicit decisions and historical baggage making the coupling mostly hidden, unnoticed for leadership. In that domain, we cannot simply execute an ordered top-down reorganisation — by moving boxes on an org-chart — and expect the system to magically redesign and decouple ("*We reorganised but the system did not get the memo*", Matthias Verraes, 2022).
+However, when organisations mature, carry long-lived rigid systems, we enter the *Complex domain*. Here, the organisation and system are tightly coupled by decades of implicit decisions and historical baggage making the coupling mostly hidden, unnoticed for leadership. In that domain, we cannot simply execute an ordered top-down reorganisation — only by moving boxes around on an org-chart — and expect the system to magically redesign and decouple ("*We reorganised but the system did not get the memo*", Matthias Verraes, 2022).
 
-Treating a Complex socio-technical system as if it were merely Complicated is a critical error. Cause and effect are only obvious in hindsight, producing unpredictable, emergent outcomes. The decision model in the Complex domain is *probe – sense – respond*. Rather than executing a big-bang reorganisation, that will naturally fail, anyway. We must run safe-to-fail experiments instead of fail-safe designs. This is hard, time-consuming work, where we might loose track of the objective. The [Improvement Kata](https://public.websites.umich.edu/~jmondisa/TK/The_Improvement_Kata.html) (Mike Rother, 2009) — a continuous improvement framework for introducing large-scale organisational changes — will help to incrementally redesign and decouple the system architecture while iteratively reshaping team interactions.
+The naive, blind, mechanical application of Team Topologies without first decoupling the underlying legacy system architecture is a classic example of this wishful thinking. Leaders try to apply a complicated pattern to a complex legacy system. Any framework that assumes we can "just" reorganise people before addressing technical coupling will fracture against the *Homomorphic Force*.
 
-## Holistic Socio-Technical Alignment: Beyond Structural Tweaks
+Treating a Complex socio-technical system as if it were merely Complicated is a critical error. Cause and effect are only obvious in hindsight, producing unpredictable, emergent outcomes. The decision model in the Complex domain is *probe – sense – respond*. Rather than executing a big-bang reorganisation, that will naturally fail, anyway. We must run safe-to-fail experiments instead of fail-safe designs. This is hard, time-consuming work, where we might lose track of the objective. The [Improvement Kata](https://public.websites.umich.edu/~jmondisa/TK/The_Improvement_Kata.html) (Mike Rother, 2009) — a continuous improvement framework for introducing large-scale organisational changes — will help to incrementally redesign and decouple the system architecture while iteratively reshaping team interactions.
 
-The failure of naive Inverse Conway Manoeuvres exposes a broader misunderstanding in management strategy: **organisational design is not merely shifting team boxes on an org-chart**.
+## Socio-Technical Alignment: Beyond Structure
 
-In *Organization Design* (1977), Jay Galbraith formalised the **Star Model**, demonstrating that an organisation's effectiveness depends on the alignment of five distinct components:
+The failure of intellectually shallow Inverse Conway Manoeuvres exposes a broader misunderstanding in management strategy: **organisational design is not merely shifting team boxes on an org-chart**.
 
-1. **Strategy** — defines the direction and competitive advantage.
-2. **Structure** — determines the location of decision-making power and team boundaries.
-3. **Processes** — governs the flow of information and decision latency across structural boundaries.
-4. **Rewards** — aligns individual and team incentives with organisational goals.
-5. **People** — develops the competencies and leadership behaviors required to execute the strategy.
+Organisations can be designed! And it happens by the people within them! The design process is continuous by adjusting to different key factors. The organisation design changes constantly as people evolve and tasks, i.e. organisation goals, change. The design decision should happen as routinely as budget cycles (Galbraith, 1977).
 
-When leaders attempt an Inverse Conway Manoeuvre purely by changing team structures (moving people into "feature teams" or "stream-aligned teams"), they manipulate only one spoke of Galbraith's star. 
+[Contingency Theory](https://en.wikipedia.org/wiki/Contingency_theory) tells us a. *there is no one best way to organise*, and b. *not all the ways to organise are equally effective*. We can observe a wide range of differences in effective organisations but ... these differences are not random. Context matters! (Galbraith, 1973 & 1977)
 
-If the underlying **Processes** (budgeting cycles, governance gates, deployment pipelines) and **Information Flows** remain tied to legacy boundaries, the organisational information-processing capacity collapses. As Galbraith established in 1973, when task uncertainty overwhelms hierarchical channels, the organisation defaults to its path of least resistance. The *Homomorphic Force* of the legacy system reasserts itself, dragging the new team boundaries right back into alignment with the old software architecture.
+At the core of organisation design is the concept of *uncertainty* (Galbraith, 1977).
 
-To successfully reverse the Law, structural changes must be accompanied by changes in information channels, decision-making mandates, and technical architecture. Rearchitecting the system and rearchitecting the organisation are not two separate initiatives—they are two sides of the same socio-technical act.
+> **Uncertainty** is the difference between the amount of information required to perform the task and the amount of information already possessed by the organisation.
+>
+> -- Jay R. Galbraith, Organisation Design, 1977, p.37
+
+When an organisation lacks the required information to execute a task, it must acquire that information during the task execution, triggering repeated decision-taking. The more uncertainty, the more frequent decision-making has to happen and thus the more information needs to be processed. However, organisations only have a limited capacity to process information. Hence, variations in organisation structures are just different mechanisms to make decisions about unanticipated events, to manage uncertainty and handle greater complexity (Galbraith, 1977).
+
+Hierarchy -> Rules (Runbooks) -> points of decision to points of action -> set goal targets -> new design requires resetting goals -> four strategies of Galbraith
+
+When uncertainty is low, traditional mechanisms — hierarchies, standardized rules, runbooks, and static goal targets — suffice. But when an organisation attempts to rearchitect a complex, highly coupled legacy system, task uncertainty skyrockets. The hierarchy becomes overwhelmed by exceptions.
+
+Galbraith notes that organisations facing information overload have two fundamental choices:
+
+1. **Reduce the need for information processing** (e.g., creating truly autonomous, self-contained domain teams around decoupled software modules).
+2. **Increase information-processing capacity** (e.g., building direct lateral communication channels and continuous delivery feedback loops).
+
+This insight explains why manipulating only team boundaries (the *Structure*) fails. An organisation's effectiveness depends on the synchronised alignment of five factors (Galbraith, 1977):
+
+- *Strategy* — defines direction and target outcomes.
+- *Structure* — determines the location of decision-making power and team boundaries.
+- *Processes* — governs the flow of information, decision latency, and coordination mechanisms.
+- *Rewards* — aligns individual and team incentives with organisational goals.
+- *People* — develops the competencies and collaborative mindsets required to execute.
+
+When leaders attempt an Inverse Conway Manoeuvre purely by changing team structures, i.e moving people into "feature teams" or "stream-aligned teams", they manipulate only one factor without updating governance processes, deployment pipelines, collaboration or rewards. When task uncertainty overwhelms communication channels, the information-processing capacity collapses. The *Homomorphic Force* reasserts the legacy architecture onto the organisation, pulling the teams back into old communication patterns.
+
+To successfully reverse the Law, structural changes must be accompanied by changes in information channels, decision-making mandates, and technical architecture. Rearchitecting the system and rearchitecting the organisation are not two separate initiatives — they are two sides of the same socio-technical act.
 
 ## The Series: Navigating the Shades
 
@@ -142,8 +163,10 @@ To successfully reverse the Law, structural changes must be accompanied by chang
 
 - [How Do Committees Invent?](https://www.melconway.com/Home/Committees_Paper.html), Melvin Conway, 1968
 - [On the Criteria To Be Used in Decomposing Systems into Modules](https://www.win.tue.nl/~wstomv/edu/2ip30/references/criteria_for_modularization.pdf), Parnas, 1972
+- [Designing Complex Organisations](https://app.thestorygraph.com/books/c746ca36-a5d7-4c2a-995c-6330c4d363bd), Jay R. Galbraith, 1973
+- [Organisation Design](https://app.thestorygraph.com/books/6b226d10-9cb0-41a2-89fa-bab1f81ee5d1), Jay R. Galbraith, 1977
 - [Structured Design](https://www.goodreads.com/book/show/946145.Structured_Design), Edward Yourdon and Larry L. Constantine, 1979
-- [Cynefin]({% post_url 2023-12-29-cynefin-framework-dave-snowden %}), Dave Snowden, 1999
+- [Cynefin Framework]({% post_url 2023-12-29-cynefin-framework-dave-snowden %}), Dave Snowden, 1999
 - [Organisational patterns of agile software development](https://www.goodreads.com/book/show/756250.Organizational_Patterns_of_Agile_Software_Development), James Coplien & Neil Harrison, 2004
 - [Release It!](https://app.thestorygraph.com/books/1bd756aa-7a60-4af1-a407-6311f9741421), Michael Nygard, 2007
 - [Conway’s Law](https://web.archive.org/web/20181022001505/http://traceinthesand.com:80/blog/2008/02/13/conways-law/), Ruth Malan, 2008
