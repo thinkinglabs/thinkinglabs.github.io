@@ -112,9 +112,9 @@ Treating a Complex socio-technical system as if it were merely Complicated is a 
 
 ## Socio-Technical Alignment: Beyond Structure
 
-The failure of intellectually shallow Inverse Conway Manoeuvres exposes a broader misunderstanding in management strategy: **organisational design is not merely shifting team boxes on an org-chart**.
+The failure of intellectually shallow [Inverse Conway Manoeuvres](#the-inverse-conways-manoeuvre-the-greenfield-assumption) exposes a broader misunderstanding in management strategy: **organisational design is not merely shifting team boxes on an org-chart**. Simple, structural reorganisations will fail, all the time.
 
-Organisations can be designed! And it happens by the people within them! The design process is continuous by adjusting to different key factors. The organisation design changes constantly as people evolve and tasks, i.e. organisation goals, change. The design decision should happen as routinely as budget cycles (Galbraith, 1977).
+However, organisations can be designed! By the people within them! The design process is continuous by adjusting to different key factors. The organisation design changes constantly as people evolve and tasks, i.e. organisation goals, change. The design decision should happen as routinely as budget cycles (Galbraith, 1977).
 
 [Contingency Theory](https://en.wikipedia.org/wiki/Contingency_theory) tells us a. *there is no one best way to organise*, and b. *not all the ways to organise are equally effective*. We can observe a wide range of differences in effective organisations but ... these differences are not random. Context matters! (Galbraith, 1973 & 1977)
 
@@ -124,18 +124,18 @@ At the core of organisation design is the concept of *uncertainty* (Galbraith, 1
 >
 > -- Jay R. Galbraith, Organisation Design, 1977, p.37
 
-When an organisation lacks the required information to execute a task, it must acquire that information during the task execution, triggering repeated decision-taking. The more uncertainty, the more frequent decision-making has to happen and thus the more information needs to be processed. However, organisations only have a limited capacity to process information. Hence, variations in organisation structures are just different mechanisms to make decisions about unanticipated events, to manage uncertainty and handle greater complexity (Galbraith, 1977).
+Uncertainty means simply the absence of information.
 
-Hierarchy -> Rules (Runbooks) -> points of decision to points of action -> set goal targets -> new design requires resetting goals -> four strategies of Galbraith
+When an organisation lacks the required information to execute a task, it must acquire that information during the task execution, triggering repeated decision-taking. The more uncertainty, the greater the amount of decision-making and thus the more information needs to be processed. However, organisations only have a limited capacity to process information. Hence, variations in organisation structures are just different mechanisms to make decisions about unanticipated events, to manage uncertainty and handle greater complexity (Galbraith, 1977).
 
-When uncertainty is low, traditional mechanisms — hierarchies, standardized rules, runbooks, and static goal targets — suffice. But when an organisation attempts to rearchitect a complex, highly coupled legacy system, task uncertainty skyrockets. The hierarchy becomes overwhelmed by exceptions.
+When uncertainty is low, traditional mechanisms — hierarchies of authority, standardised runbooks for anticipated situations as prefabricated decisions made in advance, bringing decision points to points of actions where the information exists, and team goal setting aligned with organisation goals for decentralised decision-making — work fine (Galbraith, 1977). But when an organisation attempts to reorganise around a complex, highly coupled legacy system — which is what the Inverse Conway's Manoeuvre undertakes — uncertainty skyrockets. The number of exceptions raise until the hierarchy overloads.
 
-Galbraith notes that organisations facing information overload have two fundamental choices:
+When organisations still face information overload, they have two fundamental strategic organisation design choices (Galbraith, 1973):
 
-1. **Reduce the need for information processing** (e.g., creating truly autonomous, self-contained domain teams around decoupled software modules).
-2. **Increase information-processing capacity** (e.g., building direct lateral communication channels and continuous delivery feedback loops).
+1. *Reduce the need for information processing* (e.g., introducing slack and creating truly autonomous, self-contained product teams around decoupled software systems).
+2. *Increase information-processing capacity* (e.g., building direct lateral communication channels using Communities of Practice and vertical information systems to enhance feedback loops).
 
-This insight explains why manipulating only team boundaries (the *Structure*) fails. An organisation's effectiveness depends on the synchronised alignment of five factors (Galbraith, 1977):
+Manipulating only team boundaries (the *Structure*) fails. An organisation's effectiveness depends on the synchronised alignment of five factors (Galbraith, 1977):
 
 - *Strategy* — defines direction and target outcomes.
 - *Structure* — determines the location of decision-making power and team boundaries.
@@ -143,7 +143,11 @@ This insight explains why manipulating only team boundaries (the *Structure*) fa
 - *Rewards* — aligns individual and team incentives with organisational goals.
 - *People* — develops the competencies and collaborative mindsets required to execute.
 
-When leaders attempt an Inverse Conway Manoeuvre purely by changing team structures, i.e moving people into "feature teams" or "stream-aligned teams", they manipulate only one factor without updating governance processes, deployment pipelines, collaboration or rewards. When task uncertainty overwhelms communication channels, the information-processing capacity collapses. The *Homomorphic Force* reasserts the legacy architecture onto the organisation, pulling the teams back into old communication patterns.
+When leaders attempt a simplistic Inverse Conway Manoeuvre purely by changing team structures, i.e moving people into "feature teams" or "stream-aligned teams", they manipulate only one factor (the *Structure*) without updating strategies, governance processes, deployment pipelines, collaboration or rewards. When task uncertainty overwhelms communication channels, the information-processing capacity collapses. The *Homomorphic Force* reasserts the legacy architecture onto the organisation, pulling the teams back into old communication patterns and habits. Finally, the reorganisation blatantly fails without anyone really understanding why. As such, opening a marvellous trap of repeating with even more conviction what did not work before ...
+
+> Insanity is doing the same thing over and over again and expecting different results.
+>
+> -- Rita Mae Brown
 
 To successfully reverse the Law, structural changes must be accompanied by changes in information channels, decision-making mandates, and technical architecture. Rearchitecting the system and rearchitecting the organisation are not two separate initiatives — they are two sides of the same socio-technical act.
 
