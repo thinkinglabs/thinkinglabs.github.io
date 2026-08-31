@@ -373,6 +373,7 @@ Once we fathom all of that, the rest will follow, naturally. It becomes a virtuo
 
 ## Related Articles
 
+- The Talk: [Continuous Delivery! It is not what you think it is]({% post_url 2026-08-31-continuous-delivery-it-is-not-what-you-think-it-is %})
 - [The Practices that make Continuous Integration]({% post_url 2022-06-14-the-practices-that-make-continuous-integration %})
 
 ## References
