@@ -23,7 +23,7 @@ But, Governance involves more than the steps to be compliant. It also includes k
 
 **Risk Management** is one of the Governance activities, to support Compliance. Regulations demand an organisation to manage its risks. But, good leadership also demand for Risk Management to build a successful organisation. 
 
-A Risk is a negative outcome which negatively impact an organisation's goals, reputation, or operations resulting from ineffective leadership, ethical lapses, inadequate controls, compliance failures, or strategic errors that threaten stakeholder interests. But risks are pervasive. We can never eliminate all risks. Therefore, the need for Risk Management. *Which risks are we willing to accept and which ones not?*. **As we are taking steps to mitigate risk in one area, we inevitably introduce more risk, or new risks, in another area.**
+A Risk is a negative outcome which negatively impact an organisation's goals, reputation, or operations resulting from ineffective leadership, ethical lapses, inadequate controls, compliance failures, or strategic errors that threaten stakeholder interests. But risks are pervasive. We can never eliminate all risks. Therefore, the need for Risk Management.
 
 > A good car has the best brakes.
 >
@@ -35,15 +35,15 @@ Speed, fast feedback, innovation, and Compliance is not a zero-sum game. We can 
 
 ![Continuous Compliance](/images/continuous-compliance/continuous-compliance.jpg)
 
-Where do we start?
+## Where do we start?
 
-Compliance starts by understanding the regulation. Organisations often conflate "*their approach to regulation*" with regulation. Not the same thing, at all. Oftentimes, regulation is about "do we do what we say we do. The most rigorious regulation says "get two people to look at it" and "have an audit trail of what happened". Therefore, it is of utmost importance that the product team reads and understands the regulation. When I say the team, I mean everyone. This is not only the Product Manager. That is also all engineers. That is the only way to make sure product implementations are aligned with the regulation. Because now, engineers understand the implications of their code. "*To my understanding if we do this, we are good. That might be shaggy.*" The team is accountable and responsible to implement and satisfy the compliance requirements. Having that in place, is already a major step towards Continuous Compliance.
+Compliance starts by understanding the regulation. Organisations often conflate "*their approach to regulation*" with regulation. Not the same thing, at all. Oftentimes, regulation is about "*do we do what we say we do*". The most rigorious regulation says "*get two people to look at it*" and "*have an audit trail of what happened*". Therefore, it is of utmost importance that the product team reads and understands the regulation. When I say the team, I mean everyone. This is not only the Product Manager. That is also all engineers. That is the only way to make sure product implementations are aligned with the regulation. Because now, engineers understand the implications of their code. "*To my understanding if we do this, we are good. That might be shaggy.*" The team is accountable and responsible to implement and satisfy the compliance requirements. Having that in place, is already a major step towards Continuous Compliance.
 
 Once we understand the regulation, we can extract the compliance requirements, which in turn define controls to be implemented. The controls go onto the product backlog, and can be prioritised alongside functionality. We can give it the necessary importance compared to functionality with market value. Having said that, Compliance has also market value. Not being compliant can shut us down from the market.
 
 As said, part of Compliance is Risk Management. That too has to become part of product development. We continuously identify risks, business operations risks as well as IT operations risks and security risks. One more reason to have business, i.e. the people doing the business operations, part of the product team to have Continuous Compliance. They are in the best place to identify business risks. Of course when Risk Management becomes a team activity, obviously engineers will also start identifying business risks, as they start to internalise the business. Same for product managers and business operations who start to identify IT operations and security risks. It becomes communicating vessels.
 
-A predominant mode of thinking in IT is a "*Wouldn't It Be Horrible"-approach to Risk Management (Hubbard, Humble et al.). We imagine a particularly catastrophic event occurring, regardless of its likelihood/.It must be avoided at all costs. There is no sense of prioritisation.
+A predominant mode of thinking in IT is a "*Wouldn't It Be Horrible*"-approach to Risk Management (Hubbard, Humble et al.). We imagine a particularly catastrophic event occurring, regardless of its likelihood/.It must be avoided at all costs. There is no sense of prioritisation. *Which risks are we willing to accept and which ones not?*. **As we are taking steps to mitigate risk in one area, we inevitably introduce more risk, or new risks, in another area.**
 
 There should not be a free pass for work to mitigate risks to jump to the front of the line. Instead, we should quantify risks using [Impact Mapping](https://www.impactmapping.org/) and prioritise using the [Cost of Delay](https://blackswanfarming.com/cost-of-delay/).
 
