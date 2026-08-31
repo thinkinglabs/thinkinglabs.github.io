@@ -21,15 +21,15 @@ In 1979, Yourdon and Constantine rephrased Conway's Law more firmly ...
 >
 > -- Edward Yourdon and Larry L. Constantine, [Structured Design](https://app.thestorygraph.com/books/764ff13c-a03a-4ed0-8b34-c538575c5b08), 1979, p. 363
 
+Isomorphism comes from Greek meaning "equal" (*isos*) and "form" (*morph*), being the same or similar in structure (or shape or form).
+
 > **isomorphic** adjective
 >
 > 1\. corresponding or similar in form and relations.
 >
 > source: Oxford Languages
 
-Isomorphic: being the same or similar in structure (or shape or form).
-
-It promotes the idea that any system design produced by an organisation will be shaped according to the organisation's structures. This means the organisation drives the system design.
+It promotes the idea that any system design produced by an organisation will be shaped according to the organisation's structures — the organisation drives the system design.
 
 ![The Organisation drives the System design](/images/shades-of-conways-law/org-drives-the-system.jpg)
 
@@ -37,7 +37,7 @@ This has an interesting consequence: If two subsystems are designed by two diffe
 
 ![Conway's Law's consequence](/images/shades-of-conways-law/conways-law-consequence.jpg)
 
-But there is also a mathematical definition for isomorphism: a structure-preserving mapping between two structures.
+But there is also a mathematical definition for isomorphism. It is a structure-preserving mapping between two structures.
 
 > 2\. MATHEMATICS
 >
@@ -167,11 +167,11 @@ According to Jay Galbraith (1973), the greater the task uncertainty, the more in
 
 Task uncertainty dictates strategies for designing an organisation. When assigning 1.000 engineers to a task before a formal design, we are at absolute uncertainty.
 
-To coordinate interdependent tasks, organisations default to rules and hierarchical authority to specify in advance the expected behaviour. The virtue of rules is to reduce the need to treat each situation as new, therefore cutting communication and decision-making.
+To coordinate interdependent tasks, organisations default to rules and hierarchical authority to specify in advance the expected behaviour. The virtue of rules (also known as standard procedures or more commonly *runbooks*) is to reduce the need to treat each situation as new, therefore cutting communication and decision-making.
 
 When the organisation encounters a new situation it has not faced before, the problem is raised (as an exception) to the manager who (probably, maybe, hopefully) has the information to make the decision. We rely on the hierarchy of authority, the org-chart. However, the hierarchical communication channels only have a finite capacity to process information. As more exceptions are raised upwards, the hierarchy becomes overloaded, and severe bottlenecks emerge, resulting in significant delays.
 
-The *Thousand Module Effect* occurs because the information can only be discovered incrementally during task execution, i.e. designing the system. Decisions have to be made and remade whenever new information emerges. The hierarchy cannot process the massive communication volume produced by 1.000 engineers designing the system. To survive, the organisation has to adopt information reduction strategies. It cuts communication lines and isolates engineers into individual, localised modules. Since "*two engineers cannot fit into one module*", the codebase fragments into 1.000 pieces. System architecture becomes a reflection of the organisational coping mechanisms.
+The *Thousand Module Effect* occurs because the information can only be discovered incrementally during task execution, i.e. while designing the system. Decisions have to be made and remade whenever new information emerges. However, the hierarchy cannot process the massive communication volume produced by 1.000 engineers designing the system. To survive, the organisation has to adopt information reduction strategies. It cuts communication lines and isolates engineers into individual, localised modules. Since "*two engineers cannot fit into one module*", the codebase fragments into 1.000 pieces. System architecture becomes a reflection of the organisational coping mechanisms.
 
 Melvin Conway observed this exact dynamic five years before Galbraith and seven years before Brooks' The Mythical Man-Month, in the last paragraph of Conway’s paper.
 
@@ -217,7 +217,7 @@ In 2004, Coplien and Harrison reformulated Conway’s Law around compatibility:
 >
 > source: Oxford Languages
 
-This appears to contradict Yourdon and Constantine. While Yourdon and Constantine argue that the system is isomorphic to the organisation. So the organisation drives the system design. Where Coplien and Harrison claim the opposite, it is more likely that the system architecture drives the organisation. If they are not in harmony, the system will impose a structure on the organisation.
+This appears to contradict Yourdon and Constantine. While Yourdon and Constantine argue that the system is isomorphic to the organisation — the organisation drives the system design. Where Coplien and Harrison claim the opposite, it is more likely that the system architecture drives the organisation. If they are not in harmony, the system will impose a structure on the organisation.
 
 ![The System imposes a structure on the Organisation](/images/shades-of-conways-law/system-drives-the-org.jpg)
 
@@ -225,7 +225,7 @@ Whereas Raymond holds the middle ground: organisation and system are congruent �
 
 This apparent contradiction — Yourdon and Constantine, organisation drives architecture vs Coplien and Harrison, architecture constrains organisation — resolves when we introduce **time**:
 
-**Greenfield System**: At first, the organisation imposes its will on the system architecture (*Systems are isomorphic to the Organisation*, Yourdon and Constantine).
+**Greenfield System**: At first, the organisation imposes its will on the system architecture — *Systems are isomorphic to the Organisation*, Yourdon and Constantine.
 
 > If the architecture of the system and the architecture of the organization are at odds, the architecture of the organization wins.
 >
@@ -237,7 +237,7 @@ The organisation is a force that acts on the (initial) design of a system, i.e. 
 >
 > -- Melvin Conway, How Do Committees Invent?, 1968
 
-**Mature Systems**: Once the system grows, the design matures, hardens into legacy code and becomes long-lived; gained expressions in couplings that constrain, causing the system design to act now as a force on the organisation (*The Organisation must be compatible with the System*, Coplien and Harrison).
+**Mature Systems**: Once the system grows, the design matures, hardens into legacy code and becomes long-lived; gained expressions in couplings that constrain, causing the system design to act, now, as a force on the organisation — *the Organisation must be compatible with the System*, Coplien and Harrison.
 
 This technical coupling closes the option space we have for designing the structure of our organisation.
 
@@ -245,7 +245,7 @@ This greenfield vs. mature system duality leads to the **Reverse Conway’s Law*
 
 ## Acknowledgements
 
-Special thanks to [Alexander Skvortcov](https://www.linkedin.com/in/askvortcov/) for promptly sharing his master's thesis, "*Impact of Organisation Design on Decision-Making Latency regarding IT projects*", and reviewing this third part of the series.
+Special thanks to [Alexander Skvortcov](https://www.linkedin.com/in/askvortcov/) for promptly sharing his master's thesis, "*Impact of Organisation Design on Decision-Making Latency regarding IT projects*".
 
 ## The Series: Navigating the Shades
 
