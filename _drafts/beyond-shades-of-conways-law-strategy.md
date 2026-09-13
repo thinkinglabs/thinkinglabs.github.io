@@ -32,7 +32,7 @@ Where all problems start is when management decides to reorganise things. They s
 >
 > -- a CTO, from [Conway's Law Doesn't Apply to Rigid Designs](https://verraes.net/2022/05/conways-law-vs-rigid-designs/), Mathias Verraes, 2022
 
-With long-lived, rigid systems, we cannot just re-organise. Because of the *Homomorphic Force*. This structure preserving mapping. The force creates a structure. But the force also preserves the structure. Over time, the system will try to reassert itself on the organisation. Both sides are going push on each other.
+With long-lived, rigid systems, we cannot just re-organise. Because of the *Homomorphic Force*. This structure preserving mapping. The force creates a structure. But the force also preserves the structure. Over time, the system will try to reassert itself on the organisation. Both sides are going to push on each other.
 
 This is where the *Inverse Conway’s Manoeuvre* falls short or more precisely, where people have the wrong expectations about the Inverse Conway’s Manoeuvre. We only have to reorganise and all of our problems will be solved. That is simply not true. This will clearly not happen. Especially not with rigid, long-lived systems because of exactly that *Reverse Conway’s Law*.
 
@@ -54,7 +54,7 @@ Before organising teams and defining the structure of the organisation, we shoul
 
 This works for greenfield or flexible systems. Because the organisational structure defines the possible system designs at our disposal.
 
-However, this cannot work for long-lived, rigid systems in mature organisations because of the [*Reverse Conway’s Law*](#the-reverse-conways-law-the-legacy-reality). We cannot simply reorganise. Once the system design matured, the system becomes long-lived and gained expressions in couplings that constrain, the system design imposes itself on the organisational design. Now it is the system that is a force on our organisation. This closes the option space for designing our organisation.
+However, this cannot work for long-lived, rigid systems in mature organisations because of the [*Reverse Conway’s Law*](#the-reverse-conways-law-the-legacy-reality). We cannot simply reorganise. Once the system design matures, the system becomes long-lived and gained expressions in couplings that constrain, the system design imposes itself on the organisational design. Now it is the system that is a force on our organisation. This closes the option space for designing our organisation.
 
 Here is the nuance. The Inverse Conway's Manoeuvre is often sold as a universal silver bullet ("just re-org into feature teams or product teams"), when in truth it only works for greenfield or highly decoupled software products. In long-lived, legacy systems, applying this naively leads straight into the wall. This "*Greenfield Assumption*" warns of the danger, the delusion, of applying a greenfield technique as a blanket solution without doing the hard work of redesigning systems.
 
@@ -76,13 +76,13 @@ Architect the organisation to architect the system ("*The System is isomorphic t
 
 This means two things:
 
-- first, if we want separate modules, we need separate teams.
+- First, if we want separate modules, we need separate teams.
 
   If we have two distinct pieces of functionality, we should separate them into two distinct teams that produce two separate modules. Each team can optimise around its own module. Which reconfirms Parnas' Information Hiding (1972): separate teams can work independently on different modules.
 
   Conversely, if we ram two teams together, we find the modules and the functionalities become intertwined. Which reconfirms Baldwin et al (2012). when comparing open source with closed source.
 
-- second, collective code ownership leads to more integrated teams and code.
+- Second, collective code ownership leads to more integrated teams and code.
 
   This might be a good thing, or this might be a bad thing.
 
@@ -112,11 +112,11 @@ Treating a Complex socio-technical system as if it were merely Complicated is a 
 
 ## Socio-Technical Alignment: Beyond Structure
 
-The failure of intellectually shallow [Inverse Conway Manoeuvres](#the-inverse-conways-manoeuvre-the-greenfield-assumption) exposes a broader misunderstanding in management strategy: **organisational design is not merely shifting team boxes on an org-chart**. Simple, structural reorganisations will fail, all the time.
+The failure of a facile [Inverse Conway Manoeuvre](#the-inverse-conways-manoeuvre-the-greenfield-assumption) exposes a broader misunderstanding in management strategy: **organisational design is not merely shifting team boxes on an org-chart**. Simple, purely structural reorganisations fail routinely.
 
-However, organisations can be designed! By the people within them! The design process is continuous by adjusting to different key factors. The organisation design changes constantly as people evolve and tasks, i.e. organisation goals, change. The design decision should happen as routinely as budget cycles (Galbraith, 1977).
+Yet, organisations can be deliberately designed, by the people within them! Organisation design is an active, continuous process of adjusting to different key factors and variables as people develop and organisation goals evolve. The organisation design decisions should happen as routinely as budget cycles and scheduling (Galbraith, 1977).
 
-[Contingency Theory](https://en.wikipedia.org/wiki/Contingency_theory) tells us a. *there is no one best way to organise*, and b. *not all the ways to organise are equally effective*. We can observe a wide range of differences in effective organisations but ... these differences are not random. Context matters! (Galbraith, 1973 & 1977)
+[Contingency Theory](https://en.wikipedia.org/wiki/Contingency_theory) tells us a. *there is no one best way to organise*, and b. *not all the ways to organise are equally effective*. We can observe a wide range of differences in effective organisations but ... these differences are not random. Context matters! Then again, what drivers dictate the choice for a certain organisation structure? One primary driver is the nature of the organisation's task (*Strategy*) — what today we call the organisation's strategic goal (Galbraith, 1973 & 1977).
 
 At the core of organisation design is the concept of *uncertainty* (Galbraith, 1977).
 
@@ -124,32 +124,32 @@ At the core of organisation design is the concept of *uncertainty* (Galbraith, 1
 >
 > -- Jay R. Galbraith, Organisation Design, 1977, p.37
 
-Uncertainty means simply the absence of information.
+Uncertainty simply means the absence of information.
 
-When an organisation lacks the required information to execute a task, it must acquire that information during the task execution, triggering repeated decision-taking. The more uncertainty, the greater the amount of decision-making and thus the more information needs to be processed. However, organisations only have a limited capacity to process information. Hence, variations in organisation structures are just different mechanisms to make decisions about unanticipated events, to manage uncertainty and handle greater complexity (Galbraith, 1977).
+When an organisation lacks the required information to execute a task, it must acquire that information during the task execution, triggering repeated, real-time decision-making. The more uncertainty, the greater the amount of decision-making, the more information needs to be processed. Because, organisations only have a limited capacity to process information, variations in organisation structures are simply different mechanisms to make more decisions about unanticipated events, to manage uncertainty and handle greater complexity (Galbraith, 1977).
 
-When uncertainty is low, traditional mechanisms — hierarchies of authority, standardised runbooks for anticipated situations as prefabricated decisions made in advance, bringing decision points to points of actions where the information exists, and team goal setting aligned with organisation goals for decentralised decision-making — work fine (Galbraith, 1977). But when an organisation attempts to reorganise around a complex, highly coupled legacy system — which is what the Inverse Conway's Manoeuvre undertakes — uncertainty skyrockets. The number of exceptions raise until the hierarchy overloads.
+When uncertainty is low, traditional mechanisms — such as, hierarchies of authority, standardised runbooks for anticipated situations, bringing decision points to where the work happens, and setting team goals aligned with organisational goals for decentralised decision-making — work fine (Galbraith, 1977). But when an organisation attempts to reorganise around a complex, highly coupled legacy system — which is what the [Inverse Conway's Manoeuvre](#the-inverse-conways-manoeuvre-the-greenfield-assumption) undertakes — uncertainty goes through the roof. Teams encounter constant unanticipated situations or problems that standard procedures, such as runbooks, cannot handle. Galbraith terms these *exceptions* — decisions that cannot be made locally and bubble up the hierarchy of leadership. As task uncertainty rises, more unresolved decisions bubble up to leadership for guidance. This sheer volume of exceptions overloads the hierarchy.
 
-When organisations still face information overload, they have two fundamental strategic organisation design choices (Galbraith, 1973):
+When facing information overload, organisations have two fundamental strategic design choices (Galbraith, 1973):
 
-1. *Reduce the need for information processing* (e.g., introducing slack and creating truly autonomous, self-contained product teams around decoupled software systems).
-2. *Increase information-processing capacity* (e.g., building direct lateral communication channels using Communities of Practice and vertical information systems to enhance feedback loops).
+1. *Reduce the need for information processing*, e.g. introducing slack and creating truly autonomous, self-contained product teams around decoupled software systems.
+2. *Increase information-processing capacity*, e.g. building direct lateral communication channels using Communities of Practice and vertical information systems such as Deployment Pipelines and observability to enhance feedback loops.
 
-Manipulating only team boundaries (the *Structure*) fails. An organisation's effectiveness depends on the synchronised alignment of five factors (Galbraith, 1977):
+Theorists have found a relation between task uncertainty and other organisation design variables. An effective organisation rests on five design variables (Galbraith, 1977):
 
-- *Strategy* — defines direction and target outcomes.
-- *Structure* — determines the location of decision-making power and team boundaries.
+- *Strategy* — defines the organisation's goal, the task, the domains and objectives.
+- *Structure* — establishes team boundaries and decision-making authority.
 - *Processes* — governs the flow of information, decision latency, and coordination mechanisms.
-- *Rewards* — aligns individual and team incentives with organisational goals.
-- *People* — develops the competencies and collaborative mindsets required to execute.
+- *Rewards* — aligns individual and team incentives with organisational goals to create motivation.
+- *People* — develops the skills, personality and collaborative mindsets required to execute the goal aligned with its level of uncertainty.
 
-When leaders attempt a simplistic Inverse Conway Manoeuvre purely by changing team structures, i.e moving people into "feature teams" or "stream-aligned teams", they manipulate only one factor (the *Structure*) without updating strategies, governance processes, deployment pipelines, collaboration or rewards. When task uncertainty overwhelms communication channels, the information-processing capacity collapses. The *Homomorphic Force* reasserts the legacy architecture onto the organisation, pulling the teams back into old communication patterns and habits. Finally, the reorganisation blatantly fails without anyone really understanding why. As such, opening a marvellous trap of repeating with even more conviction what did not work before ...
+When leaders attempt a superficial [Inverse Conway's Manoeuvre](#the-inverse-conways-manoeuvre-the-greenfield-assumption) purely by changing team structures, i.e., moving people into "feature teams" or "stream-aligned teams", they manipulate only one factor (the *Structure*) without updating strategies, governance processes, collaboration or rewards. As task uncertainty overwhelms the new team boundaries and communication channels, the information-processing capacity collapses. The *Homomorphic Force*, acting as a path of least resistance, reasserts the legacy architecture onto the organisation, pulling the teams back into old communication patterns and functional silos. The reorganisation blatantly fails without anyone really understanding why, tempting leadership into the marvellous trap of repeating with even more conviction what did not work before ... the same structural shuffle.
 
 > Insanity is doing the same thing over and over again and expecting different results.
 >
-> -- Rita Mae Brown
+> -- Rita Mae Brown (falsely attributed to Einstein)
 
-To successfully reverse the Law, structural changes must be accompanied by changes in information channels, decision-making mandates, and technical architecture. Rearchitecting the system and rearchitecting the organisation are not two separate initiatives — they are two sides of the same socio-technical act.
+To successfully reverse the Law, structural changes must be accompanied by changes in information channels, decision-making authority, technical architecture, collaboration and reward systems. Rearchitecting the system and rearchitecting the organisation are not two separate initiatives — they are two sides of the same socio-technical act. Organisation and system must co-evolve.
 
 ## The Series: Navigating the Shades
 
@@ -157,7 +157,7 @@ To successfully reverse the Law, structural changes must be accompanied by chang
 
 - [Foundations: The Origin & The Mirroring Principle]({% post_url 2026-06-07-beyond-shades-of-conways-law-foundations %}) - How the worlds of organisation and product design observed the same thesis independently.
 - [Validation: The Research & Reality Check]({% post_url 2026-06-20-beyond-shades-of-conways-law-validation %}) - Moving beyond the "hunch", how researchers proved the Law in different industries, but especially in software.
-- **Mechanics: The Mathematical & Geometrical Shades** - The geometry of design: from mathematical isomorphism, homomorphism, congruence to compatibility.
+  [Mechanics: The Mathematical & Geometrical Shades]({% post_url 2026-08-31-beyond-shades-of-conways-law-mechanics %}) - The geometry of design: from mathematical isomorphism, homomorphism, congruence to compatibility.
 - **Strategy: Reversing the Law** - How the system ultimately forces the organisation to change versus deliberately changing the organisation.
 - **Scale: Conway's Corollary** - The required organisational flexibility.
 - **Dynamics: Conway's Time Component** - The "Engineer Half Life" and why architecture is "sticky" long after teams change.
