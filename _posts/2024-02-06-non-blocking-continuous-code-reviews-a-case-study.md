@@ -41,6 +41,7 @@ References:
 - [Facts and Fallacies of Software Engineering](https://www.goodreads.com/book/show/83792.Facts_and_Fallacies_of_Software_Engineering), Robert Glass
 - [Joel on Software](https://www.joelonsoftware.com/), Joel Spolsky
 - [What is the purpose of Code Reviews](https://www.linkedin.com/posts/tdpauw_im-working-on-a-new-presentation-one-of-activity-7155600839053594626-8Ax_), Thierry de Pauw, a discussion on LinkedIn
+- [Gender bias in open source: Pull request acceptance of women versus men](https://www.researchgate.net/publication/308716997_Gender_bias_in_open_source_Pull_request_acceptance_of_women_versus_men), C. Rainear at al., 2016
 - [I’ve found something better than PRs](https://www.youtube.com/watch?v=WmVe1QrWxYU), the video from Dave Farley on the topic
 - [From Async Code Reviews to Co-Creation Patterns](https://www.infoq.com/articles/co-creation-patterns-software-development/), Dragan Stepanović
 - [I Hate Pull Requests](https://medium.com/@pia.fak.sunnanbo/i-hate-pull-requests-17836dd3cc38), Pia Fåk Sunnanbo
