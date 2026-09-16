@@ -22,6 +22,10 @@ conferences:
     video_link: https://www.youtube.com/watch?v=VQ5JooeO8Fs
   - name: Agile Cambridge
     date: 2025-10-01
+  - name: Agile on the Beach
+    date: 2026-07-03
+  - name: NDC Oslo
+    date: 2026-09-16
 ---
 
 The problem with the current most commonly accepted way of running code reviews using Pull Requests is that they have the nasty habit of blocking the flow of delivery. They introduce a cost of delay. Any delay reduces feedback. Consequently, it drives down quality.
