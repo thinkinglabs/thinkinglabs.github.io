@@ -151,6 +151,10 @@ When leaders attempt a superficial [Inverse Conway's Manoeuvre](#the-inverse-con
 
 To successfully reverse the Law, structural changes must be accompanied by changes in information channels, decision-making authority, technical architecture, collaboration and reward systems. Rearchitecting the system and rearchitecting the organisation are not two separate initiatives — they are two sides of the same socio-technical act. Organisation and system must co-evolve.
 
+## Acknowledgement
+
+[Trond Hjorteland](https://www.linkedin.com/in/trondhjort/) for fixing the flaws in my thinking.
+
 ## The Series: Navigating the Shades
 
 [Beyond the Shades of Conway's Law series]({% post_url 2026-04-24-beyond-the-shades-of-conways-law %}):
