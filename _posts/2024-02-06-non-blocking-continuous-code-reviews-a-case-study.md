@@ -41,7 +41,8 @@ References:
 
 - [Optimizing the Software development process for continuous integration and flow of work](https://itnext.io/optimizing-the-software-development-process-for-continuous-integration-and-flow-of-work-56cf614b3f59), Martin Mortensen
 - The Article: [Non-Blocking Continuous Code Reviews, a Case Study]({% post_url 2023-05-02-non-blocking-continuous-code-reviews-a-case-study %}), Thierry de Pauw
-- [I’ve found something better than PRs](https://www.youtube.com/watch?v=WmVe1QrWxYU), the video from Dave Farley on the topic
+- [I’ve found something better than PRs](https://www.youtube.com/watch?v=WmVe1QrWxYU), Dave Farley's video on the topic
+- [Out of the Crisis](https://app.thestorygraph.com/books/b79ebdec-b267-4585-9af4-b5b68b30f5e5), Edwards Deming
 - [Code Complete](https://www.goodreads.com/book/show/4845.Code_Complete), Steve McConnell
 - [Facts and Fallacies of Software Engineering](https://www.goodreads.com/book/show/83792.Facts_and_Fallacies_of_Software_Engineering), Robert Glass
 - [Accelerate](https://app.thestorygraph.com/books/0baa7f2a-3f3f-4752-9d81-0434117d0648), Nicole Forsgren, PhD et al.
