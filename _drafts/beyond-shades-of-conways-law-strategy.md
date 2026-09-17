@@ -6,7 +6,7 @@ category: articles
 tags: [ Conway's Law ]
 ---
 
-At the outset of a greenfield system, the organisation drives the initial design. The very act of organising teams implicitly means that some system architecture decisions have been made. Once the system grows, the design matures in couplings that constrain, it reverses this pressure. The system now begins to impose itself back on the organisation, narrowing our strategic options to structure the organisation.
+At the outset of a greenfield system, the organisation drives the initial design. The very act of organising teams implicitly means that some system architecture decisions have been made. Once the system grows, the design matures in couplings that constrain; it reverses this pressure. The system now begins to impose itself back on the organisation, narrowing our strategic options to structure the organisation.
 
 ---
 
@@ -22,9 +22,9 @@ This is exactly what happens with COBOL organisations.
 
 If we have a 3-tier system - frontend, backend and database - chances are, we will find a frontend team, a backend team and a database team inside the organisation. The system mirrors itself back on the organisation.
 
-We see this with long lived software in long lived organisations. It might be a bit expensive. It might not be the most efficient way of working. But, hey, it works and that is fine as long as it allows us to continue.
+We see this with long-lived software in long-lived organisations. It might be a bit expensive. It might not be the most efficient way of working. But, hey, it works, and that is fine as long as it allows us to continue.
 
-Where all problems start is when management decides to reorganise things. They send one of those layers to another country, or they decide we do not need a database team - the database is done, isn't it? -, or management decides to reorganise the organisation in such a way that it is not compatible anymore with the architecture. However, the software will not allow that. It will reassert itself on the organisation.
+Where all problems start is when management decides to reorganise things. They send one of those layers to another country, or they decide we do not need a database team - the database is done, isn't it? Or management decides to reorganise the organisation in such a way that it is no longer compatible with the architecture. However, the software will not allow that. It will reassert itself on the organisation.
 
 > We reorganised,
 >
@@ -32,9 +32,9 @@ Where all problems start is when management decides to reorganise things. They s
 >
 > -- a CTO, from [Conway's Law Doesn't Apply to Rigid Designs](https://verraes.net/2022/05/conways-law-vs-rigid-designs/), Mathias Verraes, 2022
 
-With long-lived, rigid systems, we cannot just re-organise. Because of the *Homomorphic Force*. This structure preserving mapping. The force creates a structure. But the force also preserves the structure. Over time, the system will try to reassert itself on the organisation. Both sides are going to push on each other.
+With long-lived, rigid systems, we cannot just re-organise. Because of the *Homomorphic Force* — this structure-preserving mapping. The force creates a structure. But the force also preserves the structure. Over time, the system will try to reassert itself on the organisation. Both sides are going to push on each other.
 
-This is where the *Inverse Conway’s Manoeuvre* falls short or more precisely, where people have the wrong expectations about the Inverse Conway’s Manoeuvre. We only have to reorganise and all of our problems will be solved. That is simply not true. This will clearly not happen. Especially not with rigid, long-lived systems because of exactly that *Reverse Conway’s Law*.
+This is where the *Inverse Conway’s Manoeuvre* fails, or more precisely, where people have the wrong expectations about the Inverse Conway’s Manoeuvre. We only have to reorganise, and all of our problems will be solved. That is simply not true. This will clearly not happen. Especially not with rigid, long-lived systems because of exactly that *Reverse Conway’s Law*.
 
 That is exactly the reality of mature organisations with legacy, long-lived systems. Yet, for leaders not aware of this physical reality, who assume they can "just" re-organise teams without rearchitecting the systems, it becomes a fatal trap.
 
@@ -54,7 +54,7 @@ Before organising teams and defining the structure of the organisation, we shoul
 
 This works for greenfield or flexible systems. Because the organisational structure defines the possible system designs at our disposal.
 
-However, this cannot work for long-lived, rigid systems in mature organisations because of the [*Reverse Conway’s Law*](#the-reverse-conways-law-the-legacy-reality). We cannot simply reorganise. Once the system design matures, the system becomes long-lived and gained expressions in couplings that constrain, the system design imposes itself on the organisational design. Now it is the system that is a force on our organisation. This closes the option space for designing our organisation.
+However, this cannot work for long-lived, rigid systems in mature organisations because of the [*Reverse Conway’s Law*](#the-reverse-conways-law-the-legacy-reality). We cannot simply reorganise. Once the system design matures, the system becomes long-lived and gains expressions in couplings that constrain; the system design imposes itself on the organisational design. Now it is the system that is a force on our organisation. This closes the option space for designing our organisation.
 
 Here is the nuance. The Inverse Conway's Manoeuvre is often sold as a universal silver bullet ("just re-org into feature teams or product teams"), when in truth it only works for greenfield or highly decoupled software products. In long-lived, legacy systems, applying this naively leads straight into the wall. This "*Greenfield Assumption*" warns of the danger, the delusion, of applying a greenfield technique as a blanket solution without doing the hard work of redesigning systems.
 
@@ -78,9 +78,9 @@ This means two things:
 
 - First, if we want separate modules, we need separate teams.
 
-  If we have two distinct pieces of functionality, we should separate them into two distinct teams that produce two separate modules. Each team can optimise around its own module. Which reconfirms Parnas' Information Hiding (1972): separate teams can work independently on different modules.
+  If we have two distinct pieces of functionality, we should separate them into two distinct teams that produce two separate modules. Each team can optimise around its own module. This reconfirms Parnas' Information Hiding (1972): separate teams can work independently on different modules.
 
-  Conversely, if we ram two teams together, we find the modules and the functionalities become intertwined. Which reconfirms Baldwin et al (2012). when comparing open source with closed source.
+  Conversely, if we ram two teams together, we find the modules and the functionalities become intertwined. This reconfirms Baldwin et al. (2012) when comparing open source with closed source.
 
 - Second, collective code ownership leads to more integrated teams and code.
 
@@ -88,7 +88,7 @@ This means two things:
 
   If we want the code to be more separated, because we have two distinct pieces of functionality, we separate the teams.
 
-  Although, if we have lots and lots of layers, lots and lots of superfluous objects, we might be better off to bring the code together, and bring the people together. This will reflect in the software design.
+  However, if we have lots and lots of layers, lots and lots of superfluous objects, we might be better off to bring the code together, and bring the people together. This will reflect in the software design.
 
 But the inverse is also true!
 
@@ -100,23 +100,23 @@ Drafting a system architecture is already designing the structure of the organis
 
 ## The Complexity Boundary: Viewing the Law Through the Lens of Cynefin
 
-Before we can even apply the [Inverse Conway's Manoeuvre](#the-inverse-conways-manoeuvre-the-greenfield-assumption), we first need to understand the domain context. Using the Cynefin framework (Dave Snowden, 1999): Are we operating in a Clear, Complicated or Complex or Chaotic domain. Strategies change depending on the domain.
+Before we can even apply the [Inverse Conway's Manoeuvre](#the-inverse-conways-manoeuvre-the-greenfield-assumption), we first need to understand the domain context. Using the Cynefin framework (Dave Snowden, 1999): Are we operating in a Clear, Complicated, Complex or Chaotic domain? Strategies change depending on the domain.
 
-In greenfield or flexible, highly decoupled systems, cause and effect are related. We are in the *Complicated domain*. Cause and effect are somehow predictable, but not necessarily self evident. Here, we can draft an ideal system architecture and organise teams around it using the ([Inverse Conway's Manoeuvre](#the-inverse-conways-manoeuvre-the-greenfield-assumption)). At this stage, the organisation and the system are still malleable. The emerging system architecture influences the team structures. The organisation can still easily and quickly adapt to new system designs. The decision model here is *sense - analyse - respond*. Popular organisational pattern languages, such as [Team Topologies](https://teamtopologies.com/), thrive in this domain because team boundaries and software boundaries can be cleanly aligned by design.
+In greenfield or flexible, highly decoupled systems, cause and effect are related. We are in the *Complicated domain*. Cause and effect are somehow predictable, but not necessarily self-evident. Here, we can draft an ideal system architecture and organise teams around it using the ([Inverse Conway's Manoeuvre](#the-inverse-conways-manoeuvre-the-greenfield-assumption)). At this stage, the organisation and the system are still malleable. The emerging system architecture influences the team structures. The organisation can still easily and quickly adapt to new system designs. The decision model here is *sense - analyse - respond*. Popular organisational pattern languages, such as [Team Topologies](https://teamtopologies.com/), thrive in this domain because team boundaries and software boundaries can be cleanly aligned by design.
 
-However, when organisations mature, carry long-lived rigid systems, we enter the *Complex domain*. Here, the organisation and system are tightly coupled by decades of implicit decisions and historical baggage making the coupling mostly hidden, unnoticed for leadership. In that domain, we cannot simply execute an ordered top-down reorganisation — only by moving boxes around on an org-chart — and expect the system to magically redesign and decouple ("*We reorganised but the system did not get the memo*", Matthias Verraes, 2022).
+However, when organisations mature and carry long-lived rigid systems, we enter the *Complex domain*. Here, the organisation and system are tightly coupled by decades of implicit decisions and historical baggage, making the coupling mostly hidden and unnoticed for leadership. In that domain, we cannot simply execute an ordered top-down reorganisation — only by moving boxes around on an org-chart — and expect the system to magically redesign and decouple ("*We reorganised but the system did not get the memo*", Matthias Verraes, 2022).
 
 The naive, blind, mechanical application of Team Topologies without first decoupling the underlying legacy system architecture is a classic example of this wishful thinking. Leaders try to apply a complicated pattern to a complex legacy system. Any framework that assumes we can "just" reorganise people before addressing technical coupling will fracture against the *Homomorphic Force*.
 
-Treating a Complex socio-technical system as if it were merely Complicated is a critical error. Cause and effect are only obvious in hindsight, producing unpredictable, emergent outcomes. The decision model in the Complex domain is *probe – sense – respond*. Rather than executing a big-bang reorganisation, that will naturally fail, anyway. We must run safe-to-fail experiments instead of fail-safe designs. This is hard, time-consuming work, where we might lose track of the objective. The [Improvement Kata](https://public.websites.umich.edu/~jmondisa/TK/The_Improvement_Kata.html) (Mike Rother, 2009) — a continuous improvement framework for introducing large-scale organisational changes — will help to incrementally redesign and decouple the system architecture while iteratively reshaping team interactions.
+Treating a Complex socio-technical system as if it were merely Complicated is a critical error. Cause and effect are only obvious in hindsight, producing unpredictable, emergent outcomes. The decision model in the Complex domain is *probe – sense – respond*. Rather than executing a big-bang reorganisation, which will naturally fail anyway. We must run safe-to-fail experiments instead of fail-safe designs. This is hard, time-consuming work, where we might lose track of the objective. The [Improvement Kata](https://public.websites.umich.edu/~jmondisa/TK/The_Improvement_Kata.html) (Mike Rother, 2009) — a continuous improvement framework for introducing large-scale organisational changes — will help to incrementally redesign and decouple the system architecture while iteratively reshaping team interactions.
 
 ## Socio-Technical Alignment: Beyond Structure
 
 The failure of a facile [Inverse Conway Manoeuvre](#the-inverse-conways-manoeuvre-the-greenfield-assumption) exposes a broader misunderstanding in management strategy: **organisational design is not merely shifting team boxes on an org-chart**. Simple, purely structural reorganisations fail routinely.
 
-Yet, organisations can be deliberately designed, by the people within them! Organisation design is an active, continuous process of adjusting to different key factors and variables as people develop and organisation goals evolve. The organisation design decisions should happen as routinely as budget cycles and scheduling (Galbraith, 1977).
+Yet, organisations can be deliberately designed by the people within them! Organisation design is an active, continuous process of adjusting to different key factors and variables as people develop and organisational goals evolve. The organisation design decisions should happen as routinely as budget cycles and scheduling (Galbraith, 1977).
 
-[Contingency Theory](https://en.wikipedia.org/wiki/Contingency_theory) tells us a. *there is no one best way to organise*, and b. *not all the ways to organise are equally effective*. We can observe a wide range of differences in effective organisations but ... these differences are not random. Context matters! Then again, what drivers dictate the choice for a certain organisation structure? One primary driver is the nature of the organisation's task (*Strategy*) — what today we call the organisation's strategic goal (Galbraith, 1973 & 1977).
+[Contingency Theory](https://en.wikipedia.org/wiki/Contingency_theory) tells us that a. *there is no one best way to organise*, and b. *not all the ways to organise are equally effective*. We can observe a wide range of differences in effective organisations, but ... these differences are not random. Context matters! Then again, what drivers dictate the choice for a certain organisation structure? One primary driver is the nature of the organisation's task (*Strategy*) — what we today call the organisation's strategic goal (Galbraith, 1973 & 1977).
 
 At the core of organisation design is the concept of *uncertainty* (Galbraith, 1977).
 
@@ -126,9 +126,9 @@ At the core of organisation design is the concept of *uncertainty* (Galbraith, 1
 
 Uncertainty simply means the absence of information.
 
-When an organisation lacks the required information to execute a task, it must acquire that information during the task execution, triggering repeated, real-time decision-making. The more uncertainty, the greater the amount of decision-making, the more information needs to be processed. Because, organisations only have a limited capacity to process information, variations in organisation structures are simply different mechanisms to make more decisions about unanticipated events, to manage uncertainty and handle greater complexity (Galbraith, 1977).
+When an organisation lacks the required information to execute a task, it must acquire that information during the task execution, triggering repeated, real-time decision-making. The more uncertainty, the greater the amount of decision-making, and the more information needs to be processed. Because organisations only have a limited capacity to process information, variations in organisational structures are simply different mechanisms to make more decisions about unanticipated events, to manage uncertainty and handle greater complexity (Galbraith, 1977).
 
-When uncertainty is low, traditional mechanisms — such as, hierarchies of authority, standardised runbooks for anticipated situations, bringing decision points to where the work happens, and setting team goals aligned with organisational goals for decentralised decision-making — work fine (Galbraith, 1977). But when an organisation attempts to reorganise around a complex, highly coupled legacy system — which is what the [Inverse Conway's Manoeuvre](#the-inverse-conways-manoeuvre-the-greenfield-assumption) undertakes — uncertainty goes through the roof. Teams encounter constant unanticipated situations or problems that standard procedures, such as runbooks, cannot handle. Galbraith terms these *exceptions* — decisions that cannot be made locally and bubble up the hierarchy of leadership. As task uncertainty rises, more unresolved decisions bubble up to leadership for guidance. This sheer volume of exceptions overloads the hierarchy.
+When uncertainty is low, traditional mechanisms — such as hierarchies of authority, standardised runbooks for anticipated situations, bringing decision points to where the work happens, and setting team goals aligned with organisational goals for decentralised decision-making — work fine (Galbraith, 1977). But when an organisation attempts to reorganise around a complex, highly coupled legacy system — which is what the [Inverse Conway's Manoeuvre](#the-inverse-conways-manoeuvre-the-greenfield-assumption) undertakes — uncertainty goes through the roof. Teams encounter constant unanticipated situations or problems that standard procedures, such as runbooks, cannot handle. Galbraith terms these *exceptions* — decisions that cannot be made locally and bubble up the hierarchy of leadership. As task uncertainty rises, more unresolved decisions bubble up to leadership for guidance. This sheer volume of exceptions overloads the hierarchy.
 
 When facing information overload, organisations have two fundamental strategic design choices (Galbraith, 1973):
 
