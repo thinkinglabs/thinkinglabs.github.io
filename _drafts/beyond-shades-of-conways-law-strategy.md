@@ -6,7 +6,7 @@ category: articles
 tags: [ Conway's Law ]
 ---
 
-At the outset of a greenfield system, the organisation drives the initial design. The very act of organising teams implicitly means that some system architecture decisions have been made. Once the system grows, the design matures in couplings that constrain; it reverses this pressure. The system now begins to impose itself back on the organisation, narrowing our strategic options to structure the organisation.
+The apparent contradiction between Yourdon and Constantine's "*organisation drives architecture*" and Coplien and Harrison's "*architecture constrains organisation*" resolves when we introduce **time**. At the outset of a greenfield system, the organisation drives the initial design. The very act of organising teams implicitly means that some system architecture decisions have been made. As the system grows, the design matures in couplings that constrain; it reverses this pressure. The system now begins to impose itself back on the organisation, narrowing our strategic options for structuring the organisation.
 
 ---
 
