@@ -149,11 +149,17 @@ When leaders attempt a superficial [Inverse Conway's Manoeuvre](#the-inverse-con
 >
 > -- Rita Mae Brown (falsely attributed to Einstein)
 
+## Conclusion
+
 To successfully reverse the Law, structural changes must be accompanied by changes in information channels, decision-making authority, technical architecture, collaboration and reward systems. Rearchitecting the system and rearchitecting the organisation are not two separate initiatives — they are two sides of the same socio-technical act. Organisation and system must co-evolve.
+
+Nevertheless, Galbraith still tries to fix a *Design Principle 1 (DP1)* structure — where coordination and control come from a level above where the work happens — with better information handling and better feedback. From Merrelyn and Fred Emery's [Open Systems Theory (OST)](https://opensystemstheory.org/theory/) perspective, optimising a DP1 structure by improving information processing has limits. The sheer volume of exceptions is only truly resolved by shifting to a *Design Principle 2 (DP2)* structure — where responsibility for coordination and control resides directly within the team doing the work by building redundant skills within people.
+
+Therefore, reversing Conway's Law is not just a matter of tuning Galbraith's five variables. It requires moving from a DP1 (**control-above**) towards a DP2 (**control-within**) socio-technical structure, allowing the teams to rearchitect both the organisation and the system together.
 
 ## Acknowledgement
 
-[Trond Hjorteland](https://www.linkedin.com/in/trondhjort/) for ensuring there are no the flaws in my thinking.
+[Trond Hjorteland](https://www.linkedin.com/in/trondhjort/) to confirm my thinking and whisper an *Open Systems Theory* conclusion.
 
 ## The Series: Navigating the Shades
 
@@ -173,8 +179,10 @@ To successfully reverse the Law, structural changes must be accompanied by chang
 - [On the Criteria To Be Used in Decomposing Systems into Modules](https://www.win.tue.nl/~wstomv/edu/2ip30/references/criteria_for_modularization.pdf), Parnas, 1972
 - [Designing Complex Organisations](https://app.thestorygraph.com/books/c746ca36-a5d7-4c2a-995c-6330c4d363bd), Jay R. Galbraith, 1973
 - [Organisation Design](https://app.thestorygraph.com/books/6b226d10-9cb0-41a2-89fa-bab1f81ee5d1), Jay R. Galbraith, 1977
+- [Futures We Are In](https://app.thestorygraph.com/books/d5b12c4c-19b0-4d6a-aa47-0482d9445146), Fred Emery, 1977
 - [Structured Design](https://www.goodreads.com/book/show/946145.Structured_Design), Edward Yourdon and Larry L. Constantine, 1979
 - [Cynefin Framework]({% post_url 2023-12-29-cynefin-framework-dave-snowden %}), Dave Snowden, 1999
+- [Searching: The Theory and Practice of Making Cultural Change](https://www.jbe-platform.com/content/books/9789027299420), Merrelyn Emery, 1999
 - [Organisational patterns of agile software development](https://www.goodreads.com/book/show/756250.Organizational_Patterns_of_Agile_Software_Development), James Coplien & Neil Harrison, 2004
 - [Release It!](https://app.thestorygraph.com/books/1bd756aa-7a60-4af1-a407-6311f9741421), Michael Nygard, 2007
 - [Conway’s Law](https://web.archive.org/web/20181022001505/http://traceinthesand.com:80/blog/2008/02/13/conways-law/), Ruth Malan, 2008
