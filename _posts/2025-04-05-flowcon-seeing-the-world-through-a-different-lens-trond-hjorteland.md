@@ -9,7 +9,7 @@ author:
   linkedin: trondhjort
 created_at: 2025-04-02
 category: notes
-tags: [ Open Systems, Socio Technical System, FlowCon ]
+tags: [ Open Systems Theory, Sociotechnical Systems, FlowCon ]
 image: /images/flowcon-seeing-the-world-through-a-different-lens-trond-hjorteland/peppers-world-hypothesis.jpg
 ---
 

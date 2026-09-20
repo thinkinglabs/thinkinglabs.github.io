@@ -3,7 +3,7 @@ layout: article
 title: "Beyond the Shades of Conway's Law - Strategy: Reversing the Law"
 author: Thierry de Pauw
 category: articles
-tags: [ Conway's Law ]
+tags: [ Conway's Law, Open Systems Theory ]
 ---
 
 The apparent contradiction between Yourdon and Constantine's "*organisation drives architecture*" and Coplien and Harrison's "*architecture constrains organisation*" resolves when we introduce **time**. At the outset of a greenfield system, the organisation drives the initial design. The very act of organising teams implicitly means that some system architecture decisions have been made. As the system grows, the design matures in couplings that constrain; it reverses this pressure. The system now begins to impose itself back on the organisation, narrowing our strategic options for structuring the organisation.
@@ -116,7 +116,7 @@ The failure of a facile [Inverse Conway Manoeuvre](#the-inverse-conways-manoeuvr
 
 Yet, organisations can be deliberately designed by the people within them! Organisation design is an active, continuous process of adjusting to different key factors and variables as people develop and organisational goals evolve. The organisation design decisions should happen as routinely as budget cycles and scheduling (Galbraith, 1977).
 
-[Contingency Theory](https://en.wikipedia.org/wiki/Contingency_theory) tells us that a. *there is no one best way to organise*, and b. *not all the ways to organise are equally effective*. We can observe a wide range of differences in effective organisations, but ... these differences are not random. Context matters! Management style and organisation structure are influenced by aspects of the environment: contingency factors — the situational or environmental demands on the organisation. Then again, what contingency factors dictate the choice of a certain organisation structure? One primary driver is the nature of the organisation's task (*Strategy*) — what we today call the organisation's strategic goal (Galbraith, 1973 & 1977) —, its complexity and uncertainty.
+[Contingency Theory](https://en.wikipedia.org/wiki/Contingency_theory) tells us that a. *there is no one best way to organise*, and b. *not all the ways to organise are equally effective*. We can observe a wide range of differences in effective organisations, but ... these differences are not random. Context matters! Management style and organisation structure are influenced by aspects of the environment: contingency factors — the situational or environmental demands on the organisation. Then again, what contingency factors dictate the choice of a certain organisation structure? One primary driver is the nature of the organisation's task (*Strategy*) — what we today call the organisation's strategic goal (Galbraith, 1973, 1977) —, its complexity and uncertainty.
 
 At the core of organisation design is the concept of *uncertainty* (Galbraith, 1977).
 
@@ -153,7 +153,7 @@ When leaders attempt a superficial [Inverse Conway's Manoeuvre](#the-inverse-con
 
 To successfully reverse the Law, structural changes must be accompanied by changes in information channels, decision-making authority, technical architecture, collaboration and reward systems. Rearchitecting the system and rearchitecting the organisation are not two separate initiatives — they are two sides of the same socio-technical act. Organisation and system must co-evolve.
 
-Nevertheless, Galbraith still tries to fix a *Design Principle 1 (DP1)* structure — where coordination and control come from a level above where the work happens — with better information handling and better feedback. From Merrelyn and Fred Emery's [Open Systems Theory (OST)](https://opensystemstheory.org/theory/) perspective, optimising a DP1 structure by improving information processing has limits. The sheer volume of exceptions is only truly resolved by shifting to a *Design Principle 2 (DP2)* structure — where responsibility for coordination and control resides directly within the team doing the work by building redundant skills within people.
+Nevertheless, Galbraith still tries to fix a *Design Principle 1 (DP1)* structure — where coordination and control come from a level above where the work happens — with better information handling and better feedback. From Merrelyn and Fred Emery's [Open Systems Theory (OST)](https://opensystemstheory.org/theory/) (cited by Trond Hjorteland, 2022, 2025) perspective, optimising a DP1 structure by improving information processing has limits. The sheer volume of exceptions is only truly resolved by shifting to a *Design Principle 2 (DP2)* structure — where responsibility for coordination and control resides directly within the team doing the work by building redundant skills within people.
 
 Therefore, reversing Conway's Law is not just a matter of tuning Galbraith's five variables. It requires moving from a DP1 (**control-above**) towards a DP2 (**control-within**) socio-technical structure, allowing the teams to rearchitect both the organisation and the system together.
 
@@ -179,7 +179,7 @@ Therefore, reversing Conway's Law is not just a matter of tuning Galbraith's fiv
 - [On the Criteria To Be Used in Decomposing Systems into Modules](https://www.win.tue.nl/~wstomv/edu/2ip30/references/criteria_for_modularization.pdf), Parnas, 1972
 - [Designing Complex Organisations](https://app.thestorygraph.com/books/c746ca36-a5d7-4c2a-995c-6330c4d363bd), Jay R. Galbraith, 1973
 - [Organisation Design](https://app.thestorygraph.com/books/6b226d10-9cb0-41a2-89fa-bab1f81ee5d1), Jay R. Galbraith, 1977
-- [Futures We Are In](https://app.thestorygraph.com/books/d5b12c4c-19b0-4d6a-aa47-0482d9445146), Fred Emery, 1977
+- [Futures We Are In](https://app.thestorygraph.com/books/d5b12c4c-19b0-4d6a-aa47-0482d9445146), Fred Emery, 1977 (see also [opensystemstheory.org](https://opensystemstheory.org/theory/))
 - [Structured Design](https://www.goodreads.com/book/show/946145.Structured_Design), Edward Yourdon and Larry L. Constantine, 1979
 - [Cynefin Framework]({% post_url 2023-12-29-cynefin-framework-dave-snowden %}), Dave Snowden, 1999
 - [Searching: The Theory and Practice of Making Cultural Change](https://www.jbe-platform.com/content/books/9789027299420), Merrelyn Emery, 1999
@@ -192,3 +192,5 @@ Therefore, reversing Conway's Law is not just a matter of tuning Galbraith's fiv
 - [Continuous Delivery and Conway’s Law]({% post_url 2021-05-13-continuous-delivery-and-conways-law-allan-kelly %}), Allan Kelly, 2014
 - [Accelerate](https://app.thestorygraph.com/books/0baa7f2a-3f3f-4752-9d81-0434117d0648), Nicole Forsgren, PhD et al., 2018
 - [Conway's Law Doesn't Apply to Rigid Designs](https://verraes.net/2022/05/conways-law-vs-rigid-designs/), Mathias Verraes, 2022
+- [Thriving in Complexity]({% post_url 2026-09-20-kandinsky-thriving-in-complexity-trond-hjorteland %}), Trond Hjorteland, 2022
+- [Seeing the Wrold Through a Different Lens]({% post_url 2025-04-05-flowcon-seeing-the-world-through-a-different-lens-trond-hjorteland %}), Trond Hjorteland, 2025
