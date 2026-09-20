@@ -245,7 +245,7 @@ Nevertheless, in the meantime, academic research has been done that supports the
 - **Foundations: The Origin & The Mirroring Principle** - How the worlds of organisation and product design observed the same thesis independently.
 - [Validation: The Research & Reality Check]({% post_url 2026-06-20-beyond-shades-of-conways-law-validation %}) - Moving beyond the "hunch", how researchers proved the Law in different industries, but especially in software.
 - [Mechanics: The Mathematical & Geometrical Shades]({% post_url 2026-08-31-beyond-shades-of-conways-law-mechanics %}) - The geometry of design: from mathematical isomorphism, homomorphism, congruence to compatibility.
-- **Strategy: Reversing the Law** - How the system ultimately forces the organisation to change versus deliberately changing the organisation.
+- [Strategy: Reversing the Law]({% post_url 2026-09-20-beyond-shades-of-conways-law-strategy%}) - How the system ultimately forces the organisation to change versus deliberately changing the organisation.
 - **Scale: Conway's Corollary** - The required organisational flexibility.
 - **Dynamics: Conway's Time Component** - The "Engineer Half Life" and why architecture is "sticky" long after teams change.
 - **Conclusion: The Different Lenses** - A concluding look at how we perceive organisations and their systems.
