@@ -3,7 +3,7 @@ layout: article
 title: "Beyond the Shades of Conway's Law - Foundations: The Origin & The Mirroring Principle"
 author: Thierry de Pauw
 category: articles
-tags: [ Conway's Law ]
+tags: [ Conway's Law, Open Systems Theory ]
 image: /images/shades-of-conways-law/conways_law_cornet.png
 ---
 
