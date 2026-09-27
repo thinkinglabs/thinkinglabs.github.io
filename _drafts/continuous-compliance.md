@@ -154,6 +154,10 @@ A common mistake by regulated organisations is to apply a one-size-fits-all appr
 
 The industry needs this exact mindset shift. **It is a catalyst for speed rather than a brake pedal!**
 
+## Acknowledgement
+
+[Elizabeth Zagroba](https://mastodon.social/@ez@chaos.social) for the awesome notes during the [Continuous Compliance session at SoCraTes 2026]({% post_url 2026-09-27-socrates-2026-continuous-compliance %}).
+
 ## Related Articles
 
 - [On the Evilness of Feature Branching - But Compliance]({% post_url 2022-02-22-on-the-evilness-of-feature-branching-but-compliance %})
@@ -167,4 +171,4 @@ The industry needs this exact mindset shift. **It is a catalyst for speed rather
 - [Lean Enterprise: How High Performance Organizations Innovate at Scale](https://app.thestorygraph.com/books/be53bcd6-adf8-4c9c-9946-541a1038435d), Humble, Molesky, O'Reilly, 2014
 - [The DevOps Handbook](https://www.goodreads.com/book/show/26083308-the-devops-handbook), Gene Kim, Jez Humble, Patrick Debois, John Willis, 2016
 - [Infrastructure as Code, 3rd edition](https://app.thestorygraph.com/books/dab98a8c-7167-4ef5-9008-e0757713ac7f), Kief Morris, 2025
-- [Continuous Compliance session at SoCraTes]({% post_url 2026-09-27-socrates-2026-continuous-compliance %}), Thierry de Pauw and Elizabeth Zagroba, 2026
+- [Continuous Compliance session at SoCraTes]({% post_url 2026-09-27-socrates-2026-continuous-compliance %}), Thierry de Pauw, 2026

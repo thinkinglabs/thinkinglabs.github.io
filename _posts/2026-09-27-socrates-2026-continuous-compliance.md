@@ -20,4 +20,4 @@ Notes from the [SoCraTes unconference](https://www.socrates-conference.de/) sess
 
 ![Continuous Compliance session notes](/images/continuous-compliance/continuous-compliance-socrates-notes.jpg)
 
-Notes by [Elizabet Zagroba](https://mastodon.social/@ez@chaos.social)
+Notes by [Elizabeth Zagroba](https://mastodon.social/@ez@chaos.social)
