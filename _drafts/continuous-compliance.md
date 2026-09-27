@@ -99,6 +99,20 @@ Whenever any of these tests and checks fail, it fails the Deployment Pipeline. W
 
 For this to work, it is crucial that all the checks, especially automated tests, are deterministic. When it fails, it fails all the time. Not failing and passing on a rerun. These tests are useless.
 
+## What about Segregation of Duties?
+
+This is arguably the single most misunderstood requirement in enterprise IT compliance. It is the number one excuse used to slow down delivery, justifying manual handoffs, enforce infrequent release schedules, and bring teams to a standstill. Few regulatory concepts causes so much self-inflicted friction.
+
+It was historically intended to prevent financial fraud or faults that could threaten human life by ensuring no single person controls the entire delivery process end-to-end. The rule of thumb was simple: the person authoring the code may neither release nor deploy it. In IT, this is often misinterpreted as "Engineers must not have the ability to deploy in production" or "Engineers may not have production access". This leads to blocking code reviews with Pull Requests, lengthy Change Approval Boards (CABs), or dedicated operations teams performing deployments based on engineer's instructions. Consequently, it slows down the feedback loops and drives down quality. In the end, the things we put in place to supposedly control quality, do the exact opposite: they bring down quality.
+
+Pair and Team Programming already provide continuous peer oversight against unapproved changes.
+
+Furthermore, when compliance controls dictate that all production deployments (including emergency interventions) must pass through a single path — the Deployment Pipeline — and that no single human can bypass the pipeline's quality and security gates, the pipeline itself acts as the independent segregation mechanism. For this to work, it is essential that the Deployment Pipeline is repeatable, reliable, consistent, and deterministic.
+
+The pair or team write and review the code, and the deterministic pipeline independently tests, verifies and deploys the code.
+
+Engineers do, however, need access to production, especially telemetry, to investigate outages. This access must be limited to read-only permissions to satisfy the non-repudiation requirements while keeping teams empowered to support their systems.
+
 ## There Is More
 
 The above is already a good start. It is a minimum to get a substantial headway. However, there is more ... we have to consider *Continuous Safeguards*.
