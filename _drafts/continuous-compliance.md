@@ -55,7 +55,18 @@ The other part of Governance, and consequently of product management, is Risk Ma
 
 A predominant Risk Management mode in IT is a "*Wouldn't It Be Horrible*"-approach (Hubbard, 1985, Humble et al., 2014). We imagine a particularly catastrophic event occurring. Regardless of its likelihood, it must be avoided at all costs. There is no sense of prioritisation. The question to be answered in managing risks is: "*Which risks are we willing to accept and which ones not?*". **As we are taking steps to mitigate risk in one area, we inevitably introduce more risk, or new risks, in another area** (Humble et al., 2014).
 
-There should not be a free pass for risk mitigation work to jump to the front of the line. Instead, we should quantify risks using [Impact Mapping](https://www.impactmapping.org/) and prioritise using the [Cost of Delay](https://blackswanfarming.com/cost-of-delay/).
+There should not be a free pass for risk mitigation work to jump to the front of the line. Instead, we should quantify risks using the classic ISO 27001 Risk Assessment Template (Clauses 6.1.2 and 8.2) to quantify a risk value as the product of the risk impact and its likelihood. Each risk receives a risk value based on its impact and likelihood to occur. Impact is quantified with an amount of Euros (e.g. Low - < 50.000 EUR, Medium - < 100.000 EUR, High - < 500.000 EUR, Severe - < 1.000.000 EUR, Critical - > 1.000.000 EUR ). The team then decides its risk tolerance as the boundary risk value above which a risk must be treated and below which a risk can be accepted. Treatment can be one of risk reduction (reduce the risk level), risk transfer (the risk is transferred to another party) or risk avoidance (the activity resulting in the high risk should be avoided).
+
+|              | **Likelihood** | Rare (1) | Unlikely (2) | Possible (3) | Likely (4) | Certain (5) |
+| ------------ | -------------- | - | - | - | - | - |
+| **Impact**   |                |  |   |  |  |  |
+| Low      (1) |                | 1 | 2  | 3 | 4 | 5 |
+| Medium   (2) |                | 2 | 4  | 6 | 8 | 10 |
+| High     (3) |                | 3 | 6  | 9 | 12 | 15 |
+| Severe   (4) |                | 4 | 8  | 12 | 16 | 20 |
+| Critical (5) |                | 5 | 10 | 15 | 20 | 25 |
+
+Or quantify risks using [Impact Mapping](https://www.impactmapping.org/) and prioritise using the [Cost of Delay](https://blackswanfarming.com/cost-of-delay/).
 
 Every single day, at the start of the day, the team reviews the risks. Did we identify new risks? What is the impact of the risk when it happens? What is the likelihood of the risk to happen? What is the cost to mitigate the risk? Should we mitigate the risk or can we accept the risk? All this is documented as Decision Records (much like [Architecture Decision Records](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions.html), however, this time for non-architecture matters).
 
