@@ -17,7 +17,7 @@ But, what is *Compliance*, anyway? The industry, and at some point including me,
 
 **Governance** are all the activities an organisation performs to be compliant with external regulations (ECB, EMA, ...), certifications (PCI-DSS, ISO27001, ISAE 3000, ...), frameworks (ITIL, COBIT, ...), or legally binding contracts and internal regulations (the standards, policies, procedures which are translations of external regulations, certifications or frameworks in internal ways of working).
 
-> IT governance defines the structure, processes, and mechanisms by which an organisation's IT activities are directed, monitored, and controlled to achieve business objectives. IT governance framework is essential for organisations seeking to effectively manage their IT activities, manage risks, ensure compliance, and deliver value to the organisation.
+IT governance defines the structure, processes, and mechanisms by which an organisation's IT activities are directed, monitored, and controlled to achieve business objectives. IT governance framework is essential for organisations seeking to effectively manage their IT activities, manage risks, ensure compliance, and deliver value to the organisation. ([COBIT 5](https://www.isaca.org/resources/cobit/cobit-5), [ISO 38500](https://www.iso.org/standard/81684.html), Humble et al., 2014)
 
 But, Governance involves more than the steps to be compliant. It also includes keeping the organisation on track while balancing the interests of all the organisation's stakeholders.
 
@@ -128,6 +128,11 @@ In the end, Compliance is only putting in place the product management and engin
 A common mistake by regulated organisations is to apply a one-size-fits-all approach to regulation and enforce compliance controls to every part of the organisation. A better approach is to confine the regulatory requirements to the regulated activities (see [PCI-DSS and continuous deployment at Etsy](https://continuousdelivery.com/2012/07/pci-dss-and-continuous-deployment-at-etsy/) and "*Case Study: PCI Compliance and a Cautionary Tale of Separating Duties at Etsy*" from The DevOps Handbook p339).
 
 The industry needs this exact mindset shift. **It is a catalyst for speed rather than a brake pedal!**
+
+## Related Articles
+
+- [On the Evilness of Feature Branching - But Compliance]({% post_url 2022-02-22-on-the-evilness-of-feature-branching-but-compliance %})
+- [What is Continuous Delivery?]({% post_url 2026-01-09-what-is-continuous-delivery %})
 
 ## References
 
