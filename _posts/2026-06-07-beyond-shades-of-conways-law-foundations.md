@@ -197,7 +197,7 @@ Both Alexander with its "process of form-making" and Thompson with "boundary-pla
 
 ## The Mirroring Hypothesis
 
-When bringing these two parallel worlds together - Product Design and Organisation Design - Melvin Conway's 1968 observation becomes an inevitable law — or, in all correctness, a thesis that only became a law 40 years later, once proof was provided by new academic research (more on this in Part 2 - Validation: The Research & Reality Check).
+When bringing these two parallel worlds together - Product Design and Organisation Design - Melvin Conway's 1968 observation becomes an inevitable law — or, in all correctness, a thesis that only became a law 40 years later, once proof was provided by new academic research (more on this in [*Validation: The Research & Reality Check*]({% post_url 2026-06-20-beyond-shades-of-conways-law-validation %}).
 
 Product Design splits technical form to manage cognitive load. Organisation Design splits teams to handle environment and information constraints.
 
@@ -232,7 +232,7 @@ In recent years, the concepts of the *Mirroring Principle* and *Conway’s Law* 
 
 There is a little story behind Melvin Conway's paper that he explains on his website. Conway sent the paper to the Harvard Business Review. They rejected it because no evidence was provided to support the thesis. He then submitted it to Datamation, a major IT magazine at that time, which published it in April 1968.
 
-Nevertheless, in the meantime, academic research has been done that supports the thesis. Part 2 - [Validation: The Research & Reality Check]({% post_url 2026-06-20-beyond-shades-of-conways-law-validation %}) explores this in more detail.
+Nevertheless, in the meantime, the thesis has been confirmed by academic research. [*Validation: The Research & Reality Check*]({% post_url 2026-06-20-beyond-shades-of-conways-law-validation %}) explores this in more detail.
 
 ## Acknowledgments
 

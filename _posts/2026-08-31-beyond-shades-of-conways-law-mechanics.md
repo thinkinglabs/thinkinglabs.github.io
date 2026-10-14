@@ -241,7 +241,7 @@ The organisation is a force that acts on the (initial) design of a system, i.e. 
 
 This technical coupling closes the option space we have for designing the structure of our organisation.
 
-This greenfield vs. mature system duality leads to the **Reverse Conway’s Law**, which we will cover in Part 4: *Strategy: Reversing the Law*.
+This greenfield vs. mature system duality leads to the **Reverse Conway’s Law**, which we will cover in [*Strategy: Reversing the Law*]({% post_url 2026-09-20-beyond-shades-of-conways-law-strategy %}).
 
 ## Acknowledgements
 
