@@ -6,7 +6,7 @@ category: articles
 tags: [ Conway's Law, Open Systems Theory ]
 ---
 
-Because of the past historical decisions and history of changes, software development efforts that lead to large, long-running, rigid legacy systems create a system structure that is not necessarily congruent, in harmony, with the organisation at present, now, today.
+Because of the past historical decisions and history of changes, software development efforts that lead to large, long-running, rigid legacy systems create a system structure that is not necessarily congruent or in harmony with the organisation at present, now, today.
 
 ---
 
