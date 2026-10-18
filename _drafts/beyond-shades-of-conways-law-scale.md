@@ -64,7 +64,7 @@ Henceforth, incremental software development impacts the organisation because we
 >
 > -- Ruth Malan, [Conway’s Law](https://web.archive.org/web/20181022001505/http://traceinthesand.com:80/blog/2008/02/13/conways-law/), Feb 13, 2008
 
-Organisation and system need to co-evolve!
+Following the Open Systems Theory (OST) Design Principle 2 (DP2) socio-technical structure, organisation and system need to co-evolve — shifting the responsibility for coordination and control to the teams doing the work, allowing the teams to progress the organisation design as needed as the system design evolves over time (see [*Strategy: Reversing the Law*]({% post_url 2026-09-20-beyond-shades-of-conways-law-strategy %}#conclusion)).
 
 [Adrian Cockcroft](https://mastodon.social/@adrianco), the former Chief Architect of Netflix, confirmed this on Mastodon in a [conversation with Ruth Malan](https://mastodon.social/@tdpauw/111003294054784503): "*I think I have seen this at Netflix and AWS. They annually re-aligned teams with the new domain boundaries.*"
 

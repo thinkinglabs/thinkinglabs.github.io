@@ -193,4 +193,4 @@ Therefore, reversing Conway's Law is not just a matter of tuning Galbraith's fiv
 - [Accelerate](https://app.thestorygraph.com/books/0baa7f2a-3f3f-4752-9d81-0434117d0648), Nicole Forsgren, PhD et al., 2018
 - [Conway's Law Doesn't Apply to Rigid Designs](https://verraes.net/2022/05/conways-law-vs-rigid-designs/), Mathias Verraes, 2022
 - [Thriving in Complexity]({% post_url 2026-09-20-kandinsky-thriving-in-complexity-trond-hjorteland %}), Trond Hjorteland, 2022
-- [Seeing the Wrold Through a Different Lens]({% post_url 2025-04-05-flowcon-seeing-the-world-through-a-different-lens-trond-hjorteland %}), Trond Hjorteland, 2025
+- [Seeing the World Through a Different Lens]({% post_url 2025-04-05-flowcon-seeing-the-world-through-a-different-lens-trond-hjorteland %}), Trond Hjorteland, 2025
