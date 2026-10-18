@@ -7,7 +7,7 @@ tags: [ Compliance, Continuous Delivery ]
 image: /images/continuous-compliance/continuous-compliance.jpg
 ---
 
-[But, compliance!]({% post_url 2022-02-22-on-the-evilness-of-feature-branching-but-compliance %}) Somehow, it has become a welcome justification for superfluous gates in our IT delivery process, and the go-to excuse for embarrassingly long delays. Compliance is one of those severely under-documented topics in the IT industry that triggers massive overcompensation. Contrary to popular belief, compliance is not a good reason to go slow. The research is clear: going slow for safety is a mistake (Forsgren et al., 2018). It causes friction, decelerates feedback, drives down quality, and brings a team to a grinding halt. On the contrary, Compliance is an excellent foundation for better quality. It enables faster delivery, accelerates feedback, and ultimately produces better, more compliant outcomes.
+[But, compliance!]({% post_url 2022-02-22-on-the-evilness-of-feature-branching-but-compliance %}) A welcome justification for superfluous gates in our IT delivery process, and the go-to excuse for embarrassingly long delays. Compliance is one of those severely under-documented topics in the IT industry that triggers massive overcompensation. Contrary to popular belief, compliance is not a good reason to go slow. The research is clear: going slow for safety is a mistake (Forsgren et al., 2018). It causes friction, decelerates feedback, drives down quality, and brings a team to a grinding halt. On the contrary, Compliance is an excellent foundation for better quality. It enables faster delivery, accelerates feedback, and ultimately produces better, more compliant outcomes.
 
 ---
 
