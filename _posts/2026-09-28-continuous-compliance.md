@@ -13,6 +13,8 @@ image: /images/continuous-compliance/continuous-compliance.jpg
 
 *Update Oct 18th, 2026: add references to the European CRA and NIS2.*
 
+*Update Oct 18th, 2026: add colours to the Risk Assessment table.*
+
 ---
 
 ## Governance, Risk, and Compliance (GRC)
@@ -66,11 +68,11 @@ Risk mitigation work does not get a free pass to jump to the front of the line. 
 |              | **Likelihood** | Rare (1) | Unlikely (2) | Possible (3) | Likely (4) | Certain (5) |
 | ------------ | -------------- | - | - | - | - | - |
 | **Impact**   |                |  |   |  |  |  |
-| Low      (1) |                | 1 | 2  | 3 | 4 | 5 |
-| Medium   (2) |                | 2 | 4  | 6 | 8 | 10 |
-| High     (3) |                | 3 | 6  | 9 | 12 | 15 |
-| Severe   (4) |                | 4 | 8  | 12 | 16 | 20 |
-| Critical (5) |                | 5 | 10 | 15 | 20 | 25 |
+| Low      (1) |                | <span style="color:limegreen;font-weight:bold">1</span> | <span style="color:limegreen;font-weight:bold">2</span>  | <span style="color:green;font-weight:bold">3</span> | <span style="color:gold;font-weight:bold">4</span> | <span style="color:gold;font-weight:bold">5</span> |
+| Medium   (2) |                | <span style="color:limegreen;font-weight:bold">2</span> | <span style="color:green;font-weight:bold">4</span>  | <span style="color:gold;font-weight:bold">6</span> | <span style="color:gold;font-weight:bold">8</span> | <span style="color:goldenrod;font-weight:bold">10</span> |
+| High     (3) |                | <span style="color:green;font-weight:bold">3</span> | <span style="color:gold;font-weight:bold">6</span>  | <span style="color:gold;font-weight:bold">9</span> | <span style="color:goldenrod;font-weight:bold">12</span> | <span style="color:red;font-weight:bold">15</span> |
+| Severe   (4) |                | <span style="color:gold;font-weight:bold">4</span> | <span style="color:gold;font-weight:bold">8</span>  | <span style="color:goldenrod;font-weight:bold">12</span> | <span style="color:red;font-weight:bold">16</span> | <span style="color:darkred;font-weight:bold">20</span> |
+| Critical (5) |                | <span style="color:gold;font-weight:bold">5</span> | <span style="color:goldenrod;font-weight:bold">10</span> | <span style="color:red;font-weight:bold">15</span> | <span style="color:darkred;font-weight:bold">20</span> | <span style="color:darkred;font-weight:bold">25</span> |
 
 To make this assessment actionable in a product team, we can use [Impact Mapping](https://www.impactmapping.org/) to discover how an operational or security threat impacts business goals, and [Cost of Delay](https://blackswanfarming.com/cost-of-delay/) to calculate the actual monetary impact (e.g., potential fines, revenue loss, or downtime costs per week if the risk materialises). Quantifying the impact in monetary terms (such as Low: < 50.000 EUR to Critical: > 1.000.000 EUR) allows us to prioritise risk-mitigation controls in the backlog alongside functional features using economic value rather than gut feeling.
 
