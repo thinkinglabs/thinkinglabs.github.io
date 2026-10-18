@@ -11,11 +11,15 @@ image: /images/continuous-compliance/continuous-compliance.jpg
 
 ---
 
+*Update Oct 18th, 2026: add references to the European CRA and NIS2.*
+
+---
+
 ## Governance, Risk, and Compliance (GRC)
 
 But what is *Compliance*, anyway? The industry tends to make an amalgam between *Governance*, *Compliance* and *Risk Management*. Frequently used interchangeably, although they mean different things.
 
-**Governance** is all the activities an organisation performs to be compliant with external regulations (ECB, EMA, ...), certifications (PCI-DSS, ISO 27001, ISAE 3000, ...), frameworks (ITIL, COBIT, ...), or legally binding contracts and internal regulations (the standards, policies, procedures which are translations of external regulations, certifications or frameworks in internal ways of working). (Humble et al., 2014)
+**Governance** is all the activities an organisation performs to be compliant with external regulations (European Cyber Resilience Act (CRA), European NIS2 Directive, European Digital Operational Resilience Act (DORA), ...), certifications (PCI-DSS, ISO 27001, ISAE 3000, ...), frameworks (ITIL, COBIT, ...), or legally binding contracts and internal regulations (the standards, policies, procedures which are translations of external regulations, certifications or frameworks in internal ways of working). (Humble et al., 2014)
 
 IT governance defines the structure, processes, and mechanisms by which an organisation's IT activities are directed, monitored, and controlled to achieve business objectives. The IT governance framework is essential for organisations seeking to effectively manage their IT activities, manage risks, ensure compliance, and deliver value to the organisation. ([COBIT 5](https://www.isaca.org/resources/cobit/cobit-5), [ISO 38500](https://www.iso.org/standard/81684.html), Humble et al., 2014)
 
@@ -52,6 +56,8 @@ Therefore, teams have to read and understand the regulation. That is of utmost i
 Once we understand the regulation, we can extract the compliance requirements, which in turn define controls to be implemented. The controls go onto the product backlog and are prioritised alongside functionality. It receives the necessary priority alongside the required functionality. Be aware that Compliance, much like functionality, has market value. Not being compliant can shut us out of the market.
 
 The other part of Governance, and consequently of product management, is Risk Management. We continuously identify risks: business operations risks as well as IT operations risks and security risks. That is another reason to have the business, i.e. the people doing the business operations, as part of the product team to achieve Continuous Compliance. They are in the best position to identify business risks. Of course, when Risk Management becomes a team activity, naturally Engineers also start identifying business risks as they internalise the business. The same is true for Product Managers and Business Operations, who now start to identify IT operations and security risks.
+
+**Note:** With NIS2, risk management becomes a legal obligation for operators of essential and important Entities (e.g., healthcare, energy, transport, banking, cloud providers) with a personal legal liability for C-level.
 
 A predominant Risk Management mode in IT is a "*Wouldn't It Be Horrible*"-approach (Hubbard, 1985; Humble et al., 2014). We imagine a particularly catastrophic event occurring. Regardless of its likelihood, we have to avoid it at all costs. There is no sense of prioritisation. The question to answer in managing risks is: "*Which risks are we willing to accept and which ones not?*". **As we are taking steps to mitigate risk in one area, we inevitably introduce more risks, or new risks, in another area** (Humble et al., 2014).
 
