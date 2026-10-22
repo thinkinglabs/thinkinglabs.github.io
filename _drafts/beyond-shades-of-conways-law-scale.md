@@ -6,7 +6,7 @@ category: articles
 tags: [ Conway's Law, Open Systems Theory ]
 ---
 
-The first prototypes of a system are merely hints towards what a final design could look like. Then again, they are only clues. To crystallise the design, we have to iterate with more new experiments and collect feedback. However, this repercuss in possible unexpected ways on the organisation for the unexpecting leader.
+The first prototypes of a system are merely hints towards what a final design could look like. Then again, they are only clues. To crystallise the design, we have to iterate with more new experiments and collect feedback. However, this has unexpected repercussions for the unsuspecting leader.
 
 ---
 
@@ -121,7 +121,7 @@ At one conference, I was asked to provide an example of the code reflecting past
 
 - One FinTech had a Document Vault feature, basically the ability to securely store legal documents. Yet, customers and the Product Manager referred the feature as Document Manager or File Manager, to eventually settle with File Manager. Ultimately, this got renamed over time in the code. However, during years, there was this single directory in the infrastructure code still called `document_vault`, revealing the history of that feature.
 
-- When another startup decided to opt for AWS as cloud provider, they created all environments in a single AWS account against AWS's advise. From my experience screening tech organisations during technology due diligence, this seems to be a classic mistake, even within big corporations. Obviously, to segregate environments, all infrastructure resources were named with environment prefixes (or suffixes ... or even infixes ... consistency is an option). Eventually, they migrated to a multi-account setup, however, without taking the time to change the naming. Now they have in every account, infrastructure resources unnecessarily named after the environment. How a system's design history is embedded in the code.
+- When another startup decided to opt for AWS as cloud provider, they created all environments in a single AWS account against AWS's advise. From my experience screening tech organisations during technology due diligence, this seems to be a classic mistake, even within big corporations. Obviously, to segregate environments, all infrastructure resources were named with environment prefixes (or suffixes ... or even infixes ... consistency is an option). Eventually, they migrated to a multi-account setup, however, without taking the time to change the naming. Now they have in every account, infrastructure resources unnecessarily named after the environment. This becomes a classic example of how a system's design history becomes embedded in the code.
 
 ## The Scaling Paradox
 
@@ -133,11 +133,11 @@ Ultimately, only five percent of the organisation stay alive after 30 years. Alm
 
 Most organisations tend to be conservative, shortsighted. Because of the bureaucracy, the knowledge gets fossilised inside the organisation's communication channels preventing any architectural innovation (see [Validation: The Research & Reality Check]({% post_url 2026-06-20-beyond-shades-of-conways-law-validation %})). Organisation become less supportive for risky ideas. They tend to become unidirectional and lack diversity. An indicator of reduced resilience and a recipe for disaster (Henderson and Clark, 1990, West, 2017).
 
-In contrast, cities scale super-linearly and open-ended, i.e. they scale exponentially. Cities become more diverse as they grow. They become multi-dimensional, strongly correlated to the super-linear and open-ended growth, which is a crucial component for resilience and the seeming immortality. Cities operate in a mush more distributed fashion and embody innovation (West, 2017).
+In contrast, cities scale super-linearly and open-ended, i.e. they scale exponentially. Cities become more diverse as they grow. They become multi-dimensional, strongly correlated to the super-linear and open-ended growth, which is a crucial component for resilience and the seeming immortality. Cities operate in a much more distributed fashion and embody innovation (West, 2017).
 
 ## Conclusion
 
-For organisations to scale and produce the right product customers expect, it is crucial to adopt a Design Principle 2 structure (DP2) and vital to start small (**Allan Kelly's Advice**)!
+Ultimately, organisational flexibility is rare at scale. To successfully scale, and keep delivering the right products customers expect, it is crucial to adopt a Design Principle 2 structure (DP2) and vital to start small (**Allan Kelly's Advice**)!
 
 > Grow the team with the system. Small teams, small systems, piecemeal growth.
 >
@@ -148,6 +148,8 @@ For organisations to scale and produce the right product customers expect, it is
 > -- Allan Kelly, [Continuous Delivery and Conway’s Law]({% post_url 2021-05-13-continuous-delivery-and-conways-law-allan-kelly %}), 2014
 
 When evolving a system, to contain entropy, many refactorings will happen leading to considerable redesigns. To ensure our experiments lead to building the right thing that the market is demanding, it is imperative the organisation shows enough flexibility to restructure and adapt to the new designs. Small teams, accountable and responsible for their systems and markets, reduce bureaucracy and enable innovation.
+
+Organisations need to scale their business, not teams! Keeping teams small, is an inescapable reality.
 
 ## The Series: Navigating the Shades
 
