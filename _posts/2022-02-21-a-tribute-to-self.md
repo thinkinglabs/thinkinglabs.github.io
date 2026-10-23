@@ -22,13 +22,15 @@ A breath of kindness to remind me of the lovely people who appreciate me.
 
 *Update Nov 18, 2023: Added [Agile Testing Days 2023](https://agiletestingdays.com/)*
 
-*Update Jan 7, 2024: Added I'm a nobody*
+*Update Jan 7, 2024: Added I'm a nobody.*
 
-*Update Jan 21, 2024: Added the rant about intro-video's*
+*Update Jan 21, 2024: Added the rant about intro-video's.*
 
 *Update Feb 6, 2024: Added [CfgMgmtCamp](https://cfgmgmtcamp.eu/)*
 
 *Update Mar 5, 2025: Picked it up again after a shit-show year triggered by [Sara Dufour's lovely comment on LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7302640206212485120?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7302640206212485120%2C7302645830090444803%29&replyUrn=urn%3Ali%3Acomment%3A%28activity%3A7302640206212485120%2C7302680942039486464%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287302645830090444803%2Curn%3Ali%3Aactivity%3A7302640206212485120%29&dashReplyUrn=urn%3Ali%3Afsd_comment%3A%287302680942039486464%2Curn%3Ali%3Aactivity%3A7302640206212485120%29)*
+
+*Update Oct 23, 2026: Added [Lean Agile Brighton](https://leanagilebrighton.co.uk/).*
 
 ---
 
@@ -655,3 +657,17 @@ On the kudos box (kind of this article):
 > + 1 (or better +4682) on this
 >
 > -- [Yves Hanoulle](https://www.linkedin.com/in/yveshanoulle/)
+
+---
+
+Lean Agile Brighton
+
+> Thank you so much for joining us Thierry! I'm delighted to hear you enjoyed our conference. 
+>
+> Your talk was fantastic, giving so much food for thought on a topic that more teams and organisations need to invest energy into. And you are such an engaging speaker! Insightful, warm and with the right level of humour.
+>
+> -- [Ben Collins](https://www.linkedin.com/in/bencollins9/), [Oct 22, 2026](https://lnkd.in/p/e2k39uTA)
+
+> You very much were Thierry. I found you clear, engaging, and passionate about your topic. It was lovely to see how you quickly warmed up to the gig as the audience engaged with your gentle insightful humour and by just 10% of the way in it was clear you were thriving in the atmosphere.   How lovely. Trust yourself. This stage is your stage to shape and own. Great job 👏🏼
+>
+> -- [Lisa Gotsinas](https://www.linkedin.com/in/lisa-gotsinas-2a1a8a2/), [Oct 23, 2026](https://lnkd.in/p/eJkUr26H)
