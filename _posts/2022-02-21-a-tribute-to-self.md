@@ -671,3 +671,11 @@ Lean Agile Brighton
 > You very much were Thierry. I found you clear, engaging, and passionate about your topic. It was lovely to see how you quickly warmed up to the gig as the audience engaged with your gentle insightful humour and by just 10% of the way in it was clear you were thriving in the atmosphere.   How lovely. Trust yourself. This stage is your stage to shape and own. Great job 👏🏼
 >
 > -- [Lisa Gotsinas](https://www.linkedin.com/in/lisa-gotsinas-2a1a8a2/), [Oct 23, 2026](https://lnkd.in/p/eJkUr26H)
+
+> I loved your talk Thierry de Pauw and your gentleness, and your wonderful infectious laugh at the speaker’s dinner!
+>
+> [Jenny Martin](https://www.linkedin.com/in/jennyjmar/), Oct 23, 2026
+
+> Great talk, great presenting style and clever jokes (perfect for the stand up comedy venue!)  😊
+>
+> [Eddie Kenny](https://www.linkedin.com/in/eddiekenny/), Oct 23, 2026
