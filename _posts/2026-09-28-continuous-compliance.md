@@ -29,7 +29,7 @@ But Governance involves more than the steps to be compliant. It also involves ke
 
 **Compliance** is to obey relevant laws, regulations, legally binding contracts or even cultural norms. When imposed by law, regulation or contract, Compliance is generally not optional. In these cases, not conforming increases the risk of fines, reputational damage or even a business shutdown. (Humble et al., 2014)
 
-**Risk Management** is one of the Governance activities to support Compliance. Regulations and certain certifications (e.g. ISO 270001) require an organisation to manage its risks. But good leadership also drives the need for Risk Management to build a successful organisation. (Humble et al., 2014)
+**Risk Management** is one of the Governance activities to support Compliance. Regulations (European NIS2 Directive) and certain certifications (ISO 270001) require an organisation to manage its risks. But good leadership also drives the need for Risk Management to build a successful organisation. (Humble et al., 2014)
 
 A *Risk* is a horrible thing that could happen that can negatively impact an organisation's goals, reputation, or operations, resulting from ineffective leadership, ethical lapses, inadequate controls, compliance failures, or strategic errors that threaten stakeholder interests. But risks are pervasive. We can never eliminate all risks. Therefore, we need Risk Management to mitigate risks.
 
