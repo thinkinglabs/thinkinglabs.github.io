@@ -15,6 +15,8 @@ image: /images/continuous-compliance/continuous-compliance.jpg
 
 *Update Oct 18th, 2026: add colours to the Risk Assessment table.*
 
+*Update Oct 30th, 2026: add the concept of policies.*
+
 ---
 
 ## Governance, Risk, and Compliance (GRC)
@@ -27,11 +29,23 @@ IT governance defines the structure, processes, and mechanisms by which an organ
 
 But Governance involves more than the steps to be compliant. It also involves keeping the organisation on track while balancing the interests of all the organisation's stakeholders.
 
+**Policies** are the internal declarations and interpretations of the Governance and of the regulations and certifications. They establish the rules, principles, and standards the organisation chooses to follow and adhere to (e.g. *No production data whatsoever will be used for testing activities*). Policies bridge external obligations with internal operations. They set the expectations from which the compliance requirements and technical controls are extracted.
+
 **Compliance** is to obey relevant laws, regulations, legally binding contracts or even cultural norms. When imposed by law, regulation or contract, Compliance is generally not optional. In these cases, not conforming increases the risk of fines, reputational damage or even a business shutdown. (Humble et al., 2014)
 
 **Risk Management** is one of the Governance activities to support Compliance. Regulations (European NIS2 Directive) and certain certifications (ISO 270001) require an organisation to manage its risks. But good leadership also drives the need for Risk Management to build a successful organisation. (Humble et al., 2014)
 
-A *Risk* is a horrible thing that could happen that can negatively impact an organisation's goals, reputation, or operations, resulting from ineffective leadership, ethical lapses, inadequate controls, compliance failures, or strategic errors that threaten stakeholder interests. But risks are pervasive. We can never eliminate all risks. Therefore, we need Risk Management to mitigate risks.
+A *Risk* is a horrible thing that could happen that can negatively impact an organisation's goals, reputation, or operations, resulting from ineffective leadership, ethical lapses, inadequate controls, compliance failures, or strategic errors that threaten stakeholder interests. In short, it is a threat. However, risks are pervasive. We can never eliminate all risks. Therefore, we need Risk Management to mitigate risks.
+
+Think of a chain moving from the outside world (*governance* and *obligations*) down to internal intent and interpretation (*policies*), then to mechanisms (*controls*), and finally to execution (*implementation*).
+
+```plain
+External Obligations (Regulations, Certifications, Contracts) ───────┐
+                                                                     │
+Internal Governance  (Leadership, Principles, Culture) ──────────────┼──> Policies ──> Requirements ──> Controls ──> Implementation
+                                                                     │
+Risk Management      (Threats, Impact, Likelihood, Cost of Delay) ───┘
+```
 
 > A good car has the best brakes.
 >
