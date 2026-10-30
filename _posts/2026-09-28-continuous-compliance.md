@@ -7,7 +7,7 @@ tags: [ Compliance, Continuous Delivery ]
 image: /images/continuous-compliance/continuous-compliance.jpg
 ---
 
-[But, compliance!]({% post_url 2022-02-22-on-the-evilness-of-feature-branching-but-compliance %}) A welcome justification for superfluous gates in our IT delivery process, and the go-to excuse for embarrassingly long delays. Compliance is one of those severely under-documented topics in the IT industry that triggers massive overcompensation. Contrary to popular belief, compliance is not a good reason to go slow. The research is clear: going slow for safety is a mistake (Forsgren et al., 2018). It causes friction, decelerates feedback, drives down quality, and brings a team to a grinding halt. On the contrary, Compliance is an excellent foundation for better quality. It enables faster delivery, accelerates feedback, and ultimately produces better, more compliant outcomes.
+[But, compliance!]({% post_url 2022-02-22-on-the-evilness-of-feature-branching-but-compliance %}) A welcome justification for superfluous gates in our IT delivery process, and the go-to excuse for embarrassingly long delays. Compliance is one of those severely under-documented topics in the IT industry that triggers massive overcompensation. Contrary to popular belief, compliance is not a good reason to go slow. The research is clear: going slow for safety is a mistake (Forsgren et al., 2018). While early work established that a DevOps culture and Compliance are not mutually exclusive (Nygard, 2019), putting this into practice remains a major hurdle. It still causes friction, decelerates feedback, drives down quality, and brings a team to a grinding halt. On the contrary, Compliance is an excellent foundation for better quality. It enables faster delivery, accelerates feedback, and ultimately produces better, more compliant outcomes. This article shows how to execute this day-to-day.
 
 ---
 
@@ -16,6 +16,8 @@ image: /images/continuous-compliance/continuous-compliance.jpg
 *Update Oct 18th, 2026: add colours to the Risk Assessment table.*
 
 *Update Oct 30th, 2026: add the concept of policies.*
+
+*Update Oct 30th, 2026: reference Carl Nygard's Compliance in a DevOps Culture.*
 
 ---
 
@@ -201,6 +203,7 @@ The industry needs this exact mindset shift. **It is a catalyst for speed rather
 - [Lean Enterprise: How High Performance Organizations Innovate at Scale](https://app.thestorygraph.com/books/be53bcd6-adf8-4c9c-9946-541a1038435d), Humble, Molesky, O'Reilly, 2014
 - [The DevOps Handbook](https://www.goodreads.com/book/show/26083308-the-devops-handbook), Gene Kim, Jez Humble, Patrick Debois, John Willis, 2016
 - [Accelerate](https://app.thestorygraph.com/books/0baa7f2a-3f3f-4752-9d81-0434117d0648), Nicole Forsgren, PhD et al., 2018
+- [Compliance in a DevOps Culture](https://martinfowler.com/articles/devops-compliance.html), Carl Nygard, 2019
 - [Infrastructure as Code, 3rd edition](https://app.thestorygraph.com/books/dab98a8c-7167-4ef5-9008-e0757713ac7f), Kief Morris, 2025
 - [The Illusion of Compliance](https://a4al6a.substack.com/p/the-illusion-of-compliance), Andrea Laforgia, 2025
 - [Continuous Compliance session at SoCraTes]({% post_url 2026-09-27-socrates-2026-continuous-compliance %}), Thierry de Pauw, 2026

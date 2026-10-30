@@ -93,6 +93,8 @@ Because an initial design is rarely the best one, and because of incremental sof
 
 ## History of Decisions
 
+TODO move to dynamics: this is part of the time component
+
 Hence, system architecture is a great source for archaeological research on past enterprise decisions.
 
 > You can read the history of an enterprise's political struggles in its system architecture.”
@@ -165,6 +167,7 @@ Organisations need to scale their business, not teams! Keeping teams small, is a
 
 ## Bibliography
 
+- [Experiences in Groups and Other Papers](https://app.thestorygraph.com/books/00a599d7-49d1-4b35-9d19-a67652910ed2), Wilfred R. Bion, 1961
 - [How Do Committees Invent?](https://www.melconway.com/Home/Committees_Paper.html), Melvin Conway, 1968
 - [Designing Complex Organisations](https://app.thestorygraph.com/books/c746ca36-a5d7-4c2a-995c-6330c4d363bd), Jay R. Galbraith, 1973
 - [Organisation Design](https://app.thestorygraph.com/books/6b226d10-9cb0-41a2-89fa-bab1f81ee5d1), Jay R. Galbraith, 1977
@@ -176,4 +179,4 @@ Organisations need to scale their business, not teams! Keeping teams small, is a
 - [Continuous Delivery and Conway’s Law]({% post_url 2021-05-13-continuous-delivery-and-conways-law-allan-kelly %}), Allan Kelly, 2014
 - [Toward Simplifying Application Development in a Dozen Lessons](http://melconway.com/Home/pdf/simplify.pdf), Mel Conway, 2016
 - [Building Evolutionary Architectures](https://app.thestorygraph.com/books/0f3cecf8-ee0b-407b-b711-a105d4ae3b3d), Rebecca Parsons, Neal Ford, Patrick Kua, 2017
-- [Scale](), Geoffrey West, 2017
+- [Scale: The Universal Laws of Life, Growth, and Death in Organisms, Cities, and Companies](https://app.thestorygraph.com/books/568aae70-7a2b-4df1-b504-f3bad7696f25), Geoffrey West, 2017
