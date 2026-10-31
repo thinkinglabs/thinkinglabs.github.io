@@ -6,7 +6,7 @@ category: articles
 tags: [ Conway's Law, Open Systems Theory ]
 ---
 
-Because of the past historical decisions and history of changes, software development efforts that lead to large, long-running, rigid legacy systems create a system structure that is not necessarily congruent or in harmony with the organisation at present, now, today.
+Because of the past historical decisions and past structural changes, software development efforts that lead to large, long-running, rigid legacy systems create a system structure that is not necessarily congruent or in harmony with the organisation at present, now, today.
 
 ---
 
@@ -26,9 +26,9 @@ Software Engineer Half-Life is the residency time of an engineer on a code base,
 
 This means if we have a team of 10 engineers, half of the team will have left the team over the next 3.2 years. If we want to keep the team size constant, we need to replace them. But there is no guarantee that their replacement will have the same level of productivity.
 
-It might be that a very low productive engineer is replaced with a higher productive engineer or that a high productive engineer is replaced with a lower productive engineer. For small teams this can significantly shift the overall productivity.
+A low productive engineer might be replaced with a higher productive engineer or vice versa. For small teams this can significantly shift the overall productivity.
 
-In the end, not all engineers are equally productive. Even, the same engineer will not have the same productivity on all codebases. This is related to codebase size. Adding 100 lines of code to a 1000 lines codebase is a different thing than to a million line system.
+In the end, not all engineers are equally productive. Furthermore, the same engineer will not exhibit the same productivity across different codebases. This is related to codebase size. Adding 100 lines of code to a 1000 lines codebase is a different thing than to a million line system.
 
 Generally speaking, a team productivity goes down as code base size increases.
 
@@ -57,7 +57,7 @@ This brings a time component to Conway's Law. The structure of the software refl
 
 > A large organization similarly, stretches across time and space. Conway’s Law ties the two. How we organize defines how we think collectively, and thus what we make collectively.
 >
-> -- Pieter Hintjes, [Sex in Title, and other Stories](http://hintjens.com/blog:73), 2013
+> -- Pieter Hintjens, [Sex in Title, and other Stories](http://hintjens.com/blog:73), 2013
 
 Large software systems as we see them today are the fossilised footprints of past engineers.
 
@@ -121,6 +121,6 @@ Any time we release our product, we ship our organisation, together with its str
 
 - [How Do Committees Invent?](https://www.melconway.com/Home/Committees_Paper.html), Melvin Conway, 1968
 - [Architecture without an end state](https://www.oreilly.com/content/michael-nygard-on-architecture-without-an-end-state/), Michael Nygard, 2012
-- [Sex in Title, and Other Stories](http://hintjens.com/blog:73), Pieter Hintjes, 2013
+- [Sex in Title, and Other Stories](http://hintjens.com/blog:73), Pieter Hintjens, 2013
 - [Conway’s Law: The DevOps Skeleton](https://www.slideshare.net/danslimmon/conways-law-the-skeleton-of-devops), Dan Slimmon, 2014
-- [Predictive Models of Development Teams and the Systems They Build](https://sixty-north.com/blog/predictive-models-of-development-teams-and-the-systems-they-build)), Rob Smallshire, 2014
+- [Predictive Models of Development Teams and the Systems They Build](https://sixty-north.com/blog/predictive-models-of-development-teams-and-the-systems-they-build), Rob Smallshire, 2014
