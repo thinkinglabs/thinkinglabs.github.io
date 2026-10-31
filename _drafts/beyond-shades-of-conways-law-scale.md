@@ -10,13 +10,13 @@ The first prototypes of a system are merely hints towards what a final design co
 
 ---
 
-As we know, in engineering, the initial design of a system is rarely the best.
+In engineering, the initial design of a system is rarely the best.
 
 > The initial design of a system is never the best. The system may need to change. Therefore it requires flexibility of the organisation to design effectively.
 >
 > -- Melvin Conway, [How Do Committees Invent?](https://www.melconway.com/Home/Committees_Paper.html), 1968
 
-As we work on the system, we often learn the relevant architecture. As we move forward, we get feedback, new information, we learn, and we adapt.
+As we work on the system, we often learn the relevant architecture. As we move forward, we get feedback and new information; we learn, and we adapt.
 
 ## Conway's Corollary
 
@@ -26,13 +26,13 @@ As already hinted by Conway, this has consequences ... for the organisation. Thi
 >
 > – Conway’s Corollary, Jeff Sussna (@jeffsussna), Twitter, May 9, 2021
 
-Without organisational flexibility, we are limited to produce a system design that matches the real, on-the-ground communication structure of the organisation. Because "*if the system architecture and the organisation architecture are at odds, the organisation wins*" (Ruth Malan, 2008).
+Without organisational flexibility, we are limited in producing a system design that matches the real, on-the-ground communication structure of the organisation. Because "*if the system architecture and the organisation architecture are at odds, the organisation wins*" (Ruth Malan, 2008).
 
 Be aware that the real on-the-ground communication structures are not necessarily the ones depicted on the traditional organisation chart. People do not restrict their communications only to the lines on the organisation chart. Teams reach out to whomever they *depend on* to get their work done. This informal organisation chart aligns with the architectural *Process View* and *Physical View* (Kruchten, 1995, more on this [*Mechanics: The Mathematical & Geometrical Shades*]({% post_url 2026-08-31-beyond-shades-of-conways-law-mechanics %})).
 
 ## Incremental Engineering
 
-Incremental software development is an essential condition to growing IT systems based on feedback and learning. It is a necessary requirement to satisfy user demand, and to build the right thing.
+Incremental software development is an essential condition for growing IT systems based on feedback and learning. It is a necessary precondition to satisfy user demand and build the right thing.
 
 > Piecemeal growth, or incremental development, is not just desirable but a fact of life in software. Even so, we need to build more learning into our process. More learning when it is cheaper to find and fix problems with the vision (doing course corrections toward "right system") and structure (built right).
 >
@@ -56,7 +56,7 @@ However, incremental software development has consequences. As software grows, e
 
 ## System Redesign vs Organisational Flexibility
 
-Many refactorings result in a significant redesign of the system.
+Many refactorings result in significant system redesign.
 
 Henceforth, incremental software development impacts the organisation because we are redesigning the system. It requires growing and redesigning the organisation as the system grows to fit the new system. It requires organisational flexibility.
 
@@ -71,7 +71,7 @@ Following the Open Systems Theory (OST) Design Principle 2 (DP2) socio-technical
 This creates two imperatives:
 
 1. To keep asking ourselves: “*Is there a better design that is not available to us because of our organisation?*”, and
-2. Can we change the organisation if a better design is found.
+2. Can we change the organisation if a better design is found?
 
 ## The Blind Spot
 
@@ -95,35 +95,35 @@ Because an initial design is rarely the best one, and because of incremental sof
 
 ## The Scaling Paradox
 
-Conway's Law says any organisation designing systems is constrained to design a mirror of the organisation's communication structures. [*Conway's Corollary*](#conways-corollary), on the other hand, shows that when systems scale and designs evolve it requires organisational flexibility and the ability to respond to change in order to design the right things for their customers. However, organisations scale sub-linearly. Sub-linear scaling leads to bounded growth and limited lifespan, i.e organisations eventually stop growing and die (West, 2017).
+Conway's Law says any organisation designing systems is constrained to design a mirror of the organisation's communication structures. [*Conway's Corollary*](#conways-corollary), on the other hand, shows that when systems scale and designs evolve, it requires organisational flexibility and the ability to respond to change in order to design the right things for their customers. However, organisations scale sub-linearly. Sub-linear scaling leads to bounded growth and limited lifespan, i.e organisations eventually stop growing and die (West, 2017).
 
-The exponential growth of organisations is a downright myth. The fact they grow sub-linearly indicates a domination by increasing returns of economies of scale over innovation. Organisations typically operate as highly-constrained top-down structures striving to optimise for efficiency by reducing operational costs and increasing profits, but not for effectiveness. To achieve more efficiency, organisations add more rules, more protocols, more bureaucracy, and more hierarchy, at the expense of innovation (West, 2017).
+The exponential growth of organisations is a downright myth. The fact they grow sub-linearly indicates a domination by increasing returns of economies of scale over innovation. Organisations typically operate as highly constrained top-down structures striving to optimise for efficiency by reducing operational costs and increasing profits, but not for effectiveness. To achieve more efficiency, organisations add more rules, more protocols, more bureaucracy, and more hierarchy, at the expense of innovation (West, 2017).
 
 As organisations scale, teams are taken by strong emotions — anxiety, fear, hate, love, hope, anger, guilt, depression. They lose touch with their purpose, outcomes stagnate, while unconsciously adopting defensive modes. Teams look upward for direction, protect territories, or chase silver bullets (Bion, 1961; see also French & Simpson, 2010).
 
-Ultimately organisations choke on the volume of decisions bubbling up the hierarchy, resulting in decision latency (Galbraith, 1973, 1977), delayed feedback, delayed learning. They become risk averse, more rigid, less agile, less able to respond to change (West, 2017). Eventually, they will go back to conservative solutions and innovation falls flat.
+Ultimately, organisations choke on the volume of decisions bubbling up the hierarchy, resulting in decision latency (Galbraith, 1973, 1977), delayed feedback, and delayed learning. They become risk-averse, more rigid, less agile, and less able to respond to change (West, 2017). Eventually, they go back to conservative solutions, and innovation falls flat.
 
-Ultimately, only five percent of the organisations stay alive after 30 years. Almost half of them disappeared in ten years time. Very few organisations have survived hundreds of years. Those who did, are of relatively modest size, operating in highly specialised, niche markets, continue to produce high-quality products for a small, dedicated clientele, and have barely grown (West, 2017).
+Ultimately, only five per cent of the organisations stay alive after 30 years. Almost half of them disappeared in ten years' time. Very few organisations have survived hundreds of years. Those who did are of relatively modest size, operating in highly specialised, niche markets, continue to produce high-quality products for a small, dedicated clientele, and have barely grown (West, 2017).
 
-Most organisations tend to be conservative, shortsighted. Because of the bureaucracy, the knowledge gets fossilised inside the organisation's communication channels preventing any architectural innovation (see [Validation: The Research & Reality Check]({% post_url 2026-06-20-beyond-shades-of-conways-law-validation %})). Organisations become less supportive for risky ideas. They tend to become unidirectional and lack diversity. An indicator of reduced resilience and a recipe for disaster (Henderson and Clark, 1990, West, 2017).
+Most organisations tend to be conservative and shortsighted. Because of the bureaucracy, the knowledge gets fossilised inside the organisation's communication channels, preventing any architectural innovation (see [Validation: The Research & Reality Check]({% post_url 2026-06-20-beyond-shades-of-conways-law-validation %})). Organisations become less supportive of risky ideas. They tend to become unidirectional and lack diversity — an indicator of reduced resilience and a recipe for disaster (Henderson and Clark, 1990; West, 2017).
 
-In contrast, cities scale super-linearly and open-ended, i.e. they scale exponentially. Cities become more diverse as they grow. They become multi-dimensional, strongly correlated to the super-linear and open-ended growth, which is a crucial component for resilience and the seeming immortality. Cities operate in a much more distributed fashion and embody innovation (West, 2017).
+In contrast, cities scale super-linearly and open-ended, i.e. they scale exponentially. Cities become more diverse as they grow. They become multi-dimensional, strongly correlated with the super-linear and open-ended growth, which is a crucial component for resilience and the seeming immortality. Cities operate in a much more distributed fashion and embody innovation (West, 2017).
 
 ## Conclusion
 
-Ultimately, organisational flexibility is rare at scale. To successfully scale, and keep delivering the right products that customers expect, it is crucial to adopt a Design Principle 2 structure (DP2) and vital to start small (**Allan Kelly's Advice**)!
+Ultimately, organisational flexibility is rare at scale. To successfully scale and keep delivering the right products that customers expect, it is crucial to adopt a Design Principle 2 structure (DP2) and vital to start small (**Allan Kelly's Advice**)!
 
 > Grow the team with the system. Small teams, small systems, piecemeal growth.
 >
-> Start as small as you can and grow as you need too.
+> Start as small as you can and grow as you need to.
 >
 > Don’t start thinking big.
 >
 > -- Allan Kelly, [Continuous Delivery and Conway’s Law]({% post_url 2021-05-13-continuous-delivery-and-conways-law-allan-kelly %}), 2014
 
-When evolving a system, to contain entropy, many refactorings will happen leading to considerable redesigns. To ensure our experiments lead to building the right thing that the market is demanding, it is imperative the organisation shows enough flexibility to restructure and adapt to the new designs. Small teams, accountable and responsible for their systems and markets, reduce bureaucracy and enable innovation.
+When evolving a system, to contain entropy, many refactorings will happen, leading to considerable redesigns. To ensure our experiments result in building the right thing that the market is demanding, it is, therefore, imperative that the organisation shows enough flexibility to restructure and adapt to the new designs. Small teams, accountable and responsible for their systems and markets, reduce bureaucracy and enable innovation.
 
-Organisations need to scale their business, not teams! Keeping teams small, is an inescapable reality.
+Organisations need to scale their business, not teams! Keeping teams small is an unavoidable reality.
 
 ## The Series: Navigating the Shades
 
