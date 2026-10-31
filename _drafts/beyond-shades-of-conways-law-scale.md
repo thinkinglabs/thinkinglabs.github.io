@@ -73,6 +73,8 @@ This creates two imperatives:
 1. To keep asking ourselves: “*Is there a better design that is not available to us because of our organization?*”, and
 2. Can we change the organisation if a better design is found.
 
+## The Blind Spot
+
 50 years later, Melvin Conway observed the same:
 
 > The importance of the principle ... is ... that your design organization is keeping you from designing some things that perhaps you should be building.
@@ -89,41 +91,7 @@ Without organisational flexibility, "*[when] architecture of the system and the 
 
 Yet, that is not that simple, especially not for long-lived organisation with long-lived systems, because of the [*Reverse Conway’s Law*]({% post_url 2026-09-20-beyond-shades-of-conways-law-strategy %}#the-reverse-conways-law-the-legacy-reality). The system architecture acts as a force on the organisation and closes the options we have to design the structure of the organisation.
 
-Because an initial design is rarely the best one, and because of incremental software engineering ... architecture is never done. It is never finished. It is continuously evolving ([Building Evolutionary Architectures](https://app.thestorygraph.com/books/0f3cecf8-ee0b-407b-b711-a105d4ae3b3d), Rebecca Parsons et al.).
-
-## History of Decisions
-
-TODO move to dynamics: this is part of the time component
-
-Hence, system architecture is a great source for archaeological research on past enterprise decisions.
-
-> You can read the history of an enterprise's political struggles in its system architecture.”
->
-> -- Michael Nygard (@mtnygard), Twitter, May 8, 2013
->
-> @mtnygard A history of Conway's Law
->
-> -- Steve Smith (@SteveSmith_Tech), Twitter, May 8, 2013
->
-> @mtnygard That's some sort of corollary to Conway's Law.
->
-> -- @jmbroad, Twitter, May 8, 2013
->
-> @jmbroad Definitely! It is the effect of changes in structure over time. (Credit goes to @mfeathers for the original thought there.)
->
-> -- Michael Nygard, (@mntnygard), Twitter, May 8, 2013
->
-> @mtnygard @mfeathers Unsurprising. I esteem you both as masters of software sociology. I recommend Arch w/o End State to everyone I know. :)
->
-> -- @jmbroad, Twitter, May 8, 2013
-
-Changes that we are starting now will coexist with changes that started last year and the year before. If we adopt that perspective, then we stop trying to rip apart systems and start all over again. Instead we should focus a lot more on incremental change. Here starts our history of decisions, and how this history is embedded in our system's design as a result of effects of structural changes over time (more on this in *Dynamics: Conway's Time Component*).
-
-At one conference, I was asked to provide an example of the code reflecting past enterprise decisions. Here are two:
-
-- One FinTech had a Document Vault feature, basically the ability to securely store legal documents. Yet, customers and the Product Manager referred the feature as Document Manager or File Manager, to eventually settle with File Manager. Ultimately, this got renamed over time in the code. However, during years, there was this single directory in the infrastructure code still called `document_vault`, revealing the history of that feature.
-
-- When another startup decided to opt for AWS as cloud provider, they created all environments in a single AWS account against AWS's advise. From my experience screening tech organisations during technology due diligence, this seems to be a classic mistake, even within big corporations. Obviously, to segregate environments, all infrastructure resources were named with environment prefixes (or suffixes ... or even infixes ... consistency is an option). Eventually, they migrated to a multi-account setup, however, without taking the time to change the naming. Now they have in every account, infrastructure resources unnecessarily named after the environment. This becomes a classic example of how a system's design history becomes embedded in the code.
+Because an initial design is rarely the best one, and because of incremental software engineering ... architecture is never done. It [does not have an end](https://www.oreilly.com/content/michael-nygard-on-architecture-without-an-end-state/). It is continuously evolving ([Building Evolutionary Architectures](https://app.thestorygraph.com/books/0f3cecf8-ee0b-407b-b711-a105d4ae3b3d), Rebecca Parsons et al.).
 
 ## The Scaling Paradox
 
@@ -167,7 +135,6 @@ Organisations need to scale their business, not teams! Keeping teams small, is a
 
 ## Bibliography
 
-- [Experiences in Groups and Other Papers](https://app.thestorygraph.com/books/00a599d7-49d1-4b35-9d19-a67652910ed2), Wilfred R. Bion, 1961
 - [How Do Committees Invent?](https://www.melconway.com/Home/Committees_Paper.html), Melvin Conway, 1968
 - [Designing Complex Organisations](https://app.thestorygraph.com/books/c746ca36-a5d7-4c2a-995c-6330c4d363bd), Jay R. Galbraith, 1973
 - [Organisation Design](https://app.thestorygraph.com/books/6b226d10-9cb0-41a2-89fa-bab1f81ee5d1), Jay R. Galbraith, 1977

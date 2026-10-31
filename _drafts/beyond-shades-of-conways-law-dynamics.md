@@ -61,6 +61,38 @@ This brings a time component to Conway's Law. The structure of the software refl
 
 Large software systems as we see them today are the fossilised footprints of past engineers.
 
+Hence, system architecture is a great source for archaeological research on past enterprise decisions.
+
+> You can read the history of an enterprise's political struggles in its system architecture.”
+>
+> -- Michael Nygard (@mtnygard), Twitter, May 8, 2013
+>
+> @mtnygard A history of Conway's Law
+>
+> -- Steve Smith (@SteveSmith_Tech), Twitter, May 8, 2013
+>
+> @mtnygard That's some sort of corollary to Conway's Law.
+>
+> -- @jmbroad, Twitter, May 8, 2013
+>
+> @jmbroad Definitely! It is the effect of changes in structure over time. (Credit goes to @mfeathers for the original thought there.)
+>
+> -- Michael Nygard, (@mntnygard), Twitter, May 8, 2013
+>
+> @mtnygard @mfeathers Unsurprising. I esteem you both as masters of software sociology. I recommend Arch w/o End State to everyone I know. :)
+>
+> -- @jmbroad, Twitter, May 8, 2013
+
+Changes that we are starting now will coexist with changes that started last year and the year before. If we adopt that perspective, then we stop trying to rip apart systems and start all over again. Instead we should focus a lot more on incremental change. Here starts our history of decisions, and how this history is embedded in our system's design as a result of effects of structural changes over time.
+
+At one conference, I was asked to provide an example of the code reflecting past enterprise decisions. Here are two:
+
+- One FinTech had a Document Vault feature, basically the ability to securely store legal documents. Yet, customers and the Product Manager referred the feature as Document Manager or File Manager, to eventually settle with File Manager. Ultimately, this got renamed over time in the code. However, during years, there was this single directory in the infrastructure code still called `document_vault`, revealing the history of that feature.
+
+- When another startup decided to opt for AWS as cloud provider, they created all environments in a single AWS account against AWS's advise. From my experience screening tech organisations during technology due diligence, this seems to be a classic mistake, even within big corporations. Obviously, to segregate environments, all infrastructure resources were named with environment prefixes (or suffixes ... or even infixes ... consistency is an option). Eventually, they migrated to a multi-account setup, however, without taking the time to change the naming. Now they have in every account, infrastructure resources unnecessarily named after the environment. This becomes a classic example of how a system's design history becomes embedded in the code.
+
+## Conclusion
+
 Any time we release our product, we ship our organisation, together with its structure, all its history, all of its past historical decisions and all the flow of people that went through the organisation.
 
 > Your org structure isn’t solving your problem.
@@ -87,6 +119,8 @@ Any time we release our product, we ship our organisation, together with its str
 
 ## Bibliography
 
+- [How Do Committees Invent?](https://www.melconway.com/Home/Committees_Paper.html), Melvin Conway, 1968
+- [Architecture without an end state](https://www.oreilly.com/content/michael-nygard-on-architecture-without-an-end-state/), Michael Nygard, 2012
 - [Sex in Title, and Other Stories](http://hintjens.com/blog:73), Pieter Hintjes, 2013
 - [Conway’s Law: The DevOps Skeleton](https://www.slideshare.net/danslimmon/conways-law-the-skeleton-of-devops), Dan Slimmon, 2014
 - [Predictive Models of Development Teams and the Systems They Build](https://sixty-north.com/blog/predictive-models-of-development-teams-and-the-systems-they-build)), Rob Smallshire, 2014
