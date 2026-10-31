@@ -6,7 +6,7 @@ category: articles
 tags: [ Conway's Law, Open Systems Theory ]
 ---
 
-The first prototypes of a system are merely hints towards what a final design could look like. Then again, they are only clues. To crystallise the design, we have to iterate with more new experiments to collect feedback. However, this has unexpected repercussions for the unsuspecting leader.
+The first prototypes of a system are merely hints towards what a final design could look like. To crystallise a solution, we have to constantly iterate, experiment, and adapt to feedback. However, this continuous evolution creates unexpected repercussions for leadership: changing the system demands changing the organisation. It requires organisational flexibility. Yet, as organisations grow, they naturally trade flexibility for bureaucracy. As a result, scaling an organisation often suffocates the very systems it is trying to build.
 
 ---
 
