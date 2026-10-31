@@ -148,7 +148,7 @@ Start small! Probably slightly smaller than we think we need.
 - [Architectural Innovation: The Reconfiguration of Existing Product Technologies and the Failure of Established Firms](http://www.iot.ntnu.no/innovation/norsi-pims-courses/tushman/Handerson%20&%20Clark%20(1990).pdf), Henderson and Clark, 1990
 - [Architectural Blueprints — The "4+1" View Model of Software Architecture](https://arxiv.org/pdf/2006.04975), Philippe Kruchten, 1995
 - [Conway's Law](https://web.archive.org/web/20181022001505/http://traceinthesand.com:80/blog/2008/02/13/conways-law/), Ruth Malan, 2008
-- [The 'work group': Redressing the balance in Bion's Experiences in Groups](https://www.benhughes-consulting.co.uk/site/assets/files/1102/0018726710365091.pdf), R. French and P. Simpson, 2010
+- [The 'work group': Redressing the balance in Bion's Experiences in Groups](https://www.benhughes-consulting.co.uk/site/assets/files/1102/0018726710365091.pdf), Robert French and Peter Simpson, 2010
 - [Architecture without an end state](https://www.oreilly.com/content/michael-nygard-on-architecture-without-an-end-state/), Michael Nygard, 2012
 - [Conway's Law Reverb](https://www.ruthmalan.com/Journal/2014/2014JournalMay.htm#Conways_Law), Ruth Malan, 2014
 - [Continuous Delivery and Conway’s Law]({% post_url 2021-05-13-continuous-delivery-and-conways-law-allan-kelly %}), Allan Kelly, 2014
