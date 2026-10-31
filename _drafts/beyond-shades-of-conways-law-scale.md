@@ -28,7 +28,7 @@ As already hinted by Conway, this has consequences ... for the organisation. Thi
 
 Without organisational flexibility, we are limited in producing a system design that matches the real, on-the-ground communication structure of the organisation. Because "*if the system architecture and the organisation architecture are at odds, the organisation wins*" (Ruth Malan, 2008).
 
-Be aware that the real on-the-ground communication structures are not necessarily the ones depicted on the traditional organisation chart. People do not restrict their communications only to the lines on the organisation chart. Teams reach out to whomever they *depend on* to get their work done. This informal organisation chart aligns with the architectural *Process View* and *Physical View* (Kruchten, 1995, more on this [*Mechanics: The Mathematical & Geometrical Shades*]({% post_url 2026-08-31-beyond-shades-of-conways-law-mechanics %})).
+Be aware that the real on-the-ground communication structures are not necessarily the ones depicted on the traditional organisation chart. People do not restrict their communications only to the lines on the organisation chart. Teams reach out to whomever they *depend on* to get their work done. This informal organisation chart aligns with the architectural *Process View* and *Physical View* (Kruchten, 1995, more on this in [*Mechanics: The Mathematical & Geometrical Shades*]({% post_url 2026-08-31-beyond-shades-of-conways-law-mechanics %})).
 
 ## Incremental Engineering
 
@@ -56,9 +56,9 @@ However, incremental software development has consequences. As software grows, e
 
 ## System Redesign vs Organisational Flexibility
 
-Many refactorings result in significant system redesign.
+Many refactorings result in significant system redesigns.
 
-Henceforth, incremental software development impacts the organisation because we are redesigning the system. It requires growing and redesigning the organisation as the system grows to fit the new system. It requires organisational flexibility.
+Henceforth, incremental software development impacts the organisation. We are redesigning the system. Therefore, it requires growing and redesigning the organisation as the system grows to fit the new system. It calls for organisational flexibility.
 
 > They [system and organization] will co-evolve, because if they don't, Conway's Law warns us that the organization form will trump intended designs that go "cross-grain" to the organization warp.
 >
@@ -66,7 +66,7 @@ Henceforth, incremental software development impacts the organisation because we
 
 Following the Open Systems Theory (OST) Design Principle 2 (DP2) socio-technical structure, organisation and system need to co-evolve — shifting the responsibility for coordination and control to the teams doing the work, allowing the teams to progress the organisation design as needed as the system design evolves over time (more on this in [*Strategy: Reversing the Law*]({% post_url 2026-09-20-beyond-shades-of-conways-law-strategy %}#conclusion)).
 
-[Adrian Cockcroft](https://mastodon.social/@adrianco), the former Chief Architect of Netflix, confirmed this on Mastodon in a [conversation with Ruth Malan](https://mastodon.social/@tdpauw/111003294054784503): "*I think I have seen this at Netflix and AWS. They annually re-aligned teams with the new domain boundaries.*"
+[Adrian Cockcroft](https://mastodon.social/@adrianco), the former Chief Architect of Netflix, confirmed this in a Mastodon [conversation with Ruth Malan](https://mastodon.social/@tdpauw/111003294054784503): "*I think I have seen this at Netflix and AWS. They annually re-aligned teams with the new domain boundaries.*"
 
 This creates two imperatives:
 
@@ -85,7 +85,7 @@ The importance of the Law is not that the organisation is constrained to produce
 
 No, the importance of the Law is that the organisation is keeping us from designing the things we should be building to delight our users. The organisation chart is hiding the ideal solution for the teams. Paradoxically, leadership is often completely unaware of these structural mechanics.
 
-If the organisation is keeping us from producing the right thing, the organisation should be flexible enough to be redesigned in order to come to a better product design that better fits the needs of our users. This requires organisational flexibility to come to a more effective design ([*Conway's Corollary*](#conways-corollary)).
+If the organisation is keeping us from producing the right thing, the organisation should be flexible enough to be redesigned in order to come to an enhanced product design that better fits the needs of our users. This requires organisational flexibility to come to a more effective design (hence [*Conway's Corollary*](#conways-corollary)).
 
 Without organisational flexibility, "*[when] architecture of the system and the architecture of the organisation are at odds, the organisation wins*" (Ruth Malan, 2008).
 
@@ -95,7 +95,7 @@ Because an initial design is rarely the best one, and because of incremental sof
 
 ## The Scaling Paradox
 
-Conway's Law says any organisation designing systems is constrained to design a mirror of the organisation's communication structures. [*Conway's Corollary*](#conways-corollary), on the other hand, shows that when systems scale and designs evolve, it requires organisational flexibility and the ability to respond to change in order to design the right things for their customers. However, organisations scale sub-linearly. Sub-linear scaling leads to bounded growth and limited lifespan, i.e organisations eventually stop growing and die (West, 2017).
+Conway's Law says: any organisation designing systems is constrained to design a mirror of the organisation's communication structures. [*Conway's Corollary*](#conways-corollary), on the other hand, shows that when systems scale and designs evolve, it requires organisational flexibility and the ability to respond to change in order to design the right things for their customers. However, organisations scale sub-linearly. Sub-linear scaling leads to bounded growth and limited lifespan, i.e organisations eventually stop growing and die (West, 2017).
 
 The exponential growth of organisations is a downright myth. The fact they grow sub-linearly indicates a domination by increasing returns of economies of scale over innovation. Organisations typically operate as highly constrained top-down structures striving to optimise for efficiency by reducing operational costs and increasing profits, but not for effectiveness. To achieve more efficiency, organisations add more rules, more protocols, more bureaucracy, and more hierarchy, at the expense of innovation (West, 2017).
 
@@ -105,7 +105,7 @@ Ultimately, organisations choke on the volume of decisions bubbling up the hiera
 
 Ultimately, only five per cent of the organisations stay alive after 30 years. Almost half of them disappeared in ten years' time. Very few organisations have survived hundreds of years. Those who did are of relatively modest size, operating in highly specialised, niche markets, continue to produce high-quality products for a small, dedicated clientele, and have barely grown (West, 2017).
 
-Most organisations tend to be conservative and shortsighted. Because of the bureaucracy, the knowledge gets fossilised inside the organisation's communication channels, preventing any architectural innovation (see [Validation: The Research & Reality Check]({% post_url 2026-06-20-beyond-shades-of-conways-law-validation %})). Organisations become less supportive of risky ideas. They tend to become unidirectional and lack diversity — an indicator of reduced resilience and a recipe for disaster (Henderson and Clark, 1990; West, 2017).
+In the end, most organisations tend to be conservative and shortsighted. Because of the bureaucracy, the knowledge gets fossilised inside the organisation's communication channels, preventing any architectural innovation (see [Validation: The Research & Reality Check]({% post_url 2026-06-20-beyond-shades-of-conways-law-validation %})). Organisations become less supportive of risky ideas. They tend to become unidirectional and lack diversity — an indicator of reduced resilience and a recipe for disaster (Henderson and Clark, 1990; West, 2017).
 
 In contrast, cities scale super-linearly and open-ended, i.e. they scale exponentially. Cities become more diverse as they grow. They become multi-dimensional, strongly correlated with the super-linear and open-ended growth, which is a crucial component for resilience and the seeming immortality. Cities operate in a much more distributed fashion and embody innovation (West, 2017).
 
@@ -124,6 +124,8 @@ Ultimately, organisational flexibility is rare at scale. To successfully scale a
 When evolving a system, to contain entropy, many refactorings will happen, leading to considerable redesigns. To ensure our experiments result in building the right thing that the market is demanding, it is, therefore, imperative that the organisation shows enough flexibility to restructure and adapt to the new designs. Small teams, accountable and responsible for their systems and markets, reduce bureaucracy and enable innovation.
 
 Organisations need to scale their business, not teams! Keeping teams small is an unavoidable reality.
+
+Start small! Probably slightly smaller than we think we need.
 
 ## The Series: Navigating the Shades
 
