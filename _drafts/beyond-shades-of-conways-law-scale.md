@@ -83,7 +83,7 @@ This creates two imperatives:
 
 The importance of the Law is not that the organisation is constrained to produce system designs that copy the organisational structures.
 
-No, the importance of the Law is that the organisation is keeping us from designing the things we should be building to delight our users.
+No, the importance of the Law is that the organisation is keeping us from designing the things we should be building to delight our users. The org-chart is hiding the ideal solution for the teams. Paradoxically, the organisation is simply unaware of these mechanics.
 
 If the organisation is keeping us from producing the right thing, the organisation should be flexible enough to be redesigned in order to come to a better product design that better fits the needs of our users. This requires organisational flexibility to come to a more effective design ([*Conway's Corollary*](#conways-corollary)).
 
@@ -97,7 +97,11 @@ Because an initial design is rarely the best one, and because of incremental sof
 
 Conway's Law says any organisation designing systems is constrained to design a mirror of the organisation's communication structures. Conway's Corollary, on the other hand, tells that when systems scale and designs evolve it requires organisational flexibility and the ability to respond to change in order to design the right things for their customers. However, organisations scale sub-linearly. Sub-linear scaling leads to bounded growth and limited lifespan, i.e organisations eventually stop growing and die (West, 2017).
 
-The exponential growth of organisations is a downright myth. The fact they grow sub-linearly indicates a domination by increasing returns of economies of scale over innovation. Organisations typically operate as highly-constrained top-down structures striving to optimise for efficiency by reducing operational costs and increasing profits, but not for effectiveness. To achieve more efficiency, they add more rules, more protocols, more bureaucracy, at the expense of innovation (West, 2017). As they grow, organisations add more bureaucracy, more hierarchy and more communication structures and ultimately choke in the amount of decisions bubbling up the hierarchy, resulting in decision latency (Galbraith, 1973, 1977), delayed feedback, delayed learning. They become more rigid, less agile, less able to respond to change (West, 2017).
+The exponential growth of organisations is a downright myth. The fact they grow sub-linearly indicates a domination by increasing returns of economies of scale over innovation. Organisations typically operate as highly-constrained top-down structures striving to optimise for efficiency by reducing operational costs and increasing profits, but not for effectiveness. To achieve more efficiency, organisations add more rules, more protocols, more bureaucracy, and more hierarchy, at the expense of innovation (West, 2017).
+
+As organisations scale, teams are taken by strong emotions — anxiety, fear, hate, love, hope, anger, guilt, depression. They lose touch with their purpose, outcomes stagnate, while unconsciously adopting defensive modes. Teams look upward for direction, protect territories, or chase silver bullets (Bion, 1961; see also French & Simpson, 2010).
+
+Ultimately they choke in the amount of decisions bubbling up the hierarchy, resulting in decision latency (Galbraith, 1973, 1977), delayed feedback, delayed learning. Organisations become risk averse. They become more rigid, less agile, less able to respond to change (West, 2017). Eventually, they will go back to conservative solutions and innovation falls flat.
 
 Ultimately, only five percent of the organisation stay alive after 30 years. Almost half of them disappeared in ten years time. Very few organisations have survived hundreds of years. Those who did, are of relatively modest size, operating in highly specialised, niche markets, continue to produce high-quality products for a small, dedicated clientele, and have barely grown (West, 2017).
 
@@ -135,12 +139,14 @@ Organisations need to scale their business, not teams! Keeping teams small, is a
 
 ## Bibliography
 
+- [Experiences in Groups and Other Papers](https://app.thestorygraph.com/books/00a599d7-49d1-4b35-9d19-a67652910ed2), Wilfred R. Bion, 1961
 - [How Do Committees Invent?](https://www.melconway.com/Home/Committees_Paper.html), Melvin Conway, 1968
 - [Designing Complex Organisations](https://app.thestorygraph.com/books/c746ca36-a5d7-4c2a-995c-6330c4d363bd), Jay R. Galbraith, 1973
 - [Organisation Design](https://app.thestorygraph.com/books/6b226d10-9cb0-41a2-89fa-bab1f81ee5d1), Jay R. Galbraith, 1977
 - [Architectural Innovation: The Reconfiguration of Existing Product Technologies and the Failure of Established Firms](http://www.iot.ntnu.no/innovation/norsi-pims-courses/tushman/Handerson%20&%20Clark%20(1990).pdf), Henderson and Clark, 1990
 - [Architectural Blueprints — The "4+1" View Model of Software Architecture](https://arxiv.org/pdf/2006.04975), Philippe Kruchten, 1995
 - [Conway's Law](https://web.archive.org/web/20181022001505/http://traceinthesand.com:80/blog/2008/02/13/conways-law/), Ruth Malan, 2008
+- [The 'work group': Redressing the balance in Bion's Experiences in Groups](https://www.benhughes-consulting.co.uk/site/assets/files/1102/0018726710365091.pdf)), R. French and P. Simpson, 2010
 - [Architecture without an end state](https://www.oreilly.com/content/michael-nygard-on-architecture-without-an-end-state/), Michael Nygard, 2012
 - [Conway's Law Reverb](https://www.ruthmalan.com/Journal/2014/2014JournalMay.htm#Conways_Law), Ruth Malan, 2014
 - [Continuous Delivery and Conway’s Law]({% post_url 2021-05-13-continuous-delivery-and-conways-law-allan-kelly %}), Allan Kelly, 2014
