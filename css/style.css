@@ -12,6 +12,7 @@
 
 body{ font-family: 'Open Sans', sans-serif; -webkit-font-smoothing: antialiased; font-size:16px; color:#222222; line-height:23px; letter-spacing: 0.02em; overflow-x: hidden; }
 blockquote { font-size: 16px; font-weight: 300; color: #2b3036; background-color: #f6f8fa; padding: 0.8rem 1.2rem; }
+pre, code { color: #1f2328; }
 a { color: #000; }
 a:hover{ color: #ffb200; }
 img { -webkit-backface-visibility: hidden; max-width:100%; height:auto; }
