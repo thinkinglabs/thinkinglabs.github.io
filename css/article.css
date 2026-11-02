@@ -44,6 +44,7 @@
 
 .article-content p, li {
   line-height: 28px;
+  font-weight: 400;
 }
 
 .article-content blockquote {
