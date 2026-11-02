@@ -11,6 +11,7 @@
   font-size: 14px;
   letter-spacing: 1px;
   text-transform: uppercase;
+  color: #57606a;
 }
 
 .article-meta a { border-bottom: thin solid; }
@@ -19,6 +20,10 @@
 .tag {
   font-weight: 600;
   text-transform: uppercase;
+}
+
+.tag a {
+  color: #57606a;
 }
 
 .no-padding-bottom {

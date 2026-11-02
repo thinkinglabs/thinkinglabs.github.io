@@ -284,10 +284,6 @@ section { padding: 100px 0;}
   height: 40px;
 }
 
-.article p a {
-  color: #727272;
-}
-
 .article p a:hover {
   color: #ffb200;
 }
