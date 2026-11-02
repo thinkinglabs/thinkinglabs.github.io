@@ -1,6 +1,9 @@
 .DEFAULT_GOAL := help
 .PHONY: install serve serve-draft help
 
+clean: ## Cleans the generated site
+	rm -rf _site
+
 install: ## Install required gems
 	bundle install
 
