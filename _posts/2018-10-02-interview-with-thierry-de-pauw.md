@@ -140,15 +140,11 @@ Once version control is in place, in the past, I usually focussed on the quality
 
 All these slow down your delivery process. But yet don’t prevent bugs from occurring in production. [Jez Humble](https://twitter.com/jezhumble) calls this [risk management theatre](https://continuousdelivery.com/2013/08/risk-management-theatre/).
 
-<div class="embed-article">
-<a href="https://continuousdelivery.com/2013/08/risk-management-theatre/" data-href="https://continuousdelivery.com/2013/08/risk-management-theatre/" title="https://continuousdelivery.com/2013/08/risk-management-theatre/" rel="nofollow">
-<strong>Risk Management Theatre: On Show At An Organization Near You - Continuous Delivery</strong>
-<br>
-<em>One of the concepts that will feature in the new book I am working on is "risk management theatre". This is the name I…</em>
-continuousdelivery.com
-</a>
-<a href="https://continuousdelivery.com/2013/08/risk-management-theatre/" class="image" data-media-id="6d07dac6741e670b84b6e30a6eb3ee82" data-thumbnail-img-id="0*bog8R0ejMKiSiAbO." style="background-image: url(https://cdn-images-1.medium.com/fit/c/320/320/0*bog8R0ejMKiSiAbO.);"></a>
-</div>
+> #### Risk Management Theatre: On Show At An Organization Near You - Continuous Delivery
+>
+> One of the concepts that will feature in the new book I am working on is "risk management theatre". This is the name I…
+>
+> -- [continuousdelivery.com](https://continuousdelivery.com/2013/08/risk-management-theatre/)
 
 > This lack of confidence is usually due to a lack of automated tests resulting in a test strategy that resembles the testing [ice cream cone](http://saeedgatson.com/the-software-testing-ice-cream-cone/). Lots of manual end-to-end testing, very few or no **automated** unit testing. I emphasise automated for unit tests because I recently discovered that in some mainframe communities they use the term unit tests for manual tests. So when asked if they have unit testing they cheerfully answered yes ;)
 
@@ -182,14 +178,11 @@ Recently, I started playing with [value stream mapping](https://luis-goncalves.c
 
 I am yet to try out the [Improvement Kata](http://www-personal.umich.edu/~mrother/The_Improvement_Kata.html) by Mike Rother. Steve Smith mentions it in his book [Measuring Continuous Delivery](https://leanpub.com/measuringcontinuousdelivery) and in his [Resilience as Continuous Delivery Enabler](https://www.continuousdeliveryconsulting.com/blog/resilience-as-a-continuous-delivery-enabler/) article series.
 
-<div class="embed-article">
-<a href="https://www.continuousdeliveryconsulting.com/blog/resilience-as-a-continuous-delivery-enabler/" data-href="https://www.continuousdeliveryconsulting.com/blog/resilience-as-a-continuous-delivery-enabler/" title="https://www.continuousdeliveryconsulting.com/blog/resilience-as-a-continuous-delivery-enabler/" rel="nofollow">
-<strong>Resilience As A Continuous Delivery Enabler - Continuous Delivery Consulting</strong>
-<br>
-<em>The key to removing robustness risk management theatre is to visualise its costs to stakeholders and offer a practical…</em>
-www.continuousdeliveryconsulting.com</a>
-<a href="https://www.continuousdeliveryconsulting.com/blog/resilience-as-a-continuous-delivery-enabler/" class="image" data-media-id="93eac57663affbc81234cdbb76a1ae1e" data-thumbnail-img-id="0*4apR8Kr6-hBUjpeS." style="background-image: url(https://cdn-images-1.medium.com/fit/c/320/320/0*4apR8Kr6-hBUjpeS.);"></a>
-</div>
+>#### Resilience As A Continuous Delivery Enabler - Continuous Delivery Consulting
+>
+> The key to removing robustness risk management theatre is to visualise its costs to stakeholders and offer a practical…
+>
+> -- [www.continuousdeliveryconsulting.com](https://www.continuousdeliveryconsulting.com/blog/resilience-as-a-continuous-delivery-enabler/)
 
 In an Improvement Kata, the organisation defines a goal, a vision of success, around Continuous Delivery. Then it assesses its baseline. What is the current situation?
 
