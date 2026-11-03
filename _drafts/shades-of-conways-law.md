@@ -546,13 +546,13 @@ Incremental software development is an essential condition to growing IT systems
 >
 > As we proceed in the fog of uncertainty, entropy grows -- and produces more fog! Under uncertainty we "give things a try"; accept good enough, and try the next thing. As entropy grows, it introduces its own uncertainty...
 >
-> -- Ruth Malan, [Conway's Law Reverb](https://www.ruthmalan.com/Journal/2014/2014JournalMay.htm#Conways_Law), May 5, 2014
+> -- Ruth Malan, [Conway's Law Reverb](https://web.archive.org/web/20210625014635/https://www.ruthmalan.com/Journal/2014/2014JournalMay.htm#Conways_Law#Conways_Law), May 5, 2014
 
 However, incremental software development has consequences. As software grows, entropy grows. To contain entropy, we need to refactor systems. 
 
 > Refactoring is the corollary to piecemeal growth, allowing entropy containment. But we have to refactor the organization too? If it would subvert the system (re)design and evolution.
 >
-> -- Ruth Malan, [Conway's Law Reverb](https://www.ruthmalan.com/Journal/2014/2014JournalMay.htm#Conways_Law), May 5, 2014
+> -- Ruth Malan, [Conway's Law Reverb](https://web.archive.org/web/20210625014635/https://www.ruthmalan.com/Journal/2014/2014JournalMay.htm#Conways_Law#Conways_Law), May 5, 2014
 
 Many refactorings result in a significant redesign of the system.
 
@@ -764,7 +764,7 @@ Ruth Malan and Adrian Cockcroft for reviewing an early draft.
 - [Exploring the Duality between Product and Organizational Architecture: A Test of the “Mirroring” Hypothesis](https://www.hbs.edu/ris/Publication%20Files/08-039_1861e507-1dc1-4602-85b8-90d71559d85b.pdf), Baldwin, MacCormack, Rusnak, 2012
 - [Architecture without an end state](https://www.oreilly.com/content/michael-nygard-on-architecture-without-an-end-state/), Michael Nygard, 2012
 - [Sex in Title, and Other Stories](http://hintjens.com/blog:73), Pieter Hintjes, 2013
-- [Conway's Law Reverb](https://www.ruthmalan.com/Journal/2014/2014JournalMay.htm#Conways_Law), Ruth Malan, 2014
+- [Conway's Law Reverb](https://web.archive.org/web/20210625014635/https://www.ruthmalan.com/Journal/2014/2014JournalMay.htm#Conways_Law#Conways_Law), Ruth Malan, 2014
 - [Continuous Delivery and Conway’s Law]({% post_url 2021-05-13-continuous-delivery-and-conways-law-allan-kelly %}), Allan Kelly, 2014
 - [Predictive Models of Development Teams and the Systems They Build](https://sixty-north.com/blog/predictive-models-of-development-teams-and-the-systems-they-build), Rob Smallshire, 2014
 - [Conway’s Law: The DevOps Skeleton](https://www.slideshare.net/danslimmon/conways-law-the-skeleton-of-devops), Dan Slimmon, 2014

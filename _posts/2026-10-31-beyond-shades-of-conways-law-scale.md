@@ -150,7 +150,7 @@ Start small! Probably slightly smaller than we think we need.
 - [Conway's Law](https://web.archive.org/web/20181022001505/http://traceinthesand.com:80/blog/2008/02/13/conways-law/), Ruth Malan, 2008
 - [The 'work group': Redressing the balance in Bion's Experiences in Groups](https://www.benhughes-consulting.co.uk/site/assets/files/1102/0018726710365091.pdf), Robert French and Peter Simpson, 2010
 - [Architecture without an end state](https://www.oreilly.com/content/michael-nygard-on-architecture-without-an-end-state/), Michael Nygard, 2012
-- [Conway's Law Reverb](https://www.ruthmalan.com/Journal/2014/2014JournalMay.htm#Conways_Law), Ruth Malan, 2014
+- [Conway's Law Reverb](https://web.archive.org/web/20210625014635/https://www.ruthmalan.com/Journal/2014/2014JournalMay.htm#Conways_Law#Conways_Law), Ruth Malan, 2014
 - [Continuous Delivery and Conway’s Law]({% post_url 2021-05-13-continuous-delivery-and-conways-law-allan-kelly %}), Allan Kelly, 2014
 - [Toward Simplifying Application Development in a Dozen Lessons](http://melconway.com/Home/pdf/simplify.pdf), Mel Conway, 2016
 - [Building Evolutionary Architectures](https://app.thestorygraph.com/books/0f3cecf8-ee0b-407b-b711-a105d4ae3b3d), Rebecca Parsons, Neal Ford, Patrick Kua, 2017

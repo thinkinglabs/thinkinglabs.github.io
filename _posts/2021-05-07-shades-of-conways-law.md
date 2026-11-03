@@ -165,7 +165,7 @@ Incremental software development is an essential condition to growing IT systems
 >
 > As we proceed in the fog of uncertainty, entropy grows -- and produces more fog! Under uncertainty we "give things a try"; accept good enough, and try the next thing. As entropy grows, it introduces its own uncertainty...
 >
-> -- Ruth Malan, [Conway's Law Reverb](https://www.ruthmalan.com/Journal/2014/2014JournalMay.htm#Conways_Law), May 5, 2014
+> -- Ruth Malan, [Conway's Law Reverb](https://web.archive.org/web/20210625014635/https://www.ruthmalan.com/Journal/2014/2014JournalMay.htm#Conways_Law#Conways_Law), May 5, 2014
 
 But incremental software development has a consequential corollary. As software grows, entropy grows. To contain entropy, we need to refactor systems. In the end, many refactorings result in a significant redesign of systems. Incremental software development requires growing and redesigning the organisation to fit the new system. It is a consequence of the Inverse Conway Manoeuvre. We will come back to this at the end of the article. Grow the organisation alongside the growing systems.
 
@@ -179,7 +179,7 @@ But incremental software development has a consequential corollary. As software 
 >
 > Integrating across organizational divides is a challenge. When left to happy accident, may well have all the smack of accident rather than design - as in, designed to get more what we want, looking for consequences so we get less unintended side-effecting from being system-blind.
 >
-> -- Ruth Malan, [Conway's Law Reverb](https://www.ruthmalan.com/Journal/2014/2014JournalMay.htm#Conways_Law), May 5, 2014
+> -- Ruth Malan, [Conway's Law Reverb](https://web.archive.org/web/20210625014635/https://www.ruthmalan.com/Journal/2014/2014JournalMay.htm#Conways_Law#Conways_Law), May 5, 2014
 
 All this naturally follows Allan Kelly's advice: "_Grow the team with the system. Small teams, small systems, piecemeal growth. Start as small as you can and grow as you need too. Don’t start thinking big._"
 
@@ -301,7 +301,7 @@ I also would like to thank [Ruth Malan](https://twitter.com/ruthmalan) for writi
 - [Release It!](), Michael Nygard, 2007
 - [*Conway's Law*](https://web.archive.org/web/20181022001505/http://traceinthesand.com:80/blog/2008/02/13/conways-law/), Ruth Malan, 2008
 - [*Conway's Law-ish*](https://web.archive.org/web/20200621234405/http://www.ruthmalan.com:80/Journal/2013/2013JournalMay.htm#Conways_Law_ish), 2013
-- [*Conway's Law Reverb*](https://www.ruthmalan.com/Journal/2014/2014JournalMay.htm#Conways_Law), Ruth Malan, 2014
+- [*Conway's Law Reverb*](https://web.archive.org/web/20210625014635/https://www.ruthmalan.com/Journal/2014/2014JournalMay.htm#Conways_Law#Conways_Law), Ruth Malan, 2014
 - [*Continuous Delivery and Conway’s Law*]({% post_url 2021-05-13-continuous-delivery-and-conways-law-allan-kelly %}), Allan Kelly, 2014
 - [*Toward Simplifying Application Development in a Dozen Lessons*](http://melconway.com/Home/pdf/simplify.pdf), Mel Conway, 2016
 - [*Twitter, Reddit and Conway's Law*](https://michaelfeathers.silvrback.com/social-media-architecture-and-conway-s-law), Micheal Feathers, 2017
