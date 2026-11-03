@@ -46,13 +46,13 @@ Incremental software development is an essential condition for growing IT system
 >
 > As we proceed in the fog of uncertainty, entropy grows -- and produces more fog! Under uncertainty we "give things a try"; accept good enough, and try the next thing. As entropy grows, it introduces its own uncertainty...
 >
-> -- Ruth Malan, [Conway's Law Reverb](https://www.ruthmalan.com/Journal/2014/2014JournalMay.htm#Conways_Law), May 5, 2014
+> -- Ruth Malan, [Conway's Law Reverb](https://web.archive.org/web/20210625014635/https://www.ruthmalan.com/Journal/2014/2014JournalMay.htm#Conways_Law#Conways_Law), May 5, 2014
 
 However, incremental software development has consequences. As software grows, entropy grows. To contain entropy, we need to refactor systems. 
 
 > Refactoring is the corollary to piecemeal growth, allowing entropy containment. But we have to refactor the organization too? If it would subvert the system (re)design and evolution.
 >
-> -- Ruth Malan, [Conway's Law Reverb](https://www.ruthmalan.com/Journal/2014/2014JournalMay.htm#Conways_Law), May 5, 2014
+> -- Ruth Malan, [Conway's Law Reverb](https://web.archive.org/web/20210625014635/https://www.ruthmalan.com/Journal/2014/2014JournalMay.htm#Conways_Law#Conways_Law), May 5, 2014
 
 ## System Redesign vs Organisational Flexibility
 
