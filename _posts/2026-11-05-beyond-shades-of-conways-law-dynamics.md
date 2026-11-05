@@ -3,7 +3,7 @@ layout: article
 title: "Beyond the Shades of Conway's Law - Dynamics: Conway's Time Component"
 author: Thierry de Pauw
 category: articles
-tags: [ Conway's Law, Open Systems Theory ]
+tags: [ Conway's Law ]
 ---
 
 Because of past historical decisions and past structural changes, software development efforts that lead to large, long-running, rigid legacy systems create a system structure that is not necessarily congruent or in harmony with today's organisation. The current system architecture does not match the present organisation chart because temporal memory anchors past decisions, and engineers' turnover.
@@ -102,7 +102,7 @@ Hence, system architecture is a great source for archaeological research on past
 >
 > -- @jmbroad, Twitter, May 8, 2013
 
-Changes that we are starting now will coexist with changes that started last year and the year before. If we adopt that perspective, we stop trying to rip apart systems and start all over again. Instead, we should focus a lot more on incremental change. Here begins our history of decisions, and how this history is embedded in our system's design as a result of the effects of structural changes over time.
+Changes that we are starting now will coexist with changes that started last year and the year before. If we adopt that perspective, we stop trying to rip apart systems and start all over again. Instead, we should focus a lot more on incremental change (Nygard, 2012). Here begins our history of decisions, and how this history is embedded in our system's design as a result of the effects of structural changes over time.
 
 At one conference, I was asked to provide an example of the code reflecting past enterprise decisions. Here are two:
 
@@ -134,7 +134,7 @@ Whenever we release our product, we ship our organisation — complete with its 
 - [Strategy: Reversing the Law]({% post_url 2026-09-20-beyond-shades-of-conways-law-strategy %}) - How the system ultimately forces the organisation to change versus deliberately changing the organisation.
 - [Scale: Conway's Corollary]({% post_url 2026-10-31-beyond-shades-of-conways-law-scale %}) - The required organisational flexibility.
 - **Dynamics: Conway's Time Component** - The "Engineer Half-Life" and why architecture is "sticky" long after teams change.
-- **Conclusion: The Different Lenses** - A concluding look at how we perceive organisations and their systems.
+- Conclusion: The Different Lenses - A concluding look at how we perceive organisations and their systems.
 
 ## Bibliography
 
