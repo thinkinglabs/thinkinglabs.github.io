@@ -40,7 +40,7 @@ This series is a work in progress. It will evolve as I read and incorporate more
 - [Mechanics: The Mathematical & Geometrical Shades]({% post_url 2026-08-31-beyond-shades-of-conways-law-mechanics %}) - The geometry of design: from mathematical isomorphism, homomorphism, congruence to compatibility.
 - [Strategy: Reversing the Law]({% post_url 2026-09-20-beyond-shades-of-conways-law-strategy%}) - How the system ultimately forces the organisation to change versus deliberately changing the organisation.
 - [Scale: Conway's Corollary]({% post_url 2026-10-31-beyond-shades-of-conways-law-scale %}) - The required organisational flexibility.
-- **Dynamics: Conway's Time Component** - The "Engineer Half Life" and why architecture is "sticky" long after teams change.
+- **Dynamics: Conway's Time Component** - The "Engineer Half-Life" and why architecture is "sticky" long after teams change.
 - **Conclusion: The Different Lenses** - A concluding look at how we perceive organisations and their systems.
 
 ## Wait, There is More
