@@ -6,7 +6,7 @@ category: articles
 tags: [ Conway's Law, Open Systems Theory ]
 ---
 
-Because of past historical decisions and past structural changes, software development efforts that lead to large, long-running, rigid legacy systems create a system structure that is not necessarily congruent or in harmony with the organisation at present, now, today.
+Because of past historical decisions and past structural changes, software development efforts that lead to large, long-running, rigid legacy systems create a system structure that is not necessarily congruent or in harmony with today's organisation. The current system architecture does not match the present organisation chart because temporal memory anchors past decisions, and engineers' turnover.
 
 ---
 
@@ -30,7 +30,7 @@ This means if we have a team of 10 engineers, half of the team will have left th
 
 A low-productivity engineer might be replaced with a higher-productivity engineer or vice versa. For small teams, this can significantly shift the overall productivity.
 
-Not all engineers are equally productive. The same engineer will not exhibit the same productivity across different codebases, depending on codebase sizes and cognitive load. Adding 100 lines of code to a 1000-line codebase is a different thing than to a million-line system.
+Not all engineers are equally productive. Even the same engineer will not exhibit the same productivity across different codebases, depending on codebase sizes and cognitive load. Adding 100 lines of code to a 1000-line codebase is a different thing than adding to a million-line system.
 
 Generally speaking, a team's productivity goes down as codebase size increases.
 
@@ -51,9 +51,9 @@ A new engineer starts, coloured pink, who replaces purple. As we can see, they a
 
 At the end of the five years, we find our team of seven has churned through ...
 
-a grand total of 19 engineers!!
+... a grand total of 19 engineers!!
 
-The **majority of the surviving code was written by people no longer with the organisation**; only 37% of the code was written by people still present at the end of the five years.
+The **majority of the surviving code was written by people no longer with the organisation**; only 37% of the code was written by people still present at the end of the five years. 63% of the code was written by engineers that long left the organisation.
 
 ## Temporal Memory
 
@@ -67,22 +67,22 @@ Large software systems as we see them today are the fossilised footprints of pas
 
 As half-life churns, organisational knowledge shifts from explicit knowledge to institutionalised myth. When teams experience trauma — such as production outages, blame, wrong architecture decisions in big bang changes — they unconsciously establish social defence mechanisms over time. These defence systems serve to cope with, eliminate, and avoid emotions such as anxiety, guilt, doubt, uncertainty, distress, fear of failure, blame or wrong decisions (Menzies, 1960; also Lawlor, 2019; and Bion, 1961).
 
-- Ritual task-performance: Replacing own discretion with rigid playbooks or compliance checklists to avoid individual decision-making responsibility.
+- Ritual task-performance: Replacing personal discretion with rigid playbooks or compliance checklists to avoid individual decision-making responsibility.
 - Reducing the weight of decision-making by checks and counter-checks: Multiplying approvals via multi-reviewer Pull Request gates, quality gates, and Change Approval Boards to distribute responsibility over committees; not only in cases of high-stakes, but also for situations with the slightest consequences.
 - Reducing the impact of responsibility by upward delegation: Throwing decisions up the leadership chain to avoid blame, which in turn causes the organisation to choke on the high volume of upward exceptions (Galbraith, 1973, 1977)
 - Avoidance for change: Any change involves a change in the social defence system; anxiety will in that case be more open and intense. Change is only instituted in moments of crisis.
 
 Over time, these defence mechanisms become elements of culture and mode of functioning of the organisation. It becomes an aspect of the external reality for old and new staff members, and part of the myth ("*We have always done it like this*")
 
-Much like software and IT systems, organisational culture and rules defined by social defence mechanisms carry on long after the original instigators have left. New staff members are enrolled on this basic assumption before they understand the system. The culture persists because it serves a protective psychological function, not an engineering one.
+Much like software and IT systems, organisational culture and rules defined by social defence mechanisms carry on long after the original instigators have left. New staff members are socialised into these basic assumptions before they understand the system. The culture persists because it serves a protective psychological function, not an engineering one.
 
-Both the system and the organisation possess a temporal memory, keeping each other eventually in balance, to anchor past decisions.
+Both the system and the organisation possess a temporal memory, keeping each other eventually in balance, to anchor past decisions. Process debt and technical debt behave like dual manifestations of the same temporal memory.
 
 ## Archaeological Research on Enterprise Decisions
 
 Hence, system architecture is a great source for archaeological research on past enterprise decisions.
 
-> You can read the history of an enterprise's political struggles in its system architecture.”
+> You can read the history of an enterprise's political struggles in its system architecture.
 >
 > -- Michael Nygard (@mtnygard), Twitter, May 8, 2013
 >
@@ -106,7 +106,7 @@ Changes that we are starting now will coexist with changes that started last yea
 
 At one conference, I was asked to provide an example of the code reflecting past enterprise decisions. Here are two:
 
-- One FinTech had a Document Vault feature, basically the ability to securely store legal documents. Yet, customers and the Product Manager referred to the feature as Document Manager or File Manager, and eventually settled on File Manager. Ultimately, this got renamed over time in the code. However, over the years, there was still this single directory, part of the infrastructure code, called `document_vault`, revealing the history of that feature.
+- One FinTech had a Document Vault feature, basically the ability to securely store legal documents. Yet, customers and the Product Manager referred to the feature as Document Manager or File Manager, and eventually settled on File Manager. Ultimately, this got renamed over time in the code. However, for years, there was still this single directory, part of the infrastructure code, called `document_vault`, revealing the history of that feature.
 
 - When another startup decided to opt for AWS as a cloud provider, they created all environments in a single AWS account against AWS's advice. From my experience screening tech organisations during technology due diligence, this seems to be a classic mistake, even within big corporations. Obviously, to segregate environments, all infrastructure resources were named with environment prefixes (or suffixes ... or even infixes ... consistency is an option). Eventually, they migrated to a multi-account setup; however, without taking the time to change the naming. Now they have, in every account, infrastructure resources unnecessarily named after the environment. This becomes a classic example of how a system's design history becomes embedded in the code.
 
