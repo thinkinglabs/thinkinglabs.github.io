@@ -6,7 +6,7 @@ category: articles
 tags: [ Conway's Law ]
 ---
 
-Because of past historical decisions and past structural changes, software development efforts that lead to large, long-running, rigid legacy systems create a system structure that is not necessarily congruent or in harmony with today's organisation. The current system architecture does not match the present organisation chart because temporal memory anchors past decisions, and engineers' turnover.
+Because of past historical decisions and past structural changes, software development efforts that lead to large, long-running, rigid legacy systems create a system structure that is not necessarily congruent or in harmony with today's organisation, because temporal memory anchors past decisions, and engineers' turnover.
 
 ---
 
