@@ -26,11 +26,11 @@ To understand this, we have to explain **Software Engineer Half-Life** and its e
 
 Software Engineer Half-Life is the residency time of an engineer on a codebase, i.e. the amount of time they spend on a codebase before moving on. It seems that the industry average is 3.2 years. On average, we spend 3.2 years on a codebase, and then we move on.
 
-This means if we have a team of 10 engineers, half of the team will have left the team over the next 3.2 years. If we want to keep the team size constant, we need to replace them. But there is no guarantee that their replacement will have the same level of productivity.
+This means that when we have a team of 10 engineers, half of the team will have left the team over the next 3.2 years. If we want to keep the team size constant, we need to replace them. But there is no guarantee that their replacement will have the same level of productivity.
 
 A low-productivity engineer might be replaced with a higher-productivity engineer or vice versa. For small teams, this can significantly shift the overall productivity.
 
-Not all engineers are equally productive. Even the same engineer will not exhibit the same productivity across different codebases, depending on codebase sizes and cognitive load. Adding 100 lines of code to a 1000-line codebase is a different thing than adding to a million-line system.
+Not all engineers are equally productive. Even the same engineer will not exhibit the same productivity across different codebases, depending on codebase sizes and cognitive load. Adding 100 lines of code to a 1000-line codebase is a different thing from adding to a million-line system.
 
 Generally speaking, a team's productivity goes down as codebase size increases.
 
@@ -69,10 +69,10 @@ As half-life churns, organisational knowledge shifts from explicit knowledge to 
 
 - Ritual task-performance: Replacing personal discretion with rigid playbooks or compliance checklists to avoid individual decision-making responsibility.
 - Reducing the weight of decision-making by checks and counter-checks: Multiplying approvals via multi-reviewer Pull Request gates, quality gates, and Change Approval Boards to distribute responsibility over committees; not only in cases of high-stakes, but also for situations with the slightest consequences.
-- Reducing the impact of responsibility by upward delegation: Throwing decisions up the leadership chain to avoid blame, which in turn causes the organisation to choke on the high volume of upward exceptions (Galbraith, 1973, 1977)
+- Reducing the impact of responsibility by upward delegation: Throwing decisions up the leadership chain to avoid blame, which in turn causes the organisation to choke on the high volume of upward exceptions (Galbraith, 1973, 1977).
 - Avoidance for change: Any change involves a change in the social defence system; anxiety will in that case be more open and intense. Change is only instituted in moments of crisis.
 
-Over time, these defence mechanisms become elements of culture and mode of functioning of the organisation. It becomes an aspect of the external reality for old and new staff members, and part of the myth ("*We have always done it like this*")
+Over time, these defence mechanisms become elements of culture and mode of functioning of the organisation. It becomes an aspect of the external reality for old and new staff members, and part of the myth, "*We have always done it like this*" (Menzies, 1960).
 
 Much like software and IT systems, organisational culture and rules defined by social defence mechanisms carry on long after the original instigators have left. New staff members are socialised into these basic assumptions before they understand the system. The culture persists because it serves a protective psychological function, not an engineering one.
 
@@ -108,7 +108,7 @@ At one conference, I was asked to provide an example of the code reflecting past
 
 - One FinTech had a Document Vault feature, basically the ability to securely store legal documents. Yet, customers and the Product Manager referred to the feature as Document Manager or File Manager, and eventually settled on File Manager. Ultimately, this got renamed over time in the code. However, for years, there was still this single directory, part of the infrastructure code, called `document_vault`, revealing the history of that feature.
 
-- When another startup decided to opt for AWS as a cloud provider, they created all environments in a single AWS account against AWS's advice. From my experience screening tech organisations during technology due diligence, this seems to be a classic mistake, even within big corporations. Obviously, to segregate environments, all infrastructure resources were named with environment prefixes (or suffixes ... or even infixes ... consistency is an option). Eventually, they migrated to a multi-account setup; however, without taking the time to change the naming. Now they have, in every account, infrastructure resources unnecessarily named after the environment. This becomes a classic example of how a system's design history becomes embedded in the code.
+- When another startup decided to opt for AWS as a cloud provider, they created all environments in a single AWS account against AWS's advice. From my experience screening tech organisations during technology due diligence, this seems to be a classic mistake, even within big corporations. Obviously, to segregate environments, all infrastructure resources were named with environment prefixes (or suffixes ... or even infixes ... consistency is an option). Eventually, they migrated to a multi-account setup; however, without taking the time to change the naming. Now they have, in every account, infrastructure resources unnecessarily named after the environment. Another story of system's design history embedded in the code to tell new team members during onboarding.
 
 ## Conclusion
 
