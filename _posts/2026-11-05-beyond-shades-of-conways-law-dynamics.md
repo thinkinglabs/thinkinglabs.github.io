@@ -6,7 +6,7 @@ category: articles
 tags: [ Conway's Law ]
 ---
 
-Because of past historical decisions and past structural changes, software development efforts on large, long-lived, rigid legacy systems create architectures that rarely reflect today's organisation because temporal memory anchors past decisions, and engineers' turnover.
+Because of past historical decisions and past structural changes, software development efforts on large, long-lived systems create architectures that rarely reflect today's organisation structure because temporal memory anchors past decisions, and engineers' turnover.
 
 ---
 
