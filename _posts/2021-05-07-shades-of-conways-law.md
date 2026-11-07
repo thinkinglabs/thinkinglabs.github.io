@@ -20,6 +20,8 @@ Law literature.
 
 *Update June 27, 2021: Add how incremental software development impacts the organisation.*
 
+*Update Nov 7th, 2026: Superseded by the 2026 series [Beyond the Shades of Conway's Law]({% post_url 2026-04-24-beyond-the-shades-of-conways-law %}).*
+
 ---
 
 The original definition of **Conway's Law** by Melvin Conway.

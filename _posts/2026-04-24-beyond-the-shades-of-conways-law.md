@@ -56,4 +56,4 @@ Lastly, if I manage to get a hand on the thesis, I would like to process Alexand
 ## Bibliography
 
 - [How Do Committees Invent?](https://www.melconway.com/Home/Committees_Paper.html), Melvin Conway, 1968
-- The Original Article: [Shades of Conway's Law]({% post_url 2021-05-07-shades-of-conways-law %})
+- The Original 2021 article: [Shades of Conway's Law]({% post_url 2021-05-07-shades-of-conways-law %})
