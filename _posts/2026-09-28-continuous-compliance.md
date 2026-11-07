@@ -52,11 +52,30 @@ It is not always easy to distinguish a policy from a control. A *Policy* declare
 To summarise, think of a chain moving from the outside world (*governance* and *obligations*) down to internal intent and interpretation (*policies*), then to mechanisms (*controls*), and finally to execution (*implementation*).
 
 ```plain
-External Obligations (Regulations, Certifications, Contracts) ───────┐
-                                                                     │
-Internal Governance  (Leadership, Principles, Culture) ──────────────┼──> Policies ──> Requirements ──> Controls ──> Implementation
-                                                                     │
-Risk Management      (Threats, Impact, Likelihood, Cost of Delay) ───┘
+┌──────────────────────────────────────────────────────────────┐
+│  INPUTS                                                      │
+│                                                              │
+│  • External Obligations                                      │
+│    (Regulations, Certifications, Contracts)                  │
+│                                                              │
+│  • Internal Governance                                       │
+│    (Leadership, Principles, Culture)                         │
+│                                                              │
+│  • Risk Management                                           │
+│    (Threats, Impact, Likelihood, Cost of Delay)              │
+└──────────────────────────────┬───────────────────────────────┘
+                               │
+                               ▼
+                           Policies
+                               │
+                               ▼
+                          Requirements
+                               │
+                               ▼
+                            Controls
+                               │
+                               ▼
+                         Implementation
 ```
 
 > A good car has the best brakes.
