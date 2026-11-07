@@ -19,19 +19,19 @@ image: /images/continuous-compliance/continuous-compliance.jpg
 
 *Update Oct 30th, 2026: reference Carl Nygard's Compliance in a DevOps Culture.*
 
+*Update Nov 7th, 2026: explain controls.*
+
 ---
 
 ## Governance, Risk, and Compliance (GRC)
 
 But what is *Compliance*, anyway? The industry tends to make an amalgam between *Governance*, *Compliance* and *Risk Management*. Frequently used interchangeably, although they mean different things.
 
-**Governance** is all the activities an organisation performs to be compliant with external regulations (European Cyber Resilience Act (CRA), European NIS2 Directive, European Digital Operational Resilience Act (DORA), ...), certifications (PCI-DSS, ISO 27001, ISAE 3000, ...), frameworks (ITIL, COBIT, ...), or legally binding contracts and internal regulations (the standards, policies, procedures which are translations of external regulations, certifications or frameworks in internal ways of working). (Humble et al., 2014)
+**Governance** is all the activities an organisation performs to be compliant with external regulations (European [Cyber Resilience Act (CRA)](https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act), European [NIS2 Directive](https://digital-strategy.ec.europa.eu/en/policies/nis2-directive), European [Digital Operational Resilience Act (DORA)](https://www.eiopa.europa.eu/digital-operational-resilience-act-dora_en), ...), certifications ([PCI DSS](https://www.pcisecuritystandards.org/standards/pci-dss/), [ISO 27001](https://www.iso.org/standard/27001), [ISAE 3000](https://www.iaasb.org/publications/international-standard-assurance-engagements-isae-3000-revised-assurance-engagements-other-audits-or), ...), frameworks ([ITIL](https://www.itil.com/), [COBIT](https://www.isaca.org/resources/cobit), ...), or legally binding contracts and internal regulations (the standards, policies, procedures which are translations of external regulations, certifications or frameworks in internal ways of working). (Humble et al., 2014)
 
 IT governance defines the structure, processes, and mechanisms by which an organisation's IT activities are directed, monitored, and controlled to achieve business objectives. The IT governance framework is essential for organisations seeking to effectively manage their IT activities, manage risks, ensure compliance, and deliver value to the organisation. ([COBIT 5](https://www.isaca.org/resources/cobit/cobit-5), [ISO 38500](https://www.iso.org/standard/81684.html), Humble et al., 2014)
 
 But Governance involves more than the steps to be compliant. It also involves keeping the organisation on track while balancing the interests of all the organisation's stakeholders.
-
-**Policies** are the internal declarations and interpretations of the Governance and of the regulations and certifications. They establish the rules, principles, and standards the organisation chooses to follow and adhere to (e.g. *No production data whatsoever will be used for testing activities*). Policies bridge external obligations with internal operations. They set the expectations from which the compliance requirements and technical controls are extracted.
 
 **Compliance** is to obey relevant laws, regulations, legally binding contracts or even cultural norms. When imposed by law, regulation or contract, Compliance is generally not optional. In these cases, not conforming increases the risk of fines, reputational damage or even a business shutdown. (Humble et al., 2014)
 
@@ -39,7 +39,17 @@ But Governance involves more than the steps to be compliant. It also involves ke
 
 A *Risk* is a horrible thing that could happen that can negatively impact an organisation's goals, reputation, or operations, resulting from ineffective leadership, ethical lapses, inadequate controls, compliance failures, or strategic errors that threaten stakeholder interests. In short, it is a threat. However, risks are pervasive. We can never eliminate all risks. Therefore, we need Risk Management to mitigate risks.
 
-Think of a chain moving from the outside world (*governance* and *obligations*) down to internal intent and interpretation (*policies*), then to mechanisms (*controls*), and finally to execution (*implementation*).
+**Policies** are the internal declarations and interpretations of the Governance and of the regulations and certifications. They establish the rules, principles, and standards the organisation chooses to follow and adhere to (e.g. *No production data whatsoever will be used for testing activities*). Policies bridge external obligations and risks with internal operations. They set the expectations from which the compliance requirements and technical controls are extracted.
+
+**Controls** are the safeguard mechanisms to prevent, detect, or correct non-compliance (e.g. peer reviews, SAST & SCA scanning, isolating network boundaries between environments (NIST 800-53 SC-7 and CM-4), enforcing read-only roles for staff in the cloud console (NIST 800-53 AC-6 and AC-3), infrastructure-as-code, cryptographic key rotations, default-deny firewall rules, ...). Based on internal policies, teams define their own controls or adopt pre-defined, opinionated control frameworks. Note: controls can be procedural (such as mandatory Pair or Team Programming to satisfy the four-eyes principle), or technical (such as SAST scanning to cover the secure coding principles).
+
+A high-level framework like [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework) maps directly to detailed control catalogues such as [ISO 27001](https://www.iso.org/standard/27001), [NIST SP 800-53](https://hyperproof.io/nist-800-53/), [CSA CCM](https://cloudsecurityalliance.org/research/cloud-controls-matrix).
+
+While NIST 800-53 is broad and covers all IT systems, the CSA CCM is specifically tailored for cloud workloads. It has two key advantages: a built-in control mapping to other major standards (NIST SP 800-53, ISO 27001/27017/27018, PCI DSS, and CIS Controls) — a kind of "Rosetta Stone" for product teams required to be compliant — and a *Shared Responsibility Matrix* that clarifies whether a control rests with the Cloud Service Provider, the Cloud Customer, or is a shared responsibility. For organisations implementing a platform, this *Shared Responsibility Matrix* needs to be extended with Platform Team responsibility and Product Team (the platform consumers) responsibility. This also introduces a distinction between Platform Controls (read-only roles for staff in the cloud console, network policy enforcements, ...) versus Product Controls (product telemetry, product vulnerability management (SCA), ...), which clearly delineates who owns which control.
+
+It is not always easy to distinguish a policy from a control. A *Policy* declares business intent, governance rule or risk boundary. A *Control* is the practical mechanism designed to prevent, detect, or correct a failure — and can be mapped to a specific item in a control framework catalogue. In short: the policy is the mandate, while the control is the safeguard mechanism that enforces the policy.
+
+To summarise, think of a chain moving from the outside world (*governance* and *obligations*) down to internal intent and interpretation (*policies*), then to mechanisms (*controls*), and finally to execution (*implementation*).
 
 ```plain
 External Obligations (Regulations, Certifications, Contracts) ───────┐
@@ -75,7 +85,7 @@ Once we understand the regulation, we can extract the compliance requirements, w
 
 The other part of Governance, and consequently of product management, is Risk Management. We continuously identify risks: business operations risks as well as IT operations risks and security risks. That is another reason to have the business, i.e. the people doing the business operations, as part of the product team to achieve Continuous Compliance. They are in the best position to identify business risks. Of course, when Risk Management becomes a team activity, naturally Engineers also start identifying business risks as they internalise the business. The same is true for Product Managers and Business Operations, who now start to identify IT operations and security risks.
 
-**Note:** With NIS2, risk management becomes a legal obligation for operators of essential and important Entities (e.g., healthcare, energy, transport, banking, cloud providers) with a personal legal liability for C-level.
+**Note:** With NIS2, risk management becomes a legal obligation for operators of essential and important Entities (e.g., healthcare, energy, transport, banking, cloud providers), with personal legal liability for C-level.
 
 A predominant Risk Management mode in IT is a "*Wouldn't It Be Horrible*"-approach (Hubbard, 1985; Humble et al., 2014). We imagine a particularly catastrophic event occurring. Regardless of its likelihood, we have to avoid it at all costs. There is no sense of prioritisation. The question to answer in managing risks is: "*Which risks are we willing to accept and which ones not?*". **As we are taking steps to mitigate risk in one area, we inevitably introduce more risks, or new risks, in another area** (Humble et al., 2014).
 
@@ -171,6 +181,8 @@ Non-repudiation also requires [immutable infrastructure](https://www.ibm.com/thi
 When altering permissions, especially when breaking the glass, we need a trace of those changes. Therefore, we need a cloud audit trail to track all activities on the cloud platform. The audit trail tells us who (which Deployment Pipeline, which workload, which staff member) did what, and when. It does not tell us the why. Additionally, the audit trail must alert us of risky activities, such as permission changes or network modifications.
 
 To further shorten feedback loops and shift compliance left, we leverage automation with Compliance-as-Code or [Policy-as-Code](https://www.ibm.com/think/topics/policy-as-code). Compliance controls are defined as code and applied by Deployment Pipelines. A compliance control can be used to detect, prevent, or correct violations (Morris, 2025). Typically, Policy-as-Code is used to comply with standards such as the [NIST 800-53](https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final) framework or [Center for Internet Security (CIS)](https://www.cisecurity.org/). *Detection controls* report when violations occur. This is typically security monitoring of workloads and infrastructure. *Prevention controls* disallow non-compliant actions. This is generally the checks and tests performed by the Deployment Pipeline that stop the pipeline (such as SCA, SAST, DAST, Automated Acceptance Tests, ...). *Corrective controls* combine detection with an automated corrective action, such as removing unauthorised user accounts.
+
+Note: *Policy-as-Code* is, in fact, *Control-as-Code*. They express controls, not policies. Policies define intent; controls are the technical safeguard mechanisms extracted from those policies to enforce them.
 
 As mentioned in the "*Case Study: Relying on Production Telemetry for ATM Systems*", Continuous Compliance relies as much on continuous production monitoring and alerting (*detective controls*) as it does on pre-deployment checks (*preventive controls*).
 
