@@ -10,6 +10,10 @@ The first prototypes of a system are merely hints towards what a final design co
 
 ---
 
+*Update Nov 13th, 2026: Add the [Trond Hjorteland's observation](https://hachyderm.io/@trondhjort/117542145714631330) that basic assumptions only happen with OST DP1.*
+
+---
+
 In engineering, the initial design of a system is rarely the best.
 
 > The initial design of a system is never the best. The system may need to change. Therefore it requires flexibility of the organisation to design effectively.
@@ -99,7 +103,7 @@ Conway's Law says: any organisation designing systems is constrained to design a
 
 The exponential growth of organisations is a downright myth. The fact they grow sub-linearly indicates a domination by increasing returns of economies of scale over innovation. Organisations typically operate as highly constrained top-down structures striving to optimise for efficiency by reducing operational costs and increasing profits, but not for effectiveness. To achieve more efficiency, organisations add more rules, more protocols, more bureaucracy, and more hierarchy, at the expense of innovation (West, 2017).
 
-As organisations scale, teams are taken by strong emotions — anxiety, fear, hate, love, hope, anger, guilt, depression. They lose touch with their purpose, outcomes stagnate, while unconsciously adopting defensive modes. Teams look upward for direction, protect territories, or chase silver bullets (Bion, 1961; see also French & Simpson, 2010).
+As organisations scale, teams are taken by strong emotions — anxiety, fear, hate, love, hope, anger, guilt, depression. They lose touch with their purpose, outcomes stagnate, while unconsciously adopting defensive modes. Teams look upward for direction, protect territories, or chase silver bullets (Bion, 1961; see also French & Simpson, 2010). They naturally adopt the Open Systems Theory's Design Principle 1 (DP1) organisational pattern: bureaucratic and hierarchical.
 
 Eventually, organisations choke on the volume of decisions bubbling up the hierarchy, resulting in decision latency (Galbraith, 1973, 1977), delayed feedback, and delayed learning. They become risk-averse, more rigid, less agile, and less able to respond to change (West, 2017). Eventually, they go back to conservative solutions, and innovation falls flat.
 
@@ -155,3 +159,4 @@ Start small! Probably slightly smaller than we think we need.
 - [Toward Simplifying Application Development in a Dozen Lessons](http://melconway.com/Home/pdf/simplify.pdf), Mel Conway, 2016
 - [Building Evolutionary Architectures](https://app.thestorygraph.com/books/0f3cecf8-ee0b-407b-b711-a105d4ae3b3d), Rebecca Parsons, Neal Ford, Patrick Kua, 2017
 - [Scale: The Universal Laws of Life, Growth, and Death in Organisms, Cities, and Companies](https://app.thestorygraph.com/books/568aae70-7a2b-4df1-b504-f3bad7696f25), Geoffrey West, 2017
+- [Introduction to Open Systems Theory](https://oostkit.com/apps/intro_ost?from=section_theory)
