@@ -9,6 +9,8 @@ conferences:
     date: 2026-08-28
   - name: Lean Agile Brighton
     date: 2026-10-21
+  - name: Agile Testing Days
+    date: 2026-11-17
 speakerdeck:
   data_id: 40b79194a55848fc99eb71e5850a34e2
   download_link: https://files.speakerdeck.com/presentations/40b79194a55848fc99eb71e5850a34e2/Continuous_Delivery__It_is_not_what_you_think_it_is.pdf
