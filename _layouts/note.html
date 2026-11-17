@@ -37,8 +37,20 @@
     {% elsif page.author.name %}
       {{ page.author.name }}
     {% endif %}
+    {% for author in page.authors %}
+    {% if author.name and author.website %}
+    <a href="https://twitter.com/{{ author.website }}">{{ author.name}}</a>
+    {% elsif author.name and author.linkedin %}
+    <a href="https://linkedin.com/in/{{ author.linkedin }}">{{ author.name}}</a>
+    {% elsif author.name and author.twitter %}
+    <a href="https://twitter.com/{{ author.twitter }}">{{ author.name}}</a>
+    {% elsif author.name and author.bluesky %}
+    <a href="https://bsky.app/profile/{{ author.bluesky }}">{{ author.name}}</a>
+    {% elsif author.name %}
+    {{ author.name }}
+    {% endif %}
+    {% endfor %}
     {% endcapture %}
-
 
     <section id="article" class="article bg-white padding-section-bottom">
       <div class="row no-margin-lr">
