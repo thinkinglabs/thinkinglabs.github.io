@@ -3,7 +3,7 @@ layout: article
 title: "Beyond the Shades of Conway's Law - Dynamics: Conway's Time Component"
 author: Thierry de Pauw
 category: articles
-tags: [ Conway's Law ]
+tags: [ Conway's Law, Organisations ]
 ---
 
 Because of past historical decisions and past structural changes, software development efforts on large, long-lived systems create architectures that rarely reflect today's organisation structure because temporal memory anchors past decisions, and engineers' turnover.

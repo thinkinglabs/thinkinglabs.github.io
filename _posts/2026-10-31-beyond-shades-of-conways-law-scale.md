@@ -3,7 +3,7 @@ layout: article
 title: "Beyond the Shades of Conway's Law - Scale: Conway's Corollary"
 author: Thierry de Pauw
 category: articles
-tags: [ Conway's Law, Open Systems Theory ]
+tags: [ Conway's Law, Open Systems Theory, Organisations ]
 ---
 
 The first prototypes of a system are merely hints towards what a final design could look like. To crystallise a solution, we have to constantly iterate, experiment, and adapt to feedback. However, this continuous evolution creates unexpected repercussions for leadership: changing the system demands changing the organisation. It requires organisational flexibility. Yet, as organisations grow, they naturally trade flexibility for bureaucracy. As a result, scaling an organisation often suffocates the very systems it is trying to build.
