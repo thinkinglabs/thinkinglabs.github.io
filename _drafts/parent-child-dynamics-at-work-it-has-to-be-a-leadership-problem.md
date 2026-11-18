@@ -82,6 +82,11 @@ However, we often do need to remove some key staff members. Basic Assumption Gro
 
 Systemic problems are created by leadership. Therefore, they have to be solved by leadership (Deming, 1982). Although, this situation is co-created by the workplace (staff *and* leadership), leadership holds the lever to break the cycle by containing the anxiety and shift the team back into Work Group mode.
 
+## Related Articles
+
+- [Beyond the Shades of Conway's Law - Scale: Conway's Corollary]({% post_url 2026-10-31-beyond-shades-of-conways-law-scale%})
+- [Beyond the Shades of Conway's Law - Dynamics: Conway's Time Component]({% post_url 2026-11-05-beyond-shades-of-conways-law-dynamics%})
+
 ## Bibliography
 
 - [A Case-Study in the Functioning of Social Systems as a Defence Against Anxiety](https://journals.sagepub.com/doi/10.1177/001872676001300201), Isabel E. P. Menzies, 1960
