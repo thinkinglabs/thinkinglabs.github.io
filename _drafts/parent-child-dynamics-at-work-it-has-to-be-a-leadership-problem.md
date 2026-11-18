@@ -1,6 +1,6 @@
 ---
 layout: article
-title: The Problem has to be Leadership, no?
+title: "Parent-Child Dynamics at Work: It Has To Be a Leadership Problem, right?"
 author:
   name: Thierry de Pauw
   twitter: tdpauw
