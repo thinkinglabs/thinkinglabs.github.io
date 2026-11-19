@@ -143,6 +143,10 @@ Start small! Probably slightly smaller than we think we need.
 - [Dynamics: Conway's Time Component]({% post_url 2026-11-05-beyond-shades-of-conways-law-dynamics %}) - The "Engineer Half-Life" and why architecture is "sticky" long after teams change.
 - Conclusion: The Different Lenses - A concluding look at how we perceive organisations and their systems.
 
+## Related Articles
+
+- [Parent-Child Dynamics at Work: It Has To Be a Leadership Problem, right?]({% post_url 2026-11-19-parent-child-dynamics-at-work-it-has-to-be-a-leadership-problem %})
+
 ## Bibliography
 
 - [Experiences in Groups and Other Papers](https://app.thestorygraph.com/books/00a599d7-49d1-4b35-9d19-a67652910ed2), Wilfred R. Bion, 1961

@@ -136,6 +136,10 @@ Whenever we release our product, we ship our organisation — complete with its 
 - **Dynamics: Conway's Time Component** - The "Engineer Half-Life" and why architecture is "sticky" long after teams change.
 - Conclusion: The Different Lenses - A concluding look at how we perceive organisations and their systems.
 
+## Related Articles
+
+- [Parent-Child Dynamics at Work: It Has To Be a Leadership Problem, right?]({% post_url 2026-11-19-parent-child-dynamics-at-work-it-has-to-be-a-leadership-problem %})
+
 ## Bibliography
 
 - [A Case-Study in the Functioning of Social Systems as a Defence Against Anxiety](https://journals.sagepub.com/doi/10.1177/001872676001300201), Isabel E. P. Menzies, 1960
