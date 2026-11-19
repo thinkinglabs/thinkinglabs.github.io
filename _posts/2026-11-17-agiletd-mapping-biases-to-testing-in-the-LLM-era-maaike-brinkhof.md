@@ -9,7 +9,7 @@ author:
   linkedin: maaike-brinkhof-tester
 slides: https://www.maaikebrinkhof.nl/biases-llm/
 category: notes
-tags: [ Testing, LLM, Bias, Agile Testing Days ]
+tags: [ Testing, LLM, Bias, AI, Agile Testing Days ]
 created_at: 2026-11-17
 category: notes
 ---
