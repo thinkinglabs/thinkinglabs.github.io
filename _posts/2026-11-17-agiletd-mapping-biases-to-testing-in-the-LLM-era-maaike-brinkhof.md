@@ -24,11 +24,12 @@ We human beings are so mentally vulnerable and gullible. When we should slow dow
 
 In this 2026 edition of Mapping Biases to Testing I will zoom in on biases I see happening when people use LLM's:
 
-anchoring effect
-confirmation bias
-cognitive dissonance
-availability heuristic
-technology bias
+- anchoring effect
+- confirmation bias
+- cognitive dissonance
+- availability heuristic
+- technology bias
+
 I will close off with a plea to you to keep using your brain. We should all embrace the friction that comes with learning. Basically, come to this talk if you still care about using your brain.
 
 ---
@@ -167,7 +168,7 @@ Risks? who gives a shit; we prompt our way to a solution
 
 LLMs has put developers to sleep;  code is documentation; developers are eroding their documentation by putting their faith in prompts
 
-developers have stopped caring, because they cannot keep up with the deluge of requests from management; developers quit their jobs because of LLMs ([https://www.theregister.com/os-platforms/2026/08/10/linus-torvalds-says-ai-has-made-huge-linux-kernel-updates-the-new-normal/5285268](https://www.theregister.com/os-platforms/2026/08/10/linus-torvalds-says-ai-has-made-huge-linux-kernel-updates-the-new-normal/5285268))
+developers have stopped caring, because they cannot keep up with the deluge of requests from management; developers quit their jobs because of LLMs ([https://www.theregister.com/os-platforms/2026/08/10/linus-torvalds-says-ai-has-made-huge-linux-kernel-updates-the-new-normal/5285268](https://www.theregister.com/os-platforms/2026/08/10/linus-torvalds-says-ai-has-made-huge-linux-kernel-updates-the-new-normal/5285268) NARRATOR: it seems that, in the mean time, Linus Torvald has shifted into the AI-camp 🤷)
 
 Human: bye braincells
 
