@@ -132,9 +132,9 @@ I have a philosophy degree, then I needed a job ...
 
 what else exist in the community? contract testing, exploratory testing, ...
 
-you have to be lucky in what you encounter (note-taker: also true for developers)
+you have to be lucky in what you encounter (NARRATOR: also true for developers)
 
-developers most likely have a computer science degree (note-taker: not always true)
+developers most likely have a computer science degree (NARRATOR: not always true)
 
 developers have organisations to look up to, we don't have orgs that have testing right
 
