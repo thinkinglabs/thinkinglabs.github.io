@@ -14,6 +14,8 @@ tags: [ Leadership, Organisations ]
 
 *Update Nov 22nd, 2026: Add additional sources.*
 
+*Update Nov 22nd, 2026: Improve the conclusion.*
+
 ---
 
 > [Parent-Child dynamics at work] comes from psychologist Eric Berne.
@@ -46,11 +48,11 @@ When the group stops operating as a Work Group, it collapses into one of three p
 
 - *Pairing Group*: focuses unconsciously on two individuals (or two ideas) in the hope that their interaction will create some sort of fantasy, something good, that will solve all current problems (adopting microservices, operating under Kubernetes, ...).
 - *Fight-Flight Group*: its primary purpose is to preserve itself by either attacking an enemy or running away from the threat (us vs them, product vs engineering vs operations, spending energy refactoring instead of delivering value, ...).
-- *Dependent Group*: helpless, ignorant, dependent on the leader who will provide all the answers ("*Tell us which architecture to implement*", refusing to make local decisions to avoid risks of failures, ...). This is the same dependence of a child towards a parent.
+- *Dependent Group*: helpless, ignorant, dependent on the leader who will provide all the answers ("*Tell us which architecture to implement*", refusing to make local decisions to avoid risks of failures, ...). This is the same dependence as a child towards a parent.
 
-The root cause for the Parent-Child dynamic is an inevitable output from the group operating in *Basic Assumption Dependency*. This contradicts the classic organisational discourse telling that leaders impose control on passive staff members.
+The root cause for the Parent-Child dynamic is an inevitable output from the group operating in *Basic Assumption Dependency*. This contradicts the classic organisational discourse that leaders impose control on passive staff members.
 
-As confronting as it may be, for many workplaces, it is the workplace as a whole, i.e. leaders and staff, that creates and nurtures this Parent-Child relationship. The group actively pulls the leader into a "Parent" role as an unconscious defence mechanism for shared emotions. The group relies on the leader for actions, thoughts, and feelings. The group looks upwards, expecting the leader to provide answers, direction, and to fulfil their needs.
+As confronting as it may be, for many workplaces, it is the workplace as a whole, i.e. leaders and staff, that creates and nurtures this Parent-Child relationship. The dynamic is emergent. The group actively pulls the leader into a "Parent" role as an unconscious defence mechanism for shared emotions. The group relies on the leader for actions, thoughts, and feelings. The group looks upwards, expecting the leader to provide answers, direction, and to fulfil their needs.
 
 The group hates learning from experiences, lacks development, does not want to digest, and sabotages the group. They expect the leader to solve everything. The leader protects the group and provides them with an illusion of grandeur.
 
@@ -58,7 +60,7 @@ This pattern is an unconscious coping mechanism for emotions. Facing real-world 
 
 ## The Leaders Trap
 
-Most leaders fall into this trap because it flatters their competence. Once they provide answers or direction, they become the "Parent".
+Most leaders fall into this trap because it flatters their competence and boosts their ego. Once they provide answers or direction, they become the "Parent".
 
 This introduces a vicious cycle. The team can blame the "Parent" whenever something bad happens, completely disabling their own accountability.
 
@@ -78,15 +80,15 @@ In that case, the natural reaction would be to fire the staff because they keep 
 
 ## Containment Over Abandonment
 
-When asked for direction, the leader needs to resist providing the answer. Instead, leadership needs to contain the anxiety. The capacity to absorb and make sense of distress to ensure the team stays in the Work Group mode and does not digress to a basic assumption ("*I understand the outcomes of this migration are uncertain, but we can reduce the risks by running small experiments.*"). It requires setting up guardrails (using platforms, CI/CD pipelines, ...) and running blameless post-mortems.
+When asked for direction, the leader must resist providing the answer. Instead, leadership needs to contain the anxiety. The capacity to absorb and make sense of distress to ensure the team stays in the Work Group mode and does not digress to a basic assumption ("*I understand the outcomes of this migration are uncertain, but we can reduce the risks by running small experiments.*"). It requires setting up guardrails (using platforms, CI/CD pipelines, ...) and running blameless post-mortems.
 
 Telling a team "*Figure it out yourselves, you're empowered now.*" is not empowerment. It is abandonment. Abandonment triggers panic and pushes the team straight into Fight-Flight or passive-aggressive Dependency.
 
 However, we often do need to remove some key staff members. Basic Assumption Groups tend to appoint rigid members as informal leaders that maintain the status quo.
 
-## Conclusion
+## Conclusion: the Apparent Paradox
 
-Systemic problems are created by leadership. Therefore, they have to be solved by leadership (Deming, 1982). Although this situation is co-created by the workplace (staff *and* leadership), leadership holds the lever to break the cycle by containing the anxiety to shift the team back into Work Group mode.
+Deming (1982) famously argued that systemic problems are created by leadership; therefore they must be solved by leadership. While Bion (1961) shows us that the Parent-Child dynamic is actually co-created by the entire workplace (staff *and* leadership together), Deming's conclusion remains valid: leadership still holds the lever to break the cycle by containing the team's anxiety so it can shift back into Work Group mode. Leaders have a responsibility to resist the ego boost of the [leadership trap](#the-leaders-trap). That is exactly what separates true servant-leaders from mere status-seeking managers.
 
 ## Related Articles
 
