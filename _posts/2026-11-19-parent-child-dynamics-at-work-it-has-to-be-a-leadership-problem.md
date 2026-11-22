@@ -12,6 +12,10 @@ tags: [ Leadership, Organisations ]
 
 ---
 
+*Update Nov 22nd, 2026: Add additional sources.*
+
+---
+
 > [Parent-Child dynamics at work] comes from psychologist Eric Berne.
 >
 > He showed that in every interaction we slip into one of three “ego states”:
@@ -93,3 +97,9 @@ Systemic problems are created by leadership. Therefore, they have to be solved b
 - [Experiences in Groups and Other Papers](https://app.thestorygraph.com/books/00a599d7-49d1-4b35-9d19-a67652910ed2), Wilfred R. Bion, 1961
 - [Out of the Crisis](https://app.thestorygraph.com/books/b79ebdec-b267-4585-9af4-b5b68b30f5e5), W. Edwards Deming, 1982
 - [When we talk about Parent-Child dynamics at work, it’s not a dig at parenting](https://www.linkedin.com/feed/update/urn:li:ugcPost:7521142361360416769/), Corporate Rebels, 2026
+
+## Additional Sources
+
+- [A psychologist's casual review: Experiences in groups by Wilfred Bion](https://www.youtube.com/watch?v=PcOqtLXcpOw), Talking Psychology
+  
+  A short, 22 min introduction to Bion's Experiences in Groups covering the essentials such as Work Group, Basic Assumption, and Valency. I found it helpful after reading the book as the book is notoriously difficult to digest. It is dense with 1940s Tavistock psychoanalytic jargon (Klein, Freud, and others).
