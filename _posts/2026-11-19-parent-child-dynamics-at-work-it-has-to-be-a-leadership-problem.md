@@ -48,7 +48,9 @@ When the group stops operating as a Work Group, it collapses into one of three p
 - *Fight-Flight Group*: its primary purpose is to preserve itself by either attacking an enemy or running away from the threat (us vs them, product vs engineering vs operations, spending energy refactoring instead of delivering value, ...).
 - *Dependent Group*: helpless, ignorant, dependent on the leader who will provide all the answers ("*Tell us which architecture to implement*", refusing to make local decisions to avoid risks of failures, ...). This is the same dependence of a child towards a parent.
 
-As confronting as it may be, for many workplaces, it is the workplace as a whole, i.e. leaders and staff, that creates and nurtures this Parent-Child relationship as an unconscious defence mechanism for shared emotions. This is exactly the *Dependent Group*. The group relies on the leader for actions, thoughts, and feelings. The group looks upwards, expecting the leader to provide answers, direction, and to fulfil their needs.
+The root cause for the Parent-Child dynamic is an inevitable output from the group operating in *Basic Assumption Dependency*. This contradicts the classic organisational discourse telling that leaders impose control on passive staff members.
+
+As confronting as it may be, for many workplaces, it is the workplace as a whole, i.e. leaders and staff, that creates and nurtures this Parent-Child relationship. The group actively pulls the leader into a "Parent" role as an unconscious defence mechanism for shared emotions. The group relies on the leader for actions, thoughts, and feelings. The group looks upwards, expecting the leader to provide answers, direction, and to fulfil their needs.
 
 The group hates learning from experiences, lacks development, does not want to digest, and sabotages the group. They expect the leader to solve everything. The leader protects the group and provides them with an illusion of grandeur.
 
