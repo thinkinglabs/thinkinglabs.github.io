@@ -88,7 +88,7 @@ However, we often do need to remove some key staff members. Basic Assumption Gro
 
 ## Conclusion: the Apparent Paradox
 
-Deming (1982) famously argued that systemic problems are created by leadership; therefore they must be solved by leadership. While Bion (1961) shows us that the Parent-Child dynamic is actually co-created by the entire workplace (staff *and* leadership together), Deming's conclusion remains valid: leadership still holds the lever to break the cycle by containing the team's anxiety so it can shift back into Work Group mode. Leaders have a responsibility to resist the ego boost of the [leadership trap](#the-leaders-trap). That is exactly what separates true servant-leaders from mere status-seeking managers.
+Deming (1982) famously argued that leadership creates systemic problems; therefore, leadership must solve them. While Bion (1961) shows that the Parent-Child dynamic is in fact co-created by the entire workplace (staff *and* leadership together), Deming's conclusion remains valid: leadership still holds the lever to break the cycle by containing the team's anxiety so it can shift back into Work Group mode. Leaders have a responsibility to resist the ego boost of the [leadership trap](#the-leaders-trap). That is exactly what separates true servant-leaders from mere status-seeking managers who feed the Parent-Child dynamic because being the all-knowing "Parent" flatters their ego.
 
 ## Related Articles
 
