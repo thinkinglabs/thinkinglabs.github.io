@@ -16,6 +16,8 @@ tags: [ Leadership, Organisations ]
 
 *Update Nov 22nd, 2026: Improve the conclusion.*
 
+*Update Nov 26th, 2026: Link to Chris Matts' [The Failureship Dynamic](https://theitriskmanager.com/2024/04/14/the-failureship-dynamic/) article showing similar parallels and conclusion.*
+
 ---
 
 > [Parent-Child dynamics at work] comes from psychologist Eric Berne.
@@ -86,9 +88,11 @@ Telling a team "*Figure it out yourselves, you're empowered now.*" is not empowe
 
 However, we often do need to remove some key staff members. Basic Assumption Groups tend to appoint rigid members as informal leaders that maintain the status quo.
 
-## Conclusion: the Apparent Paradox
+## Conclusion: The Apparent Paradox
 
-Deming (1982) famously argued that leadership creates systemic problems; therefore, leadership must solve them. While Bion (1961) shows that the Parent-Child dynamic is in fact co-created by the entire workplace (staff *and* leadership together), Deming's conclusion remains valid: leadership still holds the lever to break the cycle by containing the team's anxiety so it can shift back into Work Group mode. Leaders have a responsibility to resist the ego boost of the [leadership trap](#the-leaders-trap). That is exactly what separates true servant-leaders from mere status-seeking managers who feed the Parent-Child dynamic because being the all-knowing "Parent" flatters their ego.
+Interestingly, [Chris Matts](https://www.linkedin.com/in/chris-matts-9a7b531/) arrived at a remarkably similar conclusion through [Eric Berne's Transactional Analysis (TA)](https://en.wikipedia.org/wiki/Transactional_analysis), showing a fascinating parallel. He too used to think the organisation's leadership defined whether a *leadership* (risk-managed) or a *failureship* (risk-averse) emerged. However, he realised, in reality, the interaction between leadership and the organisation shapes the culture. That is why "*leaders who lead a successful leadership culture in one organisation often fail to succeed with a failureship culture in another organisation*" (see [The Failureship Dynamic](https://theitriskmanager.com/2024/04/14/the-failureship-dynamic/)).
+
+This brings us back to Deming (1982), who famously argued that leadership creates systemic problems — therefore, leadership must solve them. While Bion (1961) and Matts (2024) show that the Parent-Child dynamic is in fact co-created by the entire workplace (staff *and* leadership together), Deming's conclusion remains valid: leadership still holds the lever to break the cycle by containing the team's anxiety, via psychological safety, so it can shift back into Work Group mode. Leaders have a responsibility to resist the ego boost of the [leadership trap](#the-leaders-trap). That is exactly what separates true servant-leaders from mere status-seeking managers who feed the Parent-Child dynamic.
 
 ## Related Articles
 
@@ -100,6 +104,7 @@ Deming (1982) famously argued that leadership creates systemic problems; therefo
 - [A Case-Study in the Functioning of Social Systems as a Defence Against Anxiety](https://journals.sagepub.com/doi/10.1177/001872676001300201), Isabel E. P. Menzies, 1960
 - [Experiences in Groups and Other Papers](https://app.thestorygraph.com/books/00a599d7-49d1-4b35-9d19-a67652910ed2), Wilfred R. Bion, 1961
 - [Out of the Crisis](https://app.thestorygraph.com/books/b79ebdec-b267-4585-9af4-b5b68b30f5e5), W. Edwards Deming, 1982
+- [The Failureship Dynamic](https://theitriskmanager.com/2024/04/14/the-failureship-dynamic/)), Chris Matts, 2024
 - [When we talk about Parent-Child dynamics at work, it’s not a dig at parenting](https://www.linkedin.com/feed/update/urn:li:ugcPost:7521142361360416769/), Corporate Rebels, 2026
 
 ## Additional Sources
